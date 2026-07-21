@@ -1,0 +1,427 @@
+{
+  "item_id": "fincen-amlcft-national-priorities",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Establish the first government-wide AML/CFT national priorities to assist covered institutions in meeting their obligations under AML/CFT laws and regulations.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "is issuing these first government-\nwide priorities for anti-money laundering and countering the financing of terrorism (AML/\nCFT) policy (the \u201cPriorities\u201d).",
+          "verified": true
+        },
+        {
+          "quote": "The establishment of these Priorities is intended \nto assist all covered institutions 6 in their efforts to meet their obligations under laws and \nregulations designed to combat money laundering and counter terrorist financing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Identify eight AML/CFT priorities (in no particular order): corruption; cybercrime; foreign and domestic terrorist financing; fraud; transnational criminal organization activity; drug trafficking organization activity; human trafficking and human smuggling; and proliferation financing.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the Priorities are, in no particular order: (1) corruption; \n(2) cybercrime, including relevant cybersecurity and virtual currency considerations; (3) \nforeign and domestic terrorist financing; (4) fraud; (5) transnational criminal organization \nactivity; (6) drug trafficking organization activity; (7) human trafficking and human \nsmuggling; and (8) proliferation financing.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-001",
+      "actor": "FinCEN",
+      "modality": "must",
+      "action": "issue regulations that will specify how financial institutions should incorporate these Priorities into their risk-based AML programs",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FinCEN will issue regulations at a later date that will specify how financial institutions \nshould incorporate these Priorities into their risk-based AML programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-002",
+      "actor": "each covered institution",
+      "modality": "should",
+      "action": "review and incorporate, as appropriate, each Priority based on the institution\u2019s broader risk-based AML program",
+      "trigger": "upon the effective date of future regulations to be promulgated in connection with these Priorities",
+      "threshold": null,
+      "exceptions": [
+        "FinCEN recognizes that not every Priority will be relevant to every covered institution"
+      ],
+      "citations": [
+        {
+          "quote": "each \ncovered institution should, upon the effective date of future regulations to be promulgated \nin connection with these Priorities, review and incorporate, as appropriate, each Priority \nbased on the institution\u2019s broader risk-based AML program.",
+          "verified": true
+        },
+        {
+          "quote": "FinCEN \nrecognizes that not every Priority will be relevant to every covered institution",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-003",
+      "actor": "FinCEN",
+      "modality": "must",
+      "action": "update the Priorities at least once every four years, as required by the AML Act, to account for new and emerging threats",
+      "trigger": null,
+      "threshold": "at least once every four years",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FinCEN will update the Priorities \nat least once every four years, as required by the AML Act, 11 to account for new and \nemerging threats to the U.S. financial system and national security.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-004",
+      "actor": "covered institutions",
+      "modality": "must",
+      "action": "comply with required sanctions programs (as a countermeasure to terrorist financing risks)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "covered institutions must \ncomply with required sanctions programs and, as part of their risk-based AML programs, \nalso should be aware of terrorists and terrorist organizations that are included on sanctions \nlists issued by the U.S. government.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-005",
+      "actor": "covered institutions",
+      "modality": "should",
+      "action": "be aware of terrorists and terrorist organizations that are included on sanctions lists issued by the U.S. government (as part of their risk-based AML programs)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "as part of their risk-based AML programs, \nalso should be aware of terrorists and terrorist organizations that are included on sanctions \nlists issued by the U.S. government.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-006",
+      "actor": "covered institutions",
+      "modality": "must",
+      "action": "comply with sanctions programs (as a counter-measure to proliferation financing risks)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "covered institutions must \ncomply with sanctions programs and, as part of a risk-based AML program, should also be aware \nof economic and trade sanctions issued by the federal government",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-007",
+      "actor": "covered institutions",
+      "modality": "should",
+      "action": "be aware of economic and trade sanctions issued by the federal government, such as OFAC, the Department of Commerce\u2019s Bureau of Industry and Security, and the Department of State\u2019s Bureau of International Security and Nonproliferation (as part of a risk-based AML program)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "as part of a risk-based AML program, should also be aware \nof economic and trade sanctions issued by the federal government, such as OFAC, the \nDepartment of Commerce\u2019s Bureau of Industry and Security, and the Department of State\u2019s \nBureau of International Security and Nonproliferation.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Covered institutions",
+      "definition": "financial institutions required by BSA regulations to maintain an AML program. See 31 CFR \u00a7\u00a7 1020.210(a) (banks); 1020.210(b) (banks without a Federal functional regulator); 1021.210 (casinos and card clubs); 1022.210 (money services businesses); 1023.210 (brokers or dealers in securities); 1024.210 (mutual funds); 1025.210 (insurance companies); 1026.210 (futures commission merchants and introducing brokers in commodities); 1027.210; 1028.210; 1029.210; 1030.210.",
+      "citations": [
+        {
+          "quote": "Covered institutions are financial institutions required by BSA regulations to maintain an AML program.  See \n31 CFR \u00a7\u00a7 1020.210(a) (banks); 1020.210(b) (banks without a Federal functional regulator); 1021.210 (casinos and \ncard clubs); 1022.210 (money services businesses); 1023.210 (brokers or dealers in securities); 1024.210 (mutual \nfunds); 1025.210 (insurance companies)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Priorities",
+      "definition": "the first government-wide priorities for anti-money laundering and countering the financing of terrorism (AML/CFT) policy.",
+      "citations": [
+        {
+          "quote": "these first government-\nwide priorities for anti-money laundering and countering the financing of terrorism (AML/\nCFT) policy (the \u201cPriorities\u201d).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator",
+      "definition": "used \u201cas defined in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809)).\u201d (per 31 U.S.C. \u00a7 5318(h)(4)(A) as amended by AML Act \u00a7 6101(b)(2)(C))",
+      "citations": [
+        {
+          "quote": "uses the term Federal functional regulator \n\u201cas defined in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809)).\u201d",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA (Bank Secrecy Act)",
+      "definition": "Per Section 6003(1) of the AML Act, comprises Section 21 of the Federal Deposit Insurance Act (12 U.S.C. 1829b), Chapter 2 of Title I of Pub. L. 91-508 (12 U.S.C. 1951 et seq.), and Subchapter II of Chapter 53 of Title 31, United States Code.",
+      "citations": [
+        {
+          "quote": "defines the BSA as comprising Section 21 of the Federal Deposit \nInsurance Act (12 U.S.C. 1829b), Chapter 2 of Title I of Pub. L. 91-508 (12 U.S.C. 1951 et seq.), and Subchapter \nII of Chapter 53 of Title 31, United States Code.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML Act",
+      "definition": "the Anti-Money Laundering Act of 2020, enacted as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, Pub. L. 116-283 (2021).",
+      "citations": [
+        {
+          "quote": "The AML Act was enacted as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense \nAuthorization Act for Fiscal Year 2021, Pub. L. 116-283 (2021).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "threats",
+      "definition": "for purposes of these Priorities, predicate crimes associated with money laundering.",
+      "citations": [
+        {
+          "quote": "\u201cthreats\u201d for purposes of these Priorities are predicate crimes \nassociated with money laundering.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "vulnerability",
+      "definition": "some perceived vulnerability in the U.S. financial system that may be in law, regulation, supervision, or enforcement, or may stem from a unique attribute of a product, service, or jurisdiction.",
+      "citations": [
+        {
+          "quote": "These threats exploit some perceived \u201cvulnerability\u201d in \nthe U.S. financial system that may be in law, regulation, supervision, or enforcement, or may \nstem from a unique attribute of a product, service, or jurisdiction.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA Advisory Group",
+      "definition": "consists of representatives from federal agencies and other interested persons and financial institutions subject to the regulatory requirements of the BSA (per section 1654 of the Annunzio-Wylie Anti-Money Laundering Act of 1992).",
+      "citations": [
+        {
+          "quote": "the BSA \nAdvisory Group consists of representatives from federal agencies and other interested persons and financial \ninstitutions subject to the regulatory requirements of the BSA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "convertible virtual currencies (CVCs)",
+      "definition": "(undefined here) \u2014 term used; cross-reference given to FinCEN, Application of FinCEN\u2019s Regulations to Certain Business Models Involving Convertible Virtual Currencies, May 9, 2019.",
+      "citations": [
+        {
+          "quote": "convertible virtual currencies \n(CVCs)23 also have grown as the currency of preference in a wide variety of online illicit \nactivity.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money mule",
+      "definition": "\u201ca person who transfers illegally acquired money on behalf of or at the direction of another.\u201d",
+      "citations": [
+        {
+          "quote": "A money mule is \u201ca person who transfers illegally acquired money on behalf of or at the direction of \nanother.\u201d",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Cybercrime",
+      "definition": "broadly defined as any illegal activity that involves a computer, another digital device, or a computer network.",
+      "citations": [
+        {
+          "quote": "Cybercrime is \nbroadly defined as any illegal activity that involves a computer, another \ndigital device, or a computer network.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Domestic terrorism",
+      "definition": "as defined by 18 U.S.C. \u00a7 2331(5), means activities that involve acts dangerous to human life that violate criminal laws, appear intended to intimidate/coerce a civilian population, influence government policy by intimidation or coercion, or affect government conduct by mass destruction, assassination, or kidnapping, and occur primarily within U.S. territorial jurisdiction.",
+      "citations": [
+        {
+          "quote": "Domestic terrorism, as defined by 18 U.S.C. \u00a7 2331(5), means activities that \u201c(A) involve acts dangerous \nto human life that are a violation of the criminal laws of the United States or of any State; (B) appear to be \nintended\u2014(i) to intimidate or coerce a civilian population",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "DVEs (domestic violent extremists)",
+      "definition": "individuals based and operating primarily within the territorial jurisdiction of the United States who seek to further their ideological goals wholly or in part through unlawful acts of force or violence.",
+      "citations": [
+        {
+          "quote": "DVEs are individuals based and operating primarily within the territorial jurisdiction of the \nUnited States who seek to further their ideological goals wholly or in part through unlawful \nacts of force or violence.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Transnational organized crime",
+      "definition": "\u201cself-perpetuating associations of individuals who operate transnationally for the purpose of obtaining power, influence, monetary, or commercial gains, wholly or in part by illegal means...\u201d (10 U.S.C. \u00a7 284(i)(6)).",
+      "citations": [
+        {
+          "quote": "Transnational organized crime refers to \u201cself-perpetuating associations of individuals who operate \ntransnationally for the purpose of obtaining power, influence, monetary, or commercial gains, wholly or in \npart by illegal means",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Proliferation financing",
+      "definition": "refers to the act of providing funds or financial services which are used, in whole or in part, for the manufacture, acquisition, possession, development, export, trans-shipment, brokering, transport, transfer, stockpiling, or use of nuclear, chemical, or biological weapons and their means of delivery and related materials, in contravention of national laws or international obligations.",
+      "citations": [
+        {
+          "quote": "Proliferation financing refers to the act of providing funds or financial services which are used, in whole \nor in part, for the manufacture, acquisition, possession, development, export, trans-shipment, brokering, \ntransport, transfer, stockpiling, or use of nuclear, chemical, or biological weapons and their means of delivery",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Human trafficking",
+      "definition": "human trafficking crimes, which are defined in Title 18, Chapter 77, focus on the act of compelling or coercing a person\u2019s labor, services, or commercial sex acts.",
+      "citations": [
+        {
+          "quote": "Human trafficking crimes, which are defined in Title 18, Chapter 77, focus on the act of compelling or \ncoercing a person\u2019s labor, services, or commercial sex acts.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Human smuggling",
+      "definition": "involves illegally transporting people, who have consented to their travel, into the United States and, potentially, the subsequent harboring of those individuals in the United States.",
+      "citations": [
+        {
+          "quote": "Human smuggling involves illegally transporting people, who have consented to their travel, into the \nUnited States and, potentially, the subsequent harboring of those individuals in the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "risk-based AML program",
+      "definition": "(undefined here) \u2014 term used to describe institutions' broader AML programs into which Priorities are to be incorporated.",
+      "citations": [
+        {
+          "quote": "review and incorporate, as appropriate, each Priority \nbased on the institution\u2019s broader risk-based AML program.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Priorities issued pursuant to Section 5318(h)(4)(A) of the BSA, as amended by Section 6101(b)(2)(C) of the AML Act of 2020.",
+      "references": [
+        "31 U.S.C. \u00a7 5318(h)(4)(A)",
+        "AML Act \u00a7 6101(b)(2)(C)"
+      ],
+      "citations": [
+        {
+          "quote": "These Priorities are being issued pursuant to Section 5318(h)\n(4)(A) of the Bank Secrecy Act (BSA), 3 as amended by Section 6101(b)(2)(C) of the Anti-\nMoney Laundering Act of 2020 (the \u201c AML Act\u201d).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "As required by Section 5318(h)(4)(C) of the BSA, the Priorities are consistent with Treasury\u2019s 2018 and 2020 National Strategy for Combating Terrorist and Other Illicit Financing.",
+      "references": [
+        "31 U.S.C. \u00a7 5318(h)(4)(C)",
+        "National Strategy (2018, 2020)"
+      ],
+      "citations": [
+        {
+          "quote": "As required by Section 5318(h)(4)(C) of \nthe BSA, the Priorities are consistent with Treasury\u2019s 2018 and 2020 National Strategy for \nCombating Terrorist and Other Illicit Financing (the \u201cNational Strategy\u201d).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Requirement to update Priorities at least once every four years derives from the AML Act (31 U.S.C. \u00a7 5318(h)(4)(B) as amended).",
+      "references": [
+        "31 U.S.C. \u00a7 5318(h)(4)(B)",
+        "AML Act \u00a7 6101(b)(2)(C)"
+      ],
+      "citations": [
+        {
+          "quote": "31 U.S.C. \u00a7 5318(h)(4)(B) (as amended by AML Act \u00a7 6101(b)(2)(C)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Future regulations authority referenced under 31 U.S.C. \u00a7 5318(h)(4)(D) as amended by AML Act \u00a7 6101(b)(2)(C).",
+      "references": [
+        "31 U.S.C. \u00a7 5318(h)(4)(D)",
+        "AML Act \u00a7 6101(b)(2)(C)"
+      ],
+      "citations": [
+        {
+          "quote": "31 U.S.C. \u00a7 5318(h)(4)(D) as amended by AML Act \u00a7 6101(b)(2)(C).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reference to existing SAR filing obligations for potential terrorist financing transactions under 31 CFR \u00a7\u00a7 1020.320 (banks), 1022.320 (MSBs), 1023.320 (brokers or dealers in securities), and others.",
+      "references": [
+        "31 CFR \u00a7 1020.320",
+        "31 CFR \u00a7 1022.320",
+        "31 CFR \u00a7 1023.320"
+      ],
+      "citations": [
+        {
+          "quote": "Covered institutions are reminded of existing \nobligations to identify \nand file SARs on potential terrorist financing transactions, as appropriate, and follow \napplicable requirements for reporting violations requiring immediate attention.",
+          "verified": true
+        },
+        {
+          "quote": "See 31 CFR \u00a7\u00a7 1020.320 (banks); 1021.320 (casinos and card clubs); 1022.320 (money services businesses); \n1023.320 (brokers or dealers in securities)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reference to the information-sharing safe harbor under Section 314(b) of the USA PATRIOT Act and 31 CFR \u00a7 1010.540, offering protections from civil liability for sharing information among financial institutions.",
+      "references": [
+        "USA PATRIOT Act \u00a7 314(b)",
+        "31 CFR \u00a7 1010.540"
+      ],
+      "citations": [
+        {
+          "quote": "See USA PATRIOT Act of 2001, Pub. L. No. 107-56, \u00a7 314(b) (2001); 31 CFR \u00a7 1010.540",
+          "verified": true
+        },
+        {
+          "quote": "share such information with one another under a safe harbor \nprovision of the BSA that offers protections from civil liability",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Secretary of the Treasury authorized to administer the BSA; delegated to the Director of FinCEN per Treasury Order 180-01.",
+      "references": [
+        "Treasury Order 180\u201301 (January 14, 2020)"
+      ],
+      "citations": [
+        {
+          "quote": "The Secretary \nhas delegated to the Director of FinCEN the authority to implement, administer, and enforce compliance with \nthe BSA and associated regulations.  See Treasury Order 180\u201301 (January 14, 2020).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is FinCEN agency guidance (evidence role: agency_guidance), issued June 30, 2021, with no update as of July 2026 despite the AML Act's four-year update requirement (the pinned-date scope notes the priorities are >4 years old but unrefreshed \u2014 preserved as written, not reconciled). The document is largely narrative/descriptive (typologies, threat descriptions) rather than obligation-imposing; most operative duties are hortatory ('should') and expressly deferred to future regulations that 'will specify how financial institutions should incorporate these Priorities.' The 'must comply with sanctions programs' statements reference OFAC/sanctions, which are boundary regimes under the ratified scope; extracted as written because they appear as duties on covered institutions within the program-establishment context (risk-based AML programs), but flagged as boundary-adjacent. SAR filing references (31 CFR x.320) are coordination-layer per scope and recorded only as interactions, not as new obligations. The eight Priorities themselves are descriptive threat categories, not element-table duties, so are captured as objectives. Definitions in footnotes are given verbatim as the source presents them (some are cross-quotations of other statutes/assessments)."
+}

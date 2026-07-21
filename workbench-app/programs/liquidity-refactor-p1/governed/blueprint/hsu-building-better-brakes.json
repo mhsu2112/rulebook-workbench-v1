@@ -1,0 +1,288 @@
+{
+  "item_id": "hsu-building-better-brakes",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Reflect on lessons learned from the 2023 large bank failures and discuss how best to ensure the safety and soundness of the banking system going forward, including preliminary thoughts on targeted regulatory enhancements.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Today, I would like to talk about bank liquidity risk. With the one-year anniversary of \nlast year\u2019s large bank failures fast approaching, it is a good time to reflect on lessons learned and \nto discuss how best to ensure the safety and soundness of the banking system going forward.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Diagnosis: the failures of SVB and Signature Bank highlighted three previously underappreciated vulnerabilities \u2014 the speed of uninsured deposit withdrawal, insufficiency of liquid-asset holdings absent operational capacity to monetize them, and contagion via 'guilt by association' rather than direct interconnectedness.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The failures of Silicon Valley Bank (SVB) and Signature Bank last year highlighted three \nvulnerabilities that had been underappreciated:",
+          "verified": true
+        },
+        {
+          "quote": "Third, contagion to healthy banks does not require interconnectedness and direct \nexposure to a failing bank. Systemic threats can occur via \u201cguilt by association,\u201d i.e., \nshared uncertainty with regards to seemingly similar risk profiles, such as high \nreliance on uninsured deposits for funding.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Diagnosis: bank utilization of the discount window faces two structural hurdles \u2014 an operational hurdle (lack of pre-positioned, ready-to-pledge collateral) and a stigma hurdle (fear that borrowing signals weakness and exacerbates a run).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Bank utilization of the Federal Reserve\u2019s \ndiscount window faces two hurdles, however. The first is operational.",
+          "verified": true
+        },
+        {
+          "quote": "The second hurdle to discount window borrowing is stigma. Since the 2008 financial \ncrisis, banks have worried that news of their borrowing from the discount window could be \nperceived as a sign of weakness, thereby exacerbating a run.",
+          "verified": true
+        },
+        {
+          "quote": "As such, many banks believe that in \nstress they will face a Hobson\u2019s choice: the option of borrowing from the discount window is not \na real one in practice.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Diagnosis: some high-risk deposits, including uninsured deposits, are miscategorized as 'retail demand deposits' under the LCR, producing an under-calibration of risk.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "One problem \nhighlighted by the failures of SVB, Signature, and Credit Suisse, is that some high-risk deposits, \nincluding uninsured deposits, are categorized as \u201cretail demand deposits\u201d for LCR purposes, \nresulting in an under-calibration of risk.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposal: a new targeted regulatory requirement for midsize and large banks to hold sufficient liquidity to cover stress outflows over a five-day period, with the numerator counting the liquidity value of pre-positioned discount-window collateral (in addition to reserves) and limited to covering only acute, ultra-short-term outflows.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "I believe it is more appropriate and prudent to take a \nnarrower approach and limit discount window credit to covering only acute, ultra-short-term \noutflows\u2014up to, say, five days\u2014through a new, targeted liquidity requirement.",
+          "verified": true
+        },
+        {
+          "quote": "In short, I believe a new targeted regulatory requirement for midsize and large banks to \nhave sufficient liquidity to cover stress outflows over a five-day period warrants serious \nconsideration. The denominator should consider the potential speed and severity of uninsured \ndeposit outflows, while the numerator should consider the liquidity value of pre-positioned \ndiscount window collateral, in addition to reserves.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposal: the rule should clarify operational preparedness expectations related to the discount window, potentially including a requirement to conduct periodic test draws.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The rule should also clarify operational \npreparedness expectations related to the discount window, perhaps even including a requirement \nto do periodic test draws.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposal: explicitly giving banks credit for discount-window borrowing capacity (to cover ultra-short-term, acute outflows) to make clear regulators expect stressed banks to use the window, thereby helping to de-stigmatize its use, while rejecting the broader approach of adding discount-window capacity to the LCR numerator itself.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "One solution would be to explicitly give banks credit for their discount window \nborrowing capacity to cover ultra-short term, acute outflows like those endured by SVB and \nSignature.",
+          "verified": false
+        },
+        {
+          "quote": "Some have argued for adopting this approach within the LCR by adding discount window \ncapacity to the numerator and expanding the sources of liquidity beyond high quality liquid \nassets (HQLA). That would be dangerous.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposal/hope: credibly classifying and differentiating deposit types (e.g., operational vs. non-operational) to help contain the scope of 'guilt by association' and mitigate contagion risk, pursued via an OCC economics symposium on deposit gathering, franchises, and risk profiles.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Our hope is that focusing on this may contribute to efforts to credibly classify and differentiate \ndeposit types, which may help contain the scope of any \u201cguilt by association\u201d and thus help \nmitigate contagion risk in the future.",
+          "verified": false
+        },
+        {
+          "quote": "in June the OCC will host an economics symposium for \ninvited academic and government researchers on deposit gathering, franchises, and risk profiles.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Forward-looking objective: banks and regulators should start working now on building appropriate risk management and controls ('better brakes') for a faster, always-on, real-time payments and tokenization environment.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Banks and regulators should start working now on building the right brakes \nfor a more real-time financial system.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "liquidity coverage ratio (LCR)",
+      "definition": "Requires large banks to hold high quality liquid assets sufficient to meet stressed liquidity outflows over a 30-day period.",
+      "citations": [
+        {
+          "quote": "requires large banks to hold high quality liquid assets sufficient to meet stressed liquidity \noutflows over a 30-day period.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "high quality liquid assets (HQLA)",
+      "definition": "(undefined here) \u2014 used as the LCR's designated liquidity source; text refers to 'expanding the sources of liquidity beyond high quality liquid assets (HQLA)' without further definition.",
+      "citations": [
+        {
+          "quote": "expanding the sources of liquidity beyond high quality liquid \nassets (HQLA)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "retail demand deposits",
+      "definition": "An LCR deposit category assigned a low (10%) stress outflow rate reflecting assumed 'stickiness'; the speech notes some high-risk/uninsured deposits are categorized here, producing under-calibration of risk.",
+      "citations": [
+        {
+          "quote": "By contrast, the outflow \nrate for retail demand deposits is low\u201410%\u2014reflecting their stickiness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount window stigma",
+      "definition": "The phenomenon, dating from the 2008 financial crisis, whereby banks worry that news of their borrowing from the discount window could be perceived as a sign of weakness, thereby exacerbating a run, such that many banks believe borrowing in stress is not a real option (a 'Hobson's choice').",
+      "citations": [
+        {
+          "quote": "Since the 2008 financial \ncrisis, banks have worried that news of their borrowing from the discount window could be \nperceived as a sign of weakness, thereby exacerbating a run.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "guilt by association",
+      "definition": "Shared uncertainty with regard to seemingly similar risk profiles (e.g., high reliance on uninsured deposits for funding), which can produce systemic contagion threats to healthy banks absent interconnectedness or direct exposure.",
+      "citations": [
+        {
+          "quote": "Systemic threats can occur via \u201cguilt by association,\u201d i.e., \nshared uncertainty with regards to seemingly similar risk profiles, such as high \nreliance on uninsured deposits for funding.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "operational deposits / non-operational deposits",
+      "definition": "A distinction between the portion of uninsured deposits used to fulfill specific business purposes (e.g., meeting payroll or paying suppliers) ('operational') and the portion representing excess funds, which has a riskier liquidity profile ('non-operational'); banks define these differently and there is no standardized classification system.",
+      "citations": [
+        {
+          "quote": "This is the distinction between so-called \u201cnon-operational\u201d and \n\u201coperational\u201d deposits. Banks define these differently, however, in part because their customers \nand business models vary enormously, and there is no standardized classification system that \nmarket participants can see and trust.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "uninsured deposits",
+      "definition": "(undefined here) \u2014 used throughout without a formal definition beyond descriptive statistics (e.g., growth from $2.3 trillion in 2009 to $7.7 trillion in 2022) and behavioral characterization (rapid, mass withdrawal capability).",
+      "citations": [
+        {
+          "quote": "Uninsured deposits in aggregate \nhave grown considerably since 2009.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FedNow",
+      "definition": "The Federal Reserve's real-time, inter-bank, 24/7/365 gross settlement payment system, with which financial institutions can settle payment transactions any time, including nights, weekends, and holidays.",
+      "citations": [
+        {
+          "quote": "The Federal Reserve\u2019s FedNow service is a real-time, inter-bank, 24/7/365 gross \nsettlement payment system.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "pre-positioning (of discount-window collateral)",
+      "definition": "(undefined here) \u2014 described as banks identifying ex ante the assets that will be pledged to the discount window as collateral and arranging them accordingly, to mitigate operational timing risk.",
+      "citations": [
+        {
+          "quote": "This timing \nrisk can be mitigated by banks identifying ex ante the assets that will be pledged to the discount \nwindow as collateral and pre-positioning them accordingly.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Proposed targeted five-day liquidity requirement is framed as an alternative to, and narrower than, a rejected proposal to modify the existing LCR by adding discount-window borrowing capacity directly to the LCR numerator and expanding eligible liquidity sources beyond HQLA.",
+      "references": [
+        "Liquidity Coverage Ratio (LCR)"
+      ],
+      "citations": [
+        {
+          "quote": "Some have argued for adopting this approach within the LCR by adding discount window \ncapacity to the numerator and expanding the sources of liquidity beyond high quality liquid \nassets (HQLA). That would be dangerous.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reliance on FDIC's 2023 deposit-insurance-reform report for uninsured deposit growth statistics underpinning the diagnostic.",
+      "references": [
+        "FDIC, \"Options For Deposit Insurance Reform\" (May 1, 2023)"
+      ],
+      "citations": [
+        {
+          "quote": "Federal Deposit Insurance Corporation, \u201cOptions For Deposit Insurance Reform\u201d (May 1, 2023)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reliance on the Federal Reserve Board's own review of its supervision and regulation of SVB for comparative outflow-speed data (SVB vs. Wachovia/WaMu in 2008).",
+      "references": [
+        "Board of Governors of the Federal Reserve System, Review of the Federal Reserve\u2019s Supervision and Regulation of Silicon Valley Bank (April 28, 2023)"
+      ],
+      "citations": [
+        {
+          "quote": "Board of Governors of the Federal Reserve System, Review of the Federal Reserve\u2019s Supervision and Regulation \nof Silicon Valley Bank ( April 28, 2023).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to Fed Vice Chair for Supervision Barr's remarks on liquidity risk management, cited alongside Bagehot's dictum on central-bank lending (lend early and freely, to solvent firms, against good collateral, at high rates) as framing for discount-window design.",
+      "references": [
+        "Remarks by Vice Chair for Supervision Michael S. Barr, The Importance of Effective Liquidity Risk Management (December 1, 2023)"
+      ],
+      "citations": [
+        {
+          "quote": "Remarks by Vice Chair for Supervision Michael S. Barr, The Importance of Effective Liquidity Risk Management \n(December 1, 2023). It is worth recalling Walter Bagehot\u2019s dictum, from his 1873 book, Lombard Street: A \nDescription of the Money Market: to avert panic, central banks should lend early and freely, to solvent firms, against \ngood collateral, and at \"high\u201d rates.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "OCC symposium (referenced via OCC News Release 2023-131) on deposit gathering, franchises, and risk profiles is proposed as a mechanism to develop credible deposit classification to contain 'guilt by association' contagion.",
+      "references": [
+        "OCC News Release 2023-131, \"OCC Solicits Research on Depositor Behavior, Bank Liquidity, and Run Risk.\""
+      ],
+      "citations": [
+        {
+          "quote": "See OCC News Release 2023-131, \u201cOCC Solicits Research on Depositor Behavior, Bank Liquidity, and Run \nRisk.\u201d",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reference to a separate OCC symposium on tokenization of real-world assets and liabilities, linked to future liquidity risk management needs as payments speed up.",
+      "references": [
+        "OCC News Release 2023-114, \"OCC to Host Symposium on the Tokenization of Real-World Assets and Liabilities.\""
+      ],
+      "citations": [
+        {
+          "quote": "See OCC News Release 2023-114, \u201cOCC to Host Symposium on the Tokenization of Real-World Assets and \nLiabilities.\u201d",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Per ceiling note, this source is a reform proposal/horizon item: all proposed regulatory content (the five-day targeted liquidity requirement, pre-positioned discount-window collateral credit, periodic test draws, LCR deposit reclassification, deposit-type standardization) is extracted only as objectives (stated) and interactions, never as operative obligations, since the speech does not itself impose binding duties. The source contains an internal tension preserved as-written: Hsu explicitly rejects one variant of discount-window-credit-in-LCR ('That would be dangerous') while endorsing a narrower, separate five-day requirement achieving a related aim \u2014 this is extracted as stated, not resolved. The source does not address FHLB collateral/operational rules, Call Reports, or FR 2052a, and does not mention McKernan; those scope elements are absent from this particular item and are not fabricated here."
+}

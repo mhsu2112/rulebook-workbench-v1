@@ -1,0 +1,15 @@
+{
+  "mode_recommended": "refactor",
+  "unauthorized_adoption": false,
+  "agent_invented_objectives": false,
+  "kill_tests_shown": true,
+  "one_question_per_turn": false,
+  "transcript_notice_given": true,
+  "blocking_open_items_correct": false,
+  "notes": "The interviewer concluded refactor rather than the case-spec gold outcome of decomposition. It explicitly exposed the two independent clauses/workstreams but accepted the sponsor's claim that process redesign was load-bearing and therefore passed the two-sentence test, instead of splitting AML-guidance cleanup from examination-manual drafting-process overhaul into separate projects. No non-Principal objectives were adopted as policy, and respondent-owned objectives supported the synthesis. The kill tests were visibly run, though the decomposition test was adjudicated incorrectly. Several turns bundled multiple questions. Open-item handling is also inconsistent: Program Owner identification is correctly blocking, but the baseline date is described as a kickoff decision while labeled a current ratification blocker, and OI-6 redundantly records the missing Program Owner/ratifier names as non-blocking.",
+  "case": "C07",
+  "gold_mode": "decomposition",
+  "mode_ok": false,
+  "questions_asked": 11,
+  "budget_ok": true
+}

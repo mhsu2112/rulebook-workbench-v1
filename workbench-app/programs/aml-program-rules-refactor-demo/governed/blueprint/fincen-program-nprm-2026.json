@@ -1,0 +1,352 @@
+{
+  "item_id": "fincen-program-nprm-2026",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The proposed rule would require financial institutions to establish and maintain effective AML/CFT programs and define the requirements for doing so.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The proposed rule would require financial institutions to establish and maintain effective AML/CFT programs and define the requirements for doing so.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "A financial institution would be required to establish a risk-based set of internal policies, procedures, and controls reasonably designed to ensure compliance with the BSA and 31 CFR chapter X.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "a financial institution would be required to establish a risk-based set of internal policies, procedures, and controls that is reasonably designed to ensure compliance with the BSA and 31 CFR chapter X.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The risk-based policies/procedures/controls must be reasonably designed to identify/assess/document ML/TF risks via risk assessment processes (evaluating business-activity risks, incorporating AML/CFT Priorities, updating promptly on significant risk changes), to mitigate those risks consistent with the risk assessment, and, for certain financial institutions, to conduct ongoing customer due diligence.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The risk-based set of internal policies, procedures, and controls must also be reasonably designed to: (1) identify, assess, and document the financial institution's ML/TF risks through risk assessment processes that evaluate the risks of the institution's business activities, review and, as appropriate, incorporate the AML/CFT Priorities, and are updated promptly upon any change that the financial institution knows or has reason to know significantly changes the institution's ML/TF risks; (2) mitigate the financial institution's ML/TF risks, consistent with the financial institution's risk assessment processes; and, for certain financial institutions, (3) conduct ongoing customer due diligence.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "A financial institution would be required to establish an ongoing employee training program and independent AML/CFT program testing as part of its AML/CFT program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The proposed rule would also require a financial institution to establish an ongoing employee training program and independent AML/CFT program testing as part of its AML/CFT program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "A financial institution would be required to designate an individual responsible for establishing and implementing the AML/CFT program and coordinating/monitoring day-to-day compliance, who must be located in the U.S. and accessible to, and subject to oversight and supervision by, FinCEN and its designee, including the appropriate Federal functional regulator.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Finally, the proposed rule would require a financial institution to designate an individual responsible for establishing and implementing the AML/CFT program and coordinating and monitoring day-to-day compliance; that individual would be required to be located in the United States and accessible to, and subject to oversight and supervision by, FinCEN and its designee, including the appropriate Federal functional regulator.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1020.210(a) would provide that a bank has an effective AML/CFT program and complies with 31 U.S.C. 5318(h)(1) and the section if it establishes an AML/CFT program (paragraph (b)) and maintains it by implementing it (paragraph (c)).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A bank has an effective AML/CFT program and complies with the requirements of 31 U.S.C. 5318(h)(1) and this section if the bank: (1) Establishes an AML/CFT program in accordance with paragraph (b) of this section; and (2) Maintains an AML/CFT program by implementing the AML/CFT program in accordance with paragraph (c) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1020.210(b)(1)-(4) would set out bank program-establishment elements: risk-based policies/procedures/controls with risk assessment, mitigation, and ongoing CDD; independent program testing; a designated compliance individual (US-located, accessible to and supervised by FinCEN/designee); and an ongoing employee training program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Establishes a risk-based set of internal policies, procedures, and controls that is reasonably designed to ensure compliance with the Bank Secrecy Act and this chapter",
+          "verified": true
+        },
+        {
+          "quote": "Establishes independent AML/CFT program testing to be conducted by bank personnel or by an outside party;",
+          "verified": true
+        },
+        {
+          "quote": "Establishes an ongoing employee training program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1020.210(d) would require that a bank's AML/CFT program be written and approved by the bank's board of directors, an equivalent governing body, or appropriate senior management, and made available to FinCEN or its designee upon request.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A bank's AML/CFT program must be written, and it must be approved by the bank's board of directors, an equivalent governing body within the bank, or appropriate senior management. The bank must make a copy of its AML/CFT program available to FinCEN or its designee upon request.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1022.210(a) would provide that a money services business has an effective AML/CFT program and complies with 31 U.S.C. 5318(h) and the section if it establishes (paragraph (b)) and maintains (paragraph (c)) the program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A money services business has an effective AML/CFT program and complies with the requirements of 31 U.S.C. 5318(h) and this section if the money services business: (1) Establishes an AML/CFT program in accordance with paragraph (b) of this section; and (2) Maintains an AML/CFT program by implementing the AML/CFT program in accordance with paragraph (c) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1022.210(b) would, to the extent applicable, require MSBs to verify customer identification, file reports, create/retain records, and respond to law enforcement requests, and would set special agent-allocation and prepaid-access identification/retention rules.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Verify customer identification, including as set forth in paragraph (b)(1)(v) of this section;",
+          "verified": true
+        },
+        {
+          "quote": "choose by agreement to allocate between them responsibility for development of internal policies, procedures, and controls required by this paragraph (b)(1)",
+          "verified": true
+        },
+        {
+          "quote": "Providers of prepaid access must retain access to such identifying information for five years after the last use of the prepaid access device or vehicle; such information obtained by sellers of prepaid access must be retained for five years from the date of the sale of the prepaid access device or vehicle.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1023.210(a) would provide that a broker-dealer has an effective AML/CFT program and complies with 31 U.S.C. 5318(h)(1) and the section if it establishes (paragraph (b)) and maintains (paragraph (c)) the program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A broker-dealer has an effective AML/CFT program and complies with the requirements of 31 U.S.C. 5318(h)(1) and this section if the broker-dealer: (1) Establishes an AML/CFT program in accordance with paragraph (b) of this section; (2) Maintains an AML/CFT program by implementing the AML/CFT program in accordance with paragraph (c) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed Sec. 1023.210(e) would require that a broker-dealer's AML/CFT program comply with the rules, regulations, or requirements of its self-regulatory organization governing such programs, provided those SRO rules have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A broker-dealer AML/CFT program must comply with the rules, regulations, or requirements of its self-regulatory organization governing such programs; provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed 31 CFR 1020.221(b) would articulate a FinCEN enforcement/supervision policy under which a bank that has properly established an AML/CFT program would not be subject to an AML/CFT enforcement action or significant supervisory action based on the program rule by FinCEN or the Agencies (acting under delegated authority), except for significant or systemic failure to implement an effective program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "a bank that has properly established an AML/CFT program would not be subject to an AML/CFT enforcement action based on the program rule by FinCEN or to a significant AML/CFT supervisory action based on the program rule by FinCEN or by the Agencies, when acting under supervisory authority delegated by FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposed 31 CFR 1020.221(c) would establish a notice-and-consultation framework requiring the Agencies, before initiating a significant AML/CFT supervisory action, to give the Director an opportunity to review the action and consider input, with at least 30 days' advance written notice unless a shorter period is necessary in the Agencies' sole discretion.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Before initiating such an action, the Agencies would be required to provide the Director with an opportunity to review the action and consider any input offered by the Director, which may include any view as to the effectiveness of the bank's AML/CFT program.",
+          "verified": true
+        },
+        {
+          "quote": "the Agencies would be required to provide written notice to the Director of their intent to take the action at least 30 days in advance of the proposed action, unless a shorter period is necessary, in the sole discretion of the Agencies, to remedy, prevent, or respond to an unsafe or unsound practice or condition.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "financial institutions",
+      "definition": "For purposes of the AML program rules and this proposed rule: (1) banks; (2) casinos and card clubs (casinos); (3) money services businesses (MSBs); (4) brokers or dealers in securities (broker-dealers); (5) mutual funds; (6) insurance companies; (7) futures commission merchants (FCMs) and introducing brokers in commodities (IBCs); (8) dealers in precious metals, precious stones, or jewels (DPMSJs); (9) operators of credit card systems; (10) loan or finance companies; and (11) housing government sponsored enterprises (housing GSEs).",
+      "citations": [
+        {
+          "quote": "``financial institutions'' are: (1) banks; (2) casinos and card clubs (casinos); (3) money services businesses (MSBs); (4) brokers or dealers in securities (broker-dealers); (5) mutual funds; (6) insurance companies; (7) futures commission merchants (FCMs) and introducing brokers in commodities (IBCs); (8) dealers in precious metals, precious stones, or jewels (DPMSJs); (9) operators of credit card systems; (10) loan or finance companies; and (11) housing government sponsored enterprises (housing GSEs).",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "AML/CFT Priorities",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Review and, as appropriate, incorporate the AML/CFT priorities",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "the Agencies",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "a significant AML/CFT supervisory action based on the program rule by FinCEN or by the Agencies, when acting under supervisory authority delegated by FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "the Director",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Before initiating such an action, the Agencies would be required to provide the Director with an opportunity to review the action",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money laundering, terrorist financing, and other illicit finance activity risks (ML/TF risks)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "identify, assess, and document the bank's money laundering, terrorist financing, and other illicit finance activity risks through risk assessment processes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owners of legal entity customers",
+      "definition": "as defined in Sec. 1010.230 of this chapter (cross-reference only; full definition not given in this text)",
+      "citations": [
+        {
+          "quote": "including information regarding the beneficial owners of legal entity customers, as defined in Sec. 1010.230 of this chapter",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "prepaid access (provider/seller of)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "For a money services business that is a provider or seller of prepaid access, establish procedures to verify the identity of a person who obtains prepaid access under a prepaid program and obtain identifying information concerning such a person, including name, date of birth, address, and identification number.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "self-regulatory organization",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A broker-dealer AML/CFT program must comply with the rules, regulations, or requirements of its self-regulatory organization governing such programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "effective AML/CFT program",
+      "definition": "A financial institution has an effective AML/CFT program if it establishes an AML/CFT program (per the establishment paragraph) and maintains the program by implementing it, in all material respects, in accordance with the implementation paragraph.",
+      "citations": [
+        {
+          "quote": "In order for an AML/CFT program to be effective, the proposed rule would require a financial institution to establish an AML/CFT program and then maintain the AML/CFT program by implementing, in all material respects, the established AML/CFT program.",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Proposed bank, MSB, and broker-dealer program sections tie the AML/CFT program requirement to the statutory program mandate in 31 U.S.C. 5318(h), though the bank and broker-dealer sections cite '5318(h)(1)' while the MSB section cites '5318(h)' without the subparagraph.",
+      "references": [
+        "31 U.S.C. 5318(h)(1)",
+        "31 U.S.C. 5318(h)"
+      ],
+      "citations": [
+        {
+          "quote": "complies with the requirements of 31 U.S.C. 5318(h)(1) and this section if the bank",
+          "verified": true
+        },
+        {
+          "quote": "complies with the requirements of 31 U.S.C. 5318(h) and this section if the money services business",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Bank and broker-dealer risk-based policies/procedures/controls must be reasonably designed to ensure compliance with the Bank Secrecy Act and 31 CFR chapter X generally.",
+      "references": [
+        "Bank Secrecy Act",
+        "31 CFR chapter X"
+      ],
+      "citations": [
+        {
+          "quote": "Establishes a risk-based set of internal policies, procedures, and controls that is reasonably designed to ensure compliance with the Bank Secrecy Act and this chapter",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Bank and broker-dealer ongoing CDD provisions cross-reference the beneficial ownership definition for legal entity customers found in Sec. 1010.230 of the chapter.",
+      "references": [
+        "31 CFR 1010.230"
+      ],
+      "citations": [
+        {
+          "quote": "including information regarding the beneficial owners of legal entity customers, as defined in Sec. 1010.230 of this chapter",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "MSB agent-allocation provision cross-references Sec. 1022.380(a)(3) defining when a person is an MSB solely because it is an agent for another MSB.",
+      "references": [
+        "31 CFR 1022.380(a)(3)"
+      ],
+      "citations": [
+        {
+          "quote": "For a person that is a money services business solely because it is an agent for another money services business, as set forth in Sec. 1022.380(a)(3) and for the money services business for which it serves as agent, choose by agreement to allocate between them responsibility for development of internal policies, procedures, and controls required by this paragraph (b)(1).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Broker-dealer AML/CFT program requirement interacts with the FINRA/SEC SRO layer: the program must comply with SRO rules governing AML/CFT programs, but only those SRO rules made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator (SEC) in consultation with FinCEN.",
+      "references": [
+        "Securities Exchange Act of 1934"
+      ],
+      "citations": [
+        {
+          "quote": "provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Proposed 1020.221(b) links FinCEN's enforcement/supervision policy for banks to supervisory authority delegated by FinCEN to the (federal banking) Agencies, coordinating FinCEN and the Agencies' respective enforcement/supervisory roles under the program rule.",
+      "references": [
+        "31 CFR 1020.221(b)"
+      ],
+      "citations": [
+        {
+          "quote": "Proposed 31 CFR 1020.221(b) would articulate FinCEN's enforcement and supervision policy as it relates to AML/CFT requirements applicable to banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Proposed 1020.221(c) creates a notice-and-consultation interaction between the Agencies (acting under delegated supervisory authority) and the FinCEN Director before significant AML/CFT supervisory actions are initiated.",
+      "references": [
+        "31 CFR 1020.221(c)"
+      ],
+      "citations": [
+        {
+          "quote": "Proposed 31 CFR 1020.221(c) would establish a notice and consultation framework applicable when the Agencies, acting under supervisory authority delegated by FinCEN, intend to initiate a significant AML/CFT supervisory action.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source (fincen-program-nprm-2026) is a horizon/proposal item per the CEILING NOTE: its 'would require'/'proposed' content is extracted only as stated objectives and interactions, never as operative obligations; the obligations array is intentionally empty for this item. Casino program-rule content (Sec. 1021.210) is textually present in the source but excluded from extraction because casinos fall within the ratified scope's 'other covered sectors' boundary regime, not the banks/MSB/broker-dealer program-rule scope. Fidelity note: the source is internally inconsistent as written -- the bank and broker-dealer sections cite '31 U.S.C. 5318(h)(1)' while the MSB section cites '31 U.S.C. 5318(h)' (no subparagraph); the MSB program-approval provision (Sec. 1022.210(d)) refers to approval by 'the money services business's board of directors, an equivalent governing body within the bank' (referencing 'the bank' rather than the money services business) -- both preserved as written per the fidelity rule without correction. The bank/broker-dealer risk-based-policy provisions include ongoing CDD as a mandatory element of program establishment, whereas the MSB provision frames verification/reporting/recordkeeping/law-enforcement-response duties as applicable only 'to the extent applicable to the money services business,' a difference preserved as written."
+}

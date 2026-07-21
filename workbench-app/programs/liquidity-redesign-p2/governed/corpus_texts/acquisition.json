@@ -1,0 +1,208 @@
+{
+  "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+  "snapshot_date": "2026-07-18",
+  "items": {
+    "12-usc-347b": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section347b&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:48:13.459751+00:00",
+      "raw_sha256": "sha256:494ebc54dcad89962c641406f6bd94b3cc2297a93592c07a68feba667b747c65",
+      "raw_bytes": 178818,
+      "text_chars": 12699,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-usc-343": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section343&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:48:13.537057+00:00",
+      "raw_sha256": "sha256:6b81a7b836a36adc4cba17167989fc94f8b8a275ef44c082ee122839d822b442",
+      "raw_bytes": 180312,
+      "text_chars": 15020,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-usc-1430": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section1430&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:48:13.635804+00:00",
+      "raw_sha256": "sha256:27bde6fb67408ded1a6a6275aac6902df916dad5a3968534dec669c6225182a5",
+      "raw_bytes": 221840,
+      "text_chars": 40322,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "dodd-frank-1101-1103": {
+      "status": "fetched",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+      "fetched_at": "2026-07-19T12:48:16.111018+00:00",
+      "raw_sha256": "sha256:8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+      "raw_bytes": 2257890,
+      "text_chars": 2618651,
+      "raw_ext": "pdf",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "warner-kennedy-dw-modernization": {
+      "status": "fetched",
+      "source_url": "https://www.warner.senate.gov/newsroom/press-releases/warner-kennedy-introduce-bipartisan-legislation-to-modernize-federal-reserve-discount-window/",
+      "fetched_at": "2026-07-19T12:48:17.206214+00:00",
+      "raw_sha256": "sha256:b07f52c28d1bb60cc8ffc5d7d7a79c5838d13b09636a68cbfae5d0e0480a2f2e",
+      "raw_bytes": 310232,
+      "text_chars": 11785,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-cfr-201-reg-a": {
+      "status": "fetched",
+      "text_chars": 62080,
+      "note": "register entry restored 2026-07-19 after retry-sweep clobber; text unchanged",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18",
+      "source_url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-201",
+      "raw_sha256": "sha256:f4907ad6403d47a5cc4628492b16bd474e0333c18b8ea3bf73a2c25db4fb91fe"
+    },
+    "fr-2052a": {
+      "status": "fetched",
+      "source_url": "https://www.federalreserve.gov/apps/reportingforms/Report/Index/FR_2052a",
+      "fetched_at": "2026-07-19T12:48:17.727686+00:00",
+      "raw_sha256": "sha256:43a25f20462c95e78d62480f1c2e9cb58f73f5f0edea5f1007e58cbd21d0ff69",
+      "raw_bytes": 87018,
+      "text_chars": 8354,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-call-report": {
+      "status": "browser_assisted",
+      "text_chars": 1573,
+      "note": "register entry restored 2026-07-19 after retry-sweep clobber; text unchanged",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18",
+      "method": "browser_assisted"
+    },
+    "sr-10-6-liquidity-policy": {
+      "status": "fetched",
+      "source_url": "https://www.federalreserve.gov/boarddocs/srletters/2010/sr1006.htm",
+      "fetched_at": "2026-07-19T12:48:17.885855+00:00",
+      "raw_sha256": "sha256:bb1f982ce028a56df1ed4106908288c7c5a32fea659e735933bc91fdac5f6891",
+      "raw_bytes": 23862,
+      "text_chars": 11374,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "cfp-addendum-2023": {
+      "status": "fetched",
+      "source_url": "https://www.occ.gov/news-issuances/news-releases/2023/nr-ia-2023-82a.pdf",
+      "fetched_at": "2026-07-19T12:48:18.148582+00:00",
+      "raw_sha256": "sha256:ea7f5ed81c76dcd7f3406ed501a1b616a4a930394e804aaf994b97bd54db9f52",
+      "raw_bytes": 140363,
+      "text_chars": 6489,
+      "raw_ext": "pdf",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "occ-bulletin-2023-25": {
+      "status": "fetched",
+      "source_url": "https://www.occ.gov/news-issuances/bulletins/2023/bulletin-2023-25.html",
+      "fetched_at": "2026-07-19T12:48:18.174612+00:00",
+      "raw_sha256": "sha256:be290d438acc3421bf07d3ac592e764bd5e71b666f85678b373c8ba1fb5c7f69",
+      "raw_bytes": 60137,
+      "text_chars": 4095,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "fdic-fil-23-039": {
+      "status": "fetched",
+      "source_url": "https://www.fdic.gov/news/financial-institution-letters/2023/fil23039.html",
+      "fetched_at": "2026-07-19T12:48:18.785303+00:00",
+      "raw_sha256": "sha256:193b11b0f610e176f27731e99137b6b28e076aa0adb25aeac14a9fd5fdafb41c",
+      "raw_bytes": 68460,
+      "text_chars": 3515,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "frb-operating-circulars": {
+      "status": "fetched",
+      "source_url": "https://www.frbservices.org/resources/rules-regulations/operating-circulars.html",
+      "fetched_at": "2026-07-19T12:48:19.030765+00:00",
+      "raw_sha256": "sha256:83ebaa8c9933f860cbf499bb04b40c2b38b6ca963972eb9573140b7e72cd4ca3",
+      "raw_bytes": 110077,
+      "text_chars": 15500,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "frbdw-discount-window": {
+      "status": "fetched",
+      "source_url": "https://www.frbdiscountwindow.org/pages/general-information/the-discount-window",
+      "fetched_at": "2026-07-19T12:48:19.464249+00:00",
+      "raw_sha256": "sha256:785f30011dfecbd2212c82bfbd82f9998c110fda7feffd27ae2b8b5a21b9d8f5",
+      "raw_bytes": 49652,
+      "text_chars": 9472,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "frbdw-collateral": {
+      "status": "fetched",
+      "source_url": "https://www.frbdiscountwindow.org/pages/collateral/collateral_valuation",
+      "fetched_at": "2026-07-19T12:48:19.643059+00:00",
+      "raw_sha256": "sha256:aa64d62efe80a1d2d54260989c08071ab099e1875d15701d736f9ffd98444745",
+      "raw_bytes": 265092,
+      "text_chars": 32590,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "fhfa-system-at-100": {
+      "status": "fetched",
+      "text_chars": 305648,
+      "note": "register entry restored 2026-07-19 after retry-sweep clobber; text unchanged",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18",
+      "source_url": "https://www.fhfa.gov/AboutUs/Reports/ReportDocuments/FHLBank-System-at-100-Report.pdf",
+      "raw_sha256": "sha256:08614eba9fcdf213810c0926b37257a7af31786e5c1f0f39f5ba51974973b6c7"
+    },
+    "hsu-building-better-brakes": {
+      "status": "fetched",
+      "source_url": "https://www.occ.gov/news-issuances/speeches/2024/pub-speech-2024-4.pdf",
+      "fetched_at": "2026-07-19T12:48:20.171497+00:00",
+      "raw_sha256": "sha256:9cdb9ae44637e19fe1da3102b3b6763c79f507959788ec4ce67ce94c6d545500",
+      "raw_bytes": 234683,
+      "text_chars": 17439,
+      "raw_ext": "pdf",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "mckernan-reset-liquidity": {
+      "status": "fetched",
+      "source_url": "https://home.treasury.gov/news/press-releases/sb0412",
+      "fetched_at": "2026-07-19T12:48:20.366049+00:00",
+      "raw_sha256": "sha256:ceef694b89c330053ed9da5840ed62051e639a26d2862d21295a1d9756440ce9",
+      "raw_bytes": 134839,
+      "text_chars": 15862,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-cfr-1266-advances": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-12.xml?part=1266",
+      "fetched_at": "2026-07-20T00:55:47.705762+00:00",
+      "raw_sha256": "sha256:def4f2ef5f964de8e96e90e3edfc81b1b0dbdd9262c21c392b4c7a69e4b7a64f",
+      "raw_bytes": 47890,
+      "text_chars": 41605,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+      "snapshot_date": "2026-07-18"
+    }
+  }
+}

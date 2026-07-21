@@ -1,0 +1,103 @@
+1 
+ 
+ 
+Addendum to the Interagency Policy Statement on Funding and Liquidity Risk Management: 
+Importance of Contingency Funding Plans 
+  
+Depository institutions should maintain actionable contingency funding plans that consider a 
+range of possible stress scenarios.1  The events of the first half of 2023 have further underscored 
+the importance of liquidity risk management and contingency funding planning.  As seen in these 
+events, the level and speed of deposit outflows at a few firms was unprecedented and contributed 
+to acute liquidity and funding strain at those institutions.  These events are a reminder to 
+depository institutions that depositor behavior and broader market conditions may evolve over 
+time, and sometimes without warning.  
+ 
+  
+Depository institutions should assess the stability of their funding and maintain a broad range of 
+funding sources that can be accessed in adverse circumstances.  In addition, depository 
+institutions should be aware of the operational steps required to obtain funding from contingency 
+funding sources, including potential counterparties, contact details, and availability of 
+collateral.  As part of operational readiness, depository institutions should regularly test any 
+contingency borrowing lines to ensure the institution’s staff are well versed in how to access 
+them and that they function as envisioned.  In particular, depository institutions should engage in 
+planning that recognizes the operational challenges involved in moving and posting collateral to 
+access critical funding in a timely fashion.  Such planning may require initial or renewed contact 
+with entities such as the Federal Reserve System and the Federal Home Loan Bank System.
+ 
+ 
+Depository institutions’ contingency funding plans should recognize that during times of stress, 
+contingency lines may become unavailable.  For example, repo lines may become unavailable to 
+a bank or credit union borrower either due to concerns of the repo lender about the 
+creditworthiness of the bank or credit union or due to the repo lender needing to conserve 
+liquidity more generally.  Depository institution contingency funding plans should take this 
+dynamic into account and include a range of contingency funding sources.
+ 
+ 
+Depository institutions should review and revise contingency funding plans periodically and 
+more frequently as market conditions and strategic initiatives change in order to address evolving 
+liquidity risks.  For example, an institution that increases the share of its liabilities comprised of 
+less stable funding should consider whether it needs to increase its capacity to borrow from 
+contingency funding sources.
+ 
+ 
+The agencies view having access to a range of reliable contingency funding sources as a key 
+component of safety and soundness.
+2  
+ 
+ 
+1 See Interagency Policy Statement on Funding and Liquidity Risk Management, Federal Reserve SR 10- 6 (March 
+17, 2010), FDIC FIL-13-2010 (April 10, 2010), and OCC Bulletin 2010-13 (March 22, 2010).  These individual 
+agency issuances released the 2010 Interagency Policy Statement on Funding and Liquidity Risk Management, 
+which can be accessed here:  https://www.govinfo.gov/content/pkg/FR-2010-03-22/pdf/2010-6137.pdf. 
+ 
+2 Depository institutions should be aware that establishing contingency funding arrangements may take time.  For 
+example, the Interagency Policy Statement on Funding and Liquidity Risk Management noted that it is important to 
+consider time constraints associated with initially establishing lines with the  appropriate Federal Reserve Bank 
+and/or the appropriate Federal Home Loan Bank. See id. 
+
+ 
+ 
+2 
+ 
+ 
+ Contingency Funding and the Federal Reserve Discount Window 
+  
+In an environment where liquidity stress manifests quickly, the discount window is an important 
+tool that depository institutions can utilize in managing liquidity risk, and the agencies encourage 
+depository institutions to incorporate the discount window as part of their contingency funding 
+arrangements. 
+ 
+ 
+If the discount window is a part of a depository institution’s contingency funding plans, the 
+depository institution should establish and maintain operational readiness to borrow from the 
+discount window. Operational readiness includes establishing borrowing arrangements and 
+ensuring collateral is available for borrowing in an amount appropriate for a depository 
+institution’s potential contingency funding needs. Depository institutions should ensure they are 
+familiar with the pledging process for different collateral types and be aware that pre-pledging 
+collateral can be useful if liquidity needs arise quickly. Depository institutions that include the 
+discount window as part of their contingency funding plan should also consider conducting small 
+value transactions at regular intervals to ensure familiarity with discount window operations.  
+ 
+  
+Information regarding the discount window is available at FRBdiscountwindow.org. 
+ 
+Credit Union Contingency Funding and the Central Liquidity Facility 
+ 
+Federal and state-chartered credit unions can access the Central Liquidity Facility as a contingent 
+federal liquidity source.  The Central Liquidity Facility exists to provide federally sourced 
+backup liquidity where a credit union’s liquidity and market funding sources prove inadequate.  
+ 
+Section 741.12 of NCUA’s regulations outlines requirements for federally insured credit unions 
+to have liquidity and contingency funding plans.  The scope of these plans varies by credit union 
+size.  Credit unions with assets greater than $250 million must, among other things, establish and 
+document access to at least one contingent federal liquidity source.  Credit unions subject to this 
+requirement may demonstrate access to a contingent federal liquidity source by maintaining 
+membership in the Central Liquidity Facility or establishing borrowing access at the Federal 
+Reserve discount window.  Credit unions between $50 million and $250 million in total assets 
+must, among other things, include in required policies, identification of contingent liquidity 
+sources.  Credit unions under $50 million must maintain a basic written policy that provides a 
+framework for managing liquidity and includes a list of contingent liquidity sources that can be 
+employed under adverse circumstances. 
+ 
+Information regarding the Central Liquidity Facility is available at NCUA.gov/support-
+services/central-liquidity-facility.

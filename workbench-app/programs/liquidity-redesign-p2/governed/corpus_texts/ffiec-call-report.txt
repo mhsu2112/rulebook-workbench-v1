@@ -1,0 +1,17 @@
+FFIEC Reporting Forms — Call Report Forms (index)
+[Acquired via browser-assisted rendering, 2026-07-19; source: https://www.ffiec.gov/ffiec_report_forms.htm -> redirects to https://www.ffiec.gov/resources/reporting-forms]
+[Scope note per manifest: in scope ONLY for the timing/granularity-vs-fast-runs connection. The Call Report is filed QUARTERLY, as of each calendar quarter-end — the cadence datum the diagnostic cites. Schedules are cited, not distilled.]
+
+Call Report Forms
+FFIEC 031 — Consolidated Reports of Condition and Income for a Bank with Domestic and Foreign Offices (Current forms, instructions and FRNs; historical versions; supplemental)
+FFIEC 041 — Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only — replaces FFIEC 032, FFIEC 033, FFIEC 034 (Current; historical; supplemental)
+FFIEC 051 — Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only and Total Assets Less than $5 Billion (Current; historical; supplemental)
+
+Related reporting forms on the same index:
+FFIEC 002 — Report of Assets and Liabilities of U.S. Branches and Agencies of Foreign Banks
+FFIEC 002S — Report of Assets and Liabilities of a Non-U.S. Branch Managed or Controlled by a U.S. Branch or Agency of a Foreign Bank
+FFIEC 009 / 009A — Country Exposure Reports
+FFIEC 019 — Country Exposure Report for U.S. Branches and Agencies of Foreign Banks
+FFIEC 030 / 030S — Foreign Branch Reports of Condition
+FFIEC 101 — Regulatory Capital Reporting (Advanced Capital Adequacy Framework)
+FFIEC 102 — Market Risk Regulatory Report

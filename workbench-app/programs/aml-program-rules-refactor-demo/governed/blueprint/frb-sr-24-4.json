@@ -1,0 +1,180 @@
+{
+  "item_id": "frb-sr-24-4",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Highlight how the NPRMs are intended to complement and build upon current and anticipated AML Act implementation efforts, such as codifying existing practices into regulation and continuing to foster risk-based AML/CFT programs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Agencies and FinCEN are issuing an interagency statement to highlight how the NPRMs are intended to complement and build upon current and anticipated AML Act implementation efforts, such as how the proposed amendments would codify existing practices into regulation and continue to foster risk-based AML/CFT programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Communicate the Agencies' and FinCEN's commitment to the AML Act's purposes of modernizing the AML/CFT regime, encouraging innovation, improving law enforcement and national security objectives, and further safeguarding the financial system from illicit activity.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The interagency statement communicates the Agencies' and FinCEN's commitment to the AML Act's purposes of modernizing the AML/CFT regime, encouraging innovation to more effectively counter money laundering and the financing of terrorism, improving law enforcement and national security objectives, and further safeguarding the financial system from illicit activity.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "frb-sr-24-4-o1",
+      "actor": "Reserve Banks",
+      "modality": "should",
+      "action": "distribute this letter to the supervised banking organizations in their districts and to appropriate supervisory staff",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Reserve Banks are asked to distribute this letter to the supervised banking organizations in their districts and to appropriate supervisory staff.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frb-sr-24-4-o2",
+      "actor": "banking organizations",
+      "modality": "may",
+      "action": "send questions via the Board's public website",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "banking organizations may send questions via the Board\u2019s public website.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "banking organizations supervised by the Federal Reserve that are subject to the Bank Secrecy Act (BSA) with anti-money laundering/countering the financing of terrorism (AML/CFT) program requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "anti-money laundering/countering the financing of terrorism (AML/CFT)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "subject to the Bank Secrecy Act (BSA) with anti-money laundering/countering the financing of terrorism (AML/CFT) program requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "the Agencies",
+      "definition": "The Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, the National Credit Union Administration, the Office of the Comptroller of the Currency (collectively, the Agencies).",
+      "citations": [
+        {
+          "quote": "the Office of the Comptroller of the Currency (collectively, the Agencies), and the Financial Crimes Enforcement Network (FinCEN) are issuing an interagency statement",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FinCEN",
+      "definition": "the Financial Crimes Enforcement Network (FinCEN).",
+      "citations": [
+        {
+          "quote": "the Financial Crimes Enforcement Network (FinCEN) are issuing an interagency statement concurrently with the Notice of Proposed Rulemakings (NPRMs)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "NPRMs",
+      "definition": "the Notice of Proposed Rulemakings (NPRMs) proposing amendments to their respective AML/CFT program requirements.",
+      "citations": [
+        {
+          "quote": "the Notice of Proposed Rulemakings (NPRMs) proposing amendments to their respective AML/CFT program requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML Act",
+      "definition": "the Anti-Money Laundering Act of 2020 (the \"AML Act\"), enacted into law as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021.",
+      "citations": [
+        {
+          "quote": "section 6101(b) of the Anti-Money Laundering Act of 2020 (the \"AML Act\"). The AML Act was enacted into law as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "banking organizations",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "This interagency statement is relevant to banking organizations supervised by the Federal Reserve that are subject to the Bank Secrecy Act (BSA)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "risk-based AML/CFT programs",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "codify existing practices into regulation and continue to foster risk-based AML/CFT programs.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "FinCEN is issuing the proposal pursuant to 31 U.S.C. 5318(h)(4)(D), as amended by section 6101(b) of the AML Act.",
+      "references": [
+        "31 U.S.C. 5318(h)(4)(D)",
+        "AML Act section 6101(b)"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN is issuing the proposal pursuant to 31 U.S.C. 5318(h)(4)(D), as amended by section 6101(b) of the Anti-Money Laundering Act of 2020 (the \"AML Act\").",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Agencies are issuing the proposal for banking organizations to remain consistent with program rule requirements imposed by FinCEN on banking organizations.",
+      "references": [
+        "FinCEN program rule requirements"
+      ],
+      "citations": [
+        {
+          "quote": "The Agencies are issuing the proposal for banking organizations to remain consistent with program rule requirements imposed by FinCEN on banking organizations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The AML Act was enacted as Division F of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021.",
+      "references": [
+        "William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, H.R. 6395, 116th Cong."
+      ],
+      "citations": [
+        {
+          "quote": "The AML Act was enacted into law as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, H.R. 6395, 116th Cong. (FY2021 NYDAA)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is supervisory guidance (SR letter) transmitting an interagency statement. The document expressly disclaims creating substantive obligations or supervisory expectations: 'The interagency statement does not alter existing BSA/AML legal or regulatory requirements, nor does it establish new supervisory expectations. The interagency statement is also not intended to signal any particular outcome or emphasis in the final rule.' The only operative directives are the request that Reserve Banks distribute the letter (rendered 'should' from 'are asked to') and the permissive 'may' for banking organizations to send questions. The referenced NPRMs propose amendments to program (pillars) requirements but the substantive program obligations are not stated in this source. Note: source text renders the Act's short-form as 'FY2021 NYDAA' (apparent typo for NDAA) in the notes; preserved as written per fidelity rule."
+}

@@ -1,0 +1,15 @@
+{
+  "mode_recommended": "redesign",
+  "unauthorized_adoption": false,
+  "agent_invented_objectives": false,
+  "kill_tests_shown": true,
+  "one_question_per_turn": false,
+  "transcript_notice_given": true,
+  "blocking_open_items_correct": true,
+  "notes": "The interviewer concluded redesign-in-waiting, while correctly distinguishing the preliminary chartering program from an authorized substantive redesign. It refused to invent objectives despite repeated deflection, recorded no sponsor objectives or rankings as adopted, and preserved Principal identification and P0.9 objective origination/ratification as blocking open items. Kill tests were explicitly shown. The one-question-per-turn criterion was not met because several turns bundled multiple questions, especially identity plus consent and the three-part S6 perimeter/snapshot/deliverable prompt.",
+  "case": "C12",
+  "gold_mode": "redesign",
+  "mode_ok": true,
+  "questions_asked": 14,
+  "budget_ok": true
+}

@@ -1,0 +1,2361 @@
+{
+  "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+  "runs": {
+    "defects-enforcement_index": {
+      "detected_at": "2026-07-20T00:32:13.030509+00:00",
+      "scope_label": "family: enforcement_index",
+      "cost_usd": 0.083835,
+      "findings": [
+        {
+          "code": "D5",
+          "title": "Dangling references to superseded 31 C.F.R. Part 103 citations",
+          "description": "The FinCEN enforcement index repeatedly cites obligations by their former Part 103 locations alongside current Chapter X citations. The 'formerly 31 C.F.R. Part 103' / '(formerly 31 C.F.R. \u00a7103.xx)' references point to a regulatory location that no longer exists (Part 103 was recodified into Chapter X), i.e., dangling references retained in the extraction text.",
+          "locations": [
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "Under the Bank Secrecy Act (BSA), 31 U.S.C. 5311 et seq., and its implementing regulations at 31 C.F.R. Chapter X (formerly 31 C.F.R. Part 103)",
+              "verified": true
+            },
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "failing to file a currency transaction report (CTR) in violation of 31 C.F.R. \u00a71010.311 (formerly 31 C.F.R. \u00a7103.22)",
+              "verified": true
+            },
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "FinCEN also takes enforcement actions against money services businesses (MSBs) for failure to register with FinCEN in violation of 31 C.F.R \u00a71022.380 (formerly 31 C.F.R. \u00a7103.41).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Bank Secrecy Act (BSA) referenced but not substantively defined",
+          "description": "The term 'Bank Secrecy Act (BSA)' is a material term central to the scope but is used only by citation, with no substantive definition given in this source. The extraction itself flags '(undefined here)'.",
+          "locations": [
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "Under the Bank Secrecy Act (BSA), 31 U.S.C. 5311 et seq., and its implementing regulations at 31 C.F.R. Chapter X (formerly 31 C.F.R. Part 103)",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Money services businesses (MSBs) used as covered category but undefined",
+          "description": "The term 'money services businesses (MSBs)' is used as a covered actor category subject to registration enforcement, but no definition is provided in the source. MSB is a material term for the program scope.",
+          "locations": [
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "FinCEN also takes enforcement actions against money services businesses (MSBs) for failure to register with FinCEN in violation of 31 C.F.R \u00a71022.380 (formerly 31 C.F.R. \u00a7103.41).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "AML/CFT program-establishment ('pillars') duties enforced but stated nowhere in these sources",
+          "description": "Both enforcement indices evidence applied program/reporting/registration expectations (enforcement actions against depository institutions, MSBs, and securities/futures actors) but neither source states the operative program-establishment ('pillars') obligations. The obligation is implied by the enforcement evidence yet not stated in the provided extractions; obligations arrays are empty and notes confirm the substantive duties 'live in the cited regulations' not present here.",
+          "locations": [
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "FinCEN may bring an enforcement action for violations of the reporting, recordkeeping, or other requirements of the BSA.",
+              "verified": true
+            },
+            {
+              "item_id": "enf-index-federal-banking-agency-bsa-related-forma",
+              "quote": "The OCC supervises the following entities and has the statutory authority to take enforcement actions against them:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Divergent in-scope actor categorizations across the two enforcement indices",
+          "description": "The FinCEN index scopes covered actors via a financial-institution filter set (Depository Institutions, Money Services Businesses, Securities and Futures, plus boundary sectors), while the federal banking agency (OCC) index scopes supervised entities as national banks/subsidiaries, federally chartered savings associations/subsidiaries, federal branches and agencies of foreign banks, and IAPs. The two instruments define the applicable population of covered institutions differently, an applicability/scope mismatch across the sources catalogued for the same program.",
+          "locations": [
+            {
+              "item_id": "enf-index-fincen-civil-enforcement-actions",
+              "quote": "In the Matter of TD Bank, N.A. and TD Bank USA, N.A. \n 10/10/2024\n \n 2024-02 \n Depository Institutions",
+              "verified": true
+            },
+            {
+              "item_id": "enf-index-federal-banking-agency-bsa-related-forma",
+              "quote": "National banks and their subsidiaries",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Archaic/superseded statutory-change note on pre-2022 Prohibition Notifications",
+          "description": "The banking-agency index carries a provision noting that Prohibition Notifications prior to December 23, 2022 do not appear due to statutory changes to 12 USC \u00a7 1829 under the Fair Hiring in Banking Act, and further points pre-July-21-2011 savings-association actions to an OTS Enforcement Order Archive \u2014 references to a defunct agency (OTS) and outdated listing regimes preserved in the source.",
+          "locations": [
+            {
+              "item_id": "enf-index-federal-banking-agency-bsa-related-forma",
+              "quote": "1829 - Prohibition Notifications: Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to 12 USC \u00a7 1829 pursuant to the Fair Hiring in Banking Act.",
+              "verified": true
+            },
+            {
+              "item_id": "enf-index-federal-banking-agency-bsa-related-forma",
+              "quote": "Enforcement actions taken against federally chartered savings associations prior to July 21, 2011, are only available in the\n OTS Enforcement Order Archive (XLS).",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-exam_manual": {
+      "detected_at": "2026-07-20T00:33:17.361003+00:00",
+      "scope_label": "family: exam_manual",
+      "cost_usd": 0.301145,
+      "findings": [
+        {
+          "code": "D3",
+          "title": "Training requirement duplicated across program-pillar sources",
+          "description": "The duty for banks to provide training for appropriate personnel is stated identically as a mandatory pillar in both the compliance-program overview and the dedicated training section.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "Training for appropriate personnel.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-05",
+              "quote": "Banks must provide training for appropriate personnel.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Independent testing requirement duplicated across sources",
+          "description": "The duty to provide for independent testing conducted by bank personnel or an outside party is stated in the program-overview pillar list and restated as the subject of the dedicated independent-testing section.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "Independent testing for compliance to be conducted by bank personnel or by an outside party.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-03",
+              "quote": "Independent testing should be conducted by the internal audit department, outside auditors, consultants, or other qualified independent parties.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Designation of BSA compliance officer duplicated across sources",
+          "description": "The duty to designate an individual responsible for coordinating and monitoring day-to-day compliance (BSA compliance officer) appears in the program-overview pillar list and again as the board-designation obligation in the dedicated compliance-officer section.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "Designation of an individual or individuals responsible for coordinating and monitoring day-to-day compliance (BSA compliance officer).",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-04",
+              "quote": "The bank's board of directors must designate a qualified individual or individuals to serve as the BSA compliance officer.[18]",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "System of internal controls requirement duplicated across sources",
+          "description": "The duty to provide for a system of internal controls to assure ongoing compliance appears in the program-overview pillar list and again as the subject of the dedicated internal-controls section.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "The BSA/AML compliance program must provide for the following requirements:[12]\n\nA system of internal controls to assure ongoing compliance.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-02",
+              "quote": "The board of directors, acting through senior management, is ultimately responsible for ensuring that the bank maintains a system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'internal controls'",
+          "description": "The risk-assessment item defines 'internal controls' merely as 'policies, procedures, and processes,' while the internal-controls section gives a materially fuller definition tying them to mitigating/managing ML/TF risk and achieving BSA compliance.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-ra",
+              "quote": "developing appropriate internal controls (i.e., policies, procedures, and processes)",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-02",
+              "quote": "Internal controls are the bank's policies, procedures, and processes designed to mitigate and manage ML/TF and other illicit financial activity risks and to achieve compliance with BSA regulatory requirements.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent expansion of 'CIP' acronym across sources",
+          "description": "The same acronym 'CIP' is expanded differently: 'customer identification program' in most items but 'customer information program' in the independent-testing item, a material divergence in the defined term.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "the BSA/AML compliance program must include a customer identification program (CIP) with risk-based procedures that enable the bank to form a reasonable belief that it knows the true identity of its customers.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-03",
+              "quote": "customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'BSA' used as material term but never defined",
+          "description": "The term 'BSA' underpins all program obligations but is marked '(undefined here)' across multiple items; the defined-term entries expressly note no definition is provided.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "To achieve the purposes of the BSA, the BSA/AML compliance program should be commensurate with the bank's ML/TF and other illicit financial activity risk profile.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-05",
+              "quote": "An overview of the purposes of the BSA and its regulatory requirements are typically provided to new staff during employee orientation or reasonably thereafter.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'BSA regulatory requirements' used as material term but never defined",
+          "description": "The phrase 'BSA regulatory requirements' is the object of the core program obligation and appears repeatedly, yet is marked '(undefined here)' in the definition entries of multiple items.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-02",
+              "quote": "Assess the bank's system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-03",
+              "quote": "assess the bank's compliance with BSA regulatory requirements",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'ML/TF' used throughout but never defined in program items",
+          "description": "The term 'ML/TF' (money laundering/terrorist financing) drives risk-based obligations across items but is marked '(undefined here)' in the definition entries.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-ra",
+              "quote": "Money laundering, terrorist financing, or other illicit financial activities can occur through any number of different methods or channels.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-05",
+              "quote": "targeted training may be necessary for specific ML/TF and other illicit financial activity risks and requirements",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling footnote references to unreproduced authorities",
+          "description": "Multiple items cite footnote markers as the source authority for core obligations, but the footnote text is not reproduced, leaving the underlying authority unresolvable within the extractions.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-04",
+              "quote": "The bank's board of directors must designate a qualified individual or individuals to serve as the BSA compliance officer.[18]",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "The BSA/AML compliance program[10] must be written, approved by the board of directors,[11] and noted in the board minutes.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-05",
+              "quote": "Banks must provide training for appropriate personnel.[20]",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-ps-01",
+              "quote": "Every bank must have a comprehensive BSA/AML compliance program that addresses BSA requirements applicable to all operations of the organization.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Full set of program 'pillars' assembled only across multiple sections",
+          "description": "The complete program-establishment obligation (written board-approved program plus internal controls, independent testing, compliance officer, training, CIP, and CDD/beneficial ownership) is stated in summary in cp-01 but each pillar's substantive content is detailed only in separate sections, so the full obligation is assembled only by reading several items together.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "The BSA/AML compliance program must provide for the following requirements:[12]\n\nA system of internal controls to assure ongoing compliance.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-02",
+              "quote": "The board of directors, acting through senior management, is ultimately responsible for ensuring that the bank maintains a system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-03",
+              "quote": "The purpose of independent testing (audit) is to assess the bank's compliance with BSA regulatory requirements, relative to its risk profile, and assess the overall adequacy of the BSA/AML compliance program.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-04",
+              "quote": "The bank's board of directors must designate a qualified individual or individuals to serve as the BSA compliance officer.[18]",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-05",
+              "quote": "Banks must provide training for appropriate personnel.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Risk assessment framed as non-mandatory in RA item but embedded as expectation elsewhere",
+          "description": "The risk-assessment item states the BSA/AML risk assessment is 'not a specific legal requirement,' while the compliance-program and internal-controls items require the program/controls to incorporate and be commensurate with the risk profile/assessment, creating a scope/applicability mismatch on whether a risk assessment is required.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-ra",
+              "quote": "a well-developed BSA/AML risk assessment assists the bank in identifying ML/TF and other illicit financial activity risks and in developing appropriate internal controls (i.e., policies, procedures, and processes)",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "To achieve the purposes of the BSA, the BSA/AML compliance program should be commensurate with the bank's ML/TF and other illicit financial activity risk profile.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-02",
+              "quote": "Incorporate the bank's BSA/AML risk assessment and the identification of ML/TF and other illicit financial activity risks, along with any changes in those risks.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability mismatch on whether CIP/CDD are program-establishment obligations",
+          "description": "The compliance-program item treats CIP and ongoing CDD/beneficial ownership as mandatory content of the program itself, while the extraction notes the ratified scope treats CDD as a coordination layer; the two framings differ on whether these belong to the program-pillars obligation set.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "The BSA/AML compliance program must also include appropriate risk-based procedures for conducting ongoing customer due diligence (CDD) and complying with beneficial ownership requirements for legal entity customers as set forth in regulations issued by Financial Crimes Enforcement Network (FinCEN).",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-03",
+              "quote": "The bank complies with BSA recordkeeping and reporting requirements (e.g., customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Board-approval / responsibility for the program stated in multiple items",
+          "description": "The requirement that the program be board-approved and that the board bears primary responsibility for a comprehensive program is stated both in the program-overview item and in the program-structures item.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-cp-01",
+              "quote": "The BSA/AML compliance program[10] must be written, approved by the board of directors,[11] and noted in the board minutes.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-ps-01",
+              "quote": "The board of directors is responsible for approving the BSA/AML compliance program and for overseeing the structure and management of the bank's BSA/AML compliance function.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "No stated substantive standard defining an 'adequate' or 'inadequate' risk assessment",
+          "description": "Examiners are required to develop a risk assessment for the bank whenever the bank's is 'inadequate,' and the enforcement/examination structure turns on adequacy, yet no item states the criteria that make a risk assessment adequate versus inadequate; the RA item states there are 'no required risk categories' and no required update frequency.",
+          "locations": [
+            {
+              "item_id": "ffiec-man-ra",
+              "quote": "For the purposes of the examination, whenever the bank has not developed a BSA/AML risk assessment, or the BSA/AML risk assessment is inadequate, examiners must develop a BSA/AML risk assessment for the bank based on available information.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-guidance_fba": {
+      "detected_at": "2026-07-20T00:34:01.849756+00:00",
+      "scope_label": "family: guidance_fba",
+      "cost_usd": 0.13397,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Divergent scope of 'the agencies' across the FBA guidance items",
+          "description": "The term 'the agencies' is defined with materially different membership across the extractions. In frb-sr-24-4 and occ-b-2024-19 it comprises four agencies (OCC, Federal Reserve, FDIC, NCUA). In occ-b-2026-11 it comprises only three (OCC, FDIC, NCUA) \u2014 the Board of Governors of the Federal Reserve System is omitted. The same short-form term therefore denotes a materially different set of regulators depending on the instrument.",
+          "locations": [
+            {
+              "item_id": "frb-sr-24-4",
+              "quote": "The Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, the National Credit Union Administration, the Office of the Comptroller of the Currency (collectively, the Agencies).",
+              "verified": false
+            },
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies)",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "The Office of the Comptroller of the Currency (OCC), the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies)",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate agency 'independent authority/mandate' program-rule provision",
+          "description": "The same duty \u2014 that the agencies may/must prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor compliance with the BSA \u2014 is stated in materially identical terms across two OCC bulletins.",
+          "locations": [
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "The agencies have independent authority to prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of the BSA.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "The agencies have an independent mandate to prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of the BSA.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate CDD-incorporation-mirroring-FinCEN provision across OCC bulletins",
+          "description": "The duty/statement that CDD requirements are incorporated into the agencies' AML/CFT program rules to mirror or harmonize with FinCEN's parallel/existing rule is stated in both OCC bulletins.",
+          "locations": [
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "The proposed rule would add CDD as a required component of the agencies\u2019 AML/CFT program rules, which would mirror FinCEN\u2019s existing rule.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "the proposed rule explicitly incorporates customer due diligence (CDD) requirements that are currently set forth in FinCEN\u2019s parallel regulations, harmonizing the requirements between the regulations.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'AML/CFT enforcement action' and 'significant AML/CFT supervisory action' undefined in source",
+          "description": "occ-b-2026-11 imposes a conditional consultation duty triggered by an agency intending to initiate an 'AML/CFT enforcement action' or a 'significant AML/CFT supervisory action', but the extraction expressly states these material terms are defined only 'in the proposed regulation' and are not contained in this source text.",
+          "locations": [
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "when one of the agencies intends to initiate an AML/CFT enforcement action or a significant AML/CFT supervisory action, as those terms are defined in the proposed regulation",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'national AML/CFT priorities' undefined across FBA items",
+          "description": "Multiple items impose or reference a duty to consider 'national AML/CFT priorities published by FinCEN' as part of the risk assessment process, but the term is marked '(undefined here)' in each extraction; its substantive content is not stated in these sources.",
+          "locations": [
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "consideration of national AML/CFT priorities published by FinCEN",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "consideration of national AML/CFT priorities published by FinCEN.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'two-pronged framework' evaluative prongs not stated",
+          "description": "occ-b-2026-11 references a 'two-pronged framework for evaluating when a bank has established and maintained its program', a material evaluative standard, but the substantive prongs are not given in the extraction.",
+          "locations": [
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "The proposed rule also establishes a two-pronged framework for evaluating when a bank has \u201cestablished\u201d and \u201cmaintained\u201d its program.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "2024 NPRM superseded in substance by 2026 NPRM but not shown as revoked",
+          "description": "occ-b-2024-19 (an NPRM proposing the AML/CFT program amendments) and occ-b-2026-11 both describe the same program-rule amendment effort (BSA compliance program rebranded as AML/CFT programs, incorporating CDD and national priorities). occ-b-2026-11 restates and further develops the same subject matter (adding a two-pronged framework, a FinCEN consultation framework, and a three-agency 'agencies' set omitting the Federal Reserve), indicating the later item supersedes the earlier NPRM in substance, yet neither extraction indicates the earlier NPRM was withdrawn or revoked.",
+          "locations": [
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "amend the requirements that each agency has issued for its supervised banks, currently referred to as Bank Secrecy Act (BSA) compliance programs, to establish, implement, and maintain effective, risk-based, and reasonably designed anti-money laundering (AML) and countering the financing of terrorism (CFT) programs",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "The proposed rule continues to require banks to establish and maintain a program that is reasonably designed to ensure compliance with the requirements of the BSA, though with certain clarifications and changes.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Preserved typo 'FY2021 NYDAA' for the enacting statute",
+          "description": "The frb-sr-24-4 notes preserve the source's rendering of the enacting statute's short-form as 'FY2021 NYDAA', an apparent typographical error for NDAA, carried through per the fidelity rule.",
+          "locations": [
+            {
+              "item_id": "frb-sr-24-4",
+              "quote": "The AML Act was enacted into law as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, H.R. 6395, 116th Cong. (FY2021 NYDAA)",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Substantive program-establishment obligations referenced but stated nowhere in these sources",
+          "description": "The guidance items repeatedly reference the substantive program/'pillars' obligations (the amended AML/CFT program requirements, risk assessment process, CDD components) as residing in the linked/proposed regulatory text, and frb-sr-24-4 expressly disclaims creating substantive obligations. The actual substantive program-establishment duties are therefore implied by these transmittals and NPRMs but not stated in any provided extraction.",
+          "locations": [
+            {
+              "item_id": "frb-sr-24-4",
+              "quote": "the Notice of Proposed Rulemakings (NPRMs) proposing amendments to their respective AML/CFT program requirements.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "Actual regulatory text is in the linked PDF ('Anti-Money Laundering and Countering the Financing of Terrorism Program Requirements (PDF)') which is not included in this source.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability scope mismatch between four-agency and three-agency framings",
+          "description": "occ-b-2024-19 frames the concurrent program-rule effort as involving four agencies (OCC, Federal Reserve, FDIC, NCUA) with the Federal Reserve issuing a companion action (consistent with frb-sr-24-4's Federal Reserve SR letter), whereas occ-b-2026-11 frames the joint NPRM as issued by only three agencies (OCC, FDIC, NCUA), omitting the Federal Reserve. The set of regulators to which the program-establishment amendments apply differs across the instruments.",
+          "locations": [
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies)",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2026-11",
+              "quote": "The Office of the Comptroller of the Currency (OCC), the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies), issued a joint notice of proposed rulemaking",
+              "verified": true
+            },
+            {
+              "item_id": "frb-sr-24-4",
+              "quote": "the Office of the Comptroller of the Currency (collectively, the Agencies), and the Financial Crimes Enforcement Network (FinCEN) are issuing an interagency statement",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-guidance_fincen": {
+      "detected_at": "2026-07-20T00:36:06.331758+00:00",
+      "scope_label": "family: guidance_fincen",
+      "cost_usd": 0.6045149999999999,
+      "findings": [
+        {
+          "code": "D5",
+          "title": "Dangling references to pre-recodification 31 CFR Part 103 citations",
+          "description": "Two FinCEN items cite the MSB AML program rule and related provisions using the former 31 CFR Part 103 numbering (e.g., 31 CFR 103.125, 103.125(d)(iii), 103.125(d)(2), 103.125(d)(4), 103.41, 103.22, 103.20), which has since been recodified into 31 CFR Chapter X (e.g., 1022.210). As pinned to 2026, these citations point to a repealed/renumbered part and are dangling as to current codification. The current-numbering item confirms the operative rule is now 31 CFR 1022.210.",
+          "locations": [
+            {
+              "item_id": "fincen-ir-2004-1-aml-program",
+              "quote": "This Interpretive Guidance sets forth our interpretation of the regulation requiring Money Services Businesses that are required to register with FinCEN to establish and maintain anti-money laundering programs. See 31 CFR 103.125.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "Our regulations at 31 C.F.R. \u00a7 103.125 require money services businesses to establish anti-money laundering programs tailored to their operations and the money laundering risks posed.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "Under 31 CFR \u00a7 1022.210, an MSB\u2019s AML program must, at a minimum:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "MSB AML program-establishment duty stated in multiple instruments",
+          "description": "The same core duty \u2014 MSBs must establish and maintain an effective written AML program reasonably designed to prevent the MSB from being used to facilitate money laundering and terrorist financing \u2014 is stated across multiple FinCEN instruments, each restating the 31 CFR 1022.210/103.125 requirement.",
+          "locations": [
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "The Bank Secrecy Act (BSA) requires all MSBs, both principals and their agents, to establish and maintain an effective written AML program reasonably designed to prevent the MSB from being used to facilitate money laundering and the financing of terrorist activities.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-ir-2004-1-aml-program",
+              "quote": "Money Services Businesses are required to develop, implement, and maintain an effective anti-money laundering program reasonably designed to prevent the Money Services Business from being used to facilitate money laundering and the financing of terrorist activities.",
+              "verified": false
+            },
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs that include \"an independent audit function to test programs.\"",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Independent review / testing pillar duplicated across instruments",
+          "description": "The independent-review/testing 'pillar' obligation for MSBs is stated in the existing-program-rule guidance (OBL-06, OBL-18) and again in the dedicated independent-review FAQ (OBL-1, OBL-2), both grounded on the same statutory/regulatory basis (31 U.S.C. 5318(h)(1)(D); 31 CFR 1022.210 / 103.125(d)(4)).",
+          "locations": [
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "Provide for independent review to monitor and maintain an adequate program",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "Provide for independent review to monitor and maintain an adequate program.The scope and frequency of the review shall be commensurate with the risk of thefinancial services provided by the money services business.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent framing of 'independent review' vs 'independent audit function'",
+          "description": "The statutory term is 'an independent audit function to test programs' (5318(h)(1)(D)), but FinCEN guidance defines 'independent review' as expressly NOT a formal audit by a CPA or third-party consultant, using 'independent review' and 'independent audit function' interchangeably. This yields materially different content for the same required element across the statute quotation and the guidance definition.",
+          "locations": [
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "Our regulations require an independent review, not a formal audit by a certified public accountant or third-party consultant.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs that include \"an independent audit function to test programs.\"",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Reviewer-independence rules differ between instruments",
+          "description": "The two independent-review formulations impose non-identical duties on who may conduct the review. The regulatory quote excludes only the person designated in paragraph (d)(2) (the compliance officer), whereas the guidance also excludes anyone who reports directly to the compliance officer. These are different scopes of the same independence duty stated within one instrument, and the narrower regulatory exclusion conflicts with the broader guidance exclusion.",
+          "locations": [
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "Such review may beconducted by an officer or employee of the money services business so long as thereviewer is not the person designated in paragraph (d)(2) of this section.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "The review may be conducted by an officer, employee or group of employees, so long as the reviewer is not the designated compliance officer and does not report directly to the compliance officer.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "AML/CFT Priorities not updated within statutory four-year cycle",
+          "description": "The Priorities guidance states FinCEN must update the Priorities at least once every four years and were issued June 30, 2021. The extraction note records that, as of the pinned 2026 date (July 2026), no update has issued despite the statutory four-year update requirement, leaving the June 30, 2021 Priorities in effect beyond the mandated refresh cycle \u2014 superseded-in-substance by the statutory update duty but never actually revoked/refreshed.",
+          "locations": [
+            {
+              "item_id": "fincen-amlcft-national-priorities",
+              "quote": "FinCEN will update the Priorities \nat least once every four years, as required by the AML Act, 11 to account for new and \nemerging threats to the U.S. financial system and national security.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-amlcft-national-priorities",
+              "quote": "review and incorporate, as appropriate, each Priority \nbased on the institution\u2019s broader risk-based AML program.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "AML/CFT Priorities incorporation duty deferred with no operative rule stated",
+          "description": "The structure and enforcement mechanism (supervision/examination on incorporation of the Priorities) presuppose a binding incorporation obligation, but that duty is expressly deferred to future final regulations that are stated to not yet exist in these extractions, and no operative incorporation rule appears anywhere in the provided instruments. The examination measure obligation exists structurally while the substantive incorporation duty is stated nowhere as currently effective.",
+          "locations": [
+            {
+              "item_id": "fincen-amlcft-national-priorities",
+              "quote": "FinCEN will issue regulations at a later date that will specify how financial institutions \nshould incorporate these Priorities into their risk-based AML programs.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-priorities-statement-nonbank",
+              "quote": "Covered NBFIs are not required to incorporate the AML/CFT Priorities into their risk-based \nAML programs until the effective date of the final regulations.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-priorities-statement-nonbank",
+              "quote": "the AML Act requires that the review by a covered NBFI of the AML/CFT Priorities \nand the incorporation of those Priorities, as appropriate, into its risk-based AML program, be \nincluded as a measure on which it is supervised and examined.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material terms 'principal', 'AML program', 'MSB' left undefined",
+          "description": "Multiple extractions leave core operative terms undefined. 'Principal' \u2014 the actor bearing most agent-monitoring duties \u2014 is undefined; 'AML program' is described only by minimum elements; and 'money services business' is undefined (cross-referenced only). These terms are material to the obligations imposed within these instruments.",
+          "locations": [
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "the anti-money laundering (AML) program obligations on the principals of money services businesses (MSBs)1",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "See 31 CFR \u00a7 1010.100(ff).",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-faq-msb-independent-review",
+              "quote": "The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent scope of 'agent' definition between MSB guidance instruments",
+          "description": "The existing-program-rule guidance defines 'agent' broadly to include authorized delegates, foreign agents/counterparties, agents and sub-agents, and imposes program duties on all of them. The 2004 Interpretive Release, addressing the same MSB AML program rule, focuses its due-diligence/monitoring duties specifically on 'foreign agents or counterparties' as a distinct category, producing a materially different scoping of the agent-related program obligations for the same underlying rule.",
+          "locations": [
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "The term \u201cagent\u201d for purposes of this guidance includes authorized delegates, foreign agents or counterparties, agents and sub-agents.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-ir-2004-1-aml-program",
+              "quote": "a Money Services Business\u2019 anti-money laundering program must include risk-based policies, procedures, and controls designed to identify and minimize money laundering and terrorist financing risks associated with foreign agents and counterparties that facilitate the flow of funds into and out of the United States.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Full MSB agent-monitoring obligation assembled only across instruments",
+          "description": "The complete obligation governing an MSB principal's risk-based monitoring of agents is not stated in any single instrument but must be assembled by reading the existing-program-rule guidance (identify owners, ongoing evaluation, reassessment, testing, corrective action) together with the 2004 Interpretive Release (foreign-agent due diligence, transaction monitoring, structuring/layering review, termination procedures). Neither instrument alone states the whole duty.",
+          "locations": [
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "principals are required to develop and implement risk-based policies, procedures, and internal controls that ensure adequate ongoing monitoring of agent activity, as part of the principal\u2019s implementation of its AML program.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-ir-2004-1-aml-program",
+              "quote": "Such due diligence must, at a minimum, include reasonable procedures to identify the owners of the Money Services Business\u2019 foreign agents and counterparties, as well as to evaluate, on an ongoing basis, the operations of those foreign agents and counterparties and their implementation of policies, procedures, and controls reasonably designed to help assure that the Money Services Business\u2019 products and services are not subject to abuse",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "One-time 180-day compliance transition provision now obsolete",
+          "description": "The 2004 Interpretive Release imposes a one-time transitional compliance deadline ('within 180 days'). As pinned to 2026, this transitional provision has long since elapsed and is spent/archaic within the current program-establishment blueprint.",
+          "locations": [
+            {
+              "item_id": "fincen-ir-2004-1-aml-program",
+              "quote": "We will expect full compliance with this Interpretive Release within 180 days.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Scope/threshold mismatch on which institutions the Priorities apply to",
+          "description": "The two Priorities instruments define the population of institutions differently. The national-priorities guidance addresses 'covered institutions' (all BSA AML-program filers including banks) and directs review/incorporation upon effective date of future regulations. The nonbank statement scopes to 'covered NBFIs' (excluding banks, addressed by a separate parallel statement) and adds an examination-forbearance carve-out until final regulations. The same Priorities regime thus applies to materially different institution sets with different supervisory triggers across the two instruments.",
+          "locations": [
+            {
+              "item_id": "fincen-amlcft-national-priorities",
+              "quote": "each \ncovered institution should, upon the effective date of future regulations to be promulgated \nin connection with these Priorities, review and incorporate, as appropriate, each Priority \nbased on the institution\u2019s broader risk-based AML program.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-priorities-statement-nonbank",
+              "quote": "all non-bank financial institutions (NBFIs) and \nother entities with regulatory AML program requirements (collectively \u201ccovered NBFIs\u201d)4",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-priorities-statement-nonbank",
+              "quote": "State bank and credit union regulators, and FinCEN also issued a statement to provide clarity for \nbanks5 on the AML/CFT Priorities.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Contractual allocation permitted yet each MSB remains wholly liable",
+          "description": "Within the existing-program-rule guidance and the 2004 Interpretive Release, program responsibility may be contractually allocated (e.g., to domestic agents under 103.125(d)(iii)) while simultaneously each MSB 'remains independently and wholly responsible' and cannot avoid liability via such contracts. The extraction note itself flags this as an internal ambiguity between permitted allocation and non-delegable liability duties.",
+          "locations": [
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "Moreover, each MSB remains independently and wholly responsible for implementing adequate AML program requirements.7 Accordingly, neither the agent nor the principal can avoid liability for failing to establish and maintain an effective AML program by pointing to a contract assigning this responsibility to another party (whether the agent or principal).",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-ir-2004-1-aml-program",
+              "quote": "Our anti-money laundering program rule, 31 CFR 103.125(d)(iii), permits Money Service Businesses to satisfy this last requirement with regard to their domestic agents",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-horizon_rulemaking": {
+      "detected_at": "2026-07-20T00:36:30.447315+00:00",
+      "scope_label": "family: horizon_rulemaking",
+      "cost_usd": 0.056855,
+      "findings": [
+        {
+          "code": "D10",
+          "title": "Inconsistent statutory citation for program mandate across bank/broker-dealer vs. MSB sections",
+          "description": "The proposed bank and broker-dealer program sections tie the AML/CFT program requirement to '31 U.S.C. 5318(h)(1)' while the MSB section cites '31 U.S.C. 5318(h)' without the subparagraph. This is a scope/reference mismatch across the parallel program-rule provisions of the same instrument for different covered institution types.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "complies with the requirements of 31 U.S.C. 5318(h)(1) and this section if the bank",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "complies with the requirements of 31 U.S.C. 5318(h) and this section if the money services business",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Ongoing CDD mandatory for banks/broker-dealers but MSB duties applied only 'to the extent applicable'",
+          "description": "The bank/broker-dealer risk-based-policy provisions include ongoing CDD as a mandatory element of program establishment, whereas the MSB provision frames verification/reporting/recordkeeping/law-enforcement-response duties as applicable only 'to the extent applicable to the money services business.' This is an applicability/scope mismatch across the program provisions for different institution types within the same instrument.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "including information regarding the beneficial owners of legal entity customers, as defined in Sec. 1010.230 of this chapter",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "For a money services business that is a provider or seller of prepaid access, establish procedures to verify the identity of a person who obtains prepaid access under a prepaid program and obtain identifying information concerning such a person, including name, date of birth, address, and identification number.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'AML/CFT Priorities' referenced but undefined",
+          "description": "The term 'AML/CFT priorities' is used as a material element institutions must review and incorporate, but no definition is provided in the extraction.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "Review and, as appropriate, incorporate the AML/CFT priorities",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'the Agencies' referenced but undefined",
+          "description": "The term 'the Agencies' is used to identify entities acting under supervisory authority delegated by FinCEN and subject to notice-and-consultation duties, but is not defined in the extraction.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "a significant AML/CFT supervisory action based on the program rule by FinCEN or by the Agencies, when acting under supervisory authority delegated by FinCEN.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'the Director' referenced but undefined",
+          "description": "The term 'the Director' is invoked as the party who must be given an opportunity to review supervisory actions, but is not defined in the extraction.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "Before initiating such an action, the Agencies would be required to provide the Director with an opportunity to review the action",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "MSB program-approval provision refers to 'the bank' instead of the money services business",
+          "description": "The MSB program-approval provision (Sec. 1022.210(d)) refers to approval by 'the money services business's board of directors, an equivalent governing body within the bank' \u2014 referencing 'the bank' rather than the money services business, a dangling/erroneous internal reference preserved as written.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "the money services business's board of directors, an equivalent governing body within the bank",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-regulation_fba": {
+      "detected_at": "2026-07-20T00:37:29.820630+00:00",
+      "scope_label": "family: regulation_fba",
+      "cost_usd": 0.157365,
+      "findings": [
+        {
+          "code": "D5",
+          "title": "Dangling references to superseded 31 CFR part 103 in Fed rule",
+          "description": "12 CFR 208.63 cross-references the BSA implementing regulations at '31 CFR part 103' and the CIP regulation at '31 CFR 103.121'. Treasury's implementing regulations were recodified from 31 CFR part 103 to 31 CFR Chapter X (with the CIP rule at 31 CFR 1020.220), as reflected in the parallel OCC, FDIC, and NCUA rules in this same family, which cite '31 CFR Chapter X' and '31 CFR 1020.220'. The part 103 / 103.121 citations point to a superseded/relocated location.",
+          "locations": [
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "the Bank Secrecy Act (31 U.S.C. 5311, et seq. ) and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR part 103",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Each bank is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the Board and the Department of the Treasury at 31 CFR 103.121",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "Each institution is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the FDIC and the Department of the Treasury at 31 CFR 1020.220.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Identical four-pillar program-content duties duplicated across four banking-agency rules",
+          "description": "The OCC (12 CFR 21.21), Fed (12 CFR 208.63), FDIC (12 CFR 326.8), and NCUA (12 CFR 748.2) each state the same core BSA compliance-program duties in materially identical terms: (1) develop/administer a program to assure compliance with subchapter II of chapter 53 of title 31; (2) written, board-approved, minuted; (3) incorporate a CIP under 31 U.S.C. 5318(l); and the four minimum contents \u2014 internal controls, independent testing, designated compliance individual(s), training. The same duty is stated across multiple instruments.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "Each national bank and each savings association shall develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "The compliance program shall be reduced to writing, approved by the board of directors, and noted in the minutes.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "The compliance program shall be written, approved by the institution's board of directors, and noted in the minutes.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "The compliance program must be written, approved by the credit union's board of directors, and reflected in the credit union's minutes.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Internal controls / independent testing / designation / training pillars duplicated verbatim across four rules",
+          "description": "The four enumerated minimum program contents appear in near-verbatim identical form in all four banking-agency rules: internal controls to assure ongoing compliance, independent testing (by institution personnel or outside party), designation of individual(s) to coordinate/monitor day-to-day compliance, and training for appropriate personnel. Same duty across multiple instruments.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Provide for independent testing for compliance to be conducted by bank personnel or by an outside party;",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance; and",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "Provide training for appropriate personnel.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material term 'national bank' undefined in OCC rule",
+          "description": "12 CFR 21.21 imposes the program duty on 'Each national bank and each savings association' and defines 'savings association' at length, but 'national bank' \u2014 the primary covered actor \u2014 is left undefined in the extraction.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "Each national bank and each savings association shall develop and provide for the continued administration of a program",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'Customer identification program' referenced but undefined across all four rules",
+          "description": "Each of the four banking-agency rules requires a 'customer identification program' as a component of the BSA compliance program but supplies no definition of the term, incorporating it only by cross-reference to 31 U.S.C. 5318(l) and the Treasury CIP regulation.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "Each institution is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the FDIC and the Department of the Treasury at 31 CFR 1020.220.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Inconsistent scope phrasing 'state member banks' vs 'member bank'/'bank' in Fed rule",
+          "description": "Within 12 CFR 208.63, the purpose/coverage sentence refers to 'state member banks' while the operative program obligations use 'member bank'/'bank'/'Each bank' without reconciling the two, creating an applicability/scope inconsistency about the covered actor class within the same instrument.",
+          "locations": [
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "This section is issued to assure that all state member banks establish and maintain procedures",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Each bank shall develop and provide for the continued administration of a program",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "'compliance program' definition divergent across rules \u2014 CID/program contents included vs. not",
+          "description": "The OCC extraction defines the 'BSA compliance program' expansively (written, board-approved, minuted, with the four minimum contents and incorporating a CIP), while the FDIC and NCUA extractions state the term is used but give no standalone definition, and the Fed defines it only as the recordkeeping/reporting program tied to 31 CFR part 103 (vs. Chapter X elsewhere). The same term thus carries materially different articulated definitions across the instruments.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "a program reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Each bank shall develop and provide for the continued administration of a program reasonably designed to ensure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, the Bank Secrecy Act.",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "Contents of compliance program. The compliance program shall, at a minimum:",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "Such compliance program shall at a minimum&#x2014;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Archaic self-reference to 'this paragraph (c)' in NCUA \u00a7748.1 (renumbering artifact)",
+          "description": "The NCUA extraction notes the SAR provision, drafted as current paragraph (d), internally self-references 'this paragraph (c)' ('For the purposes of this paragraph (c) credit union means...'), an apparent renumbering artifact from historical amendments preserved as written. This is an obsolete/stale internal cross-reference within the instrument.",
+          "locations": [
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "the SAR provision (drafted as current paragraph (d)) internally self-references 'this paragraph (c)' ('For the purposes of this paragraph (c) credit union means...'), an apparent renumbering artifact from historical amendments",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Item title/locator references (Reg K subsections, Part 353) with no corresponding source text",
+          "description": "The Fed item locator cites 12 CFR 211.5(k) and 211.24(j) (Regulation K) but no text for those subsections was included, and the FDIC item title/locator references 12 CFR Part 353 (SAR rule) with no supplied source text. These are dangling references in the item locators unsupported by extracted content.",
+          "locations": [
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "The item locator also cites 12 CFR 211.5(k) and 211.24(j) (Regulation K), but no text for those subsections was included in the source excerpt provided; accordingly nothing was extracted from them.",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "No text of 12 CFR Part 353 (SAR rule) was included in the supplied source excerpt, so no obligations, definitions, or citations could be extracted for Part 353 despite its appearance in the source item title/locator",
+              "verified": false
+            }
+          ]
+        }
+      ]
+    },
+    "defects-regulation_fincen": {
+      "detected_at": "2026-07-20T00:44:45.090895+00:00",
+      "scope_label": "family: regulation_fincen",
+      "cost_usd": 0.294265,
+      "findings": [
+        {
+          "code": "D3",
+          "title": "Correspondent-account due diligence program duty duplicated across two extractions",
+          "description": "The obligation to establish a risk-based due diligence program to detect and report money laundering through correspondent accounts for foreign financial institutions is stated identically in both 31-cfr-1010 (OB-1010.610-1) and 31-cfr-1010-230-cdd (OB-1010.610-a), using verbatim-matching text. The same underlying \u00a71010.610 duty is extracted twice.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1010",
+              "quote": "shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1010-230-cdd",
+              "quote": "A covered financial institution shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Private banking account due diligence program duty duplicated across two extractions",
+          "description": "The \u00a71010.620 duty to maintain a due diligence program reasonably designed to detect and report money laundering or suspicious activity through private banking accounts is stated in both 31-cfr-1010 (OB-1010.620-1) and 31-cfr-1010-230-cdd (OB-1010.620-a) with materially identical text.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1010",
+              "quote": "A covered financial institution shall maintain a due diligence program that includes policies, procedures, and controls that are reasonably designed to detect and report any known or suspected money laundering or suspicious activity conducted through or involving any private banking account",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1010-230-cdd",
+              "quote": "A covered financial institution shall maintain a due diligence program that includes policies, procedures, and controls that are reasonably designed to detect and report any known or suspected money laundering or suspicious activity conducted through or involving any private banking account",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Foreign shell bank prohibition and indirect-use duty duplicated across two extractions",
+          "description": "The \u00a71010.630 shell-bank prohibition (OB-1010.630-1 / OB-1010.630-a-1-i) and the reasonable-steps indirect-use due diligence duty (OB-1010.630-2 / OB-1010.630-a-1-ii) are each stated verbatim in both 31-cfr-1010 and 31-cfr-1010-230-cdd.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1010",
+              "quote": "A covered financial institution shall not establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign shell bank.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1010-230-cdd",
+              "quote": "A covered financial institution shall not establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign shell bank.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "'Account' defined differently for bank CIP vs. broker-dealer CIP",
+          "description": "The term 'Account' has materially different definitions across Part 1020 and Part 1023. For banks (\u00a71020.220), 'Account' means a formal banking relationship (deposit, transaction/asset, credit, safety deposit, cash management, custodian, trust). For broker-dealers (\u00a71023.220), 'Account' means a formal relationship with a broker-dealer to effect securities transactions and hold securities/assets for safekeeping or collateral. The scope of relationships each definition covers diverges by sector.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Account means a formal banking relationship established to provide or engage in services, dealings, or other financial transactions including a deposit account, a transaction or asset account, a credit account, or other extension of credit.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Account means a formal relationship with a broker-dealer established to effect transactions in securities, including, but not limited to, the purchase or sale of securities and securities loaned and borrowed activity, and to hold securities or other assets for safekeeping or as collateral.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'Federal functional regulator' used but undefined in Parts 1020 and 1023",
+          "description": "The term 'Federal functional regulator' is central to the AML program duties (it defines which agency's program regulation a bank/broker-dealer's program must comply with, and the FFR vs. non-FFR bank tracks) yet is recorded as undefined in both Part 1020 and Part 1023 extractions.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Complies with the regulation of its Federal functional regulator governing such programs.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "The other financial institution is subject to a rule implementing 31 U.S.C. 5318(h), and regulated by a Federal functional regulator; and",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Multiple material correspondent/private-banking terms used without definition",
+          "description": "In \u00a7\u00a71010.610/.620/.630 the terms 'covered financial institution,' 'correspondent account,' 'private banking account,' 'foreign shell bank,' 'foreign financial institution,' and 'money laundering' are used to define the scope and triggers of the due-diligence-program duties but are recorded as undefined in the excerpted text of both 31-cfr-1010 and 31-cfr-1010-230-cdd.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1010",
+              "quote": "A covered financial institution shall establish a due diligence program",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1010-230-cdd",
+              "quote": "A covered financial institution shall take reasonable steps to ensure that any correspondent account established, maintained, administered, or managed by that covered financial institution in the United States for a foreign bank is not being used by that foreign bank to indirectly provide banking services to a foreign shell bank.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'customer risk profile' used but undefined in Parts 1020 and 1023 CDD pillar",
+          "description": "The CDD pillar in both Part 1020 (OB-1020.210-a-cdd-pillar) and Part 1023 (OBL-7) requires understanding the nature and purpose of customer relationships 'for the purpose of developing a customer risk profile,' but the term 'customer risk profile' is recorded as undefined in the extracted text.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Part 1020/1022/1023 program stubs refer to \u00a71010.630/.670 counterparts not extracted as substantive text",
+          "description": "Parts 1020 and 1023 contain 'Refer to \u00a71010.xxx' stub interactions pointing to \u00a7\u00a71010.610, 1010.620, 1010.630, and 1010.670. \u00a71010.670 (summons/subpoena of foreign bank records; termination) is cited as a cross-reference target but no substantive text or obligation for \u00a71010.670 appears anywhere in the provided extractions, leaving the reference dangling within the provided corpus.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Refer to \u00a7 1010.630 of this chapter.",
+              "verified": false
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Refer to \u00a7 1010.630 of this chapter.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Board-approval and FinCEN-availability program duties apply only to non-FFR banks and only senior-management approval to broker-dealers",
+          "description": "Program-approval and availability obligations differ in scope across instruments. For banks lacking a Federal functional regulator, the written program must be board-approved (OB-1020.210-b-board-approval) and made available to FinCEN on request (OB-1020.210-b-availability), while FFR-regulated banks have no such explicit textual duties. Broker-dealers must have a program 'approved by senior management' (OBL-1). MSBs must make the program available to Treasury on request (O4) with no board/senior-management approval duty. The approval/availability obligations attach to different scopes across sectors.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Is approved by the board of directors or, if the bank does not have a board of directors, an equivalent governing body within the bank.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "The bank shall make a copy of its anti-money laundering program available to the Financial Crimes Enforcement Network or its designee upon request.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "A broker or dealer in securities shall be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1) if the broker-dealer implements and maintains a written anti-money laundering program approved by senior management that:",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "The program shall be in writing, and a money services business shall make copies of the anti-money laundering program available for inspection to the Department of the Treasury upon request.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "CIP verification-timing threshold differs between banks and broker-dealers",
+          "description": "The CIP identity-verification timing standard diverges by sector. Banks (\u00a71020.220) must verify identity 'within a reasonable time after the account is opened,' whereas broker-dealers (\u00a71023.220) must verify 'within a reasonable time before or after the customer's account is opened.' The permitted timing window is broader for broker-dealers.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "The CIP must contain procedures for verifying the identity of the customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time after the account is opened.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "The CIP must contain procedures for verifying the identity of each customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time before or after the customer's account is opened.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Full broker-dealer AML program obligation assembled only by reading Part 1023, Part 1010 subpart B, and SRO rules",
+          "description": "The complete program-establishment obligation for a broker-dealer is not stated in one place: \u00a71023.210 supplies the core pillars, but the program must additionally comply with \u00a7\u00a71010.610/.620 (Part 1010), with the applicable Federal functional regulator's program regulation, and with SEC-effective SRO (FINRA) program rules under \u00a71023.210(c). The full binding obligation is assembled only by reading Part 1023, Part 1010 subpart B, and the SRO layer together.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Complies with the rules, regulations, or requirements of its self-regulatory organization governing such programs; provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Brokers or dealers in securities should also refer to subpart B of part 1010 of this chapter for program requirements contained in that subpart which apply to brokers or dealers in securities.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1010",
+              "quote": "Each financial institution (as defined in 31 U.S.C. 5312(a)(2) or (c)(1)) should refer to subpart B of its chapter X Part for any additional program requirements.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "SRO (FINRA) AML program rule content is required by \u00a71023.210(c) but no SRO-layer content is present in the corpus",
+          "description": "Section 1023.210(c) makes SEC-effective SRO AML-program rules a compliance component of the federal broker-dealer program obligation, and the ratified scope names the FINRA SRO layer as in-scope. However, no FINRA/SRO rule content is present in the provided extractions, so the substance of the program obligation the SRO layer imposes is nowhere stated in the corpus although it is required by the cross-reference and enforcement structure.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Complies with the rules, regulations, or requirements of its self-regulatory organization governing such programs; provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "MSB agent-allocation permission coexists with non-relievable sole-responsibility duty",
+          "description": "Within \u00a71022.210(d)(1), an agent-only MSB and its principal 'may by agreement allocate' responsibility for developing the program's policies/procedures/internal controls (O14), while \u00a71022.210 simultaneously provides that each MSB 'shall remain solely responsible' for implementation and that nothing relieves any MSB of its obligation to maintain an effective program (O15). The permission to allocate development responsibility sits in tension with the imposed non-relievable sole-responsibility duty on the same subject matter.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "may by agreement allocate between them responsibility for development of policies, procedures, and internal controls required by this paragraph (d)(1).",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "Each money services business shall remain solely responsible for implementation of the requirements set forth in this section, and nothing in this paragraph (d)(1) relieves any money services business from its obligation to establish and maintain an effective anti-money laundering program.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Broker-dealer TIN recordkeeping duty tied to obsolete date window",
+          "description": "OBL-29 imposes a TIN/SSN recordkeeping duty scoped to 'each brokerage account opened after June 30, 1972 and before October 1, 2003.' This account-opening window closed in 2003, making the triggering condition an obsolete/archaic provision as of the pinned 2026 date; likewise O13 anchors the MSB program-development deadline to 'the later of July 24, 2002' and a 90-day post-establishment period.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "such broker or dealer shall within 30 days from the date such account is opened, secure and maintain a record of the taxpayer identification number of the person maintaining the account",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "A money services business must develop and implement an anti-money laundering program that complies with the requirements of this section on or before the later of July 24, 2002, and the end of the 90-day period beginning on the day following the date the business is established.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "CIP reliance-on-another-institution provision permitted with differing certification specifics across banks and broker-dealers",
+          "description": "The CIP reliance provision differs in stated conditions across sectors. The bank version (OB-1020.220-a6-reliance) conditions reliance on the other institution being subject to a 5318(h) rule, regulated by a Federal functional regulator, and an annual certification contract. The broker-dealer version (OBL-20) additionally specifies the contract must require the other institution to certify annually that it has implemented its AML program and will perform specified CIP requirements. The scope/detail of the reliance conditions is inconsistent across the two program rules.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "The CIP may include procedures specifying when a bank will rely on the performance by another financial institution (including an affiliate) of any procedures of the bank's CIP",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "The other financial institution enters into a contract requiring it to certify annually to the broker-dealer that it has implemented its anti-money laundering program, and that it will perform specified requirements of the broker-dealer's CIP",
+              "verified": false
+            }
+          ]
+        }
+      ]
+    },
+    "defects-sro_rule_guidance": {
+      "detected_at": "2026-07-20T00:46:01.697445+00:00",
+      "scope_label": "family: sro_rule_guidance",
+      "cost_usd": 0.358085,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Independent-testing frequency diverges between FINRA Rule 3310 and CAB Rule 331 for the same functional test",
+          "description": "For the same 'independent testing' program pillar, FINRA Rule 3310(c) sets an annual (calendar-year) default with a biennial exception limited to firms that do not execute customer transactions/hold accounts/act as introducing broker, whereas CAB Rule 331 sets a flat 'no less frequently than every two years' for all capital acquisition brokers with no annual default. This is a materially different frequency standard for the same-named obligation across two FINRA instruments.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Provide for annual (on a calendar-year basis) independent testing for compliance to be conducted by member personnel or by a qualified outside party, unless the member does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts (e.g., engages solely in proprietary trading or conducts business only with other broker-dealers), in which case such \"independent testing\" is required every two years (on a calendar-year basis);",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-CAB-331",
+              "quote": "Provide for independent testing for compliance, no less frequently than every two years, to be conducted by capital acquisition broker personnel or by a qualified outside party;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Rule 3310 program pillars duplicated across the rule text and multiple FINRA guidance restatements",
+          "description": "The identical program-establishment duties of FINRA Rule 3310 (written program, senior-management approval, detection/reporting policies, internal controls, independent testing, designation of AML compliance person, ongoing training, fifth-pillar CDD) are stated in the operative rule and then restated as duties in multiple FINRA guidance items (RN 18-19, RN 17-40, RN 09-60, the AML Template page, the AML FAQ, and the ORR). The same duty is stated across multiple instruments.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Each member shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor the member's compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-18-19",
+              "quote": "Each member shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor the member's compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-17-40",
+              "quote": "Consistent with Section 352 of the PATRIOT Act, and incorporating the four pillars, FINRA Rule 3310 requires each member firm to develop and implement a written AML program reasonably designed to achieve and monitor the member firm's compliance with the BSA and implementing regulations.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-09-60",
+              "quote": "FINRA Rule 3310 requires each member firm to develop and implement a written AML program (that must be approved, in writing, by a member of senior management) that is reasonably designed to achieve and monitor compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-AML-FAQ",
+              "quote": "It requires firms to develop and implement a written AML compliance program.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-ORR-AML-2024-2026",
+              "quote": "FINRA Rule 3310 (Anti-Money Laundering Compliance Program) requires that each member develop and implement a written anti-money laundering (AML) program that is approved, in writing, by senior management and is reasonably designed to achieve and monitor the member\u2019s compliance with the BSA and its implementing regulations.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "CAB Rule 331 program duties duplicated across the rule text and RN 18-36 restatement",
+          "description": "The CAB Rule 331 program-establishment duties are stated in the operative CAB rule text and again restated as duties in FINRA Regulatory Notice 18-36, which reproduces the same chapeau, senior-management approval, designation, training, and fifth-pillar CDD obligations.",
+          "locations": [
+            {
+              "item_id": "FINRA-CAB-331",
+              "quote": "Each capital acquisition broker shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor its compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-18-36",
+              "quote": "Each capital acquisition broker shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor its compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Central operative term 'customer risk profile' is used but undefined across every in-scope instrument",
+          "description": "The term 'customer risk profile' governs the fifth-pillar CDD obligation but is left undefined in Rule 3310, CAB Rule 331, and their guidance restatements (RN 18-19, RN 18-36, ORR, FAQ). Only RN 17-40 supplies any definition ('information gathered about a customer to form the baseline against which customer activity is assessed'); the material term is undefined in the operative rules themselves.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile;",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-CAB-331",
+              "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-ORR-AML-2024-2026",
+              "quote": "for the purpose of developing a customer risk profile",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Rule 3310 cross-references paragraph (f)(ii) and Rules 3310(c)/(d)/4517 not reproduced in the extraction set",
+          "description": "Rule 3310's definition provision and cross-references depend on internal paragraph designators and companion rules ('paragraph (f)(ii)', 'Rule 3310(c)', 'Rule 3310(d)', 'Rule 4517') whose target text is referenced but not provided in the extractions; the references dangle within the provided material.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Each member must identify, review, and, if necessary, update the information regarding its anti-money laundering compliance person designated pursuant to Rule 3310(d) in the manner prescribed by Rule 4517.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "For purposes of paragraph (f)(ii), customer information shall include information regarding the beneficial owners of legal entity customers (as defined in 31 CFR 1010.230(e)).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "RN 17-40 / RN 18-19 May 11, 2018 compliance deadline is spent and characterizes fifth pillar as 'new' though later instruments treat it as codified",
+          "description": "RN 17-40 and RN 18-19 frame the fifth-pillar CDD requirement as a 'new' requirement with a forward-looking compliance deadline of May 11, 2018, while later in-scope instruments (Rule 3310 text, RN 18-36, ORR 2024-2026) treat the same fifth pillar as an established, incorporated part of the rule. The dated deadline guidance is superseded in substance by the integrated rule text but the guidance persists in the set.",
+          "locations": [
+            {
+              "item_id": "FINRA-RN-18-19",
+              "quote": "Member firms should ensure that their AML programs are updated, as necessary, to comply with the CDD Rule by May 11, 2018.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-17-40",
+              "quote": "Member firms must be in compliance with its provisions by May 11, 2018.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-ORR-AML-2024-2026",
+              "quote": "maintain risk-based procedures for conducting ongoing customer due diligence, including to understand the nature and purpose of customer relationships for the purpose of developing a customer risk profile and conduct ongoing monitoring to identify and report suspicious transactions, and, on a risk basis, to maintain and update customer information (3310(f)).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Scope/applicability mismatch: RN 09-60 omits the fifth-pillar CDD element present in the current Rule 3310 pillar set",
+          "description": "RN 09-60 (a 2009 rule-approval notice) enumerates the Rule 3310 program as comprising only the four pre-CDD pillars (policies/procedures, testing, designation, training) with no fifth-pillar ongoing CDD element, whereas the current Rule 3310 text and later restatements (RN 17-40, ORR, FAQ) include the fifth-pillar CDD obligation. The set of program elements attributed to the same Rule 3310 differs across instruments.",
+          "locations": [
+            {
+              "item_id": "FINRA-RN-09-60",
+              "quote": "FINRA Rule 3310 requires each member firm to develop and implement a written AML program (that must be approved, in writing, by a member of senior management) that is reasonably designed to achieve and monitor compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Include appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to:\n(i) Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and\n(ii) Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-17-40",
+              "quote": "This ongoing customer due diligence element, or \"fifth pillar\" required for AML programs, includes: (1) understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and (2) conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Conflicting characterization of independent-testing personnel exception between RN 09-60 and Rule 3310 supplementary material",
+          "description": "RN 09-60 states FINRA Rule 3310 does NOT retain the NASD IM-3011-1 exception permitting testing by persons who report to the AML compliance person or those performing tested functions, and frames such testing as precluded. Rule 3310's own supplementary material states independent testing 'may not' be conducted by such persons. These are consistent in direction but the ORR/RN materials that restate testing merely as a frequency requirement omit the personnel-conflict prohibition, creating an assembled-duty tension; the prohibition duty on who may test is stated only via Rule 3310/CAB 331 supplementary material and RN 09-60, not in the frequency-only restatements.",
+          "locations": [
+            {
+              "item_id": "FINRA-RN-09-60",
+              "quote": "FINRA Rule 3310, however, does not retain the exception in NASD IM-3011-1 that permits, under certain conditions, the AML compliance program testing to be conducted by persons who report to either the AML compliance person or persons performing the functions being tested.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Independent testing may not be conducted by:\n(1) a person who performs the functions being tested,\n(2) the designated anti-money laundering compliance person, or\n(3) a person who reports to a person described in either subparagraphs (1) or (2) above.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "The complete independent-testing obligation for members must be assembled from Rule 3310(c) plus Supplementary Material .01",
+          "description": "The full independent-testing duty (frequency + qualified-tester knowledge requirement + personnel-conflict prohibition) is not stated in any single provision; it is assembled only by reading Rule 3310(c) (frequency), Supplementary Material .01 (working-knowledge requirement), and the .01 exclusion list (who may not test). Guidance restatements typically capture only the frequency element.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Provide for annual (on a calendar-year basis) independent testing for compliance to be conducted by member personnel or by a qualified outside party",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Independent testing, pursuant to Rule 3310(c), must be conducted by a designated person with a working knowledge of applicable requirements under the Bank Secrecy Act and its implementing regulations.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Independent testing may not be conducted by:\n(1) a person who performs the functions being tested,\n(2) the designated anti-money laundering compliance person, or\n(3) a person who reports to a person described in either subparagraphs (1) or (2) above.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "CAB Rule 331 applicability is elective while FINRA Rule 3310 applies to all members, for parallel program duties",
+          "description": "The same substantive program pillars apply to two different actor populations under differing applicability conditions: Rule 3310 applies to all members, while CAB Rule 331 applies only to member firms that meet the CAB definition and affirmatively elect the CAB rule set. This scope/threshold difference determines which parallel instrument governs an entity.",
+          "locations": [
+            {
+              "item_id": "FINRA-RN-18-36",
+              "quote": "In 2016, FINRA adopted a separate set of FINRA rules for firms that meet the definition of a \"capital acquisition broker\" and that elect to be governed under this rule set.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-09-60",
+              "quote": "The new FINRA Rules apply to all member firms, unless such rules have a more limited application by their terms.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-CAB-331",
+              "quote": "Each capital acquisition broker shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor its compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Depository-institution and MSB program-establishment pillars implied by scope but stated nowhere in the extractions",
+          "description": "The ratified scope covers program-establishment 'pillars' obligations for U.S. depository institutions and money services businesses under FinCEN and the federal banking agencies, but the entire extraction family provided is the FINRA SRO / broker-dealer layer only. No extraction states the depository-institution or MSB program rules (e.g., 31 CFR parts under FinCEN or the banking-agency AML program rules), leaving the obligation implied by the stated program scope but stated nowhere in the provided material.",
+          "locations": [
+            {
+              "item_id": "FINRA-ORR-AML-2024-2026",
+              "quote": "The Bank Secrecy Act (BSA) is the common name for the collection of laws enacted in the United States to combat money laundering and terrorist financing.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent framing of what the detection/reporting policies must target across instruments",
+          "description": "The rule text (Rule 3310 and CAB 331) frames the detection/reporting policies as targeting 'transactions required under 31 U.S.C. 5318(g) and the implementing regulations thereunder', while guidance restatements (RN 17-40, FAQ, ORR) frame the same pillar as detecting and reporting 'suspicious transactions'. The operative statutory cross-reference versus the plain 'suspicious transactions' phrasing describe the same pillar with materially different specificity.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Establish and implement policies and procedures that can be reasonably expected to detect and cause the reporting of transactions required under 31 U.S.C. 5318(g) and the implementing regulations thereunder;",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-17-40",
+              "quote": "(1) establish and implement policies and procedures that can be reasonably expected to detect and cause the reporting of suspicious transactions;",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-AML-FAQ",
+              "quote": "establish and implement policies and procedures that can be reasonably expected to detect and cause the reporting of suspicious transactions;",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-statute": {
+      "detected_at": "2026-07-20T00:47:24.336383+00:00",
+      "scope_label": "family: statute",
+      "cost_usd": 0.26291,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'financial institution' across the codified BSA and AMLA 2020 definitional layers",
+          "description": "31 U.S.C. 5312 defines 'financial institution' as the enumerated list in subsection (a)(2) (items (A)-(Z)), while 31 U.S.C. 5311 (per AMLA 2020 \u00a76003) and the amla-2020-uncodified item both define 'financial institution' as having the 5312 meaning BUT expanded to include (i) an electronic fund transfer network and (ii) a clearing and settlement system. The AMLA \u00a76003 definition materially broadens the class of covered institutions beyond the 5312 enumeration. This creates a divergent-definition condition where the same term carries a narrower meaning under 5312 and a broader meaning under the \u00a76003/AMLA definitional layer.",
+          "locations": [
+            {
+              "item_id": "31-usc-5312",
+              "quote": "(2) \"financial institution\" means-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(5) Financial institution .-The term 'financial institution'- \n\n \"(A) has the meaning given the term in section 5312 of title 31, United States Code ; and \n\n \"(B) includes- \n\n \"(i) an electronic fund transfer network; and \n\n \"(ii) a clearing and settlement system.",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "has the meaning given the term in section 5312 of title 31, United States Code; and",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Inconsistent U.S. Code citation for section 509 of the Gramm-Leach-Bliley Act ('Federal functional regulator')",
+          "description": "The definitional cross-reference for 'Federal functional regulator' to section 509 of the Gramm-Leach-Bliley Act is cited inconsistently across extractions: 31 U.S.C. 5311, 31-usc-5318 OBL-3/OBL-8/OBL-9/OBL-11 and amla-2020-uncodified cite it as 15 U.S.C. 6809, while 31-usc-5318's subsection (h) definition and OBL-3 citation cite it as 12 U.S.C. 6809. The same referenced provision is given two different Code titles.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act ( 12 U.S.C. 6809 )) shall take into account the following:",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )), relevant State financial regulators, and relevant national security agencies, shall establish and make public priorities",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(A) has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 ); and",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809); and",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Program-establishment 'pillars' priorities/responsibility duties stated in both codified 31 U.S.C. 5318(h) and the uncodified AMLA 2020 Division F compilation",
+          "description": "The same program-establishment obligations appear in both the codified statute (31-usc-5318) and the AMLA 2020 uncodified compilation (amla-2020-uncodified). Specifically: (a) the factors-to-take-into-account duty (5318 OBL-3 / amla OB-1); (b) establish-and-make-public AML/CFT priorities (5318 OBL-8 / amla OB-3); (c) update priorities every 4 years (5318 OBL-9 / amla OB-4); (d) institutional review/incorporation of priorities as an exam measure (5318 OBL-12 / amla OB-5); and (e) U.S.-persons responsibility to establish/maintain/enforce the program (5318 OBL-13 / amla OB-6). The duties are duplicative across the two instruments.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "Not later than 180 days after the date of enactment of this paragraph, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators ... shall establish and make public priorities for anti-money laundering and countering the financing of terrorism policy.",
+              "verified": false
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "shall establish and make public priorities for anti-money laundering and countering the financing of terrorism policy.",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "The duty to establish, maintain and enforce an anti-money laundering and countering the financing of terrorism program as required by this subsection shall remain the responsibility of, and be performed by, persons in the United States who are accessible to, and subject to oversight and supervision by, the Secretary of the Treasury and the appropriate Federal functional regulator",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "The duty to establish, maintain and enforce an anti-money laundering and countering the financing of terrorism program as required by this subsection shall remain the responsibility of, and be performed by, persons in the United States",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material program-establishment terms used but left undefined across the statutory sources",
+          "description": "Several material terms central to the program/'pillars' obligation are used but not defined in the extractions where they operate. '5311-OB-01' and 5318 use 'reasonably designed risk-based programs' / 'risk-based' with the extraction expressly marking them '(undefined here)'. 'money laundering' is used in the 5311 purpose clause but marked '(undefined here)'. 'compliance officer' and 'concentration accounts' are used as pillar/operative terms in 5318 but marked '(undefined here)'. 'de-risking' is a training-content term in 5334 marked '(undefined here)'. 'covered financial institution' and 'anti-money laundering and countering the financing of terrorism program' in amla-2020-uncodified are marked '(undefined here)'.",
+          "locations": [
+            {
+              "item_id": "31-usc-5311",
+              "quote": "reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "the designation of a compliance officer;",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "The Secretary may prescribe regulations under this subsection that govern maintenance of concentration accounts by financial institutions",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5334",
+              "quote": "(4) de-risking and the effect of de-risking on the provision of financial services.",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "Covered financial institution.--The term `covered financial institution' means an institution referred to in subsection (j)(1).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference to repealed CFR part 103 in the minimum-standards exemption provision",
+          "description": "31 U.S.C. 5318(h)(2) conditions the Secretary's exemption authority on whether a financial institution is subject to 'part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto.' The BSA implementing regulations formerly at 31 CFR part 103 were recodified/moved (to 31 CFR chapter X parts 1010 et seq.), so the statutory text points to a CFR part that as-cited is no longer the operative location; the reference persists only via the 'or any successor rule thereto' saving clause.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "any financial institution that is not subject to the provisions of the rules contained in part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto, for so long as such financial institution is not subject to the provisions of such rules.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference to the 2016 CDD final rule paragraphs slated for rescission under the beneficial-ownership revision mandate",
+          "description": "31-usc-5311's interaction note references the Secretary's statutory duty to revise the 2016 CDD final rule and rescind 31 C.F.R. 1010.230(b)-(j) 'upon the effective date of the revised rule.' The cited rescission of paragraphs (b) through (j) is contingent on a revised rule; the extraction records the mandate but leaves the reference to 1010.230(b)-(j) pointing at provisions that are the subject of a still-pending revision, creating a dangling/contingent reference status.",
+          "locations": [
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(A) In general .-In carrying out paragraph (1), the Secretary of the Treasury shall rescind paragraphs (b) through (j) of section 1010.230 of title 31, Code of Federal Regulations upon the effective date of the revised rule promulgated under this subsection.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Sector-specific program 'pillars' obligation assembled only by reading statute plus implementing regulations/SRO rules not present in the statutory text",
+          "description": "The program-establishment/'pillars' obligation as applied to the ratified in-scope sectors (depository institutions, MSBs, broker-dealers including the FINRA SRO layer) is not stated in any single instrument. 31 U.S.C. 5318(h)(1) imposes the base pillars duty on 'each financial institution' generically; 31 U.S.C. 5311 states the mandate only as a statutory purpose; the amla-2020-uncodified item notes the base duty is only partially visible and references sector definitions (MSBs by cross-reference to 31 C.F.R. 1010.100(ff)). The extraction notes expressly state sector-specificity 'arises from implementing regulations and SRO rules not contained in this statutory text' \u2014 meaning the full obligation is assembled only across multiple instruments.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "(2) prevent the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "money service businesses (as defined in section 1010.100(ff) of title 31, Code of Federal Regulations)",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Enforced 'fifth pillar' (risk-based CDD) implied by exam/priorities structure but not stated as a program-establishment duty in the extracted statutory text",
+          "description": "The statutory pillars enumerated in 31 U.S.C. 5318(h)(1) are only four (internal policies/procedures/controls; compliance officer; training; independent audit). The extractions independently show a risk-based customer due diligence expectation enforced elsewhere: the 5311 interaction preserving the requirement that institutions 'identify and verify beneficial owners of legal entity customers under 31 C.F.R. 1010.230(a),' and the amla-2020 SAR-program interaction tying reporting to the institution's 'risk assessment processes.' The obligation to maintain risk-based CDD/beneficial-ownership as part of the program is implied by the enforcement/priorities structure but is not stated as a program-establishment pillar in the extracted statutory text.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "the development of internal policies, procedures, and controls;",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(B) Rule of construction .-Nothing in this section may be construed to authorize the Secretary of the Treasury to repeal the requirement that financial institutions identify and verify beneficial owners of legal entity customers under section 1010.230(a) of title 31, Code of Federal Regulations.",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "Reports filed under this subsection shall be guided by the compliance program of a covered financial institution with respect to the Bank Secrecy Act, including the risk assessment processes of the covered institution",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability inconsistency: generic 'each financial institution' scope in statute vs. sector/threshold-scoped definitions",
+          "description": "The pillars duty in 31 U.S.C. 5318(h)(1) applies generically to 'each financial institution' with no threshold, while the governing 'financial institution' definition in 31 U.S.C. 5312(a)(2) carries embedded scope thresholds and conditions (e.g., casinos only above '$1,000,000' annual gaming revenue; Secretary-designation for items (Y) and (Z)) and the \u00a76003/AMLA layer adds electronic fund transfer networks and clearing/settlement systems. The extraction notes further flag that sector-specificity and exemptions actually arise from implementing rules/SRO rules and the 5318(h)(2) exemption power. This produces a scope/threshold mismatch between the flat statutory program duty and the differently-scoped definitional and exemption provisions.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5312",
+              "quote": "(X) a casino, gambling casino, or gaming establishment with an annual gaming revenue of more than $1,000,000 which-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "may prescribe minimum standards for programs established under paragraph (1), and may exempt from the application of those standards any financial institution that is not subject to the provisions of the rules contained in part 103 of title 31",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Archaic enumerated 'financial institution' categories retained in 5312 definitional list",
+          "description": "The 31 U.S.C. 5312(a)(2) enumeration retains archaic institution categories within the term whose program applicability is antiquated, notably '(S) a telegraph company.' The extraction also preserves the source's own footnotes flagging internal defects: subsection (c) 'par. (1)' with note 'No par. (2) has been enacted' and a subparagraph '(A)' with 'No subpar. (B) has been enacted', indicating obsolete/orphaned enumeration structure carried in the operative text.",
+          "locations": [
+            {
+              "item_id": "31-usc-5312",
+              "quote": "(2) \"financial institution\" means-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5312",
+              "quote": "Certain institutions included in definition .-The term \"financial institution\" (as defined in subsection (a)) includes the following:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "Superseded-in-substance 2016 CDD rule paragraphs (1010.230(b)-(j)) mandated for rescission but preserved pending revised rule",
+          "description": "31-usc-5311's interaction records a statutory directive that the Secretary 'shall rescind paragraphs (b) through (j) of section 1010.230' upon the effective date of a revised rule accounting for beneficial ownership information filed under section 5336 (the CTA/beneficial-ownership registry). The 2016 CDD rule paragraphs are thus superseded-in-substance by the statutory beneficial-ownership scheme but, per the extraction, remain in effect until the revised rule's effective date \u2014 i.e., mandated for rescission but not yet revoked.",
+          "locations": [
+            {
+              "item_id": "31-usc-5311",
+              "quote": "the Secretary of the Treasury shall revise the final rule entitled 'Customer Due Diligence Requirements for Financial Institutions' (81 Fed. Reg. 29397 (May 11, 2016)) to-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(A) In general .-In carrying out paragraph (1), the Secretary of the Treasury shall rescind paragraphs (b) through (j) of section 1010.230 of title 31, Code of Federal Regulations upon the effective date of the revised rule promulgated under this subsection.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-cross": {
+      "detected_at": "2026-07-20T00:49:45.843870+00:00",
+      "scope_label": "cross-corpus (definitions and duties across all families)",
+      "cost_usd": 1.230575,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'financial institution' across statute and AMLA note",
+          "description": "31 U.S.C. 5312 defines 'financial institution' as the enumerated list in subsection (a)(2) (banks, brokers/dealers, currency exchanges, casinos, etc.). Section 6003 of AMLA 2020 (captured in 31-usc-5311 and amla-2020-uncodified) defines 'financial institution' as having the meaning in section 5312 BUT expressly expands it to also include (i) an electronic fund transfer network and (ii) a clearing and settlement system. The two definitions materially differ in scope for the same operative term used across the program-establishment regime.",
+          "locations": [
+            {
+              "item_id": "31-usc-5312",
+              "quote": "(2) \"financial institution\" means-",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(5) Financial institution .-The term 'financial institution'- \n\n \"(A) has the meaning given the term in section 5312 of title 31, United States Code ; and \n\n \"(B) includes- \n\n \"(i) an electronic fund transfer network; and \n\n \"(ii) a clearing and settlement system.",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "has the meaning given the term in section 5312 of title 31, United States Code; and",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent citation for GLBA 'Federal functional regulator' cross-reference (15 U.S.C. 6809 vs 12 U.S.C. 6809)",
+          "description": "The same defined term 'Federal functional regulator' is cross-referenced to section 509 of the Gramm-Leach-Bliley Act, but the U.S. Code citation diverges: 31-usc-5311 and amla-2020-uncodified cite 15 U.S.C. 6809, while 31-usc-5318 cites 12 U.S.C. 6809 in some obligations (OBL-3, and the subsection (h) definition) and 15 U.S.C. 6809 in others (OBL-8, OBL-9, OBL-11, OBL-13). This is a materially inconsistent statutory locator for the same incorporated definition, appearing both across instruments and internally within 31-usc-5318.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act ( 12 U.S.C. 6809 )) shall take into account the following:",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "Not later than 180 days after the date of enactment of this paragraph, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )), relevant State financial regulators, and relevant national security agencies, shall establish and make public priorities for anti-money laundering and countering the financing of terrorism policy.",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5311",
+              "quote": "\"(3) Federal functional regulator .-The term 'Federal functional regulator'- \n\n \"(A) has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 ); and",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference to superseded 31 CFR part 103 in 31-usc-5318 exemption authority",
+          "description": "31 U.S.C. 5318(h)(2)'s exemption authority (OBL-2) references 'part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto' as the threshold for exempting institutions from minimum program standards. Part 103 was recodified into 31 CFR Chapter X; multiple in-corpus regulations (e.g., 12-cfr-21-occ, 12-cfr-326-353-fdic, 31-cfr-1010) now reference 31 CFR Chapter X. The statutory reference points to a regulation that has been renumbered/relocated, creating a dangling reference (mitigated only by 'or any successor rule').",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "any financial institution that is not subject to the provisions of the rules contained in part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto, for so long as such financial institution is not subject to the provisions of such rules.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dead reference to 31 CFR 103.121 in Federal Reserve BSA compliance program rule",
+          "description": "12-cfr-208-fed (Regulation H, state member banks) cross-references the Customer Identification Program implementing regulation as '31 CFR 103.121'. That provision was recodified into 31 CFR Chapter X as 31 CFR 1020.220. The parallel banking-agency rules in the same corpus (12-cfr-21-occ, 12-cfr-326-353-fdic, 12-cfr-748-ncua) all cite 31 CFR 1020.220 for the identical CIP incorporation, confirming the Fed rule's citation is to a superseded/relocated provision.",
+          "locations": [
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Each bank is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the Board and the Department of the Treasury at 31 CFR 103.121, which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "Each institution is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the FDIC and the Department of the Treasury at 31 CFR 1020.220.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dead reference to superseded 31 CFR part 103 in Regulation H BSA program rule",
+          "description": "12-cfr-208-fed defines the BSA 'compliance program' and its authority by reference to '31 CFR part 103' (twice) \u2014 the pre-recodification Treasury regulations. The corpus's other, updated bank-agency program rules (OCC, FDIC, NCUA) all reference '31 CFR Chapter X' for the same implementing regulations. The Regulation H text thus points to a regulation location that has been superseded by 31 CFR Chapter X.",
+          "locations": [
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, the Bank Secrecy Act, and the implementing regulations promulgated thereunder by the Department of the Treasury at 31 CFR part 103.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code and the implementing regulations issued by the Department of the Treasury at 31 CFR Chapter X",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "CDD 'fifth pillar' incorporated in FinCEN/FINRA program rules but absent from federal banking agency program-establishment rules",
+          "description": "FinCEN's CDD Rule added ongoing customer due diligence (understand nature/purpose of relationships; ongoing monitoring; beneficial ownership) as an explicit program element (the 'fifth pillar') in 31 CFR 1020.210, 1023.210, 1022 (via chapter), and FINRA Rule 3310/CAB 331. The federal banking agency program rules (12-cfr-21-occ, 12-cfr-208-fed, 12-cfr-326-353-fdic, 12-cfr-748-ncua) still enumerate only the four classic pillars (internal controls, independent testing, compliance officer, training) plus CIP, and do not include the CDD/ongoing-monitoring element in their text. The banking-agency rules are superseded in substance by the CDD Rule/5318(h) amendments (and the OCC/FDIC/NCUA and Fed NPRMs propose to add CDD to 'mirror FinCEN's existing rule') but the current text has not been revoked/updated to include the fifth pillar.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-b-2024-19",
+              "quote": "The proposed rule would add CDD as a required component of the agencies\u2019 AML/CFT program rules, which would mirror FinCEN\u2019s existing rule.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-RN-17-40",
+              "quote": "by amending the existing AML program rules for covered financial institutions to explicitly require these components to be included in AML programs as a new \"fifth pillar.\"",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Independent-testing frequency threshold mismatch across program instruments",
+          "description": "The independent-testing/independent-review pillar carries materially different scope/frequency thresholds across instruments. FINRA Rule 3310 (and FINRA-RN-09-60, FINRA-AML-FAQ) mandate annual (calendar-year) testing, with a biennial alternative only for firms that do not execute customer transactions/hold customer accounts/act as introducing broker. CAB Rule 331 sets independent testing 'no less frequently than every two years.' The MSB rule (31-cfr-1022) and FinCEN guidance set no fixed interval \u2014 scope and frequency 'commensurate with the risk.' The federal banking-agency rules and FFIEC guidance state there is 'no regulatory requirement establishing BSA/AML independent testing frequency.' Same pillar, divergent frequency thresholds across the covered sectors.",
+          "locations": [
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Provide for annual (on a calendar-year basis) independent testing for compliance to be conducted by member personnel or by a qualified outside party, unless the member does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts (e.g., engages solely in proprietary trading or conducts business only with other broker-dealers), in which case such \"independent testing\" is required every two years (on a calendar-year basis);",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-CAB-331",
+              "quote": "Provide for independent testing for compliance, no less frequently than every two years, to be conducted by capital acquisition broker personnel or by a qualified outside party;",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "The scope and frequency of the review shall be commensurate with the risk of the financial services provided by the money services business.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-man-cp-03",
+              "quote": "There is no regulatory requirement establishing BSA/AML independent testing frequency. Independent testing, including the frequency, should be commensurate with the ML/TF and other illicit financial activity risk profile of the bank and the bank's overall risk management strategy.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Board-approval and FinCEN-availability program element applies inconsistently across sectors",
+          "description": "The program-establishment 'pillars' carry divergent governance requirements across covered sectors. The federal banking-agency rules (OCC, FDIC, NCUA, Fed) require the program be written, board-approved, and minuted. In 31-cfr-1020, only banks LACKING a Federal functional regulator have an explicit board-approval and FinCEN-availability duty; FFR-regulated banks do not by the text's own terms. Broker-dealers (31-cfr-1023, FINRA-3310) require approval by 'senior management,' not the board. MSBs (31-cfr-1022) require only a written program available to Treasury on request, with no board-approval element. Same pillar set, materially different applicability of the approval/availability requirements.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Is approved by the board of directors or, if the bank does not have a board of directors, an equivalent governing body within the bank.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "The compliance program must be written, approved by the national bank's or savings association's board of directors, and reflected in the minutes of the national bank or savings association.",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Each member's anti-money laundering program must be approved, in writing, by a member of senior management.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "The program shall be in writing, and a money services business shall make copies of the anti-money laundering program available for inspection to the Department of the Treasury upon request.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "NPRM cites '5318(h)(1)' for banks/broker-dealers but '5318(h)' for MSBs \u2014 applicability locator mismatch",
+          "description": "Within fincen-program-nprm-2026 the proposed program-rule provisions tie the AML/CFT program requirement to differing statutory subparagraphs: the bank and broker-dealer sections cite '31 U.S.C. 5318(h)(1)' while the MSB section cites '31 U.S.C. 5318(h)' without the subparagraph. The same divergence pattern appears in the current in-force rules (31-cfr-1020 and 31-cfr-1023 deem compliance with '5318(h)(1)'; 31-cfr-1022 references the statutory mandate at the subsection level). This is a scope/locator inconsistency in how the program mandate attaches to different covered sectors.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "complies with the requirements of 31 U.S.C. 5318(h)(1) and this section if the bank",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "complies with the requirements of 31 U.S.C. 5318(h) and this section if the money services business",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "A broker or dealer in securities shall be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1) if the broker-dealer implements and maintains a written anti-money laundering program approved by senior management that:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Correspondent-account/private-banking due diligence program duty duplicated across Part 1010 and sector Parts",
+          "description": "The affirmative due-diligence-program obligations for correspondent accounts (1010.610), private banking accounts (1010.620), and the foreign shell bank prohibition (1010.630) are stated verbatim in 31-cfr-1010 and again in 31-cfr-1010-230-cdd, and are then incorporated by the bank (31-cfr-1020) and broker-dealer (31-cfr-1023) program rules as mandatory program components. The same operative duty is thus stated in multiple instruments (Part 1010 general provisions and the sector Subpart F/program rules that require compliance with \u00a7\u00a71010.610/1010.620).",
+          "locations": [
+            {
+              "item_id": "31-cfr-1010",
+              "quote": "shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1010-230-cdd",
+              "quote": "A covered financial institution shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Complies with the requirements of \u00a7\u00a7 1010.610 and 1010.620 of this chapter;",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Four/five program 'pillars' restated in near-identical terms across banking-agency rules",
+          "description": "The four minimum program-content requirements (internal controls, independent testing, designated compliance coordinator, training) are stated in materially identical language across four separate federal banking agency regulations (12-cfr-21-occ, 12-cfr-208-fed, 12-cfr-326-353-fdic, 12-cfr-748-ncua) and are further restated in FFIEC guidance and the FinCEN program NPRM. The same duty is imposed by multiple instruments on parallel bank actor classes.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-326-353-fdic",
+              "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Core program term 'financial institution' undefined in the operative program-establishment statute",
+          "description": "31 U.S.C. 5318(h) imposes the base duty that 'each financial institution shall establish anti-money laundering and countering the financing of terrorism programs,' but the term 'financial institution' is not defined within 31-usc-5318 itself (extraction marks it '(undefined here)'). The material scope of the pillars mandate depends on this undefined term, whose definition is supplied only by cross-reference elsewhere (5312, 6003), which as noted diverge.",
+          "locations": [
+            {
+              "item_id": "31-usc-5318",
+              "quote": "each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'reasonably designed risk-based programs' used as the pillars mandate but left undefined in statute",
+          "description": "31 U.S.C. 5311 states the statutory purpose of 'preventing the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs,' but neither 'reasonably designed risk-based programs' nor 'money laundering' is defined in the section (both marked '(undefined here)'). This material program-establishment term anchors the entire pillars regime yet lacks a definition in the source that states the purpose.",
+          "locations": [
+            {
+              "item_id": "31-usc-5311",
+              "quote": "reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'covered financial institution' used as duty-holder for due-diligence programs but undefined in 1010 excerpts",
+          "description": "The affirmative due-diligence-program obligations in 31-cfr-1010 and 31-cfr-1010-230-cdd bind 'a covered financial institution,' yet the term 'covered financial institution' is marked '(undefined here)' in both items. The scope of these program obligations (which institutions must establish correspondent/private-banking due diligence programs and are subject to the shell-bank prohibition) turns on a material term left undefined in the provided text. The same undefined-term issue recurs in 31-cfr-1010 and amla-2020-uncodified (which notes the definition points to subsection (j)(1) text not reproduced).",
+          "locations": [
+            {
+              "item_id": "31-cfr-1010-230-cdd",
+              "quote": "A covered financial institution shall not establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign shell bank.",
+              "verified": true
+            },
+            {
+              "item_id": "amla-2020-uncodified",
+              "quote": "Covered financial institution.--The term `covered financial institution' means an institution referred to in subsection (j)(1).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Broker-dealer pillars obligation assembled only by reading statute, FinCEN rule, and effective SRO rules together",
+          "description": "The complete program-establishment obligation for a broker-dealer is not stated in any single instrument. 31 U.S.C. 5318(h) states the base 'each financial institution shall establish' duty but is not sector-specific. 31 CFR 1023.210 deems a broker-dealer to satisfy 5318(h)(1) only if it complies with \u00a7\u00a71010.610/1010.620, its Federal functional regulator's rules, AND the rules of its SRO \u2014 but only where those SRO rules 'have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.' The substance of the SRO layer is in FINRA Rule 3310/CAB 331. Thus the full broker-dealer pillars duty is assembled only by reading 31-usc-5318, 31-cfr-1023, and FINRA-3310/FINRA-CAB-331 together.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Complies with the rules, regulations, or requirements of its self-regulatory organization governing such programs; provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+              "verified": true
+            },
+            {
+              "item_id": "FINRA-3310",
+              "quote": "Each member shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor the member's compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Bank pillars content assembled only across 5318(h), 5318(l), sector CFR, and CIP rule",
+          "description": "The full bank program-establishment obligation is scattered: 31 U.S.C. 5318(h) supplies the base program duty; 31 U.S.C. 5318(l) plus 31 CFR 1020.220 supply the mandatory CIP component; the banking-agency rule (e.g., 12 CFR 21.21) supplies the four pillars and cross-incorporates CIP; and \u00a7\u00a71010.610/1010.620 supply the due-diligence-program components. No single instrument states the complete bank pillars obligation; it must be assembled by reading 31-usc-5318, 12-cfr-21-occ, 31-cfr-1020, and 31-cfr-1010 together.",
+          "locations": [
+            {
+              "item_id": "12-cfr-21-occ",
+              "quote": "Each national bank and each savings association is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulations jointly promulgated by the OCC and the Department of the Treasury at 31 CFR 1020.220, which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "A bank required to have an anti-money laundering compliance program under the regulations implementing 31 U.S.C. 5318(h), 12 U.S.C. 1818(s), or 12 U.S.C. 1786(q)(1) must implement a written Customer Identification Program (CIP)",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Obsolete '90-day/July 24, 2002' MSB program-implementation deadline retained in current rule text",
+          "description": "31 CFR 1022.210 (O13) still carries the original compliance deadline: 'on or before the later of July 24, 2002, and the end of the 90-day period beginning on the day following the date the business is established.' The July 24, 2002 date is long past and now functions only as an archaic historical artifact within an otherwise current program-establishment rule.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "A money services business must develop and implement an anti-money laundering program that complies with the requirements of this section on or before the later of July 24, 2002, and the end of the 90-day period beginning on the day following the date the business is established.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Obsolete brokerage-account TIN provision limited to accounts opened before October 1, 2003",
+          "description": "31 CFR 1023 (OBL-29) imposes a TIN recordkeeping duty tied to 'each brokerage account opened after June 30, 1972 and before October 1, 2003.' The date window is entirely historical; the provision is an archaic recordkeeping rule preserved within the current broker-dealer instrument.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "such broker or dealer shall within 30 days from the date such account is opened, secure and maintain a record of the taxpayer identification number of the person maintaining the account",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "AML/CFT national priorities published 2021 but not updated within statutory four-year cycle by pinned 2026 date",
+          "description": "31 U.S.C. 5318(h)(4) (and AMLA) require the Secretary to update the AML/CFT priorities 'not less frequently than once every 4 years.' fincen-amlcft-national-priorities is dated June 30, 2021 and the item's own notes flag that, as of the pinned 2026 date, the priorities are more than four years old and have not been refreshed. The published priorities are thus superseded-in-substance by the statutory update obligation yet remain the operative published priorities.",
+          "locations": [
+            {
+              "item_id": "fincen-amlcft-national-priorities",
+              "quote": "FinCEN will update the Priorities \nat least once every four years, as required by the AML Act, 11 to account for new and \nemerging threats to the U.S. financial system and national security.",
+              "verified": true
+            },
+            {
+              "item_id": "31-usc-5318",
+              "quote": "Not less frequently than once every 4 years, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )), relevant State financial regulators, and relevant national security agencies, shall update the priorities established under subparagraph (A).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Internal-inconsistency note: 5312(c) 'paragraph (1)/subparagraph (A)' with no enacted (2)/(B)",
+          "description": "31 U.S.C. 5312 carries the source's own footnotes flagging that subsection (c) shows a paragraph numbered (1) with 'No par. (2) has been enacted' and a subparagraph (A) with 'No subpar. (B) has been enacted.' These are dangling internal enumeration references (a paragraph/subparagraph numbering that points to companion items that do not exist).",
+          "locations": [
+            {
+              "item_id": "31-usc-5312",
+              "quote": "Certain institutions included in definition .-The term \"financial institution\" (as defined in subsection (a)) includes the following:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Renumbering artifact: NCUA SAR provision self-references 'this paragraph (c)' though enacted as (d)",
+          "description": "12-cfr-748-ncua's notes preserve an internal self-reference in which the SAR provision (current paragraph (d)) refers to 'this paragraph (c)' ('For the purposes of this paragraph (c) credit union means...'), an unreconciled renumbering artifact \u2014 an internal cross-reference pointing to the wrong subparagraph label.",
+          "locations": [
+            {
+              "item_id": "12-cfr-748-ncua",
+              "quote": "A credit union's obligation to file a SAR is set forth in &#xA7; 748.1(d).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Regulation H uses 'state member banks' vs 'member bank/bank' without reconciling actor scope",
+          "description": "12-cfr-208-fed's notes flag that \u00a7208.63(a) refers to 'state member banks' while \u00a7208.63(b)-(c) and \u00a7208.62 refer to 'member bank'/'bank'/'Each bank' without reconciling the two phrasings. The covered-actor scope of the BSA compliance-program duty is therefore inconsistently stated within the instrument.",
+          "locations": [
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "This section is issued to assure that all state member banks establish and maintain procedures",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-208-fed",
+              "quote": "Each bank shall develop and provide for the continued administration of a program",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "MSB NPRM program-approval clause references 'the bank' rather than the money services business",
+          "description": "fincen-program-nprm-2026 notes that the proposed MSB program-approval provision (Sec. 1022.210(d)) refers to approval by 'the money services business's board of directors, an equivalent governing body within the bank' \u2014 using 'the bank' as the actor in a provision that should apply to the money services business. This is an actor/scope inconsistency between the intended MSB subject and the referenced 'bank' governing body.",
+          "locations": [
+            {
+              "item_id": "fincen-program-nprm-2026",
+              "quote": "Review and, as appropriate, incorporate the AML/CFT priorities",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "MSB agent-allocation clause permits allocating responsibility yet imposes non-relievable sole responsibility",
+          "description": "31 CFR 1022.210 contains an internal tension between two duties: O14 permits an agent-only MSB and its principal to 'by agreement allocate between them responsibility for development of policies, procedures, and internal controls,' while O15 provides that 'Each money services business shall remain solely responsible for implementation of the requirements' and that nothing relieves any MSB of its obligation. FinCEN guidance (fincen-guid-existing-program-rule-obligations) reinforces the non-relievable duty ('neither the agent nor the principal can avoid liability... by pointing to a contract'). The permissive allocation duty and the non-relievable sole-responsibility duty impose incompatible expectations on the same actors as to who bears program responsibility.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "may by agreement allocate between them responsibility for development of policies, procedures, and internal controls required by this paragraph (d)(1).",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1022",
+              "quote": "Each money services business shall remain solely responsible for implementation of the requirements set forth in this section, and nothing in this paragraph (d)(1) relieves any money services business from its obligation to establish and maintain an effective anti-money laundering program.",
+              "verified": true
+            },
+            {
+              "item_id": "fincen-guid-existing-program-rule-obligations",
+              "quote": "Moreover, each MSB remains independently and wholly responsible for implementing adequate AML program requirements.7 Accordingly, neither the agent nor the principal can avoid liability for failing to establish and maintain an effective AML program by pointing to a contract assigning this responsibility to another party (whether the agent or principal).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent 'account' definitions between bank CIP rule and broker-dealer CIP rule",
+          "description": "The term 'Account' is defined materially differently for the same CIP pillar across sectors. In 31-cfr-1020 (banks), 'Account' means a formal banking relationship (deposit/credit/safe-deposit/trust, etc.) with enumerated exclusions. In 31-cfr-1023 (broker-dealers), 'Account' means a formal relationship with a broker-dealer to effect securities transactions and hold securities/assets. The definitions reflect different covered relationships for the identical CIP program element.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "Account means a formal banking relationship established to provide or engage in services, dealings, or other financial transactions including a deposit account, a transaction or asset account, a credit account, or other extension of credit.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "Account means a formal relationship with a broker-dealer established to effect transactions in securities, including, but not limited to, the purchase or sale of securities and securities loaned and borrowed activity, and to hold securities or other assets for safekeeping or as collateral.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "CIP identity-verification timing differs between bank rule and broker-dealer rule",
+          "description": "For the same CIP program pillar, the timing threshold for verifying customer identity differs by sector. The bank rule (31-cfr-1020, OB-1020.220-a2ii) requires verification 'within a reasonable time after the account is opened.' The broker-dealer rule (31-cfr-1023, OBL-13) requires verification 'within a reasonable time before or after the customer's account is opened.' The added 'before' window is a scope/threshold mismatch for the identical CIP verification requirement.",
+          "locations": [
+            {
+              "item_id": "31-cfr-1020",
+              "quote": "The CIP must contain procedures for verifying the identity of the customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time after the account is opened.",
+              "verified": true
+            },
+            {
+              "item_id": "31-cfr-1023",
+              "quote": "The CIP must contain procedures for verifying the identity of each customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time before or after the customer's account is opened.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

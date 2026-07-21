@@ -1,0 +1,421 @@
+{
+  "item_id": "12-usc-343",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Policies and procedures governing emergency lending under paragraph (3) shall be designed to ensure that any emergency lending program or facility is for the purpose of providing liquidity to the financial system, and not to aid a failing financial company.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Such policies and procedures shall be designed to ensure that any emergency lending program or facility is for the purpose of providing liquidity to the financial system, and not to aid a failing financial company",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Security for emergency loans must be sufficient to protect taxpayers from losses and any such program must be terminated in a timely and orderly fashion.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the security for emergency loans is sufficient to protect taxpayers from losses and that any such program is terminated in a timely and orderly fashion.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "Federal reserve bank",
+      "modality": "may",
+      "action": "discount notes, drafts, and bills of exchange arising out of actual commercial transactions, upon the indorsement of a member bank",
+      "trigger": "indorsement of any of its member banks",
+      "threshold": "maturity at time of discount of not more than ninety days, exclusive of grace",
+      "exceptions": [
+        "does not include notes, drafts, or bills covering merely investments or issued or drawn for the purpose of carrying or trading in stocks, bonds, or other investment securities, except bonds and notes of the Government of the United States"
+      ],
+      "citations": [
+        {
+          "quote": "any Federal reserve bank may discount notes, drafts, and bills of exchange arising out of actual commercial transactions; that is, notes, drafts, and bills of exchange issued or drawn for agricultural, industrial, or commercial purposes",
+          "verified": true
+        },
+        {
+          "quote": "Notes, drafts, and bills admitted to discount under the terms of this paragraph must have a maturity at the time of discount of not more than ninety days, exclusive of grace.",
+          "verified": true
+        },
+        {
+          "quote": "but such definition shall not include notes, drafts, or bills covering merely investments or issued or drawn for the purpose of carrying or trading in stocks, bonds, or other investment securities, except bonds and notes of the Government of the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "may",
+      "action": "determine or define the character of the paper eligible for discount",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the Board of Governors of the Federal Reserve System to have the right to determine or define the character of the paper thus eligible for discount, within the meaning of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "conditional",
+      "action": "authorize any Federal reserve bank to discount for any participant in any program or facility with broad-based eligibility, notes, drafts, and bills of exchange indorsed or otherwise secured to the satisfaction of the Federal reserve bank",
+      "trigger": "unusual and exigent circumstances",
+      "threshold": "affirmative vote of not less than five members of the Board",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In unusual and exigent circumstances, the Board of Governors of the Federal Reserve System, by the affirmative vote of not less than five members, may authorize any Federal reserve bank, during such periods as the said board may determine",
+          "verified": true
+        },
+        {
+          "quote": "to discount for any participant in any program or facility with broad-based eligibility, notes, drafts, and bills of exchange when such notes, drafts, and bills of exchange are indorsed or otherwise secured to the satisfaction of the Federal reserve bank",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "Federal reserve bank",
+      "modality": "must",
+      "action": "obtain evidence that the participant is unable to secure adequate credit accommodations from other banking institutions before discounting",
+      "trigger": "before discounting any such note, draft, or bill of exchange for a participant in a program or facility with broad-based eligibility",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provided, That before discounting any such note, draft, or bill of exchange, the Federal reserve bank shall obtain evidence that such participant in any program or facility with broad-based eligibility is unable to secure adequate credit accommodations from other banking institutions.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "discounts for participants in programs or facilities with broad-based eligibility",
+      "modality": "must",
+      "action": "be subject to such limitations, restrictions, and regulations as the Board of Governors may prescribe",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "All such discounts for any participant in any program or facility with broad-based eligibility shall be subject to such limitations, restrictions, and regulations as the Board of Governors of the Federal Reserve System may prescribe.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "must",
+      "action": "establish, by regulation, in consultation with the Secretary of the Treasury, the policies and procedures governing emergency lending under paragraph (3)",
+      "trigger": "as soon as is practicable after July 21, 2010",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the Board shall establish, by regulation, in consultation with the Secretary of the Treasury, the policies and procedures governing emergency lending under this paragraph.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "policies and procedures established by the Board",
+      "modality": "must",
+      "action": "require that a Federal reserve bank assign a lendable value to all collateral for a loan executed under paragraph (3), consistent with sound risk management practices and to ensure protection for the taxpayer",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The policies and procedures established by the Board shall require that a Federal reserve bank assign, consistent with sound risk management practices and to ensure protection for the taxpayer, a lendable value to all collateral for a loan executed by a Federal reserve bank under this paragraph",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-8",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "must",
+      "action": "establish procedures to prohibit borrowing from programs and facilities by borrowers that are insolvent",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Board shall establish procedures to prohibit borrowing from programs and facilities by borrowers that are insolvent.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-9",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "may",
+      "action": "include, as part of the insolvency-prohibition procedures, a certification from the borrower's chief executive officer (or other authorized officer) that the borrower is not insolvent",
+      "trigger": "at the time the borrower initially borrows under the program or facility",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Such procedures may include a certification from the chief executive officer (or other authorized officer) of the borrower, at the time the borrower initially borrows under the program or facility",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "borrower",
+      "modality": "conditional",
+      "action": "update the insolvency certification if the certified information materially changes",
+      "trigger": "information in the certification materially changes",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "with a duty by the borrower to update the certification if the information in the certification materially changes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "must_not",
+      "action": "establish any program or facility under paragraph (3)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "with the prior approval of the Secretary of the Treasury"
+      ],
+      "citations": [
+        {
+          "quote": "The Board may not establish any program or facility under this paragraph without the prior approval of the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "must",
+      "action": "provide to the Senate Committee on Banking, Housing, and Urban Affairs and the House Committee on Financial Services a report containing the justification, identity of recipients, date/amount/form of assistance, and material terms (duration, collateral pledged and value, interest/fees/revenue, recipient requirements, and expected costs to taxpayers)",
+      "trigger": "the Board authorizes any loan or other financial assistance under paragraph (3)",
+      "threshold": "not later than 7 days after authorization",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Board shall provide to the Committee on Banking, Housing, and Urban Affairs of the Senate and the Committee on Financial Services of the House of Representatives-",
+          "verified": true
+        },
+        {
+          "quote": "not later than 7 days after the Board authorizes any loan or other financial assistance under this paragraph, a report that includes-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "must",
+      "action": "provide written updates on the value of collateral, interest/fees/revenue received, and expected or final cost to taxpayers for outstanding loans or financial assistance",
+      "trigger": "with respect to any outstanding loan or other financial assistance under paragraph (3)",
+      "threshold": "once every 30 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "once every 30 days, with respect to any outstanding loan or other financial assistance under this paragraph, written updates on-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "information regarding participant identity, amounts borrowed, and collateral details submitted under subparagraph (C)",
+      "modality": "conditional",
+      "action": "be kept confidential and made available only to the Chairpersons or Ranking Members of the relevant Committees",
+      "trigger": "upon the written request of the Chairman of the Board",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "shall be kept confidential, upon the written request of the Chairman of the Board, in which case such information shall be made available only to the Chairpersons or Ranking Members of the Committees described in subparagraph (C).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-15",
+      "actor": "Federal reserve bank",
+      "modality": "conditional",
+      "action": "have a claim equal to the amount of the net realized loss against the covered entity, with the same priority as an obligation to the Secretary of the Treasury under section 210(b) of the Dodd-Frank Act",
+      "trigger": "an entity to which the Federal reserve bank provided a loan under paragraph (3) becomes a covered financial company while the loan is outstanding, and the Federal reserve bank incurs a realized net loss on the loan",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If an entity to which a Federal reserve bank has provided a loan under this paragraph becomes a covered financial company, as defined in section 201 of the Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "verified": true
+        },
+        {
+          "quote": "then the Federal reserve bank shall have a claim equal to the amount of the net realized loss against the covered entity, with the same priority as an obligation to the Secretary of the Treasury",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-16",
+      "actor": "program or facility structured to remove assets from a single specific company's balance sheet, or established to help a single specific company avoid insolvency proceedings",
+      "modality": "must_not",
+      "action": "be considered a program or facility with broad-based eligibility",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A program or facility that is structured to remove assets from the balance sheet of a single and specific company, or that is established for the purpose of assisting a single and specific company avoid bankruptcy, resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "verified": true
+        },
+        {
+          "quote": "shall not be considered a program or facility with broad-based eligibility.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "actual commercial transactions",
+      "definition": "notes, drafts, and bills of exchange issued or drawn for agricultural, industrial, or commercial purposes, or the proceeds of which have been used, or are to be used, for such purposes",
+      "citations": [
+        {
+          "quote": "that is, notes, drafts, and bills of exchange issued or drawn for agricultural, industrial, or commercial purposes, or the proceeds of which have been used, or are to be used, for such purposes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "insolvent (for purposes of subparagraph (B))",
+      "definition": "A borrower shall be considered insolvent for purposes of this subparagraph, if the borrower is in bankruptcy, resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act, or any other Federal or State insolvency proceeding.",
+      "citations": [
+        {
+          "quote": "A borrower shall be considered insolvent for purposes of this subparagraph, if the borrower is in bankruptcy, resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "program or facility with broad-based eligibility",
+      "definition": "Not affirmatively defined; the text defines it negatively by exclusion: a program or facility structured to remove assets from the balance sheet of a single and specific company, or established to assist a single and specific company avoid bankruptcy, resolution under title II of the Dodd-Frank Act, or any other Federal or State insolvency proceeding, shall not be considered a program or facility with broad-based eligibility.",
+      "citations": [
+        {
+          "quote": "A program or facility that is structured to remove assets from the balance sheet of a single and specific company, or that is established for the purpose of assisting a single and specific company avoid bankruptcy",
+          "verified": true
+        },
+        {
+          "quote": "shall not be considered a program or facility with broad-based eligibility.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "covered financial company",
+      "definition": "As defined in section 201 of the Dodd-Frank Wall Street Reform and Consumer Protection Act [12 U.S.C. 5381]; not independently defined in this section (incorporated by cross-reference).",
+      "citations": [
+        {
+          "quote": "becomes a covered financial company, as defined in section 201 of the Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "lendable value",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "a lendable value to all collateral for a loan executed by a Federal reserve bank under this paragraph",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "member bank",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Upon the indorsement of any of its member banks, which shall be deemed a waiver of demand, notice and protest by such bank as to its own indorsement exclusively",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Discount rate for emergency lending under paragraph (3) is to be established in accordance with the provisions of section 357 of this title.",
+      "references": [
+        "12 U.S.C. 357"
+      ],
+      "citations": [
+        {
+          "quote": "at rates established in accordance with the provisions of section 357 of this title",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Insolvency for emergency-lending certification purposes is tied to resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act.",
+      "references": [
+        "12 U.S.C. 5381 et seq.",
+        "Dodd-Frank Wall Street Reform and Consumer Protection Act, title II"
+      ],
+      "citations": [
+        {
+          "quote": "resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act [ 12 U.S.C. 5381 et seq. ], or any other Federal or State insolvency proceeding.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Covered financial company status and the priority of the Federal reserve bank's claim are defined and governed by sections 201 and 210(b) of the Dodd-Frank Wall Street Reform and Consumer Protection Act.",
+      "references": [
+        "12 U.S.C. 5381",
+        "12 U.S.C. 5390(b)"
+      ],
+      "citations": [
+        {
+          "quote": "as defined in section 201 of the Dodd-Frank Wall Street Reform and Consumer Protection Act [ 12 U.S.C. 5381 ]",
+          "verified": true
+        },
+        {
+          "quote": "with the same priority as an obligation to the Secretary of the Treasury under section 210(b) of the Dodd-Frank Wall Street Reform and Consumer Protection Act [ 12 U.S.C. 5390(b) ]",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "A 2020 construction provision clarifies that div. N of Pub. L. 116-260 does not modify or limit the Board's section 13(3) authority as it existed the day before the CARES Act's enactment, except as expressly set forth in the CARES Act.",
+      "references": [
+        "Pub. L. 116-260, div. N, title X, section 1006",
+        "CARES Act, 15 U.S.C. 9063(c)(1),(2)",
+        "Public Law 116-136"
+      ],
+      "citations": [
+        {
+          "quote": "nothing in this Act [div. N of Pub. L. 116\u2013260, see Tables for classification] shall be construed to modify or limit the authority of the Board of Governors of the Federal Reserve System under section 13(3) of the Federal Reserve Act ( 12 U.S.C. 343(3) ) as of the day before the date of enactment of the CARES Act",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "notes": "This source is the statutory text of 12 U.S.C. 343 (Federal Reserve Act s.13(3)) concerning discount-window/emergency lending authority. It does not itself discuss FHLB collateral/operational rules, discount-window stigma, Call Reports, FR 2052a, or reform proposals by Acting Comptroller Hsu or Undersecretary McKernan; those diagnostic elements described in the ratified scope are not present in this source and are therefore not extracted. Only the statutory obligations, definitions, objectives, and cross-references bearing on the discount-window emergency-lending framework as written are extracted here, preserved as written including its use of 'shall,' 'may,' and 'shall not' without harmonization. Ambiguities (e.g., undefined terms such as 'lendable value,' 'member bank,' and the negatively-defined 'program or facility with broad-based eligibility') are flagged rather than resolved, per the fidelity rule."
+}

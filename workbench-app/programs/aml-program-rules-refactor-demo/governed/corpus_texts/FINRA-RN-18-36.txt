@@ -1,0 +1,1007 @@
+Skip to main content
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FINRA Utility Menu
+
+ 
+
+ 
+ 
+ About Us
+ 
+
+ 
+ Careers
+ 
+
+ 
+ BrokerCheck
+ 
+
+ 
+ Data
+ 
+
+ 
+ Media Center
+ 
+
+ 
+ For Firms
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+For the Public
+FINRA DATA
+FINRA Data provides non-commercial use of data, specifically the ability to save data views and create and manage a Bond Watchlist.
+Login
+
+For Industry Professionals
+FINPRO GATEWAY
+Registered representatives can fulfill Continuing Education requirements, view their industry CRD record and perform other compliance tasks.
+Login
+
+For Member Firms
+FINRA GATEWAY
+Firm compliance professionals can access filings and requests, run reports and submit support tickets.
+Login
+
+For Case Participants
+DR PORTAL
+Arbitration and mediation case participants and FINRA neutrals can view case information and submit documents through this Dispute Resolution Portal.
+Login
+
+Need Help? | Check System Status
+Log In to other FINRA systems
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ EXPLORE THIS SECTION
+ 
+
+ 
+ 
+ 
+ FINRA Main Navigation
+
+ 
+
+ 
+ 
+ 
+ FINRA Manual
+ 
+ 
+ Updates
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ Interpreting the Rules
+ 
+ 
+ Notices
+ 
+
+ 
+ Guidance
+ 
+
+ 
+ Frequently Asked Questions
+ 
+
+ 
+ Key Topics
+ 
+
+ 
+ Interpretive Questions
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ The Rulemaking Process
+ 
+ 
+ Rule Filings
+ 
+
+ 
+ Rule Filing Status Report
+ 
+
+ 
+ Requests for Comments
+ 
+
+ 
+ Regulatory Policy Agenda
+ 
+
+ 
+ Rulebook Consolidation
+ 
+
+ 
+ Retrospective Rule Review
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ Enforcement
+ 
+ 
+ Disciplinary Actions Online
+ 
+
+ 
+ Monthly Disciplinary Actions
+ 
+
+ 
+ Sanction Guidelines
+ 
+
+ 
+ Individuals Barred by FINRA
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ Adjudication & Decisions
+ 
+ 
+ National Adjudicatory Council (NAC)
+ 
+
+ 
+ Office of Hearing Officers (OHO)
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Regulatory Notice 18-36
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ FINRA Amends Capital Acquisition Broker Rule 331 to Conform to FinCEN's Final Rule on Customer Due Diligence Requirements for Financial Institutions
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Published Date:
+
+ October 19, 2018
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Implementation Date: November 19, 2018
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ Notice
+ 
+ 
+ Comments
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Capital Acquisition Brokers
+
+ 
+ 
+ Regulatory Notice
+ 
+ 
+
+ 
+ 
+ Notice Type
+ 
+ Rule Amendment
+ 
+ 
+ Referenced Rules & Notices
+ 
+ Bank Secrecy Act
+ CAB Rule 203
+ CAB Rule 331
+ CAB Rule 458
+ FINRA Rule 3310
+ Regulatory Notice 17-40
+ Regulatory Notice 18-19
+ 
+ 
+
+ 
+ 
+ Suggested Routing
+ 
+ Compliance
+ Legal
+ Operations
+ Senior Management
+ 
+ 
+ Key Topics
+ 
+ Anti-Money Laundering
+ Compliance Programs
+ 
+ 
+
+ Summary
+
+ FINRA has filed for immediate effectiveness amendments to Capital Acquisition Broker (CAB) Rule 331 (Anti-Money Laundering Compliance Program) to reflect the Financial Crimes Enforcement Network's (FinCEN) adoption of a final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule).1 The implementation date is November 19, 2018.
+
+ The text of the rule is set forth in Attachment A.
+
+ Questions regarding this Notice should be directed to:
+
+ •   Joseph P. Savage, Vice President and Counsel, Office of Regulatory Analysis, at (240) 386-4534 or by email at [email protected]; or
+
+ •   Victoria Crane, Associate General Counsel, Office of General Counsel (OGC), at (202) 728-8104 or by email at [email protected]; or
+
+ •   Julia Bogolin, Counsel, OGC, at (202) 728-8111 or by email at [email protected].
+
+ Background and Discussion
+
+ FINRA CAB Rules
+
+ In 2016, FINRA adopted a separate set of FINRA rules for firms that meet the definition of a "capital acquisition broker" and that elect to be governed under this rule set. CABs are member firms that engage in a limited range of activities, essentially advising companies and private equity funds on capital raising and corporate restructuring, and acting as placement agents for sales of unregistered securities to institutional investors under limited conditions.
+
+ Member firms that elect to be governed under the CAB rule set are not permitted, among other things, to carry or maintain customer accounts, handle customers' funds or securities, accept customers' trading orders, or engage in proprietary trading or market making.
+
+ The CAB Rules became effective on April 14, 2017, after SEC approval.2 In order to provide new CAB applicants with lead time to apply for FINRA membership and obtain the necessary qualifications and registrations, CAB Rules 101-125 became effective on January 3, 2017.3
+
+ FinCEN CDD Rule
+
+ On May 11, 2016, FinCEN, the bureau of the Department of the Treasury responsible for administering the Bank Secrecy Act4 (BSA) and its implementing regulations, issued the CDD Rule5 to clarify and strengthen customer due diligence for covered financial institutions,6 including broker-dealers that have elected CAB status. In its CDD Rule, FinCEN identifies four components of customer due diligence: (1) customer identification and verification; (2) beneficial ownership identification and verification; (3) understanding the nature and purpose of customer relationships; and (4) ongoing monitoring for reporting suspicious transactions and, on a risk basis, maintaining and updating customer information.7 As the first component is already required to be part of a covered financial institution's AML program under the BSA, the CDD Rule focuses on the other three components.
+
+ Specifically, the CDD Rule focuses particularly on the second component by adding a new requirement that covered financial institutions identify and verify the identity of the beneficial owners of all legal entity customers at the time a new account is opened, subject to certain exclusions and exemptions.8 The CDD Rule also addresses the third and fourth components, which FinCEN states "are already implicitly required for covered financial institutions to comply with their suspicious activity reporting requirements," by amending the existing AML program rules for covered financial institutions to explicitly require these components to be included in AML programs as a new "fifth pillar."
+
+ Amendment to FINRA Rule 3310
+
+ On November 21, 2017, FINRA published Regulatory Notice 17-40 to provide guidance to member firms regarding their obligations under FINRA Rule 3310 (Anti-Money Laundering Compliance Program) in light of the adoption of FinCEN's CDD Rule.9 In addition, the Notice summarized the CDD Rule's impact on member firms, including the addition of the ongoing customer due diligence obligations, or "fifth pillar," required for such firms' AML programs.
+
+ On April 20, 2018, FINRA filed for immediate effectiveness amendments to FINRA Rule 3310 to reflect FinCEN's adoption of the CDD Rule.10 On May 3, 2018, FINRA published Regulatory Notice 18-19, which announced its amendments to FINRA Rule 3310.11 The amendments to FINRA Rule 3310 incorporate into the rule this ongoing customer due diligence requirement to conform the rule to the CDD Rule and aid member firms in complying with the CDD Rule's requirements.
+
+ Addition of CDD Rule to CAB AML Rule
+
+ For the same reasons that FINRA amended FINRA Rule 3310 to reflect FinCEN's adoption of the CDD Rule, FINRA has amended CAB Rule 331. CAB Rule 331 requires each CAB to develop and implement a written AML program reasonably designed to achieve and monitor the CAB's compliance with the BSA and implementing regulations.
+
+ FinCEN's CDD Rule does not change the requirements of CAB Rule 331 and CABs must continue to comply with its requirements.12 However, FinCEN's CDD Rule amends the minimum regulatory requirements for CABs' AML programs by explicitly requiring such programs to include risk-based procedures for conducting ongoing customer due diligence.13 Accordingly, the recently filed amendments to CAB Rule 331 incorporate into the rule this ongoing customer due diligence element, or "fifth pillar" required for AML programs to conform the rule to the CDD Rule and aid CABs in complying with its requirements. Specifically, CAB Rule 331(f) provides that the AML programs required by this rule shall, at a minimum, include appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to: (1) understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and (2) conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.
+
+ As stated in the CDD Rule, these provisions are not new and merely codify existing expectations for broker-dealers, including CABs, to adequately identify and report suspicious transactions as required under the BSA and encapsulate practices generally already undertaken by securities firms to know and understand their customers.14
+
+ The amendments to CAB Rule 331 become effective on November 19, 2018.
+
+ 1 See Securities Exchange Act Release No. 84363 (October 4, 2018), 83 FR 51532 (October 11, 2018) (SR-FINRA-2018-035) (Notice of Filing and Immediate Effectiveness of a Proposed Rule Change to Amend CAB Rule 331 (Anti-Money Laundering Compliance Program) to Conform to FinCEN's Final Rule on Customer Due Diligence Requirements for Financial Institutions).
+
+ 2 See Securities Exchange Act Release No. 78617 (August 18, 2016), 81 FR 57948 (August 24, 2016) (SR-FINRA-2015-054) (Order Approving Rule Change as Modified by Amendment Nos. 1 and 2 To Adopt FINRA Capital Acquisition Broker Rules).
+
+ 3 On September 29, 2017, the SEC approved CAB Rule 203 (Engaging in Distribution and Solicitation Activities with Government Entities) and CAB Rule 458 (Books and Records Requirements for Government Distribution and Solicitation Activities), which applied established "pay-to-play" and related recordkeeping rules to the activities of CABs. See Securities Exchange Act Release No. 81781 (September 29, 2017), 82 FR 46559 (October 5, 2017) (SR-FINRA-2017-027) (Order Approving CAB Rules 203 and 458). CAB Rules 203 and 458 became effective on December 6, 2017.
+
+ 4 31 U.S.C. 5311, et seq.
+
+ 5 FinCEN Customer Due Diligence Requirements for Financial Institutions; CDD Rule, 81 FR 29397 (May 11, 2016) (CDD Rule Release); 82 FR 45182 (September 28, 2017) (making technical correcting amendments to the final CDD Rule published on May 11, 2016). FinCEN is authorized to impose AML program requirements on financial institutions and to require financial institutions to maintain procedures to ensure compliance with the BSA and associated regulations. 31 U.S.C. 5318(h)(2) and (a)(2). The CDD Rule is the result of the rulemaking process FinCEN initiated in March 2012. See 77 FR 13046 (March 5, 2012) (Advance Notice of Proposed Rulemaking) and 79 FR 45151 (August 4, 2014) (Notice of Proposed Rulemaking).
+
+ 6 See 31 CFR 1010.230(f) (defining "covered financial institution").
+
+ 7 See CDD Rule Release at 29398.
+
+ 8 See 31 CFR 1010.230(d) (defining "beneficial owner") and 31 CFR 1010.230(e) (defining "legal entity customer").
+
+ 9 See Regulatory Notice 17-40 (November 2017).
+
+ 10 See Securities Exchange Act Release No. 83154 (May 2, 2018), 83 FR 20906 (May 8, 2018) (SR-FINRA-2018-016) (Notice of Filing and Immediate Effectiveness of a Proposed Rule Change Relating to FINRA Rule 3310 to Conform FINRA Rule 3310 to FinCEN's Final Rule on Customer Due Diligence Requirements for Financial Institutions).
+
+ 11 See Regulatory Notice 18-19 (May 3, 2018).
+
+ 12 In fact, FinCEN notes that broker-dealers must continue to comply with FINRA rules, notwithstanding differences between the CDD Rule and the FINRA rules. See CDD Rule Release at 29421, n. 85.
+
+ 13 See CDD Rule Release at 29420; 31 CFR §1023.210.
+
+ 14 See CDD Rule Release at 29419.
+
+ ATTACHMENT A
+
+ Below is the amended rule text. New language is underlined; deletions are in brackets.
+
+ CAPITAL ACQUISITION BROKER RULES
+
+ * * * * *
+
+ 300. SUPERVISION AND RESPONSIBILITIES RELATING TO ASSOCIATED PERSONS
+
+ * * * * *
+
+ 331. Anti-Money Laundering Compliance Program
+
+ Each capital acquisition broker shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor its compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury. Each capital acquisition broker's anti-money laundering program must be approved, in writing, by a member of senior management. The anti-money laundering programs required by this Rule must, at a minimum,
+ 
+ (a) through (c) No change.
+ 
+
+ 
+ (d) Designate and identify to FINRA (by name, title, mailing address, e-mail address, telephone number, and facsimile number) an individual or individuals responsible for implementing and monitoring the day-to-day operations and internal controls of the program (such individual or individuals must be an associated person of the capital acquisition broker) and provide prompt notification to FINRA regarding any change in such designation(s); [and]
+ 
+
+ 
+ (e) Provide ongoing training for appropriate personnel;[.] and
+ 
+
+ 
+ (f) Include appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to:
+ 
+ (i) Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and
+ 
+
+ 
+ (ii) Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information. For purposes of paragraph (f)(ii), customer information shall include information regarding the beneficial owners of legal entity customers (as defined in 31 CFR 1010.230(e)).
+ 
+
+ 
+
+ •   •   •   Supplementary Material: —————————
+
+ .01 through .02 No change.
+
+ * * * * *
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Related Notices
+
+ 
+ 
+ 
+ 
+ Capital Acquisition Brokers
+
+ Anti-Money Laundering
+
+ Bank Secrecy Act
+
+ CAB Rule 203
+
+ CAB Rule 331
+
+ CAB Rule 458
+
+ Regulatory Notice 17-40
+
+ Regulatory Notice 18-19
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ DOWNLOAD AS pdf
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Notice Suggested Routing
+
+ 
+ Compliance
+
+ Legal
+
+ Operations
+
+ Senior Management
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Notice Key Topics
+
+ 
+ Anti-Money Laundering
+
+ Compliance Programs
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Referenced Rules & Notices
+
+ 
+ 
+ 
+ 
+ Bank Secrecy Act
+
+ CAB Rule 203
+
+ CAB Rule 331
+
+ CAB Rule 458
+
+ FINRA Rule 3310
+
+ Regulatory Notice 17-40
+
+ Regulatory Notice 18-19
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ FINRA Utility Menu
+
+ 
+
+ 
+ 
+ About Us
+ 
+
+ 
+ Careers
+ 
+
+ 
+ BrokerCheck
+ 
+
+ 
+ Data
+ 
+
+ 
+ Media Center
+ 
+
+ 
+ For Firms
+ 
+
+ 
+ 
+
+ 
+
+ 
+ FINRA Main Navigation
+
+ 
+
+ 
+ 
+ Rules & Guidance
+ 
+
+ 
+ Registration, Exams & CE
+ 
+
+ 
+ Events & Training
+ 
+
+ 
+ Filing & Reporting
+ 
+
+ 
+ Compliance Tools
+ 
+
+ 
+ For Investors
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ General Inquiries
+301-590-6500
+
+Securities Helpline for Seniors®
+844-574-3577 (Mon-Fri 9am-5pm ET)
+
+File a Regulatory Tip
+To report on abuse or fraud in the industry
+
+Arbitration & Mediation
+FINRA operates the largest securities dispute resolution forum in the United States
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ File an Investor Complaint
+File a complaint about fraud or unfair practices.
+
+Small Firm Help Line
+833-26-FINRA (Mon-Fri 9am-6pm ET)
+
+Office of the Ombuds
+Report a concern about FINRA at 888-700-0028
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Footer Legal Links
+
+ 
+
+ 
+ 
+ Site Map
+ 
+
+ 
+ Privacy Policy
+ 
+
+ 
+ Terms of Use
+ 
+
+ 
+ Translate
+ 
+
+ 
+ Contact Us
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ © 2026 FINRA. All Rights Reserved.
+FINRA is a Registered Trademark of the Financial Industry Regulatory Authority, Inc.

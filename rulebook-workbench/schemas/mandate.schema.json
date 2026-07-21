@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/mandate.schema.json",
+  "title": "Mandate",
+  "description": "One schema, two statuses (ADR-006): 'hypothesis' objects come from the P0.1 interview and confer no authority; 'ratified' objects are created only in the Principal-led P0.9 process with identity verified. Promotion from hypothesis to ratified is an explicit act recorded in adoption fields — never a status flip alone.",
+  "type": "object",
+  "required": ["mandate_id", "program_id", "version", "status", "objectives"],
+  "properties": {
+    "mandate_id": { "type": "string" },
+    "program_id": { "type": "string" },
+    "version": { "type": "string" },
+    "status": { "enum": ["hypothesis", "ratified", "superseded"] },
+    "principal": {
+      "anyOf": [{ "type": "null" }, {
+        "type": "object",
+        "required": ["name", "authority_basis", "identity_verified"],
+        "properties": {
+          "name": { "type": "string" },
+          "authority_basis": { "type": "string", "description": "By what authority they hold these objectives (office, statute, charter)" },
+          "identity_verified": { "type": "boolean" }
+        }
+      }],
+      "description": "MUST be non-null with identity_verified=true when status=ratified."
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["objective_id", "statement", "attribution"],
+        "properties": {
+          "objective_id": { "type": "string" },
+          "statement": { "type": "string", "description": "Outcome terms; a mechanism restatement ('firms file SARs') is invalid" },
+          "attribution": {
+            "type": "object",
+            "required": ["source", "kind"],
+            "properties": {
+              "source": { "type": "string", "description": "Whose position: respondent name, Authority document cite, statute cite" },
+              "kind": { "enum": ["respondent_view", "authority_stated", "statute_implied", "aspirational"] },
+              "citation": { "type": "string" }
+            }
+          },
+          "adoption": {
+            "anyOf": [{ "type": "null" }, {
+              "type": "object",
+              "required": ["adopted_by", "timestamp", "normative_flag"],
+              "properties": {
+                "adopted_by": { "type": "string" },
+                "timestamp": { "type": "string", "format": "date-time" },
+                "normative_flag": { "const": "policy_choice" },
+                "rationale": { "type": "string" },
+                "decision_log_ref": { "type": "string" }
+              }
+            }],
+            "description": "null while status=hypothesis; required non-null for every objective when status=ratified."
+          }
+        }
+      }
+    },
+    "rankings": {
+      "type": "array",
+      "description": "Pairwise-on-conflict rankings. Each carries the same hypothesis/adopted distinction as objectives.",
+      "items": {
+        "type": "object",
+        "required": ["higher", "lower", "provenance"],
+        "properties": {
+          "higher": { "type": "string", "description": "objective_id that prevails on conflict" },
+          "lower": { "type": "string" },
+          "provenance": { "enum": ["respondent_proposed", "principal_adopted"] },
+          "adoption": { "type": ["object", "null"] }
+        }
+      }
+    },
+    "open_tradeoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["objective_a", "objective_b"],
+        "properties": {
+          "objective_a": { "type": "string" },
+          "objective_b": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      },
+      "description": "Unranked conflicting pairs. In the redesign pass, a move touching an open tradeoff returns to the Principal (P3D.5)."
+    },
+    "fixed_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["statement", "citation", "verified"],
+        "properties": {
+          "statement": { "type": "string" },
+          "citation": { "type": "string" },
+          "verified": { "type": "boolean", "description": "Citation-checked in Phase 1" }
+        }
+      }
+    },
+    "amendment_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "by", "change", "decision_log_ref"],
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "by": { "type": "string" },
+          "change": { "type": "string" },
+          "decision_log_ref": { "type": "string" }
+        }
+      }
+    }
+  }
+}

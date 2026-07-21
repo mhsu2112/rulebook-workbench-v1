@@ -1,0 +1,132 @@
+{
+  "item_id": "enf-index-federal-banking-agency-bsa-related-forma",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This source is a search/index interface for federal banking agency enforcement actions; as enforcement evidence it evidences applied supervisory expectations but does not itself establish operative AML/CFT program duties.",
+      "stated_or_inferred": "inferred",
+      "citations": [
+        {
+          "quote": "The OCC supervises the following entities and has the statutory authority to take enforcement actions against them:",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "Institution-affiliated parties (IAPs)",
+      "definition": "Officers, directors, and employees; A bank's controlling stockholders, agents, and certain other individuals.",
+      "citations": [
+        {
+          "quote": "Institution-affiliated parties (IAPs), including:",
+          "verified": true
+        },
+        {
+          "quote": "Officers, directors, and employees",
+          "verified": true
+        },
+        {
+          "quote": "A bank's controlling stockholders, agents, and certain other individuals.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "National banks and their subsidiaries",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "National banks and their subsidiaries",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federally chartered savings associations and their subsidiaries",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Federally chartered savings associations and their subsidiaries",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal branches and agencies of foreign banks",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Federal branches and agencies of foreign banks",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Prohibition Notifications",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "1829 - Prohibition Notifications: Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to 12 USC \u00a7 1829 pursuant to the Fair Hiring in Banking Act.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "text": "",
+      "description": "The OCC asserts statutory authority to take enforcement actions against the entities it supervises, indicating enforcement authority over national banks, federal savings associations, federal branches/agencies of foreign banks, and IAPs.",
+      "references": [
+        "OCC supervisory/enforcement authority"
+      ],
+      "citations": [
+        {
+          "quote": "The OCC supervises the following entities and has the statutory authority to take enforcement actions against them:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The source references OCC Bulletin 2023-16 and related Policies and Procedures Manuals (PPMs) for information on enforcement actions against IAPs, national banks, federal savings associations, and federal branches and agencies of foreign banks.",
+      "references": [
+        "OCC Bulletin 2023-16",
+        "Policies and Procedures Manuals (PPMs)"
+      ],
+      "citations": [
+        {
+          "quote": "Please reference OCC Bulletin 2023-16 and the related Policies and Procedures Manuals (PPMs) for additional information on enforcement actions against institution-affiliated parties (IAPs), national banks, federal savings associations, and federal branches and agencies of foreign banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The source cross-references 12 USC \u00a7 1829 and the Fair Hiring in Banking Act as the statutory basis for excluding certain Prohibition Notifications prior to December 23, 2022, from the lists.",
+      "references": [
+        "12 USC \u00a7 1829",
+        "Fair Hiring in Banking Act"
+      ],
+      "citations": [
+        {
+          "quote": "Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to 12 USC \u00a7 1829 pursuant to the Fair Hiring in Banking Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "For federally chartered savings associations, enforcement actions prior to July 21, 2011, are available only in the OTS Enforcement Order Archive, with field definitions in the OTS Enforcement Order Listing Definitions.",
+      "references": [
+        "OTS Enforcement Order Archive",
+        "OTS Enforcement Order Listing Definitions"
+      ],
+      "citations": [
+        {
+          "quote": "Enforcement actions taken against federally chartered savings associations prior to July 21, 2011, are only available in the\n OTS Enforcement Order Archive (XLS).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "CEILING NOTE observed: this item is enforcement_evidence (a search/index interface), so no operative obligations are extracted; observations recorded as interactions/definitions only. The source is primarily a UI/search page (search fields, examples, action-type and subject-matter filters) with substantive content limited to OCC supervisory-scope statements, disclaimers, and cross-references. The page explicitly disclaims comprehensiveness ('These lists are NOT guaranteed to be comprehensive.') and notes orders 'do not necessarily reflect the current status of the regulatory action.' No specific AML/CFT/BSA program duty is stated in the text itself; the BSA-relatedness derives from the source's cataloging role, not from any duty text present here."
+}

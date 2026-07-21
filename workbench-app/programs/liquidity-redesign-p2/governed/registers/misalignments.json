@@ -1,0 +1,176 @@
+{
+  "ran_at": "2026-07-21T01:47:16.062158+00:00",
+  "mandate_hash": "sha256:7cd10424ec5558ba054af5482e2cbe784a58640714e7f59fd125d8ab696928c2",
+  "cost_usd": 0.21287,
+  "findings": [
+    {
+      "code": "M1",
+      "title": "O4 (free balance-sheet capacity) has no advancing mechanism in the baseline",
+      "description": "No live blueprint element carries an operative obligation that reduces liquidity self-insurance or frees balance-sheet capacity for economic activity. The only content addressing O4's premise (that pre-positioned discount-window collateral or recognized borrowing capacity could substitute for HQLA self-insurance) resides exclusively in reform_proposal / horizon items with empty obligation arrays: hsu-building-better-brakes (pre-positioning, DW capacity in lieu of HQLA), mckernan-reset-liquidity (recognized borrowing capacity), and warner-kennedy-dw-modernization (horizon). All live, binding elements (12-usc-347b, 12-usc-343, 12-cfr-201-reg-a, frbdw-collateral, frbdw-discount-window) impose collateralization/security-interest and lendable-value duties that presuppose and require pledged assets, and none credits borrowing capacity against regulatory liquidity requirements. Families searched: regulation_frb, statute, operational_spec, reporting_instruction, guidance_interagency, reform_proposal, legislation_horizon.",
+      "objective_ids": [
+        "O4"
+      ],
+      "blueprint_refs": [
+        "hsu-building-better-brakes",
+        "mckernan-reset-liquidity",
+        "warner-kennedy-dw-modernization",
+        "frbdw-collateral",
+        "frbdw-discount-window",
+        "12-usc-347b",
+        "12-usc-343",
+        "12-cfr-201-reg-a"
+      ]
+    },
+    {
+      "code": "M1",
+      "title": "O5 (limit moral hazard) served only by proposal-stage caps, not by live obligations",
+      "description": "O5's dedicated instrument \u2014 the recognized borrowing capacity cap that bounds reliance on LOLR (mckernan-reset-liquidity OP-048) \u2014 is a reform_proposal with no operative obligation. The insolvency-borrowing prohibitions (12-usc-343 procedures to prohibit insolvent borrowing; 12-cfr-201-reg-a evidence-of-non-insolvency) and the undercapitalized-institution time limits (12-usc-347b 60-day/120-day cap) constrain LOLR access but are directed at credit-risk protection and taxpayer loss, not at limiting moral hazard as a design objective; their contribution to O5 is incidental. No live element ties LOLR access-expansion to a countervailing moral-hazard-limiting condition. Families searched: statute, regulation_frb, reform_proposal, guidance_interagency, operational_spec.",
+      "objective_ids": [
+        "O5"
+      ],
+      "blueprint_refs": [
+        "mckernan-reset-liquidity",
+        "12-usc-343",
+        "12-cfr-201-reg-a",
+        "12-usc-347b"
+      ]
+    },
+    {
+      "code": "M5",
+      "title": "O3 (revived Fed LOLR, reduced contagion) advanced only through fragile guidance-level readiness duties",
+      "description": "The core O3 mechanism \u2014 members actually able to reach the discount window quickly in a rapid run \u2014 rests on operational-readiness duties that are predominantly 'should' guidance (cfp-addendum-2023 ob-9/ob-10/ob-11, fdic-fil-23-039, occ-bulletin-2023-25 O1) rather than binding rules. The FHLB-to-Fed transition and collateral-transfer arrangements (fhfa-system-at-100 OB-3/OB-24, and the OP-072/OP-113 dependency chain) are 'conditional'/'should' coordination expectations in a policy_report, not enforceable obligations. Statutory DW authority (12-usc-347b, 12-usc-343) is permissive ('may'). O3 therefore emerges from an assemblage of aspirational coordination language rather than a designed, binding LOLR-revival mechanism.",
+      "objective_ids": [
+        "O3"
+      ],
+      "blueprint_refs": [
+        "cfp-addendum-2023",
+        "fdic-fil-23-039",
+        "occ-bulletin-2023-25",
+        "fhfa-system-at-100",
+        "12-usc-347b",
+        "12-usc-343",
+        "frbdw-discount-window"
+      ]
+    },
+    {
+      "code": "M5",
+      "title": "O1 (confidence under fast-run conditions) depends on stigma-mitigation content that exists only as diagnostic vocabulary",
+      "description": "O1 under fast-run conditions turns on defeating discount-window stigma so institutions will draw before confidence collapses. 'Discount-window stigma' is recorded only as a defined term / diagnostic concept across reform and guidance items (hsu-building-better-brakes, mckernan-reset-liquidity, warner-kennedy-dw-modernization, 12-cfr-201-reg-a defined_terms) with no live obligation that suppresses stigma (e.g., mandatory test draws, disclosure timing). Fast-run detection likewise rests on FR 2052a cadence (fr-2052a: daily for large/Category II, monthly otherwise) and quarterly Call Report cadence (ffiec-call-report) \u2014 the OP-089/OP-112 cadence cluster exposes latency with no continuous detection mechanism. O1 is thus served fragilely and by drafting accident rather than a confidence-preserving design.",
+      "objective_ids": [
+        "O1"
+      ],
+      "blueprint_refs": [
+        "hsu-building-better-brakes",
+        "mckernan-reset-liquidity",
+        "warner-kennedy-dw-modernization",
+        "fr-2052a",
+        "ffiec-call-report",
+        "12-cfr-201-reg-a"
+      ]
+    },
+    {
+      "code": "M2",
+      "title": "12-cfr-1266-advances carries no in-scope obligation and serves no Mandate objective in the baseline",
+      "description": "The FHFA Advances regulation node is marked nothing_in_scope=true with an empty obligations array and empty defined_terms. As instantiated in the blueprint it advances none of O1\u2013O5; it functions only as a binding_authority placeholder referenced descriptively. It is a candidate for repeal from scope or renewed justification.",
+      "objective_ids": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "blueprint_refs": [
+        "12-cfr-1266-advances"
+      ]
+    },
+    {
+      "code": "M2",
+      "title": "Dead-baseline nodes with no obligations and no objective linkage",
+      "description": "dodd-frank-1101-1103 (nothing_in_scope=true, 'focus pass found no scope-relevant passages', empty obligations) and sr-10-6-liquidity-policy (nothing_in_scope=true, empty obligations) are retained as live binding/guidance nodes but carry no obligation or defined term that advances any ranked objective. As modeled they serve no Mandate objective and are candidates for repeal or renewed justification.",
+      "objective_ids": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "blueprint_refs": [
+        "dodd-frank-1101-1103",
+        "sr-10-6-liquidity-policy"
+      ]
+    },
+    {
+      "code": "M2",
+      "title": "12-usc-1430 subsections retained after scope limitation serve housing-finance, not liquidity, objectives",
+      "description": "12-usc-1430 obligations tie FHLB long-term advances to residential housing finance / small-business purposes and to collateral-priority mechanics (housing-finance restriction, member stock lien, primary-and-unconditional obligation). The item's own note records that Affordable Housing Program and community-investment material was scope-limited out. The retained long-term-advance-purpose obligation and appraisal/collateral duties advance FHLB housing-finance policy rather than any of O1\u2013O5; the only O3-adjacent provisions are the special/short-term liquidity advance conditionals, leaving the balance of the node serving no Mandate objective.",
+      "objective_ids": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "blueprint_refs": [
+        "12-usc-1430"
+      ]
+    },
+    {
+      "code": "M3",
+      "title": "Universal collateralization and lendable-value burden weighs against O4 while advancing O2/O5",
+      "description": "Every LOLR/advance pathway requires full collateralization to the Reserve Bank's satisfaction plus assigned lendable value with additional margins and zero-value assignments (12-cfr-201-reg-a OBL-9; 12-usc-343 lendable-value duty; frbdw-collateral OBL-3/OBL-4/OBL-5 margin and zero-value rules; frbdw-discount-window OBL-1; 12-usc-347b security requirement; 12-usc-1430 collateral-sufficiency). This burden serves taxpayer protection (O2) and moral-hazard limitation (O5, the two lowest-ranked constraints/objective), but the conservative valuation/margining directly requires institutions to tie up and over-pledge assets \u2014 the very self-insurance O4 seeks to release. The burden as implemented falls disproportionately on the higher-ranked-in-purpose O4 relative to the objectives it serves.",
+      "objective_ids": [
+        "O4",
+        "O2",
+        "O5"
+      ],
+      "blueprint_refs": [
+        "12-cfr-201-reg-a",
+        "12-usc-343",
+        "frbdw-collateral",
+        "frbdw-discount-window",
+        "12-usc-347b",
+        "12-usc-1430"
+      ]
+    },
+    {
+      "code": "M4",
+      "title": "Undercapitalized-institution lending limits and Board loss-liability advance O2/O5 by constraining O3/O1 for weak members",
+      "description": "12-usc-347b prohibits advances to undercapitalized institutions beyond 60 days in any 120-day period and imposes Board loss-liability to the FDIC for excess loss (OBL-7/8/9), and 12-cfr-201-reg-a makes lending to undercapitalized/critically-undercapitalized institutions conditional (OBL-14/OBL-15) and requires evidence the borrower is not insolvent. These provisions advance avoid-bailouts (O2) and limit-moral-hazard (O5) by withdrawing LOLR support precisely from the weakest institutions in a run. But O3 (improve survival odds in rapid runs, reduce contagion) and O1 (maintain confidence) rank above O2>...>O5, and it is exactly the distressed/undercapitalized member whose failure most threatens contagion and confidence. As implemented the lower-ranked objectives are advanced by defeating the higher-ranked O1/O3 for the marginal institution. Ranking: O1 > O2 > O3 > O4 > O5.",
+      "objective_ids": [
+        "O1",
+        "O2",
+        "O3",
+        "O5"
+      ],
+      "blueprint_refs": [
+        "12-usc-347b",
+        "12-cfr-201-reg-a"
+      ]
+    },
+    {
+      "code": "M4",
+      "title": "FHLB creditor-priority and stock-lien priority advance FHLB protection at the expense of Fed LOLR primacy (O3)",
+      "description": "12-usc-1430 grants the FHLB a security interest, a stock lien as further collateral for all member indebtedness, and secured-creditor priority (with 12-cfr-1266 governing priority operationally per its note). fhfa-system-at-100 records the need to transition members from FHLB to the Fed discount window and to negotiate collateral-transfer agreements (OB-3/OB-24, OP-072). The FHLB's prior perfected claim on the same collateral impedes rapid movement of that collateral to the Reserve Bank in a run, constraining O3 (revived Fed LOLR / contagion reduction). The FHLB-protection interest advanced by these priority provisions is not itself a ranked Mandate objective, yet as implemented it operates to defeat the higher-ranked O3. Ranking: O1 > O2 > O3 > O4 > O5.",
+      "objective_ids": [
+        "O3"
+      ],
+      "blueprint_refs": [
+        "12-usc-1430",
+        "12-cfr-1266-advances",
+        "fhfa-system-at-100"
+      ]
+    },
+    {
+      "code": "M5",
+      "title": "O2 (avoid bailouts) advanced chiefly by \u00a713(3) constraints framed as taxpayer-protection drafting rather than a bailout-avoidance design",
+      "description": "O2 is served through 12-usc-343's broad-based-eligibility requirement, prohibition on single-company facilities, insolvency-prohibition procedures, Treasury-approval and reporting/termination duties (and their Reg A restatements via OP-059/OP-061/OP-062). These are structured as emergency-lending governance and taxpayer-loss controls; the bailout-avoidance objective emerges from their aggregate effect rather than from any element that names avoiding bailouts as its purpose. Combined with the absence of any O4 substitution mechanism (see M1), O2 rests on constraint-drafting whose alignment to the objective is incidental rather than designed.",
+      "objective_ids": [
+        "O2"
+      ],
+      "blueprint_refs": [
+        "12-usc-343",
+        "12-cfr-201-reg-a"
+      ]
+    }
+  ]
+}

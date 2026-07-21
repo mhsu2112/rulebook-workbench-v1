@@ -1,0 +1,666 @@
+{
+  "item_id": "fhfa-system-at-100",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The role of the FHLBanks in providing secured advances must be distinguished from the Federal Reserve's financing facilities, which are set up to provide emergency financing for troubled financial institutions confronted with immediate liquidity challenges.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The role of the FHLBanks in providing secured advances must be distinguished from the Federal Reserve\u2019s financing facilities, which are set up to provide emergency financing for troubled financial institutions confronted with immediate liquidity challenges.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The distinction between the FHLBank System's role and that of the Federal Reserve discount window as lender of last resort has not been clear, especially during times of market stress.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The FHLBanks remain a reliable source of liquidity for members, but the distinction between the System\u2019s role and that of the Federal Reserve discount window as lender of last resort has not been clear, especially during times of market stress.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "During the March 2023 bank failures, some large, troubled members had not established the ability to borrow from the Federal Reserve discount window and were therefore overly reliant on the FHLBanks.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "During the March 2023 bank failures, the FHLBanks also discovered that some large, troubled members had not established the ability to borrow from the Federal Reserve discount window and therefore were overly reliant on the FHLBanks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Reliance of some large, troubled members on the FHLBanks rather than the Federal Reserve during periods of significant financial stress may be inconsistent with the relative responsibilities of the two institutions.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The reliance of some large, troubled members on the FHLBanks, rather than the Federal Reserve, for liquidity during periods of significant financial stress may be inconsistent with the relative responsibilities of the FHLBanks and the Federal Reserve.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "During the March 2023 events, FHLBank funding desks lacked clear lines of communication to the Federal Reserve's discount window.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "During the March 2023 events, FHFA observed that the FHLBanks\u2019 funding desks did not have clear lines of communication to the Federal Reserve\u2019s discount window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "FHLBanks rely on supervisory information from a member's primary federal regulator, but that information may be lagged.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The FHLBanks rely on supervisory information from a primary federal regulator for a general perspective of a member\u2019s financial health, but the information may be lagged.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "FHLBanks generally obtain reports of examination from primary federal regulators only upon request, and consequently may receive them long after problems are identified.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "FHLBanks generally obtain reports of examination from primary federal regulators only upon request, and consequently, FHLBanks may receive reports of examination long after problems are identified.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Examination reports are not directly available to FHFA, even though they are available to FHLBanks upon request.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "However, the examination reports are not directly available to FHFA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "During the March 2023 events, some troubled members misunderstood the ability of an FHLBank to provide late-in-day advances, especially in large volumes, and an FHLBank's ability to make advances may be very limited once financial markets close.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "During the March 2023 events, some troubled members misunderstood the ability of an FHLBank to provide advances late in a business day, especially in large volumes.",
+          "verified": true
+        },
+        {
+          "quote": "When financial markets close, an FHLBank\u2019s ability to make advances to a member may be very limited.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "A large debt issuance for a single FHLBank can distort advance pricing for all FHLBank members, highlighting the need to adjust processes to ensure reliable low-cost liquidity for all members.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This issuance highlighted the need to adjust current processes to ensure that FHLBanks can reliably provide liquidity at a low cost to all members, not just one large member.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The market disruptions in March 2023 exposed weaknesses in member credit evaluations by certain FHLBanks that impeded adequate anticipation and management of the risk of potential member failures.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The market disruptions in March 2023 exposed weaknesses in the member credit evaluations by certain FHLBanks that impeded adequate anticipation and management of the risk of potential member failures.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "FHFA identified areas where supervisory assumptions based on previous experience were insufficient or inaccurate when applied to a highly stressed, rapidly developing scenario.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "FHFA has identified areas where supervisory assumptions based on previous experience were insufficient or inaccurate when applied to a highly stressed, rapidly developing scenario.",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1",
+      "actor": "FHLBanks",
+      "modality": "must",
+      "action": "work with their members' primary regulators to ensure processes are built to meet the needs of members in all market conditions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The FHLBanks must also work with their members\u2019 primary regulators to ensure processes are built to meet the needs of members in all market conditions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-2",
+      "actor": "FHLBanks",
+      "modality": "should",
+      "action": "coordinate with their members' primary regulators and the regional Federal Reserve Banks to ensure financial institutions' borrowing needs continue to be met",
+      "trigger": "when they no longer meet the FHLBanks' credit criteria",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "To address this, the FHLBanks should coordinate with their members\u2019 primary regulators and the regional Federal Reserve Banks to ensure financial institutions\u2019 borrowing needs continue to be met when they no longer meet the FHLBanks\u2019 credit criteria.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3",
+      "actor": "FHLBanks",
+      "modality": "conditional",
+      "action": "coordinate with large depository institution members and the members' prudential regulators to make certain that these members have established protocols to meet emergency liquidity needs from the Federal Reserve discount window",
+      "trigger": "when necessary",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The FHLBanks can better serve their members if they coordinate with their large depository institution members and the members\u2019 prudential regulators to make certain that these members have established protocols to meet their emergency liquidity needs from the Federal Reserve discount window when necessary.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-4",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "provide guidance to the FHLBanks to work with their members and the members' primary federal regulators to ensure all large depository members have established protocols to borrow from the Federal Reserve discount window",
+      "trigger": "so that these institutions' borrowing needs continue to be met",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Accordingly, FHFA will provide guidance to the FHLBanks to work with their members and the members\u2019 primary federal regulators to ensure all large depository members have established protocols to borrow from the Federal Reserve discount window so that these institutions\u2019 borrowing needs continue to be met.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-5",
+      "actor": "FHLBanks",
+      "modality": "conditional",
+      "action": "negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral",
+      "trigger": "if a member's lending activity must be moved to the Federal Reserve discount window",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Additionally, FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member\u2019s lending activity must be moved to the Federal Reserve discount window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-6",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "undertake a rulemaking to amend its regulation establishing limits on unsecured extensions of credit to provide deposits held in IBDAs at highly-rated banks with the higher limit that currently applies only to overnight fed funds",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA plans to undertake a rulemaking to amend its regulation establishing limits on unsecured extensions of credit to provide deposits held in IBDAs at highly-rated banks with the higher limit that currently applies only to overnight fed funds.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-7",
+      "actor": "FHLBanks",
+      "modality": "conditional",
+      "action": "revisit their policies, procedures, and systems for evaluating the financial condition of members",
+      "trigger": "communicated FHFA expectation following weaknesses exposed by March 2023 disruptions",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As a result, FHFA has communicated its expectation that the FHLBanks revisit their policies, procedures, and systems for evaluating the financial condition of members.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-8",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "issue updated guidance related to ongoing evaluations of member credit, with the goal of FHLBanks working with members and primary regulators to identify concerns before they precipitate impairment of a member's ability to receive advances",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In addition, FHFA will issue updated guidance related to ongoing evaluations of member credit with the goal of the FHLBanks working with their members and their members\u2019 primary regulators to identify concerns before they precipitate impairment of a member\u2019s ability to receive advances.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-9",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "initiate a study of the FHLBank System's treatment of prepayment fees for certain situations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA will initiate a study of the FHLBank System\u2019s treatment of prepayment fees for certain situations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-10",
+      "actor": "FHFA",
+      "modality": "may",
+      "action": "consider initiating a rulemaking to amend the Advances regulation to make the FHLBank or the FHLBank System responsible for prepayment fees due from a failed member on long-term advances provided shortly before the member fails and without consultation with the primary federal regulator",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As a result, FHFA may consider initiating a rulemaking to amend the Advances regulation to make the FHLBank or the FHLBank System responsible for prepayment fees due from a failed member on long-term advances provided shortly before the member fails and without consultation with the primary federal regulator.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-11",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "initiate a rulemaking to require certain stress testing protocols for the FHLBanks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA plans to initiate a rulemaking to require certain stress testing protocols for the FHLBanks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-12",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "propose adjusting the scenarios published by the Federal Reserve to reflect the risks present in the FHLBank System",
+      "trigger": "as warranted",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA will propose adjusting the scenarios published by the Federal Reserve, as warranted, to reflect the risks present in the FHLBank System, which may differ in some ways from the risks faced by financial institutions that are subject to stress testing under the Dodd-Frank Wall Street Reform and Consumer Protection Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-13",
+      "actor": "FHFA",
+      "modality": "must",
+      "action": "review the district realignment issue in the near term and establish a protocol for regular periodic reviews to determine whether districts should be re-aligned",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA will review the issue in the near term and establish a protocol for regular periodic reviews to determine whether districts should be re-aligned.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-14",
+      "actor": "FHFA",
+      "modality": "may",
+      "action": "recommend statutory amendments to Congress",
+      "trigger": "if it determines such changes are warranted, given the general authority for consolidation is limited by the requirement that the number of FHLBank districts not be reduced to fewer than eight",
+      "threshold": "number of FHLBank districts not reduced to fewer than eight",
+      "exceptions": [
+        "subject to the exceptions described above"
+      ],
+      "citations": [
+        {
+          "quote": "However, because that general authority for consolidation is limited by the requirement that the number of FHLBank districts not be reduced to fewer than eight, subject to the exceptions described above, FHFA may recommend statutory amendments to Congress if it determines such changes are warranted.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-15",
+      "actor": "FHFA",
+      "modality": "must",
+      "action": "continue to monitor the effect multi-district members have on the FHLBanks and encourage improved communication and information sharing among the FHLBanks on the borrowing activity of multi-district members",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA will continue to monitor the effect multi-district members have on the FHLBanks and encourages improved communication and information sharing among the FHLBanks on the borrowing activity of multi-district members.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-16",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "provide guidance on multi-district member management",
+      "trigger": "as necessary",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA will provide guidance on multi-district member management as necessary.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-17",
+      "actor": "FHFA",
+      "modality": "conditional",
+      "action": "recommend that Congress amend the Safety and Soundness Act to eliminate the restrictions on the Agency's authority to prescribe levels or ranges for the compensation of executive officers of the FHLBanks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA plans to recommend that Congress amend the Safety and Soundness Act to eliminate the restrictions on the Agency\u2019s authority to prescribe levels or ranges for the compensation of executive officers of the FHLBanks.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-18",
+      "actor": "FHLBanks",
+      "modality": "conditional",
+      "action": "draft agreements with the Federal Reserve Banks that would facilitate the transfer of a member's collateral to the Federal Reserve if the member needs to borrow from the discount window",
+      "trigger": "if the member needs to borrow from the discount window",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As a result, the FHLBanks have already begun discussions with the Federal Reserve Banks to draft agreements that would facilitate the transfer of a member\u2019s collateral to the Federal Reserve if the member needs to borrow from the discount window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-19",
+      "actor": "FHFA",
+      "modality": "must",
+      "action": "initiate discussions with members' primary federal regulators to improve the timely exchange of information on member financial condition",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA has also initiated discussions with members\u2019 primary federal regulators to improve the timely exchange of information on member financial condition.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-20",
+      "actor": "FHFA",
+      "modality": "must",
+      "action": "actively monitor the FHLBanks' lending activity and provide guidance to them to reassess and update their member credit frameworks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As a result, FHFA is actively monitoring the FHLBanks\u2019 lending activity and has provided guidance to them to reassess and update their member credit frameworks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-21",
+      "actor": "FHFA",
+      "modality": "must",
+      "action": "provide guidance to the FHLBanks to improve communication with members regarding the FHLBanks' limitations on extending further credit when a member's distress signals potential failure",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Additionally, FHFA has provided guidance to the FHLBanks to improve communication with members regarding the FHLBanks\u2019 limitations on extending further credit when a member\u2019s distress signals potential failure.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-22",
+      "actor": "FHLBanks",
+      "modality": "should",
+      "action": "not rely primarily on collateral to mitigate risk in tenuous situations, capturing all appropriate dimensions of risk when assessing member creditworthiness",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA has also emphasized the importance of capturing all appropriate dimensions of risk when assessing member creditworthiness and that the FHLBanks should not rely primarily on collateral to mitigate risk in tenuous situations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-23",
+      "actor": "members' primary federal regulators",
+      "modality": "must",
+      "action": "make those members' reports of examination available to the appropriate FHLBank",
+      "trigger": "upon request",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "By statute, members\u2019 primary federal regulators are required to make those members\u2019 reports of examination available to the appropriate FHLBank upon request.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-24",
+      "actor": "FHFA",
+      "modality": "must",
+      "action": "work with the FHLBanks to ensure they are preemptively establishing the necessary expectations and infrastructure to transition members from their FHLBank to the Federal Reserve discount window",
+      "trigger": "when necessary",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FHFA is working with the FHLBanks to ensure they are preemptively establishing the necessary expectations and infrastructure to transition members from their FHLBank to the Federal Reserve discount window when necessary.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "lender of last resort",
+      "definition": "(undefined here) \u2014 used to describe the Federal Reserve's role, which the FHLBanks 'cannot functionally serve as,' particularly for large, troubled members with significant short-term borrowing needs.",
+      "citations": [
+        {
+          "quote": "the FHLBanks cannot functionally serve as the lender of last resort, particularly for large, troubled members that can have significant borrowing needs over a short period of time",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal Reserve discount window",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the distinction between the System\u2019s role and that of the Federal Reserve discount window as lender of last resort has not been clear",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "advances",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The role of the FHLBanks in providing secured advances must be distinguished from the Federal Reserve\u2019s financing facilities",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "IBDAs",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "FHFA plans to undertake a rulemaking to amend its regulation establishing limits on unsecured extensions of credit to provide deposits held in IBDAs at highly-rated banks with the higher limit that currently applies only to overnight fed funds.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "AHP funding",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the resulting savings can be passed to members through lending activities or increased net income, which leads to increased AHP funding",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "primary federal regulator",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "By statute, members\u2019 primary federal regulators are required to make those members\u2019 reports of examination available to the appropriate FHLBank upon request.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "prepayment fees",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "FHFA will initiate a study of the FHLBank System\u2019s treatment of prepayment fees for certain situations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "multi-district members",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "FHFA will continue to monitor the effect multi-district members have on the FHLBanks and encourages improved communication and information sharing among the FHLBanks on the borrowing activity of multi-district members.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "reports of examination",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "FHLBanks generally obtain reports of examination from primary federal regulators only upon request, and consequently, FHLBanks may receive reports of examination long after problems are identified.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "FHLBanks' secured advances role is distinguished from the Federal Reserve's emergency financing facilities.",
+      "references": [
+        "Federal Reserve financing facilities"
+      ],
+      "citations": [
+        {
+          "quote": "The role of the FHLBanks in providing secured advances must be distinguished from the Federal Reserve\u2019s financing facilities, which are set up to provide emergency financing for troubled financial institutions confronted with immediate liquidity challenges.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FHFA will propose adjusting Federal Reserve-published stress testing scenarios and contrasts them with Dodd-Frank Act stress testing requirements applicable to other financial institutions.",
+      "references": [
+        "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+        "Federal Reserve stress testing scenarios"
+      ],
+      "citations": [
+        {
+          "quote": "FHFA will propose adjusting the scenarios published by the Federal Reserve, as warranted, to reflect the risks present in the FHLBank System, which may differ in some ways from the risks faced by financial institutions that are subject to stress testing under the Dodd-Frank Wall Street Reform and Consumer Protection Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FHLBanks are in discussions with Federal Reserve Banks to draft agreements facilitating collateral transfer to the discount window.",
+      "references": [
+        "Federal Reserve Banks agreements"
+      ],
+      "citations": [
+        {
+          "quote": "the FHLBanks have already begun discussions with the Federal Reserve Banks to draft agreements that would facilitate the transfer of a member\u2019s collateral to the Federal Reserve if the member needs to borrow from the discount window",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FHFA plans to recommend Congress amend the Safety and Soundness Act regarding executive compensation authority.",
+      "references": [
+        "Safety and Soundness Act"
+      ],
+      "citations": [
+        {
+          "quote": "FHFA plans to recommend that Congress amend the Safety and Soundness Act to eliminate the restrictions on the Agency\u2019s authority to prescribe levels or ranges for the compensation of executive officers of the FHLBanks.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "By statute, members' primary federal regulators must make examination reports available to the appropriate FHLBank upon request, but not directly to FHFA.",
+      "references": [
+        "statutory examination-report-sharing requirement (unspecified statute)"
+      ],
+      "citations": [
+        {
+          "quote": "By statute, members\u2019 primary federal regulators are required to make those members\u2019 reports of examination available to the appropriate FHLBank upon request.",
+          "verified": false
+        },
+        {
+          "quote": "However, the examination reports are not directly available to FHFA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Statutory floor limiting FHLBank district consolidation to no fewer than eight districts constrains FHFA's general consolidation authority, subject to described exceptions.",
+      "references": [
+        "FHLBank district statutory floor of eight districts"
+      ],
+      "citations": [
+        {
+          "quote": "because that general authority for consolidation is limited by the requirement that the number of FHLBank districts not be reduced to fewer than eight, subject to the exceptions described above",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "notes": "Source contains internally coexisting modal framings for closely related duties: e.g., FHLBanks 'must' work with primary regulators generally (unconditional), but 'should' coordinate on discount-window transition specifically, and 'can better serve members if they coordinate' (conditional/aspirational) \u2014 preserved as written per fidelity rule, not harmonized into a single modality. Text does not define key scope terms (lender of last resort, discount window, advances, IBDAs, AHP, prepayment fees, multi-district members, reports of examination); these are recorded as material undefined terms. The text asserts a statutory duty on primary federal regulators to share exam reports with FHLBanks 'upon request' but simultaneously states such reports 'may be lagged' and arrive 'long after problems are identified' \u2014 an unresolved tension preserved as written. Scope note: extraction covers only the discount-window/FHLB interoperability, stigma-adjacent, and reporting-timing material within this source; the source does not itself catalogue discount-window stigma causes or Call Report/FR 2052a granularity issues, nor does it map Hsu/McKernan reform proposals \u2014 those elements of the ratified scope are not present in this particular source item."
+}

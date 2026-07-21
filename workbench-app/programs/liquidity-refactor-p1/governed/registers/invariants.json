@@ -1,0 +1,26 @@
+{
+  "ran_at": "2026-07-21T01:39:45.864998+00:00",
+  "checks": [
+    {
+      "name": "definitional_uniqueness",
+      "status": "warn",
+      "details": "9 terms with >1 materially distinct definitions remain in the derived blueprint; 5 CANONICALIZE-DEFINITION operations finalized against them. In operation-trace form the trace records the fix; the underlying extractions intentionally keep the as-built divergence (P2.3)."
+    },
+    {
+      "name": "operation_referential_integrity",
+      "status": "pass",
+      "details": "operations targeting unknown blueprint items: none"
+    },
+    {
+      "name": "zero_open_dispositions",
+      "status": "pass",
+      "details": "open: none"
+    },
+    {
+      "name": "defect_register_fully_worked",
+      "status": "pass",
+      "details": "unworked findings: 0"
+    }
+  ],
+  "pass": true
+}

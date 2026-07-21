@@ -1,0 +1,22 @@
+[
+  {
+    "gap_id": "GAP-1",
+    "description": "DOJ criminal prosecutions family excluded: law-enforcement layer, weak program-rule linkage; revisit if an LE consumer is added.",
+    "owner": "Scope Owner"
+  },
+  {
+    "gap_id": "GAP-2",
+    "description": "CIP guidance items excluded: Customer Identification Program is a distinct obligation family (coordination layer per scope sentence).",
+    "owner": "Scope Owner"
+  },
+  {
+    "gap_id": "GAP-3",
+    "description": "Insurance/casino/precious-metals program guidance excluded: sectors are named boundaries per ratified PS 0.2 (A12).",
+    "owner": "Scope Owner"
+  },
+  {
+    "gap_id": "GAP-4",
+    "description": "Second census (C-ADV2) not yet run over this slice \u2014 presumptively mandatory (PS OI-4); runs as the second_census task before Phase 2.",
+    "owner": "Distillation Lead"
+  }
+]

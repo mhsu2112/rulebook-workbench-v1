@@ -1,0 +1,472 @@
+{
+  "item_id": "ffiec-man-cp-03",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Assess the adequacy of the bank's independent testing program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective: Assess the adequacy of the bank's independent testing program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The purpose of independent testing (audit) is to assess the bank's compliance with BSA regulatory requirements, relative to its risk profile, and assess the overall adequacy of the BSA/AML compliance program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The purpose of independent testing (audit) is to assess the bank's compliance with BSA regulatory requirements, relative to its risk profile, and assess the overall adequacy of the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "cp03-o01",
+      "actor": "bank (independent testing)",
+      "modality": "should",
+      "action": "have independent testing conducted by the internal audit department, outside auditors, consultants, or other qualified independent parties",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Independent testing should be conducted by the internal audit department, outside auditors, consultants, or other qualified independent parties.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o02",
+      "actor": "banks that do not employ outside auditors or consultants or do not have internal audit departments",
+      "modality": "may",
+      "action": "comply with the independent testing requirement by using qualified bank staff who are not involved in the function being tested",
+      "trigger": "bank does not employ outside auditors or consultants or does not have internal audit departments",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks that do not employ outside auditors or consultants or do not have internal audit departments may comply with this requirement by using qualified bank staff who are not involved in the function being tested.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o03",
+      "actor": "banks engaging outside auditors or consultants",
+      "modality": "should",
+      "action": "ensure that the persons conducting the BSA/AML independent testing are not involved in other BSA-related functions at the bank that may present a conflict of interest or lack of independence, such as training or developing policies and procedures",
+      "trigger": "engaging outside auditors or consultants",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks engaging outside auditors or consultants should ensure that the persons conducting the BSA/AML independent testing are not involved in other BSA-related functions at the bank that may present a conflict of interest or lack of independence, such as training or developing policies and procedures.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o04",
+      "actor": "party conducting the BSA/AML independent testing",
+      "modality": "should",
+      "action": "report directly to the board of directors or to a designated board committee comprised primarily, or completely, of outside directors",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Regardless of who performs the independent testing, the party conducting the BSA/AML independent testing should report directly to the board of directors or to a designated board committee comprised primarily, or completely, of outside directors.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o05",
+      "actor": "banks with a community focus, less complex operations, and lower-risk profiles for ML/TF and other illicit financial activities",
+      "modality": "may",
+      "action": "consider utilizing a shared resource as part of a collaborative arrangement to conduct independent testing",
+      "trigger": "community focus, less complex operations, and lower-risk profiles",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks with a community focus, less complex operations, and lower-risk profiles for ML/TF and other illicit financial activities may consider utilizing a shared resource as part of a collaborative arrangement to conduct independent testing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o06",
+      "actor": "bank (independent testing)",
+      "modality": "should",
+      "action": "have independent testing, including the frequency, commensurate with the ML/TF and other illicit financial activity risk profile of the bank and the bank's overall risk management strategy",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "There is no regulatory requirement establishing BSA/AML independent testing frequency. Independent testing, including the frequency, should be commensurate with the ML/TF and other illicit financial activity risk profile of the bank and the bank's overall risk management strategy.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o07",
+      "actor": "bank",
+      "modality": "may",
+      "action": "conduct independent testing over periodic intervals (for example, every 12-18 months) and/or when there are significant changes in the bank's risk profile, systems, compliance staff, or processes",
+      "trigger": "periodic intervals and/or significant changes in the bank's risk profile, systems, compliance staff, or processes",
+      "threshold": "for example, every 12-18 months",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank may conduct independent testing over periodic intervals (for example, every 12-18 months) and/or when there are significant changes in the bank's risk profile, systems, compliance staff, or processes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o08",
+      "actor": "bank (independent testing of specific BSA requirements)",
+      "modality": "should",
+      "action": "be risk-based and evaluate the quality of risk management related to ML/TF and other illicit financial activity risks for significant banking operations across the organization",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Independent testing of specific BSA requirements should be risk-based and evaluate the quality of risk management related to ML/TF and other illicit financial activity risks for significant banking operations across the organization.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o09",
+      "actor": "bank (risk-based independent testing)",
+      "modality": "should",
+      "action": "include evaluating pertinent internal controls and information technology sources, systems, and processes used to support the BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Risk-based independent testing should include evaluating pertinent internal controls and information technology sources, systems, and processes used to support the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o10",
+      "actor": "bank (independent testing)",
+      "modality": "should",
+      "action": "evaluate the overall adequacy of the bank's BSA/AML compliance program and the bank's compliance with BSA regulatory requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The independent testing should evaluate the overall adequacy of the bank's BSA/AML compliance program and the bank's compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o11",
+      "actor": "bank (independent testing)",
+      "modality": "should",
+      "action": "contain sufficient information for the reviewer to reach a conclusion about the overall adequacy of the BSA/AML compliance program",
+      "trigger": null,
+      "threshold": "At a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "At a minimum, the independent testing should contain sufficient information for the reviewer (e.g., board of directors, senior management, BSA compliance officer, review auditor, or an examiner) to reach a conclusion about the overall adequacy of the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o12",
+      "actor": "auditors",
+      "modality": "should",
+      "action": "document the independent testing scope, procedures performed, transaction testing completed, and any findings",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Auditors should document the independent testing scope, procedures performed, transaction testing completed, and any findings.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o13",
+      "actor": "bank (independent testing documentation)",
+      "modality": "should",
+      "action": "make all independent testing documentation and supporting workpapers available for examiner review",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "All independent testing documentation and supporting workpapers should be available for examiner review.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o14",
+      "actor": "bank",
+      "modality": "should",
+      "action": "document and report violations; exceptions to bank policies, procedures, or processes; or other deficiencies noted during the independent testing to the board of directors or a designated board committee in a timely manner",
+      "trigger": "violations, exceptions, or other deficiencies noted during independent testing",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Violations; exceptions to bank policies, procedures, or processes; or other deficiencies noted during the independent testing should be documented and reported to the board of directors or a designated board committee in a timely manner.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o15",
+      "actor": "board of directors, or a designated board committee, and appropriate staff",
+      "modality": "should",
+      "action": "track deficiencies and document progress implementing corrective actions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors, or a designated board committee, and appropriate staff should track deficiencies and document progress implementing corrective actions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o16",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "review relevant documents such as the auditor's report(s), scope, and supporting workpapers, as needed",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should review relevant documents such as the auditor's report(s), scope, and supporting workpapers, as needed.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o17",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "determine whether there is an explicit statement in the report(s) about the bank's overall compliance with BSA regulatory requirements or, at a minimum, sufficient information to reach a conclusion about the overall adequacy of the BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should determine whether there is an explicit statement in the report(s) about the bank's overall compliance with BSA regulatory requirements or, at a minimum, sufficient information to reach a conclusion about the overall adequacy of the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o18",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "determine whether the testing was conducted in an independent manner",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should determine whether the testing was conducted in an independent manner.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o19",
+      "actor": "examiners",
+      "modality": "may",
+      "action": "evaluate, as applicable, the subject matter expertise, qualifications, and independence of the person or persons performing the independent testing",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners may also evaluate, as applicable,[16] the subject matter expertise, qualifications, and independence of the person or persons performing the independent testing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o20",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "determine whether the independent testing sufficiently covers ML/TF and other illicit financial activity risks within the bank's operations and whether the frequency is commensurate with the bank's risk profile",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should determine whether the independent testing sufficiently covers ML/TF and other illicit financial activity risks within the bank's operations and whether the frequency is commensurate with the bank's risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp03-o21",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "review whether violations; exceptions to policies, procedures, or processes; or other deficiencies are reported to the board of directors or a designated board committee in a timely manner, whether they are tracked, and whether corrective actions are documented",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should also review whether violations; exceptions to policies, procedures, or processes; or other deficiencies are reported to the board of directors or a designated board committee in a timely manner, whether they are tracked, and whether corrective actions are documented.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "independent testing (audit)",
+      "definition": "The purpose of independent testing (audit) is to assess the bank's compliance with BSA regulatory requirements, relative to its risk profile, and assess the overall adequacy of the BSA/AML compliance program.",
+      "citations": [
+        {
+          "quote": "The purpose of independent testing (audit) is to assess the bank's compliance with BSA regulatory requirements, relative to its risk profile, and assess the overall adequacy of the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Risk-based independent testing",
+      "definition": "Risk-based independent testing focuses on the bank's risk assessment to tailor independent testing to the areas identified as being of greatest risk and concern.",
+      "citations": [
+        {
+          "quote": "Risk-based independent testing focuses on the bank's risk assessment to tailor independent testing to the areas identified as being of greatest risk and concern.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer information program (CIP)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer due diligence (CDD)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "suspicious activity reports (SARs)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "currency transaction reports (CTRs)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA regulatory requirements",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "assess the bank's compliance with BSA regulatory requirements",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "ML/TF and other illicit financial activity risk profile",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "should be commensurate with the ML/TF and other illicit financial activity risk profile of the bank",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Independent testing reviews the bank's compliance with BSA recordkeeping and reporting requirements, including CIP, CDD, beneficial ownership, SARs, CTRs and CTR exemptions, and information sharing requests (coordination layer duties).",
+      "references": [
+        "CIP",
+        "CDD",
+        "beneficial ownership",
+        "SARs",
+        "CTRs",
+        "CTR exemptions",
+        "information sharing requests"
+      ],
+      "citations": [
+        {
+          "quote": "The bank complies with BSA recordkeeping and reporting requirements (e.g., customer information program (CIP), customer due diligence (CDD), beneficial ownership, suspicious activity reports (SARs), currency transaction reports (CTRs) and CTR exemptions, and information sharing requests).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Independent testing evaluates whether management took appropriate and timely action to address violations and deficiencies noted in previous independent testing and regulatory examinations, including progress addressing outstanding supervisory enforcement actions.",
+      "references": [
+        "previous independent testing",
+        "regulatory examinations",
+        "supervisory enforcement actions"
+      ],
+      "citations": [
+        {
+          "quote": "Management took appropriate and timely action to address any violations and other deficiencies noted in previous independent testing and regulatory examinations, including progress in addressing outstanding supervisory enforcement actions, if applicable.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Text notes there is no regulatory requirement establishing BSA/AML independent testing frequency, tying the frequency to risk profile rather than a fixed rule.",
+      "references": [
+        "BSA/AML independent testing frequency"
+      ],
+      "citations": [
+        {
+          "quote": "There is no regulatory requirement establishing BSA/AML independent testing frequency.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is FFIEC examination-manual supervisory guidance; obligations are expressed almost entirely in 'should'/'may' hortatory terms rather than binding 'shall'/'must' language, and the text explicitly states 'There is no regulatory requirement establishing BSA/AML independent testing frequency.' Footnote markers [14], [15], [16] appear in the source but the footnote texts are not provided, so referenced authorities cannot be extracted. The document is part of the SAR/CTR/CDD coordination layer and program-pillars review; extracted as written without harmonization."
+}

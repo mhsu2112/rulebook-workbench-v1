@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Rulebook Workbench</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root { --bg:#11141a; --panel:#1a1f29; --line:#2a3140; --text:#e6e9ef; --dim:#8b93a5; --acc:#5b8def; --ok:#3fb27f; --warn:#d9a441; --bad:#e06c6c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 -apple-system, "Segoe UI", Helvetica, sans-serif; }
+  header { display:flex; align-items:baseline; gap:16px; padding:10px 18px; border-bottom:1px solid var(--line); }
+  header h1 { font-size:16px; margin:0; } .dim { color:var(--dim); }
+  #spend { color:var(--dim); font-size:12px; margin-left:auto; }
+  #errbar { display:none; background:#3a1f22; color:var(--bad); padding:8px 18px; white-space:pre-wrap; font-size:12.5px; }
+  .layout { display:grid; grid-template-columns:220px 1fr 380px; height:calc(100vh - 46px); }
+  .col { border-right:1px solid var(--line); overflow-y:auto; }
+  #left { order:1; } #right { order:2; border-right:1px solid var(--line); } #mid { order:3; border-right:0; }
+  .col h2, #left h2 { font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim); padding:12px 14px 4px; margin:0; }
+  .prog { padding:8px 14px; cursor:pointer; border-left:3px solid transparent; }
+  .prog:hover { background:var(--panel); }
+  .prog.sel { border-left-color:var(--acc); background:var(--panel); }
+  .newprog { display:flex; gap:6px; padding:10px 14px; }
+  input, textarea, select { background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:7px 9px; font:inherit; width:100%; }
+  button { background:var(--acc); color:#fff; border:0; border-radius:6px; padding:7px 14px; font:inherit; cursor:pointer; }
+  button:disabled { opacity:.45; cursor:default; }
+  .chat { display:flex; flex-direction:column; height:100%; overflow:hidden; }
+  .msgs { flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; }
+  .m { max-width:82%; margin-bottom:12px; padding:10px 13px; border-radius:10px; white-space:pre-wrap; }
+  .m.user { background:#26436e; margin-left:auto; }
+  .m.assistant { background:var(--panel); border:1px solid var(--line); }
+  .m .who { font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.06em; margin-bottom:4px; }
+  .inputrow { display:flex; gap:8px; padding:12px; }
+  .inputrow textarea { resize:none; }
+  .tabs { display:flex; flex-wrap:wrap; border-bottom:1px solid var(--line); }
+  .tabs div { padding:9px 12px; cursor:pointer; color:var(--dim); white-space:nowrap; font-size:13.5px; }
+  .tabs div.on { color:var(--text); border-bottom:2px solid var(--acc); }
+  .pane { padding:14px; }
+  pre { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px; overflow:auto; font-size:11.5px; max-height:42vh; }
+  .badge { display:inline-block; padding:2px 9px; border-radius:99px; font-size:11px; border:1px solid var(--line); }
+  .badge.ratified { color:var(--ok); border-color:var(--ok); }
+  .badge.awaiting { color:var(--warn); border-color:var(--warn); }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  td, th { text-align:left; padding:6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  label { display:block; font-size:11px; color:var(--dim); margin:10px 0 3px; text-transform:uppercase; letter-spacing:.06em; }
+  .hidden { display:none !important; }
+
+  .present-toggle { margin-left:auto; font-size:12px; color:var(--dim); cursor:pointer; user-select:none; }
+  body.present .pane button, body.present .pane textarea, body.present .pane select, body.present .pane input,
+  body.present #inputrow, body.present #mid-models button, body.present #mid-models select { display:none !important; }
+  .ovstage { display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:7px; }
+  .ovstage .dot { font-size:16px; line-height:1.2; }
+  .ovstage .body { flex:1; } .ovstage .ph { font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--dim); }
+  .dlog { border-left:2px solid var(--line); padding:5px 0 5px 10px; margin:5px 0; font-size:12px; }
+
+  #left { order:1; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--line); }
+  .leftscroll { flex:1; overflow-y:auto; }
+  .lsec-head { cursor:pointer; }
+  .navlink { display:block; padding:6px 14px; color:var(--acc); text-decoration:none; font-size:12.5px; }
+  .navlink:hover { background:var(--panel); }
+  .userstrip { display:flex; align-items:center; gap:9px; padding:10px 14px; border-top:1px solid var(--line); }
+  .avatar { width:28px; height:28px; border-radius:50%; background:var(--acc); color:#fff; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; flex:0 0 auto; }
+  .uname { flex:1; font-size:12.5px; line-height:1.2; }
+  .ro-toggle { font-size:11px; color:var(--dim); cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:4px; margin:0; text-transform:none; letter-spacing:0; }
+  .ro-toggle input { width:auto; }
+  #mid { display:flex; flex-direction:column; overflow:hidden; }
+  .midtabs { display:flex; border-bottom:1px solid var(--line); }
+  .midtabs div { padding:9px 14px; cursor:pointer; color:var(--dim); font-size:13px; }
+  .midtabs div.on { color:var(--text); border-bottom:2px solid var(--acc); }
+  #mid-chat { flex:1; display:flex; flex-direction:column; justify-content:center; overflow:hidden; }
+  #mid-chat .msgs { flex:0 1 auto; max-height:78%; }
+  #mid-models { flex:1; overflow-y:auto; padding:14px; }
+  #midhint { margin:auto; text-align:center; max-width:80%; }
+  .m.user { align-self:flex-end; } .m.assistant { align-self:flex-start; }
+  /* teal = a document the WORKBENCH produced (open & read) */
+  .doclink { display:inline-block; background:#159b8a; color:#fff !important; padding:7px 13px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; margin:3px 6px 3px 0; }
+  .doclink::before { content:"\1F4C4  "; }
+  .doclink:hover { filter:brightness(1.12); }
+  /* violet = a GUIDE / instructions (reference reading), clearly a button, not a badge */
+  .guidelink { display:inline-block; background:#7c6cd6; color:#fff !important; padding:7px 13px; border-radius:6px; font-size:12.5px; font-weight:600; text-decoration:none; margin:3px 6px 3px 0; }
+  .guidelink:hover { filter:brightness(1.12); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Rulebook Workbench <span class="dim">M1 · advisory prototype</span></h1>
+  <span id="spend"></span>
+</header>
+<div id="errbar"></div>
+<div class="layout">
+  <div id="left">
+    <div class="leftscroll">
+      <h2>Guides</h2>
+      <a class="navlink" href="/about.html" target="_blank">About the workbench &amp; the method</a>
+      <a class="navlink" href="/guide.html" target="_blank">Reviewer's Guide — Refactor</a>
+      <a class="navlink" href="/guide-redesign.html" target="_blank">Reviewer's Guide — Redesign</a>
+      <h2>Programs</h2>
+      <div id="proglist"></div>
+      <div class="newprog">
+        <input id="newname" placeholder="new-program-slug" />
+        <button id="newbtn">+</button>
+      </div>
+    </div>
+    <div class="userstrip">
+      <div class="avatar">MH</div>
+      <div class="uname">Mike Hsu<div class="dim" style="font-size:10px;">Program Owner</div></div>
+      <label class="ro-toggle"><input type="checkbox" id="present-mode"> Read only</label>
+    </div>
+  </div>
+  <div id="mid">
+    <div class="midtabs">
+      <div id="mtab-chat" class="on">Chat</div>
+      <div id="mtab-models">Models</div>
+    </div>
+    <div id="mid-chat">
+      <div class="msgs" id="msgs"><div class="dim" id="midhint">Create or select a program to begin the Phase 0 interview.</div></div>
+      <div class="inputrow hidden" id="inputrow">
+        <textarea id="msgbox" rows="2" placeholder="Your answer…"></textarea>
+        <button id="sendbtn">Send</button>
+      </div>
+    </div>
+    <div class="hidden" id="mid-models"></div>
+  </div>
+  <div class="col" id="right">
+    <div class="tabs">
+      <div id="tab-overview" class="on">Overview</div>
+      <div id="tab-purpose">Purpose</div>
+      <div id="tab-corpus">Corpus</div>
+      <div id="tab-blueprint">Derived Blueprint</div>
+      <div id="tab-refactor">Refactor</div>
+      <div id="tab-redesign">Redesign</div>
+      <div id="tab-target">Target Blueprint</div>
+      <div id="tab-align">Align</div>
+    </div>
+    <div class="pane" id="pane-overview"><div class="dim">Select a program to see its pipeline.</div></div>
+    <div class="pane hidden" id="pane-purpose"><div class="dim">Select a program first.</div></div>
+    <div class="pane hidden" id="pane-corpus"></div>
+    <div class="pane hidden" id="pane-blueprint"></div>
+    <div class="pane hidden" id="pane-refactor"></div>
+    <div class="pane hidden" id="pane-redesign"></div>
+    <div class="pane hidden" id="pane-target"></div>
+    <div class="pane hidden" id="pane-align"></div>
+  </div>
+</div>
+
+<script>
+"use strict";
+/* Dependency-free UI. Any uncaught error is shown in the red bar, never a blank page. */
+
+var state = { pid: null, programs: [], busy: false, complete: false, purpose: null, models: null };
+
+function $(id) { return document.getElementById(id); }
+function el(tag, attrs, children) {
+  var n = document.createElement(tag);
+  attrs = attrs || {};
+  Object.keys(attrs).forEach(function (k) {
+    if (k === "class") n.className = attrs[k];
+    else if (k === "text") n.textContent = attrs[k];
+    else if (k.indexOf("on") === 0) n.addEventListener(k.slice(2), attrs[k]);
+    else n.setAttribute(k, attrs[k]);
+  });
+  (children || []).forEach(function (c) { n.appendChild(c); });
+  return n;
+}
+function showError(msg) { var b = $("errbar"); b.textContent = msg; b.style.display = msg ? "block" : "none"; }
+window.addEventListener("error", function (e) { showError("UI error: " + e.message); });
+
+function api(path, method, body) {
+  var opts = { method: method || "GET", headers: { "Content-Type": "application/json" } };
+  if (body !== undefined) opts.body = JSON.stringify(body);
+  return fetch(path, opts).then(function (r) {
+    return r.json().catch(function () { return {}; }).then(function (data) {
+      if (!r.ok) throw new Error(data.detail || (r.status + " " + r.statusText));
+      return data;
+    });
+  });
+}
+
+/* ---------------- header / programs ---------------- */
+
+function refreshTop() {
+  return api("/api/programs").then(function (ps) {
+    state.programs = ps; renderPrograms();
+    return api("/api/models");
+  }).then(function (m) {
+    state.models = m;
+    $("spend").textContent = "session $" + m.spent_usd.toFixed(4) + " (" + m.calls + " calls) · lifetime $" + (m.lifetime_usd || 0).toFixed(4) + " (" + (m.lifetime_calls || 0) + " calls)";
+    if (!$("mid-models").classList.contains("hidden")) renderModels();
+  });
+}
+
+function renderPrograms() {
+  var list = $("proglist"); list.innerHTML = "";
+  state.programs.forEach(function (p) {
+    list.appendChild(el("div", {
+      class: "prog" + (p === state.pid ? " sel" : ""), text: p,
+      onclick: function () { selectProgram(p); }
+    }, []));
+  });
+}
+
+function createProgram() {
+  var name = $("newname").value.trim();
+  if (!name) return;
+  api("/api/programs", "POST", { program_id: name }).then(function () {
+    $("newname").value = ""; showError("");
+    return refreshTop();
+  }).then(function () { selectProgram(name); })
+    .catch(function (e) { showError(e.message); });
+}
+
+function selectProgram(pid) {
+  state.pid = pid; state.complete = false; state.purpose = null;
+  renderPrograms();
+  $("inputrow").classList.remove("hidden");
+  loadInterview(); loadPurpose();
+  showTab("overview");
+}
+
+/* ---------------- interview ---------------- */
+
+function renderMsgs(chatHistory, thinking) {
+  var box = $("msgs"); box.innerHTML = "";
+  if (!chatHistory.length) {
+    box.appendChild(el("div", { class: "dim", text: "Say hello to start — e.g. “I want to clean up the liquidity regime.” The interviewer takes it from there, one question at a time." }, []));
+  }
+  chatHistory.forEach(function (m) {
+    box.appendChild(el("div", { class: "m " + m.role }, [
+      el("div", { class: "who", text: m.role === "user" ? "you" : "interviewer" }, []),
+      el("span", { text: m.content.replace("[INTERVIEW-COMPLETE]", "").trim() }, [])
+    ]));
+  });
+  if (thinking) box.appendChild(el("div", { class: "dim", text: "interviewer is thinking…" }, []));
+  box.scrollTop = box.scrollHeight;
+}
+
+var chatHistory = [];
+function loadInterview() {
+  api("/api/programs/" + state.pid + "/interview").then(function (h) {
+    chatHistory = h;
+    state.complete = h.some(function (m) { return m.content.indexOf("[INTERVIEW-COMPLETE]") >= 0; });
+    renderMsgs(chatHistory, false);
+  }).catch(function (e) { showError(e.message); });
+}
+
+function send() {
+  var box = $("msgbox"); var text = box.value.trim();
+  if (!text || state.busy || !state.pid) return;
+  state.busy = true; box.value = ""; showError("");
+  chatHistory.push({ role: "user", content: text });
+  renderMsgs(chatHistory, true);
+  api("/api/programs/" + state.pid + "/interview", "POST", { message: text }).then(function (r) {
+    chatHistory.push({ role: "assistant", content: r.reply });
+    if (r.complete) state.complete = true;
+    state.busy = false;
+    renderMsgs(chatHistory, false);
+    refreshTop();
+  }).catch(function (e) {
+    state.busy = false; renderMsgs(chatHistory, false); showError(e.message);
+  });
+}
+
+/* ---------------- purpose / ratify ---------------- */
+
+function loadPurpose() {
+  api("/api/programs/" + state.pid + "/purpose").then(function (doc) {
+    state.purpose = doc; renderPurpose();
+  }).catch(function () { state.purpose = null; renderPurpose(); });
+}
+
+function renderPurpose() {
+  var pane = $("pane-purpose"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  var doc = state.purpose;
+  var synthBtn = el("button", {
+    text: doc ? "Re-synthesize draft" : "Synthesize Purpose Statement",
+    onclick: function () {
+      synthBtn.disabled = true; synthBtn.textContent = "Synthesizing…"; showError("");
+      api("/api/programs/" + state.pid + "/synthesize", "POST", {}).then(function (r) {
+        state.purpose = r.purpose_statement; renderPurpose(); refreshTop();
+      }).catch(function (e) { showError(e.message); renderPurpose(); });
+    }
+  }, []);
+  pane.appendChild(el("p", {}, [synthBtn]));
+  if (!doc) {
+    pane.appendChild(el("div", { class: "dim", text: "No Purpose Statement yet. Finish the interview, then synthesize." }, []));
+    return;
+  }
+  var status = doc.status || "draft";
+  var blocking = (doc.open_items || []).filter(function (o) { return o.blocking; }).length;
+  pane.appendChild(el("p", {}, [
+    el("span", { class: "badge " + (status === "ratified" ? "ratified" : "awaiting"), text: status }, []),
+    el("span", { class: "dim", text: "  mode: " + (((doc.synthesis || {}).recommended_mode || {}).mode || "?") + " · open items: " + (doc.open_items || []).length + " (" + blocking + " blocking)" }, [])
+  ]));
+
+  // Open items, readable, with the ⚖ resolve flow (each resolution is logged).
+  (doc.open_items || []).forEach(function (item) {
+    var row = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 11px; margin-bottom:8px;" }, []);
+    var head = el("div", {}, [
+      el("span", { class: "badge " + (item.blocking ? "awaiting" : "ratified"), text: item.blocking ? "BLOCKING" : (item.resolution ? "resolved" : "open") }, []),
+      el("b", { text: "  " + (item.item_id || "") + "  " }, []),
+      el("span", { class: "dim", text: "(" + (item.owner || "unowned") + ")" }, [])
+    ]);
+    row.appendChild(head);
+    row.appendChild(el("div", { text: item.description || "", style: "margin:5px 0 0; font-size:12.5px;" }, []));
+    if (item.resolution) {
+      row.appendChild(el("div", { class: "dim", style: "margin-top:4px; font-size:11.5px;",
+        text: "✓ resolved by " + item.resolution.by + " (" + item.resolution.role + ") — " + item.resolution.rationale }, []));
+    } else if (status !== "ratified" && item.blocking) {
+      var form = el("div", { class: "hidden", style: "margin-top:6px;" }, []);
+      var rat = el("textarea", { rows: "2", placeholder: "Rationale for resolving this item (required; goes to the Decision Log)" }, []);
+      var who = el("input", { placeholder: "Your name", style: "margin-top:5px;" }, []);
+      var confirm = el("button", { text: "Confirm resolution ⚖", style: "margin-top:5px;", onclick: function () {
+        showError("");
+        api("/api/programs/" + state.pid + "/open-items/" + item.item_id + "/resolve", "POST",
+            { name: who.value.trim(), role: item.owner || "Program Owner", rationale: rat.value.trim() })
+          .then(function (updated) { state.purpose = updated; renderPurpose(); })
+          .catch(function (e) { showError(e.message); });
+      } }, []);
+      form.appendChild(rat); form.appendChild(who); form.appendChild(confirm);
+      var toggle = el("button", { text: "Resolve…", style: "margin-top:6px;", onclick: function () {
+        form.classList.toggle("hidden");
+      } }, []);
+      row.appendChild(toggle); row.appendChild(form);
+    }
+    pane.appendChild(row);
+  });
+
+  var pre = el("pre", { text: JSON.stringify(doc, null, 2) }, []);
+  pane.appendChild(pre);
+  if (status !== "ratified") {
+    var name = el("input", {}, []);
+    var rat = el("textarea", { rows: "2" }, []);
+    var btn = el("button", {
+      text: "Ratify", onclick: function () {
+        showError("");
+        api("/api/programs/" + state.pid + "/ratify", "POST",
+          { name: name.value.trim(), role: "Program Owner", rationale: rat.value.trim() }
+        ).then(function (r) { state.purpose = r; renderPurpose(); })
+         .catch(function (e) { showError(e.message); });
+      }
+    }, []);
+    if (blocking > 0) { btn.disabled = true; }
+    pane.appendChild(el("label", { text: "Your name (Program Owner ⚖)" }, []));
+    pane.appendChild(name);
+    pane.appendChild(el("label", { text: "Rationale (required — goes to the Decision Log)" }, []));
+    pane.appendChild(rat);
+    var p = el("p", {}, [btn]);
+    if (blocking > 0) p.appendChild(el("span", { class: "dim", text: "  blocked — resolve the BLOCKING items above first" }, []));
+    pane.appendChild(p);
+  }
+}
+
+/* ---------------- models tab ---------------- */
+
+function renderModels() {
+  var pane = $("mid-models"); pane.innerHTML = "";
+  if (!state.models) { pane.appendChild(el("div", { class: "dim", text: "loading…" }, [])); return; }
+  pane.appendChild(el("div", { class: "dim", text: "Per-task model toggle. Overrides are logged and stamped; diversity rules are enforced at call time." }, []));
+  var tasks = state.models.tasks;
+  var allModels = {};
+  Object.keys(tasks).forEach(function (t) {
+    allModels[tasks[t].default_model] = true; allModels[tasks[t].current_model] = true;
+  });
+  (state.models.catalog || []).forEach(function (m) { allModels[m] = true; });
+  var table = el("table", {}, []);
+  var thead = el("tr", {}, [el("th", { text: "task" }, []), el("th", { text: "model" }, []), el("th", { class: "dim", text: "source" }, [])]);
+  table.appendChild(thead);
+  Object.keys(tasks).forEach(function (tid) {
+    var t = tasks[tid];
+    var sel = el("select", {
+      onchange: function () {
+        var v = sel.value === "__default__" ? null : sel.value;
+        api("/api/models/override", "POST", { task_id: tid, model: v })
+          .then(function () { showError(""); return refreshTop(); })
+          .catch(function (e) { showError(e.message); });
+      }
+    }, []);
+    sel.appendChild(el("option", { value: "__default__", text: "default: " + t.default_model }, []));
+    Object.keys(allModels).forEach(function (m) {
+      if (m !== t.default_model) sel.appendChild(el("option", { value: m, text: m }, []));
+    });
+    sel.value = t.source === "default" ? "__default__" : t.current_model;
+    var meta = t.phase + (t.sensitive ? " · sensitive" : "") + (t.must_differ_family_from.length ? " · diversity-constrained" : "");
+    table.appendChild(el("tr", {}, [
+      el("td", {}, [el("b", { text: tid }, []), el("div", { class: "dim", text: meta }, [])]),
+      el("td", {}, [sel]),
+      el("td", { class: "dim", text: t.source }, [])
+    ]));
+  });
+  pane.appendChild(table);
+}
+
+/* ---------------- corpus tab (P1: import → freeze) ---------------- */
+
+function renderCorpus() {
+  var pane = $("pane-corpus"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  api("/api/programs/" + state.pid + "/manifest").then(function (m) {
+    if (m.frozen) {
+      pane.appendChild(el("div", { style: "border:1px solid var(--ok); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+        el("span", { class: "badge ratified", text: "FROZEN" }, []),
+        el("span", { text: "  " + m.items.length + " items · " + (m.frozen_at || "").slice(0, 19) }, []),
+        el("div", { class: "dim", style: "font-size:11px; word-break:break-all; margin-top:4px;", text: m.content_hash }, [])
+      ]));
+      // Acquisition panel (M3.1): fetch texts against the pinned corpus
+      var acqBox = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, []);
+      pane.appendChild(acqBox);
+      function drawAcq() {
+        api("/api/programs/" + state.pid + "/corpus/status").then(function (s) {
+          acqBox.innerHTML = "";
+          var c = s.counts;
+          acqBox.appendChild(el("div", {}, [
+            el("b", { text: "Texts" }, []),
+            el("span", { class: "dim", text: "  " + c.fetched + " fetched · " + c.pending + " pending · " + c.error + " errors · snapshot " + s.snapshot_date }, [])
+          ]));
+          if (c.pending > 0 || c.error > 0) {
+            var retry = c.pending === 0;  // only errors remain -> retry mode
+            var prog = el("div", { class: "dim", style: "font-size:12px; margin-top:4px;" }, []);
+            var btn = el("button", { text: retry ? "Retry errored fetches" : "Acquire texts", style: "margin-top:6px;", onclick: function () {
+              btn.disabled = true;
+              function step() {
+                prog.textContent = "fetching…";
+                api("/api/programs/" + state.pid + "/corpus/acquire", "POST", { limit: 6, retry_errors: retry })
+                  .then(function (r) {
+                    prog.textContent = r.counts.fetched + " fetched, " + r.counts.pending + " pending, " + r.counts.error + " errors";
+                    if (r.processed > 0 && r.counts.pending > 0) { step(); } else { drawAcq(); }
+                  })
+                  .catch(function (e) { showError(e.message); btn.disabled = false; });
+              }
+              step();
+            } }, []);
+            acqBox.appendChild(btn); acqBox.appendChild(prog);
+          }
+          var errs = Object.keys(s.items).filter(function (k) { return s.items[k].status === "error"; });
+          errs.forEach(function (k) {
+            acqBox.appendChild(el("div", { class: "dim", style: "font-size:11px; margin-top:3px;",
+              text: "✗ " + k + ": " + ((s.items[k].errors || []).slice(-1)[0] || "") }, []));
+          });
+        }).catch(function (e) { acqBox.textContent = ""; });
+      }
+      drawAcq();
+    } else {
+      var who = el("input", { placeholder: "Your name" }, []);
+      var role = el("select", {}, []);
+      ["Corpus Steward", "Distillation Lead", "Program Owner"].forEach(function (r) {
+        role.appendChild(el("option", { value: r, text: r }, []));
+      });
+      var rat = el("textarea", { rows: "2", placeholder: "Rationale (required — goes to the Decision Log)" }, []);
+      var btn = el("button", { text: "Freeze manifest ⚖", style: "margin-top:6px;", onclick: function () {
+        showError("");
+        api("/api/programs/" + state.pid + "/manifest/freeze", "POST",
+            { name: who.value.trim(), role: role.value, rationale: rat.value.trim() })
+          .then(function () { renderCorpus(); })
+          .catch(function (e) { showError(e.message); });
+      } }, []);
+      var box = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+        el("span", { class: "badge awaiting", text: "UNFROZEN" }, []),
+        el("span", { class: "dim", text: "  " + m.items.length + " items — freeze to pin the corpus (OR-7: after this, changes go to the scope-change queue)" }, []),
+        who, role, rat, el("div", {}, [btn])
+      ]);
+      pane.appendChild(box);
+    }
+    if ((m.gaps || []).length) {
+      var g = el("div", { style: "margin-bottom:10px;" }, [el("b", { text: "Gap register (" + m.gaps.length + ")" }, [])]);
+      m.gaps.forEach(function (gap) {
+        g.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-top:3px;", text: "• " + gap.gap_id + ": " + gap.description }, []));
+      });
+      pane.appendChild(g);
+    }
+    var fams = {};
+    m.items.forEach(function (i) { fams[i.family] = (fams[i.family] || 0) + 1; });
+    var filt = el("select", { onchange: function () { drawRows(filt.value); } }, []);
+    filt.appendChild(el("option", { value: "", text: "all families (" + m.items.length + ")" }, []));
+    Object.keys(fams).sort().forEach(function (f) {
+      filt.appendChild(el("option", { value: f, text: f + " (" + fams[f] + ")" }, []));
+    });
+    pane.appendChild(filt);
+    var tblWrap = el("div", {}, []);
+    pane.appendChild(tblWrap);
+    function drawRows(fam) {
+      tblWrap.innerHTML = "";
+      var table = el("table", { style: "margin-top:8px;" }, []);
+      table.appendChild(el("tr", {}, [el("th", { text: "item" }, []), el("th", { text: "issuer" }, []), el("th", { text: "status" }, [])]));
+      m.items.filter(function (i) { return !fam || i.family === fam; }).forEach(function (i) {
+        table.appendChild(el("tr", {}, [
+          el("td", {}, [el("b", { text: i.item_id }, []), el("div", { class: "dim", style: "font-size:11.5px;", text: (i.title || "").slice(0, 80) }, []),
+                        el("div", { class: "dim", style: "font-size:11px;", text: i.locator + " · " + (i.evidence_role || "") }, [])]),
+          el("td", { text: i.issuer }, []),
+          el("td", {}, [el("span", { class: "badge " + (i.status === "live" ? "ratified" : "awaiting"), text: i.status }, [])])
+        ]));
+      });
+      tblWrap.appendChild(table);
+    }
+    drawRows("");
+  }).catch(function () {
+    // No manifest yet — offer import
+    api("/api/slices").then(function (slices) {
+      if (!slices.length) { pane.appendChild(el("div", { class: "dim", text: "No corpus slices bundled with the app." }, [])); return; }
+      pane.appendChild(el("div", { class: "dim", style: "margin-bottom:8px;", text: "No manifest yet. Import a curated corpus slice:" }, []));
+      slices.forEach(function (s) {
+        var b = el("button", { text: "Import " + s.slice_id + " (" + s.items + " items)", onclick: function () {
+          showError("");
+          api("/api/programs/" + state.pid + "/manifest/import", "POST", { slice_id: s.slice_id })
+            .then(function () { renderCorpus(); })
+            .catch(function (e) { showError(e.message); });
+        } }, []);
+        pane.appendChild(el("div", { style: "margin-bottom:6px;" }, [b]));
+        pane.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-bottom:10px;", text: s.source_note }, []));
+      });
+    }).catch(function (e) { showError(e.message); });
+  });
+}
+
+/* ---------------- blueprint tab (M3.2: P2 distillation) ---------------- */
+
+function renderBlueprint() {
+  var pane = $("pane-blueprint"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  api("/api/programs/" + state.pid + "/blueprint").then(function (b) {
+    var c = b.counts;
+    pane.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-bottom:8px;",
+      text: "Scope: " + b.scope.slice(0, 220) + (b.scope.length > 220 ? "…" : "") }, []));
+    var head = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+      el("b", { text: "Extraction" }, []),
+      el("span", { class: "dim", text: "  " + c.extracted + " extracted · " + c.pending + " pending · " + c.error + " errors  " }, []),
+      (function () {
+        var a = el("a", { class: "doclink", text: "Open Derived Blueprint →" }, []);
+        a.href = "/api/programs/" + state.pid + "/blueprint/render"; a.target = "_blank";
+        return a;
+      })(),
+      (function () {
+        var sb = el("button", { text: "Generate executive summary", style: "font-size:11.5px; margin-left:8px;", onclick: function () {
+          sb.disabled = true; sb.textContent = "summarizing… (~1 min, advisory only)";
+          api("/api/programs/" + state.pid + "/blueprint/summarize", "POST", {})
+            .then(function () {
+              var a = el("a", { class: "doclink", text: "Open Derived Blueprint (with summary) →" }, []);
+              a.href = "/api/programs/" + state.pid + "/blueprint/render"; a.target = "_blank";
+              sb.replaceWith(a);
+            })
+            .catch(function (e) { showError(e.message); sb.disabled = false; sb.textContent = "Generate executive summary"; });
+        } }, []);
+        return sb;
+      })()
+    ]);
+    pane.appendChild(head);
+    if (c.pending > 0 || c.error > 0) {
+      var retry = c.pending === 0;
+      var prog = el("div", { class: "dim", style: "font-size:12px; margin-top:4px;" }, []);
+      var btn = el("button", { text: retry ? "Retry errored extractions" : "Distill next batch (4 items)", style: "margin-top:6px;", onclick: function () {
+        btn.disabled = true;
+        prog.textContent = "distilling… (each item is a full model read — expect ~1 min/item)";
+        api("/api/programs/" + state.pid + "/blueprint/extract", "POST", { limit: 4, retry_errors: retry })
+          .then(function (r) { refreshTop(); renderBlueprint(); })
+          .catch(function (e) { showError(e.message); btn.disabled = false; prog.textContent = ""; });
+      } }, []);
+      head.appendChild(btn); head.appendChild(prog);
+    }
+    // defect register (rendered ABOVE the item lists so completed runs are visible)
+    var runs = (b.defects || {}).runs || {};
+    Object.keys(runs).forEach(function (rid) {
+      var run = runs[rid];
+      var dbox = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:8px 11px; margin-top:8px;" }, []);
+      dbox.appendChild(el("div", {}, [el("b", { text: "Defects — " + rid }, []),
+        el("span", { class: "dim", text: "  " + run.findings.length + " findings" }, [])]));
+      run.findings.forEach(function (fd) {
+        dbox.appendChild(el("div", { style: "margin-top:5px; font-size:12.5px;" }, [
+          el("span", { class: "badge awaiting", text: fd.code }, []),
+          el("b", { text: "  " + fd.title }, []),
+          el("div", { class: "dim", style: "font-size:11.5px;", text: fd.description.slice(0, 300) }, []),
+          el("div", { class: "dim", style: "font-size:11px;", text: "↳ " + fd.locations.map(function (l) { return l.item_id + (l.verified ? " ✓" : ""); }).join(", ") }, [])
+        ]));
+      });
+      pane.appendChild(dbox);
+    });
+    // families
+    var fams = b.assembly.families || {};
+    Object.keys(fams).sort().forEach(function (fam) {
+      var f = fams[fam];
+      var box = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:8px 11px; margin-bottom:6px;" }, []);
+      box.appendChild(el("div", {}, [
+        el("b", { text: fam }, []),
+        el("span", { class: "dim", text: "  " + f.obligations + " obligations · " + f.definitions + " definitions" }, [])
+      ]));
+      f.items.forEach(function (it) {
+        var rec = (b.items || {})[it.item_id] || {};
+        var stat = rec.status || "pending";
+        var line = el("div", { class: "dim", style: "font-size:11.5px; margin-top:2px; cursor:" + (stat === "extracted" ? "pointer" : "default") + ";",
+          text: (stat === "extracted" ? (it.nothing_in_scope ? "∅ " : "✓ ") : stat === "error" ? "✗ " : "· ") + it.item_id +
+                (rec.citations_total ? "  (" + rec.citations_verified + "/" + rec.citations_total + " quotes verified)" : "") +
+                (rec.errors ? "  " + rec.errors[rec.errors.length - 1].slice(0, 80) : "") }, []);
+        if (stat === "extracted") {
+          line.addEventListener("click", function () {
+            api("/api/programs/" + state.pid + "/blueprint/extraction/" + it.item_id).then(function (ex) {
+              var old = $("bp-detail"); if (old) old.remove();
+              var pre = el("pre", { id: "bp-detail", text: JSON.stringify(ex, null, 2) }, []);
+              box.appendChild(pre);
+            }).catch(function (e) { showError(e.message); });
+          });
+        }
+        box.appendChild(line);
+      });
+      // per-family defect run button (only when all items in family are done)
+      var allDone = f.items.every(function (it) { return ((b.items || {})[it.item_id] || {}).status === "extracted"; });
+      if (allDone) {
+        var db = el("button", { text: "Detect defects: " + fam, style: "margin-top:6px; font-size:12px;", onclick: function () {
+          db.disabled = true; db.textContent = "detecting…";
+          api("/api/programs/" + state.pid + "/blueprint/defects", "POST", { family: fam })
+            .then(function () { refreshTop(); renderBlueprint(); })
+            .catch(function (e) { showError(e.message); db.disabled = false; });
+        } }, []);
+        box.appendChild(db);
+      }
+      pane.appendChild(box);
+    });
+    if (c.pending === 0 && c.error === 0) {
+      var xb = el("button", { text: "Detect defects: cross-corpus pass", style: "margin:6px 0;", onclick: function () {
+        xb.disabled = true; xb.textContent = "detecting…";
+        api("/api/programs/" + state.pid + "/blueprint/defects", "POST", { family: null })
+          .then(function () { refreshTop(); renderBlueprint(); })
+          .catch(function (e) { showError(e.message); xb.disabled = false; });
+      } }, []);
+      pane.appendChild(xb);
+    }
+  }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
+}
+
+/* ---------------- refactor tab (M4: P3 refactor pass) ---------------- */
+
+var CLASSES = ["codify", "clarify", "fill_gap", "change", "unresolved"];
+
+function opCard(op, summary) {
+  var box = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:8px;" }, []);
+  var d = op.draft_classification || {};
+  box.appendChild(el("div", {}, [
+    el("span", { class: "badge awaiting", text: op.operation.op_type }, []),
+    el("span", { class: "badge", text: "draft: " + d.draft_effect_class + " (" + (d.confidence || "?") + ")" }, []),
+    el("b", { text: "  " + op.op_id }, []),
+    el("span", { class: "dim", text: "  " + (op.defect_code || "") + " · " + (op.defect_title || "").slice(0, 90) }, [])
+  ]));
+  box.appendChild(el("div", { style: "font-size:12.5px; margin-top:4px;", text: op.operation.proposal }, []));
+  box.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;",
+    text: "targets: " + op.operation.targets.map(function (t) { return t.item_id + (t.element_ref ? "→" + t.element_ref : ""); }).join(", ")
+        + " · quotes " + op.citations_verified + "/" + op.citations_total + " verified" }, []));
+  var det = el("div", { class: "dim hidden", style: "font-size:11.5px; margin-top:4px; white-space:pre-wrap;" }, []);
+  det.textContent = "RATIONALE: " + op.operation.rationale +
+    "\n\nDRAFT CLASSIFICATION (model-drafted, NOT authoritative — you classify):\n" + (d.baseline_reasoning || "") +
+    (d.evidentiary_ceiling_notes ? "\n\nCEILING: " + d.evidentiary_ceiling_notes : "") +
+    "\n\nCITATIONS:\n" + (op.operation.citations || []).map(function (c) { return (c.verified ? "✓ " : "✗ ") + '"' + c.quote + '"'; }).join("\n");
+  var tog = el("div", { class: "dim", style: "font-size:11px; cursor:pointer; margin-top:3px;", text: "▸ details & draft classification" }, []);
+  tog.addEventListener("click", function () { det.classList.toggle("hidden"); });
+  box.appendChild(tog); box.appendChild(det);
+
+  if (op.status === "needs_review" || op.status === "eligible" || op.status === "parked") {
+    var form = el("div", { style: "margin-top:7px; border-top:1px dashed var(--line); padding-top:7px;" }, []);
+    var clsSel = el("select", {}, CLASSES.map(function (c) {
+      var o = el("option", { text: c }, []); o.value = c;
+      if (c === d.draft_effect_class) o.selected = true; return o;
+    }));
+    var actSel = el("select", {}, ["accept", "modify", "reject", "park"].map(function (a) {
+      var o = el("option", { text: a }, []); o.value = a;
+      if (op.status === "parked" && a === "reject") o.selected = true; return o;
+    }));
+    var rat = el("textarea", { rows: "2", placeholder: "Disposition rationale (required — this is the ⚖ record)", style: "width:100%; margin-top:4px;" }, []);
+    var mod = el("textarea", { rows: "2", placeholder: "Modified proposal (only for action=modify)", style: "width:100%; margin-top:4px;", class: "hidden" }, []);
+    actSel.addEventListener("change", function () { mod.classList.toggle("hidden", actSel.value !== "modify"); });
+    var btn = el("button", { text: "Record disposition", style: "margin-top:5px;", onclick: function () {
+      btn.disabled = true;
+      api("/api/programs/" + state.pid + "/refactor/operations/" + op.op_id + "/disposition", "POST", {
+        name: $("rev-name").value || "", role: $("rev-role").value,
+        action: actSel.value, effect_class: clsSel.value,
+        rationale: rat.value, modified_proposal: mod.value || null
+      }).then(function () { showError(""); renderRefactor(); })
+        .catch(function (e) { showError(e.message); btn.disabled = false; });
+    } }, []);
+    form.appendChild(el("span", { class: "dim", style: "font-size:11.5px;", text: "your effect class (NG2 — the human classification): " }, []));
+    form.appendChild(clsSel);
+    form.appendChild(el("span", { class: "dim", style: "font-size:11.5px;", text: "  action: " }, []));
+    form.appendChild(actSel);
+    form.appendChild(rat); form.appendChild(mod); form.appendChild(btn);
+    box.appendChild(form);
+  } else if (op.disposition) {
+    var dd = op.disposition;
+    box.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:5px;",
+      text: "⚖ " + dd.action + " as " + dd.effect_class + " — " + dd.reviewer.name + " (" + dd.reviewer.role + "): " + dd.rationale.slice(0, 160) }, []));
+  }
+  return box;
+}
+
+function renderRefactor() {
+  var pane = $("pane-refactor"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  api("/api/programs/" + state.pid + "/refactor").then(function (r) {
+    var c = r.counts;
+    var head = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+      el("b", { text: (r.mode === "redesign" ? "Refactor pass (redesign prerequisite — OR-8)" : "Refactor pass") }, []),
+      (function () {
+        var a = el("a", { class: "guidelink", text: "📖 Reviewer's Guide (Refactor)" }, []);
+        a.href = "/guide.html"; a.target = "_blank"; return a;
+      })(),
+      (function () {
+        if (r.mode !== "redesign") return el("span", {}, []);
+        var a = el("a", { class: "guidelink", text: "📖 Reviewer's Guide (Redesign)" }, []);
+        a.href = "/guide-redesign.html"; a.target = "_blank"; return a;
+      })(),
+      el("div", { class: "dim", style: "font-size:12px; margin-top:3px;",
+        text: r.findings_processed + "/" + r.findings_total + " defects worked · " +
+              c.needs_review + " need review · " + c.eligible + " eligible (codify) · " +
+              c.finalized + " finalized · " + c.parked + " parked · " + c.rejected + " rejected · $" + r.cost_usd }, [])
+    ]);
+    pane.appendChild(head);
+    // reviewer identity (shared by all disposition forms)
+    var idrow = el("div", { style: "margin-bottom:8px; font-size:12px;" }, [
+      el("span", { class: "dim", text: "Reviewer: " }, []),
+      el("input", { id: "rev-name", placeholder: "name", value: state.revName || "" }, []),
+      el("select", { id: "rev-role" }, [
+        (function () { var o = el("option", { text: "Policy Reviewer" }, []); o.value = "Policy Reviewer"; return o; })(),
+        (function () { var o = el("option", { text: "Program Owner" }, []); o.value = "Program Owner"; return o; })()
+      ])
+    ]);
+    pane.appendChild(idrow);
+    $("rev-name").addEventListener("change", function () { state.revName = $("rev-name").value; });
+
+    // phase actions live at the TOP (B2d) — the queue scrolls beneath them
+    var inv = el("button", { text: "Run invariants (P3.7)", style: "margin-top:10px;", onclick: function () {
+      inv.disabled = true;
+      api("/api/programs/" + state.pid + "/refactor/invariants", "POST", {})
+        .then(function () { renderRefactor(); })
+        .catch(function (e) { showError(e.message); inv.disabled = false; });
+    } }, []);
+    pane.appendChild(inv);
+    if (r.invariants) {
+      var ib = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:8px 11px; margin-top:6px;" }, [
+        el("b", { text: "Invariants — " + (r.invariants.pass ? "PASS" : "FAILING") }, [])]);
+      r.invariants.checks.forEach(function (ck) {
+        ib.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;",
+          text: (ck.status === "pass" ? "✓ " : ck.status === "warn" ? "△ " : "✗ ") + ck.name + " — " + ck.details.slice(0, 220) }, []));
+      });
+      pane.appendChild(ib);
+    }
+
+    if (r.ratified) {
+      var rb0 = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-top:8px;" }, [
+        el("b", { text: "✓ Ratified — " + (r.mode === "redesign" ? "Refactored Blueprint certified (redesign baseline)" : "Target Blueprint frozen") }, [])]);
+      if (r.mode !== "redesign") {
+        var ci = el("input", { placeholder: "successor id (e.g. liquidity-redesign-p2)", style: "margin-left:8px; font-size:11.5px;" }, []);
+        var cb = el("button", { text: "Charter redesign successor (ADR-007)", style: "margin-left:6px; font-size:11.5px;", onclick: function () {
+          cb.disabled = true;
+          api("/api/programs/" + state.pid + "/charter-successor", "POST", { successor_id: ci.value })
+            .then(function () { showError(""); refreshTop(); cb.textContent = "✓ chartered — select it in the program list"; })
+            .catch(function (e) { showError(e.message); cb.disabled = false; });
+        } }, []);
+        rb0.appendChild(ci); rb0.appendChild(cb);
+      }
+      pane.appendChild(rb0);
+    } else {
+      var ratTxt = el("textarea", { id: "ratify-rationale", rows: "2", placeholder: "Ratification rationale (required, logged)", style: "width:100%; margin-top:10px;" }, []);
+      var rb = el("button", { text: r.mode === "redesign" ? "Certify Refactored Blueprint (⚖ Program Owner)" : "Ratify Target Blueprint (⚖ Program Owner)",
+        style: "margin-top:5px;", onclick: function () {
+        rb.disabled = true;
+        api("/api/programs/" + state.pid + "/refactor/ratify", "POST",
+            { name: $("rev-name").value || "", role: "Program Owner", rationale: ratTxt.value })
+          .then(function () { showError(""); renderRefactor(); })
+          .catch(function (e) { showError(e.message); rb.disabled = false; });
+      } }, []);
+      pane.appendChild(ratTxt); pane.appendChild(el("div", {}, [rb]));
+    }
+
+
+    if (r.findings_processed < r.findings_total || r.findings_errors.length) {
+      var retry = r.findings_processed + r.findings_errors.length >= r.findings_total && r.findings_errors.length > 0;
+      var prog = el("div", { class: "dim", style: "font-size:12px; margin-top:4px;" }, []);
+      var pb = el("button", { text: retry ? "Retry errored proposals" : "Propose operations (next 4 defects)", onclick: function () {
+        pb.disabled = true; prog.textContent = "proposing + draft-classifying… (two model calls per defect, ~1-2 min per batch)";
+        api("/api/programs/" + state.pid + "/refactor/propose", "POST", { limit: 4, retry_errors: retry })
+          .then(function () { renderRefactor(); })
+          .catch(function (e) { showError(e.message); pb.disabled = false; prog.textContent = ""; });
+      } }, []);
+      head.appendChild(pb); head.appendChild(prog);
+    }
+
+    var ops = Object.keys(r.operations).map(function (k) { return r.operations[k]; });
+    var order = { needs_review: 0, eligible: 1, parked: 2, finalized: 3, rejected: 4 };
+    ops.sort(function (a, b) { return (order[a.status] - order[b.status]) || a.op_id.localeCompare(b.op_id); });
+    var groups = { needs_review: "Needs review (⚖ per instance)", eligible: "Eligible — codify (sampled review)",
+                   parked: "Redesign Backlog (change/unresolved — OR-1: may not finalize here)",
+                   finalized: "Finalized", rejected: "Rejected" };
+    Object.keys(groups).forEach(function (st) {
+      var subset = ops.filter(function (o) { return o.status === st; });
+      if (!subset.length) return;
+      pane.appendChild(el("div", { style: "margin:10px 0 6px 0;" }, [el("b", { text: groups[st] + " — " + subset.length }, [])]));
+      subset.forEach(function (o) { pane.appendChild(opCard(o, r)); });
+    });
+
+    if (r.cannot_express.length) {
+      var ce = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:8px 11px; margin-top:8px;" }, [
+        el("b", { text: "Whitelist findings (P3.1 — proposed ADRs, not edits)" }, [])]);
+      r.cannot_express.forEach(function (x) {
+        ce.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;", text: x.finding_ref + ": " + x.note }, []));
+      });
+      pane.appendChild(ce);
+    }
+
+  }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
+}
+
+/* ---------------- redesign tab (P0.9 + P3D) ---------------- */
+
+function rdCard(op) {
+  var box = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:8px;" }, []);
+  var d = op.draft_classification || {};
+  var hook = (op.operation.objective_hook || {});
+  box.appendChild(el("div", {}, [
+    el("span", { class: "badge awaiting", text: op.operation.op_type }, []),
+    el("span", { class: "badge", text: "draft: " + d.draft_effect_class }, []),
+    el("span", { class: "badge", text: "hook: " + (hook.objective_id || "NONE") }, []),
+    el("b", { text: "  " + op.op_id }, []),
+    el("span", { class: "dim", text: "  " + (op.misalignment_code || "") + " · " + (op.misalignment_title || "").slice(0, 80) }, [])
+  ]));
+  box.appendChild(el("div", { style: "font-size:12.5px; margin-top:4px;", text: op.operation.proposal }, []));
+  if (op.operation.tradeoff) {
+    var t = op.operation.tradeoff;
+    box.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;",
+      text: "tradeoff: advances " + t.advances + " at cost to " + t.costs + " — ranking basis: " + (t.ranking_basis || "NONE (must return to Principal)") }, []));
+  }
+  var det = el("div", { class: "dim hidden", style: "font-size:11.5px; margin-top:4px; white-space:pre-wrap;" }, []);
+  det.textContent = "HOOK: " + (hook.how || "(none)") + "\n\nRATIONALE: " + op.operation.rationale +
+    "\n\nDRAFT CLASSIFICATION (advisory):\n" + (d.baseline_reasoning || "") +
+    "\n\nCITATIONS:\n" + (op.operation.citations || []).map(function (c) { return ((c && c.verified) ? "✓ " : "· ") + '"' + (c.quote || c) + '"'; }).join("\n");
+  var tog = el("div", { class: "dim", style: "font-size:11px; cursor:pointer; margin-top:3px;", text: "▸ details" }, []);
+  tog.addEventListener("click", function () { det.classList.toggle("hidden"); });
+  box.appendChild(tog); box.appendChild(det);
+
+  if (op.status === "needs_review" || op.status === "returned_tradeoff") {
+    var form = el("div", { style: "margin-top:7px; border-top:1px dashed var(--line); padding-top:7px;" }, []);
+    var clsSel = el("select", {}, CLASSES.map(function (c) {
+      var o = el("option", { text: c }, []); o.value = c;
+      if (c === d.draft_effect_class) o.selected = true; return o; }));
+    var actSel = el("select", {}, ["accept", "modify", "reject", "return"].map(function (a) {
+      var o = el("option", { text: a }, []); o.value = a; return o; }));
+    var rat = el("textarea", { rows: "2", placeholder: "Disposition rationale (required)", style: "width:100%; margin-top:4px;" }, []);
+    var mod = el("textarea", { rows: "2", placeholder: "Modified proposal (action=modify)", style: "width:100%; margin-top:4px;", class: "hidden" }, []);
+    actSel.addEventListener("change", function () { mod.classList.toggle("hidden", actSel.value !== "modify"); });
+    var btn = el("button", { text: "Record disposition", style: "margin-top:5px;", onclick: function () {
+      btn.disabled = true;
+      api("/api/programs/" + state.pid + "/redesign/operations/" + op.op_id + "/disposition", "POST", {
+        name: $("rd-name").value || "", role: $("rd-role").value,
+        action: actSel.value, effect_class: clsSel.value,
+        rationale: rat.value, modified_proposal: mod.value || null
+      }).then(function () { showError(""); renderRedesign(); })
+        .catch(function (e) { showError(e.message); btn.disabled = false; });
+    } }, []);
+    form.appendChild(el("span", { class: "dim", style: "font-size:11.5px;", text: "your class: " }, []));
+    form.appendChild(clsSel);
+    form.appendChild(el("span", { class: "dim", style: "font-size:11.5px;", text: "  action: " }, []));
+    form.appendChild(actSel);
+    form.appendChild(rat); form.appendChild(mod); form.appendChild(btn);
+    box.appendChild(form);
+  } else if (op.disposition) {
+    var dd = op.disposition;
+    box.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:5px;",
+      text: "⚖ " + dd.action + " as " + dd.effect_class + " — " + dd.reviewer.name + " (" + dd.reviewer.role + "): " + dd.rationale.slice(0, 160) }, []));
+  }
+  return box;
+}
+
+function renderRedesign() {
+  var pane = $("pane-redesign"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  api("/api/programs/" + state.pid + "/redesign").then(function (r) {
+    pane.appendChild(el("div", { style: "margin-bottom:8px;" }, [
+      el("b", { text: "Redesign pass (P3D)" }, []),
+      (function () { var a = el("a", { class: "guidelink", text: "📖 Reviewer's Guide (Redesign)" }, []);
+        a.href = "/guide-redesign.html"; a.target = "_blank"; return a; })()
+    ]));
+    var idrow = el("div", { style: "margin-bottom:8px; font-size:12px;" }, [
+      el("span", { class: "dim", text: "Acting as: " }, []),
+      el("input", { id: "rd-name", placeholder: "name", value: state.revName || "" }, []),
+      el("select", { id: "rd-role" }, ["Principal", "Principal Delegate", "Policy Reviewer", "Program Owner"].map(function (x) {
+        var o = el("option", { text: x }, []); o.value = x; return o; }))
+    ]);
+    pane.appendChild(idrow);
+
+    // ----- P0.9 Mandate -----
+    if (!r.mandate) {
+      var mb = el("div", { style: "border:2px solid var(--warn); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+        el("b", { text: "P0.9 — Mandate ratification (Principal only; nothing below runs without it)" }, []),
+        el("div", { class: "dim", style: "font-size:11.5px; margin:4px 0;",
+          text: "Disposition EVERY hypothesis: adopt, amend, or discard — silence adopts nothing. Then rank the adopted objectives (highest first) and state binding constraints." }, [])
+      ]);
+      var hyps = (r.hypotheses || {}).objectives || [];
+      var rows = [];
+      hyps.forEach(function (h) {
+        var row = { id: h.objective_id };
+        var actSel = el("select", {}, ["adopt", "amend", "discard"].map(function (a) {
+          var o = el("option", { text: a }, []); o.value = a; return o; }));
+        var amend = el("textarea", { rows: "1", placeholder: "amended statement (action=amend)", style: "width:100%; margin-top:2px;", class: "hidden" }, []);
+        actSel.addEventListener("change", function () { amend.classList.toggle("hidden", actSel.value !== "amend"); });
+        var rat = el("input", { placeholder: "rationale (required)", style: "width:60%; margin-left:6px;" }, []);
+        row.act = actSel; row.amend = amend; row.rat = rat;
+        rows.push(row);
+        mb.appendChild(el("div", { style: "margin-top:6px; font-size:12.5px;" }, [
+          el("b", { text: h.objective_id + ": " }, []),
+          el("span", { text: h.statement }, []),
+          el("div", { class: "dim", style: "font-size:11px;", text: "attributed: " + JSON.stringify((h.attribution || {})) }, []),
+          actSel, rat, amend
+        ]));
+      });
+      var rank = el("input", { placeholder: "ranking, highest first, comma-separated ids (e.g. O1,O3)", style: "width:100%; margin-top:8px;" }, []);
+      var cons = el("textarea", { rows: "2", placeholder: "constraints, one per line (statutory floors etc.)", style: "width:100%; margin-top:4px;" }, []);
+      var mrat = el("textarea", { rows: "2", placeholder: "overall ratification rationale (required, logged)", style: "width:100%; margin-top:4px;" }, []);
+      var go = el("button", { text: "Ratify Mandate (⚖ Principal)", style: "margin-top:5px;", onclick: function () {
+        go.disabled = true;
+        api("/api/programs/" + state.pid + "/redesign/mandate/ratify", "POST", {
+          name: $("rd-name").value || "", role: $("rd-role").value,
+          decisions: rows.map(function (x) { return { objective_id: x.id, action: x.act.value,
+            rationale: x.rat.value, amended_statement: x.amend.value || null }; }),
+          ranking: rank.value.split(",").map(function (x) { return x.trim(); }).filter(Boolean),
+          constraints: cons.value.split("\n").map(function (x) { return x.trim(); }).filter(Boolean),
+          rationale: mrat.value
+        }).then(function () { showError(""); renderRedesign(); })
+          .catch(function (e) { showError(e.message); go.disabled = false; });
+      } }, []);
+      mb.appendChild(rank); mb.appendChild(cons); mb.appendChild(mrat); mb.appendChild(go);
+      pane.appendChild(mb);
+      return;   // nothing else renders before the Mandate exists
+    }
+
+    var m = r.mandate;
+    var mv = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:8px 11px; margin-bottom:10px;" }, [
+      el("b", { text: "✓ Ratified Mandate (" + m.objectives.length + " objectives) — frozen for the pass" }, [])]);
+    m.objectives.forEach(function (o) {
+      mv.appendChild(el("div", { style: "font-size:12px; margin-top:3px;" }, [
+        el("b", { text: o.objective_id + " " }, []), el("span", { text: o.statement }, [])]));
+    });
+    mv.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;",
+      text: "ranking: " + m.ranking.join(" > ") + (m.constraints.length ? " · constraints: " + m.constraints.join("; ") : "") }, []));
+    pane.appendChild(mv);
+
+    // ----- actions on top (B2d) -----
+    var act = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, []);
+    var c = r.counts;
+    act.appendChild(el("div", { class: "dim", style: "font-size:12px;",
+      text: r.findings_processed + "/" + r.findings_total + " misalignments worked · " +
+            c.needs_review + " need review · " + c.returned_tradeoff + " returned (tradeoff) · " +
+            c.finalized + " finalized · " + c.rejected + " rejected · $" + r.cost_usd }, []));
+    if (!r.misalignments) {
+      var mis = el("button", { text: "Detect misalignments (P3D.2)", style: "margin-top:5px;", onclick: function () {
+        mis.disabled = true; mis.textContent = "evaluating blueprint against the Mandate… (~1-2 min)";
+        api("/api/programs/" + state.pid + "/redesign/misalign", "POST", {})
+          .then(function () { renderRedesign(); })
+          .catch(function (e) { showError(e.message); mis.disabled = false; });
+      } }, []);
+      act.appendChild(mis);
+    } else if (r.findings_processed < r.findings_total || r.findings_errors.length) {
+      var retry = r.findings_processed + r.findings_errors.length >= r.findings_total && r.findings_errors.length > 0;
+      var pb = el("button", { text: retry ? "Retry errored proposals" : "Propose moves (next 4 misalignments)", style: "margin-top:5px;", onclick: function () {
+        pb.disabled = true;
+        api("/api/programs/" + state.pid + "/redesign/propose", "POST", { limit: 4, retry_errors: retry })
+          .then(function () { renderRedesign(); })
+          .catch(function (e) { showError(e.message); pb.disabled = false; });
+      } }, []);
+      act.appendChild(pb);
+    }
+    var inv = el("button", { text: "Run invariants (P3D.6)", style: "margin-top:5px; margin-left:6px;", onclick: function () {
+      inv.disabled = true;
+      api("/api/programs/" + state.pid + "/redesign/invariants", "POST", {})
+        .then(function () { renderRedesign(); })
+        .catch(function (e) { showError(e.message); inv.disabled = false; });
+    } }, []);
+    act.appendChild(inv);
+    if (r.invariants) {
+      r.invariants.checks.forEach(function (ck) {
+        act.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:2px;",
+          text: (ck.status === "pass" ? "✓ " : "✗ ") + ck.name + " — " + ck.details.slice(0, 180) }, []));
+      });
+    }
+    if (r.ratified) {
+      act.appendChild(el("div", { style: "margin-top:6px;" }, [el("b", { text: "✓ Target Blueprint (redesign) ratified — frozen" }, [])]));
+    } else {
+      var defTxt = el("textarea", { rows: "2", placeholder: "deferred objectives, one per line as ID: rationale (only if an objective is intentionally unserved)", style: "width:100%; margin-top:6px;" }, []);
+      var ratTxt = el("textarea", { rows: "2", placeholder: "ratification rationale (required)", style: "width:100%; margin-top:4px;" }, []);
+      var rb = el("button", { text: "Ratify Target Blueprint (⚖ Program Owner)", style: "margin-top:4px;", onclick: function () {
+        rb.disabled = true;
+        var defs = defTxt.value.split("\n").map(function (x) {
+          var i = x.indexOf(":"); if (i < 1) return null;
+          return { objective_id: x.slice(0, i).trim(), rationale: x.slice(i + 1).trim() };
+        }).filter(Boolean);
+        api("/api/programs/" + state.pid + "/redesign/ratify", "POST",
+            { name: $("rd-name").value || "", role: "Program Owner", rationale: ratTxt.value, deferred_objectives: defs })
+          .then(function () { showError(""); renderRedesign(); })
+          .catch(function (e) { showError(e.message); rb.disabled = false; });
+      } }, []);
+      act.appendChild(defTxt); act.appendChild(ratTxt); act.appendChild(el("div", {}, [rb]));
+    }
+    pane.appendChild(act);
+
+    // ----- misalignment findings -----
+    if (r.misalignments) {
+      var mfBox = el("div", { style: "margin-bottom:8px;" }, [el("b", { text: "Misalignment Register — " + r.misalignments.findings.length + " findings" }, [])]);
+      r.misalignments.findings.forEach(function (f, i) {
+        mfBox.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-top:3px;" , text:
+          "mis#" + i + " [" + f.code + "] " + f.title + " — objectives: " + f.objective_ids.join(", ") }, []));
+      });
+      pane.appendChild(mfBox);
+    }
+
+    // ----- backlog (P3D.7) -----
+    var blIds = Object.keys(r.backlog || {});
+    if (blIds.length) {
+      pane.appendChild(el("div", { style: "margin:10px 0 6px 0;" }, [el("b", { text: "Imported Redesign Backlog — every item must be adopted, declined, or deferred (P3D.7)" }, [])]));
+      blIds.forEach(function (bid) {
+        var b = r.backlog[bid];
+        var row = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:7px 10px; margin-bottom:5px; font-size:12.5px;" }, [
+          el("b", { text: bid }, []),
+          el("span", { class: "dim", text: "  status: " + b.status + (b.entered_queue_as ? " → " + b.entered_queue_as : "") }, [])
+        ]);
+        if (b.status === "undecided") {
+          var aSel = el("select", {}, ["adopt", "decline", "defer"].map(function (a) {
+            var o = el("option", { text: a }, []); o.value = a; return o; }));
+          var oSel = el("select", {}, [(function(){var o=el("option",{text:"(objective for adopt)"},[]);o.value="";return o;})()].concat(
+            m.objectives.map(function (ob) { var o = el("option", { text: ob.objective_id }, []); o.value = ob.objective_id; return o; })));
+          var rIn = el("input", { placeholder: "rationale", style: "width:40%; margin-left:6px;" }, []);
+          var go2 = el("button", { text: "Record", style: "margin-left:6px; font-size:11.5px;", onclick: function () {
+            go2.disabled = true;
+            api("/api/programs/" + state.pid + "/redesign/backlog/" + bid + "/disposition", "POST",
+                { name: $("rd-name").value || "", role: $("rd-role").value, action: aSel.value,
+                  rationale: rIn.value, objective_id: oSel.value || null })
+              .then(function () { showError(""); renderRedesign(); })
+              .catch(function (e) { showError(e.message); go2.disabled = false; });
+          } }, []);
+          row.appendChild(el("div", { style: "margin-top:4px;" }, [aSel, oSel, rIn, go2]));
+        }
+        pane.appendChild(row);
+      });
+    }
+
+    // ----- queue -----
+    var ops = Object.keys(r.operations).map(function (k) { return r.operations[k]; });
+    var order = { returned_tradeoff: 0, needs_review: 1, finalized: 2, rejected: 3 };
+    ops.sort(function (a, b) { return (order[a.status] - order[b.status]) || a.op_id.localeCompare(b.op_id); });
+    var groups = { returned_tradeoff: "Returned — unranked tradeoff (Principal: amend the Mandate or reject)",
+                   needs_review: "Needs review (change-class → Principal)",
+                   finalized: "Finalized", rejected: "Rejected" };
+    Object.keys(groups).forEach(function (st) {
+      var subset = ops.filter(function (o) { return o.status === st; });
+      if (!subset.length) return;
+      pane.appendChild(el("div", { style: "margin:10px 0 6px 0;" }, [el("b", { text: groups[st] + " — " + subset.length }, [])]));
+      subset.forEach(function (o) { pane.appendChild(rdCard(o)); });
+    });
+
+    if (r.cannot_express.length) {
+      var ce = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:8px 11px; margin-top:8px;" }, [
+        el("b", { text: "Returned / whitelist findings (hooks, constraints, quotes)" }, [])]);
+      r.cannot_express.forEach(function (x) {
+        ce.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;", text: x.finding_ref + ": " + x.note }, []));
+      });
+      pane.appendChild(ce);
+    }
+  }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
+}
+
+/* ---------------- overview tab (demo orientation) ---------------- */
+
+function renderOverview() {
+  var pane = $("pane-overview"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program to see its pipeline." }, [])); return; }
+  api("/api/programs/" + state.pid + "/overview").then(function (o) {
+    applyTabVisibility(o.tabs);
+    var hd = el("div", { style: "margin-bottom:12px;" }, [
+      el("div", {}, [el("b", { style: "font-size:16px;", text: o.program_id }, []),
+                     el("span", { class: "badge", style: "margin-left:8px;", text: o.mode + " mode" }, [])]),
+      el("div", { class: "dim", style: "font-size:12.5px; margin-top:4px;", text: o.scope }, []),
+      el("div", { class: "dim", style: "font-size:12px; margin-top:6px;",
+        text: o.decision_count + " logged human decisions · $" + o.cost_usd + " model spend" }, [])
+    ]);
+    pane.appendChild(hd);
+
+    o.stages.forEach(function (st) {
+      var row = el("div", { class: "ovstage" }, []);
+      row.appendChild(el("div", { class: "dot", style: "color:" + (st.done ? "#1a7f37" : "#a9b0bd"),
+        text: st.done ? "●" : "○" }, []));
+      var body = el("div", { class: "body" }, [
+        el("div", { class: "ph", text: st.phase }, []),
+        el("div", {}, [el("b", { text: st.label }, []),
+                       el("span", { class: "dim", text: "  " + st.metric }, [])]),
+        st.detail ? el("div", { class: "dim", style: "font-size:11px;", text: st.detail }, []) : el("span", {}, [])
+      ]);
+      row.appendChild(body);
+      if (st.link) {
+        var a = el("a", { class: "doclink", text: "Open →" }, []);
+        a.href = st.link; a.target = "_blank"; row.appendChild(a);
+      }
+      pane.appendChild(row);
+    });
+
+    // decision log
+    pane.appendChild(el("div", { style: "margin:16px 0 6px 0;" }, [
+      el("b", { text: "Decision Log — " + o.decision_count + " entries" }, []),
+      el("span", { class: "dim", style: "font-size:12px;", text: "  every substantive act, on the record" }, [])
+    ]));
+    var box = el("div", { style: "max-height:46vh; overflow-y:auto; border:1px solid var(--line); border-radius:8px; padding:8px 11px;" }, []);
+    o.decisions.slice().reverse().forEach(function (dl) {
+      var who = (dl.decided_by || {});
+      box.appendChild(el("div", { class: "dlog" }, [
+        el("div", {}, [el("span", { class: "badge", text: dl.entry_id }, []),
+                       el("span", { class: "badge awaiting", text: dl.type }, []),
+                       el("b", { style: "font-size:12px;", text: "  " + (who.name || "?") + " (" + (who.role || who.capacity || "?") + ")" }, [])]),
+        el("div", { style: "margin-top:2px;", text: dl.decision || "" }, []),
+        dl.rationale ? el("div", { class: "dim", style: "font-size:11px; margin-top:1px;", text: "— " + dl.rationale }, []) : el("span", {}, [])
+      ]));
+    });
+    pane.appendChild(box);
+  }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
+}
+
+/* ---------------- target blueprint tab (P3 output, readable) ---------------- */
+
+function renderTarget() {
+  var pane = $("pane-target"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  var url = "/api/programs/" + state.pid + "/target-blueprint/render";
+  var head = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+    el("b", { text: "Target Blueprint — the regime after Phase 3" }, []),
+    el("div", { class: "dim", style: "font-size:12px; margin-top:4px;",
+      text: "The Derived Blueprint plus the ordered, finalized operations that cleaned (and, in redesign, reshaped) it — each with the human disposition that approved it. Element tables live in the Derived Blueprint; provision-level accountability in the Crosswalk (Align)." }, [])
+  ]);
+  pane.appendChild(head);
+  fetch(url).then(function (res) {
+    if (res.status === 409) {
+      pane.appendChild(el("div", { class: "dim", text: "No ratified Target Blueprint yet — complete and ratify the Refactor (or Redesign) pass, then it appears here." }, []));
+      return null;
+    }
+    return res.text();
+  }).then(function (htmlText) {
+    if (!htmlText) return;
+    var openA = el("a", { class: "doclink", text: "Open Target Blueprint →" }, []);
+    openA.href = url; openA.target = "_blank";
+    var sb = el("button", { text: "Generate executive summary", style: "font-size:11.5px;", onclick: function () {
+      sb.disabled = true; sb.textContent = "summarizing… (~1 min, advisory only)";
+      api("/api/programs/" + state.pid + "/target-blueprint/summarize", "POST", {})
+        .then(function () { renderTarget(); })
+        .catch(function (e) { showError(e.message); sb.disabled = false; sb.textContent = "Generate executive summary"; });
+    } }, []);
+    head.appendChild(el("div", { style: "margin-top:6px;" }, [openA, sb]));
+    var frame = el("iframe", { style: "width:100%; height:72vh; border:1px solid var(--line); border-radius:8px;" }, []);
+    frame.srcdoc = htmlText;
+    pane.appendChild(frame);
+  }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
+}
+
+/* ---------------- align tab (Phase 4 spine: crosswalk + audit) ---------------- */
+
+function renderAlign() {
+  var pane = $("pane-align"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
+  api("/api/programs/" + state.pid + "/crosswalk").then(function (cw) {
+    var c = cw.counts;
+    pane.appendChild(el("div", { style: "margin-bottom:8px;" }, [
+      el("b", { text: "Align pass — accountability spine (Phase 4, P4.3–P4.5)" }, []),
+      (function () { var a = el("a", { class: "doclink", text: "Open Crosswalk →" }, []);
+        a.href = "/api/programs/" + state.pid + "/crosswalk/render"; a.target = "_blank"; return a; })()
+    ]));
+    pane.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-bottom:8px;",
+      text: "Every legacy provision accounted for exactly once. This is a working paper — where each provision went in the Target Blueprint. Drafting the consolidated instruments themselves (P4.2) is a separate, later step." }, []));
+
+    var head = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+      el("b", { text: cw.mode + " · " + cw.legacy.length + " legacy provisions · " + cw.trace_size + " finalized operations" }, []),
+      el("div", { style: "margin-top:5px;" }, [
+        el("span", { class: "badge", text: c.subsumed + " subsumed" }, []),
+        el("span", { class: "badge", text: c.repealed + " repealed" }, []),
+        el("span", { class: "badge", text: c.retained + " retained" }, [])
+      ])
+    ]);
+    pane.appendChild(head);
+
+    // effect-class audit + invariants (the heart of P4.5)
+    var ab = el("div", { style: "border:1px solid " + (cw.audit.pass ? "var(--line)" : "var(--warn)") + "; border-radius:8px; padding:8px 11px; margin-bottom:10px;" }, [
+      el("b", { text: "Effect-class audit & invariants (P4.5) — " + (cw.audit.pass ? "PASS" : "FAILING") }, [])]);
+    cw.audit.checks.forEach(function (ck) {
+      ab.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;",
+        text: (ck.status === "pass" ? "✓ " : ck.status === "warn" ? "△ " : "✗ ") + ck.name + " — " + ck.details }, []));
+    });
+    pane.appendChild(ab);
+
+    // deviation register (introductions)
+    var db = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:8px 11px; margin-bottom:10px;" }, [
+      el("b", { text: "Deviation Register — introduced content (P4.4): " + cw.introductions.length } , [])]);
+    if (!cw.introductions.length) {
+      db.appendChild(el("div", { class: "dim", style: "font-size:11.5px;", text: "none — no content introduced beyond the legacy provisions" }, []));
+    } else {
+      cw.introductions.forEach(function (i) {
+        db.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:3px;",
+          text: i.op_id + " (" + i.effect_class + (i.objective_hook ? ", hook " + i.objective_hook : "") + "): " + i.proposal.slice(0, 200) }, []));
+      });
+    }
+    pane.appendChild(db);
+
+    if (cw.dangling_targets.length) {
+      pane.appendChild(el("div", { class: "err", text: cw.dangling_targets.length + " operation targets do not resolve to a manifest item — see audit." }, []));
+    }
+
+    // per-family reverse view
+    pane.appendChild(el("div", { style: "margin:10px 0 6px 0;" }, [el("b", { text: "Target Blueprint families ← source provisions (P4.3 reverse)" }, [])]));
+    cw.reverse.forEach(function (f) {
+      var box = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:7px 10px; margin-bottom:5px;" }, [
+        el("b", { text: f.family }, []),
+        el("span", { class: "dim", text: "  " + f.source_count + " source provisions · " + f.operations.length + " shaping operations" }, [])
+      ]);
+      pane.appendChild(box);
+    });
+  }).catch(function (e) {
+    pane.appendChild(el("div", { class: "dim", text: e.message }, []));
+  });
+}
+
+/* ---------------- tabs & wiring ---------------- */
+
+function applyTabVisibility(t) {
+  function set(id, show) { var e = $(id); if (e) e.style.display = show ? "" : "none"; }
+  set("tab-overview", true); set("tab-purpose", true);
+  set("tab-corpus", !!(t && t.corpus));
+  set("tab-blueprint", !!(t && t.derived));
+  set("tab-refactor", !!(t && t.refactor));
+  set("tab-redesign", !!(t && t.redesign));
+  set("tab-target", !!(t && t.target));
+  set("tab-align", !!(t && t.align));
+}
+
+function showTab(which) {
+  ["overview", "purpose", "corpus", "blueprint", "refactor", "redesign", "target", "align"].forEach(function (t) {
+    $("tab-" + t).className = which === t ? "on" : "";
+    $("pane-" + t).classList.toggle("hidden", which !== t);
+  });
+  if (which === "overview") renderOverview();
+  if (which === "corpus") renderCorpus();
+  if (which === "blueprint") renderBlueprint();
+  if (which === "refactor") renderRefactor();
+  if (which === "redesign") renderRedesign();
+  if (which === "target") renderTarget();
+  if (which === "align") renderAlign();
+}
+
+$("newbtn").addEventListener("click", createProgram);
+$("newname").addEventListener("keydown", function (e) { if (e.key === "Enter") createProgram(); });
+$("sendbtn").addEventListener("click", send);
+$("msgbox").addEventListener("keydown", function (e) {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
+});
+$("tab-overview").addEventListener("click", function () { showTab("overview"); });
+$("present-mode").addEventListener("change", function () { document.body.classList.toggle("present", this.checked); });
+$("tab-purpose").addEventListener("click", function () { showTab("purpose"); });
+$("tab-corpus").addEventListener("click", function () { showTab("corpus"); });
+$("tab-blueprint").addEventListener("click", function () { showTab("blueprint"); });
+$("tab-refactor").addEventListener("click", function () { showTab("refactor"); });
+$("tab-redesign").addEventListener("click", function () { showTab("redesign"); });
+$("tab-target").addEventListener("click", function () { showTab("target"); });
+$("tab-align").addEventListener("click", function () { showTab("align"); });
+function showMid(which) {
+  $("mtab-chat").className = which === "chat" ? "on" : "";
+  $("mtab-models").className = which === "models" ? "on" : "";
+  $("mid-chat").classList.toggle("hidden", which !== "chat");
+  $("mid-models").classList.toggle("hidden", which !== "models");
+  if (which === "models") renderModels();
+}
+$("mtab-chat").addEventListener("click", function () { showMid("chat"); });
+$("mtab-models").addEventListener("click", function () { showMid("models"); });
+Array.prototype.forEach.call(document.querySelectorAll(".lsec-head"), function (h) {
+  h.addEventListener("click", function () {
+    var body = $("lsec-" + h.getAttribute("data-sec"));
+    body.classList.toggle("hidden");
+    var caret = h.querySelector("span"); if (caret) caret.textContent = body.classList.contains("hidden") ? "▸" : "▾";
+  });
+});
+
+applyTabVisibility(null);
+refreshTop().catch(function (e) { showError("Could not reach the workbench API: " + e.message); });
+</script>
+</body>
+</html>

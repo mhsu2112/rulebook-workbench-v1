@@ -1,0 +1,1464 @@
+{
+  "label": "Target Blueprint (redesign)",
+  "program_id": "liquidity-redesign-p2",
+  "mode": "redesign",
+  "based_on": {
+    "refactored_baseline": "sha256:214707d2212e86ce239c2bdc8005fc0824e09c8a6f5338d3f8c279e436098d08",
+    "ratified_mandate": "sha256:7cd10424ec5558ba054af5482e2cbe784a58640714e7f59fd125d8ab696928c2"
+  },
+  "operation_trace": [
+    {
+      "op_id": "RD-001",
+      "finding_ref": "mis#0",
+      "misalignment_code": "M1",
+      "misalignment_title": "O4 (free balance-sheet capacity) has no advancing mechanism in the baseline",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "12-cfr-201-reg-a",
+            "element_ref": null
+          }
+        ],
+        "parameters": "New advisory blueprint element addressed to the Board of Governors: a duty that liquidity rules recognize (credit), up to a capped amount, a bank's discount-window borrowing capacity associated with collateral prepositioned at the Fed as a qualifying liquidity source substitutable for HQLA self-insurance. Cap sized per bank as the lesser of an overall ceiling and a multiple of the bank's discount-window borrowing over a specified period. This is a NEW duty.",
+        "proposal": "Introduce a NEW advisory obligation (addressed to the Authority, per ADR-003, not as operative text) creating an operative mechanism absent from the baseline: within regulatory liquidity requirements, recognized borrowing capacity tied to prepositioned discount-window collateral may be credited, up to a cap, against required HQLA-style self-insurance. The move imports the reform-proposal concept (currently residing only in obligation-empty horizon items) into a live blueprint element so O4 acquires an advancing mechanism. The RECALIBRATE-style cap parameter (lesser of overall ceiling and a multiple of DW borrowing) is stated as a design instruction to the Authority, not fixed here.",
+        "rationale": "This duty is NEW: the finding establishes that no live, binding element credits borrowing capacity against liquidity requirements; all live elements (frbdw-collateral, frbdw-discount-window, 12-usc-347b) presuppose pledged assets and lendable value only. The gap is squarely O4: balance-sheet capacity is tied up in liquidity self-insurance with no mechanism to free it. Crediting prepositioned-collateral borrowing capacity substitutes revived LOLR functionality for costly self-insurance, directly freeing capacity for lending. The cap constrains moral hazard (O5). Because this creates a genuinely new duty, it cites the evidence motivating the gap.",
+        "citations": [
+          {
+            "quote": "recognized borrowing capacity could be capped at the lesser of the overall ceiling and some multiple of the bank's discount window borrowing over a specified period of time.",
+            "item_id": "mckernan-reset-liquidity",
+            "verified": true
+          },
+          {
+            "quote": "When 25 percent of large banks\u2019 balance sheets are allocated to safe assets\u2014up from roughly 10 percent before the crisis\u2014that necessarily means less lending for mortgages, small businesses, AI hyperscalers, and critical infrastructure.",
+            "item_id": "mckernan-reset-liquidity",
+            "verified": true
+          },
+          {
+            "quote": "This timing \nrisk can be mitigated by banks identifying ex ante the assets that will be pledged to the discount \nwindow as collateral and pre-positioning them accordingly.",
+            "item_id": "hsu-building-better-brakes",
+            "verified": true
+          },
+          {
+            "quote": "if they have prepositioned collateral with the Fed, banks should be able to count DW lending capacity in their stress liquidity calculations.",
+            "item_id": "warner-kennedy-dw-modernization",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O4",
+          "how": "Creates the missing advancing mechanism for O4: crediting capped, prepositioned-collateral borrowing capacity against HQLA self-insurance frees balance-sheet capacity currently locked in safe assets for economic-activity lending."
+        },
+        "tradeoff": {
+          "advances": "O4 (frees balance-sheet capacity by substituting recognized borrowing capacity for HQLA self-insurance)",
+          "costs": "O5 (limiting moral hazard \u2014 crediting LOLR capacity against self-insurance increases reliance on the central bank, the very dependence post-crisis rules sought to reduce)",
+          "ranking_basis": "Mandate ranks O4 > O5 (O4 fourth, O5 fifth): 'O4 > O5'. The move advances the higher-ranked objective; the cap parameter mitigates the O5 cost consistent with that ordering."
+        }
+      },
+      "citations_verified": 4,
+      "citations_total": 4,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "Draft/manual classification under ADR-008. Applying hierarchy, delegation, applicability, and status controls, the operative baseline does not require the Board of Governors to credit discount-window borrowing capacity against regulatory liquidity requirements. The live statute, Regulation A, and Federal Reserve operational materials govern eligibility, collateralization, security interests, lendable value, and discount-window lending operations; they do not create an offset to HQLA-style self-insurance. The cited reform proposals and horizon material describe or recommend prepositioning and recognition of borrowing capacity, but their nonbinding or proposed status cannot establish an existing duty. The operation therefore adds a substantively new advisory obligation for the Authority and changes the baseline policy position rather than codifying or clarifying an existing requirement. Although it fills the identified O4 mechanism gap in policy terms, its legal/effect classification is change because the required recognition and substitution are absent from the controlling baseline.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Recognize, subject to a cap, discount-window borrowing capacity associated with prepositioned collateral as a qualifying liquidity source creditable against regulatory HQLA-style self-insurance requirements.",
+            "jurisdiction": "United States"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The affirmative support comes from reform-proposal and legislation-horizon sources. Those sources may motivate and design the new duty but cannot establish that the baseline already imposes it. The operative sources cited for comparison establish collateral and lending mechanics only, not regulatory-liquidity credit.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:48:16.265317+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree (this is McKernan's proposal)",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:52:46.911809+00:00"
+      }
+    },
+    {
+      "op_id": "RD-002",
+      "finding_ref": "mis#1",
+      "misalignment_code": "M1",
+      "misalignment_title": "O5 (limit moral hazard) served only by proposal-stage caps, not by live obligations",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "mckernan-reset-liquidity",
+            "element_ref": "recognized borrowing capacity (proposed cap)"
+          }
+        ],
+        "parameters": "Advisory blueprint recommendation addressed to the Board of Governors: create a NEW live operative obligation that conditions any LOLR access-expansion (e.g., recognition within liquidity rules of prepositioned discount-window borrowing capacity) on a countervailing moral-hazard-limiting condition \u2014 namely a per-bank recognized-borrowing-capacity cap, sized as the lesser of an overall ceiling and a multiple of the bank's discount window borrowing over a specified period. The obligation would live within the Board's rulemaking authority over discount-window/liquidity treatment, not as a proposal-stage aspiration.",
+        "proposal": "Advise the Board of Governors to convert the currently proposal-only 'recognized borrowing capacity' cap into a live, binding condition attached to any expansion of LOLR/discount-window recognition: access-expansion may be granted only where a recognized-borrowing-capacity cap is operative for the institution. This is a NEW duty \u2014 no existing operative element ties LOLR access-expansion to a moral-hazard-limiting condition. Blueprint-level only; the Authority drafts operative text (ADR-003).",
+        "rationale": "This duty is NEW. The finding establishes that O5 (limit moral hazard) is served only at the proposal stage (mckernan-reset-liquidity OP-048 has no operative obligation) while the insolvency and undercapitalized-institution limits (12-usc-343, 12-cfr-201-reg-a, 12-usc-347b) serve credit-risk/taxpayer protection and contribute to O5 only incidentally. Making the recognized-borrowing-capacity cap a live condition on access-expansion supplies the missing live O5 instrument, bounding reliance on LOLR as access is broadened. The evidence motivating the gap is the source's own account of moral-hazard concern and the proposed cap's design. Directed to the Board, which already holds prescribing authority over discount-window terms.",
+        "citations": [
+          {
+            "quote": "recognized borrowing capacity could be capped at the lesser of the overall ceiling and some multiple of the bank's discount window borrowing over a specified period of time.",
+            "item_id": "mckernan-reset-liquidity",
+            "verified": true
+          },
+          {
+            "quote": "reflect[s] a desire to reduce dependence on the central bank as a lender of last resort (LOLR)",
+            "item_id": "mckernan-reset-liquidity",
+            "verified": true
+          },
+          {
+            "quote": "All such discounts for any participant in any program or facility with broad-based eligibility shall be subject to such limitations, restrictions, and regulations as the Board of Governors of the Federal Reserve System may prescribe.",
+            "item_id": "12-usc-343",
+            "verified": true
+          }
+        ],
+        "composition_note": null,
+        "objective_hook": {
+          "objective_id": "O5",
+          "how": "Supplies the missing live O5 instrument: a binding recognized-borrowing-capacity cap that bounds each bank's reliance on LOLR, limiting the moral hazard that expanded discount-window access would otherwise create."
+        },
+        "tradeoff": {
+          "advances": "O5 (limit moral hazard)",
+          "costs": "O4 (free up balance-sheet capacity by expanding recognized LOLR-backed capacity)",
+          "ranking_basis": "Mandate ranks O4 > O5 (O1 > O2 > O3 > O4 > O5); the cap must therefore be calibrated not to negate the O4 gains it conditions \u2014 O4 takes precedence over O5 where they conflict."
+        }
+      },
+      "citations_verified": 3,
+      "citations_total": 3,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The operative baseline does not require the proposed condition. The cited reform proposal describes a recognized-borrowing-capacity cap, but its proposal status cannot establish a live duty. The operative authorities addressing insolvent or undercapitalized borrowing constrain access for credit-risk and taxpayer-protection purposes; they do not require the Board to condition every expansion of LOLR or discount-window recognition on an institution-specific moral-hazard cap. Section 12 U.S.C. \u00a7 343 authorizes the Board to prescribe limitations, restrictions, and regulations, but delegated rulemaking authority is not itself an obligation to adopt this particular cap. The operation would therefore create a new binding condition and alter the legal baseline rather than codify or clarify an existing requirement. Its draft effect class is change, subject to human confirmation under the disclosed manual-classification posture.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Condition any expansion of LOLR or discount-window recognition within liquidity treatment on an operative per-bank recognized-borrowing-capacity cap",
+            "jurisdiction": "United States (federal)"
+          },
+          {
+            "actor": "Bank receiving expanded LOLR or discount-window recognition",
+            "activity": "Remain within a recognized-borrowing-capacity cap sized as the lesser of an overall ceiling and a multiple of discount-window borrowing over a specified period",
+            "jurisdiction": "United States (federal)"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The principal source for the cap is a reform proposal and therefore may support design or gap diagnosis but cannot establish an existing operative duty. The cited statutory and regulatory sources may establish authority and adjacent access constraints, but not the proposed moral-hazard condition.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:48:54.735903+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:53:00.697919+00:00"
+      }
+    },
+    {
+      "op_id": "RD-003",
+      "finding_ref": "mis#1",
+      "misalignment_code": "M1",
+      "misalignment_title": "O5 (limit moral hazard) served only by proposal-stage caps, not by live obligations",
+      "operation": {
+        "op_type": "RELATE-OBLIGATION",
+        "targets": [
+          {
+            "item_id": "mckernan-reset-liquidity",
+            "element_ref": "recognized borrowing capacity (proposed cap)"
+          },
+          {
+            "item_id": "12-usc-343",
+            "element_ref": "OBL-5"
+          }
+        ],
+        "parameters": "Advisory: express the relationship that the recognized-borrowing-capacity cap (once made live per op 1) operates as one of the 'limitations, restrictions, and regulations' the Board may prescribe under 12-usc-343 OBL-5 \u2014 anchoring the O5 condition to existing rulemaking authority rather than free-standing.",
+        "proposal": "Advise the Board to relate the new recognized-borrowing-capacity cap to its existing authority under 12-usc-343 OBL-5 (and its Regulation A prescribing powers), so the moral-hazard-limiting cap is understood as a prescribed limitation on access rather than an unanchored new regime.",
+        "rationale": "Anchoring avoids creating a duplicative or orphaned instrument: the Board already 'may prescribe' limitations and restrictions on discount access. Relating the O5 cap to that authority clarifies the legal seat of the live obligation proposed in op 1 and shows the cap is a limitation ON access-expansion, keeping the O5 condition tethered to the access it bounds.",
+        "citations": [
+          {
+            "quote": "All such discounts for any participant in any program or facility with broad-based eligibility shall be subject to such limitations, restrictions, and regulations as the Board of Governors of the Federal Reserve System may prescribe.",
+            "item_id": "12-usc-343",
+            "verified": true
+          },
+          {
+            "quote": "the Board of Governors of the Federal Reserve System to have the right to determine or define the character of the paper thus eligible for discount, within the meaning of this chapter.",
+            "item_id": "12-usc-343",
+            "verified": true
+          }
+        ],
+        "composition_note": "Only meaningful if op 1 (INTRODUCE the live cap) is adopted; this op anchors that new obligation to existing prescribing authority.",
+        "objective_hook": {
+          "objective_id": "O5",
+          "how": "Secures the O5 instrument by tying the moral-hazard-limiting cap to the Board's existing authority to prescribe limitations on discount access, ensuring the condition is operative and enforceable rather than proposal-stage."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The operative statutory baseline in 12 U.S.C. \u00a7 343 authorizes the Board to prescribe limitations, restrictions, and regulations for broad-based discount programs, but it does not require a recognized-borrowing-capacity cap or require the Board to characterize such a cap as a \u00a7 343 limitation. The cited delegation therefore supplies a possible legal seat for the proposed obligation without itself establishing that obligation. The proposed relationship is also expressly contingent on a separate operation introducing the cap as a live requirement. Because the cap currently appears only in a reform proposal, status controls and evidentiary ceilings prevent treating it as part of the operative baseline. Relating a newly operative moral-hazard cap to existing prescribing authority would consequently alter the current duty structure rather than merely clarify or codify it. The operation is workable as a change, but it cannot independently fill M1 unless the antecedent operation making the cap live is adopted.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Prescribe and apply a recognized-borrowing-capacity cap as a limitation or restriction on access to broad-based discount programs or facilities",
+            "jurisdiction": "United States federal law"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The recognized-borrowing-capacity cap is supported only by a reform proposal, which cannot establish a live duty. The verified statutory text establishes discretionary prescribing authority, not an existing requirement to adopt or relate this particular cap.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:49:03.650189+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:53:10.003675+00:00"
+      }
+    },
+    {
+      "op_id": "RD-004",
+      "finding_ref": "mis#2",
+      "misalignment_code": "M5",
+      "misalignment_title": "O3 (revived Fed LOLR, reduced contagion) advanced only through fragile guidance-level readiness duties",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "cfp-addendum-2023",
+            "element_ref": "ob-9"
+          }
+        ],
+        "parameters": "Addressed to the Board of Governors of the Federal Reserve System (as the Authority with rulemaking power under 12 USC 347b/343). Advisory blueprint recommendation to promulgate a binding rule requiring covered depository institutions above a size/less-stable-funding threshold to establish and maintain discount-window operational readiness (executed borrowing arrangements, pre-positioned collateral sized to a defined fraction of runnable liabilities, and periodic test transactions), converting the current 'should' guidance in cfp-addendum-2023 ob-9/ob-10 and occ-bulletin-2023-25 O1 into an enforceable duty.",
+        "proposal": "Recommend that the Board introduce a NEW binding operational-readiness obligation: covered institutions must (not 'should') establish executed discount-window borrowing arrangements, pre-position collateral in an amount appropriate to potential contingency funding needs, and periodically test access. This elevates the guidance-level readiness expectations into a designed, enforceable component of the LOLR-revival mechanism. This duty is NEW: current instruments state only that institutions 'should' maintain readiness and only 'if the discount window is a part of' their plans.",
+        "rationale": "The finding establishes that O3's core mechanism \u2014 members actually able to reach the discount window quickly in a rapid run \u2014 currently rests only on 'should'/'conditional' guidance, so readiness is not assured when a fast run hits. A binding readiness rule makes the LOLR revival a designed mechanism rather than an aspirational assemblage. The duty is NEW: the cited instruments impose no mandatory readiness obligation. Under ADR-003 this is an advisory blueprint move addressed to the Board, not operative text; the Board's authority to prescribe rules governing advances is the vehicle.",
+        "citations": [
+          {
+            "quote": "If the discount window is a part of a depository institution's contingency funding plans, the depository institution should establish and maintain operational readiness to borrow from the discount window.",
+            "item_id": "cfp-addendum-2023",
+            "verified": true
+          },
+          {
+            "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+            "item_id": "occ-bulletin-2023-25",
+            "verified": true
+          },
+          {
+            "quote": "Any Federal Reserve bank, under rules and regulations prescribed by the Board of Governors of the Federal Reserve System, may make advances to any member bank on its time or demand notes having maturities of not more than four months and which are secured to the satisfaction of such Federal Reserve bank.",
+            "item_id": "12-usc-347b",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Converts the guidance-level readiness expectation into a binding duty so that members are actually able to reach the discount window quickly in a rapid run, making the revived Fed LOLR functionality a designed mechanism that reduces contagion rather than an aspirational hope."
+        },
+        "tradeoff": {
+          "advances": "O3",
+          "costs": "O4",
+          "ranking_basis": "Mandate ranks O3 > O4 ('O3 > O4'): mandatory pre-positioned collateral and executed arrangements re-tie some balance-sheet capacity to liquidity self-insurance (O4 cost), but O3 outranks O4, so the readiness gain is preferred."
+        }
+      },
+      "citations_verified": 3,
+      "citations_total": 3,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The applicable baseline does not already require the proposed output. At the statutory level, 12 USC 347b delegates rulemaking authority to the Board and permits Federal Reserve Banks to make qualifying advances, but its operative term is \u201cmay\u201d; it does not require depository institutions to execute borrowing arrangements, pre-position collateral, or conduct test transactions. The cited CFP Addendum and OCC Bulletin are supervisory guidance using \u201cshould\u201d and conditioning readiness on the discount window being part of an institution\u2019s contingency funding plan. Their status and language cannot establish a universally binding readiness duty. The FHFA policy-report coordination expectations likewise do not impose enforceable obligations on covered depository institutions. The operation would add mandatory conduct, coverage thresholds, collateral-sizing requirements, and periodic testing where the baseline supplies only authority and nonbinding or conditional expectations. It therefore changes the legal baseline rather than codifying or clarifying an existing duty. This remains an advisory recommendation to the Board unless and until the Board promulgates a valid binding rule through the required process.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Promulgate binding discount-window operational-readiness requirements under delegated federal rulemaking authority",
+            "jurisdiction": "United States\u2014federal"
+          },
+          {
+            "actor": "Covered depository institutions above the specified size or less-stable-funding threshold",
+            "activity": "Execute and maintain discount-window borrowing arrangements",
+            "jurisdiction": "United States\u2014federal"
+          },
+          {
+            "actor": "Covered depository institutions above the specified size or less-stable-funding threshold",
+            "activity": "Pre-position collateral sized by reference to potential contingency funding needs or runnable liabilities",
+            "jurisdiction": "United States\u2014federal"
+          },
+          {
+            "actor": "Covered depository institutions above the specified size or less-stable-funding threshold",
+            "activity": "Periodically conduct test transactions demonstrating operational access to the discount window",
+            "jurisdiction": "United States\u2014federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The CFP Addendum and OCC Bulletin are guidance and cannot establish a binding duty merely because supervisors may reference them. The FHFA System at 100 document is a policy report containing conditional or recommended coordination expectations, not operative law. The present operation is itself a proposal and therefore cannot establish the new duty until adopted by the Board through a legally effective rule. The statutes establish authority and permissive lending capacity, not the proposed institutional-readiness obligation.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:49:46.659417+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree (kennedy-warner bill)",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:53:39.703805+00:00"
+      }
+    },
+    {
+      "op_id": "RD-005",
+      "finding_ref": "mis#2",
+      "misalignment_code": "M5",
+      "misalignment_title": "O3 (revived Fed LOLR, reduced contagion) advanced only through fragile guidance-level readiness duties",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "fhfa-system-at-100",
+            "element_ref": "OB-5"
+          }
+        ],
+        "parameters": "Addressed to the Board of Governors of the Federal Reserve System (and, jointly, FHFA) as the Authorities. Advisory recommendation to establish binding standing collateral-transfer arrangements between the regional Federal Reserve Banks and the FHLBanks so that when a member's activity must move from FHLBank advances to the discount window, expedited collateral movement is assured by rule rather than by 'expects'/'conditional' coordination language.",
+        "proposal": "Recommend a NEW binding coordination obligation converting fhfa-system-at-100 OB-5's 'FHFA expects the FHLBanks to negotiate' collateral-transfer arrangements into a mandatory, pre-established standing protocol between Federal Reserve Banks and FHLBanks for expedited collateral movement in a run. This closes the OP-072/OP-113 dependency chain identified in the finding, so the FHLB-to-Fed transition is an enforceable pathway. This duty is NEW: the source expresses only an expectation in a policy report.",
+        "rationale": "The finding names the FHLB-to-Fed transition and collateral-transfer arrangements as 'conditional'/'should' expectations in a policy_report, not enforceable obligations. In a fast run the transition from FHLBank advances (which withdraw from troubled members) to the discount window is exactly where contagion propagates; without a binding standing protocol, collateral cannot move fast enough. A mandatory pre-established arrangement makes the transition a designed part of the LOLR mechanism. The duty is NEW. ADR-003: advisory, addressed to the Fed/FHFA, no operative text drafted.",
+        "citations": [
+          {
+            "quote": "Additionally, FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member's lending activity must be moved to the Federal Reserve discount window.",
+            "item_id": "fhfa-system-at-100",
+            "verified": true
+          },
+          {
+            "quote": "The FHLBanks can better serve their members if they coordinate with their large depository institution members and the members' prudential regulators to make certain that these members have established protocols to meet their emergency liquidity needs from the Federal Reserve discount window when necessary.",
+            "item_id": "fhfa-system-at-100",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Makes the FHLB-to-Fed collateral-transfer transition an enforceable standing arrangement, directly reviving Fed LOLR functionality and reducing contagion risk when FHLBank advances are withdrawn from a stressed member in a rapid run."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The baseline does not already require the proposed output. FHFA-system-at-100 states that FHFA \u201cexpects\u201d FHLBanks to negotiate agreements and describes coordination that would improve emergency-liquidity preparedness; as a policy report, this language is advisory and does not create a binding duty for FHFA, the Board of Governors, regional Federal Reserve Banks, or FHLBanks. The cited discount-window statutes provide permissive authority (\u201cmay\u201d) rather than mandating standing collateral-transfer arrangements. Guidance-level readiness expectations elsewhere cannot be elevated into enforceable interagency obligations, particularly against actors outside their operative scope. The operation would therefore use existing authority to impose a new mandatory, pre-established protocol governing expedited collateral movement and the FHLB-to-Fed transition. It changes the deontic status from expected or recommended coordination to a binding obligation and is properly classified as change, not codify, clarify, or fill_gap.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Establish and require binding standing collateral-transfer arrangements for transitions from FHLBank advances to the Federal Reserve discount window",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Federal Housing Finance Agency",
+            "activity": "Jointly establish and require binding standing collateral-transfer arrangements between FHLBanks and regional Federal Reserve Banks",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Regional Federal Reserve Banks",
+            "activity": "Maintain and execute pre-established protocols for expedited receipt or transfer of member collateral during a transition to discount-window lending",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Federal Home Loan Banks",
+            "activity": "Maintain and execute mandatory standing agreements for expedited movement of member collateral to regional Federal Reserve Banks",
+            "jurisdiction": "United States federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The principal source is an FHFA policy report expressing expectations and coordination recommendations, not binding operative law; it cannot establish the proposed duty. The cited statutes supply permissive discount-window authority but do not require the standing protocol. No enforcement evidence or adopted proposal establishes an existing obligation.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:49:58.006200+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:53:49.453493+00:00"
+      }
+    },
+    {
+      "op_id": "RD-006",
+      "finding_ref": "mis#3",
+      "misalignment_code": "M5",
+      "misalignment_title": "O1 (confidence under fast-run conditions) depends on stigma-mitigation content that exists only as diagnostic vocabulary",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "12-cfr-201-reg-a",
+            "element_ref": null
+          }
+        ],
+        "parameters": "New advisory blueprint duty addressed to the Federal Reserve Board: establish a mandatory periodic discount-window test-borrowing obligation for eligible depository institutions, calibrated by size tier (e.g., large institutions quarterly, mid-size semi-annual), so that routine window use is normalized and stigma is suppressed by design. Advisory only per ADR-003 \u2014 the Authority drafts operative text.",
+        "proposal": "Introduce a NEW live obligation (currently absent) requiring in-scope depository institutions to conduct routine test borrowing at the discount window on a fixed cadence. The move converts 'discount-window stigma' from diagnostic vocabulary into a confidence-preserving mechanism: if all comparable banks borrow routinely, a single bank's borrowing no longer signals weakness. Cadence tiers and the eligibility line are to be set by the Board; this proposal supplies the design intent, not the numeric text.",
+        "rationale": "This duty is NEW. The finding records that stigma-mitigation exists only as defined vocabulary with no operative obligation. The Warner-Kennedy blueprint evidences the design (mandatory test borrowing by tier) and the stigma-normalization theory ('Having DW access should be no more stigmatizing than having deposit insurance'). Routine, universal testing breaks the 'if you only go to the window when things are really bad, then going to the window signals that things are really bad' dynamic that entrenches stigma.",
+        "citations": [
+          {
+            "quote": "Mandates that eligible depository institutions operating in the United States engage in test borrowing at the Federal Reserve\u2019s Discount Window:",
+            "item_id": "warner-kennedy-dw-modernization",
+            "verified": true
+          },
+          {
+            "quote": "reduce the unnecessary stigma associated with that use",
+            "item_id": "warner-kennedy-dw-modernization",
+            "verified": true
+          },
+          {
+            "quote": "Since the 2008 financial \ncrisis, banks have worried that news of their borrowing from the discount window could be \nperceived as a sign of weakness, thereby exacerbating a run.",
+            "item_id": "hsu-building-better-brakes",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O1",
+          "how": "O1 under fast-run conditions turns on institutions drawing before confidence collapses. A mandatory routine-testing duty normalizes window use so borrowing no longer signals weakness, directly preserving confidence during a fast run rather than leaving it to drafting accident."
+        },
+        "tradeoff": {
+          "advances": "O1 (confidence under fast-run conditions) and O3 (revived LOLR functionality / reduced contagion)",
+          "costs": "O5 (moral hazard) \u2014 normalizing routine window reliance may reduce banks' incentive to self-insure liquidity risk",
+          "ranking_basis": "Mandate ranks O1 > O5 (and O3 > O5): 'RANKING (highest first): O1 > O2 > O3 > O4 > O5'. Confidence-preservation and LOLR revival outrank moral-hazard limitation, so the tradeoff resolves in favor of the move."
+        }
+      },
+      "citations_verified": 3,
+      "citations_total": 3,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The operative baseline does not require periodic discount-window test borrowing. Although 12 CFR part 201 governs Federal Reserve credit and establishes discount-window eligibility and terms, no identified provision imposes fixed-cadence test borrowing on eligible depository institutions or directs the Board to create such a program. The cited Hsu material describes stigma as a diagnostic problem but does not create a binding duty. The Warner-Kennedy modernization item supplies a proposed mandate and design rationale, not currently operative law; it therefore cannot establish the baseline obligation. Applicability would also need to be newly specified by the Board through eligibility and size-tier rules. Because the operation adds affirmative conduct, cadence, and implementation duties absent from controlling authority, it changes the baseline rather than codifying or clarifying it. The advisory posture does not alter that effect classification: if adopted as operative text by the Authority, the output would create a new legal obligation.",
+        "cells_touched": [
+          {
+            "actor": "Federal Reserve Board",
+            "activity": "Establish and calibrate a mandatory periodic discount-window test-borrowing program for eligible depository institutions",
+            "jurisdiction": "United States"
+          },
+          {
+            "actor": "Eligible depository institutions",
+            "activity": "Conduct discount-window test borrowing at the Board-prescribed cadence based on applicable size tier",
+            "jurisdiction": "United States"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The Warner-Kennedy modernization item is proposal or blueprint evidence and may support design intent but cannot establish an existing duty. The Hsu material is diagnostic or policy evidence concerning stigma and likewise cannot establish the proposed obligation. No cited operative source supplies the mandate.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:50:47.899262+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:53:54.761801+00:00"
+      }
+    },
+    {
+      "op_id": "RD-007",
+      "finding_ref": "mis#3",
+      "misalignment_code": "M5",
+      "misalignment_title": "O1 (confidence under fast-run conditions) depends on stigma-mitigation content that exists only as diagnostic vocabulary",
+      "operation": {
+        "op_type": "DEFINE-TERM",
+        "targets": [
+          {
+            "item_id": "12-cfr-201-reg-a",
+            "element_ref": "discount window stigma"
+          }
+        ],
+        "parameters": "Canonicalize 'discount-window stigma' as an operative defined term within Regulation A's definitions (\u00a7 201.2 scope), drawing the substance from the Hsu formulation, so downstream operative duties (the test-borrowing obligation above) have a stable anchor.",
+        "proposal": "Elevate 'discount-window stigma' from scattered diagnostic usage across guidance items into a single canonical defined term sited in the operative Regulation A framework, defined as the phenomenon whereby banks fear that news of their window borrowing signals weakness and exacerbates a run. This gives the new test-borrowing duty and any disclosure-timing rule a determinate object to suppress.",
+        "rationale": "The finding is that stigma exists 'only as diagnostic vocabulary' across four items with no operative home. Canonicalizing the term in the operative regulation is the definitional predicate for the INTRODUCE move; without a defined operative target, the stigma-suppression duty floats. The term is defined verbatim in Hsu; the other items use it undefined.",
+        "citations": [
+          {
+            "quote": "Since the 2008 financial \ncrisis, banks have worried that news of their borrowing from the discount window could be \nperceived as a sign of weakness, thereby exacerbating a run.",
+            "item_id": "hsu-building-better-brakes",
+            "verified": true
+          },
+          {
+            "quote": "almost everyone now agrees that operational readiness and discount window stigma need a better solution.",
+            "item_id": "mckernan-reset-liquidity",
+            "verified": true
+          }
+        ],
+        "composition_note": "Only meaningful composed with the INTRODUCE test-borrowing duty; a defined term with no operative obligation would leave the M5 defect (vocabulary-without-duty) unremedied.",
+        "objective_hook": {
+          "objective_id": "O1",
+          "how": "Serves O1 by giving the stigma-suppression design a determinate, operative referent so confidence-preserving duties can attach to it rather than remaining diagnostic prose."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The baseline does not already require Regulation A to define \u201cdiscount-window stigma\u201d or impose a duty directed at suppressing it. Section 201.2 supplies operative definitions for Regulation A, but the supplied record identifies no existing statutory or regulatory definition of this term, no superior-law command to adopt one, and no delegated gap whose completion is legally compelled. The Hsu and McKernan formulations describe the phenomenon diagnostically; they do not establish a binding definition or regulated-party obligation. References in reform, modernization, or guidance materials likewise cannot elevate the concept into the operative regulatory baseline. Adding the term to Regulation A would therefore alter the codified framework and potentially affect the construction of downstream test-borrowing or disclosure duties. It is not merely codification or clarification of an existing requirement. Although the definition alone would not suppress stigma or cure M5, its insertion is a change to the operative baseline and is meaningful principally when composed with a separately introduced duty.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Define \u201cdiscount-window stigma\u201d within Regulation A for use in administering and construing discount-window requirements",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Depository institutions subject to Regulation A",
+            "activity": "Apply the new defined term when determining the scope of any downstream stigma-mitigation obligations",
+            "jurisdiction": "United States federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The cited Hsu and McKernan statements are diagnostic or policy materials rather than binding law and cannot establish an existing definition or duty. Any legislative or regulatory modernization proposal also cannot establish the current baseline unless adopted and effective. These sources can support policy content for a new definition, but not classification as codification or clarification.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:51:03.112128+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:54:03.275216+00:00"
+      }
+    },
+    {
+      "op_id": "RD-008",
+      "finding_ref": "mis#3",
+      "misalignment_code": "M5",
+      "misalignment_title": "O1 (confidence under fast-run conditions) depends on stigma-mitigation content that exists only as diagnostic vocabulary",
+      "operation": {
+        "op_type": "RECALIBRATE",
+        "targets": [
+          {
+            "item_id": "fr-2052a",
+            "element_ref": "FR2052A-OB-5"
+          }
+        ],
+        "parameters": "Adjust the stress-cadence trigger: rather than the Board's discretionary 'may temporarily require ... more frequent' power for monthly filers, establish a defined continuous/near-real-time reporting escalation that activates on objective fast-run indicators, closing the detection-latency gap the OP-089/OP-112 cadence cluster exposes.",
+        "proposal": "Recalibrate the FR 2052a stress-frequency mechanism from a discretionary temporary uplift into a pre-committed escalation to continuous (intraday/daily) submission triggered by defined fast-run signals, so detection does not lag behind hours-scale runs. The specific trigger metric and cadence are for the Board to set; this proposal fixes the escalation as automatic rather than ad hoc.",
+        "rationale": "The finding records that fast-run detection rests on FR 2052a cadence (daily/monthly) and quarterly Call Reports with 'no continuous detection mechanism.' The existing OB-5 power is discretionary and slow. Recalibrating the applicability line/frequency of the stress trigger addresses the latency directly. Confidence (O1) cannot be preserved if a run is detected only after the cadence window passes.",
+        "citations": [
+          {
+            "quote": "Consistent with current supervisory authority and processes, the Board, during periods of stress, may temporarily require FR 2052a liquidity data from monthly filers on a more frequent basis.",
+            "item_id": "fr-2052a",
+            "verified": true
+          },
+          {
+            "quote": "The data provided in the FR \n2052a report meets this need.",
+            "item_id": "fr-2052a",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O1",
+          "how": "Serves O1: confidence under fast-run conditions requires detecting the run within its hours-scale window. Converting discretionary temporary uplift into an automatic continuous-reporting escalation closes the detection-latency gap so intervention can precede confidence collapse."
+        },
+        "tradeoff": {
+          "advances": "O1 (fast-run detection supporting confidence) and O3 (earlier LOLR deployment)",
+          "costs": "O4 (balance-sheet capacity) \u2014 heavier continuous reporting imposes operational burden that ties up resources",
+          "ranking_basis": "Mandate ranks O1 > O4 and O3 > O4: 'O1 > O2 > O3 > O4 > O5'. Detection serving confidence and LOLR outranks the reporting-burden cost to balance-sheet capacity."
+        }
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The operative FR 2052a baseline gives the Board discretionary authority during periods of stress to temporarily require more frequent reporting from monthly filers: it says the Board \u201cmay\u201d do so. That language neither requires the Board to escalate automatically nor creates an objective fast-run trigger, continuous or intraday submission duty, or precommitted cadence. The operation would replace discretion with a mandatory trigger-response mechanism and would alter the timing and applicability of reporting obligations for affected filers. Quarterly Call Report requirements do not supply the missing escalation, and diagnostic vocabulary or reform recommendations concerning fast runs or discount-window stigma cannot establish a binding reporting duty. Accordingly, the output is not codification or clarification of an existing obligation; it changes the operative baseline by creating a new automatic escalation requirement, even though the Board would retain discretion to specify the trigger metrics and exact escalated cadence.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Define objective fast-run indicators and automatically activate an escalated continuous, intraday, or daily FR 2052a reporting cadence when those indicators are met",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "FR 2052a monthly filers subject to the trigger",
+            "activity": "Submit liquidity data at the automatically escalated cadence after activation of an objective fast-run trigger",
+            "jurisdiction": "United States federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The cited operative FR 2052a language supports only a discretionary temporary frequency increase. Reform speeches, guidance items, and defined-term or diagnostic references concerning stigma or fast-run risk may identify the policy problem but cannot establish the proposed mandatory automatic duty. Any such proposal or guidance material is therefore used only as problem or design evidence, not as proof of an existing obligation.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:51:14.310697+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "modify",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "Changing the frequency of reporting the entire 2052a is a tall ask. Reasonable to require higher frequency for a subset, e.g., deposits.  ",
+        "modified_proposal": "Recalibrate *key portions of* the 2052a... [Define *key portions* separately, e.g., deposits]",
+        "timestamp": "2026-07-21T01:56:45.711680+00:00"
+      }
+    },
+    {
+      "op_id": "RD-009",
+      "finding_ref": "mis#4",
+      "misalignment_code": "M2",
+      "misalignment_title": "12-cfr-1266-advances carries no in-scope obligation and serves no Mandate objective in the baseline",
+      "operation": {
+        "op_type": "REPEAL",
+        "targets": [
+          {
+            "item_id": "12-cfr-1266-advances",
+            "element_ref": null
+          }
+        ],
+        "parameters": "Remove 12-cfr-1266-advances from the redesign scope; retain, if desired, as an out-of-scope descriptive cross-reference only.",
+        "proposal": "Advise the Authority to repeal the 12-cfr-1266-advances node from the liquidity-redesign scope. As instantiated it is nothing_in_scope=true with an empty obligations array and empty defined_terms; it functions only as a binding_authority placeholder. Repealing it from scope removes a node that carries no in-scope obligation and advances none of O1-O5, tightening the blueprint to nodes that actually serve the Mandate.",
+        "rationale": "The finding establishes that this node advances none of O1-O5 as instantiated: it has no obligations, no defined terms, and serves only as a descriptive authority placeholder. Carrying an inert node dilutes the blueprint without serving any ranked objective. Repeal from scope is the minimal move that resolves the misalignment. Note this is a scope repeal (blueprint hygiene), not repeal of the underlying FHFA regulation. If the Authority instead wishes to renew justification by instantiating in-scope obligations (e.g., FHLBank advances as a liquidity channel bearing on O3/O4), that is a separate INTRODUCE decision reserved to the Principal, not proposed here absent an objective-bearing basis.",
+        "citations": [
+          {
+            "quote": "PART 1266\u2014ADVANCES\n \n \n Authority: 12 U.S.C. 1426, 1429, 1430, 1430b, 1431, 4511(b), 4513, 4526(a).",
+            "item_id": "12-cfr-1266-advances",
+            "verified": false
+          },
+          {
+            "quote": "Advance means a loan from a Bank that is: \n (1) Provided pursuant to a written agreement; \n (2) Supported by a note or other written evidence of the borrower's obligation; and \n (3) Fully secured by collateral in accordance with the Bank Act and this part.",
+            "item_id": "12-cfr-1266-advances",
+            "verified": true
+          }
+        ],
+        "composition_note": null,
+        "objective_hook": {
+          "objective_id": "O4",
+          "how": "Removing an inert, obligation-free node from scope keeps the redesign focused on nodes that free up balance-sheet capacity; carrying a placeholder that self-insures nothing and obligates nothing adds no capacity and only noise. Repeal serves O4 indirectly by preserving blueprint integrity around the liquidity-provision objectives. This is a housekeeping hook; the node's removal does not itself advance any objective substantively but its retention advances none either."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 1,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The baseline presently includes 12-cfr-1266-advances as a binding-authority placeholder, even though the node is marked nothing_in_scope=true and contains no obligations or defined terms. Neither the cited regulation nor any identified higher-order authority requires removal of that node from the redesign scope. The operation would therefore alter the baseline blueprint by deleting an included node, making it a change rather than a codification, clarification, or gap-fill. This classification is limited to blueprint scope: the operation does not repeal, amend, or otherwise affect 12 CFR part 1266 itself. Applicability and status controls reinforce that distinction\u2014the regulation remains binding law where applicable, while its treatment within this redesign artifact is a discretionary scoping decision. The asserted O4 benefit is housekeeping and does not establish a substantive objective-bearing duty to remove the node.",
+        "cells_touched": [
+          {
+            "actor": "Authority responsible for the liquidity-redesign blueprint",
+            "activity": "Selection and maintenance of authorities and nodes within redesign scope",
+            "jurisdiction": null
+          },
+          {
+            "actor": "Federal Housing Finance Agency and regulated Federal Home Loan Banks",
+            "activity": "Underlying application of 12 CFR part 1266 governing advances, which remains unchanged",
+            "jurisdiction": "United States"
+          }
+        ],
+        "evidentiary_ceiling_notes": "No enforcement evidence or proposal is relied upon to establish a duty. The verified regulatory definition confirms that part 1266 has substantive legal content outside this blueprint, but it does not establish a requirement to include or remove the node from redesign scope. The quoted authority provision is unverified and, even if verified, would not establish the proposed scope-removal duty.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:57:15.476370+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:59:45.492298+00:00"
+      }
+    },
+    {
+      "op_id": "RD-010",
+      "finding_ref": "mis#5",
+      "misalignment_code": "M2",
+      "misalignment_title": "Dead-baseline nodes with no obligations and no objective linkage",
+      "operation": {
+        "op_type": "REPEAL",
+        "targets": [
+          {
+            "item_id": "dodd-frank-1101-1103",
+            "element_ref": null
+          }
+        ],
+        "parameters": "Remove dodd-frank-1101-1103 from the live blueprint node set as modeled (the Act's short title / table of contents / section-listing frontmatter). This is a blueprint-level advisory recommendation to the Authority to drop the node from the liquidity-redesign scope, not a repeal of statutory text.",
+        "proposal": "Recommend removing the dodd-frank-1101-1103 node from the redesign blueprint. The extracted content is the Dodd-Frank short title, table of contents, and section headings \u2014 it carries no obligation and no defined term. As a modeled node it imposes nothing and advances no ranked objective; retaining it as a live node inflates the corpus without serving the Mandate.",
+        "rationale": "The node's captured text is pure frontmatter: 'SECTION 1. SHORT TITLE; TABLE OF CONTENTS' and a listing of section numbers. The focus pass found nothing_in_scope=true and zero obligations. Repealing it from scope removes a dead node without disturbing any operative liquidity duty. Note this is an ADR-003 advisory move addressed to the Authority: it recommends de-scoping the modeled node, not amending the underlying public law.",
+        "citations": [
+          {
+            "quote": "SECTION 1. SHORT TITLE; TABLE OF CONTENTS. \n(a) S HORT TITLE.\u2014This Act may be cited as the \u2018\u2018Dodd-Frank \nWall Street Reform and Consumer Protection Act\u2019\u2019.",
+            "item_id": "dodd-frank-1101-1103",
+            "verified": true
+          }
+        ],
+        "composition_note": null,
+        "objective_hook": {
+          "objective_id": "O1",
+          "how": "Maintaining a clean, obligation-bearing corpus keeps the liquidity framework legible; a dead frontmatter node that binds nothing dilutes the model that supports confidence in the banking system under O1. Removing noise concentrates authority on live duties."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 1,
+      "citations_total": 1,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "Manual classification under ADR-008: the cited node is statutory frontmatter consisting of the Act\u2019s short title, table of contents, and section listings. The available extraction identifies no obligation, defined term, applicability rule, or delegated authority relevant to the ranked liquidity objectives, and the focus pass records nothing_in_scope=true with zero obligations. The legal baseline therefore does not require removal of the underlying statutory text, nor does the proposal purport to amend it. The operation instead changes the blueprint baseline by removing a currently retained live node from the liquidity-redesign scope. Because that de-scoping outcome is a discretionary alteration to the modeled corpus rather than an output already compelled by controlling authority, the honest draft effect class is change.",
+        "cells_touched": [
+          {
+            "actor": "Authority",
+            "activity": "Maintain and delimit the live node set for the liquidity-redesign blueprint",
+            "jurisdiction": null
+          }
+        ],
+        "evidentiary_ceiling_notes": null,
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:57:40.463467+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T01:59:56.031146+00:00"
+      }
+    },
+    {
+      "op_id": "RD-011",
+      "finding_ref": "mis#6",
+      "misalignment_code": "M2",
+      "misalignment_title": "12-usc-1430 subsections retained after scope limitation serve housing-finance, not liquidity, objectives",
+      "operation": {
+        "op_type": "SPLIT",
+        "targets": [
+          {
+            "item_id": "12-usc-1430",
+            "element_ref": "O2"
+          },
+          {
+            "item_id": "12-usc-1430",
+            "element_ref": "O3"
+          },
+          {
+            "item_id": "12-usc-1430",
+            "element_ref": "O6"
+          },
+          {
+            "item_id": "12-usc-1430",
+            "element_ref": "O7"
+          }
+        ],
+        "parameters": "Partition 12-usc-1430 into two nodes: (a) a liquidity-relevant advance-authority node retaining the general secured-advance authority (O1) and the special/short-term liquidity conditionals that are O3-adjacent per the finding; (b) a housing-finance-policy node carrying the long-term-advance-purpose restriction (O2: residential housing finance / small-business purposes), the housing-specific collateral-category mechanics (O3), appraisal duties (O6), and the personal-liability home-mortgage bar (O7). Destination of node (b): FHLB housing-finance policy corpus, outside liquidity-redesign-p2 scope.",
+        "proposal": "Advisory to the Authority: separate the housing-finance-purpose and housing-collateral obligations of 12-usc-1430 from the general liquidity-advance authority so the liquidity redesign carries only Mandate-serving provisions, and the housing-policy material is preserved intact in its proper corpus rather than deleted.",
+        "rationale": "The finding establishes that O2/O3/O6/O7 advance FHLB housing-finance policy, not any Mandate objective, while the general secured-advance authority (O1) and the special/short-term liquidity conditionals are the only O3-adjacent (liquidity) content. Splitting isolates the liquidity-relevant provisions without a REPEAL that would destroy live housing-finance law. This is an advisory blueprint move (ADR-003), not operative text.",
+        "citations": [
+          {
+            "quote": "A long-term advance may only be made for the purposes of-",
+            "item_id": "12-usc-1430",
+            "verified": true
+          },
+          {
+            "quote": "providing funds to any member for residential housing finance; and",
+            "item_id": "12-usc-1430",
+            "verified": true
+          },
+          {
+            "quote": "A Bank, at the time of origination or renewal of a loan or advance, shall obtain and maintain a security interest in collateral eligible pursuant to one or more of the following categories:",
+            "item_id": "12-usc-1430",
+            "verified": true
+          },
+          {
+            "quote": "each Home Loan Bank shall have power to make, or to cause or require to be made, such appraisals and other investigations as it may deem necessary.",
+            "item_id": "12-usc-1430",
+            "verified": true
+          }
+        ],
+        "composition_note": null,
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Isolating the general secured-advance authority and the special/short-term liquidity conditionals into a liquidity-scoped node keeps the FHLB advance mechanism legible as a liquidity backstop (contagion reduction / survival in rapid runs), unencumbered by housing-finance-purpose restrictions that constrain its use as a liquidity tool."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 4,
+      "citations_total": 4,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling baseline is 12 U.S.C. \u00a7 1430. It combines general secured-advance authority, special or short-term advance conditions, long-term housing-finance and small-business purpose restrictions, eligible-collateral mechanics, appraisal authority, and related mortgage protections within one statutory section. Nothing in the cited statutory text or identified delegation requires those provisions to be partitioned into separate liquidity-policy and housing-finance-policy nodes or authorizes treating the housing-policy provisions as absent from the governing law. The proposed SPLIT therefore changes the blueprint\u2019s organization, scope assignment, and objective mapping rather than merely restating a baseline-required partition. It remains non-operative and preserves the live statutory duties in a separate corpus, so it does not itself repeal or amend \u00a7 1430; nevertheless, classifying only selected provisions as part of the liquidity redesign is a substantive design choice with potential downstream consequences and is properly change-class. Human confirmation remains required because the baseline_set_for resolver is not yet available.",
+        "cells_touched": [
+          {
+            "actor": "Federal Home Loan Banks",
+            "activity": "Make general secured advances and administer special or short-term liquidity advances",
+            "jurisdiction": "United States federal law"
+          },
+          {
+            "actor": "Federal Home Loan Banks",
+            "activity": "Make long-term advances subject to residential-housing-finance and small-business purpose restrictions",
+            "jurisdiction": "United States federal law"
+          },
+          {
+            "actor": "Federal Home Loan Banks",
+            "activity": "Obtain and maintain eligible collateral and conduct appraisals or related investigations",
+            "jurisdiction": "United States federal law"
+          },
+          {
+            "actor": "Federal Home Loan Bank members and borrowers",
+            "activity": "Provide eligible collateral and receive advances subject to statutory mortgage and personal-liability protections",
+            "jurisdiction": "United States federal law"
+          },
+          {
+            "actor": "Redesign Authority",
+            "activity": "Partition statutory material between the liquidity-redesign corpus and the FHLB housing-finance-policy corpus",
+            "jurisdiction": null
+          }
+        ],
+        "evidentiary_ceiling_notes": "The verified quotations from 12 U.S.C. \u00a7 1430 can establish the underlying statutory authorities and duties. The finding, objective mapping, operation proposal, and ADR-003 characterization are advisory design materials and cannot establish that federal law already requires the proposed corpus partition or scope exclusion. No enforcement evidence is relied upon to create a duty.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:58:07.957451+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:00:01.966634+00:00"
+      }
+    },
+    {
+      "op_id": "RD-013",
+      "finding_ref": "mis#7",
+      "misalignment_code": "M3",
+      "misalignment_title": "Universal collateralization and lendable-value burden weighs against O4 while advancing O2/O5",
+      "operation": {
+        "op_type": "RECALIBRATE",
+        "targets": [
+          {
+            "item_id": "frbdw-collateral",
+            "element_ref": "frbdw-collateral-OBL-4"
+          }
+        ],
+        "parameters": "Replace automatic zero-value assignment for securities lacking an external-vendor price with a fallback valuation procedure (model/matrix price with conservative haircut) before defaulting to zero.",
+        "proposal": "Advise the Board/Reserve Banks to recalibrate the zero-collateral-value rule so that a security whose price is unavailable from external vendors is first eligible for a conservative fallback valuation (e.g., model or matrix pricing with an elevated haircut) and receives zero value only where no defensible value can be established. This reduces automatic zero-value assignments that force institutions to pledge additional assets to cover the same borrowing need.",
+        "rationale": "The finding identifies zero-value assignments (frbdw-collateral OBL-4/OBL-5) as a distinct driver of over-pledging burden on O4. The zero-value default is an operational valuation choice, not a statutory command; softening it to a conservative-fallback ladder is a threshold/applicability adjustment (RECALIBRATE) that still satisfies the lendable-value duty and taxpayer protection.",
+        "citations": [
+          {
+            "quote": "Securities for which a price is unavailable from external vendors will receive zero collateral value.",
+            "item_id": "frbdw-collateral",
+            "verified": true
+          },
+          {
+            "quote": "a Federal Reserve Bank must, prior to or at the time the credit is initially extended, assign a lendable value to all collateral for the program or facility, consistent with sound risk management practices and to ensure protection for the taxpayer.",
+            "item_id": "12-cfr-201-reg-a",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O4",
+          "how": "Avoiding automatic zero-value on otherwise-good collateral lets institutions realize borrowing capacity from assets they already hold, freeing balance-sheet capacity per O4."
+        },
+        "tradeoff": {
+          "advances": "O4 (recognizes value in collateral currently assigned zero)",
+          "costs": "O2/O5 (valuing hard-to-price assets carries residual taxpayer-loss risk)",
+          "ranking_basis": "Mandate ranks O2 > O4 > O5. Because O2 outranks O4, the fallback valuation must remain 'consistent with sound risk management practices and to ensure protection for the taxpayer'; the conservative haircut requirement is the O2-protective bound within which O4 may be advanced."
+        }
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling operational baseline expressly provides that securities without an external-vendor price receive zero collateral value. The proposed model/matrix-pricing step with a conservative haircut would replace that automatic result with a new valuation pathway and therefore alter, rather than merely explain or codify, the existing rule. Higher-level authorities require assignment of lendable value, sound risk management, adequate collateral, and taxpayer protection, but they do not require the proposed fallback method or negate the stated zero-value rule. Those authorities leave valuation-method discretion to the Board and Reserve Banks; exercising that discretion differently is a permissible recalibration but remains a change to the current baseline. Applicability is limited to otherwise eligible securities for which external-vendor pricing is unavailable, with zero value retained where no defensible fallback value can be established. This is a draft classification subject to human confirmation because baseline-set resolution is manual.",
+        "cells_touched": [
+          {
+            "actor": "Federal Reserve Banks",
+            "activity": "Assigning lendable value to pledged securities for which external-vendor pricing is unavailable",
+            "jurisdiction": "United States"
+          },
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Establishing or supervising Discount Window collateral-valuation methodology and risk controls",
+            "jurisdiction": "United States"
+          }
+        ],
+        "evidentiary_ceiling_notes": null,
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T01:58:52.462001+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:01:13.266278+00:00"
+      }
+    },
+    {
+      "op_id": "RD-014",
+      "finding_ref": "mis#8",
+      "misalignment_code": "M4",
+      "misalignment_title": "Undercapitalized-institution lending limits and Board loss-liability advance O2/O5 by constraining O3/O1 for weak members",
+      "operation": {
+        "op_type": "RECALIBRATE",
+        "targets": [
+          {
+            "item_id": "12-usc-347b",
+            "element_ref": "347b-4"
+          }
+        ],
+        "parameters": "Widen the 60-day/120-day applicability line for undercapitalized depository institutions during Board-declared fast-run/systemic-stress conditions: authorize the Board to suspend or extend the 60-day cap on a facility-wide basis for the duration of a declared rapid-run episode, in place of the current per-institution, per-certification renewal mechanic. Advisory to the Board of Governors under 12 USC 347b(a)/(b); no operative text drafted.",
+        "proposal": "Advise the Board to recalibrate the 60-days-in-any-120-day limitation (347b-4) so that, upon a Board declaration of fast-run/systemic-stress conditions, the applicability line shifts: the standard cap is suspended or lengthened for undercapitalized members for the declared episode, rather than requiring the slower single-institution viability-certification renewals of 347b-5. This keeps LOLR support flowing to the very institutions whose failure most threatens contagion, precisely when runs are fastest.",
+        "rationale": "The finding shows O1 (confidence) and O3 (survival/contagion) rank above O2 (avoid bailouts) and O5 (moral hazard), yet the 60/120-day cap withdraws support from the weakest members exactly when their failure most threatens confidence and spreads contagion. RECALIBRATE adjusts the applicability line/frequency without repealing the underlying prudential structure \u2014 the viability certification path (347b-5) and the no-obligation-to-lend backstop (347b-4 exception, 347b para (4)) remain. This is a threshold/applicability recalibration under change-class governance, not a free-form edit.",
+        "citations": [
+          {
+            "quote": "Except as provided in paragraph (2), no advances to any undercapitalized depository institution by any Federal Reserve bank under this section may be outstanding for more than 60 days in any 120-day period.",
+            "item_id": "12-usc-347b",
+            "verified": true
+          },
+          {
+            "quote": "the limitation contained in paragraph (1) shall not apply during the 60-day period beginning on the date such certification is received.",
+            "item_id": "12-usc-347b",
+            "verified": true
+          },
+          {
+            "quote": "A Federal Reserve bank shall have no obligation to make, increase, renew, or extend any advance or discount under this chapter to any depository institution.",
+            "item_id": "12-usc-347b",
+            "verified": true
+          }
+        ],
+        "composition_note": null,
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Extending LOLR availability to undercapitalized members during declared rapid-run episodes directly improves their survival odds and reduces contagion (O3), and by preventing visible withdrawal of support from marginal members it sustains systemic confidence (O1) \u2014 the two highest-ranked objectives implicated."
+        },
+        "tradeoff": {
+          "advances": "O1 (confidence) and O3 (survival/reduce contagion) \u2014 sustaining LOLR to weak members in fast runs",
+          "costs": "O2 (avoid bailouts) and O5 (limit moral hazard) \u2014 extended support to undercapitalized institutions increases bailout exposure and weakens market discipline",
+          "ranking_basis": "Mandate ranks O1 > O2 > O3 > O4 > O5. O1 outranks both O2 and O5; O3 outranks O5 but O3 is below O2. The advance/cost pair O1&O3 vs O2&O5: O1 (advanced) outranks O2 (cost), so the highest-ranked objective in play favors the move; the O3-vs-O2 sub-pair is inverted (O2 > O3). Because the pair is ranked (O1 dominates), ranking_basis is stated, but the O3<O2 tension is flagged for Principal attention."
+        }
+      },
+      "citations_verified": 3,
+      "citations_total": 3,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling statutory baseline, 12 U.S.C. \u00a7 347b, expressly limits Federal Reserve Bank advances to an undercapitalized depository institution to 60 days in any 120-day period, subject to the statute\u2019s specified certification-based exception. The proposed facility-wide suspension or extension during Board-declared fast-run/systemic-stress conditions would create a new exception and replace the existing institution-specific certification mechanism for the declared episode. Nothing in the cited text delegates to the Board authority to waive or lengthen the statutory limit based solely on a systemic-stress declaration. Regulation A cannot override or enlarge the Board\u2019s authority beyond that statute. The no-obligation-to-lend provision preserves Reserve Bank discretion not to lend; it does not authorize lending contrary to the duration cap. Accordingly, the baseline does not already require or permit the proposed output, and implementing it would alter the governing applicability and duration rule rather than codify, clarify, or fill a delegated gap. Although styled as advisory recalibration, the substantive result requires a statutory change or other independently established authority.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Declare fast-run or systemic-stress conditions and suspend or extend the statutory duration limit for advances to undercapitalized depository institutions on a facility-wide basis",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Federal Reserve Banks",
+            "activity": "Make, renew, or maintain advances to undercapitalized depository institutions beyond 60 days in a 120-day period during a declared episode",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Undercapitalized depository institutions",
+            "activity": "Receive Federal Reserve advances beyond the existing statutory duration limit without the current institution-specific certification exception",
+            "jurisdiction": "United States federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The operation is a proposal and cannot itself establish Board authority or a legal duty. The quoted statutory provisions establish the current cap, certification exception, and absence of an obligation to lend, but they do not establish a facility-wide emergency waiver power.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T02:01:52.387839+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:04:29.259448+00:00"
+      }
+    },
+    {
+      "op_id": "RD-015",
+      "finding_ref": "mis#9",
+      "misalignment_code": "M4",
+      "misalignment_title": "FHLB creditor-priority and stock-lien priority advance FHLB protection at the expense of Fed LOLR primacy (O3)",
+      "operation": {
+        "op_type": "RECALIBRATE",
+        "targets": [
+          {
+            "item_id": "12-usc-1430",
+            "element_ref": "e"
+          }
+        ],
+        "parameters": "Adjust the applicability line of the 12-usc-1430(e) 'priority of certain secured interests' provision to carve out an exception: FHLB security-interest priority yields to a security interest granted to a Federal Reserve Bank in the same collateral where the collateral is being transferred to the Reserve Bank to secure discount-window lending under a negotiated collateral-transfer agreement. Advisory to Congress (statutory-level change).",
+        "proposal": "Recalibrate the FHLB super-priority in 12-usc-1430(e) so that its 'notwithstanding any other provision of law' priority does not extend against a Federal Reserve Bank's claim on collateral moved to the Reserve Bank to secure discount-window credit in a run. The FHLB's prior perfected claim would be subordinated (or released on a defined schedule) as to collateral migrating to the Fed under an OB-5 collateral-transfer agreement, restoring Fed LOLR primacy over that collateral.",
+        "rationale": "12-usc-1430(e) currently grants FHLB security interests priority 'notwithstanding any other provision of law' over all parties save those with pre-existing statutory priority. As implemented this prior perfected claim impedes rapid movement of collateral to the Reserve Bank in a run (finding mis#9). Recalibrating the applicability line to yield to the Fed for run-transfer collateral serves O3 (revived Fed LOLR / contagion reduction). This is an advisory blueprint move to Congress (ADR-003); it drafts no operative text. The FHLB-protection interest defeated here is not itself a ranked Mandate objective.",
+        "citations": [
+          {
+            "quote": "Notwithstanding any other provision of law, any security interest granted to a Federal Home Loan Bank by any member of any Federal Home Loan Bank or any affiliate of any such member shall be entitled to priority over the claims and rights of any party (including any receiver, conservator, trustee, or similar party having rights of a lien creditor) other than claims and rights that-",
+            "item_id": "12-usc-1430",
+            "verified": true
+          },
+          {
+            "quote": "Additionally, FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member\u2019s lending activity must be moved to the Federal Reserve discount window.",
+            "item_id": "fhfa-system-at-100",
+            "verified": true
+          }
+        ],
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Subordinating the FHLB's prior perfected claim to the Fed for collateral moving to the discount window in a run removes the legal impediment to rapid collateral transfer, directly enabling revived Fed LOLR functionality and contagion reduction (O3)."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling statutory baseline is 12 U.S.C. \u00a7 1430(e), which grants a security interest held by a Federal Home Loan Bank priority over the claims and rights of other parties notwithstanding other law, subject only to the exceptions already specified by Congress. The proposed Federal Reserve Bank exception is not identified as part of the existing applicability line. Subordinating or requiring release of the FHLB interest when collateral moves to a Reserve Bank would therefore alter the statutory priority rather than codify or clarify an existing duty. FHFA\u2019s expectation that FHLBanks negotiate agreements for expedited collateral movement can support operational coordination but cannot override the statute or establish that Federal Reserve security interests already have superior priority. The operation is consequently an advisory statutory change for Congress, even if it advances O3 and facilitates existing collateral-transfer policy.",
+        "cells_touched": [
+          {
+            "actor": "Federal Home Loan Banks",
+            "activity": "Priority, subordination, or release of security interests in collateral transferred to secure Federal Reserve discount-window lending",
+            "jurisdiction": "United States"
+          },
+          {
+            "actor": "Federal Reserve Banks",
+            "activity": "Receipt and perfection of security interests in transferred collateral securing discount-window credit",
+            "jurisdiction": "United States"
+          },
+          {
+            "actor": "FHLBank members and affiliates",
+            "activity": "Transfer or re-pledging of collateral from an FHLBank to a Federal Reserve Bank during a liquidity run",
+            "jurisdiction": "United States"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The FHFA System at 100 statement evidences an agency expectation to negotiate collateral-transfer agreements, but it does not establish a statutory Federal Reserve priority or authorize agreements to displace 12 U.S.C. \u00a7 1430(e). The proposal itself likewise cannot establish the baseline duty.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T02:02:44.793348+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:04:39.137898+00:00"
+      }
+    },
+    {
+      "op_id": "RD-016",
+      "finding_ref": "mis#9",
+      "misalignment_code": "M4",
+      "misalignment_title": "FHLB creditor-priority and stock-lien priority advance FHLB protection at the expense of Fed LOLR primacy (O3)",
+      "operation": {
+        "op_type": "RECALIBRATE",
+        "targets": [
+          {
+            "item_id": "12-usc-1430",
+            "element_ref": "O8"
+          }
+        ],
+        "parameters": "Adjust the applicability of the 12-usc-1430(c) stock lien 'as further collateral security for all indebtedness' so that the lien does not attach to, or is released with respect to, member assets/collateral required to be transferred to a Reserve Bank under a negotiated collateral-transfer agreement during a run. Advisory to Congress.",
+        "proposal": "Recalibrate the scope of the FHLB stock lien in 12-usc-1430(c) so that the 'further collateral security for all indebtedness' does not operate to block or entangle the migration of member collateral to the Reserve Bank in run conditions, e.g., by defining a release mechanism triggered on discount-window transfer under an OB-5 agreement.",
+        "rationale": "12-usc-1430(c) requires the FHLB to hold a lien on member stock as further collateral for all member indebtedness. Combined with the (e) priority, this compounds the impediment to moving collateral to the Fed in a run (finding mis#9). Recalibrating the lien's reach to release run-transfer collateral serves O3. Advisory blueprint move to Congress per ADR-003; no operative text drafted.",
+        "citations": [
+          {
+            "quote": "the Federal Home Loan Bank shall have a lien upon and shall hold the stock of such member as further collateral security for all indebtedness of the member to the Federal Home Loan Bank.",
+            "item_id": "12-usc-1430",
+            "verified": true
+          },
+          {
+            "quote": "The FHLBanks can better serve their members if they coordinate with their large depository institution members and the members\u2019 prudential regulators to make certain that these members have established protocols to meet their emergency liquidity needs from the Federal Reserve discount window when necessary.",
+            "item_id": "fhfa-system-at-100",
+            "verified": true
+          }
+        ],
+        "composition_note": "Works together with the 12-usc-1430(e) priority recalibration; both must yield for collateral to migrate cleanly to the Fed.",
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Releasing the further-collateral stock lien over run-transfer assets removes a second FHLB claim that otherwise entangles collateral, enabling expedited movement to the Reserve Bank and supporting revived Fed LOLR (O3)."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling statutory baseline, 12 U.S.C. \u00a7 1430(c), affirmatively requires each Federal Home Loan Bank to hold a lien on the member\u2019s FHLBank stock as further collateral security for all indebtedness of that member to the FHLBank. The cited text contains no run-condition, discount-window, or collateral-transfer exception. An administrative release mechanism cannot displace that statutory requirement unless Congress creates an exception or delegates authority broad enough to do so. The FHFA System at 100 report supports coordination and negotiated protocols for transitioning emergency liquidity to the Federal Reserve, but it does not establish that existing law already requires the stock lien to yield. Accordingly, making the lien inapplicable or requiring its release in connection with a Reserve Bank transfer would alter the governing statutory entitlement and is a change, appropriately framed as advisory to Congress. The proposal should remain precise that \u00a7 1430(c) places the lien on member stock, not directly on the other assets transferred to a Reserve Bank; any claimed impediment to transfer therefore depends on how that stock lien and the member\u2019s total FHLBank indebtedness interact operationally with the separate collateral and priority regime.",
+        "cells_touched": [
+          {
+            "actor": "Federal Home Loan Bank",
+            "activity": "Hold or release the statutory lien on a member\u2019s FHLBank stock in connection with a run-condition transfer to a Federal Reserve Bank",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "FHLBank member institution",
+            "activity": "Transfer eligible collateral to a Federal Reserve Bank under a negotiated emergency-liquidity collateral-transfer agreement",
+            "jurisdiction": "United States federal"
+          },
+          {
+            "actor": "Federal Reserve Bank",
+            "activity": "Receive collateral supporting discount-window credit during run conditions",
+            "jurisdiction": "United States federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The FHFA System at 100 report is policy and operational evidence recommending coordination and protocols; it cannot establish a binding exception to the statutory lien. Negotiated collateral-transfer agreements or contemplated trigger mechanisms likewise cannot establish authority to override \u00a7 1430(c) unless supported by enacted law and applicable delegation.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T02:02:59.257971+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:04:49.924506+00:00"
+      }
+    },
+    {
+      "op_id": "RD-017",
+      "finding_ref": "mis#9",
+      "misalignment_code": "M4",
+      "misalignment_title": "FHLB creditor-priority and stock-lien priority advance FHLB protection at the expense of Fed LOLR primacy (O3)",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "fhfa-system-at-100",
+            "element_ref": "OB-5"
+          }
+        ],
+        "parameters": "New duty (advisory to FHFA/Congress): require that OB-5 collateral-transfer agreements include a pre-agreed priority-release / subordination protocol under which the FHLB's security interest and stock lien are automatically released or subordinated as to identified collateral upon its transfer to the Reserve Bank in a run.",
+        "proposal": "Introduce a NEW duty that negotiated FHLB\u2013Reserve Bank collateral-transfer agreements must embed an operative, pre-cleared priority-release mechanism (standing subordination/release terms keyed to run triggers) so that expedited collateral movement is not defeated case-by-case by the statutory FHLB priority and lien.",
+        "rationale": "This duty is NEW. OB-5 already directs FHLBanks to negotiate agreements for expedited collateral movement, but the finding (mis#9) shows the statutory FHLB priority/lien can still defeat that movement in a run. The gap motivating this INTRODUCE is that OB-5 as recorded lacks any priority-release content. Requiring pre-agreed release terms operationalizes the statutory recalibrations and serves O3. Advisory to the Authority (FHFA/Congress) per ADR-003.",
+        "citations": [
+          {
+            "quote": "Additionally, FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member\u2019s lending activity must be moved to the Federal Reserve discount window.",
+            "item_id": "fhfa-system-at-100",
+            "verified": true
+          },
+          {
+            "quote": "Notwithstanding any other provision of law, any security interest granted to a Federal Home Loan Bank by any member of any Federal Home Loan Bank or any affiliate of any such member shall be entitled to priority over the claims and rights of any party",
+            "item_id": "12-usc-1430",
+            "verified": true
+          }
+        ],
+        "composition_note": "Operationalizes the two RECALIBRATE moves; the pre-agreed release protocol is the mechanism by which the recalibrated priority/lien actually yields at run speed.",
+        "objective_hook": {
+          "objective_id": "O3",
+          "how": "Pre-cleared, standing priority-release terms ensure collateral can move to the Reserve Bank at run speed without case-by-case negotiation, making revived Fed LOLR operationally effective and reducing contagion (O3)."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling statutory baseline, 12 U.S.C. \u00a7 1430, grants FHLBanks a security interest with priority over other parties\u2019 claims and provides a stock lien securing member indebtedness. The cited FHFA material expects FHLBanks to negotiate agreements with Reserve Banks for expedited collateral movement, but it does not require those agreements to contain automatic release or subordination terms, prescribe run triggers, or displace the statutory priority. An agreement-negotiation expectation cannot, without sufficient delegated authority and operative legal terms, be read as already requiring FHLBanks to surrender or subordinate statutory protection. The proposed duty therefore changes the baseline by adding a specific pre-cleared release/subordination obligation and reallocating priority between FHLBanks and Reserve Banks. Implementation may require congressional amendment or other valid statutory authorization; FHFA could advise Congress and pursue agreements within its authority, but the cited sources do not establish that FHFA may unilaterally override \u00a7 1430\u2019s priority rule. The operation is thus a change rather than a clarification or gap-fill, even though it operationalizes the existing policy goal of expedited collateral transfer.",
+        "cells_touched": [
+          {
+            "actor": "Federal Housing Finance Agency",
+            "activity": "Require or promote collateral-transfer agreements containing standing FHLBank priority-release or subordination protocols",
+            "jurisdiction": "United States (federal)"
+          },
+          {
+            "actor": "Federal Home Loan Banks",
+            "activity": "Enter and perform collateral-transfer agreements that automatically release or subordinate security interests and liens upon specified run triggers",
+            "jurisdiction": "United States (federal)"
+          },
+          {
+            "actor": "Federal Reserve Banks",
+            "activity": "Receive identified collateral under pre-cleared transfer and priority arrangements during a run",
+            "jurisdiction": "United States (federal)"
+          },
+          {
+            "actor": "United States Congress",
+            "activity": "Authorize or enact any statutory modification needed to make FHLBank priority and lien rights yield to Reserve Bank collateral transfers",
+            "jurisdiction": "United States (federal)"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The FHFA source states an agency expectation to negotiate appropriate agreements; it does not itself establish the proposed automatic release/subordination duty or authority to override the statutory priority. It should be treated as policy or supervisory evidence subject to its source status, not as proof that the new duty already exists. The statutory text establishes the contrary priority baseline.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T02:03:13.046530+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agre",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:05:01.949708+00:00"
+      }
+    },
+    {
+      "op_id": "RD-018",
+      "finding_ref": "mis#10",
+      "misalignment_code": "M5",
+      "misalignment_title": "O2 (avoid bailouts) advanced chiefly by \u00a713(3) constraints framed as taxpayer-protection drafting rather than a bailout-avoidance design",
+      "operation": {
+        "op_type": "INTRODUCE",
+        "targets": [
+          {
+            "item_id": "12-usc-343",
+            "element_ref": "OBL-6"
+          }
+        ],
+        "parameters": "Advisory blueprint recommendation to the Board of Governors: introduce a NEW purpose-statement element, addressed to the Authority, that names bailout-avoidance as the design objective governing the aggregate of the \u00a713(3) constraints (broad-based-eligibility, single-company prohibition, insolvency prohibition, Treasury approval, reporting/termination), so that the policies-and-procedures regulation the Board must establish declares avoidance-of-bailouts as its organizing purpose rather than leaving it as an incidental aggregate effect.",
+        "proposal": "Add a new named-purpose element at the head of the emergency-lending policies-and-procedures regime the Board is already required to establish (OBL-6), stating that the collected constraints exist to avoid bailouts of failing firms while preserving system-wide liquidity provision. This is a NEW duty: it converts the currently-implicit design goal into an explicit governing-purpose element the regulation must articulate and against which the constituent constraints are read. It does not alter any threshold, vote count, or approval requirement; it supplies the missing objective anchor. Advisory only, addressed to the Board (ADR-003).",
+        "rationale": "The finding (M5) is that O2 emerges only from the aggregate effect of governance/taxpayer-loss controls, with no element naming bailout-avoidance as its purpose. The statute already embeds this purpose in narrative \u2014 'not to aid a failing financial company' \u2014 but it sits in the policies-and-procedures design instruction rather than as a declared governing purpose. Introducing an explicit purpose element makes O2 a designed, not incidental, feature, and gives interpreters an anchor for reading the constraint cluster. The duty is NEW; it is motivated by the finding's basis that no element names the objective.",
+        "citations": [
+          {
+            "quote": "Such policies and procedures shall be designed to ensure that any emergency lending program or facility is for the purpose of providing liquidity to the financial system, and not to aid a failing financial company, and that the security for emergency loans is sufficient to protect taxpayers from losses and that any such program is terminated in a timely and orderly fashion.",
+            "item_id": "12-usc-343",
+            "verified": true
+          },
+          {
+            "quote": "the Board shall establish, by regulation, in consultation with the Secretary of the Treasury, the policies and procedures governing emergency lending under this paragraph.",
+            "item_id": "12-usc-343",
+            "verified": true
+          }
+        ],
+        "composition_note": null,
+        "objective_hook": {
+          "objective_id": "O2",
+          "how": "Serves O2 (avoid bailouts) directly by naming bailout-avoidance as the declared governing purpose of the \u00a713(3) constraint cluster, so alignment is designed rather than incidental \u2014 exactly the gap M5 identifies."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 2,
+      "citations_total": 2,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The controlling federal statute applies to the Board of Governors and requires it, by regulation and in consultation with the Treasury Secretary, to establish policies and procedures governing \u00a713(3) emergency lending. It also requires those policies and procedures to be designed to ensure system-wide liquidity provision rather than aid to a failing financial company, taxpayer protection, and timely termination. That substantive design instruction strongly supports bailout avoidance, but it does not require the regulation to contain a separate, named purpose-statement element or expressly label \u201cavoidance of bailouts\u201d as the organizing purpose against which all constraints must be read. The operation therefore adds a new articulation duty to OBL-6 rather than merely restating an already-required regulatory output. Its consistency with the statutory purpose does not make the added form and interpretive function baseline-required. Accordingly, the honest draft classification is change, notwithstanding that the recommendation changes no lending threshold, vote count, or approval requirement.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Establish emergency-lending policies and procedures by regulation that include an express bailout-avoidance governing-purpose statement",
+            "jurisdiction": "United States federal"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The operation is an advisory proposal and cannot itself establish the asserted new duty. The verified statutory text establishes the existing design instruction, but not the proposed requirement for a separately named purpose-statement element.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T02:03:53.437736+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:05:21.281849+00:00"
+      }
+    },
+    {
+      "op_id": "RD-019",
+      "finding_ref": "mis#10",
+      "misalignment_code": "M5",
+      "misalignment_title": "O2 (avoid bailouts) advanced chiefly by \u00a713(3) constraints framed as taxpayer-protection drafting rather than a bailout-avoidance design",
+      "operation": {
+        "op_type": "RELATE-OBLIGATION",
+        "targets": [
+          {
+            "item_id": "12-usc-343",
+            "element_ref": "OBL-3"
+          },
+          {
+            "item_id": "12-usc-343",
+            "element_ref": "OBL-7"
+          }
+        ],
+        "parameters": "Advisory blueprint recommendation: establish an explicit relation binding the broad-based-eligibility authorization (OBL-3), the single-company/failing-firm exclusions (OBL-8 and the \u00a713(3)(A)(iii) exclusion), the insolvency prohibition, and the taxpayer-protection collateral rule (OBL-7) as the coordinated instruments implementing the bailout-avoidance purpose element introduced above.",
+        "proposal": "Relate the dispersed \u00a713(3) constraints \u2014 broad-based eligibility, single-company facility prohibition, insolvency prohibition, and lendable-value/taxpayer-protection collateral rule \u2014 to one another as a coherent bailout-avoidance instrument set under the newly named purpose. This makes explicit that these obligations function together toward O2, rather than being read as independent taxpayer-loss or governance controls. Advisory, addressed to the Board; no operative text drafted (ADR-003).",
+        "rationale": "M5 observes that O2 rests on constraint-drafting whose alignment is incidental because the constraints are scattered and framed individually as emergency-lending governance / taxpayer-loss controls. Relating them as a designed set \u2014 anchored to the purpose element in op 1 \u2014 makes the bailout-avoidance function legible and auditable, without changing any binding threshold.",
+        "citations": [
+          {
+            "quote": "to discount for any participant in any program or facility with broad-based eligibility, notes, drafts, and bills of exchange when such notes, drafts, and bills of exchange are indorsed or otherwise secured to the satisfaction of the Federal reserve bank",
+            "item_id": "12-usc-343",
+            "verified": true
+          },
+          {
+            "quote": "A program or facility that is structured to remove assets from the balance sheet of a single and specific company, or that is established for the purpose of assisting a single and specific company avoid bankruptcy, resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act, or any other Federal or State insolvency proceeding, shall not be considered a program or facility with broad-based eligibility.",
+            "item_id": "12-usc-343",
+            "verified": true
+          },
+          {
+            "quote": "The policies and procedures established by the Board shall require that a Federal reserve bank assign, consistent with sound risk management practices and to ensure protection for the taxpayer, a lendable value to all collateral for a loan executed by a Federal reserve bank under this paragraph",
+            "item_id": "12-usc-343",
+            "verified": true
+          }
+        ],
+        "composition_note": "Depends on op 1: the relation is anchored to the bailout-avoidance purpose element introduced there; without that element there is no named objective to relate the constraints to.",
+        "objective_hook": {
+          "objective_id": "O2",
+          "how": "Serves O2 by making the constraint cluster a legible, coordinated bailout-avoidance mechanism, curing the M5 defect that O2 alignment is incidental to individually-framed controls."
+        },
+        "tradeoff": null
+      },
+      "citations_verified": 3,
+      "citations_total": 3,
+      "draft_classification": {
+        "draft_effect_class": "change",
+        "baseline_reasoning": "The statutory baseline in 12 U.S.C. \u00a7 343 independently requires broad-based eligibility, excludes facilities directed at a single and specific company, prohibits lending to insolvent borrowers through Board-established procedures, and requires collateral lendable-value practices protecting taxpayers. Regulation A may restate or implement those controls under delegated authority, but neither the cited statutory text nor the described regulatory baseline expressly binds them together as a coordinated instrument set implementing a named bailout-avoidance purpose. The proposed RELATE-OBLIGATION operation would add that purposive and structural relationship, anchored to a new purpose element from operation 1. That relationship may accurately describe an aggregate policy effect, but it is not already required by the controlling text and cannot be treated as mere clarification of an existing express linkage. Because it introduces a new blueprint-level design relation without changing the underlying lending thresholds, exclusions, or collateral duties, it is properly classified as change rather than codify or clarify. Its advisory form and absence of drafted operative text do not make the new relation part of the current legal baseline.",
+        "cells_touched": [
+          {
+            "actor": "Board of Governors of the Federal Reserve System",
+            "activity": "Establish an explicit blueprint relationship treating the \u00a7 13(3) eligibility, firm-specific assistance, insolvency, and collateral safeguards as a coordinated bailout-avoidance instrument set",
+            "jurisdiction": "United States federal emergency-lending framework"
+          },
+          {
+            "actor": "Federal Reserve Banks",
+            "activity": "Administer \u00a7 13(3) emergency-lending constraints under the proposed coordinated bailout-avoidance framing",
+            "jurisdiction": "United States federal emergency-lending framework"
+          }
+        ],
+        "evidentiary_ceiling_notes": "The quoted provisions from 12 U.S.C. \u00a7 343 establish the existing individual statutory constraints, but not the proposed purpose-based relationship among them. The operation itself is an advisory blueprint recommendation and therefore cannot establish a binding duty or prove that the current baseline already contains the proposed relation. Its dependency on a separately proposed purpose element likewise supports change classification.",
+        "confidence": "high"
+      },
+      "status": "finalized",
+      "proposed_at": "2026-07-21T02:04:04.734356+00:00",
+      "disposition": {
+        "reviewer": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "action": "accept",
+        "effect_class": "change",
+        "draft_effect_class": "change",
+        "rationale": "agree",
+        "modified_proposal": null,
+        "timestamp": "2026-07-21T02:06:06.265867+00:00"
+      }
+    }
+  ],
+  "deferred_objectives": [],
+  "backlog_dispositions": {},
+  "cannot_express_log": [
+    {
+      "finding_ref": "mis#2",
+      "note": "The whitelist cannot compel Congress to convert the permissive statutory discount-window authority (12 USC 347b/343 'may') into a mandatory Fed lending duty \u2014 12-usc-347b 347b-4(4) affirmatively preserves that 'A Federal Reserve bank shall have no obligation to make... any advance', a statutory feature only Congressional action can alter. This exceeds RECALIBRATE/INTRODUCE at the blueprint level and would require an ADR flagging that the binding-LOLR-supply leg of O3 is unreachable without statutory change; logged as a finding, not an edit.",
+      "logged_at": "2026-07-21T01:49:35.963221+00:00"
+    },
+    {
+      "finding_ref": "mis#3",
+      "note": "A needed complementary move \u2014 mandating DISCLOSURE-TIMING protections (e.g., delaying or masking public reporting of individual window borrowing so routine draws cannot be reverse-engineered as distress signals) \u2014 cannot be cleanly expressed on the whitelist. It is neither a threshold RECALIBRATE nor a standalone INTRODUCE of a duty on a determinate actor without touching the confidentiality/publication regime (FR2052A-OB-6 'Micro data ... are considered confidential and are not published'; Reg-A OBL-7 7-day public-availability duty) in ways that may require balancing statutory transparency obligations. This is logged as a candidate ADR on stigma-disclosure-timing rather than improvised here, since it may implicate a transparency constraint the Mandate has not ranked against O1.",
+      "logged_at": "2026-07-21T01:50:40.268296+00:00"
+    },
+    {
+      "finding_ref": "mis#5",
+      "note": "The finding also flags sr-10-6-liquidity-policy as a candidate for repeal OR renewed justification. The whitelist cannot express the correct move here: the source text is NOT dead. The captured node prose contains substantive supervisory expectations directly on-point to the Mandate \u2014 e.g. 'depository institutions should maintain actionable contingency funding plans', a 'cushion of liquid assets', 'stress testing', and that funding strategies must not 'undermine public confidence in the liquidity or stability of subsidiary depository institutions' (O1/O4 relevant). The nothing_in_scope=true / empty-obligations extraction is an EXTRACTION DEFECT, not a substantive dead node. The right action is re-extraction of SR 10-6's obligations (the addendum's contingency-funding-plan duty and the liquidity-cushion expectations) so they can be hooked to O1/O3/O4 \u2014 but no whitelist op re-runs extraction or corrects a mis-scoped focus pass, and REPEAL would destroy live guidance that serves the Mandate. Logging as an ADR request: re-extract sr-10-6-liquidity-policy before any repeal/justification decision; do NOT repeal on the strength of an empty-obligation extraction that contradicts the visible source text.",
+      "logged_at": "2026-07-21T01:57:33.901506+00:00"
+    },
+    {
+      "finding_ref": "mis#8",
+      "note": "The Board loss-liability to the FDIC (347b-7/OBL-7-9) and the not-insolvent evidence requirement operate as taxpayer-protection/anti-bailout constraints that plausibly function as statutory floors serving O2. A move to soften or remove those (to further advance O1/O3 for critically undercapitalized members) would require weighing an O3-vs-O2 tradeoff the Mandate ranks in O2's favor for that sub-pair, and may breach an inviolable anti-bailout constraint. This is logged as a potential ADR / return-to-Principal rather than proposed as an edit.",
+      "logged_at": "2026-07-21T02:01:40.641387+00:00"
+    },
+    {
+      "finding_ref": "mis#10",
+      "note": "M5's residual concern \u2014 that O2 currently substitutes for a missing O4 mechanism (see M1) \u2014 cannot be cured within this finding via the whitelist: adding an actual O4 self-insurance-substitution facility is a separate design question tracked under M1, not a relation or purpose fix to the \u00a713(3) constraints. No whitelist op here can supply that substitution mechanism; it is logged for the M1 proposal.",
+      "logged_at": "2026-07-21T02:03:42.465653+00:00"
+    }
+  ],
+  "invariants_report": {
+    "ran_at": "2026-07-21T02:06:21.028845+00:00",
+    "checks": [
+      {
+        "name": "every_finalized_move_hooked",
+        "status": "pass",
+        "details": "unhooked finalized moves: none"
+      },
+      {
+        "name": "no_orphan_objectives",
+        "status": "pass",
+        "details": "objectives neither served nor explicitly deferred: none"
+      },
+      {
+        "name": "zero_open_dispositions",
+        "status": "pass",
+        "details": "open (incl. returned-tradeoff moves awaiting Principal): none"
+      },
+      {
+        "name": "backlog_fully_dispositioned",
+        "status": "pass",
+        "details": "undecided backlog items: 0"
+      },
+      {
+        "name": "misalignment_register_fully_worked",
+        "status": "pass",
+        "details": "unworked findings: 0"
+      }
+    ],
+    "pass": true
+  },
+  "disclosures": {
+    "manual_effect_classification": true,
+    "operation_trace_form": "Target = Refactored Blueprint baseline + this ordered trace",
+    "adjudication": "non_gating_demo_only (single reviewer)"
+  },
+  "ratified_by": {
+    "name": "Mike Hsu",
+    "role": "Program Owner"
+  },
+  "ratified_at": "2026-07-21T02:06:21.033355+00:00",
+  "rationale": "done",
+  "content_hash": "sha256:c855695c47db8bbcd2748f07117eb84d69ff941c5f8fc350ba51b700148f905f"
+}

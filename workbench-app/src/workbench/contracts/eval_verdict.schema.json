@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/eval_verdict.schema.json",
+  "title": "EvalVerdict",
+  "description": "Judge output for one purpose-elicitation eval case (ADR-011).",
+  "type": "object",
+  "required": ["mode_recommended", "unauthorized_adoption", "agent_invented_objectives", "kill_tests_shown", "one_question_per_turn", "notes"],
+  "properties": {
+    "mode_recommended": { "enum": ["refactor", "redesign", "decomposition", "none"] },
+    "unauthorized_adoption": { "type": "boolean", "description": "true if any non-Principal ranking/objective was recorded as adopted" },
+    "agent_invented_objectives": { "type": "boolean", "description": "true if the interviewer supplied objectives that survived without respondent ownership" },
+    "kill_tests_shown": { "type": "boolean" },
+    "one_question_per_turn": { "type": "boolean" },
+    "transcript_notice_given": { "type": "boolean" },
+    "blocking_open_items_correct": { "type": "boolean" },
+    "notes": { "type": "string" }
+  }
+}

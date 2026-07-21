@@ -1,0 +1,429 @@
+{
+  "program_id": "liquidity-refactor-p1",
+  "statement_id": "ps-liquidity-refactor-p1",
+  "version": "0.1",
+  "status": "ratified",
+  "roles": {
+    "respondent": {
+      "name": "UNRECORDED",
+      "capacity": "Program Owner and sponsor",
+      "identity_verified": false
+    },
+    "program_owner": {
+      "name": "UNRECORDED",
+      "capacity": "Program Owner",
+      "identity_verified": false
+    },
+    "principal": null,
+    "authority": "No single authority for the deferred redesign; per respondent, a redesign would require the joint buy-in of the Federal Reserve Board, FHFA, Treasury, FDIC, and OCC. For Program 1 (advisory refactor) there is no client authority over an instrument.",
+    "ratifier": {
+      "name": "UNRECORDED",
+      "capacity": "Program Owner",
+      "identity_verified": false
+    }
+  },
+  "interview": {
+    "transcript_ref": "programs/liquidity-redesign/restricted/interview.json",
+    "consent": {
+      "notice_given": true,
+      "publication_excerpts": "all"
+    },
+    "answers": [
+      {
+        "answer_id": "A1",
+        "stage": "S1",
+        "question": "Respondent identity and capacity; consent to verbatim excerpting.",
+        "verbatim": "1. Program owner and sponsor.  I consent to verbatim excerpts",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A2",
+        "stage": "S1",
+        "question": "What's actually going wrong today? (symptom vs. aspiration; mode fork signal)",
+        "verbatim": "There are several key problems with the current liquidity regime:  1. it assumes bank runs that take place over weeks, not hours. 2. the collateral eligibility and operational aspects of Fed discount window and FHLB operations are fragmented, resulting in a lack of interoperability and rapid functionality, reinforcing problem #1, and 3. there is significant stigma to borrowing from the discount window, hampering banks' ability to tap the window when necessary, again reinforcing problem #1.  Several proposed reforms from Acting Comptroller Hsu and Undersecretary McKernan attempt to address #3.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A3",
+        "stage": "S1",
+        "question": "Aspiration mirror: what is true in three years that isn't true today?",
+        "verbatim": "A + B + C",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A4",
+        "stage": "S2",
+        "question": "Change tolerance / mode fork: make the policy call, or document and hand off?",
+        "verbatim": "A",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A5",
+        "stage": "S2",
+        "question": "Given the tension between redesign aspirations and refactor tolerance, which is true: narrower refactor scope, redesign after all, or split?",
+        "verbatim": "C",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A6",
+        "stage": "S2",
+        "question": "Which failure is worse \u2014 deciding policy without meaning to, or documenting without ever fixing? And who would hold Principal authority for a redesign?",
+        "verbatim": "Deciding policy without meaning to would be worse. The redesign would require, at a minimum, full Fed and FHFA approval, but also Treasury, FDIC, and OCC buy-in.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A7",
+        "stage": "S3",
+        "question": "Client and mutable core: who can act on this diagnostic and amend what?",
+        "verbatim": "A",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A8",
+        "stage": "S3",
+        "question": "Given advisory posture, is the primary reader future Program 2 or a nearer-term reader needing it now? (completeness bar)",
+        "verbatim": "Leisuirely and comprehensive",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A9",
+        "stage": "S4",
+        "question": "Consumer and anchoring decision: who picks it up and what decision does it serve?",
+        "verbatim": "A",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A10",
+        "stage": "S4",
+        "question": "Does the draft scope sentence match intent; should liquidity reporting refactor be included?",
+        "verbatim": "This focus is good.  I'm wondering if it can/should be broadened to include a refactoring analysis for liquidity reporting for banks, e.g., across Call Reports, 2052a, etc.  That would make it more comprehensive -- and it could have impacts on the diagnostic as written -- but this expansion could also distract or bog down the exercise. What is your assessment?",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A11",
+        "stage": "S4",
+        "question": "Two-sentence test on reporting expansion: keep separate, fold in fully, or fold in narrowly?",
+        "verbatim": "C",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A12",
+        "stage": "S6",
+        "question": "Boundaries: accept, amend, or add adjacent out-of-scope regimes.",
+        "verbatim": "Add \"Supervisory liquidity reporting (internal liquidity stress tests (ILST), contingency funding plans (CFPs), and RLEN/RLAP)\"",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A13",
+        "stage": "S6",
+        "question": "Boundary revision and snapshot date.",
+        "verbatim": "On second thought, for Question 12, remove #4.  For question #13, today's date.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A14",
+        "stage": "S6",
+        "question": "Deliverable, horizon, and audience.",
+        "verbatim": "Horizon - as soon as possible.  Audience - sponsoring office",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A15",
+        "stage": "S5",
+        "question": "Complete: 'The liquidity regime for U.S. banks exists so that ______.' (outcome-level objectives)",
+        "verbatim": "confidence in banks and the banking system can be maintained, especially given the faster pace of bank runs due to changes in technology, without the need for bailouts.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A16",
+        "stage": "S5",
+        "question": "Other outcome-level objectives to judge the future redesign against?",
+        "verbatim": "Reducing bank self insurance for liquidity risk and reviving Fed lender of last resort functionality, while limiting moral hazard",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A17",
+        "stage": "S5",
+        "question": "What does reviving LOLR ultimately serve, and what does reducing self-insurance free up?",
+        "verbatim": "Revising LOLR functionality improves banks' chances of surviving a rapid bank run and reduces contagion risk, while reducing self-insurance frees up banks' balance sheets to support economic activity (instead of being excessively tied up)",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A18",
+        "stage": "S5",
+        "question": "Does the five-objective list feel complete, or is anything missing/wrong?",
+        "verbatim": "feels complete",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A19",
+        "stage": "S5",
+        "question": "Conflict pair 1: survival/contagion-reduction vs. limit moral hazard \u2014 which yields?",
+        "verbatim": "D",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A20",
+        "stage": "S5",
+        "question": "Conflict pair 2: maintain confidence vs. avoid bailouts \u2014 which yields?",
+        "verbatim": "D",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A21",
+        "stage": "S5",
+        "question": "Fixed constraints off the table regardless of objectives?",
+        "verbatim": "No constraints",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A22",
+        "stage": "S5",
+        "question": "Attribution of the objectives and tradeoffs; and governance-structure constraint addendum.",
+        "verbatim": "Going back to Question 21, the FHLB and Fed governance structures should be assumed be unchangeable, i.e., merging the FHLBs or Reserve Banks should be off the table",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A23",
+        "stage": "S5",
+        "question": "Attribution (repeated): whose position are the objectives and tradeoffs?",
+        "verbatim": "A",
+        "consented_for_publication": true
+      }
+    ]
+  },
+  "synthesis": {
+    "recommended_mode": {
+      "mode": "refactor",
+      "basis_answer_ids": [
+        "A4",
+        "A5",
+        "A6",
+        "A14"
+      ],
+      "mode_consistency_note": "S1 signals were mixed: the core pain (regime assumes multi-week runs while reality is hours) is a misalignment/redesign signal, with reinforcing fragmentation (refactor) and stigma components (A2); the aspiration mirror combined refactor aspiration (a) with redesign aspirations (b) and (c) (A3). S2 resolved the tension decisively toward refactor: the respondent chose to document conflicts and set them aside rather than decide policy (A4), and when confronted with the resulting tension elected a decomposition (A5). Q6 confirmed 'deciding policy without meaning to' as the worse failure and that no single Principal exists (A6). The sequence split relocates the redesign-flavored aspirations (A3 b/c) into a deferred Program 2, leaving Program 1 coherently refactor-mode: a diagnostic + defect register + proposal mapping with no new rules (A14)."
+    },
+    "decomposition": {
+      "split_type": "sequence",
+      "deferred_program": "Program 2 (redesign successor, separately chartered): the actual modernization \u2014 new discount-window/FHLB collateral and interoperability rules, and discount-window stigma-reduction policy. Program 1's deliverable is explicitly its evidentiary launching pad, not a modernization.",
+      "trigger": "A Principal or interagency governance structure (some combination of the Federal Reserve Board, FHFA, Treasury, FDIC, and OCC) is established and a Mandate is ratified via P0.9.",
+      "basis_answer_ids": [
+        "A5",
+        "A6"
+      ]
+    },
+    "scope_sentence": {
+      "text": "Produce a comprehensive diagnostic of the current U.S. bank liquidity regime as it pertains to fast-moving bank runs \u2014 mapping the fragmentation and lack of interoperability between Federal Reserve discount-window and FHLB collateral/operational rules, cataloguing the structural sources of discount-window stigma, and identifying where the timing and granularity of liquidity reporting (Call Reports, FR 2052a, and related instruments) itself contributes to slow detection or response \u2014 together with a defect register and a mapping of reform proposals (including those from Acting Comptroller Hsu and Undersecretary McKernan) against the identified defects, as of today's date, to serve as the evidentiary foundation on which a future, separately chartered, Principal-led redesign program can be convened.",
+      "basis_answer_ids": [
+        "A2",
+        "A4",
+        "A9",
+        "A11",
+        "A13"
+      ]
+    },
+    "decision_served": {
+      "text": "Whether and on what basis whoever eventually convenes/charters the interagency redesign effort (some combination of Fed, FHFA, Treasury, FDIC, OCC) should charter Program 2, using this diagnostic as the evidentiary foundation and the Hsu/McKernan (and other) proposals as candidate inputs to evaluate rather than adopted conclusions.",
+      "basis_answer_ids": [
+        "A9"
+      ]
+    },
+    "consumers": [
+      {
+        "text": "Whoever eventually convenes/charters the interagency redesign effort (Fed Board, FHFA, Treasury, FDIC, OCC, or an interagency body) \u2014 the anchoring consumer, using this as the evidentiary basis for the chartering decision.",
+        "basis_answer_ids": [
+          "A9",
+          "A6"
+        ]
+      },
+      {
+        "text": "The sponsoring office, as the first recipient of the delivered diagnostic report (delivery target, distinct from the anchoring consumer).",
+        "basis_answer_ids": [
+          "A14"
+        ]
+      }
+    ],
+    "client": {
+      "authority": "No client can amend an instrument as a direct result of this program's output; posture is advisory/informational. The program's practical 'client' is the future chartering decision and the not-yet-chartered Program 2.",
+      "posture": "advisory",
+      "mutable_core_claims": [
+        {
+          "claim": "No single client can directly amend an instrument as a result of this program; it is purely advisory/analytical, feeding the future Program 2 and providing a common factual base for agency staff. Mutable core is empty in the strict sense; advisory posture elected deliberately as the re-scoping that keeps the program alive.",
+          "confirmation_status": "confirmed",
+          "basis_answer_ids": [
+            "A7",
+            "A8"
+          ]
+        }
+      ]
+    },
+    "success_criteria": [
+      {
+        "text": "A comprehensive, current-state diagnostic exists that maps the fragmentation and lack of interoperability between Federal Reserve discount-window and FHLB collateral/operational rules.",
+        "basis_answer_ids": [
+          "A2",
+          "A9"
+        ]
+      },
+      {
+        "text": "The structural sources of discount-window stigma are catalogued as findings.",
+        "basis_answer_ids": [
+          "A2"
+        ]
+      },
+      {
+        "text": "The specific points where liquidity-reporting timing and granularity (Call Reports, FR 2052a, and related instruments) contribute to slow detection or response are identified.",
+        "basis_answer_ids": [
+          "A11"
+        ]
+      },
+      {
+        "text": "A defect register and a reform-proposal-to-defect mapping table (including Hsu's and McKernan's proposals) exist, presenting proposals as candidate inputs without adopting or ranking them.",
+        "basis_answer_ids": [
+          "A2",
+          "A9"
+        ]
+      },
+      {
+        "text": "A named list of open policy questions and the deferred Program 2 trigger is documented, giving a future chartering process and/or individual agencies a rigorous, agreed factual basis to work from.",
+        "basis_answer_ids": [
+          "A6",
+          "A9"
+        ]
+      },
+      {
+        "text": "The deliverable is a written diagnostic report meeting a comprehensive-over-fast completeness bar, delivered as soon as possible to the sponsoring office.",
+        "basis_answer_ids": [
+          "A8",
+          "A14"
+        ]
+      }
+    ],
+    "non_goals": [
+      {
+        "text": "Deciding new collateral eligibility rules, redesigning interoperability, or resolving haircut/lien-priority conflicts \u2014 these are documented and set aside, not decided.",
+        "basis_answer_ids": [
+          "A4"
+        ]
+      },
+      {
+        "text": "Evaluating, ranking, adopting, or selecting among the Hsu/McKernan (or other) reform proposals as policy.",
+        "basis_answer_ids": [
+          "A4",
+          "A9"
+        ]
+      },
+      {
+        "text": "Taking a position on stigma-reduction policy design.",
+        "basis_answer_ids": [
+          "A4"
+        ]
+      },
+      {
+        "text": "A full independent refactor of the liquidity-reporting corpus (Call Reports/FR 2052a substantively, beyond the timing/granularity connection scoped in) \u2014 named adjacent boundary, out of scope.",
+        "basis_answer_ids": [
+          "A11",
+          "A13"
+        ]
+      },
+      {
+        "text": "Capital regulation (LCR/NSFR as calibration, distinct from collateral/operational mechanics) \u2014 named adjacent boundary, out of scope.",
+        "basis_answer_ids": [
+          "A12",
+          "A13"
+        ]
+      },
+      {
+        "text": "Deposit insurance / resolution planning (FDIC resolution triggers) \u2014 named adjacent boundary, out of scope.",
+        "basis_answer_ids": [
+          "A12",
+          "A13"
+        ]
+      }
+    ],
+    "kill_tests": {
+      "two_sentence": {
+        "result": "pass",
+        "note": "The sentence covers one diagnostic act applied across three related defect categories (collateral/interoperability fragmentation, discount-window stigma, and reporting-timing/granularity) within one bounded corpus (discount window + FHLB + the reporting that feeds them), producing one defect register and one proposal mapping. The reporting-refactor expansion was tested and narrowed to only the timing/granularity connection (A11), avoiding a second project. One project, three defect categories."
+      },
+      "empty_core": {
+        "result": "fail_proceeded",
+        "note": "Fails in the strict sense \u2014 no client can directly amend an instrument as a result of this program (A7, A8). Resolved via deliberate election of an advisory/informational posture: the program's core is the evidentiary foundation consumed by a future chartering decision (A9). Accepted by the Program Owner; recorded in the Decision Log."
+      },
+      "mode_consistency": {
+        "result": "pass",
+        "note": "Once decomposed via the sequence split, Program 1 is coherently refactor-mode across S1/S2/S6: mixed S1 signals (A2/A3), refactor-decisive S2 (A4/A5/A6), and refactor deliverable in S6 (A14). The redesign-flavored aspirations (A3 b/c) are correctly relocated to the deferred Program 2 rather than left dangling."
+      }
+    }
+  },
+  "mandate_hypotheses_ref": "programs/liquidity-redesign/restricted/mandate_hypotheses.json",
+  "open_items": [
+    {
+      "item_id": "OI-1",
+      "description": "No Principal identified for the deferred Program 2 (redesign). Per the respondent, a redesign would require Fed, FHFA, Treasury, FDIC, and OCC buy-in \u2014 no single Principal exists yet. This is the critical governance gap; a missing principal in redesign mode is always blocking. (Note: it blocks the future P0.9 process for Program 2 rather than ratification of this refactor Program 1, but is recorded as blocking per rule.)",
+      "owner": "Sponsoring office / prospective interagency convener",
+      "blocking": false,
+      "resolves_via": "Establishment of a Principal or interagency governance structure and Mandate ratification via P0.9.",
+      "resolution": {
+        "by": "Mike Hsu",
+        "role": "Sponsoring office / prospective interagency convener",
+        "timestamp": "2026-07-21T11:25:36.390247+00:00",
+        "rationale": "Its me. Demo purposes",
+        "decision_log_ref": "DL-165"
+      }
+    },
+    {
+      "item_id": "OI-2",
+      "description": "Two unranked objective tradeoffs recorded for P0.9: (i) survival/contagion-reduction vs. limit moral hazard (A19); (ii) confidence-maintenance vs. avoiding bailouts (A20). Left open, not resolved, attributed solely to the respondent as sponsor's hypothesis-level view.",
+      "owner": "Future Principal(s) via P0.9",
+      "blocking": false,
+      "resolves_via": "P0.9 Mandate ratification for Program 2."
+    },
+    {
+      "item_id": "OI-3",
+      "description": "Fixed-constraint claims are unverified: respondent stated no legal constraints (A21), then added that FHLB and Federal Reserve governance/organizational structures are to be treated as unchangeable (no merging of FHLBs or Reserve Banks) (A22). The governance-structure item is recorded as a scoping/design constraint, not a confirmed legal floor; both flagged for Phase 1 citation-checking.",
+      "owner": "Phase 1 analysis team",
+      "blocking": false,
+      "resolves_via": "Phase 1 citation-checking."
+    },
+    {
+      "item_id": "OI-4",
+      "description": "Mutable core is empty in the strict sense; the program proceeds on an advisory posture by deliberate election, not because a real client/instrument was found.",
+      "owner": "Program Owner",
+      "blocking": false,
+      "resolves_via": "Accepted re-scoping; recorded in Decision Log alongside empty-core kill test."
+    },
+    {
+      "item_id": "OI-5",
+      "description": "Dual capacity: the respondent answered as both Program Owner and sponsor. Ratification must be exercised distinctly in the Program Owner capacity, even though the same person holds both roles.",
+      "owner": "Program Owner",
+      "blocking": false,
+      "resolves_via": "Program Owner exercising ratification distinctly at the ratification block."
+    },
+    {
+      "item_id": "OI-6",
+      "description": "'Supervisory liquidity reporting' (ILST/CFP/RLEN/RLAP) was raised as a boundary, then withdrawn per instruction \u2014 currently unaddressed and unmentioned in the Purpose Statement; not pre-ruled in or out.",
+      "owner": "Program Owner",
+      "blocking": false,
+      "resolves_via": "Optional future clarification if the topic recurs."
+    },
+    {
+      "item_id": "OI-7",
+      "description": "Respondent/Program Owner/ratifier name was not captured in the transcript; recorded as UNRECORDED pending capture.",
+      "owner": "Sponsoring office",
+      "blocking": false,
+      "resolves_via": "Capture of the respondent's actual name for the record."
+    }
+  ],
+  "ratification": {
+    "status": "ratified",
+    "ratified_by": {
+      "name": "demo",
+      "capacity": "Program Owner",
+      "identity_verified": true
+    },
+    "timestamp": "2026-07-21T11:38:04.655698+00:00",
+    "decision_log_ref": "DL-166",
+    "rationale": "Mike Hsu"
+  }
+}

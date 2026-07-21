@@ -1,0 +1,413 @@
+{
+  "item_id": "ffiec-man-cp-05",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Confirm that the bank has developed a BSA/AML training program and delivered training to appropriate personnel.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective: Confirm that the bank has developed a BSA/AML training program and delivered training to appropriate personnel.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "ffiec-man-cp-05-O1",
+      "actor": "Banks",
+      "modality": "must",
+      "action": "provide training for appropriate personnel",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks must provide training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O2",
+      "actor": "Bank (training program)",
+      "modality": "should",
+      "action": "cover the aspects of the BSA that are relevant to the bank and its risk profile, including BSA regulatory requirements, supervisory guidance, and the bank's internal BSA/AML policies, procedures, and processes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Training should cover the aspects of the BSA that are relevant to the bank and its risk profile, and appropriate personnel includes those whose duties require knowledge or involve some aspect of BSA/AML compliance. Training should cover BSA regulatory requirements, supervisory guidance, and the bank's internal BSA/AML policies, procedures, and processes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O3",
+      "actor": "Bank (training program)",
+      "modality": "should",
+      "action": "tailor training to each individual's specific responsibilities, as appropriate",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "as appropriate"
+      ],
+      "citations": [
+        {
+          "quote": "Training should be tailored to each individual's specific responsibilities, as appropriate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O4",
+      "actor": "Bank",
+      "modality": "may",
+      "action": "provide targeted training for specific ML/TF and other illicit financial activity risks and requirements applicable to certain business lines or operational units",
+      "trigger": "specific ML/TF and other illicit financial activity risks and requirements applicable to certain business lines or operational units, such as lending, trust services, foreign correspondent banking, and private banking",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "targeted training may be necessary for specific ML/TF and other illicit financial activity risks and requirements applicable to certain business lines or operational units, such as lending, trust services, foreign correspondent banking, and private banking.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O5",
+      "actor": "BSA compliance officer and BSA compliance staff",
+      "modality": "should",
+      "action": "receive periodic training that is relevant and appropriate to remain informed of changes to regulatory requirements and changes to the bank's risk profile",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA compliance officer and BSA compliance staff should receive periodic training that is relevant and appropriate to remain informed of changes to regulatory requirements and changes to the bank's risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O6",
+      "actor": "Board of directors and senior management",
+      "modality": "should",
+      "action": "receive foundational training and be informed of changes and new developments in the BSA, including its implementing regulations, the federal banking agencies' regulations, and supervisory guidance",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors and senior management should receive foundational training and be informed of changes and new developments in the BSA, including its implementing regulations, the federal banking agencies' regulations, and supervisory guidance.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O7",
+      "actor": "Board training",
+      "modality": "should",
+      "action": "provide board members with sufficient understanding of the bank's risk profile and BSA regulatory requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "board of directors may not require the same degree of training as banking operations personnel"
+      ],
+      "citations": [
+        {
+          "quote": "While the board of directors may not require the same degree of training as banking operations personnel, the training should provide board members with sufficient understanding of the bank's risk profile and BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O8",
+      "actor": "Periodic training for appropriate personnel",
+      "modality": "should",
+      "action": "incorporate current developments and changes to BSA regulatory requirements; supervisory guidance; internal policies, procedures, and processes; and the bank's products, services, customers, and geographic locations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Periodic training for appropriate personnel should incorporate current developments and changes to BSA regulatory requirements; supervisory guidance; internal policies, procedures, and processes; and the bank's products, services, customers, and geographic locations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O9",
+      "actor": "Bank (training on IT changes)",
+      "modality": "may",
+      "action": "cover changes to information technology sources, systems, and processes used in BSA compliance during training for appropriate personnel",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Changes to information technology sources, systems, and processes used in BSA compliance may be covered during training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O10",
+      "actor": "Bank (training program)",
+      "modality": "may",
+      "action": "be used to reinforce the importance that the board of directors and senior management place on the bank's compliance with the BSA",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The training program may be used to reinforce the importance that the board of directors and senior management place on the bank's compliance with the BSA and that all employees understand their role in maintaining an adequate BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O11",
+      "actor": "Training programs",
+      "modality": "should",
+      "action": "include examples of money laundering and suspicious activity monitoring and reporting that are tailored, as appropriate, to each operational area",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "as appropriate"
+      ],
+      "citations": [
+        {
+          "quote": "Training programs should include examples of money laundering and suspicious activity monitoring and reporting that are tailored, as appropriate, to each operational area.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O12",
+      "actor": "Bank",
+      "modality": "should",
+      "action": "provide training for any agents who are responsible for conducting BSA-related functions on behalf of the bank",
+      "trigger": "agents who are responsible for conducting BSA-related functions on behalf of the bank",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank should provide training for any agents who are responsible for conducting BSA-related functions on behalf of the bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O13",
+      "actor": "Bank",
+      "modality": "conditional",
+      "action": "maintain appropriate documentation where it relies on another financial institution or other party to perform training",
+      "trigger": "If the bank relies on another financial institution or other party to perform training",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If the bank relies on another financial institution or other party to perform training, appropriate documentation should be maintained.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O14",
+      "actor": "Banks",
+      "modality": "should",
+      "action": "document their training programs",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks should document their training programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O15",
+      "actor": "Bank",
+      "modality": "conditional",
+      "action": "maintain training and testing materials (if training-related testing is used by the bank), and the dates of training sessions",
+      "trigger": "if training-related testing is used by the bank",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Training and testing materials (if training-related testing is used by the bank), and the dates of training sessions should be maintained by the bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O16",
+      "actor": "Bank (training materials and records)",
+      "modality": "should",
+      "action": "be available for auditor or examiner review",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Additionally, training materials and records should be available for auditor or examiner review.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O17",
+      "actor": "Bank",
+      "modality": "should",
+      "action": "maintain documentation of attendance records and any failures of personnel to take the required training in a timely manner, as well as any corrective actions taken to address such failures",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank should maintain documentation of attendance records and any failures of personnel to take the required training in a timely manner, as well as any corrective actions taken to address such failures.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-05-O18",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "determine whether all personnel whose duties require knowledge of the BSA are included in the training program and whether materials include training on BSA regulatory requirements, supervisory guidance, and the bank's internal BSA/AML policies, procedures, and processes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should determine whether all personnel whose duties require knowledge of the BSA are included in the training program and whether materials include training on BSA regulatory requirements, supervisory guidance, and the bank's internal BSA/AML policies, procedures, and processes.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "appropriate personnel",
+      "definition": "those whose duties require knowledge or involve some aspect of BSA/AML compliance",
+      "citations": [
+        {
+          "quote": "appropriate personnel includes those whose duties require knowledge or involve some aspect of BSA/AML compliance",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "An overview of the purposes of the BSA and its regulatory requirements are typically provided to new staff during employee orientation or reasonably thereafter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA compliance officer",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The BSA compliance officer and BSA compliance staff should receive periodic training",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "ML/TF",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "targeted training may be necessary for specific ML/TF and other illicit financial activity risks and requirements",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "board of directors",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The board of directors and senior management should receive foundational training",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "senior management",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The board of directors and senior management should receive foundational training",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA/AML compliance program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "all employees understand their role in maintaining an adequate BSA/AML compliance program",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Board training relates to the board's oversight responsibilities, including approving the written BSA/AML compliance program, establishing appropriate independence for the BSA/AML compliance function, and providing sufficient BSA/AML resources.",
+      "references": [
+        "written BSA/AML compliance program",
+        "BSA/AML compliance function"
+      ],
+      "citations": [
+        {
+          "quote": "provide adequate oversight of the BSA/AML compliance program, including approving the written BSA/AML compliance program, establishing appropriate independence for the BSA/AML compliance function, and providing sufficient BSA/AML resources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Training should cover BSA implementing regulations, the federal banking agencies' regulations, and supervisory guidance.",
+      "references": [
+        "BSA implementing regulations",
+        "federal banking agencies' regulations",
+        "supervisory guidance"
+      ],
+      "citations": [
+        {
+          "quote": "informed of changes and new developments in the BSA, including its implementing regulations, the federal banking agencies' regulations, and supervisory guidance",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The text carries footnote references [20] and [21] to underlying authority for the training requirement and reliance-on-third-party documentation, which are not reproduced in the source excerpt.",
+      "references": [
+        "[20]",
+        "[21]"
+      ],
+      "citations": [
+        {
+          "quote": "Banks must provide training for appropriate personnel.[20]",
+          "verified": true
+        },
+        {
+          "quote": "appropriate documentation should be maintained.[21]",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is FFIEC supervisory guidance (examination manual); its evidence role is supervisory_guidance, not binding regulation \u2014 most duties are framed as 'should' rather than 'must'. Only the base training duty ('Banks must provide training for appropriate personnel') is stated as a 'must'. Footnotes [20] and [21] point to underlying authority not included in this excerpt. The term 'BSA' is used throughout but never defined here. SAR/CTR suspicious activity monitoring and reporting examples are referenced only as training content; the underlying SAR/CTR duties are treated as a coordination-layer regime under the ratified scope."
+}

@@ -1,0 +1,406 @@
+{
+  "item_id": "FINRA-ORR-AML-2024-2026",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The BSA aims to combat money laundering and terrorist financing by requiring reports or records useful in criminal, tax or regulatory investigations, risk assessments, proceedings, or intelligence/counterintelligence activities including analysis to protect against terrorism.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The purposes of the BSA include, among others, requiring certain reports or records that are highly useful in criminal, tax or regulatory investigations, risk assessments or proceedings; or intelligence or counterintelligence activities, including analysis, to protect against terrorism.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-3310-PROGRAM",
+      "actor": "each member",
+      "modality": "must",
+      "action": "develop and implement a written anti-money laundering (AML) program that is approved, in writing, by senior management and is reasonably designed to achieve and monitor the member's compliance with the BSA and its implementing regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FINRA Rule 3310 (Anti-Money Laundering Compliance Program) requires that each member develop and implement a written anti-money laundering (AML) program that is approved, in writing, by senior management and is reasonably designed to achieve and monitor the member\u2019s compliance with the BSA and its implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3310a-SUSPICIOUS",
+      "actor": "firms (member)",
+      "modality": "must",
+      "action": "establish and implement policies and procedures that can be reasonably expected to detect and cause reporting of suspicious transactions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "establish and implement policies and procedures that can be reasonably expected to detect and cause reporting of suspicious transactions (3310(a));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3310b-CONTROLS",
+      "actor": "firms (member)",
+      "modality": "must",
+      "action": "establish and implement policies, procedures and internal controls reasonably designed to achieve compliance with the BSA and its implementing regulations, including regulations relating to Customer Identification Programs and beneficial owner verification",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "establish and implement policies, procedures and internal controls reasonably designed to achieve compliance with the BSA and its implementing regulations, including regulations relating to Customer Identification Programs and beneficial owner verification (3310(b));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3310c-TESTING",
+      "actor": "firms (member)",
+      "modality": "must",
+      "action": "conduct independent testing for compliance each calendar year (or every two calendar years in some specialized cases)",
+      "trigger": null,
+      "threshold": "each calendar year (or every two calendar years in some specialized cases)",
+      "exceptions": [
+        "every two calendar years in some specialized cases"
+      ],
+      "citations": [
+        {
+          "quote": "conduct independent testing for compliance each calendar year (or every two calendar years in some specialized cases) (3310(c));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3310d-DESIGNATE",
+      "actor": "firms (member)",
+      "modality": "must",
+      "action": "designate an individual or individuals responsible for implementing and monitoring the day-to-day operations and internal controls of the program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "designate an individual or individuals responsible for implementing and monitoring the day-to-day operations and internal controls of the program (3310(d));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3310e-TRAINING",
+      "actor": "firms (member)",
+      "modality": "must",
+      "action": "provide ongoing training for appropriate personnel",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "provide ongoing training for appropriate personnel (3310(e)); and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3310f-CDD",
+      "actor": "firms (member)",
+      "modality": "must",
+      "action": "maintain risk-based procedures for conducting ongoing customer due diligence, including to understand the nature and purpose of customer relationships for the purpose of developing a customer risk profile and conduct ongoing monitoring to identify and report suspicious transactions, and, on a risk basis, to maintain and update customer information",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "maintain risk-based procedures for conducting ongoing customer due diligence, including to understand the nature and purpose of customer relationships for the purpose of developing a customer risk profile and conduct ongoing monitoring to identify and report suspicious transactions, and, on a risk basis, to maintain and update customer information (3310(f)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-CAB331",
+      "actor": "Capital Acquisition Brokers",
+      "modality": "conditional",
+      "action": "apply AML compliance program requirements per Capital Acquisition Broker (CAB) Rule 331 (Anti-Money Laundering Compliance Program)",
+      "trigger": "entity is a Capital Acquisition Broker",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Capital Acquisition Broker (CAB) Rule 331 (Anti-Money Laundering Compliance Program) applies AML compliance program requirements to Capital Acquisition Brokers.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2165-HOLD",
+      "actor": "firms (member)",
+      "modality": "may",
+      "action": "rely on FINRA Rule 2165 (Financial Exploitation of Specified Adults) to place a temporary hold on a customer's securities transactions or disbursements where there is a reasonable belief of customer financial exploitation",
+      "trigger": "reasonable belief of customer financial exploitation",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Relying on FINRA Rule 2165 (Financial Exploitation of Specified Adults) to place a temporary hold on a customer\u2019s securities transactions or disbursements where there is a reasonable belief of customer financial exploitation.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "the common name for the collection of laws enacted in the United States to combat money laundering and terrorist financing; purposes include requiring certain reports or records that are highly useful in criminal, tax or regulatory investigations, risk assessments or proceedings; or intelligence or counterintelligence activities, including analysis, to protect against terrorism",
+      "citations": [
+        {
+          "quote": "The Bank Secrecy Act (BSA) is the common name for the collection of laws enacted in the United States to combat money laundering and terrorist financing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FINRA Rule 3310 (Anti-Money Laundering Compliance Program)",
+      "definition": "rule requiring each member to develop and implement a written AML program approved in writing by senior management and reasonably designed to achieve and monitor compliance with the BSA and its implementing regulations; sets forth minimum standards for a member's written AML compliance program",
+      "citations": [
+        {
+          "quote": "FINRA Rule 3310 sets forth minimum standards for a member's written AML compliance program, requiring firms to:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Customer Identification Program (CIP)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Failing to Reasonably Establish and Implement Policies and Procedures to Achieve Compliance With Customer Identification Program (CIP) and Customer Due Diligence (CDD):",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Customer Due Diligence (CDD)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "conducting initial and ongoing risk-based CDD to reasonably understand the nature and purpose of customer relationships to develop a customer risk profile, identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer risk profile",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "for the purpose of developing a customer risk profile",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owner",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "including regulations relating to Customer Identification Programs and beneficial owner verification (3310(b));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "suspicious activity reports (SARs)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "in addition to filing required suspicious activity reports (SARs), reporting the fraud to the appropriate regulatory",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "correspondent accounts of foreign financial institutions",
+      "definition": "(undefined here) \u2014 accounts the firm maintains for foreign financial institutions, subject to required due diligence including assessing money laundering risk and applying risk-based procedures and controls reasonably designed to detect and report known or suspected money laundering activity",
+      "citations": [
+        {
+          "quote": "Inadequate Due Diligence on Correspondent Accounts of Foreign Financial Institutions: Not reasonably conducting required due diligence on correspondent accounts the firm maintains for foreign financial institutions, including by failing to assess the money laundering risk posed by such correspondent accounts",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "New Account Fraud (NAF)",
+      "definition": "accounts opened using stolen identities",
+      "citations": [
+        {
+          "quote": "FINRA has observed continued fraudulent activity associated with NAF, which are accounts opened using stolen identities, and ATOs, where bad actors use stolen customer credentials to access an existing customer account.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Account Takeovers (ATOs)",
+      "definition": "where bad actors use stolen customer credentials to access an existing customer account",
+      "citations": [
+        {
+          "quote": "and ATOs, where bad actors use stolen customer credentials to access an existing customer account.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "likeness check",
+      "definition": "An identity verification method where applicants upload a photo or video of themselves, which is then compared with their recently submitted identity documents.",
+      "citations": [
+        {
+          "quote": "An identity verification method where applicants upload a photo or video of themselves, which is then compared with their recently submitted identity documents.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "omnibus accounts",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "including suspicious activity in omnibus accounts;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "BSA purposes cited to 31 U.S. Code \u00a7 5311(1).",
+      "references": [
+        "31 U.S. Code \u00a7 5311(1)"
+      ],
+      "citations": [
+        {
+          "quote": "31 U.S. Code \u00a7 5311(1).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FINRA Rule 3310 requires an AML program reasonably designed to achieve and monitor compliance with the BSA and its implementing regulations, including regulations relating to Customer Identification Programs and beneficial owner verification.",
+      "references": [
+        "BSA and implementing regulations",
+        "Customer Identification Programs",
+        "beneficial owner verification"
+      ],
+      "citations": [
+        {
+          "quote": "reasonably designed to achieve compliance with the BSA and its implementing regulations, including regulations relating to Customer Identification Programs and beneficial owner verification (3310(b));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "CAB Rule 331 applies AML compliance program requirements to Capital Acquisition Brokers.",
+      "references": [
+        "Capital Acquisition Broker (CAB) Rule 331"
+      ],
+      "citations": [
+        {
+          "quote": "Capital Acquisition Broker (CAB) Rule 331 (Anti-Money Laundering Compliance Program) applies AML compliance program requirements to Capital Acquisition Brokers.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Effective practices reference FINRA Rule 3110 (Supervision) regarding transmittal of customer funds and FINRA Rule 3310 (Anti-Money Laundering) regarding detection, investigation and reporting of potentially suspicious transactions.",
+      "references": [
+        "FINRA Rule 3110 (Supervision)",
+        "FINRA Rule 3310 (Anti-Money Laundering)"
+      ],
+      "citations": [
+        {
+          "quote": "especially related to FINRA Rules 3110 (Supervision) as it relates to the transmittal of customer funds (e.g., establishing reasonable risk-based criteria for determining the authenticity of transmittal instructions), and FINRA Rule 3310 (Anti-Money Laundering) as it relates to the reasonable detection, investigation and reporting of potentially suspicious transactions",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to FINRA Rule 2165 (Financial Exploitation of Specified Adults) permitting temporary holds.",
+      "references": [
+        "FINRA Rule 2165 (Financial Exploitation of Specified Adults)"
+      ],
+      "citations": [
+        {
+          "quote": "Relying on FINRA Rule 2165 (Financial Exploitation of Specified Adults) to place a temporary hold on a customer\u2019s securities transactions or disbursements",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to FINRA Rule 4512 (Customer Account Information) regarding trusted contact persons.",
+      "references": [
+        "FINRA Rule 4512 (Customer Account Information)"
+      ],
+      "citations": [
+        {
+          "quote": "Emphasizing the importance of trusted contact persons and promoting effective practices in connection with FINRA Rule 4512 (Customer Account Information).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Effective practice references detecting and responding to red flags of potential identity theft as part of the member's Identity Theft Prevention Program as required under Regulation S-ID.",
+      "references": [
+        "Regulation S-ID"
+      ],
+      "citations": [
+        {
+          "quote": "reasonably detecting and responding to red flags of potential identity theft as part of the member\u2019s Identity Theft Prevention Program as required under Regulation S-ID; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reference to Regulatory Notice 22-25 (Heightened Threat of Fraud) concerning suspicious activity associated with small cap public offerings.",
+      "references": [
+        "Regulatory Notice 22-25 (Heightened Threat of Fraud)"
+      ],
+      "citations": [
+        {
+          "quote": "as highlighted in Regulatory Notice 22-25 (Heightened Threat of Fraud)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Effective practice references reviewing updates from FINRA, the SEC, FinCEN, OFAC, and other regulators and agencies.",
+      "references": [
+        "FINRA",
+        "SEC",
+        "FinCEN",
+        "OFAC"
+      ],
+      "citations": [
+        {
+          "quote": "Reviewing alerts, advisories, significant cases and other updates from FINRA, the SEC, FinCEN, OFAC, and other regulators and agencies",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Footnote references the Federal banking agencies' Answers to Frequently Asked Questions Regarding Suspicious Activity Reporting and Other Anti-Money Laundering Considerations.",
+      "references": [
+        "Federal banking agencies' Answers to Frequently Asked Questions Regarding Suspicious Activity Reporting and Other Anti-Money Laundering Considerations"
+      ],
+      "citations": [
+        {
+          "quote": "For additional guidance, see the Federal banking agencies\u2019 Answers to Frequently Asked Questions Regarding Suspicious Activity Reporting and Other Anti-Money Laundering Considerations.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Item is FINRA SRO guidance (evidence role sro_guidance); it restates FINRA Rule 3310 program 'pillars' and cross-references the BSA and implementing regulations, which fall within ratified scope (broker-dealer/FINRA SRO layer, program-establishment obligations). Obligations OBL-3310a through OBL-3310f are the report's enumeration of Rule 3310 minimum standards; the report uses 'requiring firms to:' \u2014 modality rendered 'must' from that mandatory framing. The Rule 3310(f) CDD, CIP, SAR/CTR, and correspondent-account due diligence content is treated by the program's scope as coordination/operational layer, but is preserved here as quoted because it is stated as part of the program pillars. External fraud schemes, GenAI fraud, and effective practices are largely non-obligatory (described as practices 'firms may consider' / 'to consider'); only clearly modal statements were extracted as obligations. Rule 2165 (may) and CAB 331 (conditional) captured as modal duties. The report is guidance restating obligations, not itself the primary source of statutory/regulatory duty; citations preserve the report's own phrasing per fidelity rule. The independent-testing threshold contains an internal alternative ('each calendar year (or every two calendar years in some specialized cases)') preserved as written."
+}

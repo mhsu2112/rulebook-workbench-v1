@@ -1,0 +1,32 @@
+[
+  {
+    "gap_id": "GAP-L1",
+    "description": "LCR/NSFR (12 CFR 249 etc.) excluded: named boundary in the ratified PS (calibration vs collateral/operational mechanics).",
+    "owner": "Scope Owner"
+  },
+  {
+    "gap_id": "GAP-L2",
+    "description": "Deposit insurance / resolution triggers excluded: named boundary in the ratified PS.",
+    "owner": "Scope Owner"
+  },
+  {
+    "gap_id": "GAP-L3",
+    "description": "OI-6 remains open: ILST/CFP/RLEN supervisory *reporting artifacts* neither ruled in nor out. CFP *guidance* (the 2023 addendum family) IS included; the reporting artifacts are excluded from slice 0.1 pending a Scope Owner election.",
+    "owner": "Mike Hsu (Scope Owner)"
+  },
+  {
+    "gap_id": "GAP-L4",
+    "description": "Comparator/research layer (G30 2023-turmoil report, BTFP lessons-learned, academic stigma literature) excluded from 0.1; candidate comparator family for the proposal-mapping stage.",
+    "owner": "Distillation Lead"
+  },
+  {
+    "gap_id": "GAP-L5",
+    "description": "No pre-existing domain census exists (unlike AML): this slice is curated_set throughout, built 2026-07-19 from the ratified scope. Post-2024 DW-preparedness rulemaking activity and any 2025-26 proposals are NOT yet censused \u2014 first live census task, and C-ADV2 second census strongly indicated.",
+    "owner": "Distillation Lead"
+  },
+  {
+    "gap_id": "GAP-L6",
+    "description": "Reform-proposal URLs are best-verified-effort (two verified via search 2026-07-19); acquisition errors on this family should be triaged item-by-item, and the McKernan/Hsu 2025-26 follow-on statements swept in the live census.",
+    "owner": "Corpus Steward"
+  }
+]

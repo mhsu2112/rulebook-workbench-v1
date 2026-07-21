@@ -1,0 +1,211 @@
+{
+  "item_id": "12-cfr-208-fed",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This section is issued to assure that all state member banks establish and maintain procedures reasonably designed to assure and monitor their compliance with the provisions of the Bank Secrecy Act and the implementing Treasury regulations requiring recordkeeping and reporting of currency transactions.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This section is issued to assure that all state member banks establish and maintain procedures reasonably designed to assure and monitor their compliance with the provisions of the Bank Secrecy Act (31 U.S.C. 5311, et seq. ) and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR part 103.",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "Each [state member] bank",
+      "modality": "must",
+      "action": "develop and provide for the continued administration of a program reasonably designed to ensure and monitor compliance with the BSA recordkeeping and reporting requirements and implementing Treasury regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each bank shall develop and provide for the continued administration of a program reasonably designed to ensure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, the Bank Secrecy Act.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "[state member] bank (via its BSA compliance program)",
+      "modality": "must",
+      "action": "reduce the compliance program to writing, have it approved by the board of directors, and have that approval noted in the minutes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The compliance program shall be reduced to writing, approved by the board of directors, and noted in the minutes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Each [state member] bank",
+      "modality": "conditional",
+      "action": "implement a customer identification program as part of the BSA compliance program, per 31 U.S.C. 5318(l) and its implementing regulation",
+      "trigger": "bank is subject to 31 U.S.C. 5318(l) and 31 CFR 103.121",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each bank is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the Board and the Department of the Treasury at 31 CFR 103.121, which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "[state member] bank's compliance program",
+      "modality": "must",
+      "action": "provide for a system of internal controls to assure ongoing compliance",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "[state member] bank's compliance program",
+      "modality": "must",
+      "action": "provide for independent testing for compliance, conducted by bank personnel or by an outside party",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for independent testing for compliance to be conducted by bank personnel or by an outside party;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "[state member] bank's compliance program",
+      "modality": "must",
+      "action": "designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "[state member] bank's compliance program",
+      "modality": "must",
+      "action": "provide training for appropriate personnel",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act",
+      "definition": "(undefined here) \u2014 cited as 31 U.S.C. 5311, et seq., with implementing regulations at 31 CFR part 103",
+      "citations": [
+        {
+          "quote": "the Bank Secrecy Act (31 U.S.C. 5311, et seq. ) and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR part 103",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "compliance program",
+      "definition": "a program reasonably designed to ensure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, the Bank Secrecy Act, and the implementing regulations promulgated thereunder by the Department of the Treasury at 31 CFR part 103",
+      "citations": [
+        {
+          "quote": "Each bank shall develop and provide for the continued administration of a program reasonably designed to ensure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, the Bank Secrecy Act.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "customer identification program",
+      "definition": "(undefined here) \u2014 referenced as required by 31 U.S.C. 5318(l) and 31 CFR 103.121, to be implemented as part of the BSA compliance program",
+      "citations": [
+        {
+          "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "state member bank / member bank",
+      "definition": "(undefined here) \u2014 \u00a7208.63(a) refers to \"state member banks\" while \u00a7208.63(b)-(c) and \u00a7208.62 refer to \"member bank\"/\"bank\"; text does not reconcile the two phrasings",
+      "citations": [
+        {
+          "quote": "This section is issued to assure that all state member banks establish and maintain procedures",
+          "verified": true
+        },
+        {
+          "quote": "Each bank shall develop and provide for the continued administration of a program",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The BSA compliance program requirement cross-references the Bank Secrecy Act recordkeeping/reporting subchapter and Treasury's implementing regulations at 31 CFR part 103.",
+      "references": [
+        "31 U.S.C. subchapter II of chapter 53, title 31",
+        "31 CFR part 103"
+      ],
+      "citations": [
+        {
+          "quote": "the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, the Bank Secrecy Act, and the implementing regulations promulgated thereunder by the Department of the Treasury at 31 CFR part 103.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The customer identification program element of the compliance program is defined by cross-reference to a separate statute and jointly-issued regulation, not by this section itself.",
+      "references": [
+        "31 U.S.C. 5318(l)",
+        "31 CFR 103.121"
+      ],
+      "citations": [
+        {
+          "quote": "Each bank is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the Board and the Department of the Treasury at 31 CFR 103.121",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Section 208.62's SAR-filing requirement (treated as coordination-layer/operational SAR duty under the ratified scope, not a program-establishment 'pillars' obligation) is the reporting duty that the \u00a7208.63 compliance program is built to monitor and ensure compliance with.",
+      "references": [
+        "12 CFR 208.62",
+        "31 U.S.C. 5318(g)"
+      ],
+      "citations": [
+        {
+          "quote": "This section ensures that a member bank files a Suspicious Activity Report when it detects a known or suspected violation of Federal law, or a suspicious transaction related to a money laundering activity or a violation of the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Per ratified scope, SAR/CTR/CDD operational duties are treated as coordination layer, not core pillars obligations; therefore \u00a7208.62's detailed SAR-filing triggers, thresholds, timing, confidentiality, and safe-harbor provisions were not extracted as obligation rows and appear only via one interaction cross-reference. Fidelity rule observed: \u00a7208.63(a) says 'state member banks' while \u00a7208.63(b)-(c) and \u00a7208.62 use 'member bank'/'bank'/'Each bank' without reconciling the terms \u2014 preserved as written rather than harmonized. The item locator also cites 12 CFR 211.5(k) and 211.24(j) (Regulation K), but no text for those subsections was included in the source excerpt provided; accordingly nothing was extracted from them."
+}

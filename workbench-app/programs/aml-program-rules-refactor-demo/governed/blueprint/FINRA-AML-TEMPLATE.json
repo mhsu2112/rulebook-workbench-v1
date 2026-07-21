@@ -1,0 +1,142 @@
+{
+  "item_id": "FINRA-AML-TEMPLATE",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Provide a template to assist small firms in fulfilling their responsibilities to establish the AML compliance program required by the BSA and FINRA Rule 3310.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "FINRA provides a template for small firms to assist them in fulfilling their responsibilities to establish the Anti-Money Laundering (AML) compliance program required by the Bank Secrecy Act (BSA) and its implementing regulations and FINRA Rule 3310.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "FINRA-AML-TEMPLATE-O1",
+      "actor": "small firms (member firms)",
+      "modality": "must",
+      "action": "establish the Anti-Money Laundering (AML) compliance program required by the Bank Secrecy Act (BSA) and its implementing regulations and FINRA Rule 3310",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FINRA provides a template for small firms to assist them in fulfilling their responsibilities to establish the Anti-Money Laundering (AML) compliance program required by the Bank Secrecy Act (BSA) and its implementing regulations and FINRA Rule 3310.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "FINRA-AML-TEMPLATE-O2",
+      "actor": "Firms",
+      "modality": "should",
+      "action": "note that they may access all of the guidance FINRA has provided regarding FINRA Rule 3310 at the Anti-Money Laundering main page",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Firms should also note that they may access all of the guidance FINRA has provided regarding FINRA Rule 3310 at the Anti-Money Laundering main page.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the Anti-Money Laundering (AML) compliance program required by the Bank Secrecy Act (BSA) and its implementing regulations and FINRA Rule 3310",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FINRA Rule 3310",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The template has been updated to reflect member firms\u2019 obligations under FINRA Rule 3310 in light of the Financial Crimes Enforcement Network\u2019s (FinCEN) final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "CDD Rule",
+      "definition": "the Financial Crimes Enforcement Network\u2019s (FinCEN) final rule on Customer Due Diligence Requirements for Financial Institutions",
+      "citations": [
+        {
+          "quote": "the Financial Crimes Enforcement Network\u2019s (FinCEN) final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML compliance program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the Anti-Money Laundering (AML) compliance program required by the Bank Secrecy Act (BSA) and its implementing regulations and FINRA Rule 3310",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "small firm",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "other resources that are useful for developing an AML plan for a small firm",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The template addresses member firms' obligations under FINRA Rule 3310, which are situated in light of FinCEN's final CDD Rule for Financial Institutions.",
+      "references": [
+        "FINRA Rule 3310",
+        "FinCEN Customer Due Diligence Requirements for Financial Institutions (CDD Rule)"
+      ],
+      "citations": [
+        {
+          "quote": "The template has been updated to reflect member firms\u2019 obligations under FINRA Rule 3310 in light of the Financial Crimes Enforcement Network\u2019s (FinCEN) final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The AML program required is that under the Bank Secrecy Act (BSA) and its implementing regulations together with FINRA Rule 3310.",
+      "references": [
+        "Bank Secrecy Act (BSA)",
+        "BSA implementing regulations",
+        "FINRA Rule 3310"
+      ],
+      "citations": [
+        {
+          "quote": "the Anti-Money Laundering (AML) compliance program required by the Bank Secrecy Act (BSA) and its implementing regulations and FINRA Rule 3310",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The template was updated to reflect recent guidance, including the red flags described in Regulatory Notice 19-18 (May 2019).",
+      "references": [
+        "Regulatory Notice 19-18 (May 2019)"
+      ],
+      "citations": [
+        {
+          "quote": "The template has been updated to reflect recent guidance, including the red flags described in Regulatory Notice 19-18 (May 2019).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is a FINRA landing page for the AML Template for Small Firms; it describes the template and its update history but does not contain the template's own substantive text (the downloadable document is not included). The only in-scope program-establishment content is the high-level statement that small firms must establish the AML program required by the BSA, its implementing regulations, and FINRA Rule 3310. The actual pillar-by-pillar duties reside in FINRA Rule 3310 and the downloadable template, which are not in this source. Modality 'must' is inferred from the word 'required' in the source (the underlying rule text uses 'shall' but is not quoted here). 'Firms should also note' is treated as a should-obligation per the text's own wording. Much of the source is website chrome/navigation with no scope-relevant content."
+}

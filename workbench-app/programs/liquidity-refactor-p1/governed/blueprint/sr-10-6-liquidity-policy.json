@@ -1,0 +1,9 @@
+{
+  "item_id": "sr-10-6-liquidity-policy",
+  "nothing_in_scope": true,
+  "objectives": [],
+  "obligations": [],
+  "definitions": [],
+  "interactions": [],
+  "notes": "This source (SR 10-6, Interagency Policy Statement on Funding and Liquidity Risk Management) addresses general sound-practice guidance for funding and liquidity risk management at depository institutions, BHCs, and FBOs (cash flow projections, diversified funding, stress testing, liquid asset cushions, contingency funding plans). It contains no content on Federal Reserve discount-window/FHLB fragmentation or interoperability, discount-window stigma, the timing or granularity of liquidity reporting instruments (Call Reports, FR 2052a, etc.), a defect register, or reform proposals from Acting Comptroller Hsu or Undersecretary McKernan. None of the ratified scope for this Phase 2 distillation is present in this source text, so nothing_in_scope is set true and all extraction arrays are left empty per the rules."
+}

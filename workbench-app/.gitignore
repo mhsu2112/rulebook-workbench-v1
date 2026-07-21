@@ -1,0 +1,8 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+*.egg-info/
+programs/*/restricted/
+.pytest_cache/
+.venv/

@@ -1,0 +1,159 @@
+{
+  "item_id": "enf-index-fincen-civil-enforcement-actions",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This source is an index of FinCEN civil enforcement actions and serves as enforcement evidence of applied BSA/AML expectations; it does not itself establish operative program-establishment duties.",
+      "stated_or_inferred": "inferred",
+      "citations": [
+        {
+          "quote": "Under the Bank Secrecy Act (BSA), 31 U.S.C. 5311 et seq., and its implementing regulations at 31 C.F.R. Chapter X (formerly 31 C.F.R. Part 103), FinCEN may bring an enforcement action for violations of the reporting, recordkeeping, or other requirements of the BSA.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here) \u2014 referenced by citation as \"the Bank Secrecy Act (BSA), 31 U.S.C. 5311 et seq., and its implementing regulations at 31 C.F.R. Chapter X (formerly 31 C.F.R. Part 103)\"; no substantive definition given.",
+      "citations": [
+        {
+          "quote": "Under the Bank Secrecy Act (BSA), 31 U.S.C. 5311 et seq., and its implementing regulations at 31 C.F.R. Chapter X (formerly 31 C.F.R. Part 103)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money services businesses (MSBs)",
+      "definition": "(undefined here) \u2014 used as a covered category subject to registration; no definition provided in this source.",
+      "citations": [
+        {
+          "quote": "FinCEN also takes enforcement actions against money services businesses (MSBs) for failure to register with FinCEN in violation of 31 C.F.R \u00a71022.380 (formerly 31 C.F.R. \u00a7103.41).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "currency transaction report (CTR)",
+      "definition": "(undefined here) \u2014 referenced only via the reporting violation citation.",
+      "citations": [
+        {
+          "quote": "failing to file a currency transaction report (CTR) in violation of 31 C.F.R. \u00a71010.311 (formerly 31 C.F.R. \u00a7103.22)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "suspicious activity report (SAR)",
+      "definition": "(undefined here) \u2014 referenced only via the reporting violation citation.",
+      "citations": [
+        {
+          "quote": "a suspicious activity report (SAR) in violation of 31 C.F.R. \u00a7 1021.320 (formerly 31 C.F.R. \u00a7103.21)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "report of foreign bank and financial accounts (FBAR)",
+      "definition": "(undefined here) \u2014 referenced only via the reporting violation citation.",
+      "citations": [
+        {
+          "quote": "a report of foreign bank and financial accounts (FBAR) in violation of 31 C.F.R \u00a71010.350 (formerly 31 C.F.R. \u00a7103.24)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "civil money penalties",
+      "definition": "(undefined here) \u2014 described as a remedy FinCEN's Office of Enforcement may assess.",
+      "citations": [
+        {
+          "quote": "FinCEN's Office of Enforcement evaluates enforcement matters that may result in a variety of remedies, including the assessment of civil money penalties.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "text": "The index states FinCEN's enforcement authority derives from the BSA and its implementing regulations at 31 C.F.R. Chapter X (formerly Part 103), covering reporting, recordkeeping, or other requirements. (Enforcement evidence \u2014 not an operative duty.)",
+      "description": "The index states FinCEN's enforcement authority derives from the BSA and its implementing regulations at 31 C.F.R. Chapter X (formerly Part 103), covering reporting, recordkeeping, or other requirements. (Enforcement evidence \u2014 not an operative duty.)",
+      "references": [
+        "31 U.S.C. 5311 et seq.",
+        "31 C.F.R. Chapter X",
+        "31 C.F.R. Part 103"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN may bring an enforcement action for violations of the reporting, recordkeeping, or other requirements of the BSA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Recordkeeping-violation penalties are tied to 31 C.F.R. \u00a71010.415 (formerly \u00a7103.29) \u2014 evidences applied recordkeeping expectations, a coordination-layer/boundary matter rather than a program pillar in this source.",
+      "description": "Recordkeeping-violation penalties are tied to 31 C.F.R. \u00a71010.415 (formerly \u00a7103.29) \u2014 evidences applied recordkeeping expectations, a coordination-layer/boundary matter rather than a program pillar in this source.",
+      "references": [
+        "31 C.F.R \u00a71010.415",
+        "31 C.F.R. \u00a7103.29"
+      ],
+      "citations": [
+        {
+          "quote": "civil money penalties may be assessed for recordkeeping violations under 31 C.F.R \u00a71010.415 (formerly 31 C.F.R. \u00a7103.29)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Reporting-violation penalties are tied to CTR (\u00a71010.311), SAR (\u00a71021.320), and FBAR (\u00a71010.350) regulations \u2014 SAR/CTR are coordination-layer duties per scope; evidenced here as enforcement basis only.",
+      "description": "Reporting-violation penalties are tied to CTR (\u00a71010.311), SAR (\u00a71021.320), and FBAR (\u00a71010.350) regulations \u2014 SAR/CTR are coordination-layer duties per scope; evidenced here as enforcement basis only.",
+      "references": [
+        "31 C.F.R. \u00a71010.311",
+        "31 C.F.R. \u00a7 1021.320",
+        "31 C.F.R \u00a71010.350"
+      ],
+      "citations": [
+        {
+          "quote": "for reporting violations for failing to file a currency transaction report (CTR) in violation of 31 C.F.R. \u00a71010.311 (formerly 31 C.F.R. \u00a7103.22), a suspicious activity report (SAR) in violation of 31 C.F.R. \u00a7 1021.320 (formerly 31 C.F.R. \u00a7103.21)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "MSB registration failures are enforced under 31 C.F.R \u00a71022.380 (formerly \u00a7103.41) \u2014 evidences an applied MSB registration expectation; recorded as interaction because this index (enforcement evidence) may not establish the operative duty.",
+      "description": "MSB registration failures are enforced under 31 C.F.R \u00a71022.380 (formerly \u00a7103.41) \u2014 evidences an applied MSB registration expectation; recorded as interaction because this index (enforcement evidence) may not establish the operative duty.",
+      "references": [
+        "31 C.F.R \u00a71022.380",
+        "31 C.F.R. \u00a7103.41"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN also takes enforcement actions against money services businesses (MSBs) for failure to register with FinCEN in violation of 31 C.F.R \u00a71022.380 (formerly 31 C.F.R. \u00a7103.41).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The index enumerates specific matters (matter numbers and dates) against in-scope actor types \u2014 Depository Institutions, Money Services Businesses, and Securities and Futures \u2014 as applied-expectation evidence. Examples include In the Matter of Canaccord Genuity LLC (2026-01, Securities and Futures), In the Matter of TD Bank, N.A. and TD Bank USA, N.A. (2024-02, Depository Institutions), and Paxful, Inc. and Paxful USA, Inc. (2025-02, Money Services Businesses). Out-of-scope sectors (Casinos, Insurance, Precious Metals/Jewelry, Mortgage) also appear and are boundary regimes.",
+      "description": "The index enumerates specific matters (matter numbers and dates) against in-scope actor types as applied-expectation evidence.",
+      "references": [
+        "2026-01",
+        "2024-02",
+        "2025-02"
+      ],
+      "citations": [
+        {
+          "quote": "In the Matter of Canaccord Genuity LLC \n 03/06/2026\n \n 2026-01 \n Securities and Futures",
+          "verified": true
+        },
+        {
+          "quote": "In the Matter of TD Bank, N.A. and TD Bank USA, N.A. \n 10/10/2024\n \n 2024-02 \n Depository Institutions",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "CEILING APPLIED: This source is enforcement_evidence and may not establish operative duties, so no obligations were extracted; the regulatory citations (registration, CTR/SAR/FBAR reporting, recordkeeping) and enumerated matters are recorded as interactions/definitions only. The page's citations point to reporting/recordkeeping and MSB-registration rules, but the substantive program-establishment ('pillars') duties are not stated in this index \u2014 they live in the cited regulations. SAR/CTR appear here but are scoped as coordination layer, and FBAR/casinos/precious-metals/insurance/mortgage are boundary regimes; extracted only as cross-references. The FINRA SRO layer and federal banking agency / SEC program rules are not addressed in this source. The financial-institution filter list (Casinos, Depository Institutions, Insurance Industry, Money Services Businesses, Mortgage Co/Broker, Precious Metals/Jewelry Industry, Securities and Futures) is a UI category set, not a definitional taxonomy; noted here rather than as defined terms. Ambiguity preserved: the index does not distinguish civil/criminal authority beyond 'civil money penalties' and lists some matters without an assigned financial-institution category."
+}

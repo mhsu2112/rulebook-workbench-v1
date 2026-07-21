@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/gate_rule.schema.json",
+  "title": "GateRule",
+  "description": "A single gate-catalogue rule (ADR-013). There is no generic waiver: waiver_policy is per-rule and 'nonwaivable' rules cannot be waived by anyone.",
+  "type": "object",
+  "required": ["rule_id", "description", "waiver_policy", "responsible_role", "failure_message"],
+  "properties": {
+    "rule_id": { "type": "string" },
+    "description": { "type": "string" },
+    "waiver_policy": { "enum": ["nonwaivable", "program_owner_waivable", "deviation_only"] },
+    "responsible_role": { "type": "string" },
+    "failure_message": { "type": "string" },
+    "evidence_required": { "type": "array", "items": { "type": "string" } },
+    "phase": { "type": ["string", "null"] }
+  }
+}

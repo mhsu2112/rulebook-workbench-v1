@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/defect_findings.schema.json",
+  "title": "DefectFindings",
+  "description": "Output of one defect-detection run (instruction set P2.5). Findings are typed D1-D10, cited, and fix-free by rule — proposed fixes belong to Phase 3, never here.",
+  "type": "object",
+  "required": ["findings"],
+  "properties": {
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "title", "description", "locations"],
+        "properties": {
+          "code": { "enum": ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D10"] },
+          "title": { "type": "string", "maxLength": 250 },
+          "description": { "type": "string" },
+          "locations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["item_id"],
+              "properties": {
+                "item_id": { "type": "string" },
+                "quote": { "type": ["string", "null"], "maxLength": 800 },
+                "verified": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "slice_id": "liquidity-diagnostic-slice",
+  "built": "2026-07-19",
+  "source_note": "Curated 2026-07-19 for PS-liquidity-redesign-0.1 (ratified): diagnostic of the U.S. bank liquidity regime vs fast-moving runs \u2014 DW/FHLB collateral+operational fragmentation, discount-window stigma sources, reporting timing/granularity connection (narrow), and the Hsu/McKernan proposal-mapping layer. NO pre-existing census (contrast AML): completeness class curated_set throughout; see GAP-L5. Snapshot: DL-002-style pin at acquisition time. Boundaries per PS: LCR/NSFR, deposit insurance/resolution, full reporting corpus.",
+  "scope_contract_version": "PS-liquidity-redesign-0.1 (Scope Contract doc pending)",
+  "gaps": [
+    {
+      "gap_id": "GAP-L1",
+      "description": "LCR/NSFR (12 CFR 249 etc.) excluded: named boundary in the ratified PS (calibration vs collateral/operational mechanics).",
+      "owner": "Scope Owner"
+    },
+    {
+      "gap_id": "GAP-L2",
+      "description": "Deposit insurance / resolution triggers excluded: named boundary in the ratified PS.",
+      "owner": "Scope Owner"
+    },
+    {
+      "gap_id": "GAP-L3",
+      "description": "OI-6 remains open: ILST/CFP/RLEN supervisory *reporting artifacts* neither ruled in nor out. CFP *guidance* (the 2023 addendum family) IS included; the reporting artifacts are excluded from slice 0.1 pending a Scope Owner election.",
+      "owner": "Mike Hsu (Scope Owner)"
+    },
+    {
+      "gap_id": "GAP-L4",
+      "description": "Comparator/research layer (G30 2023-turmoil report, BTFP lessons-learned, academic stigma literature) excluded from 0.1; candidate comparator family for the proposal-mapping stage.",
+      "owner": "Distillation Lead"
+    },
+    {
+      "gap_id": "GAP-L5",
+      "description": "No pre-existing domain census exists (unlike AML): this slice is curated_set throughout, built 2026-07-19 from the ratified scope. Post-2024 DW-preparedness rulemaking activity and any 2025-26 proposals are NOT yet censused \u2014 first live census task, and C-ADV2 second census strongly indicated.",
+      "owner": "Distillation Lead"
+    },
+    {
+      "gap_id": "GAP-L6",
+      "description": "Reform-proposal URLs are best-verified-effort (two verified via search 2026-07-19); acquisition errors on this family should be triaged item-by-item, and the McKernan/Hsu 2025-26 follow-on statements swept in the live census.",
+      "owner": "Corpus Steward"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "12-usc-347b",
+      "title": "Federal Reserve Act s.10B \u2014 Advances to individual member banks",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "12 U.S.C. 347b",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": null,
+      "note": "Discount-window advances authority; incl. FDICIA limits on advances to undercapitalized banks \u2014 a structural stigma/access vector"
+    },
+    {
+      "item_id": "12-usc-343",
+      "title": "Federal Reserve Act s.13(3) \u2014 Emergency lending",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "12 U.S.C. 343",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": null,
+      "note": "COORDINATION: emergency facilities frame the LOLR boundary around the ordinary discount window; Dodd-Frank amendments"
+    },
+    {
+      "item_id": "12-usc-1430",
+      "title": "Federal Home Loan Bank Act s.10 \u2014 Advances to members; collateral",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "12 U.S.C. 1430",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": null,
+      "note": "FHLB advances + eligible-collateral categories \u2014 the statutory half of the DW/FHLB collateral fragmentation"
+    },
+    {
+      "item_id": "dodd-frank-1101-1103",
+      "title": "Dodd-Frank Act ss.1101-1103 \u2014 emergency lending reforms and delayed disclosure of borrowers",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "Pub. L. 111-203, ss.1101-1103",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+      "note": "Statutory disclosure regime for DW/emergency borrowing \u2014 a named structural source of stigma"
+    },
+    {
+      "item_id": "warner-kennedy-dw-modernization",
+      "title": "Discount Window modernization legislation (Warner-Kennedy)",
+      "issuer": "Congress (introduced)",
+      "family": "legislation_horizon",
+      "status": "horizon",
+      "locator": "S. \u2014 (introduced; see press release)",
+      "evidence_role": "horizon",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.warner.senate.gov/newsroom/press-releases/warner-kennedy-introduce-bipartisan-legislation-to-modernize-federal-reserve-discount-window/",
+      "note": "HORIZON: pending bill; never anchors a current-law claim; belongs on the proposal-mapping table"
+    },
+    {
+      "item_id": "12-cfr-201-reg-a",
+      "title": "Regulation A \u2014 Extensions of Credit by Federal Reserve Banks",
+      "issuer": "Federal Reserve Board",
+      "family": "regulation_frb",
+      "status": "live",
+      "locator": "12 CFR Part 201",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.federalreserve.gov/supervisionreg/regacg.htm",
+      "note": "Primary/secondary/seasonal credit terms, collateral, rates \u2014 the DW's operative regulation"
+    },
+    {
+      "item_id": "12-cfr-1266-advances",
+      "title": "FHFA Advances regulation",
+      "issuer": "FHFA",
+      "family": "regulation_fhfa",
+      "status": "live",
+      "locator": "12 CFR Part 1266",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.fhfa.gov",
+      "note": "FHLBank advances: authorized purposes, collateral, terms \u2014 the FHLB half of the operational seam"
+    },
+    {
+      "item_id": "fr-2052a",
+      "title": "FR 2052a \u2014 Complex Institution Liquidity Monitoring Report",
+      "issuer": "Federal Reserve Board",
+      "family": "reporting_instruction",
+      "status": "live",
+      "locator": "FR 2052a (OMB 7100-0361)",
+      "evidence_role": "operational_specification",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "large_banks"
+        ]
+      },
+      "url": "https://www.federalreserve.gov/apps/reportingforms/Report/Index/FR_2052a",
+      "note": "SCOPE LIMIT: in scope only for the timing/granularity-vs-fast-runs connection, not as a reporting-corpus refactor"
+    },
+    {
+      "item_id": "ffiec-call-report",
+      "title": "Call Report (FFIEC 031/041/051) \u2014 liquidity-relevant schedules and filing cadence",
+      "issuer": "FFIEC",
+      "family": "reporting_instruction",
+      "status": "live",
+      "locator": "FFIEC 031/041/051",
+      "evidence_role": "operational_specification",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.ffiec.gov/ffiec_report_forms.htm",
+      "note": "SCOPE LIMIT: quarterly cadence vs hours-scale runs is the diagnostic point; schedules cited, corpus not distilled"
+    },
+    {
+      "item_id": "sr-10-6-liquidity-policy",
+      "title": "Interagency Policy Statement on Funding and Liquidity Risk Management (SR 10-6)",
+      "issuer": "Fed/OCC/FDIC/NCUA (interagency)",
+      "family": "guidance_interagency",
+      "status": "live",
+      "locator": "SR 10-6 (2010)",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.federalreserve.gov/boarddocs/srletters/2010/sr1006.htm",
+      "note": "The baseline liquidity-risk-management expectations the 2023 addendum amends"
+    },
+    {
+      "item_id": "cfp-addendum-2023",
+      "title": "Addendum: Importance of Contingency Funding Plans (post-SVB; discount-window readiness and testing)",
+      "issuer": "Fed/OCC/FDIC/NCUA (interagency)",
+      "family": "guidance_interagency",
+      "status": "live",
+      "locator": "Interagency addendum, July 2023",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.occ.gov/news-issuances/news-releases/2023/nr-ia-2023-82a.pdf",
+      "note": "Urges DW pre-positioning and operational testing \u2014 the supervisory answer to stigma; core diagnostic evidence"
+    },
+    {
+      "item_id": "occ-bulletin-2023-25",
+      "title": "OCC Bulletin 2023-25 transmitting the CFP addendum",
+      "issuer": "OCC",
+      "family": "guidance_interagency",
+      "status": "live",
+      "locator": "OCC Bulletin 2023-25",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.occ.gov/news-issuances/bulletins/2023/bulletin-2023-25.html",
+      "note": "Same substance, second instrument \u2014 retained deliberately as fragmentation evidence (one addendum, four issuances)"
+    },
+    {
+      "item_id": "fdic-fil-23-039",
+      "title": "FDIC FIL-39-2023 transmitting the CFP addendum",
+      "issuer": "FDIC",
+      "family": "guidance_interagency",
+      "status": "live",
+      "locator": "FDIC FIL-39-2023",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.fdic.gov/news/financial-institution-letters/2023/fil23039.html",
+      "note": "Same substance, third instrument \u2014 fragmentation evidence"
+    },
+    {
+      "item_id": "frb-operating-circulars",
+      "title": "Federal Reserve Operating Circulars index (incl. OC-10 Lending: agreements, collateral pledging)",
+      "issuer": "Federal Reserve Banks",
+      "family": "operational_spec",
+      "status": "live",
+      "locator": "Operating Circular No. 10",
+      "evidence_role": "operational_specification",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.frbservices.org/resources/rules-regulations/operating-circulars.html",
+      "note": "The legal/operational plumbing of DW borrowing \u2014 where 'rapid functionality' succeeds or fails"
+    },
+    {
+      "item_id": "frbdw-discount-window",
+      "title": "Discount Window program terms (primary/secondary/seasonal credit)",
+      "issuer": "Federal Reserve",
+      "family": "operational_spec",
+      "status": "live",
+      "locator": "frbdiscountwindow.org \u2014 general information",
+      "evidence_role": "operational_specification",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.frbdiscountwindow.org/pages/general-information/the-discount-window",
+      "note": "Operative program terms as published to borrowers"
+    },
+    {
+      "item_id": "frbdw-collateral",
+      "title": "Discount Window / PSR collateral eligibility, valuation, and margins",
+      "issuer": "Federal Reserve",
+      "family": "operational_spec",
+      "status": "live",
+      "locator": "frbdiscountwindow.org \u2014 collateral",
+      "evidence_role": "operational_specification",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.frbdiscountwindow.org/pages/collateral/collateral_valuation",
+      "note": "The collateral-eligibility half of the DW/FHLB interoperability seam"
+    },
+    {
+      "item_id": "fhfa-system-at-100",
+      "title": "FHLBank System at 100: Focusing on the Future (FHFA report)",
+      "issuer": "FHFA",
+      "family": "policy_report",
+      "status": "live",
+      "locator": "FHFA report, Nov 2023",
+      "evidence_role": "policy_report",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.fhfa.gov/policy/fhlbank-system-at-100-focusing-on-the-future",
+      "note": "FHFA's own account of the FHLB liquidity role vs the Fed's LOLR \u2014 primary fragmentation evidence"
+    },
+    {
+      "item_id": "hsu-building-better-brakes",
+      "title": "Acting Comptroller Hsu \u2014 'Building Better Brakes' (targeted ultra-short-dated liquidity coverage via pre-positioned DW collateral)",
+      "issuer": "OCC (speech)",
+      "family": "reform_proposal",
+      "status": "live",
+      "locator": "OCC speech, Jan 2024",
+      "evidence_role": "reform_proposal",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://www.occ.gov/news-issuances/speeches/2024/pub-speech-2024-4.pdf",
+      "note": "Named in the ratified PS as a mapping target. CEILING: candidate input to evaluate, never adopted authority"
+    },
+    {
+      "item_id": "mckernan-reset-liquidity",
+      "title": "Under Secretary McKernan \u2014 'A Reset on Liquidity Regulation' (Treasury remarks)",
+      "issuer": "Treasury (remarks)",
+      "family": "reform_proposal",
+      "status": "live",
+      "locator": "Treasury press release sb0412",
+      "evidence_role": "reform_proposal",
+      "applicability": {
+        "sectors": [
+          "banks"
+        ]
+      },
+      "url": "https://home.treasury.gov/news/press-releases/sb0412",
+      "note": "Named in the ratified PS as a mapping target. CEILING: candidate input to evaluate, never adopted authority"
+    }
+  ]
+}

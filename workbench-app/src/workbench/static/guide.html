@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reviewer's Guide — Rulebook Workbench</title>
+<style>
+body { font: 15px/1.6 -apple-system, Segoe UI, sans-serif; color: #1a1f2e;
+       max-width: 46rem; margin: 2rem auto; padding: 0 1.2rem; }
+h1 { font-size: 1.5rem; border-bottom: 2px solid #1a1f2e; padding-bottom: .4rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #c9ced9; padding-bottom: .25rem; }
+h3 { font-size: 1rem; margin-top: 1.3rem; }
+table { border-collapse: collapse; width: 100%; margin: .6rem 0 1rem; font-size: .88rem; }
+th, td { border: 1px solid #d7dbe4; padding: .4rem .6rem; text-align: left; vertical-align: top; }
+th { background: #eef1f6; }
+.ex { border: 1px solid #b9c3d8; border-radius: 8px; padding: .8rem 1.1rem; margin: 1rem 0; background: #f8fafd; }
+.ex b.step { color: #31456e; }
+.rule { background: #fdf8ef; border-left: 3px solid #8a5a00; padding: .5rem .9rem; margin: .8rem 0; }
+.badge { display: inline-block; background: #eef1f6; border: 1px solid #d7dbe4; border-radius: 4px;
+         padding: 0 .35rem; font-size: .8rem; }
+code { background: #eef1f6; padding: 0 .25rem; border-radius: 3px; font-size: .85em; }
+@media print { body { max-width: none; } }
+</style>
+</head>
+<body>
+
+<h1>Reviewer's Guide to the Refactor Queue</h1>
+<p><i>Plain-English instructions for dispositioning operation cards. No technical background needed.
+Ten minutes to read; keep it open in a tab while you work.</i></p>
+
+<h2>1. What you are actually doing</h2>
+<p>The workbench read every rule in the corpus, built a "blueprint" of what the regime requires,
+and found defects — duplicated duties, conflicting definitions, dead references. For each defect,
+an AI has <b>proposed</b> a tidy-up move. Your job is to decide, move by move, whether each proposal
+is truly just a tidy-up — or whether it would quietly change what the law requires.</p>
+<p>Three things to hold onto:</p>
+<p><b>Nothing happens without you.</b> A proposal is only a proposal until a human reviewer
+dispositions it. <b>Everything you decide is logged</b> — your name, your reasoning, the time —
+in an append-only record. And <b>you cannot break anything</b>: the system refuses forbidden
+moves (it will tell you why), and every underlying document is preserved untouched.</p>
+
+<h2>2. Reading a card, top to bottom</h2>
+<table>
+<tr><th>What you see</th><th>What it means</th></tr>
+<tr><td><span class="badge">MERGE</span> etc.</td><td>The <b>type of move</b> proposed — see the table in §3.</td></tr>
+<tr><td><span class="badge">draft: clarify (medium)</span></td><td>The AI's <b>guess</b> at the move's legal effect, with its confidence.
+<b>This is advice, not a decision.</b> A second AI (a different brand, on purpose) wrote this guess; you make the actual call in the form below.</td></tr>
+<tr><td>The proposal sentence</td><td>What the move would do to the blueprint — e.g., "merge these three statements of the same duty into one."</td></tr>
+<tr><td><i>targets / quotes n/n verified</i></td><td>Which documents the move touches, and whether the AI's supporting quotes were
+found <i>word-for-word</i> in the sources by an automatic check. ✓ means the quote is real. A card full of ✗ should not be trusted.</td></tr>
+<tr><td>▸ details</td><td>Opens the AI's full reasoning and its quotes. <b>Read this before deciding</b> — especially the
+"draft classification" section, which explains <i>why</i> it guessed the effect class it did.</td></tr>
+<tr><td>The form</td><td>Your decision: an effect class, an action, and a one-or-two-sentence rationale. §4 and §5.</td></tr>
+</table>
+
+<h2>3. The moves, in plain English</h2>
+<table>
+<tr><th>Move</th><th>Plain English</th></tr>
+<tr><td>MERGE</td><td>Several provisions say the same thing — fold them into one.</td></tr>
+<tr><td>SPLIT</td><td>One provision does two unrelated jobs — separate them.</td></tr>
+<tr><td>REPEAL</td><td>Retire a provision (e.g., long superseded but never removed).</td></tr>
+<tr><td>RELOCATE</td><td>Move a provision to where readers would look for it.</td></tr>
+<tr><td>CANONICALIZE-DEFINITION</td><td>One term, several definitions — pick one official definition.</td></tr>
+<tr><td>DEFINE-TERM</td><td>An important term is used but never defined — give it a definition.</td></tr>
+<tr><td>SUBSTITUTE-TERM</td><td>Swap a term for a consistent one — <i>meaning must not change</i>.</td></tr>
+<tr><td>NORMALIZE-ELEMENTS</td><td>Restate a duty in the standard who / must / what / when / threshold / exceptions form.</td></tr>
+<tr><td>FACTOR-EXCEPTION</td><td>Pull a buried exception out into an explicit, labeled exception.</td></tr>
+<tr><td>ELEVATE-GENERAL-RULE</td><td>The same rule is repeated in many places — state it once, generally.</td></tr>
+<tr><td>RESOLVE-CROSS-REFERENCE</td><td>Fix a reference that points at nothing or the wrong place.</td></tr>
+<tr><td>RELATE-OBLIGATION</td><td>Record that two duties are connected (one specializes the other, etc.).</td></tr>
+<tr><td>INTRODUCE</td><td>Add something new to the blueprint. <b>Handle with care</b> — allowed here only if the duty
+<i>already exists</i> in the sources and the move merely makes it visible. See Example B.</td></tr>
+</table>
+
+<h2>4. Effect class — the one question that matters</h2>
+<p>Every move gets an effect class. It answers: <b>"compared to what the law already requires,
+what does this move do?"</b> Your dropdown selection — not the AI's badge — is the official classification.</p>
+<table>
+<tr><th>Class</th><th>Plain English</th><th>What the system does with it</th></tr>
+<tr><td><b>codify</b></td><td>The law already requires exactly this. The move just writes it down cleanly.</td><td>May be finalized.</td></tr>
+<tr><td><b>clarify</b></td><td>The law supports this, but ambiguously — the move picks the sensible reading.</td><td>Needs your individual decision.</td></tr>
+<tr><td><b>fill_gap</b></td><td>The duty already exists in the sources, but the blueprint only implied it — the move makes it explicit.
+Your rationale must say <i>which source</i> establishes the duty.</td><td>Needs your individual decision.</td></tr>
+<tr><td><b>change</b></td><td>This would alter what the law requires — add, remove, or shift a duty.</td>
+<td><b>Cannot be finalized here.</b> It parks to the Redesign Backlog. The system enforces this; if you pick
+"change" + "accept" it will refuse.</td></tr>
+<tr><td><b>unresolved</b></td><td>You genuinely can't tell what the baseline requires.</td><td>Treated like change — parks. <b>This is the honest choice when unsure.</b></td></tr>
+</table>
+<div class="rule"><b>The trap to watch for:</b> a move that <i>looks</i> like a small clarification but is
+actually a change. Two tells: (1) the only support is an <b>enforcement action</b> or a <b>proposed rule</b> —
+neither can establish a duty on its own; (2) the "clarification" would resolve a genuine conflict between two
+live sources — picking a winner is a policy choice, not a tidy-up. In both cases: classify <b>change</b>, park it.</div>
+
+<h2>5. The four actions</h2>
+<table>
+<tr><th>Action</th><th>Use it when…</th></tr>
+<tr><td><b>accept</b></td><td>The move is right as proposed and its class permits finalizing.</td></tr>
+<tr><td><b>modify</b></td><td>The move is right in spirit but needs rewording — type your corrected version; yours becomes the record.</td></tr>
+<tr><td><b>reject</b></td><td>The move is wrong: misreads the source, unnecessary, or the quotes don't support it.</td></tr>
+<tr><td><b>park</b></td><td>The move may have merit but changes the law (or you can't tell) — it goes to the Redesign
+Backlog for the policy phase. <b>Parking is a good outcome, not a failure</b> — a well-stocked backlog is the
+honest record that this corpus can't be fully fixed without policy decisions.</td></tr>
+</table>
+<p>The rationale box: one or two honest sentences a colleague could audit later. "Duplicate wording,
+no substantive difference between the three sources" beats a paragraph.</p>
+
+<h2>6. Worked examples</h2>
+
+<div class="ex">
+<h3>Example A — the straightforward accept</h3>
+<p><b>Card:</b> <span class="badge">CANONICALIZE-DEFINITION</span> <span class="badge">draft: clarify (high)</span>
+"Adopt the FinCEN regulation's definition of <i>monetary instruments</i> as canonical; the FFIEC manual's
+paraphrase differs in wording only." Quotes 3/3 ✓.</p>
+<p><b class="step">Step 1 — open details.</b> Read both quoted definitions side by side. Ask: do they differ in
+<i>substance</i> (would anything be covered by one but not the other?) or only in wording?</p>
+<p><b class="step">Step 2 — check the hierarchy.</b> The regulation is binding law; the exam manual is guidance.
+Making the higher-authority text canonical doesn't change anyone's obligations.</p>
+<p><b class="step">Step 3 — classify.</b> Wording-only divergence, resolved toward the binding source: <b>clarify</b> is right. Keep it.</p>
+<p><b class="step">Step 4 — act.</b> Action <b>accept</b>. Rationale: <i>"Definitions differ in wording only;
+canonical text is the binding regulation's. No coverage difference."</i></p>
+</div>
+
+<div class="ex">
+<h3>Example B — the trap (looks small, is a change)</h3>
+<p><b>Card:</b> <span class="badge">INTRODUCE</span> <span class="badge">draft: fill_gap (medium)</span>
+"Make explicit an obligation to update the risk assessment after every product launch — implied by the corpus."
+Quotes 2/2 ✓, but the details show both quotes come from <b>enforcement action summaries</b>.</p>
+<p><b class="step">Step 1 — check what kind of source the quotes come from.</b> Both are enforcement documents.
+The rule of the house: enforcement actions show what examiners <i>expected</i> — they cannot, on their own,
+establish what the law <i>requires</i>.</p>
+<p><b class="step">Step 2 — ask the fill_gap question.</b> Does any <i>binding</i> source establish this duty?
+Search the details; here, none is cited.</p>
+<p><b class="step">Step 3 — classify honestly.</b> Without a binding anchor, writing this duty into the blueprint
+would <i>create</i> it. That is <b>change</b> — even though the AI drafted "fill_gap" and the quotes are genuine.</p>
+<p><b class="step">Step 4 — act.</b> Action <b>park</b>. Rationale: <i>"Only support is enforcement evidence;
+no operative source establishes the duty. New requirement → policy decision, parked for redesign."</i>
+The idea isn't lost — it waits in the backlog for the phase where new duties may lawfully be considered.</p>
+</div>
+
+<div class="ex">
+<h3>Example C — the reject</h3>
+<p><b>Card:</b> <span class="badge">MERGE</span> <span class="badge">draft: codify (medium)</span>
+"Merge the bank and MSB independent-testing obligations — same duty stated twice." Quotes 2/2 ✓.</p>
+<p><b class="step">Step 1 — compare the element tables.</b> The quotes are real, but the details show the two
+obligations differ: one requires testing by a <i>qualified outside party or untasked personnel</i>; the other
+permits self-testing at a different frequency. Different actors, different thresholds.</p>
+<p><b class="step">Step 2 — decide.</b> This is not one duty stated twice; it's two duties that rhyme. Merging
+them would erase a real difference — a substantive error, not a class question.</p>
+<p><b class="step">Step 3 — act.</b> Action <b>reject</b>. Rationale: <i>"Not duplicates: testing personnel and
+frequency requirements differ between banks and MSBs. Merge would erase a real distinction."</i>
+(If you thought the two <i>should</i> be aligned — that's a policy view; the place for it is the redesign phase, not this card.)</p>
+</div>
+
+<h2>7. Golden rules</h2>
+<p>① When unsure, <b>unresolved</b> — it parks safely and can be revisited; a wrong "accept" is the only mistake that costs anything.
+② Your class choice beats the AI's badge — that's the design, not an override.
+③ Never resolve a genuine conflict between two live sources at this stage — that's a policy choice wearing a tidy-up's clothes.
+④ Quotes verified ✓ means the words are real, <b>not</b> that the argument is right — Example C.
+⑤ One honest sentence of rationale; your future self is the audience.</p>
+
+<p><i>The final step — ratifying the Target Blueprint — belongs to the Program Owner and locks the record.
+If you're not the Program Owner, your work ends when the review queue is empty.</i></p>
+
+</body>
+</html>

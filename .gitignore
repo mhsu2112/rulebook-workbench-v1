@@ -1,0 +1,17 @@
+# Secrets — never commit
+.env
+**/.env
+
+# Restricted per-program stores (transcripts, interview data)
+**/restricted/
+programs/*/restricted/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# OS cruft
+.DS_Store

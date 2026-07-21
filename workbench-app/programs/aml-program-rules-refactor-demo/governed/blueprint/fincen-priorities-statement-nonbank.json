@@ -1,0 +1,315 @@
+{
+  "item_id": "fincen-priorities-statement-nonbank",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Provide clarity for all non-bank financial institutions (NBFIs) and other entities with regulatory AML program requirements (collectively 'covered NBFIs') on the AML/CFT Priorities.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "is \nissuing this statement to provide clarity for all non-bank financial institutions (NBFIs) and \nother entities with regulatory AML program requirements (collectively \u201ccovered NBFIs\u201d)4 on \nthese AML/CFT Priorities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "FinCEN recognizes the need for revised regulations and timely guidance to assist covered NBFIs in complying with the BSA, and is committed to developing and publishing timely guidance and corresponding examination procedures for examiners.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "FinCEN recognizes the need for revised regulations and timely guidance to assist covered NBFIs \nin complying with the BSA.  FinCEN is committed to working with the Agencies to develop and \npublish timely guidance and corresponding examination procedures for examiners.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-01",
+      "actor": "the Secretary of the Treasury (in consultation with the Attorney General, Federal functional regulators, relevant State financial regulators, and relevant national security agencies)",
+      "modality": "must",
+      "action": "establish and make public priorities for anti-money laundering and countering the financing of terrorism policy (AML/CFT Priorities)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Anti-Money Laundering Act of 2020 (the \u201c AML Act\u201d)1 requires the Secretary of the \nTreasury, in consultation with the Attorney General, Federal functional regulators, 2 relevant \nState financial regulators, and relevant national security agencies, to establish and make \npublic priorities for anti-money laundering and countering the financing of terrorism policy \n(AML/CFT Priorities).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-02",
+      "actor": "FinCEN (in consultation with the Federal functional regulators and relevant State financial regulators)",
+      "modality": "must",
+      "action": "as appropriate, promulgate regulations regarding the AML/CFT Priorities",
+      "trigger": "within 180 days of the establishment of the AML/CFT Priorities",
+      "threshold": "within 180 days",
+      "exceptions": [
+        "as appropriate"
+      ],
+      "citations": [
+        {
+          "quote": "The \nAML Act requires that, within 180 days of the establishment of the AML/CFT Priorities, \nFinCEN (in consultation with the Federal functional regulators and relevant State financial \nregulators) shall, as appropriate, promulgate regulations regarding the AML/CFT Priorities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-03",
+      "actor": "covered NBFIs",
+      "modality": "conditional",
+      "action": "incorporate the AML/CFT Priorities into their risk-based AML programs",
+      "trigger": "the effective date of the final regulations",
+      "threshold": null,
+      "exceptions": [
+        "not required until the effective date of the final regulations"
+      ],
+      "citations": [
+        {
+          "quote": "Covered NBFIs are not required to incorporate the AML/CFT Priorities into their risk-based \nAML programs until the effective date of the final regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-04",
+      "actor": "covered NBFIs",
+      "modality": "may",
+      "action": "start considering how they will incorporate the AML/CFT Priorities into their risk-based AML programs, such as by assessing the potential risks associated with the products and services they offer, the customers they serve, and the geographic areas in which they operate",
+      "trigger": "in preparation for any new requirements when those final rules are published",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "covered NBFIs may wish to \nstart considering how they will incorporate the AML/CFT Priorities into their risk-based AML \nprograms, such as by assessing the potential risks associated with the products and services \nthey offer, the customers they serve, and the geographic areas in which they operate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-05",
+      "actor": "covered NBFI (AML Act requirement)",
+      "modality": "must",
+      "action": "have its review of the AML/CFT Priorities and the incorporation of those Priorities, as appropriate, into its risk-based AML program included as a measure on which it is supervised and examined",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "as appropriate"
+      ],
+      "citations": [
+        {
+          "quote": "the AML Act requires that the review by a covered NBFI of the AML/CFT Priorities \nand the incorporation of those Priorities, as appropriate, into its risk-based AML program, be \nincluded as a measure on which it is supervised and examined.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-06",
+      "actor": "FinCEN",
+      "modality": "must_not",
+      "action": "examine covered NBFIs for the incorporation of the AML/CFT Priorities into their risk-based AML programs",
+      "trigger": "until the effective date of final regulations",
+      "threshold": null,
+      "exceptions": [
+        "applies until the effective date of final regulations"
+      ],
+      "citations": [
+        {
+          "quote": "This statement confirms that \nFinCEN will not examine covered NBFIs for the incorporation of the AML/CFT Priorities into \ntheir risk-based AML programs until the effective date of final regulations noted above.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-07",
+      "actor": "FinCEN",
+      "modality": "must_not",
+      "action": "request that the staff of any of the Agencies, or a self-regulatory organization (SRO) authorized to examine a covered NBFI, examine any covered NBFIs for this requirement (or any related state requirement)",
+      "trigger": "until the effective date of final regulations",
+      "threshold": null,
+      "exceptions": [
+        "applies until the effective date of final regulations"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN will not request that the staff of any of the Agencies, or a self-regulatory organization \n(SRO) authorized to examine a covered NBFI, examine any covered NBFIs for this requirement \n(or any related state requirement) until the effective date of final regulations.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "AML Act",
+      "definition": "The Anti-Money Laundering Act of 2020, enacted as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, H.R. 6395, 116th Cong. (2021).",
+      "citations": [
+        {
+          "quote": "The AML Act was enacted as Division F, \u00a7\u00a7 6001-6511, of the William M. (Mac) Thornberry National Defense \nAuthorization Act for Fiscal Year 2021, H.R. 6395, 116th Cong. (2021) (enacted)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator",
+      "definition": "As defined in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809), per 31 U.S.C. \u00a7 5318(h)(4)(A) (as amended by AML Act \u00a7 6101(b)(2)(C)).",
+      "citations": [
+        {
+          "quote": "31 U.S.C. \u00a7 5318(h)(4)(A) (as amended by AML Act \u00a7 6101(b)(2)(C)) uses the term Federal functional regulator \n\u201cas defined in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809)).\u201d",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "the Agencies",
+      "definition": "FinCEN in consultation with the staff of the U.S. Securities and Exchange Commission, Commodity Futures Trading Commission, Internal Revenue Service, and State financial regulators (collectively).",
+      "citations": [
+        {
+          "quote": "FinCEN, in consultation with the staff \nof the U.S. Securities and Exchange Commission, Commodity Futures Trading Commission, \nInternal Revenue Service, and State financial regulators (collectively, \u201cthe Agencies\u201d)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "covered NBFIs",
+      "definition": "All non-bank financial institutions (NBFIs) and other entities with regulatory AML program requirements (collectively), cross-referenced to 31 CFR \u00a7\u00a7 1020.210(b), 1021.210, 1022.210, 1023.210, 1024.210, 1025.210, 1026.210, 1027.210, 1028.210, 1029.210, and 1030.210.",
+      "citations": [
+        {
+          "quote": "all non-bank financial institutions (NBFIs) and \nother entities with regulatory AML program requirements (collectively \u201ccovered NBFIs\u201d)4",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "federal banking agencies (FBAs)",
+      "definition": "The Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, the National Credit Union Administration, and the Office of the Comptroller of the Currency (collectively).",
+      "citations": [
+        {
+          "quote": "the Board of Governors of the Federal Reserve System, the Federal Deposit \nInsurance Corporation, the National Credit Union Administration, and the Office of the \nComptroller of the Currency (collectively, the \u201cfederal banking agencies\u201d or \u201cFBAs\u201d)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "bank",
+      "definition": "As defined in Bank Secrecy Act regulations at 31 CFR \u00a7 1010.100(d) and includes each agent, agency, branch, or office within the United States of banks, credit unions, savings associations, and foreign banks. Their AML program obligations are found in 31 CFR \u00a7 1020.210(a).",
+      "citations": [
+        {
+          "quote": "The term \u201cbank\u201d used here is as defined in Bank Secrecy Act regulations at 31 CFR \u00a7 1010.100(d) and includes \neach agent, agency, branch, or office within the United States of banks, credit unions, savings associations, \nand foreign banks.  Their AML program obligations are found in 31 CFR \u00a7 1020.210(a).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML/CFT Priorities",
+      "definition": "Priorities for anti-money laundering and countering the financing of terrorism policy established and made public under the AML Act; FinCEN published the first national AML/CFT Priorities on June 30, 2021.",
+      "citations": [
+        {
+          "quote": "FinCEN published the first national AML/CFT Priorities today in \nconsultation with the parties set out in the AML Act.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "risk-based AML program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "incorporate the AML/CFT Priorities into their risk-based \nAML programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "does not create an immediate change in the \nBank Secrecy Act (BSA) requirements or supervisory expectations for covered NBFIs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "self-regulatory organization (SRO)",
+      "definition": "(undefined here) \u2014 used as an SRO authorized to examine a covered NBFI.",
+      "citations": [
+        {
+          "quote": "a self-regulatory organization \n(SRO) authorized to examine a covered NBFI",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The statement cross-references the AML program requirements for covered NBFIs across the 31 CFR part-210 provisions for each covered sector (banks without a Federal functional regulator, casinos and card clubs, MSBs, brokers or dealers in securities, mutual funds, insurance companies, futures commission merchants and introducing brokers, dealers in precious metals/stones/jewels, credit card system operators, loan or finance companies, and housing GSEs).",
+      "references": [
+        "31 CFR \u00a7 1020.210(b)",
+        "31 CFR \u00a7 1021.210",
+        "31 CFR \u00a7 1022.210",
+        "31 CFR \u00a7 1023.210",
+        "31 CFR \u00a7 1024.210",
+        "31 CFR \u00a7 1025.210",
+        "31 CFR \u00a7 1026.210",
+        "31 CFR \u00a7 1027.210",
+        "31 CFR \u00a7 1028.210",
+        "31 CFR \u00a7 1029.210",
+        "31 CFR \u00a7 1030.210"
+      ],
+      "citations": [
+        {
+          "quote": "See 31 CFR \u00a7\u00a7 1020.210(b) (banks without a Federal functional regulator); 1021.210 (casinos and card \nclubs); 1022.210 (money services businesses); 1023.210 (brokers or dealers in securities); 1024.210 (mutual \nfunds); 1025.210 (insurance companies); 1026.210 (futures commission merchants and introducing brokers \nin commodities)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The AML Act's priority-establishment, rulemaking, and supervision/examination requirements are grounded in the amended Bank Secrecy Act provisions at 31 U.S.C. \u00a7 5318(h)(4)(A), (D), and (E) (as amended by AML Act \u00a7 6101(b)(2)(C)).",
+      "references": [
+        "31 U.S.C. \u00a7 5318(h)(4)(A)",
+        "31 U.S.C. \u00a7 5318(h)(4)(D)",
+        "31 U.S.C. \u00a7 5318(h)(4)(E)",
+        "AML Act \u00a7 6101(b)(2)(C)"
+      ],
+      "citations": [
+        {
+          "quote": "31 U.S.C. \u00a7 5318(h)(4)(D) (as amended by AML Act \u00a7 6101(b)(2)(C)).",
+          "verified": true
+        },
+        {
+          "quote": "31 U.S.C. \u00a7 5318(h)(4)(E) (as amended by AML Act \u00a7 6101(b)(2)(C)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FinCEN's examination authority and reliance on examinations by Federal functional regulators and the IRS is grounded in various BSA/statutory provisions and regulations, and references the FinCEN Enforcement Statement dated 8/18/2020.",
+      "references": [
+        "31 U.S.C. \u00a7\u00a7 5321, 5324, 5330(e) (2012)",
+        "12 U.S.C. \u00a7\u00a7 1829b(j), 1955 (2012)",
+        "31 U.S.C. \u00a7 5318(a)(3) and (b) (2012)",
+        "31 CFR \u00a7 1010.810 (2019)",
+        "FinCEN Enforcement Statement, 8/18/2020"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN has the authority to examine financial institutions and, in \naddition, relies on examinations conducted by Federal functional regulators and the Internal Revenue Service. \n31 U.S.C. \u00a7 5318(a)(3) and (b) (2012); 31 CFR \u00a7 1010.810 (2019).  See also FinCEN Enforcement Statement, \n8/18/2020.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Separately, the federal banking agencies, State bank and credit union regulators, and FinCEN issued a parallel statement to provide clarity for banks on the AML/CFT Priorities.",
+      "references": [],
+      "citations": [
+        {
+          "quote": "State bank and credit union regulators, and FinCEN also issued a statement to provide clarity for \nbanks5 on the AML/CFT Priorities.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is agency guidance (evidence role: agency_guidance), not itself a program-establishment rule. It restates AML Act obligations located in 31 U.S.C. \u00a7 5318(h)(4) and defers substantive incorporation/examination duties until the effective date of future final regulations; the actual program 'pillars' obligations reside in the cross-referenced 31 CFR part-210 rules and the amended BSA, which are boundary/coordination sources here. The document's own scope is directed at 'covered NBFIs' (non-bank FIs including MSBs and broker-dealers, plus the SRO examination layer), which is within the ratified scope for those sectors; banks are addressed by a separate parallel statement noted only. Ambiguity preserved: the statement uses 'may wish to' for OBL-04, extracted as modality 'may'; and OBL-03/OBL-05 are contingent on final regulations / conditioned by 'as appropriate' and extracted as conditional/must respectively per the text's own 'not required until' and 'requires that' phrasing."
+}

@@ -1,0 +1,167 @@
+{
+  "headline": "The blueprint maps two separately chartered emergency-liquidity systems \u2014 the Federal Reserve discount window and the FHLB advance system \u2014 plus a reporting layer (Call Reports, FR 2052a) and a supervisory-guidance overlay, none of which is shown to interoperate by design; reform proposals from Hsu, McKernan, and Warner-Kennedy sit outside this current-law architecture as horizon material.",
+  "how_to_read": "The digest groups items by family: binding_authority (statutes, Reg A) form the legal core of discount-window and FHLB lending; operational_specification items (Operating Circulars, discount-window/collateral pages, FR 2052a, Call Report) describe how those authorities are executed day to day; guidance_interagency items (the CFP addendum and its FDIC/OCC transmittals) restate supervisory expectations at 'should' modality; reform_proposal and legislation_horizon items (Hsu, McKernan, Warner-Kennedy) are non-operative and evidentiary of stated intent only. Each highlight or tension below carries item_ids and/or defect codes (e.g., 'defects-cross#4') keyed to the register; follow those references into the underlying obligations before treating any point as settled \u2014 this summary settles nothing.",
+  "regime_shape": [
+    {
+      "heading": "Two parallel, unlinked lending systems",
+      "text": "The Federal Reserve's discount window (Reg A, 12 USC 343, 12 USC 347b, and the Fed's own operational specs for discount-window terms and collateral) and the FHLB advance system (12 USC 1430, 12 CFR 1266, and the FHFA's 'System at 100' report) are each self-contained: each defines its own eligibility, collateral, and modality structure. The FHFA report is the only instrument in scope that names the handoff between the two systems as a design object, and it does so only in aspirational terms.",
+      "refs": [
+        "12-cfr-201-reg-a",
+        "12-usc-343",
+        "12-usc-347b",
+        "12-usc-1430",
+        "12-cfr-1266-advances",
+        "fhfa-system-at-100",
+        "defects-cross#10"
+      ]
+    },
+    {
+      "heading": "A guidance overlay restating readiness expectations, not creating new duties",
+      "text": "The post-SVB Contingency Funding Plan addendum, transmitted near-identically by the FDIC (FIL-39-2023) and the OCC (Bulletin 2023-25), layers 'should'-level operational-readiness expectations for discount-window access on top of the binding lending authorities, addressed to overlapping but not identical institution populations.",
+      "refs": [
+        "cfp-addendum-2023",
+        "fdic-fil-23-039",
+        "occ-bulletin-2023-25",
+        "defects-guidance_interagency#0",
+        "defects-guidance_interagency#10"
+      ]
+    },
+    {
+      "heading": "A reporting layer stratified by institution size and cadence",
+      "text": "Liquidity visibility runs through two instruments with different reach: the Call Report applies broadly but only quarterly, while FR 2052a applies only to the largest, most systemically identified filers on a daily-or-monthly basis keyed to size/funding-mix thresholds. Neither instrument is shown to be tied, within these sources, to a stated detection-speed requirement.",
+      "refs": [
+        "ffiec-call-report",
+        "fr-2052a",
+        "defects-cross#12",
+        "defects-cross#18"
+      ]
+    },
+    {
+      "heading": "A horizon layer of proposals addressing stigma and pre-positioning",
+      "text": "Hsu's 'Building Better Brakes,' McKernan's Treasury remarks, and the Warner-Kennedy bill each address discount-window stigma and/or collateral pre-positioning as reform targets, but none of them engages the FHLB side of the regime or the Call Report/FR 2052a reporting-cadence dimension; each is retained here as stated intent, not operative law.",
+      "refs": [
+        "hsu-building-better-brakes",
+        "mckernan-reset-liquidity",
+        "warner-kennedy-dw-modernization",
+        "defects-reform_proposal#6"
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "point": "Regulation A is the single densest node in the discount-window family, carrying the most defined terms and obligations, and correspondingly the largest concentration of cross-instrument divergences (viability certification timing, insolvency, CAMEL/CAMELS, depository-institution eligibility) recorded against it.",
+      "refs": [
+        "12-cfr-201-reg-a",
+        "defects-cross#0",
+        "defects-cross#1",
+        "defects-cross#3",
+        "defects-cross#21"
+      ]
+    },
+    {
+      "point": "FR 2052a is the regime's fastest reporting instrument (daily for the largest filers) but its own tiering threshold \u2014 'average weighted short-term wholesale funding' at $75 billion \u2014 is left undefined in the source that operationalizes it, and the Call Report's quarterly cadence applies to everyone else.",
+      "refs": [
+        "fr-2052a",
+        "ffiec-call-report",
+        "defects-reporting_instruction#1",
+        "defects-cross#12"
+      ]
+    },
+    {
+      "point": "The FHFA's 'System at 100' report is the only source that states plainly that FHLBanks 'cannot functionally serve as the lender of last resort,' making it the load-bearing text for the interoperability diagnostic even though the discount-window handoff it describes is stated only conditionally.",
+      "refs": [
+        "fhfa-system-at-100",
+        "defects-cross#19"
+      ]
+    },
+    {
+      "point": "Hsu's and McKernan's remarks are the only sources that substantively engage 'discount-window stigma' as a defined phenomenon; other in-scope instruments (Warner-Kennedy, the CFP addendum family) use the term as a target without defining it.",
+      "refs": [
+        "hsu-building-better-brakes",
+        "mckernan-reset-liquidity",
+        "defects-cross#4"
+      ]
+    },
+    {
+      "point": "The core CFP operational-readiness duties (maintain actionable plans, assess funding stability, plan for collateral-movement friction, review periodically) are stated in materially identical terms across three separate interagency transmittals rather than in one authoritative text.",
+      "refs": [
+        "cfp-addendum-2023",
+        "fdic-fil-23-039",
+        "occ-bulletin-2023-25",
+        "defects-guidance_interagency#0"
+      ]
+    },
+    {
+      "point": "No single instrument states the complete FHLB-to-discount-window collateral-transition obligation; it must be assembled by reading the FHFA report's coordination/negotiation provisions together with the CFP addendum's readiness language and the Warner-Kennedy bill's stated aims.",
+      "refs": [
+        "defects-cross#10",
+        "defects-policy_report#8",
+        "fhfa-system-at-100",
+        "cfp-addendum-2023",
+        "warner-kennedy-dw-modernization"
+      ]
+    }
+  ],
+  "tensions": [
+    {
+      "point": "FHFA guidance directs FHLBanks not to rely primarily on collateral when assessing member risk in tenuous situations, while the Federal Reserve's discount-window regime is expressly collateral-satisfaction-driven; the blueprint records both framings without reconciling them.",
+      "refs": [
+        "defects-cross#20",
+        "fhfa-system-at-100",
+        "frbdw-discount-window",
+        "frbdw-collateral"
+      ]
+    },
+    {
+      "point": "The reform proposals disagree on the core mechanism for stigma: Hsu explicitly rejects folding discount-window borrowing capacity into the LCR numerator, favoring a separate five-day requirement, while McKernan proposes exactly that recognition; both are recorded as stated positions, not adjudicated.",
+      "refs": [
+        "defects-reform_proposal#5",
+        "hsu-building-better-brakes",
+        "mckernan-reset-liquidity"
+      ]
+    },
+    {
+      "point": "FHLB member-distress credit triggers ('supervisory concern,' failure to meet credit criteria) and Federal Reserve undercapitalization thresholds (CAMEL/CAMELS composite ratings) are scoped on non-aligned bases, so the point at which each system restricts credit to a weakening institution is not the same point in either system.",
+      "refs": [
+        "defects-cross#11",
+        "fhfa-system-at-100",
+        "frbdw-discount-window",
+        "12-cfr-201-reg-a"
+      ]
+    },
+    {
+      "point": "The FHFA report asserts that primary federal regulators are statutorily required to make examination reports available to FHLBanks, yet the same source states FHLBanks 'may receive reports of examination long after problems are identified' and that FHFA itself lacks a stated channel of access \u2014 an assertion and an observed gap sitting side by side.",
+      "refs": [
+        "defects-policy_report#10",
+        "defects-policy_report#11",
+        "fhfa-system-at-100"
+      ]
+    },
+    {
+      "point": "The FDIC's transmittal frames incorporating the discount window into contingency funding plans as an agency-encouraged expectation, while the addendum and OCC bulletin frame the same discount-window duty only conditionally (triggered if the window is already part of the plan) \u2014 a difference in stated modality across instruments carrying the same content.",
+      "refs": [
+        "defects-guidance_interagency#9",
+        "fdic-fil-23-039",
+        "cfp-addendum-2023",
+        "occ-bulletin-2023-25"
+      ]
+    },
+    {
+      "point": "The regime's reporting instruments imply an interest in detecting fast-moving runs (the register notes the SVB one-day outflow), yet no instrument states a required detection latency; Call Reports are quarterly, and FR 2052a's daily tier reaches only the largest filers, leaving the implied duty and the observed cadence structure unresolved against each other.",
+      "refs": [
+        "defects-cross#18",
+        "defects-reporting_instruction#7",
+        "fr-2052a",
+        "ffiec-call-report"
+      ]
+    }
+  ],
+  "caveats": "This summary is advisory and non-governed: it orients a reader to the Derived Blueprint as built and does not harmonize, rank, or resolve any recorded tension \u2014 that adjudication is reserved for a separately chartered, Principal-led Phase 3. Reform-proposal and horizon items (Hsu, McKernan, Warner-Kennedy) are cited only as stated objectives or positions, never as operative duties. Statements about absence (e.g., no detection-latency requirement, no interoperability provision) are made only where the defect register documents a specific D9 gap or an item's own notes record a \u2205/nothing-in-scope finding; no other absence is implied. All claims trace to the digest and defect register supplied and go no further than those sources state.",
+  "_provenance": {
+    "advisory": true,
+    "model_served": "anthropic/claude-sonnet-5",
+    "generated_at": "2026-07-20T15:11:35.263215+00:00",
+    "cost_usd": 0.109582,
+    "note": "reading guide only \u2014 never ratified, tables win"
+  }
+}

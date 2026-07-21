@@ -1,0 +1,477 @@
+Skip to main content
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ An official website of the United States government
+
+ Here’s how you know
+
+ 
+
+ 
+ Here’s how you know
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The .gov means it’s official.
+ 
+
+ 
+ Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ The site is secure.
+ 
+
+ 
+ The https:// ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Financial Crimes Enforcement Network
+ 
+ 
+
+ 
+ 
+ 
+ 
+ Menu
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ Enter Search Term(s):
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ Guidance on Existing AML Program Rule Compliance Obligations for MSB Principals with Respect to Agent Monitoring
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ FIN-2016-G001.pdf
+ (675.65 KB)
+
+ 
+
+ 
+ FIN-2016-G001
+
+ 
+ 
+ Issued Date
+
+ March 11, 2016
+
+ 
+
+ 
+ Guidance Subject
+
+ Guidance on Existing AML Program Rule Compliance Obligations for MSB Principals with Respect to Agent Monitoring
+
+ 
+
+ This guidance reiterates the anti-money laundering (AML) program obligations on the principals of money services businesses (MSBs)1 to understand and appropriately account for the risks associated with their agents,2 as broadly set forth by FinCEN in 2004 guidance primarily focused on foreign agents and counterparties.3 FinCEN is reiterating its guidance on this issue to complement recent guidance from states addressing MSB principal-agent relationships, and consistent with the purposes of the Money Remittances Improvement Act to encourage coordination between Federal and state regulators on such issues.4 MSBs serve important functions, including by facilitating remittances, and providing other financial services. This guidance is intended to provide clarity so that MSB principals and their agents can more easily understand how to comply with AML requirements while providing important financial services.
+
+The Bank Secrecy Act (BSA) requires all MSBs, both principals and their agents, to establish and maintain an effective written AML program reasonably designed to prevent the MSB from being used to facilitate money laundering and the financing of terrorist activities.5 To establish effective AML procedures and controls, an MSB principal’s program requirements properly include agent monitoring policies and procedures sufficient to allow the principal to understand and account for associated risks.6 Although principals and agents may contractually allocate responsibility for developing policies, procedures and internal controls, both the principal and its agents remain liable under the rules for the existence of these respective policies, procedures, and controls. Moreover, each MSB remains independently and wholly responsible for implementing adequate AML program requirements.7 Accordingly, neither the agent nor the principal can avoid liability for failing to establish and maintain an effective AML program by pointing to a contract assigning this responsibility to another party (whether the agent or principal).
+
+Under 31 CFR § 1022.210, an MSB’s AML program must, at a minimum:
+
+ Incorporate policies, procedures, and internal controls reasonably designed to assure compliance with the BSA and its implementing regulations
+
+ Designate a person to assure day to day compliance with the program and the BSA and its implementing regulations
+
+ Provide education and training of appropriate personnel concerning their responsibilities under the program, including training in the detection of suspicious transactions to the extent that the money services business is required to report such transactions under the BSA
+
+ Provide for independent review to monitor and maintain an adequate program
+
+ 
+
+An MSB principal is exposed to risk when an agent engages in transactions that create a risk for money laundering, terrorist financing, or other financial crime. In order to reduce exposure to such risks, for example, the MSB principal must have procedures in place to identify those agents conducting activities that appear to lack commercial purpose, lack justification, or otherwise are not supported by verifiable documentation. The principal must implement risk-based procedures to monitor the agents’ transactions to ensure that they are legitimate. The procedures must also ensure that, if the agents’ transactions trigger reporting or recordkeeping requirements, the principal handles the information in accordance with regulatory reporting and recordkeeping obligations. In addition, the MSB principal should implement procedures for handling non-compliant agents, including agent contract terminations.
+
+Accordingly, principals are required to develop and implement risk-based policies, procedures, and internal controls that ensure adequate ongoing monitoring of agent activity, as part of the principal’s implementation of its AML program.8
+
+When conducting monitoring of their agents, principals must, at a minimum:
+
+ Identify the owners of the MSB’s agents
+
+ Evaluate on an ongoing basis the operations of agents, and monitor for variations in those operations
+
+ Evaluate agents’ implementation of policies, procedures, and controls
+
+ 
+
+As is true for all industries FinCEN regulates, FinCEN expects MSB principals and agents to tailor their AML programs to reflect the risks associated with their particular business services, clients, size, locations, and circumstances. AML risks can be jurisdictional, product-related, service-related, or client-related.9
+
+Principals must periodically reassess risks associated with their agents and update the principals’ programs to address any changing or additional related risks. Principals must also take corrective action once becoming aware of any weaknesses or deficiencies in their AML programs. MSB principals and agents are required to conduct reviews with a scope and frequency commensurate with the risks of money laundering or other illicit activity such principal or agent faces. A principal must conduct internal and/or external independent testing to ensure there are no material weaknesses (e.g., inadequate training) or internal control deficiencies (e.g., monitoring agents). In addition, the testing must factor in products and services provided to determine if the procedures are sufficient to detect and report suspicious activity.
+
+Risk factors that principals should consider when conducting agent monitoring include, but are not limited to:
+
+ Whether the owners are known or suspected to be associated with criminal conduct or terrorism
+
+ Whether the agent has an established and adhered to AML program
+
+ The nature of the markets the agent serves and the extent to which the market presents an increased risk for money laundering or terrorist financing (This does not mean that principals with agents providing services involving regions affected by conflict or terrorism cannot manage such risks, but rather that principals must take steps to account for and mitigate such risks)
+
+ The services an agent is expected to provide and the agent’s anticipated level of activity
+
+ The nature and duration of the relationship
+
+ 
+
+FinCEN recognizes that an agent may enter into contracts to offer services with more than one principal or may provide additional services on its own. In such situations, principals are encouraged to share information with other eligible financial institutions through participation in the 314(b) voluntary information-sharing program.10
+
+FinCEN reminds MSB principals that the culture of an organization is critical to its compliance, as has been highlighted in FinCEN’s Advisory to U.S. Financial Institutions on Promoting a Culture of Compliance.11 The general principles set forth in the advisory illustrate how MSBs may improve and strengthen organizational BSA compliance at both the principal and agent levels.
+
+Examination Expectations
+
+FinCEN is working closely with its delegated examiner, the Internal Revenue Service’s Small Business/Self-Employed Division, as well as with state regulators, to better coordinate compliance and enforcement efforts and maximize resources. One area of focus is how effectively principal MSBs are currently monitoring their agents. FinCEN expects a principal to have information readily available to demonstrate that it has effectively developed and implemented risk-based policies, procedures, and internal controls to ensure adequate ongoing monitoring of agent activity.
+
+For Further Information
+
+Additional questions or comments regarding the contents of this Guidance should be addressed to the FinCEN Resource Center at FRC@fincen.gov, (800) 767-2825, or (703) 905-3591. Financial institutions wanting to report suspicious transactions that may relate to terrorist activity should call the Financial Institutions Toll-Free Hotline at (866) 556-3974 (7 days a week, 24 hours a day). The purpose of the hotline is to expedite the delivery of this information to law enforcement. Financial institutions should immediately report any imminent threat to local-area law enforcement officials.
+
+ 
+ FinCEN’s mission is to safeguard the financial system from illicit use and combat money laundering and promote national security through the collection, analysis, and dissemination of financial intelligence and strategic use of financial authorities.
+
+1 See 31 CFR § 1010.100(ff).
+2 The term “agent” for purposes of this guidance includes authorized delegates, foreign agents or counterparties, agents and sub-agents.
+3 See Interpretive Release 2004-1-Anti-Money Laundering Program Requirements for Money Services Businesses With Respect to Foreign Agents or Foreign Counterparties, 69 Fed. Reg. 74439 (Dec. 14, 2004).
+4 Money Remittances Improvement Act of 2014, Pub. L. 113–156 (Aug. 8, 2014).
+5 31 CFR § 1022.210.
+6 See 69 Fed. Reg. at 74440.
+7 31 CFR § 1022.210(d)(1)(iii).
+8 See 69 Fed. Reg. at 74441.
+9 The Bank Secrecy Act/Anti-Money Laundering Examination Manual for Money Services Businesses (/system/files/shared/fin-2009-g001.pdf) and other FinCEN guidance provide information on BSA examinations, risk assessment, AML program requirements, BSA/AML risks and risk management expectations, and industry practices.
+10 The Section 314(b) Fact Sheet (Oct. 2013) available at /system/files/shared/314bfactsheet.pdf.
+11 The Advisory (Aug. 11, 2014) available at /system/files/shared/FIN-2014-A007.pdf.
+
+ 
+ 
+ Financial Institution
+
+ 
+ Depository Institutions
+
+ Money Services Businesses
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Resources
+ 
+
+ 
+
+ 
+ 
+ 
+ Alerts/Advisories/Notices/ Bulletins/Fact Sheets
+ 
+
+ 
+
+ 
+ 
+ 
+ Bank Secrecy Act Filing Information
+ 
+
+ 
+
+ 
+ 
+ 
+ Beneficial Ownership Information Reporting
+ 
+
+ 
+
+ 
+ 
+ 
+ Financial Trend Analyses
+ 
+
+ 
+
+ 
+ 
+ 
+ Financial Institutions
+ 
+
+ 
+
+ 
+ 
+ 
+ FinCEN Exchange
+ 
+
+ 
+
+ 
+ 
+ 
+ Innovation
+ 
+
+ 
+
+ 
+ 
+ 
+ International
+ 
+
+ 
+
+ 
+ 
+ 
+ Law Enforcement
+ 
+
+ 
+
+ 
+ 
+ 
+ Ransomware
+ 
+
+ 
+
+ 
+ 
+ 
+ Residential Real Estate Reporting
+ 
+
+ 
+
+ 
+ 
+ 
+ Suspicious Activity Report (SAR)
+ 
+
+ 
+
+ 
+ 
+ 
+ Scams
+ 
+
+ 
+
+ 
+ 
+ 
+ Statutes and Regulations
+ 
+
+ 
+
+ 
+ 
+ 
+ Whistleblower Program
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Contact • Subscribe to FinCEN News Updates
+Careers • Freedom of Information Act (FOIA) • Site Policies and Notices
+Treasury.gov • IRS.gov • Regulations.gov • USA.gov • Vote.gov

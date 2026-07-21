@@ -1,0 +1,200 @@
+{
+  "item_id": "31-cfr-1010-230-cdd",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Covered financial institutions must establish and maintain written procedures, included within their anti-money laundering compliance program required under 31 U.S.C. 5318(h), reasonably designed to identify and verify beneficial owners of legal entity customers.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Covered financial institutions are required to establish and maintain written procedures that are reasonably designed to identify and verify beneficial owners of legal entity customers and to include such procedures in their anti-money laundering compliance program required under 31 U.S.C. 5318(h) and its implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Due diligence programs for correspondent accounts must be reasonably designed to enable covered financial institutions to detect and report, on an ongoing basis, known or suspected money laundering activity conducted through such accounts.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Due diligence programs for private banking accounts must be reasonably designed to detect and report known or suspected money laundering or suspicious activity conducted through such accounts.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall maintain a due diligence program that includes policies, procedures, and controls that are reasonably designed to detect and report any known or suspected money laundering or suspicious activity conducted through or involving any private banking account",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1010.610-a",
+      "actor": "covered financial institution",
+      "modality": "must",
+      "action": "establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls reasonably designed to enable the institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+      "trigger": "the institution establishes, maintains, administers, or manages a correspondent account in the United States for a foreign financial institution",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A covered financial institution shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1010.620-a",
+      "actor": "covered financial institution",
+      "modality": "must",
+      "action": "maintain a due diligence program including policies, procedures, and controls reasonably designed to detect and report any known or suspected money laundering or suspicious activity conducted through or involving the account",
+      "trigger": "the institution establishes, maintains, administers, or manages a private banking account in the United States",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A covered financial institution shall maintain a due diligence program that includes policies, procedures, and controls that are reasonably designed to detect and report any known or suspected money laundering or suspicious activity conducted through or involving any private banking account",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1010.630-a-1-i",
+      "actor": "covered financial institution",
+      "modality": "must_not",
+      "action": "establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign shell bank",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A covered financial institution shall not establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign shell bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1010.630-a-1-ii",
+      "actor": "covered financial institution",
+      "modality": "must",
+      "action": "take reasonable steps to ensure that any correspondent account it maintains in the United States for a foreign bank is not being used by that foreign bank to indirectly provide banking services to a foreign shell bank",
+      "trigger": "the institution establishes, maintains, administers, or manages a correspondent account in the United States for a foreign bank",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A covered financial institution shall take reasonable steps to ensure that any correspondent account established, maintained, administered, or managed by that covered financial institution in the United States for a foreign bank is not being used by that foreign bank to indirectly provide banking services to a foreign shell bank.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "covered financial institution",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "foreign financial institution",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall establish a due diligence program that includes appropriate, specific, risk-based, and, where necessary, enhanced policies, procedures, and controls that are reasonably designed to enable the covered financial institution to detect and report, on an ongoing basis, any known or suspected money laundering activity",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "private banking account",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall maintain a due diligence program that includes policies, procedures, and controls that are reasonably designed to detect and report any known or suspected money laundering or suspicious activity conducted through or involving any private banking account",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "foreign shell bank",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall not establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign shell bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "correspondent account",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A covered financial institution shall take reasonable steps to ensure that any correspondent account established, maintained, administered, or managed by that covered financial institution in the United States for a foreign bank is not being used by that foreign bank to indirectly provide banking services to a foreign shell bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "anti-money laundering compliance program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Covered financial institutions are required to establish and maintain written procedures that are reasonably designed to identify and verify beneficial owners of legal entity customers and to include such procedures in their anti-money laundering compliance program required under 31 U.S.C. 5318(h) and its implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owner",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Covered financial institutions are required to establish and maintain written procedures that are reasonably designed to identify and verify beneficial owners of legal entity customers and to include such procedures in their anti-money laundering compliance program required under 31 U.S.C. 5318(h) and its implementing regulations.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The beneficial-ownership CDD procedures required under &#xA7; 1010.230 must be incorporated into the covered financial institution's anti-money laundering compliance program required under 31 U.S.C. 5318(h) and its implementing regulations, linking the CDD coordination-layer duty to the underlying program-establishment obligation.",
+      "references": [
+        "31 U.S.C. 5318(h)",
+        "31 CFR 1010.230(a)"
+      ],
+      "citations": [
+        {
+          "quote": "Covered financial institutions are required to establish and maintain written procedures that are reasonably designed to identify and verify beneficial owners of legal entity customers and to include such procedures in their anti-money laundering compliance program required under 31 U.S.C. 5318(h) and its implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "General financial institutions are directed to consult subpart B of their applicable chapter X part for additional program requirements beyond the general provisions.",
+      "references": [
+        "31 U.S.C. 5312(a)(2)",
+        "31 U.S.C. 5312(c)(1)",
+        "31 CFR chapter X subpart B"
+      ],
+      "citations": [
+        {
+          "quote": "Each financial institution (as defined in 31 U.S.C. 5312(a)(2) or (c)(1)) should refer to subpart B of its chapter X Part for any additional program requirements.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Per ratified scope, SAR/CTR/CDD operational duties are treated as coordination layer rather than as primary program/'pillars' obligations. Accordingly, the CDD identification/verification specifics in &#xA7; 1010.230(b) (and paragraphs (e)/(h) exclusions/exemptions it cross-references but which are not reproduced in the source text), the CTR filing/identification/anti-structuring provisions (&#xA7;&#xA7; 1010.311, 1010.312, 1010.314), the funds-transfer recordkeeping rule (&#xA7; 1010.410(e)), and the FinCEN information-sharing record-search duty (&#xA7; 1010.520(b)(3)) were identified in the source text but excluded from the obligation table as boundary/coordination-layer content outside the ratified 'program-establishment' focus. Only the due-diligence-program-establishment obligations for correspondent accounts (&#xA7; 1010.610), private banking accounts (&#xA7; 1010.620), and the foreign-shell-bank correspondent-account prohibition/reasonable-steps duty (&#xA7; 1010.630(a)(1)) were extracted as in-scope program/'pillars' obligations, since they are affirmative requirements to establish AML program components rather than SAR/CTR/CDD operational duties. The linkage between the CDD rule and the underlying 31 U.S.C. 5318(h) AML compliance program requirement is preserved only as a cross-reference (interaction), consistent with the fidelity rule against harmonizing scope boundaries. Text is extracted exactly as written; no ambiguity resolution was performed."
+}

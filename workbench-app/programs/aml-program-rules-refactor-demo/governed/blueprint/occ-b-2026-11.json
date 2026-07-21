@@ -1,0 +1,247 @@
+{
+  "item_id": "occ-b-2026-11",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Amend the BSA compliance program requirements for supervised banks and rebrand them as anti-money laundering and countering the financing of terrorism (AML/CFT) programs, aligned with concurrent FinCEN changes resulting from the AML Act of 2020.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The amended regulatory requirements, which will be referred to moving forward as anti-money laundering and countering the financing of terrorism (AML/CFT) programs, align with changes that are being concurrently proposed by the Financial Crimes Enforcement Network (FinCEN) as a result of the Anti-Money Laundering Act of 2020 (AML Act).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Incorporate a risk assessment process into AML/CFT program rules requiring consideration of national AML/CFT priorities published by FinCEN.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Incorporating a risk assessment process in AML/CFT program rules that would require, among other things, consideration of national AML/CFT priorities published by FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Establish a standard for issuance of certain BSA-related enforcement and supervisory actions, including a consultation process with FinCEN.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Establishing a standard for the issuance of certain BSA-related enforcement and supervisory actions, including establishing a consultation process with FinCEN with respect to such actions.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "occ-b-2026-11-O1",
+      "actor": "banks",
+      "modality": "must",
+      "action": "establish and maintain a program that is reasonably designed to ensure compliance with the requirements of the BSA",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The proposed rule continues to require banks to establish and maintain a program that is reasonably designed to ensure compliance with the requirements of the BSA, though with certain clarifications and changes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "occ-b-2026-11-O2",
+      "actor": "the agencies (OCC, FDIC, NCUA)",
+      "modality": "must",
+      "action": "prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of the BSA (independent mandate)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The agencies have an independent mandate to prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of the BSA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "occ-b-2026-11-O3",
+      "actor": "an agency intending to initiate an AML/CFT enforcement action or significant AML/CFT supervisory action",
+      "modality": "conditional",
+      "action": "provide the director of FinCEN with an opportunity to review the action and consider any input offered by the director of FinCEN before initiating such an action",
+      "trigger": "when one of the agencies intends to initiate an AML/CFT enforcement action or a significant AML/CFT supervisory action, as those terms are defined in the proposed regulation",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Before initiating such an action, the agency would provide the director of FinCEN with an opportunity to review the action and would consider any input offered by the director of FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "occ-b-2026-11-O4",
+      "actor": "banks",
+      "modality": "must",
+      "action": "satisfy customer due diligence (CDD) requirements incorporated into the program rules to reflect prior amendments to FinCEN's requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Including customer due diligence requirements to reflect prior amendments to FinCEN\u2019s requirements.",
+          "verified": true
+        },
+        {
+          "quote": "the proposed rule explicitly incorporates customer due diligence (CDD) requirements that are currently set forth in FinCEN\u2019s parallel regulations, harmonizing the requirements between the regulations.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "anti-money laundering and countering the financing of terrorism (AML/CFT) programs",
+      "definition": "The rebranded term for the amended BSA compliance program requirements; defined here only as the new name for the amended regulatory requirements. Substantive definition not given.",
+      "citations": [
+        {
+          "quote": "The amended regulatory requirements, which will be referred to moving forward as anti-money laundering and countering the financing of terrorism (AML/CFT) programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Anti-Money Laundering Act of 2020 (AML Act)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "align with changes that are being concurrently proposed by the Financial Crimes Enforcement Network (FinCEN) as a result of the Anti-Money Laundering Act of 2020 (AML Act).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "issued a joint notice of proposed rulemaking that would amend the Bank Secrecy Act (BSA) compliance program requirements",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "the agencies",
+      "definition": "The Office of the Comptroller of the Currency (OCC), the Federal Deposit Insurance Corporation, and the National Credit Union Administration, collectively.",
+      "citations": [
+        {
+          "quote": "The Office of the Comptroller of the Currency (OCC), the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "national AML/CFT priorities",
+      "definition": "(undefined here) \u2014 priorities published by FinCEN that a risk assessment process would require consideration of.",
+      "citations": [
+        {
+          "quote": "consideration of national AML/CFT priorities published by FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML/CFT enforcement action",
+      "definition": "(undefined here) \u2014 'as those terms are defined in the proposed regulation' (definition not contained in this text).",
+      "citations": [
+        {
+          "quote": "when one of the agencies intends to initiate an AML/CFT enforcement action or a significant AML/CFT supervisory action, as those terms are defined in the proposed regulation",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "significant AML/CFT supervisory action",
+      "definition": "(undefined here) \u2014 'as those terms are defined in the proposed regulation' (definition not contained in this text).",
+      "citations": [
+        {
+          "quote": "when one of the agencies intends to initiate an AML/CFT enforcement action or a significant AML/CFT supervisory action, as those terms are defined in the proposed regulation",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "two-pronged framework",
+      "definition": "A framework for evaluating when a bank has 'established' and 'maintained' its program, intended to clarify how existing requirements will be evaluated; substantive prongs not given here.",
+      "citations": [
+        {
+          "quote": "The proposed rule also establishes a two-pronged framework for evaluating when a bank has \u201cestablished\u201d and \u201cmaintained\u201d its program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer due diligence (CDD)",
+      "definition": "(undefined here) \u2014 requirements currently set forth in FinCEN's parallel regulations.",
+      "citations": [
+        {
+          "quote": "the proposed rule explicitly incorporates customer due diligence (CDD) requirements that are currently set forth in FinCEN\u2019s parallel regulations",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The agencies' amendments are proposed concurrently with, and aligned to, changes being proposed by FinCEN to its BSA compliance program rules as a result of the AML Act of 2020.",
+      "references": [
+        "FinCEN BSA compliance program rules",
+        "Anti-Money Laundering Act of 2020"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN is amending its BSA compliance program rules to incorporate national AML/CFT priorities and other changes to the BSA pursuant to the AML Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The proposed rule incorporates CDD requirements currently in FinCEN's parallel regulations, harmonizing requirements between the agencies' and FinCEN's regulations.",
+      "references": [
+        "FinCEN parallel regulations (CDD)"
+      ],
+      "citations": [
+        {
+          "quote": "the proposed rule explicitly incorporates customer due diligence (CDD) requirements that are currently set forth in FinCEN\u2019s parallel regulations, harmonizing the requirements between the regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "A new notice and consultation framework gives the director of FinCEN an opportunity to review agency AML/CFT enforcement or significant supervisory actions before initiation.",
+      "references": [
+        "FinCEN (director)"
+      ],
+      "citations": [
+        {
+          "quote": "The proposed rule would also establish a new notice and consultation framework applicable when one of the agencies intends to initiate an AML/CFT enforcement action or a significant AML/CFT supervisory action",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The rulemaking is issued jointly by the OCC together with the FDIC and NCUA.",
+      "references": [
+        "Federal Deposit Insurance Corporation",
+        "National Credit Union Administration"
+      ],
+      "citations": [
+        {
+          "quote": "The Office of the Comptroller of the Currency (OCC), the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies), issued a joint notice of proposed rulemaking",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This item is a Notice of Proposed Rulemaking (status: horizon / evidence role: supervisory_guidance); all obligations are prospective/proposed ('would', 'the proposed rule') rather than in force, and are extracted as written without harmonization. Obligations use conditional wording ('would require', 'would provide') reflecting proposal status; modality is mapped from underlying requiring language (require->must; contingent action before initiating an action->conditional). The text repeatedly notes definitions for 'AML/CFT enforcement action' and 'significant AML/CFT supervisory action' reside 'in the proposed regulation' not reproduced here, and the substantive prongs of the two-pronged 'established'/'maintained' framework are not given. Broker-dealers, MSBs, FINRA, and non-bank sectors are outside this OCC bulletin's coverage (banks only); those scope elements are not addressed by this source."
+}

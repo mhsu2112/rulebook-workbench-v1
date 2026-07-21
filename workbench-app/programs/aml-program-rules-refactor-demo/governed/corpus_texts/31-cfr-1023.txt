@@ -1,0 +1,271 @@
+PART 1023&#x2014;RULES FOR BROKERS OR DEALERS IN SECURITIES
+ 
+ 
+ Authority: 12 U.S.C. 1829b and 1951-1959; 31 U.S.C. 5311-5314 and 5316-5332; title III, sec. 314, Pub. L. 107-56, 115 Stat. 307; sec. 701, Pub. L. 114-74, 129 Stat. 599.
+ 
+ 
+ Source: 75 FR 65812, Oct. 25, 2010, unless otherwise noted.
+ 
+ 
+ Subpart A&#x2014;Definitions 
+ 
+ &#xA7; 1023.100 Definitions. 
+ Refer to &#xA7; 1010.100 of this chapter for general definitions not noted herein. To the extent there is a differing definition in &#xA7; 1010.100 of this chapter, the definition in this section is what applies to part 1023. Unless otherwise indicated, for purposes of this part: 
+ (a) Account. For purposes of &#xA7; 1023.220: 
+ (1) Account means a formal relationship with a broker-dealer established to effect transactions in securities, including, but not limited to, the purchase or sale of securities and securities loaned and borrowed activity, and to hold securities or other assets for safekeeping or as collateral. 
+ (2) Account does not include: 
+ (i) An account that the broker-dealer acquires through any acquisition, merger, purchase of assets, or assumption of liabilities; or 
+ (ii) An account opened for the purpose of participating in an employee benefit plan established under the Employee Retirement Income Security Act of 1974. 
+ (b) Broker-dealer means a person registered or required to be registered as a broker or dealer with the Commission under the Securities Exchange Act of 1934 (15 U.S.C. 77a et seq. ), except persons who register pursuant to 15 U.S.C. 78o(b)(11). 
+ (c) Commission means, for the purposes of &#xA7; 1023.220, the United States Securities and Exchange Commission. 
+ (d) Customer. For purposes of &#xA7; 1023.220: 
+ (1) Customer means: 
+ (i) A person that opens a new account; and 
+ (ii) An individual who opens a new account for: 
+ (A) An individual who lacks legal capacity; or 
+ (B) An entity that is not a legal person. 
+ (2) Customer does not include: 
+ (i) A financial institution regulated by a Federal functional regulator or a bank regulated by a state bank regulator; 
+ (ii) A person described in &#xA7; 1020.315(b)(2) through (4) of this Chapter; or 
+ (iii) A person that has an existing account with the broker-dealer, provided the broker-dealer has a reasonable belief that it knows the true identity of the person. 
+ (e) Financial institution is defined at 31 U.S.C. 5312(a)(2) and (c)(1). 
+ 
+
+ 
+ 
+ Subpart B&#x2014;Programs 
+ 
+ &#xA7; 1023.200 General. 
+ Brokers or dealers in securities are subject to the program requirements set forth and cross referenced in this subpart. Brokers or dealers in securities should also refer to subpart B of part 1010 of this chapter for program requirements contained in that subpart which apply to brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.210 Anti-money laundering program requirements for brokers or dealers in securities. 
+ A broker or dealer in securities shall be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1) if the broker-dealer implements and maintains a written anti-money laundering program approved by senior management that: 
+ (a) Complies with the requirements of &#xA7;&#xA7; 1010.610 and 1010.620 of this chapter and any applicable regulation of its Federal functional regulator governing the establishment and implementation of anti-money laundering programs; 
+ (b) Includes, at a minimum: 
+ (1) The establishment and implementation of policies, procedures, and internal controls reasonably designed to achieve compliance with the applicable provisions of the Bank Secrecy Act and the implementing regulations thereunder; 
+ (2) Independent testing for compliance to be conducted by the broker-dealer's personnel or by a qualified outside party; 
+ (3) Designation of an individual or individuals responsible for implementing and monitoring the operations and internal controls of the program; 
+ (4) Ongoing training for appropriate persons; and 
+ (5) Appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to: 
+ (i) Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and 
+ (ii) Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information. For purposes of this paragraph (b)(5)(ii), customer information shall include information regarding the beneficial owners of legal entity customers (as defined in &#xA7; 1010.230 of this chapter); and 
+ (c) Complies with the rules, regulations, or requirements of its self-regulatory organization governing such programs; provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN. 
+ [81 FR 29457, May 11, 2016]
+ 
+ 
+
+ 
+ &#xA7; 1023.220 Customer identification programs for broker-dealers. 
+ (a) Customer identification program: minimum requirements &#x2014;(1) In general. A broker-dealer must establish, document, and maintain a written Customer Identification Program (&#x201C;CIP&#x201D;) appropriate for its size and business that, at a minimum, includes each of the requirements of paragraphs (a)(1) through (a)(5) of this section. The CIP must be a part of the broker-dealer's anti-money laundering compliance program required under 31 U.S.C. 5318(h). 
+ (2) Identity verification procedures. The CIP must include risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable. The procedures must enable the broker-dealer to form a reasonable belief that it knows the true identity of each customer. The procedures must be based on the broker-dealer's assessment of the relevant risks, including those presented by the various types of accounts maintained by the broker-dealer, the various methods of opening accounts provided by the broker-dealer, the various types of identifying information available and the broker-dealer's size, location and customer base. At a minimum, these procedures must contain the elements described in this paragraph (a)(2). 
+ (i)(A) Customer information required. The CIP must contain procedures for opening an account that specify identifying information that will be obtained from each customer. Except as permitted by paragraph (a)(2)(i)(B) of this section, the broker-dealer must obtain, at a minimum, the following information prior to opening an account: 
+ ( 1 ) Name; 
+ ( 2 ) Date of birth, for an individual; 
+ ( 3 ) Address, which shall be: 
+ ( i ) For an individual, a residential or business street address; 
+ ( ii ) for an individual who does not have a residential or business street address, an Army Post Office (APO) or Fleet Post Office (FPO) box number, or the residential or business street address of a next of kin or another contact individual; or 
+ ( iii ) for a person other than an individual (such as a corporation, partnership or trust), a principal place of business, local office or other physical location; and 
+ ( 4 ) Identification number, which shall be: 
+ ( i ) For a U.S. person, a taxpayer identification number; or 
+ ( ii ) for a non-U.S. person, one or more of the following: A taxpayer identification number, a passport number and country of issuance, an alien identification card number, or the number and country of issuance of any other government-issued document evidencing nationality or residence and bearing a photograph or similar safeguard. 
+ 
+ Note to paragraph ( a )(2)( i )(A)( 4 )( ii ): 
+ When opening an account for a foreign business or enterprise that does not have an identification number, the broker-dealer must request alternative government-issued documentation certifying the existence of the business or enterprise. 
+ (B) Exception for persons applying for a taxpayer identification number. Instead of obtaining a taxpayer identification number from a customer prior to opening an account, the CIP may include procedures for opening an account for a customer that has applied for, but has not received, a taxpayer identification number. In this case, the CIP must include procedures to confirm that the application was filed before the customer opens the account and to obtain the taxpayer identification number within a reasonable period of time after the account is opened. 
+ (ii) Customer verification. The CIP must contain procedures for verifying the identity of each customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time before or after the customer's account is opened. The procedures must describe when the broker-dealer will use documents, non-documentary methods, or a combination of both methods, as described in this paragraph (a)(2)(ii). 
+ (A) Verification through documents. For a broker-dealer relying on documents, the CIP must contain procedures that set forth the documents the broker-dealer will use. These documents may include: 
+ ( 1 ) For an individual, an unexpired government-issued identification evidencing nationality or residence and bearing a photograph or similar safeguard, such as a driver's license or passport; and 
+ ( 2 ) For a person other than an individual (such as a corporation, partnership or trust), documents showing the existence of the entity, such as certified articles of incorporation, a government-issued business license, a partnership agreement, or a trust instrument. 
+ (B) Verification through non-documentary methods. For a broker-dealer relying on non-documentary methods, the CIP must contain procedures that set forth the non-documentary methods the broker-dealer will use. 
+ ( 1 ) These methods may include contacting a customer; independently verifying the customer's identity through the comparison of information provided by the customer with information obtained from a consumer reporting agency, public database, or other source; checking references with other financial institutions; or obtaining a financial statement. 
+ ( 2 ) The broker-dealer's non-documentary procedures must address situations where an individual is unable to present an unexpired government-issued identification document that bears a photograph or similar safeguard; the broker-dealer is not familiar with the documents presented; the account is opened without obtaining documents; the customer opens the account without appearing in person at the broker-dealer; and where the broker-dealer is otherwise presented with circumstances that increase the risk that the broker-dealer will be unable to verify the true identity of a customer through documents. 
+ (C) Additional verification for certain customers. The CIP must address situations where, based on the broker-dealer's risk assessment of a new account opened by a customer that is not an individual, the broker-dealer will obtain information about individuals with authority or control over such account. This verification method applies only when the broker-dealer cannot verify the customer's true identity using the verification methods described in paragraphs (a)(2)(ii)(A) and (B) of this section. 
+ (iii) Lack of verification. The CIP must include procedures for responding to circumstances in which the broker-dealer cannot form a reasonable belief that it knows the true identity of a customer. These procedures should describe: 
+ (A) When the broker-dealer should not open an account; 
+ (B) The terms under which a customer may conduct transactions while the broker-dealer attempts to verify the customer's identity; 
+ (C) When the broker-dealer should close an account after attempts to verify a customer's identity fail; and 
+ (D) When the broker-dealer should file a Suspicious Activity Report in accordance with applicable law and regulation. 
+ (3) Recordkeeping. The CIP must include procedures for making and maintaining a record of all information obtained under procedures implementing paragraph (a) of this section. 
+ (i) Required records. At a minimum, the record must include: 
+ (A) All identifying information about a customer obtained under paragraph (a)(2)(i) of this section, 
+ (B) A description of any document that was relied on under paragraph (a)(2)(ii)(A) of this section noting the type of document, any identification number contained in the document, the place of issuance, and if any, the date of issuance and expiration date; 
+ (C) A description of the methods and the results of any measures undertaken to verify the identity of a customer under paragraphs (a)(2)(ii)(B) and (C) of this section; and 
+ (D) A description of the resolution of each substantive discrepancy discovered when verifying the identifying information obtained. 
+ (ii) Retention of records. The broker-dealer must retain the records made under paragraph (a)(3)(i)(A) of this section for five years after the account is closed and the records made under paragraphs (a)(3)(i)(B), (C) and (D) of this section for five years after the record is made. In all other respects, the records must be maintained pursuant to the provisions of 17 CFR 240.17a-4. 
+ (4) Comparison with government lists. The CIP must include procedures for determining whether a customer appears on any list of known or suspected terrorists or terrorist organizations issued by any Federal government agency and designated as such by Treasury in consultation with the Federal functional regulators. The procedures must require the broker-dealer to make such a determination within a reasonable period of time after the account is opened, or earlier if required by another Federal law or regulation or Federal directive issued in connection with the applicable list. The procedures also must require the broker-dealer to follow all Federal directives issued in connection with such lists. 
+ (5)(i) Customer notice. The CIP must include procedures for providing customers with adequate notice that the broker-dealer is requesting information to verify their identities. 
+ (ii) Adequate notice. Notice is adequate if the broker-dealer generally describes the identification requirements of this section and provides such notice in a manner reasonably designed to ensure that a customer is able to view the notice, or is otherwise given notice, before opening an account. For example, depending upon the manner in which the account is opened, a broker-dealer may post a notice in the lobby or on its Web site, include the notice on its account applications or use any other form of oral or written notice. 
+ (iii) Sample notice. If appropriate, a broker-dealer may use the following sample language to provide notice to its customers: 
+ 
+ Important Information About Procedures for Opening a New Account
+ 
+ To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. 
+ What this means for you: When you open an account, we will ask for your name, address, date of birth and other information that will allow us to identify you. We may also ask to see your driver's license or other identifying documents. 
+ (6) Reliance on another financial institution. The CIP may include procedures specifying when the broker-dealer will rely on the performance by another financial institution (including an affiliate) of any procedures of the broker-dealer's CIP, with respect to any customer of the broker-dealer that is opening an account or has established an account or similar business relationship with the other financial institution to provide or engage in services, dealings, or other financial transactions, provided that: 
+ (i) Such reliance is reasonable under the circumstances; 
+ (ii) The other financial institution is subject to a rule implementing 31 U.S.C. 5318(h), and regulated by a Federal functional regulator; and 
+ (iii) The other financial institution enters into a contract requiring it to certify annually to the broker-dealer that it has implemented its anti-money laundering program, and that it will perform (or its agent will perform) specified requirements of the broker-dealer's CIP. 
+ (b) Exemptions. The Commission, with the concurrence of the Secretary, may by order or regulation exempt any broker-dealer that registers with the Commission pursuant to 15 U.S.C. 78o or 15 U.S.C. 78o-4 or any type of account from the requirements of this section. The Secretary, with the concurrence of the Commission, may exempt any broker-dealer that registers with the Commission pursuant to 15 U.S.C. 78o-5. In issuing such exemptions, the Commission and the Secretary shall consider whether the exemption is consistent with the purposes of the Bank Secrecy Act, and in the public interest, and may consider other necessary and appropriate factors. 
+ (c) Other requirements unaffected. Nothing in this section relieves a broker-dealer of its obligation to comply with any other provision of this chapter, including provisions concerning information that must be obtained, verified, or maintained in connection with any account or transaction. 
+ 
+
+ 
+ 
+ Subpart C&#x2014;Reports Required To Be Made By Brokers or Dealers in Securities 
+ 
+ &#xA7; 1023.300 General. 
+ Brokers or dealers in securities are subject to the reporting requirements set forth and cross referenced in this subpart. Brokers or dealers in securities should also refer to subpart C of part 1010 of this chapter for reporting requirements contained in that subpart which apply to brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.310 Reports of transactions in currency. 
+ The reports of transactions in currency requirements for brokers or dealers in securities are located in subpart C of part 1010 of this chapter and this subpart. 
+ 
+
+ 
+ &#xA7; 1023.311 Filing obligations. 
+ Refer to &#xA7; 1010.311 of this chapter for reports of transactions in currency filing obligations for brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.312 Identification required. 
+ Refer to &#xA7; 1010.312 of this chapter for identification requirements for reports of transactions in currency filed by brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.313 Aggregation. 
+ Refer to &#xA7; 1010.313 of this chapter for reports of transactions in currency aggregation requirements for brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.314 Structured transactions. 
+ Refer to &#xA7; 1010.314 of this chapter for rules regarding structured transactions for brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.315 Exemptions. 
+ Refer to &#xA7; 1010.315 of this chapter for exemptions from the obligation to file reports of transactions in currency for brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.320 Reports by brokers or dealers in securities of suspicious transactions. 
+ (a) General. (1) Every broker or dealer in securities within the United States (for purposes of this section, a &#x201C;broker-dealer&#x201D;) shall file with FinCEN, to the extent and in the manner required by this section, a report of any suspicious transaction relevant to a possible violation of law or regulation. A broker-dealer may also file with FinCEN a report of any suspicious transaction that it believes is relevant to the possible violation of any law or regulation but whose reporting is not required by this section. Filing a report of a suspicious transaction does not relieve a broker-dealer from the responsibility of complying with any other reporting requirements imposed by the Securities and Exchange Commission or a self-regulatory organization (&#x201C;SRO&#x201D;) (as defined in section 3(a)(26) of the Securities Exchange Act of 1934, 15 U.S.C. 78c(a)(26)). 
+ (2) A transaction requires reporting under the terms of this section if it is conducted or attempted by, at, or through a broker-dealer, it involves or aggregates funds or other assets of at least $5,000, and the broker-dealer knows, suspects, or has reason to suspect that the transaction (or a pattern of transactions of which the transaction is a part): 
+ (i) Involves funds derived from illegal activity or is intended or conducted in order to hide or disguise funds or assets derived from illegal activity (including, without limitation, the ownership, nature, source, location, or control of such funds or assets) as part of a plan to violate or evade any Federal law or regulation or to avoid any transaction reporting requirement under Federal law or regulation; 
+ (ii) Is designed, whether through structuring or other means, to evade any requirements of this chapter or of any other regulations promulgated under the Bank Secrecy Act; 
+ (iii) Has no business or apparent lawful purpose or is not the sort in which the particular customer would normally be expected to engage, and the broker-dealer knows of no reasonable explanation for the transaction after examining the available facts, including the background and possible purpose of the transaction; or 
+ (iv) Involves use of the broker-dealer to facilitate criminal activity. 
+ (3) The obligation to identify and properly and timely to report a suspicious transaction rests with each broker-dealer involved in the transaction, provided that no more than one report is required to be filed by the broker-dealers involved in a particular transaction (so long as the report filed contains all relevant facts). 
+ (b) Filing procedures &#x2014;(1) What to file. A suspicious transaction shall be reported by completing a Suspicious Activity Report (&#x201C;SAR&#x201D;), and collecting and maintaining supporting documentation as required by paragraph (d) of this section. 
+ (2) Where to file. The SAR shall be filed with FinCEN in a central location, to be determined by FinCEN, as indicated in the instructions to the SAR. 
+ (3) When to file. A SAR shall be filed no later than 30 calendar days after the date of the initial detection by the reporting broker-dealer of facts that may constitute a basis for filing a SAR under this section. If no suspect is identified on the date of such initial detection, a broker-dealer may delay filing a SAR for an additional 30 calendar days to identify a suspect, but in no case shall reporting be delayed more than 60 calendar days after the date of such initial detection. In situations involving violations that require immediate attention, such as terrorist financing or ongoing money laundering schemes, the broker-dealer shall immediately notify by telephone an appropriate law enforcement authority in addition to filing timely a SAR. Broker-dealers wishing voluntarily to report suspicious transactions that may relate to terrorist activity may call FinCEN's Financial Institutions Hotline at 1-866-556-3974 in addition to filing timely a SAR if required by this section. The broker-dealer may also, but is not required to, contact the Securities and Exchange Commission to report in such situations. 
+ (c) Exceptions. (1) A broker-dealer is not required to file a SAR to report: 
+ (i) A robbery or burglary committed or attempted of the broker-dealer that is reported to appropriate law enforcement authorities, or for lost, missing, counterfeit, or stolen securities with respect to which the broker-dealer files a report pursuant to the reporting requirements of 17 CFR 240.17f-1; 
+ (ii) A violation otherwise required to be reported under this section of any of the Federal securities laws or rules of an SRO by the broker-dealer or any of its officers, directors, employees, or other registered representatives, other than a violation of 17 CFR 240.17a-8 or 17 CFR 405.4, so long as such violation is appropriately reported to the SEC or an SRO. 
+ (2) A broker-dealer may be required to demonstrate that it has relied on an exception in paragraph (c)(1) of this section, and must maintain records of its determinations to do so for the period specified in paragraph (d) of this section. To the extent that a Form RE-3, Form U-4, or Form U-5 concerning the transaction is filed consistent with the SRO rules, a copy of that form will be a sufficient record for purposes of this paragraph (c)(2). 
+ (3) For the purposes of this paragraph (c) the term &#x201C;Federal securities laws&#x201D; means the &#x201C;securities laws,&#x201D; as that term is defined in section 3(a)(47) of the Securities Exchange Act of 1934, 15 U.S.C. 78c(a)(47), and the rules and regulations promulgated by the Securities and Exchange Commission under such laws. 
+ (d) Retention of records. A broker-dealer shall maintain a copy of any SAR filed and the original or business record equivalent of any supporting documentation for a period of five years from the date of filing the SAR. Supporting documentation shall be identified as such and maintained by the broker-dealer, and shall be deemed to have been filed with the SAR. A broker-dealer shall make all supporting documentation available to FinCEN or any Federal, State, or local law enforcement agency, or any Federal regulatory authority that examines the broker-dealer for compliance with the Bank Secrecy Act, upon request; or to any SRO that examines the broker-dealer for compliance with the requirements of this section, upon the request of the Securities and Exchange Commission. 
+ (e) Confidentiality of SARs. A SAR, and any information that would reveal the existence of a SAR, are confidential and shall not be disclosed except as authorized in this paragraph (e). For purposes of this paragraph (e) only, a SAR shall include any suspicious activity report filed with FinCEN pursuant to any regulation in this chapter. 
+ (1) Prohibition on disclosures by brokers or dealers in securities. (i) General rule. No broker-dealer, and no director, officer, employee, or agent of any broker-dealer, shall disclose a SAR or any information that would reveal the existence of a SAR. Any broker-dealer, and any director, officer, employee, or agent of any broker-dealer that is subpoenaed or otherwise requested to disclose a SAR or any information that would reveal the existence of a SAR, shall decline to produce the SAR or such information, citing this section and 31 U.S.C. 5318(g)(2)(A)(i), and shall notify FinCEN of any such request and the response thereto. 
+ (ii) Rules of construction. Provided that no person involved in any reported suspicious transaction is notified that the transaction has been reported, this paragraph (e)(1) shall not be construed as prohibiting: 
+ (A) The disclosure by a broker-dealer, or any director, officer, employee, or agent of a broker-dealer, of: 
+ ( 1 ) A SAR, or any information that would reveal the existence of a SAR, to FinCEN or any Federal, State, or local law enforcement agency, or any Federal regulatory authority that examines the broker-dealer for compliance with the Bank Secrecy Act; or to any SRO that examines the broker-dealer for compliance with the requirements of this section, upon the request of the Securities Exchange Commission; or 
+ ( 2 ) The underlying facts, transactions, and documents upon which a SAR is based, including but not limited to, disclosures: 
+ ( i ) To another financial institution, or any director, officer, employee, or agent of a financial institution, for the preparation of a joint SAR; or 
+ ( ii ) In connection with certain employment references or termination notices, to the full extent authorized in 31 U.S.C. 5318(g)(2)(B); or 
+ (B) The sharing by a broker-dealer, or any director, officer, employee, or agent of the broker-dealer, of a SAR, or any information that would reveal the existence of a SAR, within the broker-dealer's corporate organizational structure for purposes consistent with Title II of the Bank Secrecy Act as determined by regulation or in guidance. 
+ (2) Prohibition on disclosures by government authorities. A Federal, State, local, territorial, or Tribal government authority, or any director, officer, employee, or agent of any of the foregoing, shall not disclose a SAR, or any information that would reveal the existence of a SAR, except as necessary to fulfill official duties consistent with Title II of the Bank Secrecy Act. For purposes of this section, &#x201C;official duties&#x201D; shall not include the disclosure of a SAR, or any information that would reveal the existence of a SAR, in response to a request for disclosure of non-public information or a request for use in a private legal proceeding, including a request pursuant to 31 CFR 1.11. 
+ (3) Prohibition on disclosures by Self-Regulatory Organizations. Any self-regulatory organization registered with the Securities and Exchange Commission, or any director, officer, employee, or agent of any of the foregoing, shall not disclose a SAR, or any information that would reveal the existence of a SAR except as necessary to fulfill self-regulatory duties with the consent of the Securities Exchange Commission, in a manner consistent with Title II of the Bank Secrecy Act. For purposes of this section, &#x201C;self-regulatory duties&#x201D; shall not include the disclosure of a SAR, or any information that would reveal the existence of a SAR, in response to a request for disclosure of non-public information or a request for use in a private legal proceeding. 
+ (f) Limitation on liability. A broker-dealer, and any director, officer, employee, or agent of any broker-dealer, that makes a voluntary disclosure of any possible violation of law or regulation to a government agency or makes a disclosure pursuant to this section or any other authority, including a disclosure made jointly with another institution, shall be protected from liability to any person for any such disclosure, or for failure to provide notice of such disclosure to any person identified in the disclosure, or both, to the full extent provided by 31 U.S.C. 5318(g)(3). 
+ (g) Compliance. Broker-dealers shall be examined by FinCEN or its delegatees for compliance with this section. Failure to satisfy the requirements of this section may be a violation of the Bank Secrecy Act and of this chapter. 
+ (h) Applicability date. This section applies to transactions occurring after December 30, 2002. 
+ [75 FR 65812, Oct. 26, 2010, as amended at 76 FR 10519, Feb. 25, 2011; 81 FR 76865, Nov. 4, 2016]
+ 
+ 
+
+ 
+ 
+ Subpart D&#x2014;Records Required To Be Maintained by Brokers or Dealers in Securities 
+ 
+ &#xA7; 1023.400 General. 
+ Brokers or dealers in securities are subject to the recordkeeping requirements set forth and cross referenced in this subpart. Brokers or dealers in securities should also refer to subpart D of part 1010 of this chapter for recordkeeping requirements contained in that subpart which apply to brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.410 Additional records to be made and retained by brokers or dealers in securities. 
+ (a)(1) With respect to each brokerage account opened with a broker or dealer in securities after June 30, 1972, and before October 1, 2003, by a person residing or doing business in the United States or a citizen of the United States, such broker or dealer shall within 30 days from the date such account is opened, secure and maintain a record of the taxpayer identification number of the person maintaining the account; or in the case of an account of one or more individuals, such broker or dealer shall secure and maintain a record of the social security number of an individual having a financial interest in that account. In the event that a broker or dealer has been unable to secure the identification required within the 30-day period specified, it shall nevertheless not be deemed to be in violation of this section if: It has made a reasonable effort to secure such identification, and it maintains a list containing the names, addresses, and account numbers of those persons from whom it has been unable to secure such identification, and makes the names, addresses, and account numbers of those persons available to the Secretary as directed by him. Where a person is a non-resident alien, the broker or dealer in securities shall also record the person's passport number or a description of some other government document used to verify his identity. 
+ (2) The 30-day period provided for in paragraph (a)(1) of this section shall be extended where the person opening the account has applied for a taxpayer identification or social security number on Form SS-4 or SS-5, until such time as the person maintaining the account has had a reasonable opportunity to secure such number and furnish it to the broker or dealer. 
+ (3) A taxpayer identification number for a deposit or share account required under paragraph (a)(1) of this section need not be secured in the following instances: 
+ (i) Accounts for public funds opened by agencies and instrumentalities of Federal, state, local, or foreign governments, 
+ (ii) Accounts for aliens who are ambassadors, ministers, career diplomatic or consular officers, or naval, military or other attaches of foreign embassies, and legations, and for the members of their immediate families, 
+ (iii) Accounts for aliens who are accredited representatives to international organizations which are entitled to enjoy privileges, exemptions, and immunities as an international organization under the International Organizations Immunities Act of December 29, 1945 (22 U.S.C. 288), and for the members of their immediate families, 
+ (iv) Aliens temporarily residing in the United States for a period not to exceed 180 days, 
+ (v) Aliens not engaged in a trade or business in the United States who are attending a recognized college or university or any training program, supervised or conducted by any agency of the Federal Government, and 
+ (vi) Unincorporated subordinate units of a tax exempt central organization which are covered by a group exemption letter. 
+ (b) Every broker or dealer in securities shall, in addition, retain either the original or a microfilm or other copy or reproduction of each of the following: 
+ (1) Each document granting signature or trading authority over each customer's account; 
+ (2) Each record described in 17 CFR 240.17a-3(a)(1), (2), (3), (5), (6), (7), (8), and (9); 
+ (3) A record of each remittance or transfer of funds, or of currency, checks, other monetary instruments, investment securities, or credit, of more than $10,000 to a person, account, or place, outside the United States; 
+ (4) A record of each receipt of currency, other monetary instruments, checks, or investment securities and of each transfer of funds or credit, of more than $10,000 received on any one occasion directly and not through a domestic financial institution, from any person, account or place outside the United States. 
+ 
+
+ 
+ 
+ Subpart E&#x2014;Special Information Sharing Procedures To Deter Money Laundering and Terrorist Activity 
+ 
+ &#xA7; 1023.500 General. 
+ Brokers or dealers in securities are subject to the special information sharing procedures to deter money laundering and terrorist activity requirements set forth and cross referenced in this subpart. Brokers or dealers in securities should also refer to subpart E of part 1010 of this chapter for special information sharing procedures to deter money laundering and terrorist activity contained in that subpart which apply to brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.520 Special information sharing procedures to deter money laundering and terrorist activity for brokers or dealers in securities. 
+ (a) Refer to &#xA7; 1010.520 of this chapter. 
+ (b) [Reserved] 
+ 
+
+ 
+ &#xA7; 1023.530 [Reserved] 
+ 
+
+ 
+ &#xA7; 1023.540 Voluntary information sharing among financial institutions. 
+ (a) Refer to &#xA7; 1010.540 of this chapter. 
+ (b) [Reserved] 
+ 
+
+ 
+ 
+ Subpart F&#x2014;Special Standards of Diligence; Prohibitions; and Special Measures for Brokers or Dealers in Securities 
+ 
+ &#xA7; 1023.600 General. 
+ Brokers or dealers in securities are subject to the special standards of diligence; prohibitions; and special measures requirements set forth and cross referenced in this subpart. Brokers or dealers in securities should also refer to subpart F of part 1010 of this chapter for special standards of diligence; prohibitions; and special measures contained in that subpart which apply to brokers or dealers in securities. 
+ 
+
+ 
+ &#xA7; 1023.610 Due diligence programs for correspondent accounts for foreign financial institutions. 
+ (a) Refer to &#xA7; 1010.610 of this chapter. 
+ (b) [Reserved] 
+ 
+
+ 
+ &#xA7; 1023.620 Due diligence programs for private banking accounts. 
+ (a) Refer to &#xA7; 1010.620 of this chapter. 
+ (b) [Reserved] 
+ 
+
+ 
+ &#xA7; 1023.630 Prohibition on correspondent accounts for foreign shell banks; records concerning owners of foreign banks and agents for service of legal process. 
+ (a) Refer to &#xA7; 1010.630 of this chapter. 
+ (b) [Reserved] 
+ 
+
+ 
+ &#xA7; 1023.640 [Reserved] 
+ 
+
+ 
+ &#xA7; 1023.670 Summons or subpoena of foreign bank records; termination of correspondent relationship. 
+ (a) Refer to &#xA7; 1010.670 of this chapter. 
+ (b) [Reserved]

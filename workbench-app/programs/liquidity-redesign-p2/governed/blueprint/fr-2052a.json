@@ -1,0 +1,241 @@
+{
+  "item_id": "fr-2052a",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The data are used to monitor an individual organization's overall liquidity profile for institutions supervised by the Federal Reserve, providing detailed information on liquidity risks within different business lines.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The data are used to monitor an individual organization's overall liquidity profile for institutions supervised by the Federal Reserve. These data also provide detailed information on the liquidity risks within different business lines",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The data serve as part of the Federal Reserve's supervisory surveillance program in liquidity risk management, providing timely information on firm-specific liquidity risks during periods of stress.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the data serve as part of the Federal Reserve's supervisory surveillance program in its liquidity risk management area and provide timely information on firm-specific liquidity risks during periods of stress.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The report responds to the need, highlighted by the 2007-2008 financial crisis, for timely liquidity data to identify and monitor liquidity risks at individual firms and in aggregate across the financial system.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The financial crisis of 2007 and 2008 highlighted the need for timely liquidity data to identify and monitor liquidity risks at individual firms as well as in aggregate across the financial system.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Capturing intra-company flows and exposures via disaggregated, legal-entity-level views (rather than a single consolidated view) is a focus of the report, to identify vulnerabilities posed by potential impediments to the movement of liquidity across legal entities.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "A single, consolidated view is not sufficient to provide meaningful insight into an institution's liquidity profile. Rather, disaggregated views by legal entities (parent company, broker/dealer entities, bank entities etc.) have contributed to supervisory monitoring efforts and risk supervision by identifying vulnerabilities posed by potential impediments to the movement of liquidity across legal entities.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "FR2052A-OB-1",
+      "actor": "U.S. banking organizations identified as global systemically important bank holding companies, Category II banking organizations, or Category III banking organizations with average weighted short-term wholesale funding of $75 billion or more",
+      "modality": "must",
+      "action": "submit a report on each business day",
+      "trigger": "identification as GSIB, Category II, or Category III with the specified funding level",
+      "threshold": "average weighted short-term wholesale funding of $75 billion or more (for Category III filers)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "U.S. banking organizations that are identified as (1) global systemically important bank holding companies, (2) banking organizations subject to Category II standards, or (3) banking organizations subject to Category III standards with average weighted short-term wholesale funding of $75 billion or more must submit a report on each business day.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "FR2052A-OB-2",
+      "actor": "U.S. banking organizations identified as Category III (with average weighted short-term wholesale funding of less than $75 billion) or Category IV banking organizations",
+      "modality": "must",
+      "action": "submit a report monthly",
+      "trigger": "identification as Category III below the funding threshold, or Category IV",
+      "threshold": "average weighted short-term wholesale funding of less than $75 billion (for Category III filers)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "U.S. banking organizations that are identified as (1) banking organizations subject to Category III standards with average weighted short-term wholesale funding of less than $75 billion, or (2) banking organizations subject to Category IV standards must submit a report monthly.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "FR2052A-OB-3",
+      "actor": "Foreign banking organizations identified as Category II, or Category III with average weighted short-term wholesale funding of $75 billion or more",
+      "modality": "must",
+      "action": "submit a report on each business day",
+      "trigger": "identification as Category II FBO, or Category III FBO with the specified funding level",
+      "threshold": "average weighted short-term wholesale funding of $75 billion or more (for Category III filers)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Foreign banking organizations identified as (1) foreign banking organizations subject to Category II standards, or (2) foreign banking organizations subject to Category III standards with average weighted short-term wholesale funding of $75 billion or more must submit a report on each business day.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "FR2052A-OB-4",
+      "actor": "Foreign banking organizations identified as Category III (below $75 billion threshold) or Category IV",
+      "modality": "must",
+      "action": "submit a report monthly",
+      "trigger": "identification as Category III FBO below the funding threshold, or Category IV FBO",
+      "threshold": "average weighted short-term wholesale funding of less than $75 billion (for Category III filers)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Foreign banking organizations identified as (1) foreign banking organizations subject to Category III standards with average weighted short-term wholesale funding of less than $75 billion, or (2) foreign banking organizations subject to Category IV standards must submit a report monthly.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "FR2052A-OB-5",
+      "actor": "the Board",
+      "modality": "conditional",
+      "action": "temporarily require FR 2052a liquidity data from monthly filers on a more frequent basis",
+      "trigger": "periods of stress",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Consistent with current supervisory authority and processes, the Board, during periods of stress, may temporarily require FR 2052a liquidity data from monthly filers on a more frequent basis.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "FR2052A-OB-6",
+      "actor": "Federal Reserve (with respect to micro data from the FR 2052a)",
+      "modality": "conditional",
+      "action": "treat micro data as confidential and not publish it",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Micro data from the FR 2052a are considered confidential and are not published.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "FR 2052a report",
+      "definition": "Collects quantitative information on selected assets, liabilities, funding activities, and contingent liabilities on a consolidated basis and by material entity subsidiary; comprises sections covering broad funding classifications by product, outstanding balance and purpose, segmented by maturity date.",
+      "citations": [
+        {
+          "quote": "The FR 2052a report collects quantitative information on selected assets, liabilities, funding activities, and contingent liabilities on a consolidated basis and by material entity subsidiary. The FR 2052a comprises sections covering broad funding classifications by product, outstanding balance and purpose, segmented by maturity date.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Respondent Panel",
+      "definition": "Banking organizations subject to Category I, II, III, or IV standards under the Board's Regulation YY and Regulation LL, including specified top-tier U.S. bank holding companies, top-tier U.S. savings and loan holding companies, and foreign banking organizations meeting stated asset thresholds.",
+      "citations": [
+        {
+          "quote": "The FR 2052a is filed by banking organizations subject to Category I, II, III, or IV standards under the Board's Regulation YY and Regulation LL.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Category I, II, III, or IV standards",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "banking organizations subject to Category I, II, III, or IV standards under the Board's Regulation YY and Regulation LL",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "material entity subsidiary",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "on a consolidated basis and by material entity subsidiary",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "average weighted short-term wholesale funding",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "average weighted short-term wholesale funding of $75 billion or more",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "covered depository institution holding company",
+      "definition": "as defined by the Liquidity Coverage Ratio and Net Stable Funding Ratio rules (definition not reproduced in this source)",
+      "citations": [
+        {
+          "quote": "a covered depository institution holding company as defined by the Liquidity Coverage Ratio and Net Stable Funding Ratio rules",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The FR 2052a respondent panel is defined by reference to the Board's Regulation YY and Regulation LL categorical standards (Category I-IV).",
+      "references": [
+        "Regulation YY",
+        "Regulation LL"
+      ],
+      "citations": [
+        {
+          "quote": "The FR 2052a is filed by banking organizations subject to Category I, II, III, or IV standards under the Board's Regulation YY and Regulation LL.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The definition of 'covered depository institution holding company' used to determine savings and loan holding company respondents is imported from the Liquidity Coverage Ratio and Net Stable Funding Ratio rules.",
+      "references": [
+        "Liquidity Coverage Ratio rule",
+        "Net Stable Funding Ratio rule"
+      ],
+      "citations": [
+        {
+          "quote": "a covered depository institution holding company as defined by the Liquidity Coverage Ratio and Net Stable Funding Ratio rules",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Foreign banking organization status/scope for respondent panel purposes is defined by reference to the Board's Regulation YY.",
+      "references": [
+        "Regulation YY"
+      ],
+      "citations": [
+        {
+          "quote": "any foreign banking organization, as defined by the Board's Regulation YY, with combined U.S. assets of $100 billion or more",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is the Federal Reserve's public description page for the FR 2052a form (not the full instructions/reporting schedules), so only the timing/granularity/reporting-frequency and confidentiality content bears directly on the ratified scope (liquidity reporting's contribution to detection speed). Frequency tiers and thresholds ($100 billion assets; $75 billion short-term wholesale funding; Category I-IV) are reproduced exactly as given; the source itself does not define 'Category I, II, III, or IV standards,' 'material entity subsidiary,' or 'average weighted short-term wholesale funding,' so these are recorded as undefined-here per the definitions rule. No content in this source addresses discount-window/FHLB interoperability, discount-window stigma, Call Report timing specifically, or the Hsu/McKernan reform proposals; such topics are outside what this particular item contains and are not fabricated here. The monthly-vs-daily reporting cadence and the Board's only-temporary/discretionary authority to accelerate frequency during stress, plus the non-publication of micro data, are preserved verbatim as structural features relevant to the defect register without characterizing them further, per the fidelity rule."
+}

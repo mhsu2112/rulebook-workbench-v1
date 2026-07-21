@@ -1,0 +1,365 @@
+{
+  "item_id": "31-cfr-1022",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Money services businesses are subject to the program requirements set forth and cross referenced in this subpart.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Money services businesses are subject to the program requirements set forth and cross referenced in this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "An effective anti-money laundering program is one that is reasonably designed to prevent the money services business from being used to facilitate money laundering and the financing of terrorist activities.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "An effective anti-money laundering program is one that is reasonably designed to prevent the money services business from being used to facilitate money laundering and the financing of terrorist activities.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "O1",
+      "actor": "money services business (as defined by \u00a7 1010.100(ff))",
+      "modality": "must",
+      "action": "develop, implement, and maintain an effective anti-money laundering program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "shall develop, implement, and maintain an effective anti-money laundering program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O2",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "make the AML program's design commensurate with the risks posed by the location and size of, and the nature and volume of the financial services provided by, the business",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The program shall be commensurate with the risks posed by the location and size of, and the nature and volume of the financial services provided by, the money services business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O3",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "maintain the AML program in writing",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The program shall be in writing, and a money services business shall make copies of the anti-money laundering program available for inspection to the Department of the Treasury upon request.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O4",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "make copies of the anti-money laundering program available for inspection to the Department of the Treasury",
+      "trigger": "upon request",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The program shall be in writing, and a money services business shall make copies of the anti-money laundering program available for inspection to the Department of the Treasury upon request.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O5",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "incorporate policies, procedures, and internal controls reasonably designed to assure compliance with this chapter, at a minimum",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Incorporate policies, procedures, and internal controls reasonably designed to assure compliance with this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O6",
+      "actor": "provider or seller of prepaid access (that is a money services business)",
+      "modality": "must",
+      "action": "establish procedures to verify the identity of a person who obtains prepaid access under a prepaid program and obtain identifying information (name, date of birth, address, identification number)",
+      "trigger": "a person obtains prepaid access under a prepaid program",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A money services business that is a provider or seller of prepaid access must establish procedures to verify the identity of a person who obtains prepaid access under a prepaid program and obtain identifying information concerning such a person, including name, date of birth, address, and identification number.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O7",
+      "actor": "seller of prepaid access",
+      "modality": "must",
+      "action": "establish procedures to verify the identity of a person who obtains prepaid access to funds and obtain identifying information (name, date of birth, address, identification number)",
+      "trigger": "person obtains prepaid access to funds",
+      "threshold": "funds that exceed $10,000 during any one day",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Sellers of prepaid access must also establish procedures to verify the identity of a person who obtains prepaid access to funds that exceed $10,000 during any one day and obtain identifying information concerning such a person, including name, date of birth, address, and identification number.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O8",
+      "actor": "provider of prepaid access",
+      "modality": "must",
+      "action": "retain access to identifying information",
+      "trigger": "last use of the prepaid access device or vehicle",
+      "threshold": "five years after the last use",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Providers of prepaid access must retain access to such identifying information for five years after the last use of the prepaid access device or vehicle; such information obtained by sellers of prepaid access must be retained for five years from the date of the sale of the prepaid access device or vehicle.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O9",
+      "actor": "seller of prepaid access",
+      "modality": "must",
+      "action": "retain identifying information obtained",
+      "trigger": "date of the sale of the prepaid access device or vehicle",
+      "threshold": "five years from the date of sale",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Providers of prepaid access must retain access to such identifying information for five years after the last use of the prepaid access device or vehicle; such information obtained by sellers of prepaid access must be retained for five years from the date of the sale of the prepaid access device or vehicle.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O10",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "designate a person to assure day to day compliance with the program and this chapter",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate a person to assure day to day compliance with the program and this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O11",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "provide education and/or training of appropriate personnel concerning their responsibilities under the program, including training in the detection of suspicious transactions to the extent reporting is required",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide education and/or training of appropriate personnel concerning their responsibilities under the program, including training in the detection of suspicious transactions to the extent that the money services business is required to report such transactions under this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O12",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "provide for independent review to monitor and maintain an adequate program, with scope and frequency commensurate with risk; reviewer may be an officer or employee who is not the person designated under paragraph (d)(2)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "review may be conducted by an officer or employee of the money services business so long as the reviewer is not the person designated in paragraph (d)(2)"
+      ],
+      "citations": [
+        {
+          "quote": "Provide for independent review to monitor and maintain an adequate program.",
+          "verified": true
+        },
+        {
+          "quote": "The scope and frequency of the review shall be commensurate with the risk of the financial services provided by the money services business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O13",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "develop and implement an anti-money laundering program that complies with the requirements of this section",
+      "trigger": "the business is established",
+      "threshold": "on or before the later of July 24, 2002, and the end of the 90-day period beginning on the day following the date the business is established",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A money services business must develop and implement an anti-money laundering program that complies with the requirements of this section on or before the later of July 24, 2002, and the end of the 90-day period beginning on the day following the date the business is established.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O14",
+      "actor": "agent-only money services business and its principal money services business",
+      "modality": "conditional",
+      "action": "may by agreement allocate between them responsibility for development of policies, procedures, and internal controls required by paragraph (d)(1)",
+      "trigger": "person is a money services business solely because it is an agent under \u00a7 1022.380(a)(3)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "may by agreement allocate between them responsibility for development of policies, procedures, and internal controls required by this paragraph (d)(1).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O15",
+      "actor": "money services business",
+      "modality": "must",
+      "action": "remain solely responsible for implementation of the requirements of this section notwithstanding any allocation agreement with an agent",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each money services business shall remain solely responsible for implementation of the requirements set forth in this section, and nothing in this paragraph (d)(1) relieves any money services business from its obligation to establish and maintain an effective anti-money laundering program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O16",
+      "actor": "money services business with automated data processing systems",
+      "modality": "should",
+      "action": "integrate compliance procedures with such automated data processing systems",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Money services businesses that have automated data processing systems should integrate their compliance procedures with such systems.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "effective anti-money laundering program",
+      "definition": "one that is reasonably designed to prevent the money services business from being used to facilitate money laundering and the financing of terrorist activities",
+      "citations": [
+        {
+          "quote": "An effective anti-money laundering program is one that is reasonably designed to prevent the money services business from being used to facilitate money laundering and the financing of terrorist activities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money services business",
+      "definition": "(undefined here) \u2014 defined by cross-reference to \u00a7 1010.100(ff) of this chapter",
+      "citations": [
+        {
+          "quote": "Each money services business, as defined by &#xA7; 1010.100(ff) of this chapter, shall develop, implement, and maintain an effective anti-money laundering program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "provider of prepaid access",
+      "definition": "(undefined here) \u2014 term used in the program section without an internal definition; cross-referenced elsewhere to \u00a7 1010.100(ff)(4)",
+      "citations": [
+        {
+          "quote": "A money services business that is a provider or seller of prepaid access must establish procedures to verify the identity of a person who obtains prepaid access under a prepaid program and obtain identifying information concerning such a person, including name, date of birth, address, and identification number.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "seller of prepaid access",
+      "definition": "(undefined here) \u2014 term used in the program section without an internal definition; cross-referenced elsewhere to \u00a7 1010.100(ff)(7)",
+      "citations": [
+        {
+          "quote": "Sellers of prepaid access must also establish procedures to verify the identity of a person who obtains prepaid access to funds that exceed $10,000 during any one day and obtain identifying information concerning such a person, including name, date of birth, address, and identification number.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "agent",
+      "definition": "(undefined here) \u2014 status determined by facts and circumstances; cross-referenced to \u00a7 1022.380",
+      "citations": [
+        {
+          "quote": "A person that is a money services business solely because it is an agent for another money services business as set forth in &#xA7; 1022.380(a)(3), and the money services business for which it serves as agent, may by agreement allocate between them responsibility for development of policies, procedures, and internal controls required by this paragraph (d)(1).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "MSB program-requirements subpart directs users also to the general (cross-sector) program requirements of 31 CFR part 1010, subpart B, which apply to money services businesses.",
+      "references": [
+        "31 CFR 1010 Subpart B"
+      ],
+      "citations": [
+        {
+          "quote": "Money services businesses should also refer to subpart B of part 1010 of this chapter for program requirements contained in that subpart which apply to money services businesses.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Definitions section of Part 1022 defers to the general definitions of Part 1010 for terms not separately defined in Part 1022, including the definition of 'money services business' itself.",
+      "references": [
+        "31 CFR 1010.100"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to &#xA7; 1010.100 of this chapter for general definitions not noted herein.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The agent-allocation provision for AML program policies/procedures/internal controls cross-references the agent status/registration-exemption provision in \u00a7 1022.380(a)(3).",
+      "references": [
+        "31 CFR 1022.380(a)(3)"
+      ],
+      "citations": [
+        {
+          "quote": "A person that is a money services business solely because it is an agent for another money services business as set forth in &#xA7; 1022.380(a)(3), and the money services business for which it serves as agent, may by agreement allocate between them responsibility for development of policies, procedures, and internal controls required by this paragraph (d)(1).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Extraction is confined to the AML program/'pillars' establishment obligations for money services businesses in 31 CFR 1022 Subpart B (\u00a7\u00a71022.200, 1022.210), consistent with ratified scope. Subparts C (Reports/SARs), D (Records), and E/F (information sharing, special standards/measures) are treated as coordination-layer or boundary material (SAR/CTR/CDD operational duties; recordkeeping) and are excluded from the obligation table per the ratified scope, though \u00a71022.380 (registration) was likewise excluded as a non-'program' BSA duty; these sections are noted only where directly cross-referenced from the Programs subpart. The text mixes 'shall' and 'must' within the same section (e.g., \u00a71022.210(a) uses 'shall'; \u00a71022.210(d)(1)(iv) uses 'must' for prepaid-access provisions); both are preserved as written and mapped to modality 'must' without harmonizing the verb choice, per the fidelity rule. The agent-allocation clause in \u00a71022.210(d)(1)(iii) uses permissive 'may' for allocating responsibility while simultaneously imposing a non-relievable 'shall remain solely responsible' duty on each MSB; this internal tension is preserved as written (see O14/O15) rather than resolved. Cross-reference quotes retain the source's literal HTML entity rendering (e.g., '&#xA7;') exactly as it appears in the provided source text, per the verbatim-quote requirement."
+}

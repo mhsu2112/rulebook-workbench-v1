@@ -1,0 +1,23 @@
+FFIEC BSA/AML Examination Manual — Assessing the BSA/AML Compliance Program
+[Acquired via browser-assisted rendering, 2026-07-19; source: https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/01]
+
+ASSESSING THE BSA/AML COMPLIANCE PROGRAM
+
+Objective: Assess whether the bank has designed, implemented, and maintains an adequate BSA/AML compliance program that complies with BSA regulatory requirements.
+
+Banks must establish and maintain procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements (BSA/AML compliance program).[9] The BSA/AML compliance program[10] must be written, approved by the board of directors,[11] and noted in the board minutes. To achieve the purposes of the BSA, the BSA/AML compliance program should be commensurate with the bank's ML/TF and other illicit financial activity risk profile. Refer to the BSA/AML Risk Assessment section and Appendix I - Risk Assessment Link to the BSA/AML Compliance Program for more information.
+
+Written policies, procedures, and processes alone are not sufficient to have an adequate BSA/AML compliance program; practices that correspond with the bank's written policies, procedures, and processes are needed for implementation. Importantly, policies, procedures, processes, and practices should align with the bank's unique ML/TF and other illicit financial activity risk profile. The BSA/AML compliance program must provide for the following requirements:[12]
+
+A system of internal controls to assure ongoing compliance.
+Independent testing for compliance to be conducted by bank personnel or by an outside party.
+Designation of an individual or individuals responsible for coordinating and monitoring day-to-day compliance (BSA compliance officer).
+Training for appropriate personnel.
+
+In addition, the BSA/AML compliance program must include a customer identification program (CIP) with risk-based procedures that enable the bank to form a reasonable belief that it knows the true identity of its customers. The BSA/AML compliance program must also include appropriate risk-based procedures for conducting ongoing customer due diligence (CDD) and complying with beneficial ownership requirements for legal entity customers as set forth in regulations issued by Financial Crimes Enforcement Network (FinCEN). Refer to the Customer Identification Program, Customer Due Diligence, and Beneficial Ownership Requirements for Legal Entity Customers sections for more information.
+
+The assessment of the adequacy of the bank's BSA/AML compliance program is bank-specific, and examiners should consider all pertinent information. A review of the bank's written policies, procedures, and processes is a first step in determining the overall adequacy of the BSA/AML compliance program. The completion of examination and testing procedures is necessary to support overall conclusions regarding the BSA/AML compliance program. BSA/AML examination findings should be discussed with relevant bank management, and findings must be included in the report of examination (ROE) or supervisory correspondence.
+
+Preliminary Evaluation
+
+Once examiners complete the review of the bank's BSA/AML compliance program, they should develop and document a preliminary assessment of the bank's program. At this point, examiners should revisit the initial BSA/AML examination plan to determine whether additional areas of review are necessary to assess the adequacy of the bank's BSA/AML compliance program, relative to its risk profile, and the bank's compliance with BSA regulatory requirements. These adjustments to the initial examination plan could be based on information identified during the review, such as a new product or business line at the bank or independent testing report findings. Examiners should document and support any changes to the examination plan, if necessary, then proceed to the applicable examination and testing procedures in Assessing Compliance with BSA Regulatory Requirements, Risks Associated with Money Laundering and Terrorist Financing, and Office of Foreign Assets Control. Once all relevant examination and testing procedures are completed as documented in the examination plan, examiners should proceed to Developing Conclusions and Finalizing the Examination.

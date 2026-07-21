@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Enforcement Actions Search | OCC</title>
+  <meta name="description" content="Enforcement Actions Search. Office of the Comptroller of the Currency (OCC)">
+  <link href="/EASearch/assets/img/occ-seal.gif" rel="icon">
+
+
+
+  <link rel="preload" href="https://occ.gov/fonts/merriweather/Latin-Merriweather-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://occ.gov/fonts/open-sans/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://occ.gov/fonts/open-sans/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://occ.gov/fonts/open-sans/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://occ.gov/fonts/fontawesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+  
+  <link href="/EASearch/assets/css/lib?v=F0YfNyygDRlrAzzX8tus0W6zh5zAHJ0wJsXWibGx1Ek1" rel="stylesheet"/>
+
+
+  <link href="https://occ.gov/css/import.css" rel="stylesheet">
+  <link href="/EASearch/css/site?v=udNwWsOkdP8smKAyaIruHi_CikhdC3AnmGk86OFCWUw1" rel="stylesheet"/>
+
+
+  <script src="/EASearch/assets/js/lib?v=89Q1yn808_VtE8XMqfueV1_UVN6TtpjDE31x5Q267RU1"></script>
+
+  <script src="/EASearch/assets/js/lib-ex?v=gtGQT70_aSjTO30ZFD4Z2b53nXf8L-pDyKtozY3K5RA1"></script>
+
+  <script src="/EASearch/js/site-init?v=AYhmvapUyc7uPW5R-iySvJdt24uZXm5Tdy8JLyPS7O81"></script>
+
+  <script>occApp.EAS.baseHref = '/EASearch';</script>
+  <script src="https://occ.gov/scripts/environment-ext.js"></script>
+
+  <script async src="https://occ.gov/scripts/google-analytics.js"></script>
+  <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+  <script async src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=OCC" id="_fed_an_ua_tag"></script>
+  
+  <script>CE_NO_COOKIES = true;</script>
+</head>
+
+<body id="nav-pubson">
+  
+
+
+<header id="defaultHeader">
+  
+  <a href="https://occ.gov">
+    <img src="/EASearch/assets/img/occ-logo-des.svg" alt="Office of the Comptroller of the Currency">
+  </a>
+</header>
+
+<div id="defaultMessage" style="display:none"></div>
+
+
+  <section id="site-content" class="usa-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+
+        <section id="occgov_content_section" class="usa-layout-docs__main grid-col usa-layout-docs">
+          <h1 class="margin-top-05">Enforcement Actions Search</h1>
+          
+
+          <main id="main_content">
+            
+
+
+<div class="enforcement-actions table-view">
+<form action="/EASearch/" id="simpleForm" method="get">
+
+
+
+<section class="simple-search">
+  <div class="margin-bottom-2">
+    <label for="inputSearchS" class="usa-label display-inline maxw-auto">
+      Enter a bank name, person's name, city, state, or other details.
+      <button type="button" class="tooltip-open" aria-label="Show Help">
+        <span class="fa fa-lg fa-question-circle" aria-hidden="true"></span>
+      </button>
+    </label>
+
+    <div class="tooltip-info usa-alert usa-alert--info usa-alert--no-icon" role="status" style="display:none">
+      <button type="button" class="tooltip-close" aria-label="Close Help">
+        <span class="fa fa-lg fa-window-close" aria-hidden="true"></span>
+      </button>
+      <div class="usa-alert__body">
+        <h4 class="usa-alert__heading">Help</h4>
+        <p class="usa-alert__text">
+          Enter details to help find enforcement actions.<br /><br />
+          <b>Example #1:</b> John Doe, New York, NY<br />
+          
+          <b>Example #2:</b> Woodgrove Bank, civil money penalty<br />
+          <b>Example #3:</b> Contoso Ltd., formal agreements, 2015<br /><br />
+          Use the Advanced Search to select a date range.<br />
+          To only return all records, leave the search field empty.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-row margin-top-05">
+      <div class="grid-col-fill">
+        <input class="usa-input maxw-full" id="inputSearchS" name="q" placeholder="Search enforcement actions" type="search" value="" />
+      </div>
+      <div class="grid-col-auto">
+        <button id="btnSimpleSearch" type="submit" title="Search">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row grid-gap flex-align-center margin-bottom-2">
+    <div class="grid-col-fill display-flex flex-align-center">
+      
+      <div id="simpleProgress" class="font-body-xs" style="display:none">Loading<span aria-hidden="true">...</span></div>
+      <div class="category-info">
+        <span>Search within</span>
+        <span class="category-details text-bold">Bank Name</span>
+      </div>
+    </div>
+    <div class="grid-col-auto">  
+      <a href="javascript:void(0)" id="showAdvancedSearch" class="action-link" aria-label="Show Advanced Search" role="button">Advanced<span aria-hidden="true">...</span></a>
+    </div>
+  </div>
+
+  
+  
+</section>
+</form>
+<form action="/EASearch/" id="advancedForm" method="get"><section class="slider advanced-search" style="display:none">
+  <h2>Advanced Search</h2>
+  
+  <div class="margin-bottom-2">
+    <label for="inputSearchA" class="usa-label display-inline maxw-auto">
+      Enter a bank name, person's name, city, state, or other details.
+      <button type="button" class="tooltip-open" aria-label="Show Help">
+        <span class="fa fa-lg fa-question-circle" aria-hidden="true"></span>
+      </button>
+    </label>
+
+    <div class="tooltip-info usa-alert usa-alert--info usa-alert--no-icon" role="status" style="display:none">
+      <button type="button" class="tooltip-close" aria-label="Close Help">
+        <span class="fa fa-lg fa-window-close" aria-hidden="true"></span>
+      </button>
+      <div class="usa-alert__body">
+        <h4 class="usa-alert__heading">Help</h4>
+        <p class="usa-alert__text">
+          Enter details to help find enforcement actions.<br /><br />
+          <b>Example #1:</b> John Doe, New York, NY<br />
+                      
+          <b>Example #2:</b> Woodgrove Bank, civil money penalty<br />
+          <b>Example #3:</b> Contoso Ltd., formal agreements, 2015<br /><br />
+          Use the Advanced Search to select a date range.<br />
+          To only return all records, leave the search field empty.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-row margin-top-05">
+      <div class="grid-col-fill">
+        <input class="usa-input maxw-full advanced-input" id="inputSearchA" name="q" placeholder="Search enforcement actions" type="search" value="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row grid-gap flex-align-center margin-bottom-2">
+    <div class="grid-col-fill display-flex flex-align-center">
+      <div class="search-spinner-element search-spinner" style="display:none"></div>
+      <div id="advancedProgress" class="font-body-xs" style="display:none">Loading<span aria-hidden="true">...</span></div>
+      <div class="category-info">
+        <span>Search within</span>
+        <span class="category-details text-bold">Bank Name</span>
+      </div>
+    </div>
+    <div class="grid-col-auto">
+      <a href="javascript:void(0)" id="showSimpleSearch" class="action-link" aria-label="Show Simple Search" role="button">Close Advanced<span aria-hidden="true">...</span></a>
+    </div>
+  </div>
+
+  <div class="relative">
+    <div class="margin-bottom-2">
+      <fieldset class="date-ranges">
+        <legend class="usa-sr-only">Date Ranges:</legend>
+        <div class="date-range">
+          
+          <div class="usa-label margin-top-1">Start Date Range:</div>
+          <div class="mobile-lg:display-inline">
+            <input aria-label="Enter Beginning Start Date, format as mm/dd/yyyy" class="usa-input date begin-date" data-val="true" data-val-required="The startDteMin field is required." id="startDteMin" name="startDteMin" placeholder="mm/dd/yyyy" type="text" value="" />
+          </div>
+          <div class="mobile-lg:display-inline mobile-lg:margin-left-2">
+            <input aria-label="Enter Ending Start Date, format as mm/dd/yyyy" class="usa-input date end-date" data-val="true" data-val-required="The startDteMax field is required." id="startDteMax" name="startDteMax" placeholder="mm/dd/yyyy" type="text" value="" />
+          </div>
+        </div>
+        <div class="date-range">
+          
+          <div class="usa-label margin-top-1">Termination Date Range:</div>
+          <div class="mobile-lg:display-inline">
+            <input aria-label="Enter Beginning Termination Date, format as mm/dd/yyyy" class="usa-input date begin-date" data-val="true" data-val-required="The termDteMin field is required." id="termDteMin" name="termDteMin" placeholder="mm/dd/yyyy" type="text" value="" />
+          </div>
+          <div class="mobile-lg:display-inline mobile-lg:margin-left-2">
+            <input aria-label="Enter Ending Termination Date, format as mm/dd/yyyy" class="usa-input date end-date" data-val="true" data-val-required="The termDteMax field is required." id="termDteMax" name="termDteMax" placeholder="mm/dd/yyyy" type="text" value="" />
+          </div>
+        </div>
+        <div id="dateError" style="display:none">Error</div>
+      </fieldset>
+    </div>
+
+    <div class="margin-bottom-2">
+      <fieldset>
+        <legend class="usa-sr-only">Enforcement Action Types:</legend>
+        <div class="margin-bottom-2">
+          
+          <label for="selectEATypes" class="usa-label margin-top-1 margin-bottom-05" aria-label="Select Action Type(s). Press enter to open selection, tab through available options and enter to select/unselect.">Select Action Type(s):</label>
+          <div id="selectEATypesContainer"></div>
+        </div>
+
+        <div class="occ-custom-checkbox">
+          <input data-val="true" data-val-required="The indOnly field is required." id="indOnly" name="indOnly" title="Individual Actions" type="checkbox" value="true" /><input name="indOnly" type="hidden" value="false" />
+          <label for="indOnly">Show Records for Individuals</label>
+        </div>
+        <div class="occ-custom-checkbox">
+          <input data-val="true" data-val-required="The instOnly field is required." id="instOnly" name="instOnly" title="Institution Actions" type="checkbox" value="true" /><input name="instOnly" type="hidden" value="false" />
+          <label for="instOnly">Show Records for Institutions</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="margin-bottom-2">
+      <fieldset class="padding-top-2">
+        <legend class="usa-sr-only">Terminated Records:</legend>
+        <div class="occ-custom-checkbox">
+          <input data-val="true" data-val-required="The terminatedOnly field is required." id="terminatedOnly" name="terminatedOnly" title="Terminated Records" type="checkbox" value="true" /><input name="terminatedOnly" type="hidden" value="false" />
+          <label for="terminatedOnly">Show Terminated Records</label>
+        </div>
+        <div class="occ-custom-checkbox">
+          <input data-val="true" data-val-required="The activeOnly field is required." id="activeOnly" name="activeOnly" title="Active Records" type="checkbox" value="true" /><input name="activeOnly" type="hidden" value="false" />
+          <label for="activeOnly">Show Active Records</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="margin-bottom-2">
+      <fieldset>
+        <legend class="usa-sr-only">Enforcement Subject Matters:</legend>
+        <label for="selectSubjectMatters" class="usa-label margin-top-1 margin-bottom-05" aria-label="Select Subject Matter(s). Press enter to open selection, tab through available options and enter to select/unselect.">Select Subject Matter(s):</label>
+        
+        
+        
+        
+        <div id="selectEASubjectMattersContainer"></div>
+      </fieldset>
+    </div>
+
+    <div class="disclaimer-1829 padding-top-1 padding-bottom-3" style="display:none">
+      <span class="disclaimer-1829-title">* Disclaimer: 1829 - Prohibition Notifications: </span>Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to <a href="https://uscode.house.gov/view.xhtml?req=(title:12%20section:1829%20edition:prelim)" target="_blank" rel="noopener noreferrer">12 USC § 1829</a> pursuant to the Fair Hiring in Banking Act.
+    </div>
+
+    <div>
+      <button type="submit" id="btnAdvancedSearch" title="Search" class="usa-button usa-button--primary margin-bottom-1">
+        Search
+      </button>
+      <button type="reset" id="btnAdvancedReset" class="usa-button usa-button--outline margin-bottom-1" title="Reset">
+        Reset
+      </button>
+    </div>
+  </div>
+</section>
+</form>
+<div id="noResults" class="usa-alert usa-alert--info" style="display:none">
+  <div class="usa-alert__body">
+    <p id="alertMessage" tabindex="0" class="usa-alert__text" role="alert" aria-live="polite">
+      No enforcement actions found. Please try another search.
+    </p>
+  </div>
+</div>
+</div>
+
+            <div class="footer-spacer">
+  <p class="margin-bottom-05">
+    <strong>January 2025 Update:</strong>
+  </p>
+  <p class="margin-top-0 margin-bottom-05">
+    Enforcement actions issued since 2012 now have subject matters. Use advanced search to filter by “Subject Matter.”
+  </p>
+
+  <p class="margin-bottom-05">
+    <strong>Quick Links:</strong>
+  </p>
+  <ul class="margin-top-0">
+    <li>
+      <a href="https://occ.gov/topics/laws-and-regulations/enforcement-actions/enforcement-action-types/index-enforcement-action-types.html">Enforcement actions types</a>
+    </li>
+    <li>
+      <a href="https://occ.gov/topics/laws-and-regulations/enforcement-actions/index-enforcement-actions.html">Enforcement actions information page</a>
+    </li>
+  </ul>
+
+  <p class="margin-top-4 margin-bottom-05">
+    <strong>The OCC supervises the following entities and has the statutory authority to take enforcement actions against them:</strong>
+  </p>
+  <ul class="margin-top-0">
+    <li>National banks and their subsidiaries</li>
+    <li>Federally chartered savings associations and their subsidiaries</li>
+    <li>Federal branches and agencies of foreign banks</li>
+    <li>
+      Institution-affiliated parties (IAPs), including:
+      <ul>
+        <li>Officers, directors, and employees</li>
+        <li>A bank's controlling stockholders, agents, and certain other individuals.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p class="margin-top-4 margin-bottom-05">
+    <strong>Notes:</strong>
+  </p>
+  <ul class="margin-top-0">
+    <li>
+      The names of the banking organizations accessed through the Enforcement Action Search reflect the institutions' identities when the enforcement documents became final.
+    </li>
+    <li>
+      The orders do not necessarily reflect the current status of the regulatory action against the institution or the institution-affiliated party. You should use the Search function to determine if an order or notice has been modified or terminated.
+    </li>
+    <li>
+      Please reference <a href="https://occ.gov/news-issuances/bulletins/2023/bulletin-2023-16.html" target="_blank" rel="noopener noreferrer">OCC Bulletin 2023-16</a> and the related Policies and Procedures Manuals (PPMs) for additional information on enforcement actions against institution-affiliated parties (IAPs), national banks, federal savings associations, and federal branches and agencies of foreign banks.
+    </li>
+  </ul>
+
+  <p class="margin-top-4 margin-bottom-05 padding-top-3 footer-content-spacer">
+    <strong>Disclaimer:</strong>
+  </p>
+  <ul class="margin-top-0">
+    <li>
+      1829 - Prohibition Notifications*: Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to <a href="https://uscode.house.gov/view.xhtml?req=(title:12%20section:1829%20edition:prelim)" target="_blank" rel="noopener noreferrer">12 USC § 1829</a> pursuant to the Fair Hiring in Banking Act.
+    </li>
+    <li>
+      Enforcement actions taken against federally chartered savings associations prior to July 21, 2011, are only available in the
+      <a href="https://occ.gov/static/ots/enforcement/ots-enforcement-order-listing.xlsx" target="_blank" rel="noopener noreferrer">OTS Enforcement Order Archive</a> (XLS). For information about the data fields used in this spreadsheet, refer to the
+      <a href="https://occ.gov/static/ots/enforcement/enforcement-order-definitions.pdf" target="_blank" rel="noopener noreferrer">OTS Enforcement Order Listing Definitions</a> (PDF).
+    </li>
+    <li>
+      The Office of the Comptroller of the Currency expressly disclaims any responsibility for the acts of any individual or entity subject to an enforcement action, whether or not that individual or entity appears on these lists.
+    </li>
+    
+    <li>
+      These lists are NOT guaranteed to be comprehensive.
+    </li>
+  </ul>
+</div>
+
+          </main>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <script>
+    
+    console.log("version: " + '2.0.4.28852');
+  </script>
+
+  
+
+
+  <script src="/EASearch/js/site?v=WIeb6MzXdshyvNR6d1hl8bOBiCpjMIfDR0CKVv9qbMg1"></script>
+
+  <script src="/EASearch/js/site-validation?v=1_3DAs1dtFs5NTl65S4QxaALwBwdfmku3smRPXA7ZXc1"></script>
+
+</body>
+</html>

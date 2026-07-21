@@ -1,0 +1,377 @@
+Enforcement Actions Search
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ Enter a bank name, person's name, city, state, or other details.
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Help
+
+ 
+ Enter details to help find enforcement actions.
+
+
+ Example #1: John Doe, New York, NY
+
+ 
+ Example #2: Woodgrove Bank, civil money penalty
+
+ Example #3: Contoso Ltd., formal agreements, 2015
+
+
+ Use the Advanced Search to select a date range.
+
+ To only return all records, leave the search field empty.
+ 
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ Loading...
+
+ 
+ Search within
+ Bank Name
+ 
+
+ 
+
+ 
+ Advanced...
+ 
+
+ 
+
+
+ 
+ 
+
+
+
+
+ Advanced Search
+
+ 
+ 
+ 
+ Enter a bank name, person's name, city, state, or other details.
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Help
+
+ 
+ Enter details to help find enforcement actions.
+
+
+ Example #1: John Doe, New York, NY
+
+ 
+ Example #2: Woodgrove Bank, civil money penalty
+
+ Example #3: Contoso Ltd., formal agreements, 2015
+
+
+ Use the Advanced Search to select a date range.
+
+ To only return all records, leave the search field empty.
+ 
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+
+ Loading...
+
+ 
+ Search within
+ Bank Name
+ 
+
+ 
+
+ 
+ Close Advanced...
+ 
+
+ 
+
+
+ 
+ 
+ 
+ Date Ranges:
+ 
+ 
+ Start Date Range:
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ Termination Date Range:
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ Error
+
+ 
+ 
+
+
+ 
+ 
+ Enforcement Action Types:
+ 
+ 
+ Select Action Type(s):
+ 
+
+ 
+
+
+ 
+ 
+ Show Records for Individuals
+ 
+
+ 
+ 
+ Show Records for Institutions
+ 
+
+ 
+ 
+
+
+ 
+ 
+ Terminated Records:
+ 
+ 
+ Show Terminated Records
+ 
+
+ 
+ 
+ Show Active Records
+ 
+
+ 
+ 
+
+
+ 
+ 
+ Enforcement Subject Matters:
+ Select Subject Matter(s):
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ * Disclaimer: 1829 - Prohibition Notifications: Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to 12 USC § 1829 pursuant to the Fair Hiring in Banking Act.
+ 
+
+
+ 
+ 
+ Search
+ 
+ 
+ Reset
+ 
+ 
+
+ 
+
+
+
+
+
+ 
+ 
+ No enforcement actions found. Please try another search.
+ 
+
+ 
+
+
+
+
+
+
+ 
+ 
+ January 2025 Update:
+ 
+
+ 
+ Enforcement actions issued since 2012 now have subject matters. Use advanced search to filter by “Subject Matter.”
+ 
+
+
+ 
+ Quick Links:
+ 
+
+ 
+ 
+ Enforcement actions types
+ 
+
+ 
+ Enforcement actions information page
+ 
+
+ 
+
+ 
+ The OCC supervises the following entities and has the statutory authority to take enforcement actions against them:
+ 
+
+ 
+ National banks and their subsidiaries
+
+ Federally chartered savings associations and their subsidiaries
+
+ Federal branches and agencies of foreign banks
+
+ 
+ Institution-affiliated parties (IAPs), including:
+ 
+ Officers, directors, and employees
+
+ A bank's controlling stockholders, agents, and certain other individuals.
+
+ 
+ 
+
+ 
+
+ 
+ Notes:
+ 
+
+ 
+ 
+ The names of the banking organizations accessed through the Enforcement Action Search reflect the institutions' identities when the enforcement documents became final.
+ 
+
+ 
+ The orders do not necessarily reflect the current status of the regulatory action against the institution or the institution-affiliated party. You should use the Search function to determine if an order or notice has been modified or terminated.
+ 
+
+ 
+ Please reference OCC Bulletin 2023-16 and the related Policies and Procedures Manuals (PPMs) for additional information on enforcement actions against institution-affiliated parties (IAPs), national banks, federal savings associations, and federal branches and agencies of foreign banks.
+ 
+
+ 
+
+ 
+ Disclaimer:
+ 
+
+ 
+ 
+ 1829 - Prohibition Notifications*: Prohibition Notifications prior to December 23, 2022, do not appear on these lists due to statutory changes to 12 USC § 1829 pursuant to the Fair Hiring in Banking Act.
+ 
+
+ 
+ Enforcement actions taken against federally chartered savings associations prior to July 21, 2011, are only available in the
+ OTS Enforcement Order Archive (XLS). For information about the data fields used in this spreadsheet, refer to the
+ OTS Enforcement Order Listing Definitions (PDF).
+ 
+
+ 
+ The Office of the Comptroller of the Currency expressly disclaims any responsibility for the acts of any individual or entity subject to an enforcement action, whether or not that individual or entity appears on these lists.
+ 
+
+ 
+ 
+ These lists are NOT guaranteed to be comprehensive.

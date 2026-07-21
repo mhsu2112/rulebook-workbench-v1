@@ -1,0 +1,152 @@
+{
+  "item_id": "31-usc-5334",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Ensure Federal examiners reviewing Bank Secrecy Act compliance receive appropriate annual training relating to anti-money laundering activities and countering the financing of terrorism.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Each Federal examiner reviewing compliance with the Bank Secrecy Act, as defined in section 6003 of the Anti-Money Laundering Act of 2020, shall attend appropriate annual training, as determined by the Secretary of the Treasury, relating to anti-money laundering activities and countering the financing of terrorism",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "5334-a",
+      "actor": "Each Federal examiner reviewing compliance with the Bank Secrecy Act",
+      "modality": "must",
+      "action": "attend appropriate annual training, as determined by the Secretary of the Treasury, relating to anti-money laundering activities and countering the financing of terrorism, including potential risk profiles and warning signs; financial crime patterns and trends; the high-level context for why AML/CFT programs are necessary; and de-risking and its effect on the provision of financial services",
+      "trigger": "reviewing compliance with the Bank Secrecy Act",
+      "threshold": "annual",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each Federal examiner reviewing compliance with the Bank Secrecy Act, as defined in section 6003 of the Anti-Money Laundering Act of 2020, shall attend appropriate annual training, as determined by the Secretary of the Treasury, relating to anti-money laundering activities and countering the financing of terrorism, including with respect to-",
+          "verified": true
+        },
+        {
+          "quote": "(1) potential risk profiles and warning signs that an examiner may encounter during examinations;",
+          "verified": true
+        },
+        {
+          "quote": "(2) financial crime patterns and trends;",
+          "verified": true
+        },
+        {
+          "quote": "(3) the high-level context for why anti-money laundering and countering the financing of terrorism programs are necessary for law enforcement agencies and other national security agencies and what risks those programs seek to mitigate; and",
+          "verified": true
+        },
+        {
+          "quote": "(4) de-risking and the effect of de-risking on the provision of financial services.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "5334-b",
+      "actor": "The Secretary of the Treasury",
+      "modality": "must",
+      "action": "in consultation with the Financial Institutions Examination Council, the Financial Crimes Enforcement Network, and Federal, State, Tribal, and local law enforcement agencies, establish appropriate training materials and standards for use in the training required under subsection (a)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury shall, in consultation with the Financial Institutions Examination Council, the Financial Crimes Enforcement Network, and Federal, State, Tribal, and local law enforcement agencies, establish appropriate training materials and standards for use in the training required under subsection (a).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act",
+      "definition": "As defined in section 6003 of the Anti-Money Laundering Act of 2020 (referenced but not defined within this section).",
+      "citations": [
+        {
+          "quote": "Each Federal examiner reviewing compliance with the Bank Secrecy Act, as defined in section 6003 of the Anti-Money Laundering Act of 2020",
+          "verified": true
+        },
+        {
+          "quote": "Such section 6003 defines terms, including the Bank Secrecy Act, as used in div. F of Pub. L. 116&ndash;283 .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal examiner",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Each Federal examiner reviewing compliance with the Bank Secrecy Act",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "appropriate annual training",
+      "definition": "(undefined here) - training as determined by the Secretary of the Treasury",
+      "citations": [
+        {
+          "quote": "shall attend appropriate annual training, as determined by the Secretary of the Treasury",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "de-risking",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "(4) de-risking and the effect of de-risking on the provision of financial services.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The definition of 'Bank Secrecy Act' used in subsection (a) is drawn from section 6003 of the Anti-Money Laundering Act of 2020 (section 6003 of div. F of Pub. L. 116-283), set out as a note under section 5311 of title 31.",
+      "references": [
+        "Section 6003 of the Anti-Money Laundering Act of 2020",
+        "Pub. L. 116-283, div. F",
+        "31 U.S.C. 5311"
+      ],
+      "citations": [
+        {
+          "quote": "Section 6003 of the Anti-Money Laundering Act of 2020, referred to in subsec. (a), is section 6003 of div. F of Pub. L. 116&ndash;283, which is set out as a note under section 5311 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Secretary of the Treasury must consult the Financial Institutions Examination Council and the Financial Crimes Enforcement Network (as well as Federal, State, Tribal, and local law enforcement agencies) in establishing training materials and standards.",
+      "references": [
+        "Financial Institutions Examination Council",
+        "Financial Crimes Enforcement Network"
+      ],
+      "citations": [
+        {
+          "quote": "in consultation with the Financial Institutions Examination Council, the Financial Crimes Enforcement Network, and Federal, State, Tribal, and local law enforcement agencies, establish appropriate training materials and standards",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Section added by the Anti-Money Laundering Act of 2020, section 6307(a).",
+      "references": [
+        "Pub. L. 116-283, div. F, title LXIII, \u00a76307(a)"
+      ],
+      "citations": [
+        {
+          "quote": "Pub. L. 116&ndash;283, div. F, title LXIII, &sect;6307(a), Jan. 1, 2021, 134 Stat. 4590",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This section imposes duties on Federal examiners and the Secretary of the Treasury regarding AML/CFT training, not directly on the covered financial institutions (depository institutions, MSBs, broker-dealers) that are the primary subjects of the ratified scope's program-establishment obligations. It is included because it concerns the examination/supervisory layer of the federal AML/CFT program regime. The 'Bank Secrecy Act' definition is not given in this section but incorporated by reference from section 6003 of the AML Act of 2020. Text states it contains laws in effect on July 18, 2026, consistent with the pinned 2026 date."
+}

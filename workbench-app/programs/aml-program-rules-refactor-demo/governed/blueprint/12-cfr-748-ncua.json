@@ -1,0 +1,235 @@
+{
+  "item_id": "12-cfr-748-ncua",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The BSA compliance program requirement is issued to ensure that all federally insured credit unions establish and maintain procedures reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements of the Bank Secrecy Act and Treasury's implementing regulations.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This section is issued to ensure that all federally insured credit unions establish and maintain procedures reasonably designed to assure and monitor compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1",
+      "actor": "federally insured credit union",
+      "modality": "must",
+      "action": "develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with the BSA recordkeeping and recording requirements and Treasury's implementing regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each federally insured credit union shall develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with the recordkeeping and recording requirements in subchapter II of chapter 53 of title 31, United States Code",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-2",
+      "actor": "federally insured credit union (board of directors)",
+      "modality": "must",
+      "action": "adopt the BSA compliance program in written form, have it approved by the board of directors, and reflect the approval in the credit union's minutes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The compliance program must be written, approved by the credit union's board of directors, and reflected in the credit union's minutes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3",
+      "actor": "federally insured credit union",
+      "modality": "conditional",
+      "action": "implement a customer identification program as part of the required BSA compliance program",
+      "trigger": "subject to the requirements of 31 U.S.C. 5318(l) and 31 CFR 1020.220",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each federally insured credit union is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the NCUA and Department of the Treasury at 31 CFR 1020.220, which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-4",
+      "actor": "federally insured credit union",
+      "modality": "must",
+      "action": "provide for a system of internal controls to assure ongoing BSA compliance",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-5",
+      "actor": "federally insured credit union",
+      "modality": "must",
+      "action": "provide for independent testing for BSA compliance, conducted by credit union personnel or outside parties",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for independent testing for compliance to be conducted by credit union personnel or outside parties;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-6",
+      "actor": "federally insured credit union",
+      "modality": "must",
+      "action": "designate an individual responsible for coordinating and monitoring day-to-day BSA compliance",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate an individual responsible for coordinating and monitoring day-to-day compliance; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-7",
+      "actor": "federally insured credit union",
+      "modality": "must",
+      "action": "provide BSA training for appropriate personnel",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "compliance program",
+      "definition": "(undefined here) \u2014 used to denote the written BSA program a credit union must develop, approved by the board, containing internal controls, independent testing, a designated compliance officer, and training",
+      "citations": [
+        {
+          "quote": "Such compliance program shall at a minimum&#x2014;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer identification program",
+      "definition": "(undefined here) \u2014 referenced as a component required to be implemented as part of the BSA compliance program under 31 U.S.C. 5318(l) and 31 CFR 1020.220",
+      "citations": [
+        {
+          "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "internal controls",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "independent testing",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Provide for independent testing for compliance to be conducted by credit union personnel or outside parties;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "federally insured credit union",
+      "definition": "(undefined here) \u2014 used throughout Part 748 as the regulated actor bearing the BSA compliance program duty",
+      "citations": [
+        {
+          "quote": "Each federally insured credit union shall develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with the recordkeeping and recording requirements in subchapter II of chapter 53 of title 31, United States Code",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Part 748's BSA compliance program duty is grounded in, and cross-references, the Financial Recordkeeping and Reporting of Currency and Foreign Transactions Act (Bank Secrecy Act) and Treasury's implementing regulations at 31 CFR chapter X.",
+      "references": [
+        "31 U.S.C. 5311",
+        "31 U.S.C. 5318",
+        "31 CFR chapter X"
+      ],
+      "citations": [
+        {
+          "quote": "the Financial Recordkeeping and Reporting of Currency and Foreign Transactions Act, and the implementing regulations promulgated under it by the Department of Treasury, 31 CFR chapter X.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The customer identification program component of the BSA compliance program is cross-referenced to a separate statute and a jointly promulgated Treasury/NCUA regulation.",
+      "references": [
+        "31 U.S.C. 5318(l)",
+        "31 CFR 1020.220"
+      ],
+      "citations": [
+        {
+          "quote": "Each federally insured credit union is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the NCUA and Department of the Treasury at 31 CFR 1020.220",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Statutory authority underlying Part 748, including its BSA compliance provisions, is drawn from multiple Titles including the Bank Secrecy Act sections.",
+      "references": [
+        "12 U.S.C. 1766(a)",
+        "12 U.S.C. 1786(b)(1)",
+        "12 U.S.C. 1786(q)",
+        "12 U.S.C. 1789(a)(11)",
+        "15 U.S.C. 6801-6809",
+        "31 U.S.C. 5311",
+        "31 U.S.C. 5318"
+      ],
+      "citations": [
+        {
+          "quote": "Authority: 12 U.S.C. 1766(a), 1786(b)(1), 1786(q), 1789(a)(11); 15 U.S.C. 6801-6809; 31 U.S.C. 5311 and 5318.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The SAR filing duty (an operational/coordination-layer obligation, outside this distillation's pillars-focused scope) is expressly cross-referenced from Appendix B as arising under a separate paragraph of \u00a7 748.1.",
+      "references": [
+        "12 CFR 748.1(d)"
+      ],
+      "citations": [
+        {
+          "quote": "A credit union's obligation to file a SAR is set forth in &#xA7; 748.1(d).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Only 12 CFR 748.2 (and its internal cross-reference to the CIP requirement) falls within the ratified scope as the program/'pillars' obligation for this federally insured credit union actor class; \u00a7 748.1(d) (SAR filing, timing, content, retention, board notice, confidentiality, safe harbor) is expressly treated per the ratified scope as SAR operational/coordination-layer content and was therefore not distilled into obligation rows, only cross-referenced. \u00a7 748.0 (physical/information security program), \u00a7 748.1(b)-(c) (catastrophic act and cyber incident reporting), and Appendices A and B (GLBA member-information safeguarding and cyber/data-breach response guidance) address information security, privacy, and incident-response subject matter that is not an AML/CFT program-establishment ('pillars') obligation and falls outside the ratified scope; they were excluded entirely rather than treated as boundary regimes. Fidelity note: the SAR provision (drafted as current paragraph (d)) internally self-references 'this paragraph (c)' ('For the purposes of this paragraph (c) credit union means...'), an apparent renumbering artifact from historical amendments; this inconsistency is preserved as written in the source and not resolved, consistent with the fidelity rule, though the SAR text itself was not distilled into obligation rows per the coordination-layer treatment above."
+}

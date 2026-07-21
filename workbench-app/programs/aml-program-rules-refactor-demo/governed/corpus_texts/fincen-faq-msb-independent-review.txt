@@ -1,0 +1,431 @@
+Skip to main content
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ An official website of the United States government
+
+ Here’s how you know
+
+ 
+
+ 
+ Here’s how you know
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The .gov means it’s official.
+ 
+
+ 
+ Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ The site is secure.
+ 
+
+ 
+ The https:// ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Financial Crimes Enforcement Network
+ 
+ 
+
+ 
+ 
+ 
+ 
+ Menu
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ Enter Search Term(s):
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ Frequently Asked Questions Conducting Independent Reviews of Money Services Business Anti-Money Laundering Programs
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ FIN-2006-G012
+
+ 
+ 
+ Issued Date
+
+ September 22, 2006
+
+ 
+
+ 
+ Guidance Subject
+
+ Frequently Asked Questions Conducting Independent Reviews of Money Services Business Anti-Money Laundering Programs
+
+ 
+
+ We are issuing this guidance to assist money services businesses in understanding the regulatory requirements regarding conducting independent reviews of their anti-money laundering programs.
+
+The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs that include "an independent audit function to test programs."1 In implementing this requirement, we determined to make clear that money services businesses are not required to hire a certified public accountant or an outside consultant to conduct a review of their programs. Rather, the relevant Bank Secrecy Act regulation requires money services businesses to establish anti-money laundering programs with written policies and procedures that:
+
+ Provide for independent review to monitor and maintain an adequate program.The scope and frequency of the review shall be commensurate with the risk of thefinancial services provided by the money services business. Such review may beconducted by an officer or employee of the money services business so long as thereviewer is not the person designated in paragraph (d)(2) of this section.2 
+
+The primary purpose of the independent review is to monitor the adequacy of the money services business’ anti-money laundering program. The review should determine whether the business is operating in compliance with the requirements of the Bank Secrecy Act and the business’ own policies and procedures. Each money servicesbusiness should identify and assess the money laundering risks that may be associated with its unique products, services, customers, and geographic locations. Regardless of where risks arise, money services businesses must take reasonable steps to manage them. Each money services business should focus resources on the areas of its business that management believes pose the greatest risks, and the level of sophistication of the associated internal controls should be appropriate for the size, structure, risks, and complexity of the money services business.
+
+1. What should be done during the review? 
+
+The review should provide a fair and unbiased appraisal of each of the required elements of the company’s anti-money laundering program, including its Bank Secrecy Act-related policies, procedures, internal controls, recordkeeping and reporting functions, and training. The review should include testing of internal controls and transactional systems and procedures to identify problems and weaknesses and, if necessary, recommend to management appropriate corrective actions. For example, if the program requires that a particular employee or category of employee should be trained once every six months, then the independent testing should determine whether the training occurred and whether the training was adequate.
+
+The review also should cover all of the anti-money laundering program actions taken by - or defined as part of the responsibility of - the designated compliance officer.3 These actions include, for example, the determination of the level of money laundering risks faced by the business, the frequency of Bank Secrecy Act anti-money laundering training for employees, and the adoption of procedures for implementation and oversight of program-related controls and transactional systems.
+
+2. Who should conduct the review?
+
+Our regulations require an independent review, not a formal audit by a certified public accountant or third-party consultant. Accordingly, a money services business does not necessarily need to hire an outside auditor or consultant. The review may be conducted by an officer, employee or group of employees, so long as the reviewer is not the designated compliance officer and does not report directly to the compliance officer.
+
+3. How often should the review occur?
+
+The review should be conducted on a periodic basis.4 The scope and frequency of the review will depend on the money services business’ risk assessment, which should take into account the business’ products, services, customers, and geographic locations. For some money services businesses, based on their risk assessments, an annual review may not be necessary; for others, more frequent review may be warranted. For example, if the money services business’ risk assessment changes, more frequent review may be prudent. Similarly, if compliance problems are identified in a review, it may be advisable to advance the date of the next review to confirm that corrective actions have been taken.
+
+4. Should the review be documented in some manner and reported to management?
+
+Yes. The person or persons responsible for conducting the review should document the scope of the review, procedures performed, transaction testing completed, if any, findings of the review, and recommendations to management for corrective actions, if any. After the review, the reviewer or the designated compliance officer should track deficiencies and weaknesses discovered during the review and document corrective actions taken by the money services business. All of the documentation should, as appropriate, be made accessible to government examiners and law enforcement personnel who have authority to examine such documents.
+
+ 
+ 1 31 U.S.C. § 5318(h)(1)(D). Our regulations at 31 C.F.R. § 103.125 require money services businesses to establish anti-money laundering programs tailored to their operations and the money laundering risks posed. For example, the anti-money laundering program of a small money services business involved solely in the transmission of funds in small amounts may differ significantly from the program of a global money services business with both domestic and foreign agents.
+
+2 31 C.F.R. § 103.125(d)(4).
+
+3See 31 C.F.R. § 103.125(d)(2) regarding the compliance officer requirement.
+
+4See 67 Fed. Reg. 21114, 21115 (Apr. 29, 2002).
+
+ 
+ 
+ Financial Institution
+
+ 
+ Money Services Businesses
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Resources
+ 
+
+ 
+
+ 
+ 
+ 
+ Alerts/Advisories/Notices/ Bulletins/Fact Sheets
+ 
+
+ 
+
+ 
+ 
+ 
+ Bank Secrecy Act Filing Information
+ 
+
+ 
+
+ 
+ 
+ 
+ Beneficial Ownership Information Reporting
+ 
+
+ 
+
+ 
+ 
+ 
+ Financial Trend Analyses
+ 
+
+ 
+
+ 
+ 
+ 
+ Financial Institutions
+ 
+
+ 
+
+ 
+ 
+ 
+ FinCEN Exchange
+ 
+
+ 
+
+ 
+ 
+ 
+ Innovation
+ 
+
+ 
+
+ 
+ 
+ 
+ International
+ 
+
+ 
+
+ 
+ 
+ 
+ Law Enforcement
+ 
+
+ 
+
+ 
+ 
+ 
+ Ransomware
+ 
+
+ 
+
+ 
+ 
+ 
+ Residential Real Estate Reporting
+ 
+
+ 
+
+ 
+ 
+ 
+ Suspicious Activity Report (SAR)
+ 
+
+ 
+
+ 
+ 
+ 
+ Scams
+ 
+
+ 
+
+ 
+ 
+ 
+ Statutes and Regulations
+ 
+
+ 
+
+ 
+ 
+ 
+ Whistleblower Program
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Contact • Subscribe to FinCEN News Updates
+Careers • Freedom of Information Act (FOIA) • Site Policies and Notices
+Treasury.gov • IRS.gov • Regulations.gov • USA.gov • Vote.gov

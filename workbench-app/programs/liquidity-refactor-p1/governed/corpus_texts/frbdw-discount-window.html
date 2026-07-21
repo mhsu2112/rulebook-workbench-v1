@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
+    <title>The Discount Window</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/~/media/DW/Images/global/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/~/media/DW/Images/global/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/~/media/DW/Images/global/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/~/media/DW/Images/global/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/~/media/DW/Images/global/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/~/media/DW/Images/global/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/~/media/DW/Images/global/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/~/media/DW/Images/global/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/~/media/DW/Images/global/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/~/media/DW/Images/global/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/~/media/DW/Images/global/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/~/media/DW/Images/global/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/~/media/DW/Images/global/icons/favicon-16x16.png">
+
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/~/media/DW/Images/global/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/css/DW/google-fonts.css">
+    <link rel="stylesheet" href="/~/media/DW/css/bootstrapmin.css">
+    <link rel="stylesheet" href="/css/DW/jquery.sidr.light.min.css">
+    <link rel="stylesheet" href="/css/DW/regular.css">
+    <link rel="stylesheet" href="/css/DW/fontawesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="/~/media/DW/css/sc10-styles.css">
+
+
+
+    <!-- JS Files -->
+    <script src="/~/media/DW/js/jquerymin.js"></script>
+    
+    <script src="/scripts/DW/jquery.touchSwipe.min.js"></script>
+    <script src="/~/media/DW/js/bootstrapbundlemin.js"></script>
+    <script src="/scripts/DW/jquery.sidr.min.js"></script>
+    <script src="/scripts/DW/polyfills/stickyfill.min.js"></script>
+    <script src="/~/media/DW/js/application.js"></script>
+</head>
+
+
+
+
+<body class="general" >
+
+
+    
+
+<header>
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <div class="logoTextContainer">
+                    <div class="logoTitle"><span class="logoTitleLight">The</span>&nbsp;<span class="logoTitleBold">Federal Reserve</span></div>
+                    <div class="logoTitle2"><span class="logoTitle2Italic">Discount Window &#124; Payment System Risk</span></div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#accordion" aria-controls="accordion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="search searchNav" id="navbarSupportedContent">
+                <form name="searchform" id="searchform" class="form-inline my-2 my-lg-0 ml-auto" method="post" action="/forms/dwsearch/SubmitSearch">
+                    <div class="input-group stylish-input-group">
+                        <input name="text" id="text" class="form-control mr-sm-2" placeholder="Search for ..." aria-label="Search">
+                        <span class="input-group-addon">
+                            <button type="submit">
+                                <span class="search-button"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <div class="panel panel-default" id="savedSearches">
+                    <div class="panel-body">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-nav">
+        <div class="container-fluid">
+            <ul class="nav nav-fill">
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/general-information" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="General Information">General Information</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/general-information/the-discount-window"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="The Discount Window">
+                                    <p class="mt-2 mb-0">The Discount Window</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/general-information/discount_window_setup"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Discount Window Setup">
+                                    <p class="mt-2 mb-0">Discount Window Setup</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/general-information/faq"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Frequently Asked Questions">
+                                    <p class="mt-2 mb-0">Frequently Asked Questions</p>
+                                </a>
+                            </div>
+</div><div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/general-information/primary-and-secondary-credit-programs"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Primary and Secondary Credit Programs">
+                                    <p class="mt-2 mb-0">Primary and Secondary Credit Programs</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/general-information/seasonal-credit-program"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Seasonal Credit Program">
+                                    <p class="mt-2 mb-0">Seasonal Credit Program</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/general-information/historical_programs"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Historical Programs">
+                                    <p class="mt-2 mb-0">Historical Programs</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/guidelines" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="Guidelines">Guidelines</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" target="_blank" href="https://www.frbservices.org/resources/rules-regulations/operating-circulars.html#1"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Operating Circular 1: Account Relationships (FRB Services)">
+                                    <p class="mt-2 mb-0">Operating Circular 1: Account Relationships (FRB Services)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" target="_blank" href="https://www.frbservices.org/resources/rules-regulations/operating-circulars.html#10"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Operating Circular 10: Lending (FRB Services)">
+                                    <p class="mt-2 mb-0">Operating Circular 10: Lending (FRB Services)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" target="_blank" href="http://www.federalreserve.gov/aboutthefed/fract.htm"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="The Federal Reserve Act (federalreserve.gov)">
+                                    <p class="mt-2 mb-0">The Federal Reserve Act (federalreserve.gov)</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/agreements" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="Agreements">Agreements</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/agreements/oc10_agreements"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="OC-10 Agreements">
+                                    <p class="mt-2 mb-0">OC-10 Agreements</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/discount-rates" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="Discount Rates">Discount Rates</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/discount-rates"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Discount Rates">
+                                    <p class="mt-2 mb-0">Discount Rates</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/collateral" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="Collateral">Collateral</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/collateral/collateral_eligibility"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Collateral Eligibility">
+                                    <p class="mt-2 mb-0">Collateral Eligibility</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/collateral/collateral_valuation"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Collateral Valuation">
+                                    <p class="mt-2 mb-0">Collateral Valuation</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/collateral/pledging_collateral"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Pledging Collateral">
+                                    <p class="mt-2 mb-0">Pledging Collateral</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/payment-system-risk" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="Payment System Risk">Payment System Risk</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/payment-system-risk"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Payment System Risk">
+                                    <p class="mt-2 mb-0">Payment System Risk</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle " href="/pages/select-your-district" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       ga-on="click" ga-event-category="main-nav" ga-event-action="Select Your District">Select Your District</a>
+                    <div class="dropdown-menu w-100 pt-4 pb-4">
+                        <div class="container-fluid">
+
+<div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/atlanta"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Atlanta (6th District)">
+                                    <p class="mt-2 mb-0">Atlanta (6th District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/boston"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Boston (1st District)">
+                                    <p class="mt-2 mb-0">Boston (1st District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/chicago"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Chicago (7th District)">
+                                    <p class="mt-2 mb-0">Chicago (7th District)</p>
+                                </a>
+                            </div>
+</div><div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/cleveland"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Cleveland (4th District)">
+                                    <p class="mt-2 mb-0">Cleveland (4th District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/dallas"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Dallas (11th District)">
+                                    <p class="mt-2 mb-0">Dallas (11th District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/kansas-city"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Kansas City (10th District)">
+                                    <p class="mt-2 mb-0">Kansas City (10th District)</p>
+                                </a>
+                            </div>
+</div><div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/minneapolis"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Minneapolis (9th District)">
+                                    <p class="mt-2 mb-0">Minneapolis (9th District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/new-york"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="New York (2nd District)">
+                                    <p class="mt-2 mb-0">New York (2nd District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/philadelphia"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Philadelphia (3rd District)">
+                                    <p class="mt-2 mb-0">Philadelphia (3rd District)</p>
+                                </a>
+                            </div>
+</div><div class="row">                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/richmond"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Richmond (5th District)">
+                                    <p class="mt-2 mb-0">Richmond (5th District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/san-francisco"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="San Francisco (12th District)">
+                                    <p class="mt-2 mb-0">San Francisco (12th District)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="/pages/select-your-district/st-louis"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="St. Louis (8th District)">
+                                    <p class="mt-2 mb-0">St. Louis (8th District)</p>
+                                </a>
+                            </div>
+</div><div class="row">                            <div class="col">
+                                <a class="dropdown-item" target="_blank" href="http://federalreserve.gov"
+                                   ga-on="click" ga-event-category="main-nav" ga-event-action="Federal Reserve Board">
+                                    <p class="mt-2 mb-0">Federal Reserve Board</p>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="accordion" class="collapse navbar-collapse hamburger">
+            <div class="card">
+                <div class="card-header" id="heading0">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav0" aria-expanded="false" aria-controls="topnav0">
+                            General Information
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav0" class="collapse" aria-labelledby="heading0" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                    <li><a class="dropdown-item" href="/pages/general-information/the-discount-window"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="The Discount Window">The Discount Window</a></li>
+                                    <li><a class="dropdown-item" href="/pages/general-information/discount_window_setup"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Discount Window Setup">Discount Window Setup</a></li>
+                                    <li><a class="dropdown-item" href="/pages/general-information/faq"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Frequently Asked Questions">Frequently Asked Questions</a></li>
+                                    <li><a class="dropdown-item" href="/pages/general-information/primary-and-secondary-credit-programs"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Primary and Secondary Credit Programs">Primary and Secondary Credit Programs</a></li>
+                                    <li><a class="dropdown-item" href="/pages/general-information/seasonal-credit-program"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Seasonal Credit Program">Seasonal Credit Program</a></li>
+                                    <li><a class="dropdown-item" href="/pages/general-information/historical_programs"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Historical Programs">Historical Programs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav1" aria-expanded="false" aria-controls="topnav1">
+                            Guidelines
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav1" class="collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                            <li><a class="dropdown-item" href="https://www.frbservices.org/resources/rules-regulations/operating-circulars.html#1"
+                                                   ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Operating Circular 1: Account Relationships (FRB Services)">Operating Circular 1: Account Relationships (FRB Services)</a></li>
+                                            <li><a class="dropdown-item" href="https://www.frbservices.org/resources/rules-regulations/operating-circulars.html#10"
+                                                   ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Operating Circular 10: Lending (FRB Services)">Operating Circular 10: Lending (FRB Services)</a></li>
+                                            <li><a class="dropdown-item" href="http://www.federalreserve.gov/aboutthefed/fract.htm"
+                                                   ga-on="click" ga-event-category="hamburger-nav" ga-event-action="The Federal Reserve Act (federalreserve.gov)">The Federal Reserve Act (federalreserve.gov)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav2" aria-expanded="false" aria-controls="topnav2">
+                            Agreements
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav2" class="collapse" aria-labelledby="heading2" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                    <li><a class="dropdown-item" href="/pages/agreements/oc10_agreements"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="OC-10 Agreements">OC-10 Agreements</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav3" aria-expanded="false" aria-controls="topnav3">
+                            Discount Rates
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav3" class="collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                            <li><a class="dropdown-item" href="/pages/discount-rates"
+                                                   ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Discount Rates">Discount Rates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav4" aria-expanded="false" aria-controls="topnav4">
+                            Collateral
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                    <li><a class="dropdown-item" href="/pages/collateral/collateral_eligibility"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Collateral Eligibility">Collateral Eligibility</a></li>
+                                    <li><a class="dropdown-item" href="/pages/collateral/collateral_valuation"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Collateral Valuation">Collateral Valuation</a></li>
+                                    <li><a class="dropdown-item" href="/pages/collateral/pledging_collateral"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Pledging Collateral">Pledging Collateral</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav5" aria-expanded="false" aria-controls="topnav5">
+                            Payment System Risk
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                            <li><a class="dropdown-item" href="/pages/payment-system-risk"
+                                                   ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Payment System Risk">Payment System Risk</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#topnav6" aria-expanded="false" aria-controls="topnav6">
+                            Select Your District
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="topnav6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/atlanta"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Atlanta (6th District)">Atlanta (6th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/boston"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Boston (1st District)">Boston (1st District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/chicago"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Chicago (7th District)">Chicago (7th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/cleveland"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Cleveland (4th District)">Cleveland (4th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/dallas"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Dallas (11th District)">Dallas (11th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/kansas-city"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Kansas City (10th District)">Kansas City (10th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/minneapolis"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Minneapolis (9th District)">Minneapolis (9th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/new-york"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="New York (2nd District)">New York (2nd District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/philadelphia"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Philadelphia (3rd District)">Philadelphia (3rd District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/richmond"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Richmond (5th District)">Richmond (5th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/san-francisco"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="San Francisco (12th District)">San Francisco (12th District)</a></li>
+                                    <li><a class="dropdown-item" href="/pages/select-your-district/st-louis"
+                                           ga-on="click" ga-event-category="hamburger-nav" ga-event-action="St. Louis (8th District)">St. Louis (8th District)</a></li>
+                                            <li><a class="dropdown-item" href="http://federalreserve.gov"
+                                                   ga-on="click" ga-event-category="hamburger-nav" ga-event-action="Federal Reserve Board">Federal Reserve Board</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</header>
+
+<section class="section-content">
+    <div class="container-fluid page-content">
+        <div class="row">
+            <div class="col">
+                <div class="content-heading">
+                            <h1>General Information</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m-3 pt-5 pt-2-sm pt-4-md">
+                <div id="content">
+                    <h1> The Discount Window</h1>
+
+                    <div class="anchor">
+<a name="top"></a>
+</div>
+<div class="row justify-content-between">
+<div class="col-sm-8">
+<p class="small">Last Updated:12.01.2025<br />
+&nbsp;        </p>
+<h3>Introduction</h3>
+<p>Federal Reserve Banks (Reserve Banks) extend credit to banks, credit unions and other depository institutions through ordinary lending programs, collectively referred to as the Discount Window. The Discount Window plays an important role in supporting the liquidity and stability of the banking system and the effective implementation of monetary policy. By providing ready access to funding, the Discount Window helps depository institutions manage their liquidity risks efficiently and avoid actions that have negative consequences for their customers, such as withdrawing credit during times of market stress. Thus, the Discount Window supports the smooth flow of credit to households and businesses. Providing liquidity in this way is one of the original purposes of the Federal Reserve System and other central banks around the world.</p>
+</div>
+<div class="col-sm-3">
+<div style="border:1px solid #ccc;border-radius: 6px;">
+<h4 style="background-color:#dedede;padding: 5px;font-size: 16px;font-weight: bold;margin: 0 0 10px 0;">On This Page</h4>
+<ul>
+    <li><a href="#primary">Types of Lending Programs</a></li>
+    <li><a href="#rates">Interest Rates on Primary, Secondary, and Seasonal Credit</a></li>
+    <li><a href="#eligibility">Eligibility to Borrow</a></li>
+    <li><a href="#restrictions">Restrictions on Lending to Undercapitalized Depository Institutions</a></li>
+    <li><a href="#arrangements">Arrangements for Borrowing</a></li>
+    <li><a href="#pledging">Pledging of Collateral</a></li>
+    <li><a href="#emergency">Emergency Credit</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="anchor">
+<a name="primary"></a>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3>Types of Lending Programs</h3>
+<p>There are three regular discount window lending programs: primary credit, secondary credit, and seasonal credit, each with its own interest rate.</p>
+<ul>
+    <li><a href="/pages/general-information/primary-and-secondary-credit-programs">Primary credit</a> is available to depository institutions in generally sound condition on a short-term basis and at a rate relative to the Federal Open Market Committee's target range of the federal funds rate. Because primary credit is the Federal Reserve's main discount window program, the Federal Reserve at times uses the term "discount rate" to refer to the primary credit rate.</li>
+    <li><a href="/pages/general-information/primary-and-secondary-credit-programs">Secondary credit</a> may be available to depository institutions that are not eligible for primary credit. It is extended on a very short-term basis, typically overnight, at a rate that is above the primary credit rate. Secondary credit is available to meet backup liquidity needs when its use is consistent with a timely return to a reliance on market sources of funding or the orderly resolution of a troubled institution.</li>
+    <li><a href="/pages/general-information/seasonal-credit-program">Seasonal credit</a> may be available to depository institutions with deposits of $500 million or less that can demonstrate a clear pattern of recurring intra-yearly swings in funding needs. Advances accrue interest at a floating rate that is consistent with market rates.</li>
+</ul>
+<p>Discount window advances must be secured by collateral acceptable to the Reserve Bank.</p>
+<p>Additional information on discount window lending can be found in <a href="http://www.federalreserve.gov/aboutthefed/fract.htm">Section 10B of the Federal Reserve Act</a> and also the Federal Reserve&rsquo;s <a href="https://www.frbdiscountwindow.org/pages/general-information/regulation-a-federal-reserve-board-governors">Regulation A</a>.</p>
+</div>
+</div>
+<div class="anchor">
+<a name="rates"></a>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3>Interest Rates on Primary, Secondary, and Seasonal Credit</h3>
+<p>The interest rates charged on primary, secondary and seasonal credit advances are established by the Federal Reserve System and uniformly adopted across all Reserve Banks. The current rates can be found on the <a href="/pages/discount-rates">Discount Rates</a>&nbsp;page.</p>
+<p>Accrued interest on advances is due and payable to the lending Reserve Bank at maturity or when repayment of principal on the advance is requested. Interest will be charged at the applicable rate in effect at the time the advance is made. However, if the interest rate stated is changed while an advance is still outstanding, the new rate will apply on and after the effective date of the change.</p>
+<p>Interest accrues on the unpaid balance of advances until the maturity date, at which time the remaining principal and any accrued interest will be automatically charged to the depository institution's account or the designated correspondent's account.</p>
+<p>Interest on advances is charged for 24 hours (or a multiple thereof, for multi-day advances) on the basis of a 365-day year.</p>
+</div>
+</div>
+<div class="anchor">
+<a name="eligibility"></a>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3>Eligibility to Borrow</h3>
+<p>Financial institutions that are considered &ldquo;depository institutions&rdquo; under Section 19(b)(1)(A) of the Federal Reserve Act, and that maintain reservable transaction accounts or nonpersonal time deposits (as defined in <a href="https://www.federalreserve.gov/supervisionreg/reglisting.htm#D##D">Regulation D</a>) are eligible to participate in discount window lending programs. U.S. branches and agencies of foreign banks that hold reserves may also be eligible. Bankers' banks, corporate credit unions, and other financial institutions that are not required to maintain reserves under the Federal Reserve&rsquo;s <a href="https://www.federalreserve.gov/supervisionreg/reglisting.htm#D##D">Regulation D</a> may also be eligible for Discount Window access if they voluntarily agree to maintain reserves.</p>
+</div>
+</div>
+<div class="anchor">
+<a name="restrictions"></a>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3>Restrictions on Lending to Undercapitalized Depository Institutions</h3>
+<p>Federal Reserve Banks have limitations on extending advances to depository institutions that have fallen below minimum capital standards or have received a poor supervisory rating from its federal supervisor. For more information on this topic, see "FDICIA and the Discount Window" on <a rel="noopener noreferrer" href="http://www.federalreserve.gov/monetarypolicy/1194lead.pdf#page=11" target="_blank">page 975 of the November 1994 issue of the Federal Reserve Bulletin.</a></p>
+</div>
+</div>
+<div class="anchor">
+<a name="pledging"></a>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3>Pledging of Collateral</h3>
+<p>All discount window advances must be collateralized to the satisfaction of the Reserve Bank. This usually means that the Reserve Bank has a first-priority security interest on pledged collateral. Reserve Banks accept pledges of securities and pledges of loans. Information on the types of assets that the Reserve Banks accept as collateral can be found on the <a href="/pages/collateral/collateral_eligibility">Collateral Eligibility</a> page. Pledged collateral is assigned a value by the Reserve Bank which helps determine how much the depository institution can borrow. Information on collateral valuation, including collateral margin tables, can be found on the <a href="/pages/collateral/collateral_valuation">Collateral Valuation</a>&nbsp;page. The <a href="/pages/collateral/pledging_collateral">Pledging Collateral</a> page explains how depository institutions pledge assets as collateral.</p>
+</div>
+</div>
+<div class="anchor">
+<a name="emergency"></a>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3>Emergency Credit</h3>
+<p>In unusual and exigent circumstances, the Board of Governors of the Federal Reserve System may authorize the Reserve Banks to provide credit to institutions that qualify under broad-based eligibility criteria. Such emergency credit programs must be approved by the Board of Governors, in consultation with the Secretary of the Treasury.</p>
+</div>
+</div>
+
+                    <!-- JIRA DW-1486 -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <div id="content"></div>
+
+
+    
+
+
+
+
+
+
+
+
+<section class="mobile-footer-district-select text-center">
+    <div class="btn-group auto top">
+        <button type="button" class="btn dropdown-toggle btn-light district-select" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+            Select Your District
+        </button>
+        <div class="dropdown-menu district-list">
+                    <a class="dropdown-item" href="/pages/select-your-district/atlanta" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Atlanta (6th District)">
+                        <p class="mt-2 mb-0">Atlanta (6th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/boston" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Boston (1st District)">
+                        <p class="mt-2 mb-0">Boston (1st District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/chicago" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Chicago (7th District)">
+                        <p class="mt-2 mb-0">Chicago (7th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/cleveland" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Cleveland (4th District)">
+                        <p class="mt-2 mb-0">Cleveland (4th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/dallas" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Dallas (11th District)">
+                        <p class="mt-2 mb-0">Dallas (11th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/kansas-city" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Kansas City (10th District)">
+                        <p class="mt-2 mb-0">Kansas City (10th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/minneapolis" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Minneapolis (9th District)">
+                        <p class="mt-2 mb-0">Minneapolis (9th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/new-york" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="New York (2nd District)">
+                        <p class="mt-2 mb-0">New York (2nd District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/philadelphia" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Philadelphia (3rd District)">
+                        <p class="mt-2 mb-0">Philadelphia (3rd District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/richmond" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="Richmond (5th District)">
+                        <p class="mt-2 mb-0">Richmond (5th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/san-francisco" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="San Francisco (12th District)">
+                        <p class="mt-2 mb-0">San Francisco (12th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="/pages/select-your-district/st-louis" ga-on="click" ga-event-category="footer-nav-district" ga-event-action="St. Louis (8th District)">
+                        <p class="mt-2 mb-0">St. Louis (8th District)</p>
+                    </a>
+                    <a class="dropdown-item" href="http://federalreserve.gov" ga-on="click" ga-event-category="footer-nav" ga-event-action="Federal Reserve Board">
+                        <p class="mt-2 mb-0">Federal Reserve Board</p>
+                    </a>
+
+    </div>
+</div>
+</section>
+
+
+
+<footer>
+    <div class="links">
+<a class="desk" title="Interest Rates" href="/pages/discount-rates">Discount Rates</a><a href="/pages/collateral">Collateral</a><a class="desk" title="Select Your District" href="/pages/select-your-district">Select Your District</a><a href="/pages/general-information/faq">Frequently Asked Questions</a><a class="mobile" title="Privacy Policy &amp; Disclaimer" href="/utilities/privacy-policy-disclaimer">Privacy Policy | Legal Notices</a><a class="mobile" title="Contact Us" href="/utilities/contact-us">Contact Us</a>    </div>
+</footer>
+
+  
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0LGWE6DT6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+           gtag('config', 'G-T0LGWE6DT6');
+
+            $('.tiles-section a').on("click", function () {
+                gtag('event', 'tile_click', { 'tilelink': $(this).text().trim() })
+            });
+
+            $('.nav .dropdown-item').on("click", function () {
+                gtag('event', 'navigation_click', { 'navlink': $(this).text().trim() })
+            });
+
+            $('footer a').on("click", function () {
+                gtag('event', 'footer_click', { 'footerlink': $(this).text().trim() })
+            });
+
+            $('.mobile-footer-district-select a').on("click", function () {
+                gtag('event', 'footer_click', { 'footerlink': $(this).text().trim() })
+            });
+
+        </script>
+
+
+<script type="text/javascript"  src="/mSs2Bplq6VPsDBWAEw/r5NOkDbGQwhc2fzO/NG4dCQE/Ozd/0JE1bbUIB"></script></body>
+
+</html>

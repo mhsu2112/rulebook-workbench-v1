@@ -1,0 +1,9 @@
+{
+  "item_id": "enf-index-sec-finra-cftc-aml-enforcement",
+  "nothing_in_scope": true,
+  "objectives": [],
+  "obligations": [],
+  "definitions": [],
+  "interactions": [],
+  "notes": "Retrieved source text is the raw SEC Administrative Proceedings index page (a chronological list of case captions, release numbers, and file numbers for the period March-July 2026) plus site navigation boilerplate. It contains no AML/CFT program-establishment ('pillars') obligation text, no statutory/regulatory/SRO rule text, no definitions, and no discussion of BSA/AML program requirements for depository institutions, MSBs, or broker-dealers. None of the listed respondents/case captions in the visible text are identified as AML-related matters (they appear to be accounting, disclosure, investment-adviser, and distribution-plan matters). Per the ceiling note, this source class (SEC/FINRA/CFTC enforcement action indices) is enforcement_evidence only and cannot itself establish an operative program obligation; but even treating it as evidence, the supplied page text contains no substantive AML enforcement narrative to record as an interaction or note beyond this observation. Accordingly nothing_in_scope is set true and no obligations/definitions/objectives/interactions are extracted from this item."
+}

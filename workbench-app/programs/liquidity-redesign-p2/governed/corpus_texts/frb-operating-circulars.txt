@@ -1,0 +1,1228 @@
+Skip to main content
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ Search
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ Application Sign In
+ 
+ 
+ Discount Window Direct
+
+ FedLine Developer
+
+ FedLine Web
+
+ Reporting Central
+
+ Reserves Central
+
+ Structure Central
+
+ Survey Central
+
+ Term Deposit Facility
+
+ 
+ 
+
+ 
+ 
+ Service Status
+ 
+ 
+
+ 
+ 
+ Contact
+ 
+ 
+
+ 
+ Financial Services
+ 
+ Financial Services Home
+ 
+
+ Accounting
+ 
+ Accounting Services Home
+
+ Account Management Information
+
+ Daily Statement of Account
+
+ Daylight Overdraft Reports
+
+ Premium Accounting Information Services
+
+ Statement of Service Charges
+
+ 
+
+ 2026 Fees
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ 
+ 
+
+ ACH
+ 
+ FedACH Products & Services Home
+
+ FedACH Exception Resolution Service
+
+ FedACH Information File Service
+
+ FedACH Origination & Receipt
+
+ FedACH Risk Management Services
+
+ FedACH SameDay Service
+
+ FedGlobal ACH Payments
+
+ FedPayments Insights Service
+
+ FedPayments Reporter Service for FedACH Services
+
+ 
+
+ 2026 Fees
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ Testing Opportunities
+
+ 
+ 
+
+ Cash
+ 
+ FedCash Services Home
+
+ Cash Visibility
+
+ Coin
+
+ Coin Terminal Services
+
+ Currency
+
+ FedCash Services via the FedLine Web Solution
+
+ 
+
+ 2026 Fees
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ 
+ 
+
+ Check
+ 
+ Check Products & Services Home
+
+ Check 21-Enabled Services
+
+ Check Adjustments Services
+
+ FedDetect Duplicate Notification for Check Services
+
+ FedForward Image Deposit Services
+
+ FedImage and Electronic Check Services
+
+ FedPayments Reporter Service for Check Services
+
+ FedReceipt Services
+
+ FedReturn Services
+
+ Foreign and Canadian Check Services
+
+ Image-Enabled Savings Bond Processing
+
+ Paper Check Clearing Services
+
+ 
+
+ 2026 Fees
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ Testing Opportunities
+
+ 
+ 
+
+ FedNow Service
+ 
+ FedNow Service Home
+
+ About FedNow
+
+ Blog Articles (Off-site)
+
+ FedNow Explorer (Off-site)
+
+ Industry Stories
+
+ Instant Payments Education (Off-site)
+
+ Participant Collaboration
+
+ Participants and Service Providers
+
+ 
+
+ 2026 Fees
+
+ Forms
+
+ Resources
+
+ Sign Up for FedNow Emails
+
+ 
+ 
+
+ Multiservice Solutions
+ 
+ Multiservice Solutions Home
+
+ Payee Name Verification
+
+ 
+
+ 2026 Fees
+
+ 
+ 
+
+ National Settlement Service
+ 
+ National Settlement Service Home
+
+ 
+
+ 2026 Fees
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ 
+ 
+
+ Securities
+ 
+ Fedwire Securities Service Home
+
+ Joint Custody Service
+
+ 
+
+ 2026 fees
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ Testing Opportunities
+
+ 
+ 
+
+ Wires
+ 
+ Fedwire Funds Service Home
+
+ 
+
+ 2026 Fees
+
+ Business Continuity
+
+ FedTransaction Analyzer
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ Testing Opportunities
+
+ 
+ 
+
+ 
+ 
+
+ 
+ Central Bank
+ 
+ Central Bank Home
+ 
+
+ Lending Central (Discount Window)
+ 
+ Lending Central (Discount Window) Home
+
+ Discount Window Direct Feature Guide
+
+ 
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ 
+ 
+
+ Reporting Central
+ 
+ Reporting Central Home
+
+ Reporting Central User Guides
+
+ 
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ 
+ 
+
+ Reserves Central
+ 
+ Reserves Central Home
+
+ Excess Balance Account
+
+ Term Deposit Facility
+
+ 
+
+ Business Continuity
+
+ Forms
+
+ Resources
+
+ Service Setup
+
+ 
+ 
+
+ 
+ 
+
+ 
+ Treasury Services
+ 
+ Treasury Services Home
+ 
+
+ Collateral Services
+ 
+
+ Savings Bonds For Financial Institutions
+ 
+
+ Savings Bonds News You Can Use
+ 
+
+ Treasury ACH Reclamation
+ 
+
+ Treasury Auctions
+ 
+
+ Treasury Check Reclamation
+ 
+
+ 
+
+ Business Continuity
+ 
+
+ Forms
+ 
+
+ Resources
+ 
+
+ Service Setup
+ 
+
+ 
+ 
+
+ 
+ Fedline Solutions
+ 
+ FedLine Solutions Home
+ 
+
+ FedLine Advantage
+ 
+
+ FedLine Command
+ 
+
+ FedLine Developer
+ 
+
+ FedLine Direct
+ 
+
+ FedLine Web
+ 
+
+ FedMail
+ 
+
+ 
+
+ 2026 Fees
+ 
+
+ Application and Connectivity Testing
+ 
+
+ Business Continuity
+ 
+
+ Forms
+ 
+
+ Resources
+ 
+
+ Service Setup
+ 
+
+ 
+ 
+
+ 
+ Forms
+ 
+ Forms Home
+ 
+
+ Accounting
+ 
+
+ ACH
+ 
+
+ Cash
+ 
+
+ Central Bank
+ 
+
+ Check
+ 
+
+ FedLine Solutions
+ 
+
+ FedNow Service
+ 
+
+ National Settlement Service
+ 
+
+ Securities
+ 
+
+ Treasury Services
+ 
+
+ Wires
+ 
+
+ 
+ 
+
+ 
+ Resources
+ 
+ Central Bank
+ 
+ Central Bank Resources Home
+
+ Frequently Asked Questions
+
+ Reporting Central Resources
+
+ Survey Central Resources
+
+ 
+ 
+
+ E-Payments Routing Directory
+ 
+
+ FedLine Solutions
+ 
+ FedLine Solutions Resources Home
+
+ End User Authorization Contact (EUAC) Support
+
+ FedLine Command Environment and Configuration Change Matrix
+
+ FedLine Direct File Environment and Configuration Change Matrix
+
+ FedLine Direct Message Environment and Configuration Change Matrix
+
+ Frequently Asked Questions
+
+ 
+ 
+
+ Fees
+ 
+
+ Financial Services
+ 
+ Accounting
+
+ ACH
+
+ Cash
+
+ Check
+
+ FedNow Service
+
+ Foreign Exchange Rates
+
+ National Settlement Service
+
+ Securities
+
+ Wires
+
+ 
+ 
+
+ Industry Links
+ 
+
+ Resource Centers
+ 
+ Resource Centers Home
+
+ Business Banking Toolbox
+
+ Business Continuity
+
+ International Payments
+
+ Risk Management Toolbox
+
+ Same Day ACH
+
+ Security and Resiliency Assurance Program
+
+ 
+ 
+
+ Rules & Regulations
+ 
+ Rules and Regulations Resources Home
+
+ Operating Circulars
+
+ Regulations
+
+ 
+ 
+
+ Service & Access Setup
+ 
+ Service and Access Setup Home
+
+ Current Financial Services Customer
+
+ Financial Institution Merger
+
+ New Financial Services Customer
+
+ Payment Processors and Third-Party Service Providers
+
+ 
+ 
+
+ Treasury Services
+ 
+ Treasury Services Resources Home
+
+ Collateral Services
+
+ Frequently Asked Questions
+
+ Savings Bonds for Financial Institutions
+
+ Treasury Auctions
+
+ Where to Send Security Deposits
+
+ 
+ 
+
+ 
+ 
+
+ 
+ Education
+ 
+ Federal Reserve Bank Webinars
+ 
+
+ Industry Events
+ 
+
+ Products & Services Education
+ 
+
+ 
+ 
+
+ 
+ News
+ 
+ Communications
+ 
+
+ Email Notifications
+ 
+
+ Fed360
+ 
+
+ Press Releases
+ 
+
+ Research Studies
+ 
+
+ 
+ 
+
+ 
+ About
+ 
+ About Federal Reserve Bank Services
+ 
+
+ Financial Services Leadership Team
+ 
+
+ Bank Offices
+ 
+
+ Holiday Schedules
+ 
+
+ Advisory Groups
+ 
+
+ 
+ 
+
+ 
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+ 
+ Home
+
+ Resources
+
+ Rules and Regulations
+
+ Operating Circulars
+
+ 
+ 
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+ Operating Circulars
+
+Federal Reserve Financial Services are governed by the terms and conditions that are set forth in the following operating circulars. Redlined versions of recently updated documents are available for review for approximately six months following a document update.
+
+Please refer to the Communications page for announcements related to changes to the operating circulars.
+
+Operating Circular 1 (OC 1)
+
+OC 1 contains the terms for opening, maintaining, and terminating a master account with a Federal Reserve Bank, as well as general provisions regarding Reserve Bank services applicable to institutions whether or not they maintain a Reserve Bank account.
+
+ Account Relationships (PDF) effective 09/01/23
+
+ Account Relationships Agreements and Forms
+
+ FedTransaction® Analyzer Terms and Conditions (PDF) effective 09/01/23
+
+ Account Structure Guide (PDF) effective 09/01/23
+
+ Account Structure Guide (ASG) Forms last updated June 2023
+
+Operating Circular 2 (OC 2)
+
+OC 2 contains the provisions that apply to a financial institution’s cash transactions with a Federal Reserve Bank.
+
+ Cash Services (PDF) effective 01/04/16
+
+ International Cash Services Letter of Agreement Template (PDF)
+
+ Cash Services Manual of Procedures (PDF) effective 03/01/19
+
+ The Cash Services Manual of Procedures (CSMOP) describes the operational guidelines and requirements of the Federal Reserve Banks with respect to a financial institution's cash transactions with the Federal Reserve Banks.
+
+ Deposit Visual Reference Guide Revised 11/01/23
+
+ To reflect the OC 2 and CSMOP changes and help your organization comply with new or revised depositing procedures, the Deposit Visual Reference Guide has recently been updated and is now available online and in a printable format (PDF).
+
+Operating Circular 3 (OC 3)
+
+OC 3 applies to the handling of all cash items that we accept for forward collection and all returned checks that we accept for return.
+
+ Collection of Cash Items and Returned Checks (PDF) effective 01/05/26
+
+ 
+ Summary of Changes (PDF)
+
+ Redlined from prior 10/28/24 version (PDF)
+
+ 
+ 
+
+ Collection of Cash Items and Returned Checks (PDF) effective 10/28/24
+
+Operating Circular 4 (OC 4)
+
+OC 4 applies to clearing and settlement of commercial automated clearing house (ACH) credit and debit items by the Federal Reserve Banks, sending banks, and receiving banks.
+
+ Automated Clearing House Items (PDF) effective 01/05/26
+
+ 
+ Summary of Changes (PDF)
+
+ Redlined from prior 10/28/24 version (PDF)
+
+ 
+ 
+
+ Automated Clearing House Items (PDF) effective 10/28/24
+
+Operating Circular 5 (OC 5)
+
+OC 5 was retitled on January 2026 from Electronic Access to General Financial Service Provisions. OC 5 sets forth the general terms applicable across all financial services provided by the Reserve Banks, including terms associated with electronic access and information security requirements.
+
+ General Financial Service Provisions (PDF) effective 05/15/26
+
+ 
+ Summary of Changes (PDF)
+
+ Reference Table (PDF)
+
+ Prior 1/5/26 version (PDF)
+
+ 
+ 
+
+ Certification Practice Statement
+
+ The Certification Practice Statement describes the policies and practices of the Federal Reserve Banks’ public key infrastructure with respect to the issuance, management and usage of digital certificates and sets forth the obligations of certificate users. The Federal Reserve Banks now use two Certification Authorities to issue digital certificates relating to FedLine® access solutions and each Certification Authority has its own Certification Practice Statement. For additional information regarding the Certification Authorities, and to determine which Certification Practice Statement applies to particular FedLine® access services for your institution, please review the Certification Practice Statement Fact Sheet (PDF).
+ 
+ Certification Practice Statement—Federal Reserve Banks’ Certification Authority (PDF) effective 07/08/14
+
+ Certification Practice Statement of the Federal Reserve Banks’ Services Public Key Infrastructure (PDF) effective 06/30/21
+
+ 
+ 
+
+ Password Practice Statement (PDF) effective 01/20/05
+
+ The Password Practice Statement describes the policies and practices of the Federal Reserve Banks with respect to Federal Reserve Bank-issued passwords used to access Federal Reserve Bank business applications.
+
+Operating Circular 6 (OC 6)
+
+OC 6, along with subpart B of Regulation J, applies to funds transfers made through the Fedwire® Funds Service.
+
+ Funds Transfers Through the Fedwire Funds Service (PDF) effective 01/05/26
+
+ 
+ Summary of Changes (PDF)
+
+ Redlined from prior 02/18/25 version (PDF)
+
+ 
+ 
+
+ Funds Transfers Through the Fedwire Funds Service (PDF) effective 02/18/25
+
+Operating Circular 7 (OC 7)
+
+OC 7 contains the terms under which the Federal Reserve Banks maintain securities accounts and effect transfers of book-entry securities for participants.
+
+ Fedwire Securities Service (PDF) effective 01/05/26
+
+ 
+ Summary of Changes (PDF)
+
+ Redlined from prior 05/01/24 version (PDF)
+
+ 
+ 
+
+ Fedwire Securities Service (PDF) effective 05/01/24
+
+Operating Circular 8 (OC 8)
+
+OC 8, along with subpart C of Regulation J, applies to funds transfers made through the FedNow® Service.
+
+ Funds Transfers Through the FedNow Service (PDF) effective 04/01/26
+
+ 
+ Summary of Changes (PDF)
+
+ Redlined from prior 01/05/26 version (PDF)
+
+ 
+ 
+
+ Prior Funds Transfers Through the FedNow Service (PDF) effective 01/ 05 /26
+
+  The FedNow Service Operating Procedures (PDF), effective 04/28/26, provide operational details, including expectations, requirements and guidance for FedNow participants on the use of the service.
+ 
+  Redlined from prior 02/13/26 version (PDF)
+
+ 
+ 
+
+Operating Circular 9 (OC 9)
+
+OC 9 sets forth the terms under which each Federal Reserve Bank, as fiscal agent of the United States, administers aspects of investments of the Department of the Treasury and monitors collateral pledged to a Federal Government department, agency or instrumentality in lieu of furninging a surety bond, or pledged to secure public deposits and investments of government funds. 
+
+ Treasury Investments and Collateral Securing Public Funds and Financial Interests of the Government (PDF) effective 07/25/13
+
+Operating Circular 10 (OC 10)
+
+OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.
+
+ Lending (PDF) effective 08/28/23
+
+ Lending Agreements (Off-site) effective 08/28/23
+ 
+ Amendments to Appendix 5 Form of Letter of Agreement to Correspondent Credit and Payment Agreement (PDF)
+ 
+ Appendix 5 Form of Letter of Agreement to Correspondent Credit and Payment Agreement (Off-site)
+
+ Appendix 5 redlined from prior version (PDF)
+
+ 
+ 
+
+ 
+ 
+
+Operating Circular 11 (OC 11)
+
+There is no OC 11.
+
+Operating Circular 12 (OC 12)
+
+OC 12 contains the terms under which the Federal Reserve Banks provide certain settlement services through what is called the National Settlement Service.
+
+ Multilateral Settlement (PDF) effective 03/08/21
+
+
+ Top of Page
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+
+ 
+ Rules and Regulations Resources
+
+ 
+
+ 
+ Rules and Regulations Resources Home
+
+ Operating Circulars
+
+ Regulations
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+ 
+ 
+ FOLLOW US
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+
+ 
+ 
+ Financial Services
+
+ Accounting
+
+ ACH
+
+ Cash
+
+ Check
+
+ FedNow Service
+
+ Multiservice Solutions
+
+ National Settlement Service
+
+ Securities
+
+ Wires
+
+ Central Bank
+
+ Lending Central (Discount Window)
+
+ Reporting Central
+
+ Reserves Central
+
+ 
+ 
+
+ 
+ 
+ Treasury Services
+
+ ACH Reclamation
+
+ Auctions
+
+ Check Reclamation
+
+ Collateral Services
+
+ Savings Bonds For Financial Institutions
+
+ Savings Bonds News You Can Use
+
+ Fedline® Solutions
+
+ FedLine Advantage®
+
+ FedLine Command®
+
+ FedLine Developer
+
+ FedLine Direct®
+
+ FedLine Web®
+
+ FedMail®
+
+ 
+ 
+
+ 
+ 
+ Forms
+
+ Accounting
+
+ ACH
+
+ Cash
+
+ Central Bank
+
+ Check
+
+ FedLine® Solutions
+
+ National Settlement Service
+
+ Securities
+
+ Treasury Services
+
+ Wires
+
+ 
+ 
+
+ 
+ 
+ Resources
+
+ Central Bank
+
+ FedLine® Solutions
+
+ Fees
+
+ Financial Services
+
+ Industry Links
+
+ Resource Centers
+
+ E-Payments Routing Directory
+
+ Rules & Regulations
+
+ Service & Access Setup
+
+ Treasury Services
+
+ 
+ 
+
+ 
+ 
+ Education
+
+ Events
+
+ Products & Services Education
+
+ Webinars
+
+ 
+ 
+
+ 
+ 
+ News
+
+ Communications
+
+ Email Notifications
+
+ Fed360®
+
+ Press Releases
+
+ Research Studies
+
+ About
+
+ About Federal Reserve Bank Services
+
+ Financial Services Leadership Team
+
+ Bank Offices
+
+ Holiday Schedules
+
+ Advisory Groups
+
+ Contact
+
+ Sitemap
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ This site is a product of the Federal Reserve Banks.
+
+
+
+ Terms of Use | 
+ Supported Browsers | 
+ Privacy Policy
+ 
+ General Reserve Bank Data Privacy Notice | 
+ Reprinting Articles
+ 
+ 
+
+ 
+
+ 
+ Address comments and questions to the
+ FRBservices.org Webmaster
+ ©2026 Federal Reserve Banks
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Please enable JavaScript to use this website.

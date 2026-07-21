@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EffectClassificationDraft",
+  "description": "DRAFT effect-class analysis for one proposed operation (P3.3 / ADR-008). The model applies spec/20 §3 reasoning; a HUMAN classifier confirms or overrides at disposition (PRD NG2 — until the baseline_set_for resolver exists, classification is a human act and outputs disclose the manual posture).",
+  "type": "object",
+  "required": ["draft_effect_class", "baseline_reasoning", "cells_touched", "confidence"],
+  "properties": {
+    "draft_effect_class": { "enum": ["codify", "clarify", "fill_gap", "change", "unresolved"] },
+    "baseline_reasoning": { "type": "string", "maxLength": 3000,
+      "description": "spec/20 §3 applied: hierarchy & delegation, applicability, status controls, evidentiary ceilings — why the baseline does or does not already require the operation's output" },
+    "cells_touched": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["actor", "activity"],
+        "properties": {
+          "actor": { "type": "string" },
+          "activity": { "type": "string" },
+          "jurisdiction": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "evidentiary_ceiling_notes": { "type": ["string", "null"],
+      "description": "Flag if any supporting source is enforcement evidence or a proposal — those may not establish the duty (spec/20 §3)" },
+    "confidence": { "enum": ["high", "medium", "low"],
+      "description": "low or an indeterminate baseline should push the human toward unresolved (routes like change)" }
+  }
+}

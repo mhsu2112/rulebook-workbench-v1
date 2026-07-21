@@ -1,0 +1,445 @@
+{
+  "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+  "snapshot_date": "2026-07-18",
+  "items": {
+    "31-usc-5311": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5311&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:29:35.530101+00:00",
+      "raw_sha256": "sha256:e33d54e55904d026ef284378bd15f31c7b859a3c70502f1b1a22191f52dc2dcf",
+      "raw_bytes": 281990,
+      "text_chars": 83499,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-usc-5312": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5312&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:29:35.655239+00:00",
+      "raw_sha256": "sha256:70b92b68716192bc0169d04f2d851bc512f42fff825f98177df5920df893af75",
+      "raw_bytes": 192170,
+      "text_chars": 20245,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-usc-5318": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5318&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:29:35.863874+00:00",
+      "raw_sha256": "sha256:fec3c24f6d11b4326d41dcc0c9dccb8734a39cb586067089f77b2857a74d4bda",
+      "raw_bytes": 310563,
+      "text_chars": 91469,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-usc-5334": {
+      "status": "fetched",
+      "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5334&num=0&edition=prelim",
+      "fetched_at": "2026-07-19T12:29:35.942920+00:00",
+      "raw_sha256": "sha256:1a674dd439978d481da30a2aae93e93f5d2fd090613c00db870c826fef7443c6",
+      "raw_bytes": 160360,
+      "text_chars": 3944,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "amla-2020-uncodified": {
+      "status": "manual",
+      "method": "manual_slice",
+      "text_chars": 252408,
+      "note": "text sliced to NDAA FY2021 Division F (AML Act of 2020); raw HTML retained",
+      "source_url": "https://www.govinfo.gov (full bill; Division F slice)",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-ra": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 11206,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-cp-01": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 4290,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-cp-02": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 3575,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-cp-03": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 7759,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-cp-04": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 5103,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-cp-05": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 4498,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "ffiec-man-ps-01": {
+      "status": "browser_assisted",
+      "method": "browser_assisted",
+      "text_chars": 15059,
+      "note": "restored 2026-07-19 (final) after stale-server clobber; text unchanged",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "frb-sr-24-4": {
+      "status": "fetched",
+      "source_url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2404.htm",
+      "fetched_at": "2026-07-19T12:30:07.019753+00:00",
+      "raw_sha256": "sha256:dc45b597eb8a0300be31ec40f1e3f773fce13d33a418118fd357e5a22b296b97",
+      "raw_bytes": 87967,
+      "text_chars": 6754,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "occ-b-2024-19": {
+      "status": "fetched",
+      "source_url": "https://www.occ.gov/news-issuances/bulletins/2024/bulletin-2024-19.html",
+      "fetched_at": "2026-07-19T12:30:07.147409+00:00",
+      "raw_sha256": "sha256:7180ad689a1916a24b705823f708aabae11abda486575d063ee4de1c3340b22e",
+      "raw_bytes": 62573,
+      "text_chars": 4921,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "occ-b-2026-11": {
+      "status": "fetched",
+      "source_url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-11.html",
+      "fetched_at": "2026-07-19T12:30:07.254850+00:00",
+      "raw_sha256": "sha256:f2105a15b8f89906418ae6b4b64b856487c74b7ffe513b942aded2ac57fe1244",
+      "raw_bytes": 61161,
+      "text_chars": 5309,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "fincen-guid-existing-program-rule-obligations": {
+      "status": "fetched",
+      "source_url": "https://www.fincen.gov/resources/statutes-regulations/guidance/guidance-existing-aml-program-rule-compliance-obligations",
+      "fetched_at": "2026-07-19T12:30:07.477938+00:00",
+      "raw_sha256": "sha256:06c400f372f00b480cac9e1a5512c1c9bf458bda3b9b0e4ba597345481927f7b",
+      "raw_bytes": 43847,
+      "text_chars": 11486,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "fincen-faq-msb-independent-review": {
+      "status": "fetched",
+      "source_url": "https://www.fincen.gov/resources/statutes-regulations/guidance/frequently-asked-questions-conducting-independent-reviews",
+      "fetched_at": "2026-07-19T12:30:08.114966+00:00",
+      "raw_sha256": "sha256:130d55c138aebfc32f613f6a7eff1b8114b35bf95a45bdf760130895c9bc6c0b",
+      "raw_bytes": 38534,
+      "text_chars": 7872,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "fincen-amlcft-national-priorities": {
+      "status": "fetched",
+      "source_url": "https://www.fincen.gov/system/files/shared/AML_CFT%20Priorities%20(June%2030%2C%202021).pdf",
+      "fetched_at": "2026-07-19T12:30:08.556326+00:00",
+      "raw_sha256": "sha256:8a3a2ea4cf7d58ff9f06501627c5a6237ea22ca805c6ac4afcbc62a5c59b3b17",
+      "raw_bytes": 453921,
+      "text_chars": 41980,
+      "raw_ext": "pdf",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "fincen-priorities-statement-nonbank": {
+      "status": "fetched",
+      "source_url": "https://www.fincen.gov/system/files/shared/Statement%20for%20Non-Bank%20Financial%20Institutions%20(June%2030%2C%202021).pdf",
+      "fetched_at": "2026-07-19T12:30:08.875946+00:00",
+      "raw_sha256": "sha256:7131fa27c4df4325ecda05f34978a9821641bc53fd553ea66e70bdb877106df3",
+      "raw_bytes": 291576,
+      "text_chars": 6100,
+      "raw_ext": "pdf",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-3310": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3310",
+      "fetched_at": "2026-07-19T12:30:08.959403+00:00",
+      "raw_sha256": "sha256:c4fb1ddaedea20fd7a10dc24671a674c9ca159a2913ccb7d7fa53f440fbf55e0",
+      "raw_bytes": 101846,
+      "text_chars": 9128,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-CAB-331": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/rulebooks/capital-acquisition-broker-rules/331",
+      "fetched_at": "2026-07-19T12:30:08.991085+00:00",
+      "raw_sha256": "sha256:1e0ba64bb6747e04c02dbba7fa607ab0532d958537fd083a2c1a7ad3f8d83128",
+      "raw_bytes": 100823,
+      "text_chars": 7570,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-RN-18-19": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/notices/18-19",
+      "fetched_at": "2026-07-19T12:30:09.021703+00:00",
+      "raw_sha256": "sha256:c3bdbbdb1cb644b110562e0f0654007aeaa97af53fa72b17c2bbeea393fc6bdd",
+      "raw_bytes": 98751,
+      "text_chars": 11132,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-RN-18-36": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/notices/18-36",
+      "fetched_at": "2026-07-19T12:30:09.054219+00:00",
+      "raw_sha256": "sha256:43299949c6af6d24f9e84e9e2375904387190c4a3de63b7ed3f3482a221e9b7f",
+      "raw_bytes": 105047,
+      "text_chars": 15872,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-RN-17-40": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/notices/17-40",
+      "fetched_at": "2026-07-19T12:30:09.090683+00:00",
+      "raw_sha256": "sha256:6f86acef524a7c4bb8dbd6685292413ddc8eeb2d5addc9908628f9ff091b3b69",
+      "raw_bytes": 114223,
+      "text_chars": 25226,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-RN-09-60": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/notices/09-60",
+      "fetched_at": "2026-07-19T12:30:09.130296+00:00",
+      "raw_sha256": "sha256:5949daaa285a013dc4517418fffdc8cbfb6821a2014b53e3f68f8f2cec9e467a",
+      "raw_bytes": 122027,
+      "text_chars": 29429,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-AML-TEMPLATE": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/compliance-tools/anti-money-laundering-template-small-firms",
+      "fetched_at": "2026-07-19T12:30:09.203506+00:00",
+      "raw_sha256": "sha256:374e195449d621d6f1aa267021b2afe196f9f47f0ccf237945f83330f5549000",
+      "raw_bytes": 80027,
+      "text_chars": 4073,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-AML-FAQ": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/key-topics/aml/faq",
+      "fetched_at": "2026-07-19T12:30:09.243747+00:00",
+      "raw_sha256": "sha256:03ec5e36b71a4aa982a6c0875a484d251377654429451e7387826c1f5a6968ea",
+      "raw_bytes": 118603,
+      "text_chars": 31895,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "FINRA-ORR-AML-2024-2026": {
+      "status": "fetched",
+      "source_url": "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/aml",
+      "fetched_at": "2026-07-19T12:30:09.285951+00:00",
+      "raw_sha256": "sha256:9b0d71b77c40cae0d11f9d7032b5ebfbb334091fbe0b129a8f53fd954680c09a",
+      "raw_bytes": 121893,
+      "text_chars": 30411,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "enf-index-fincen-civil-enforcement-actions": {
+      "status": "fetched",
+      "source_url": "https://www.fincen.gov/news/enforcement-actions",
+      "fetched_at": "2026-07-19T12:30:09.450455+00:00",
+      "raw_sha256": "sha256:d15fc937c9600016deb877b3c906eab20b450dc4c422685a8977a803e853742d",
+      "raw_bytes": 166854,
+      "text_chars": 16057,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "enf-index-federal-banking-agency-bsa-related-forma": {
+      "status": "fetched",
+      "source_url": "https://apps.occ.gov/EASearch",
+      "fetched_at": "2026-07-19T12:30:10.444228+00:00",
+      "raw_sha256": "sha256:8326f0e56291bd109313e56a13b3fba1237597a50a677078035265a441d964b9",
+      "raw_bytes": 17797,
+      "text_chars": 4402,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "enf-index-sec-finra-cftc-aml-enforcement": {
+      "status": "fetched",
+      "source_url": "https://www.sec.gov/litigation/admin",
+      "fetched_at": "2026-07-19T12:30:10.732841+00:00",
+      "raw_sha256": "sha256:d3cfb9dbf38d4bd698b2cf3ef21fcf83c2d5520498140c2c9abaf903534e5f0b",
+      "raw_bytes": 222439,
+      "text_chars": 18381,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-cfr-1010": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-31.xml?part=1010",
+      "fetched_at": "2026-07-19T16:01:45.916063+00:00",
+      "raw_sha256": "sha256:0fb47faf9e5b1f753c1b0b049441f29aabd77ce48f8b7f66cd4ce86ec1678100",
+      "raw_bytes": 366458,
+      "text_chars": 331401,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-cfr-1020": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-31.xml?part=1020",
+      "fetched_at": "2026-07-19T16:01:51.279098+00:00",
+      "raw_sha256": "sha256:2588950c5c16efb45a2a78369e08bda2174bf9a8be5afd634235a406f51924bb",
+      "raw_bytes": 71712,
+      "text_chars": 62938,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-cfr-1022": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-31.xml?part=1022",
+      "fetched_at": "2026-07-19T16:02:01.514267+00:00",
+      "raw_sha256": "sha256:fcd9c98d465b17ab3d88435373f0552b82d3bc6d9719a24702a892de27bfe627",
+      "raw_bytes": 43998,
+      "text_chars": 37082,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-cfr-1023": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-31.xml?part=1023",
+      "fetched_at": "2026-07-19T16:02:06.166838+00:00",
+      "raw_sha256": "sha256:b6f336ad69d44f99c1a31d76f7c1fcba4264e82603b117fc77cb302dc9b363fd",
+      "raw_bytes": 44991,
+      "text_chars": 37146,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "31-cfr-1010-230-cdd": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-31.xml?part=1010",
+      "fetched_at": "2026-07-19T16:02:16.246772+00:00",
+      "raw_sha256": "sha256:0fb47faf9e5b1f753c1b0b049441f29aabd77ce48f8b7f66cd4ce86ec1678100",
+      "raw_bytes": 366458,
+      "text_chars": 331401,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-cfr-21-occ": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-12.xml?part=21",
+      "fetched_at": "2026-07-19T16:02:21.279744+00:00",
+      "raw_sha256": "sha256:b7686157b2f6b8e009e747c3ace67fc93f1233c262e4a023df278df80b45fe4b",
+      "raw_bytes": 24257,
+      "text_chars": 21310,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-cfr-208-fed": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-12.xml?part=208",
+      "fetched_at": "2026-07-19T16:02:27.051009+00:00",
+      "raw_sha256": "sha256:76c6dacd099fed144b906b2bd0d2a16aa3f454e027922a523cacddb29d55035b",
+      "raw_bytes": 337218,
+      "text_chars": 308577,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-cfr-326-353-fdic": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-12.xml?part=326",
+      "fetched_at": "2026-07-19T16:02:31.441282+00:00",
+      "raw_sha256": "sha256:0cf8aa3ec3361eac007ebafea2dda0cbbd2e7d39c9ccda15f104b67ed4fc4c2c",
+      "raw_bytes": 9681,
+      "text_chars": 7353,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "12-cfr-748-ncua": {
+      "status": "fetched",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-16/title-12.xml?part=748",
+      "fetched_at": "2026-07-19T16:02:36.437360+00:00",
+      "raw_sha256": "sha256:197abfd76839ccb219eb8720b788e20e02b066f805a41ff3fc7b12ea16ae06f7",
+      "raw_bytes": 47486,
+      "text_chars": 43946,
+      "raw_ext": "xml",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "fincen-program-nprm-2026": {
+      "status": "fetched",
+      "source_url": "https://www.federalregister.gov/documents/full_text/text/2026/04/10/2026-07033.txt",
+      "fetched_at": "2026-07-19T16:02:36.598394+00:00",
+      "raw_sha256": "sha256:2f1ef275c4cfb45a11e97a6d1769fc9d709805b4df279137f1349c2df8280273",
+      "raw_bytes": 471312,
+      "text_chars": 442097,
+      "raw_ext": "html",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    },
+    "fincen-ir-2004-1-aml-program": {
+      "status": "fetched",
+      "source_url": "https://www.fincen.gov/sites/default/files/shared/31cfr12142004.pdf",
+      "fetched_at": "2026-07-19T17:47:30.250191+00:00",
+      "raw_sha256": "sha256:187e8c9b53020a7fbabaa26a31b4d87dcccb7bb8f45ea25ecaa6612d4d96d691",
+      "raw_bytes": 74015,
+      "text_chars": 26476,
+      "raw_ext": "pdf",
+      "manifest_hash": "sha256:c89621b3a1c0cdc918e389372fee914f330c5fc671612c6e2175199125aa667b",
+      "snapshot_date": "2026-07-18"
+    }
+  }
+}

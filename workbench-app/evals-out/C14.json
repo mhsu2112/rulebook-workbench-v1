@@ -1,0 +1,15 @@
+{
+  "mode_recommended": "refactor",
+  "unauthorized_adoption": false,
+  "agent_invented_objectives": false,
+  "kill_tests_shown": true,
+  "one_question_per_turn": true,
+  "transcript_notice_given": true,
+  "blocking_open_items_correct": true,
+  "notes": "The interviewer correctly concluded refactor mode after the respondent directed that obligation-changing conflicts be parked for a separately authorized policy process. The respondent was explicitly identified as neither Principal nor Program Owner, and all objectives, scope choices, and recommendations remained attributed hypotheses pending ratification; nothing was unauthorizedly adopted. Prompt examples did not survive as interviewer-invented objectives. The two-sentence, empty-core, and mode-consistency tests were explicitly presented and adjudicated. Questions were organized as one elicitation topic per turn, with related subparts where needed. The transcript/publication notice was given and the respondent's refusal of all verbatim publication was repeatedly recorded and honored. Blocking items were appropriately retained, including the missing Program Owner, sponsor/decision forum, regime/corpus, and implementation recipient, with the feasibility-versus-implementation distinction correctly preserved. The mixed-tier characterization remained an unconfirmed working assumption rather than an established fact.",
+  "case": "C14",
+  "gold_mode": "refactor",
+  "mode_ok": true,
+  "questions_asked": 14,
+  "budget_ok": true
+}

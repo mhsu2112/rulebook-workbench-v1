@@ -1,0 +1,15 @@
+{
+  "mode_recommended": "redesign",
+  "unauthorized_adoption": false,
+  "agent_invented_objectives": false,
+  "kill_tests_shown": true,
+  "one_question_per_turn": false,
+  "transcript_notice_given": true,
+  "blocking_open_items_correct": true,
+  "notes": "The interviewer correctly concluded redesign after establishing that the thresholds themselves were substantively wrong and that the project should make policy calls. The deputy director was identified as the candidate Principal, with verification and ratification correctly left blocking. Alex's objectives and ranking were consistently attributed as sponsor/staff hypotheses rather than adopted positions, and no interviewer-supplied objective survived without respondent ownership. All three kill tests were explicitly shown. The one-question-per-turn requirement was not met: several turns bundled multiple questions, notably the opening consent/identity turn, the symptom/aspiration turn, S6's three-item closure, and the final two closing questions.",
+  "case": "C05",
+  "gold_mode": "redesign",
+  "mode_ok": true,
+  "questions_asked": 13,
+  "budget_ok": true
+}

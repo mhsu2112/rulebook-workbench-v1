@@ -1,0 +1,211 @@
+{
+  "item_id": "ffiec-man-cp-02",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Assess the bank's system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective: Assess the bank's system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "ffiec-man-cp-02-O1",
+      "actor": "board of directors, acting through senior management",
+      "modality": "must",
+      "action": "ensure that the bank maintains a system of internal controls to assure ongoing compliance with BSA regulatory requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors, acting through senior management, is ultimately responsible for ensuring that the bank maintains a system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-02-O2",
+      "actor": "bank's system of internal controls (level and type)",
+      "modality": "should",
+      "action": "be commensurate with the bank's size or complexity, and organizational structure",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The system of internal controls, including the level and type, should be commensurate with the bank's size or complexity, and organizational structure.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-02-O3",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "determine whether the bank's internal controls are designed to assure ongoing compliance with BSA regulatory requirements and incorporate the risk assessment, provide program continuity, facilitate IT oversight, provide timely regulatory updates, incorporate dual controls/segregation of duties, include mechanisms to inform the board and senior management, and establish specific BSA compliance responsibilities",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should determine whether the bank's internal controls are designed to assure ongoing compliance with BSA regulatory requirements and:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-02-O4",
+      "actor": "employees who complete the reporting forms (such as SARs, CTRs, and CTR exemptions)",
+      "modality": "should",
+      "action": "generally should not also be responsible for the decision to file the reports or grant the exemptions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "For example, employees who complete the reporting forms (such as suspicious activity reports (SARs), currency transaction reports (CTRs), and CTR exemptions) generally should not also be responsible for the decision to file the reports or grant the exemptions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-02-O5",
+      "actor": "bank (this list of internal control features)",
+      "modality": "should",
+      "action": "be tailored to reflect the bank's ML/TF and other illicit financial activity risk profile",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "This list is not all-inclusive and should be tailored to reflect the bank's ML/TF and other illicit financial activity risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-02-O6",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "determine whether the bank's system of internal controls is designed to mitigate and manage the ML/TF and other illicit financial activity risks, and comply with BSA regulatory requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should determine whether the bank's system of internal controls is designed to mitigate and manage the ML/TF and other illicit financial activity risks, and comply with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ffiec-man-cp-02-O7",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "assess the adequacy of internal controls based on the factors listed above",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should assess the adequacy of internal controls based on the factors listed above.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Internal controls",
+      "definition": "the bank's policies, procedures, and processes designed to mitigate and manage ML/TF and other illicit financial activity risks and to achieve compliance with BSA regulatory requirements",
+      "citations": [
+        {
+          "quote": "Internal controls are the bank's policies, procedures, and processes designed to mitigate and manage ML/TF and other illicit financial activity risks and to achieve compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Departmental internal controls",
+      "definition": "controls that typically address risks and compliance requirements unique to a particular line of business or department and are part of a comprehensive, bank-wide BSA/AML compliance program",
+      "citations": [
+        {
+          "quote": "Departmental internal controls typically address risks and compliance requirements unique to a particular line of business or department and are part of a comprehensive, bank-wide BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA regulatory requirements",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Assess the bank's system of internal controls to assure ongoing compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "ML/TF and other illicit financial activity risks",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "designed to mitigate and manage ML/TF and other illicit financial activity risks",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "SARs (suspicious activity reports)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "such as suspicious activity reports (SARs), currency transaction reports (CTRs), and CTR exemptions",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "CTRs (currency transaction reports)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "such as suspicious activity reports (SARs), currency transaction reports (CTRs), and CTR exemptions",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA/AML risk assessment",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Incorporate the bank's BSA/AML risk assessment and the identification of ML/TF and other illicit financial activity risks, along with any changes in those risks.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Cross-references other manual sections for individual regulatory requirements and specific risk areas.",
+      "references": [
+        "Assessing Compliance with BSA Regulatory Requirements",
+        "Risks Associated with Money Laundering and Terrorist Financing"
+      ],
+      "citations": [
+        {
+          "quote": "More information concerning individual regulatory requirements and specific risk areas is in the Assessing Compliance with BSA Regulatory Requirements and Risks Associated with Money Laundering and Terrorist Financing sections.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Footnote marker [13] appears after the board-of-directors responsibility sentence but the footnote text is not included in the source; citation authority not resolvable from this item. SAR/CTR references appear here only as examples illustrating dual-controls/segregation-of-duties internal controls; per ratified scope, SAR/CTR operational duties are a coordination layer and are extracted as written (as internal-control design factors) without harmonization. Modalities: board responsibility rendered 'must' from 'is ultimately responsible for ensuring'; 'should' items preserved from the text's own 'should'/'generally should not' language."
+}

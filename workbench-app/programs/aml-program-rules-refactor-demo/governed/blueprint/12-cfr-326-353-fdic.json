@@ -1,0 +1,208 @@
+{
+  "item_id": "12-cfr-326-353-fdic",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This subpart is issued to assure that all FDIC-supervised institutions as defined in 12 CFR 326.1 establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR Chapter X.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This subpart is issued to assure that all FDIC-supervised institutions as defined in 12 CFR 326.1 establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR Chapter X.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "Each FDIC-supervised institution (as defined in 12 CFR 326.1)",
+      "modality": "must",
+      "action": "develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations issued by the Department of Treasury at 31 CFR Chapter X",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each institution shall develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations issued by the Department of Treasury at 31 CFR Chapter X.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "Each FDIC-supervised institution",
+      "modality": "must",
+      "action": "have a compliance program that is written, approved by the institution's board of directors, and noted in the minutes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The compliance program shall be written, approved by the institution's board of directors, and noted in the minutes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Each FDIC-supervised institution",
+      "modality": "must",
+      "action": "comply with the customer identification program requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the FDIC and the Department of the Treasury at 31 CFR 1020.220",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each institution is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the FDIC and the Department of the Treasury at 31 CFR 1020.220.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "Each FDIC-supervised institution",
+      "modality": "must",
+      "action": "provide, as a minimum content of the compliance program, for a system of internal controls to assure ongoing compliance",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "Each FDIC-supervised institution",
+      "modality": "must",
+      "action": "provide, as a minimum content of the compliance program, for independent testing for compliance to be conducted by institution personnel or by an outside party",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for independent testing for compliance to be conducted by institution personnel or by an outside party;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "Each FDIC-supervised institution",
+      "modality": "must",
+      "action": "designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "Each FDIC-supervised institution",
+      "modality": "must",
+      "action": "provide training for appropriate personnel",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "FDIC-supervised institution or institution",
+      "definition": "any entity for which the Federal Deposit Insurance Corporation is the appropriate Federal banking agency pursuant to section 3(q) of the Federal Deposit Insurance Act, 12 U.S.C. 1813(q)",
+      "citations": [
+        {
+          "quote": "The term FDIC-supervised institution or institution means any entity for which the Federal Deposit Insurance Corporation is the appropriate Federal banking agency pursuant to section 3(q) of the Federal Deposit Insurance Act, 12 U.S.C. 1813(q).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act",
+      "definition": "(undefined here as a defined term in this part, but identified by footnote as) subchapter II of chapter 53 of title 31 U.S.C., originally part of Pub. L. 91-508, which requires recordkeeping for and reporting of currency transactions by banks and others",
+      "citations": [
+        {
+          "quote": "In its original form, subchapter II of chapter 53 of title 31 U.S.C., was part of Pub. L. 91-508 which requires recordkeeping for and reporting of currency transactions by banks and others and is commonly known as the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "compliance program",
+      "definition": "(undefined here); the term is used in 326.8 to denote the written program an institution must develop and administer under this section, with contents specified in 326.8(c), but no standalone definition of the term itself is given",
+      "citations": [
+        {
+          "quote": "Contents of compliance program. The compliance program shall, at a minimum:",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "326.8's compliance-program requirement cross-references the Bank Secrecy Act recordkeeping/reporting provisions and Treasury's implementing regulations at 31 CFR Chapter X, both as the basis for the subpart's purpose and as the substantive requirements the program must assure compliance with.",
+      "references": [
+        "31 U.S.C. subchapter II of chapter 53",
+        "31 CFR Chapter X"
+      ],
+      "citations": [
+        {
+          "quote": "This subpart is issued to assure that all FDIC-supervised institutions as defined in 12 CFR 326.1 establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR Chapter X.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "326.8(b)(2) cross-references the Customer Identification Program statute and its jointly-promulgated implementing regulation as a distinct, incorporated requirement applicable to each institution.",
+      "references": [
+        "31 U.S.C. 5318(l)",
+        "31 CFR 1020.220"
+      ],
+      "citations": [
+        {
+          "quote": "Each institution is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulation jointly promulgated by the FDIC and the Department of the Treasury at 31 CFR 1020.220.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Footnote to the part title identifies the historical statutory origin of the Bank Secrecy Act terminology used throughout 326.8.",
+      "references": [
+        "Pub. L. 91-508"
+      ],
+      "citations": [
+        {
+          "quote": "In its original form, subchapter II of chapter 53 of title 31 U.S.C., was part of Pub. L. 91-508 which requires recordkeeping for and reporting of currency transactions by banks and others and is commonly known as the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "326.8(a) defines the covered actor by cross-reference to the definitional section 326.1 of the same part (originally enacted for Subpart A's physical-security purposes), reusing that definition for BSA compliance-program purposes.",
+      "references": [
+        "12 CFR 326.1"
+      ],
+      "citations": [
+        {
+          "quote": "This subpart is issued to assure that all FDIC-supervised institutions as defined in 12 CFR 326.1 establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR Chapter X.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Ratified scope covers only the AML/CFT program-establishment (pillars) rule, i.e., 12 CFR 326.8 (Subpart B). Subpart A (12 CFR 326.0-326.4), governing physical minimum security devices/procedures against robbery, burglary, and larceny, is a distinct regime under the Bank Protection Act of 1968 and is outside the ratified scope of AML/CFT program obligations; it is excluded from obligations/definitions above even though 326.1's institution definition is reused by 326.8. No text of 12 CFR Part 353 (SAR rule) was included in the supplied source excerpt, so no obligations, definitions, or citations could be extracted for Part 353 despite its appearance in the source item title/locator; SAR duties are in any event designated coordination-layer, not core scope, per the ratified scope statement. Obligation OBL-3 is phrased in the source as 'is subject to the requirements of' rather than 'shall'; per the fidelity rule this phrasing is preserved and mapped to modality 'must' as the closest schema fit for a mandatory incorporation-by-reference, without harmonizing the wording. Obligations OBL-4 through OBL-7 are the four enumerated 'pillars' contents of the compliance program under 326.8(c), extracted as separate rows per the lead-in 'The compliance program shall, at a minimum:'."
+}

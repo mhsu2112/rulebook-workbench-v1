@@ -1,0 +1,75 @@
+1
+ Financial Crimes Enforcement Network
+ U.S. Department of the Treasury
+Statement on the Issuance of the Anti-Money Laundering/Countering the 
+Financing of Terrorism (AML/CFT) National Priorities
+June 30, 2021
+The Anti-Money Laundering Act of 2020 (the “ AML Act”)1 requires the Secretary of the 
+Treasury, in consultation with the Attorney General, Federal functional regulators, 2 relevant 
+State financial regulators, and relevant national security agencies, to establish and make 
+public priorities for anti-money laundering and countering the financing of terrorism policy 
+(AML/CFT Priorities). 3  Accordingly, the U.S. Department of the Treasury’s Financial Crimes 
+Enforcement Network (FinCEN) published the first national AML/CFT Priorities today in 
+consultation with the parties set out in the AML Act.  
+As a result of the publication of the AML/CFT Priorities, FinCEN, in consultation with the staff 
+of the U.S. Securities and Exchange Commission, Commodity Futures Trading Commission, 
+Internal Revenue Service, and State financial regulators (collectively, “the Agencies”), is 
+issuing this statement to provide clarity for all non-bank financial institutions (NBFIs) and 
+other entities with regulatory AML program requirements (collectively “covered NBFIs”)4 on 
+these AML/CFT Priorities.
+Separately, the Board of Governors of the Federal Reserve System, the Federal Deposit 
+Insurance Corporation, the National Credit Union Administration, and the Office of the 
+Comptroller of the Currency (collectively, the “federal banking agencies” or “FBAs”), State 
+bank and credit union regulators, and FinCEN also issued a statement to provide clarity for 
+banks5 on the AML/CFT Priorities.
+1. The AML Act was enacted as Division F, §§ 6001-6511, of the William M. (Mac) Thornberry National Defense 
+Authorization Act for Fiscal Year 2021, H.R. 6395, 116th Cong. (2021) (enacted) (enrolled bill available at 
+https://www.govinfo.gov/content/pkg/BILLS-116hr6395enr/pdf/BILLS-116hr6395enr.pdf).
+2. 31 U.S.C. § 5318(h)(4)(A) (as amended by AML Act § 6101(b)(2)(C)) uses the term Federal functional regulator 
+“as defined in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809)).”
+3. 31 U.S.C. § 5318(h)(4)(A) (as amended by AML Act § 6101(b)(2)(C)).
+4. See 31 CFR §§ 1020.210(b) (banks without a Federal functional regulator); 1021.210 (casinos and card 
+clubs); 1022.210 (money services businesses); 1023.210 (brokers or dealers in securities); 1024.210 (mutual 
+funds); 1025.210 (insurance companies); 1026.210 (futures commission merchants and introducing brokers 
+in commodities); 1027.210 (dealers in precious metals, precious stones, or jewels); 1028.210 (operators of 
+credit card systems); 1029.210 (loan or finance companies); and 1030.210 (housing government sponsored 
+enterprises).
+5. The term “bank” used here is as defined in Bank Secrecy Act regulations at 31 CFR § 1010.100(d) and includes 
+each agent, agency, branch, or office within the United States of banks, credit unions, savings associations, 
+and foreign banks.  Their AML program obligations are found in 31 CFR § 1020.210(a).
+
+2
+Today’s publication of the AML/CFT Priorities does not create an immediate change in the 
+Bank Secrecy Act (BSA) requirements or supervisory expectations for covered NBFIs.  The 
+AML Act requires that, within 180 days of the establishment of the AML/CFT Priorities, 
+FinCEN (in consultation with the Federal functional regulators and relevant State financial 
+regulators) shall, as appropriate, promulgate regulations regarding the AML/CFT Priorities. 6
+Covered NBFIs are not required to incorporate the AML/CFT Priorities into their risk-based 
+AML programs until the effective date of the final regulations.  Nevertheless, in preparation 
+for any new requirements when those final rules are published, covered NBFIs may wish to 
+start considering how they will incorporate the AML/CFT Priorities into their risk-based AML 
+programs, such as by assessing the potential risks associated with the products and services 
+they offer, the customers they serve, and the geographic areas in which they operate.
+Finally, the AML Act requires that the review by a covered NBFI of the AML/CFT Priorities 
+and the incorporation of those Priorities, as appropriate, into its risk-based AML program, be 
+included as a measure on which it is supervised and examined.7  This statement confirms that 
+FinCEN will not examine covered NBFIs for the incorporation of the AML/CFT Priorities into 
+their risk-based AML programs until the effective date of final regulations noted above.  Also, 
+FinCEN will not request that the staff of any of the Agencies, or a self-regulatory organization 
+(SRO) authorized to examine a covered NBFI, examine any covered NBFIs for this requirement 
+(or any related state requirement) until the effective date of final regulations. 
+FinCEN recognizes the need for revised regulations and timely guidance to assist covered NBFIs 
+in complying with the BSA.  FinCEN is committed to working with the Agencies to develop and 
+publish timely guidance and corresponding examination procedures for examiners.
+For Further Information
+Additional guidance, administrative rulings, and illicit finance information (including 
+advisories and notices) can be found on FinCEN’s website at https://www.fincen.gov , which 
+also contains information on how to register for FinCEN Updates .  Questions or comments 
+regarding the contents of the AML/CFT Priorities should be addressed to the FinCEN 
+Regulatory Support Section at https://www.fincen.gov/contact .
+6. 31 U.S.C. § 5318(h)(4)(D) (as amended by AML Act § 6101(b)(2)(C)).
+7. 31 U.S.C. § 5318(h)(4)(E) (as amended by AML Act § 6101(b)(2)(C)). 31 U.S.C. §§ 5321, 5324 and 5330(e) (2012); 
+12 U.S.C. §§ 1829b(j) and 1955 (2012).  FinCEN has the authority to examine financial institutions and, in 
+addition, relies on examinations conducted by Federal functional regulators and the Internal Revenue Service. 
+31 U.S.C. § 5318(a)(3) and (b) (2012); 31 CFR § 1010.810 (2019).  See also FinCEN Enforcement Statement, 
+8/18/2020.

@@ -1,0 +1,414 @@
+{
+  "item_id": "ffiec-man-ra",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Review the bank's BSA/AML risk assessment process, and determine whether the bank has adequately identified the ML/TF and other illicit financial activity risks within its banking operations.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective: Review the bank's BSA/AML risk assessment process, and determine whether the bank has adequately identified the ML/TF and other illicit financial activity risks within its banking operations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Provide standards for examiners to assess the adequacy of the bank's BSA/AML risk assessment process.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This section is designed to provide standards for examiners to assess the adequacy of the bank's BSA/AML risk assessment process.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-01",
+      "actor": "Examiners",
+      "modality": "must",
+      "action": "develop an understanding of the bank's ML/TF and other illicit financial activity risks to evaluate the bank's BSA/AML compliance program",
+      "trigger": "evaluating the bank's BSA/AML compliance program",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners must develop an understanding of the bank's ML/TF and other illicit financial activity risks to evaluate the bank's BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-02",
+      "actor": "The bank's BSA/AML risk assessment process",
+      "modality": "should",
+      "action": "address the varying degrees of risk associated with its products, services, customers, and geographic locations, as appropriate",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "as appropriate"
+      ],
+      "citations": [
+        {
+          "quote": "The bank's BSA/AML risk assessment process should address the varying degrees of risk associated with its products, services, customers, and geographic locations, as appropriate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-03",
+      "actor": "The BSA/AML risk assessment",
+      "modality": "should",
+      "action": "provide a comprehensive analysis of the bank's ML/TF and other illicit financial activity risks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA/AML risk assessment should provide a comprehensive analysis of the bank's ML/TF and other illicit financial activity risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-04",
+      "actor": "The BSA/AML risk assessment",
+      "modality": "should",
+      "action": "be provided to all business lines across the bank, the board of directors, management, and appropriate staff",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA/AML risk assessment should be provided to all business lines across the bank, the board of directors, management, and appropriate staff.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-05",
+      "actor": "A conclusion regarding the risk categories",
+      "modality": "should",
+      "action": "be based on a consideration of all pertinent information",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The identification of risk categories is bank-specific, and a conclusion regarding the risk categories should be based on a consideration of all pertinent information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-06",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "not criticize the bank for individual risk or process decisions unless those decisions impact the adequacy of some aspect of the bank's BSA/AML compliance program or the bank's compliance with BSA regulatory requirements",
+      "trigger": "when the bank has established an appropriate BSA/AML risk assessment process, and has followed existing policies, procedures, and processes",
+      "threshold": null,
+      "exceptions": [
+        "unless those decisions impact the adequacy of some aspect of the bank's BSA/AML compliance program or the bank's compliance with BSA regulatory requirements"
+      ],
+      "citations": [
+        {
+          "quote": "When the bank has established an appropriate BSA/AML risk assessment process, and has followed existing policies, procedures, and processes, examiners should not criticize the bank for individual risk or process decisions unless those decisions impact the adequacy of some aspect of the bank's BSA/AML compliance program or the bank's compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-07",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "focus on whether the bank has effective processes resulting in a well-developed BSA/AML risk assessment",
+      "trigger": "when evaluating the BSA/AML risk assessment",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When evaluating the BSA/AML risk assessment, examiners should focus on whether the bank has effective processes resulting in a well-developed BSA/AML risk assessment.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-08",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "not take any single indicator as determinative of the existence of a lower- or higher-risk profile for the bank",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should not take any single indicator as determinative of the existence of a lower- or higher-risk profile for the bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-09",
+      "actor": "A conclusion regarding the risk profile",
+      "modality": "should",
+      "action": "be based on a consideration of all pertinent information",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The assessment of risk factors is bank-specific, and a conclusion regarding the risk profile should be based on a consideration of all pertinent information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "assess whether the bank has developed a BSA/AML risk assessment that identifies its ML/TF and other illicit financial activity risks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should assess whether the bank has developed a BSA/AML risk assessment that identifies its ML/TF and other illicit financial activity risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "assess whether the bank has considered all products, services, customers, and geographic locations, and whether the bank analyzed the information relative to those risk categories",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should also assess whether the bank has considered all products, services, customers, and geographic locations, and whether the bank analyzed the information relative to those risk categories.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "Examiners",
+      "modality": "must",
+      "action": "develop a BSA/AML risk assessment for the bank based on available information",
+      "trigger": "whenever the bank has not developed a BSA/AML risk assessment, or the BSA/AML risk assessment is inadequate",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "For the purposes of the examination, whenever the bank has not developed a BSA/AML risk assessment, or the BSA/AML risk assessment is inadequate, examiners must develop a BSA/AML risk assessment for the bank based on available information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "The bank",
+      "modality": "should",
+      "action": "develop appropriate policies, procedures, and processes to monitor and control its ML/TF and other illicit financial activity risks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Specifically, the bank should develop appropriate policies, procedures, and processes to monitor and control its ML/TF and other illicit financial activity risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "The bank's monitoring system to identify, research, and report suspicious activity",
+      "modality": "should",
+      "action": "be risk-based to incorporate any necessary additional screening for higher-risk products, services, customers, and geographic locations as identified by the bank's BSA/AML risk assessment",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the bank's monitoring system to identify, research, and report suspicious activity should be risk-based to incorporate any necessary additional screening for higher-risk products, services, customers, and geographic locations as identified by the bank's BSA/AML risk assessment",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-15",
+      "actor": "Independent testing (audit)",
+      "modality": "should",
+      "action": "review the bank's BSA/AML risk assessment, including how it is used to develop the BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Independent testing (audit) should review the bank's BSA/AML risk assessment, including how it is used to develop the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-16",
+      "actor": "Banks that choose to implement a consolidated or partially consolidated BSA/AML compliance program",
+      "modality": "conditional",
+      "action": "assess risk within business lines and across activities and legal entities",
+      "trigger": "choosing to implement a consolidated or partially consolidated BSA/AML compliance program",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks that choose to implement a consolidated or partially consolidated BSA/AML compliance program should assess risk within business lines and across activities and legal entities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-17",
+      "actor": "The banking organization",
+      "modality": "should",
+      "action": "communicate across all business lines, activities, and legal entities to understand ML/TF and other illicit financial activity risk exposures",
+      "trigger": "to understand ML/TF and other illicit financial activity risk exposures",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "To understand ML/TF and other illicit financial activity risk exposures, the banking organization should communicate across all business lines, activities, and legal entities.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "BSA/AML risk assessment",
+      "definition": "(undefined here) \u2014 described as a process/analysis that assists the bank in identifying ML/TF and other illicit financial activity risks and in developing appropriate internal controls; not formally defined",
+      "citations": [
+        {
+          "quote": "a well-developed BSA/AML risk assessment assists the bank in identifying ML/TF and other illicit financial activity risks and in developing appropriate internal controls (i.e., policies, procedures, and processes)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "internal controls",
+      "definition": "i.e., policies, procedures, and processes",
+      "citations": [
+        {
+          "quote": "developing appropriate internal controls (i.e., policies, procedures, and processes)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "risk categories",
+      "definition": "e.g., products, services, customers, and geographic locations unique to the bank",
+      "citations": [
+        {
+          "quote": "the identification of specific risk categories (e.g., products, services, customers, and geographic locations) unique to the bank",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "ML/TF",
+      "definition": "(undefined here) \u2014 used to mean money laundering / terrorist financing",
+      "citations": [
+        {
+          "quote": "Money laundering, terrorist financing, or other illicit financial activities can occur through any number of different methods or channels.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "consolidated or partially consolidated BSA/AML compliance program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Banks that choose to implement a consolidated or partially consolidated BSA/AML compliance program should assess risk within business lines and across activities and legal entities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer risk profile",
+      "definition": "(undefined here) \u2014 referenced as the customer due diligence customer risk profile",
+      "citations": [
+        {
+          "quote": "information collected for purposes of the bank's customer identification program and developing the customer due diligence customer risk profile is important when conducting a detailed analysis",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Refers to the Customer Identification Program, Customer Due Diligence, and Appendix J \u2013 Quantity of Risk Matrix sections for more information on detailed risk analysis.",
+      "references": [
+        "Customer Identification Program",
+        "Customer Due Diligence",
+        "Appendix J \u2013 Quantity of Risk Matrix"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to the Customer Identification Program, Customer Due Diligence, and Appendix J \u2013 Quantity of Risk Matrix sections for more information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Examiners may refer to Appendix J - Quantity of Risk Matrix when completing an examiner-developed risk assessment evaluation.",
+      "references": [
+        "Appendix J - Quantity of Risk Matrix"
+      ],
+      "citations": [
+        {
+          "quote": "Examiners may also refer to Appendix J - Quantity of Risk Matrix when completing this evaluation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Refers to Appendix I - Risk Assessment Link to the BSA/AML Compliance Program for a chart depicting the expected link of the risk assessment to the compliance program.",
+      "references": [
+        "Appendix I - Risk Assessment Link to the BSA/AML Compliance Program"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to Appendix I - Risk Assessment Link to the BSA/AML Compliance Program for a chart depicting the expected link of the BSA/AML risk assessment to the BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Refers to the BSA/AML Compliance Program Structures section regarding consolidated risk assessment.",
+      "references": [
+        "BSA/AML Compliance Program Structures"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to the BSA/AML Compliance Program Structures section for more information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "References the subsections within Risks Associated with Money Laundering and Terrorist Financing for information on certain products, services, customers, and geographic locations.",
+      "references": [
+        "Risks Associated with Money Laundering and Terrorist Financing"
+      ],
+      "citations": [
+        {
+          "quote": "The subsections within Risks Associated with Money Laundering and Terrorist Financing provide information and discussions on certain products, services, customers, and geographic locations that may present unique challenges and exposures",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is supervisory guidance (FFIEC examination manual), not a statute or regulation; the text expressly states the risk assessment is 'not a specific legal requirement' ('While not a specific legal requirement, a well-developed BSA/AML risk assessment assists the bank...') and that 'there is no requirement to update the BSA/AML risk assessment on a continuous or specified periodic basis' and 'There are no required risk categories.' Many duties are framed as 'should' (sound practice) rather than binding rules; extracted as written per fidelity rule. 'Must' obligations here run to examiners, not the bank. Documenting the risk assessment in writing is described as a 'sound practice,' not a mandate. The RA content itself sits in the program/pillars scope but this item is evidence/guidance only; SAR/CTR/CDD/CIP cross-references treated as coordination-layer pointers."
+}

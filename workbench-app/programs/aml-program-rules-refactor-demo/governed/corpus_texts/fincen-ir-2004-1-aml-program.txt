@@ -1,0 +1,659 @@
+VerDate jul<14>2003 21:13 Dec 13, 2004 Jkt 205001 PO 00000 Frm 00035 Fmt 4700 Sfmt 4700 E:\FR\FM\14DER1.SGM 14DER1
+Federal Register / Vol. 69, No. 239 / Tuesday, December 14, 2004 / Rules and Regulations 74439 
+outlined in the ‘‘Recording and Coding 
+Guide for the Structure Inventory and 
+Appraisal of the Nation’s Bridges.’’ 
+(b) For routine, in-depth, fracture 
+critical member, underwater, damage 
+and special inspections enter the SI&A 
+data into the State or Federal agency 
+inventory within 90 days of the date of 
+inspection for State or Federal agency 
+bridges and within 180 days of the date 
+of inspection for all other bridges. 
+(c) For existing bridge modifications 
+that alter previously recorded data and 
+for new bridges, enter the SI&A data 
+into the State or Federal agency 
+inventory within 90 days after the 
+completion of the work for State or 
+Federal agency bridges and within 180 
+days after the completion of the work 
+for all other bridges. 
+(d) For changes in load restriction or 
+closure status, enter the SI&A data into 
+the State or Federal agency inventory 
+within 90 days after the change in status 
+of the structure for State or Federal 
+agency bridges and within 180 days 
+after the change in status of the 
+structure for all other bridges. 
+§ 650.317 Reference manuals. 
+(a) The materials listed in this subpart 
+are incorporated by reference in the 
+corresponding sections noted. These 
+incorporations by reference were 
+approved by the Director of the Federal 
+Register in accordance with 5 U.S.C. 
+552(a) and 1 CFR part 51. These 
+materials are incorporated as they exist 
+on the date of the approval, and notice 
+of any change in these documents will 
+be published in the Federal Register. 
+The materials are available for purchase 
+at the address listed below, and are 
+available for inspection at the National 
+Archives and Records Administration 
+(NARA). These materials may also be 
+reviewed at the Department of 
+Transportation Library, 400 Seventh 
+Street, SW., Washington, DC, in Room 
+2200. For information on the availability 
+of these materials at NARA call (202) 
+741–6030, or go to the following URL: 
+http://www.archives.gov/ 
+federal_register/ 
+code_of_federal_regulations/ 
+ibr_locations.html. In the event there is 
+a conflict between the standards in this 
+subpart and any of these materials, the 
+standards in this subpart will apply. 
+(b) The following materials are 
+available for purchase from the 
+American Association of State Highway 
+and Transportation Officials, Suite 249, 
+444 N. Capitol Street, NW., Washington, 
+DC 20001. The materials may also be 
+ordered via the AASHTO bookstore 
+located at the following URL: http:// 
+www.aashto.org/aashto/home.nsf/ 
+FrontPage. 
+(1) The Manual for Condition 
+Evaluation of Bridges, 1994, second 
+edition, as amended by the 1995, 1996, 
+1998, and 2000 interim revisions, 
+AASHTO, incorporation by reference 
+approved for §§ 650.305 and 650.313. 
+(2) 2001 Interim Revision to the 
+Manual for Condition Evaluation of 
+Bridges, AASHTO, incorporation by 
+reference approved for §§ 650.305 and 
+650.313. 
+(3) 2003 Interim Revision to the 
+Manual for Condition Evaluation of 
+Bridges, AASHTO, incorporation by 
+reference approved for §§ 650.305 and 
+650.313. 
+[FR Doc. 04–27355 Filed 12–13–04; 8:45 am] 
+BILLING CODE 4910–22–P 
+DEPARTMENT OF THE TREASURY 
+31 CFR Part 103 
+Financial Crimes Enforcement 
+Network; Interpretive Release 2004–1— 
+Anti-Money Laundering Program 
+Requirements for Money Services 
+Businesses With Respect to Foreign 
+Agents or Foreign Counterparties 
+AGENCY: Financial Crimes Enforcement 
+Network (FinCEN), Treasury. 
+ACTION: Final rule; interpretive release. 
+SUMMARY: This Interpretive Release sets 
+forth an interpretation of the regulation 
+requiring Money Services Businesses 
+that are required to register with 
+FinCEN to establish and maintain anti-
+money laundering programs. 
+Specifically, this Interpretive Release 
+clarifies that the anti-money laundering 
+program regulation requires such Money 
+Services Businesses to establish 
+adequate and appropriate policies, 
+procedures and controls commensurate 
+with the risk of money laundering and 
+the financing of terrorism posed by their 
+relationship with foreign agents or 
+foreign counterparties of the Money 
+Services Business. 
+DATES: Effective June 13, 2005. 
+FOR FURTHER INFORMATION CONTACT : 
+Office of Regulatory Policy and 
+Programs Division, 1–800–800–2877, 
+Office of Chief Counsel (703) 905–3590 
+(not a toll free number). 
+SUPPLEMENTARY INFORMATION: Section 
+5318(h) of the Bank Secrecy Act, which 
+is codified in subchapter II of chapter 53 
+of title 31, United States Code, requires 
+every financial institution to establish 
+an anti-money laundering program. The 
+Bank Secrecy Act regulations define 
+financial institution to include money 
+service businesses. On April 29, 2002, 
+FinCEN issued interim final rules-31 
+CFR 103.125-concerning the application 
+of the anti-money laundering program 
+requirement to money services 
+businesses. 67 FR 21114. 
+List of Subjects in 31 CFR Part 103 
+Authority delegations (government 
+agencies), bank, banking, currency, 
+investigations, reporting and 
+recordkeeping requirements. 
+Department of the Treasury 
+31 CFR Chapter I 
+Authority and Issuance 
+ For the reasons set forth in the 
+preamble, part 103 of title 31 of the Code 
+of Federal Regulations is amended as 
+follows: 
+PART 103—FINANCIAL 
+RECORDKEEPING AND REPORTING 
+OF CURRENCY AND FOREIGN 
+TRANSACTIONS 
+ 1. The authority citation for part 103 
+continues to read as follows: 
+Authority: 12 U.S.C. 1829b and 1951–1959: 
+31 U.S.C 5311–5314 and 5316–5332; title III, 
+secs. 312, 313, 314, 319, 326, 352, Pub. L. 
+107–56, 115 Stat. 307, 12 U.S.C. 1786(q). 
+ 2. Part 103 is amended by adding a 
+new appendix C to read as follows: 
+APPENDIX C TO PART 103— 
+INTERPRETIVE RULES 
+Release No. 2004–01 
+This Interpretive Guidance sets forth our 
+interpretation of the regulation requiring 
+Money Services Businesses that are required 
+to register with FinCEN to establish and 
+maintain anti-money laundering programs. 
+See 31 CFR 103.125. Specifically, this 
+Interpretive Guidance clarifies that the anti-
+money laundering program regulation 
+requires Money Services Businesses to 
+establish adequate and appropriate policies, 
+procedures, and controls commensurate with 
+the risks of money laundering and the 
+financing of terrorism posed by their 
+relationship with foreign agents or foreign 
+counterparties of the Money Services 
+Business.
+1 
+Under existing Bank Secrecy Act 
+regulations, we have defined Money Services 
+Businesses to include five distinct types of 
+financial services providers and the U.S. 
+Postal Service: (1) Currency dealers or 
+exchangers; (2) check cashers; (3) issuers of 
+traveler’s checks, money orders, or stored 
+1 This Interpretive Guidance focuses on the need 
+to control risks arising out of the relationship 
+between a Money Service Business and its foreign 
+counterparty or agent. Under existing FinCEN 
+regulations, only Money Service Business 
+principals are required to register with FinCEN, and 
+only Money Service Business principals establish 
+the counterparty or agency relationships. 31 CFR 
+103.41. Accordingly, this Interpretive Guidance 
+only applies to those Money Service Businesses 
+required to register with FinCEN, that is, only those 
+Money Service Businesses that may have a 
+relationship with a foreign agent or counterparty. 
+
+ 
+VerDate jul<14>2003 21:13 Dec 13, 2004 Jkt 205001 PO 00000 Frm 00036 Fmt 4700 Sfmt 4700 E:\FR\FM\14DER1.SGM 14DER1
+74440 Federal Register / Vol. 69, No. 239 / Tuesday, December 14, 2004 / Rules and Regulations 
+value; (4) sellers or redeemers of traveler’s 
+checks, money orders, or stored value; and 
+(5) money transmitters. See 31 CFR 
+103.11(uu). With limited exception, Money 
+Services Businesses are subject to the full 
+range of Bank Secrecy Act regulatory 
+controls, including the anti-money 
+laundering program rule, suspicious activity 
+and currency transaction reporting rules, and 
+various other identification and 
+recordkeeping rules.
+2 
+Many Money Services Businesses, 
+including the vast majority of money 
+transmitters in the United States, operate 
+through a system of agents both domestically 
+and internationally. We estimate that a 
+substantial majority of all cross-border 
+remittances by money transmitters are 
+conducted using this model. Other Money 
+Services Businesses may operate through 
+more informal relationships, such as the 
+trust-based hawala system.
+3 Regardless of the 
+form of the relationship between a Money 
+Services Business and its foreign agents or 
+counterparties, Money Services Business 
+transactions generally are initiated by 
+customers seeking to send or receive funds, 
+cash checks, buy or sell money orders or 
+traveler’s checks, or buy or sell currency. The 
+customer directs the Money Services 
+Business to execute the transactions; the 
+Money Services Business does not 
+unilaterally determine the recipient of its 
+products or services. Although the customer 
+can use the Money Services Business’ 
+services, the customer does not typically 
+establish an account relationship with the 
+Money Services Business. The focus of this 
+Interpretive Guidance is the establishment of, 
+and ongoing relationship between, a Money 
+Services Business and its foreign agent or 
+foreign counterparty that facilitates the flow 
+of funds cross-border into and out of the 
+United States on behalf of customers. 
+The Cross-Border Flow of Funds through 
+Money Services Businesses and Associated 
+Risks 
+Ensuring that financial institutions based 
+in the United States establish and apply 
+adequate and appropriate policies, 
+2 See 31 CFR 103.125 (requirement for Money 
+Service Businesses to establish and maintain an 
+anti-money laundering compliance program); 31 
+CFR 103.22 (requirement for Money Service 
+Businesses to file currency transaction reports); 31 
+CFR 103.20 (requirement for Money Service 
+Businesses, other than check cashers and issuers, 
+sellers, or redeemers of stored value, to file 
+suspicious activity reports); 31 CFR 103.29 
+(requirement for Money Service Businesses that sell 
+money orders, traveler’s checks, or other 
+instruments for cash to verify the identity of the 
+customer and create and maintain a record of each 
+cash purchase between $3,000 and $10,000, 
+inclusive); 31 CFR 103.33(f) (requirement for Money 
+Service Businesses that send or accept instructions 
+to transmit funds of $3,000 or more to verify the 
+identity of the sender or receiver and create and 
+maintain a record of the transmittal regardless of 
+the method of payment); and 31 CFR 103.37 
+(requirement for currency exchangers to create and 
+maintain a record of each exchange of currency in 
+excess of $1,000). 
+3 For an analysis of informal value transfer 
+systems, see FinCEN’s Report to Congress Pursuant 
+to Section 359 of the Patriot Act, available on 
+www.fincen.gov. 
+procedures, and controls in their anti-money 
+laundering compliance programs to protect 
+the international gateways to the U.S. 
+financial system is an essential element of 
+the Bank Secrecy Act regulatory regime. This 
+Interpretive Guidance forms a part of our 
+comprehensive approach to accomplishing 
+this goal. To the extent Money Services 
+Businesses utilize relationships with foreign 
+agents or counterparties to facilitate the 
+movement of funds into or out of the United 
+States, they must take reasonable steps to 
+guard against the flow of illicit funds, or the 
+flow of funds from legitimate sources to 
+persons seeking to use those funds for illicit 
+purposes, through such relationships. 
+The money laundering or terrorism 
+financing risks associated with foreign agents 
+or counterparties are similar to the risks 
+presented by domestic agents of Money 
+Services Businesses. For example, the foreign 
+agent of the domestic Money Services 
+Business may have lax anti-money 
+laundering policies, procedures, and internal 
+controls, or actually may be complicit with 
+those seeking to move illicit funds. In some 
+instances, the risk with foreign agents can be 
+greater than with domestic agents because 
+foreign agents are not subject to the Bank 
+Secrecy Act regulatory regime; the extent to 
+which they are subject to anti-money 
+laundering regulation, and the quality of that 
+regulation, will vary with the jurisdictions in 
+which they are located. 
+There are a variety of ways in which a 
+Money Services Business may be susceptible 
+to the unwitting facilitation of money 
+laundering through foreign agents or 
+counterparties. For example, our review of 
+Bank Secrecy Act data revealed several 
+instances of suspected criminal activity— 
+detected by existing anti-money laundering 
+and suspicious activity reporting programs of 
+Money Services Businesses and banks— 
+where foreign agents of Money Services 
+Business have engaged in bulk sales of 
+sequentially numbered, U.S. denominated 
+traveler’s checks or blocks of money orders, 
+to one or two individuals. The individuals 
+involved frequently purchased the 
+instruments on multiple dates and in 
+different locations, structuring the purchases 
+to avoid reporting thresholds and issuer 
+limits on daily instrument sales. The 
+instruments usually had illegible signatures 
+or failed to designate a beneficiary or payor. 
+The instruments were then negotiated with 
+one or more dealers in goods, such as 
+diamonds, gems, or precious metals, 
+deposited in foreign banks, and cleared 
+through U.S. banks. In such cases, the 
+clearing banks were so far removed from the 
+transactions that they could not trace back or 
+screen either the intervening transactions or 
+the individuals involved in the transactions. 
+A case involving suspicious activity in a 
+Money Services Business’ domestic agent 
+provides a further example of the type of 
+high-risk activity that also may be engaged in 
+by foreign agents or counterparties. In this 
+instance, the domestic Money Service 
+Business had policies, procedures, and 
+controls that facilitated the detection of illicit 
+activity at the agent. A group of six customers 
+entered a money transmitter agent at 
+approximately five-minute intervals to send 
+the same structured amounts ($2,500) to the 
+same receiver in a foreign country. Several 
+weeks later, another group of six customers 
+entered the same agent location and 
+conducted an identical pattern of successive 
+$2,500 transfers (a few minutes apart) to the 
+same recipient in the same foreign country as 
+the first set of transactions. Some of the 
+individuals in the second group had the same 
+last names as customers in the first group. 
+Additional suspicious activity reports filed 
+by the primary Money Services Business 
+identified several other groups of customers 
+initiating money transfers at this same agent 
+business location, in the same manner, and 
+in the same overall time frame. This activity 
+by an agent drew the scrutiny of the Money 
+Services Business, and in addition to the 
+filing of suspicious activity reports, led to the 
+termination of the relationship of the Money 
+Services Business with the agent. 
+These examples of illicit activity occurring 
+at the agents of Money Services Businesses 
+underscore the need for Money Services 
+Businesses to include, as a part of their anti-
+money laundering programs, procedures, 
+policies, and controls to govern relationships 
+with foreign agents and counterparties to 
+enable the Money Services Business to 
+perform the appropriate level of suspicious 
+activity and risk monitoring. We believe that 
+this obligation is an essential part of each 
+Money Services Business’ existing obligation 
+under 31 CFR 103.125 to develop and 
+implement an effective anti-money 
+laundering program.
+4 This Interpretive 
+Guidance will aid Money Services 
+Businesses in adopting appropriate risk-
+based policies, procedures, and controls on 
+cross-border relationships with foreign agents 
+and counterparties. 
+Anti-Money Laundering Program Elements 
+Relating to Foreign Agents and 
+Counterparties 
+Under 31 CFR 103.125(a), Money Services 
+Businesses are required to develop, 
+implement, and maintain an effective anti-
+money laundering program reasonably 
+designed to prevent the Money Services 
+Business from being used to facilitate money 
+laundering and the financing of terrorist 
+activities. The program must be 
+commensurate with the risks posed by the 
+location, size, nature, and volume of the 
+financial services provided by the Money 
+Services Business. Additionally, the program 
+must incorporate policies, procedures, and 
+controls reasonably designed to assure 
+compliance with the Bank Secrecy Act and 
+implementing regulations. 
+With respect to Money Services Businesses 
+that utilize foreign agents or counterparties, 
+a Money Services Business’ anti-money 
+laundering program must include risk-based 
+policies, procedures, and controls designed 
+to identify and minimize money laundering 
+and terrorist financing risks associated with 
+foreign agents and counterparties that 
+facilitate the flow of funds into and out of the 
+United States. The program must be aimed at 
+4 FinCEN previously interpreted 31 CFR 103.125 
+to impose a similar obligation on a money 
+transmitter with respect to its domestic agents. See 
+Matter of Western Union, No. 2003–2 (Mar. 6, 2003) 
+(www.fincen.gov). 
+
+ 
+ 
+VerDate jul<14>2003 21:13 Dec 13, 2004 Jkt 205001 PO 00000 Frm 00037 Fmt 4700 Sfmt 4700 E:\FR\FM\14DER1.SGM 14DER1
+Federal Register / Vol. 69, No. 239 / Tuesday, December 14, 2004 / Rules and Regulations 74441 
+preventing the products and services of the 
+Money Services Business from being used to 
+facilitate money laundering or terrorist 
+financing through these relationships and 
+detecting the use of these products and 
+services for money laundering or terrorist 
+financing by the Money Services Business or 
+agent. Relevant risk factors may include, but 
+are not limited to: 
+• The foreign agent or counterparty’s 
+location and jurisdiction of organization, 
+chartering, or licensing. This would include 
+considering the extent to which the relevant 
+jurisdiction is internationally recognized as 
+presenting a greater risk for money 
+laundering or is considered to have more 
+robust anti-money laundering standards. 
+• The ownership of the foreign agent or 
+counterparty. This includes whether the 
+owners are known, upon reasonable inquiry, 
+to be associated with criminal conduct or 
+terrorism. For example, have the individuals 
+been designated by Treasury’s Office of 
+Foreign Assets Control as Specially 
+Designated Nationals or Blocked Persons 
+(i.e., involvement in terrorism, drug 
+trafficking, or the proliferation of weapons of 
+mass destruction)? 
+• The extent to which the foreign agent or 
+counterparty is subject to anti-money 
+laundering requirements in its jurisdiction 
+and whether it has established such controls. 
+• Any information known or readily 
+available to the Money Services Business 
+about the foreign agent or counterparty’s anti-
+money laundering record, including public 
+information in industry guides, periodicals, 
+and major publications. 
+• The nature of the foreign agent or 
+counterparty’s business, the markets it 
+serves, and the extent to which its business 
+and the markets it serves present an 
+increased risk for money laundering or 
+terrorist financing. 
+• The types and purpose of services to be 
+provided to, and anticipated activity with, 
+the foreign agent or counterparty. 
+• The nature and duration of the Money 
+Services Business’ relationship with the 
+foreign agent or counterparty. 
+Specifically, a Money Services Business’ 
+anti-money laundering program should 
+include procedures for the following: 
+1. Conduct of Due Diligence on Foreign 
+Agents and Counterparties 
+Money Services Businesses should 
+establish procedures for conducting 
+reasonable, risk-based due diligence on 
+potential and existing foreign agents and 
+counterparties to help ensure that such 
+foreign agents and counterparties are not 
+themselves complicit in illegal activity 
+involving the Money Services Business’ 
+products and services, and that they have in 
+place appropriate anti-money laundering 
+controls to guard against the abuse of the 
+Money Services Business’ products and 
+services. Such due diligence must, at a 
+minimum, include reasonable procedures to 
+identify the owners of the Money Services 
+Business’ foreign agents and counterparties, 
+as well as to evaluate, on an ongoing basis, 
+the operations of those foreign agents and 
+counterparties and their implementation of 
+policies, procedures, and controls reasonably 
+designed to help assure that the Money 
+Services Business’ products and services are 
+not subject to abuse by the foreign agent’s or 
+counterparty’s customers, employees, or 
+contractors.
+5 The extent of the due diligence 
+required will depend on a variety of factors 
+specific to each agent or counterparty. We 
+expect Money Services Businesses to assess 
+such risks and perform due diligence in a 
+manner consistent with that risk, in light of 
+the availability of information. 
+2. Risk-based Monitoring of Foreign Agents or 
+Counterparties 
+In addition to the due diligence described 
+above, in order to detect and report suspected 
+money laundering or terrorist financing, 
+Money Services Businesses should establish 
+procedures for risk-based monitoring and 
+review of transactions from, to, or through 
+the United States that are conducted through 
+foreign agents and counterparties.
+6 Such 
+procedures should also focus on identifying 
+material changes in the agent’s risk profile, 
+such as a change in ownership, business, or 
+the regulatory scrutiny to which it is subject. 
+The review of transactions should enable 
+the Money Services Business to identify and, 
+where appropriate, report as suspicious such 
+occurrences as: instances of unusual wire 
+activity, bulk sales or purchases of 
+sequentially numbered instruments, multiple 
+purchases or sales that appear to be 
+structured, and illegible or missing customer 
+information. Additionally, Money Services 
+Businesses should establish procedures to 
+assure that their foreign agents or 
+counterparties are effectively implementing 
+an anti-money laundering program and to 
+discern obvious breakdowns in the 
+implementation of the program by the foreign 
+agent or counterparty. 
+Similarly, money transmitters should have 
+procedures in place to enable them to review 
+foreign agent or counterparty activity for 
+signs of structuring or unnecessarily complex 
+transmissions through multiple jurisdictions 
+that may be indicative of layering. Such 
+procedures should also enable them to 
+discern attempts to evade identification or 
+other requirements, whether imposed by 
+applicable law or by the Money Services 
+Business’ own internal policies. Activity by 
+agents or counterparties that appears aimed 
+at evading the Money Services Business’ own 
+controls can be indicative of complicity in 
+illicit conduct; this activity must be 
+scrutinized, reported as appropriate, and 
+corrective action taken as warranted. 
+5 Our anti-money laundering program rule, 31 
+CFR 103.125(d)(iii), permits Money Service 
+Businesses to satisfy this last requirement with 
+regard to their domestic agents (which are also 
+Money Service Businesses under the BSA 
+regulations), by allocating responsibility for the 
+program to their agents. Such an allocation, 
+however, does not relieve a Money Service Business 
+from ultimate responsibility for establishing and 
+maintaining an effective anti-money laundering 
+program. Id. 
+6 Nothing in this Interpretive Guidance is 
+intended to require Money Service Businesses to 
+monitor or review, for purposes of the Bank Secrecy 
+Act, transactions or activities of foreign agents or 
+counterparties that occur entirely outside of the 
+United States and do not flow from, to, or through 
+the United States. 
+3. Corrective Action and Termination 
+Money Services Businesses should have 
+procedures for responding to foreign agents 
+or counterparties that present unreasonable 
+risks of money laundering or the financing of 
+terrorism. Such procedures should provide 
+for the implementation of corrective action 
+on the part of the foreign agent or 
+counterparty or for the termination of the 
+relationship with any foreign agent or 
+counterparty that the Money Services 
+Business determines poses an unacceptable 
+risk of money laundering or terrorist 
+financing, or that has demonstrated systemic, 
+willful, or repeated lapses in compliance 
+with the Money Services Business’ own anti-
+money laundering procedures or 
+requirements. 
+While Money Services Businesses may 
+already have implemented some or all of the 
+procedures described in this Interpretive 
+Guidance as a part of their anti-money 
+laundering programs, we wish to provide a 
+reasonable period of time for all affected 
+Money Services Businesses to assess their 
+operations, review their existing policies and 
+programs for compliance with this Advisory, 
+and implement any additional necessary 
+changes. We will expect full compliance with 
+this Interpretive Release within 180 days. 
+Finally, we are mindful of the potential 
+impact that this Interpretive Release may 
+have on continuing efforts to bring informal 
+value transfer systems into compliance with 
+the existing regulatory framework of the Bank 
+Secrecy Act. Experience has demonstrated 
+the challenges in securing compliance by, for 
+instance, hawalas and other informal value 
+transfer systems. Further specification of 
+Bank Secrecy Act compliance obligations 
+carries with it the risk of driving these 
+businesses underground, thereby 
+undermining our ultimate regulatory goals. 
+On balance, however, we believe that 
+outlining the requirements for dealing with 
+foreign agents and counterparties, including 
+informal networks, is appropriate in light of 
+the risks of money laundering and the 
+financing of terrorism. 
+William J. Fox, 
+Director. 
+[FR Doc. 04–27287 Filed 12–13–04; 8:45 am] 
+BILLING CODE 4810–02–P 
+DEPARTMENT OF HOMELAND 
+SECURITY 
+Coast Guard 
+33 CFR Part 117 
+[CGD01–04–146] 
+Drawbridge Operation Regulations: 
+Merrimack River, MA 
+AGENCY: Coast Guard, DHS. 
+ACTION: Notice of temporary deviation 
+from regulations. 
+SUMMARY: The Commander, First Coast 
+Guard District, has issued a temporary 
+deviation from the drawbridge operation

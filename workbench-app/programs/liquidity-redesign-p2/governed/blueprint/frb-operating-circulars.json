@@ -1,0 +1,99 @@
+{
+  "item_id": "frb-operating-circulars",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank, functioning as the operational specification for discount-window lending and collateral pledging referenced in the liquidity regime diagnostic.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OC10-1",
+      "actor": "entity",
+      "modality": "may",
+      "action": "obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "OC 10",
+      "definition": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.",
+      "citations": [
+        {
+          "quote": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Advances",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Obligations",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Collateral",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "OC 10 (Lending) is implemented through associated off-site lending agreement documents, including a correspondent credit and payment agreement form and its amendments, as listed alongside the OC 10 entry.",
+      "references": [
+        "Lending Agreements (Off-site) effective 08/28/23",
+        "Appendix 5 Form of Letter of Agreement to Correspondent Credit and Payment Agreement (Off-site)"
+      ],
+      "citations": [
+        {
+          "quote": "Lending Agreements (Off-site) effective 08/28/23",
+          "verified": true
+        },
+        {
+          "quote": "Amendments to Appendix 5 Form of Letter of Agreement to Correspondent Credit and Payment Agreement (PDF)",
+          "verified": true
+        },
+        {
+          "quote": "Appendix 5 Form of Letter of Agreement to Correspondent Credit and Payment Agreement (Off-site)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is a navigational index of Federal Reserve Operating Circulars (OC 1\u201312) with one-line descriptions; it is not itself a diagnostic, defect-register, or reform-mapping document. Only the OC 10 (Lending) entry falls within the ratified scope, as it identifies the instrument establishing discount-window Advances, Obligations, and Collateral-pledging terms \u2014 relevant as raw evidentiary material for the fragmentation/interoperability diagnostic between Federal Reserve discount-window and FHLB collateral rules. The source contains no content on discount-window stigma, FHLB collateral/operational rules, Call Report or FR 2052a reporting timing/granularity, a defect register, or the Hsu/McKernan reform proposals; those topics are therefore not represented in this extraction. Other Operating Circulars (OC 1\u20139, OC 12) are outside the ratified scope and were excluded. Terms 'Advances,' 'Obligations,' and 'Collateral' appear capitalized in the source (suggesting they are defined terms within OC 10 itself) but are not defined within this index text, so they are recorded per the FIDELITY RULE as '(undefined here)' rather than harmonized with any external definition."
+}

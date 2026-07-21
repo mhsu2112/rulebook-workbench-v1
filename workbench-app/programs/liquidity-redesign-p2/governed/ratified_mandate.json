@@ -1,0 +1,119 @@
+{
+  "mandate_id": "rm-liquidity-redesign-p2",
+  "program_id": "liquidity-redesign-p2",
+  "version": "1.0",
+  "status": "ratified",
+  "objectives": [
+    {
+      "objective_id": "O1",
+      "statement": "Maintain confidence in banks and the banking system under fast-run conditions",
+      "origin": {
+        "hypothesis_attribution": {
+          "source": "Mike Hsu (respondent, Program Owner and sponsor) \u2014 interview A15, confirmed A18",
+          "kind": "respondent_view"
+        },
+        "action": "adopt"
+      },
+      "policy_choice": {
+        "adopted_by": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "timestamp": "2026-07-21T01:45:59.816535+00:00",
+        "rationale": "agree"
+      }
+    },
+    {
+      "objective_id": "O2",
+      "statement": "Avoid the need for bailouts",
+      "origin": {
+        "hypothesis_attribution": {
+          "source": "Mike Hsu (respondent) \u2014 interview A15, confirmed A18",
+          "kind": "respondent_view"
+        },
+        "action": "adopt"
+      },
+      "policy_choice": {
+        "adopted_by": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "timestamp": "2026-07-21T01:45:59.816554+00:00",
+        "rationale": "agree"
+      }
+    },
+    {
+      "objective_id": "O3",
+      "statement": "Improve banks' survival odds in rapid runs and reduce contagion risk (via revived Fed lender-of-last-resort functionality)",
+      "origin": {
+        "hypothesis_attribution": {
+          "source": "Mike Hsu (respondent) \u2014 interview A16/A17, confirmed A18",
+          "kind": "respondent_view"
+        },
+        "action": "adopt"
+      },
+      "policy_choice": {
+        "adopted_by": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "timestamp": "2026-07-21T01:45:59.816559+00:00",
+        "rationale": "agree"
+      }
+    },
+    {
+      "objective_id": "O4",
+      "statement": "Free up bank balance-sheet capacity for economic activity, currently tied up in liquidity self-insurance",
+      "origin": {
+        "hypothesis_attribution": {
+          "source": "Mike Hsu (respondent) \u2014 interview A16/A17, confirmed A18",
+          "kind": "respondent_view"
+        },
+        "action": "adopt"
+      },
+      "policy_choice": {
+        "adopted_by": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "timestamp": "2026-07-21T01:45:59.816570+00:00",
+        "rationale": "agree"
+      }
+    },
+    {
+      "objective_id": "O5",
+      "statement": "Limit moral hazard",
+      "origin": {
+        "hypothesis_attribution": {
+          "source": "Mike Hsu (respondent) \u2014 interview A16, confirmed A18",
+          "kind": "respondent_view"
+        },
+        "action": "adopt"
+      },
+      "policy_choice": {
+        "adopted_by": {
+          "name": "Mike Hsu",
+          "role": "Principal"
+        },
+        "timestamp": "2026-07-21T01:45:59.816576+00:00",
+        "rationale": "agree"
+      }
+    }
+  ],
+  "ranking": [
+    "O1",
+    "O2",
+    "O3",
+    "O4",
+    "O5"
+  ],
+  "constraints": [],
+  "ratified_by": {
+    "name": "Mike Hsu",
+    "role": "Principal",
+    "identity_verified": true
+  },
+  "ratified_at": "2026-07-21T01:45:59.816587+00:00",
+  "rationale": "done",
+  "content_hash": "sha256:7cd10424ec5558ba054af5482e2cbe784a58640714e7f59fd125d8ab696928c2"
+}

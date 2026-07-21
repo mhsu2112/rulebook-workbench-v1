@@ -1,0 +1,750 @@
+{
+  "item_id": "31-cfr-1023",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Brokers or dealers in securities are subject to the AML program requirements set forth and cross referenced in Subpart B of Part 1023 (and, per that subpart's general reference, the corresponding program requirements of Part 1010 Subpart B).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Brokers or dealers in securities are subject to the program requirements set forth and cross referenced in this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "A broker-dealer's Customer Identification Program must enable the broker-dealer to form a reasonable belief that it knows the true identity of each customer.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The procedures must enable the broker-dealer to form a reasonable belief that it knows the true identity of each customer.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "broker or dealer in securities",
+      "modality": "conditional",
+      "action": "implement and maintain a written anti-money laundering program approved by senior management containing the elements of \u00a7 1023.210(a)-(c)",
+      "trigger": "to be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A broker or dealer in securities shall be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1) if the broker-dealer implements and maintains a written anti-money laundering program approved by senior management that:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "ensure the AML program complies with \u00a7\u00a7 1010.610 and 1010.620 of this chapter and any applicable regulation of its Federal functional regulator governing establishment and implementation of AML programs",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Complies with the requirements of \u00a7\u00a7 1010.610 and 1010.620 of this chapter and any applicable regulation of its Federal functional regulator governing the establishment and implementation of anti-money laundering programs;",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "establish and implement policies, procedures, and internal controls reasonably designed to achieve compliance with applicable BSA provisions and implementing regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The establishment and implementation of policies, procedures, and internal controls reasonably designed to achieve compliance with the applicable provisions of the Bank Secrecy Act and the implementing regulations thereunder;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "provide for independent testing for compliance, conducted by the broker-dealer's personnel or a qualified outside party",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Independent testing for compliance to be conducted by the broker-dealer's personnel or by a qualified outside party;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "designate an individual or individuals responsible for implementing and monitoring the operations and internal controls of the program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designation of an individual or individuals responsible for implementing and monitoring the operations and internal controls of the program;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "provide ongoing training for appropriate persons",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Ongoing training for appropriate persons; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "understand the nature and purpose of customer relationships for the purpose of developing a customer risk profile, as part of risk-based ongoing customer due diligence procedures",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to:",
+          "verified": true
+        },
+        {
+          "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-8",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "conduct ongoing monitoring to identify and report suspicious transactions and, on a risk basis, maintain and update customer information, including beneficial ownership information for legal entity customers",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+          "verified": true
+        },
+        {
+          "quote": "customer information shall include information regarding the beneficial owners of legal entity customers (as defined in \u00a7 1010.230 of this chapter)",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-9",
+      "actor": "broker-dealer",
+      "modality": "conditional",
+      "action": "comply with the rules, regulations, or requirements of its self-regulatory organization governing AML programs",
+      "trigger": "provided the SRO's rules, regulations, or requirements governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Complies with the rules, regulations, or requirements of its self-regulatory organization governing such programs; provided that the rules, regulations, or requirements of the self-regulatory organization governing such programs have been made effective under the Securities Exchange Act of 1934 by the appropriate Federal functional regulator in consultation with FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "establish, document, and maintain a written Customer Identification Program appropriate for its size and business, including at minimum the requirements of \u00a7 1023.220(a)(1)-(a)(5), as part of its AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A broker-dealer must establish, document, and maintain a written Customer Identification Program (\u201cCIP\u201d) appropriate for its size and business that, at a minimum, includes each of the requirements of paragraphs (a)(1) through (a)(5) of this section.",
+          "verified": false
+        },
+        {
+          "quote": "The CIP must be a part of the broker-dealer's anti-money laundering compliance program required under 31 U.S.C. 5318(h).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "include in the CIP risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable, based on the broker-dealer's risk assessment",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "obtain at a minimum name, date of birth (for individuals), address, and identification number for each customer prior to opening an account",
+      "trigger": "prior to opening an account",
+      "threshold": null,
+      "exceptions": [
+        "Except as permitted by paragraph (a)(2)(i)(B) of this section (procedures for customers who have applied for but not yet received a taxpayer identification number)"
+      ],
+      "citations": [
+        {
+          "quote": "Except as permitted by paragraph (a)(2)(i)(B) of this section, the broker-dealer must obtain, at a minimum, the following information prior to opening an account:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "verify the identity of each customer, using information obtained under (a)(2)(i), within a reasonable time before or after the account is opened, via documents, non-documentary methods, or a combination",
+      "trigger": "within a reasonable time before or after the customer's account is opened",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must contain procedures for verifying the identity of each customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time before or after the customer's account is opened.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "broker-dealer",
+      "modality": "conditional",
+      "action": "obtain information about individuals with authority or control over a new account opened by a non-individual customer",
+      "trigger": "when the broker-dealer's risk assessment of a new account opened by a customer that is not an individual so warrants, and only where the broker-dealer cannot otherwise verify the customer's true identity through documentary or non-documentary methods",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must address situations where, based on the broker-dealer's risk assessment of a new account opened by a customer that is not an individual, the broker-dealer will obtain information about individuals with authority or control over such account.",
+          "verified": true
+        },
+        {
+          "quote": "This verification method applies only when the broker-dealer cannot verify the customer's true identity using the verification methods described in paragraphs (a)(2)(ii)(A) and (B) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-15",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "include CIP procedures for responding to circumstances in which the broker-dealer cannot form a reasonable belief that it knows the true identity of a customer, addressing account opening refusal, interim transaction terms, account closure, and SAR filing",
+      "trigger": "circumstances in which the broker-dealer cannot form a reasonable belief that it knows the true identity of a customer",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for responding to circumstances in which the broker-dealer cannot form a reasonable belief that it knows the true identity of a customer.",
+          "verified": true
+        },
+        {
+          "quote": "When the broker-dealer should file a Suspicious Activity Report in accordance with applicable law and regulation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-16",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "include procedures for making and maintaining a record of all information obtained under CIP procedures implementing paragraph (a)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for making and maintaining a record of all information obtained under procedures implementing paragraph (a) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-17",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "retain identifying-information records for five years after the account is closed, and retain document-description, verification-method, and discrepancy-resolution records for five years after the record is made",
+      "trigger": null,
+      "threshold": "five years after account closed / five years after record is made",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The broker-dealer must retain the records made under paragraph (a)(3)(i)(A) of this section for five years after the account is closed and the records made under paragraphs (a)(3)(i)(B), (C) and (D) of this section for five years after the record is made.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-18",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "include CIP procedures for determining whether a customer appears on any Treasury-designated list of known or suspected terrorists or terrorist organizations, within a reasonable period after account opening, and follow all related Federal directives",
+      "trigger": "within a reasonable period of time after the account is opened, or earlier if required by another Federal law, regulation, or directive",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for determining whether a customer appears on any list of known or suspected terrorists or terrorist organizations issued by any Federal government agency and designated as such by Treasury in consultation with the Federal functional regulators.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-19",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "include CIP procedures for providing customers with adequate notice that the broker-dealer is requesting information to verify their identities",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for providing customers with adequate notice that the broker-dealer is requesting information to verify their identities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-20",
+      "actor": "broker-dealer",
+      "modality": "may",
+      "action": "include procedures specifying reliance on another financial institution's performance of CIP procedures for a shared customer",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "Such reliance is reasonable under the circumstances",
+        "The other financial institution is subject to a rule implementing 31 U.S.C. 5318(h), and regulated by a Federal functional regulator",
+        "The other financial institution enters into a contract requiring it to certify annually to the broker-dealer that it has implemented its anti-money laundering program, and that it will perform specified requirements of the broker-dealer's CIP"
+      ],
+      "citations": [
+        {
+          "quote": "The CIP may include procedures specifying when the broker-dealer will rely on the performance by another financial institution (including an affiliate) of any procedures of the broker-dealer's CIP",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-21",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "file with FinCEN a report of any suspicious transaction relevant to a possible violation of law or regulation",
+      "trigger": "conducted or attempted by, at, or through a broker-dealer, involving or aggregating funds or other assets of at least $5,000, and the broker-dealer knows, suspects, or has reason to suspect specified categories of suspicion",
+      "threshold": "$5,000",
+      "exceptions": [
+        "robbery or burglary reported to law enforcement or 17 CFR 240.17f-1 filings",
+        "certain federal securities law/SRO-rule violations appropriately reported to SEC or SRO (other than 17 CFR 240.17a-8 or 405.4)"
+      ],
+      "citations": [
+        {
+          "quote": "Every broker or dealer in securities within the United States (for purposes of this section, a \u201cbroker-dealer\u201d) shall file with FinCEN, to the extent and in the manner required by this section, a report of any suspicious transaction relevant to a possible violation of law or regulation.",
+          "verified": false
+        },
+        {
+          "quote": "A transaction requires reporting under the terms of this section if it is conducted or attempted by, at, or through a broker-dealer, it involves or aggregates funds or other assets of at least $5,000, and the broker-dealer knows, suspects, or has reason to suspect that the transaction",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-22",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "file a SAR no later than 30 calendar days after initial detection of facts that may constitute a basis for filing, with a possible additional 30-day delay to identify a suspect, but no more than 60 calendar days total",
+      "trigger": "initial detection by the reporting broker-dealer of facts that may constitute a basis for filing a SAR",
+      "threshold": "30 calendar days (up to 60 calendar days if no suspect identified)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A SAR shall be filed no later than 30 calendar days after the date of the initial detection by the reporting broker-dealer of facts that may constitute a basis for filing a SAR under this section.",
+          "verified": true
+        },
+        {
+          "quote": "but in no case shall reporting be delayed more than 60 calendar days after the date of such initial detection.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-23",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "immediately notify by telephone an appropriate law enforcement authority in addition to filing a timely SAR",
+      "trigger": "situations involving violations that require immediate attention, such as terrorist financing or ongoing money laundering schemes",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In situations involving violations that require immediate attention, such as terrorist financing or ongoing money laundering schemes, the broker-dealer shall immediately notify by telephone an appropriate law enforcement authority in addition to filing timely a SAR.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-24",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "maintain a copy of any SAR filed and supporting documentation for five years from the date of filing, and make supporting documentation available upon request to FinCEN, law enforcement, Federal regulatory authorities, or (via SEC request) an SRO",
+      "trigger": null,
+      "threshold": "five years from the date of filing",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A broker-dealer shall maintain a copy of any SAR filed and the original or business record equivalent of any supporting documentation for a period of five years from the date of filing the SAR.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-25",
+      "actor": "broker-dealer; director, officer, employee, or agent of any broker-dealer",
+      "modality": "must_not",
+      "action": "disclose a SAR or any information that would reveal the existence of a SAR, except as authorized",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "disclosure to FinCEN or Federal/State/local law enforcement or Federal regulatory authority examining for BSA compliance, or to an SRO examining for compliance upon SEC request",
+        "disclosure of underlying facts/transactions/documents for a joint SAR or per 31 U.S.C. 5318(g)(2)(B)",
+        "sharing within corporate organizational structure consistent with Title II of the BSA"
+      ],
+      "citations": [
+        {
+          "quote": "No broker-dealer, and no director, officer, employee, or agent of any broker-dealer, shall disclose a SAR or any information that would reveal the existence of a SAR.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-26",
+      "actor": "broker-dealer; director, officer, employee, or agent",
+      "modality": "must",
+      "action": "decline to produce a subpoenaed or requested SAR or SAR-revealing information, citing this section and 31 U.S.C. 5318(g)(2)(A)(i), and notify FinCEN of the request and response",
+      "trigger": "subpoenaed or otherwise requested to disclose a SAR or information revealing its existence",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Any broker-dealer, and any director, officer, employee, or agent of any broker-dealer that is subpoenaed or otherwise requested to disclose a SAR or any information that would reveal the existence of a SAR, shall decline to produce the SAR or such information, citing this section and 31 U.S.C. 5318(g)(2)(A)(i), and shall notify FinCEN of any such request and the response thereto.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-27",
+      "actor": "Federal, State, local, territorial, or Tribal government authority, or director/officer/employee/agent thereof",
+      "modality": "must_not",
+      "action": "disclose a SAR or SAR-revealing information except as necessary to fulfill official duties consistent with Title II of the BSA",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "necessary to fulfill official duties consistent with Title II of the Bank Secrecy Act"
+      ],
+      "citations": [
+        {
+          "quote": "A Federal, State, local, territorial, or Tribal government authority, or any director, officer, employee, or agent of any of the foregoing, shall not disclose a SAR, or any information that would reveal the existence of a SAR, except as necessary to fulfill official duties consistent with Title II of the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-28",
+      "actor": "self-regulatory organization registered with the SEC, or director/officer/employee/agent thereof",
+      "modality": "must_not",
+      "action": "disclose a SAR or SAR-revealing information except as necessary to fulfill self-regulatory duties with SEC consent, consistent with Title II of the BSA",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "necessary to fulfill self-regulatory duties with the consent of the SEC, consistent with Title II of the BSA"
+      ],
+      "citations": [
+        {
+          "quote": "Any self-regulatory organization registered with the Securities and Exchange Commission, or any director, officer, employee, or agent of any of the foregoing, shall not disclose a SAR, or any information that would reveal the existence of a SAR except as necessary to fulfill self-regulatory duties with the consent of the Securities Exchange Commission, in a manner consistent with Title II of the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-29",
+      "actor": "broker-dealer",
+      "modality": "must",
+      "action": "secure and maintain a record of taxpayer identification number (or social security number for individual account holders) within 30 days of opening a brokerage account",
+      "trigger": "each brokerage account opened after June 30, 1972 and before October 1, 2003 by a U.S. resident, business, or citizen",
+      "threshold": "within 30 days from the date such account is opened",
+      "exceptions": [
+        "reasonable-effort/list exception where identification could not be secured",
+        "enumerated categories in (a)(3)(i)-(vi) where a TIN need not be secured",
+        "extension where person has applied via Form SS-4 or SS-5"
+      ],
+      "citations": [
+        {
+          "quote": "such broker or dealer shall within 30 days from the date such account is opened, secure and maintain a record of the taxpayer identification number of the person maintaining the account",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-30",
+      "actor": "broker or dealer in securities",
+      "modality": "must",
+      "action": "retain the original or a copy/reproduction of specified documents: signature/trading authority documents, records described in 17 CFR 240.17a-3(a), and records of remittances/transfers and receipts exceeding $10,000 to/from persons, accounts, or places outside the United States",
+      "trigger": null,
+      "threshold": "more than $10,000",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Every broker or dealer in securities shall, in addition, retain either the original or a microfilm or other copy or reproduction of each of the following:",
+          "verified": true
+        },
+        {
+          "quote": "A record of each remittance or transfer of funds, or of currency, checks, other monetary instruments, investment securities, or credit, of more than $10,000 to a person, account, or place, outside the United States;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Account",
+      "definition": "For purposes of \u00a7 1023.220: a formal relationship with a broker-dealer established to effect transactions in securities, including, but not limited to, the purchase or sale of securities and securities loaned and borrowed activity, and to hold securities or other assets for safekeeping or as collateral. Does not include an account acquired through acquisition, merger, purchase of assets, or assumption of liabilities, or an account opened for participating in an ERISA employee benefit plan.",
+      "citations": [
+        {
+          "quote": "Account means a formal relationship with a broker-dealer established to effect transactions in securities, including, but not limited to, the purchase or sale of securities and securities loaned and borrowed activity, and to hold securities or other assets for safekeeping or as collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Broker-dealer",
+      "definition": "A person registered or required to be registered as a broker or dealer with the Commission under the Securities Exchange Act of 1934 (15 U.S.C. 77a et seq.), except persons who register pursuant to 15 U.S.C. 78o(b)(11).",
+      "citations": [
+        {
+          "quote": "Broker-dealer means a person registered or required to be registered as a broker or dealer with the Commission under the Securities Exchange Act of 1934 (15 U.S.C. 77a et seq. ), except persons who register pursuant to 15 U.S.C. 78o(b)(11).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Commission",
+      "definition": "For purposes of \u00a7 1023.220, the United States Securities and Exchange Commission.",
+      "citations": [
+        {
+          "quote": "Commission means, for the purposes of \u00a7 1023.220, the United States Securities and Exchange Commission.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "Customer",
+      "definition": "For purposes of \u00a7 1023.220: a person that opens a new account, and an individual who opens a new account for an individual who lacks legal capacity or an entity that is not a legal person. Does not include a financial institution regulated by a Federal functional regulator or a bank regulated by a state bank regulator, a person described in \u00a7 1020.315(b)(2) through (4), or a person with an existing account with the broker-dealer where the broker-dealer has reasonable belief it knows the true identity of the person.",
+      "citations": [
+        {
+          "quote": "Customer means: (i) A person that opens a new account; and (ii) An individual who opens a new account for:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Financial institution",
+      "definition": "Defined at 31 U.S.C. 5312(a)(2) and (c)(1).",
+      "citations": [
+        {
+          "quote": "Financial institution is defined at 31 U.S.C. 5312(a)(2) and (c)(1).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "SRO (self-regulatory organization)",
+      "definition": "As defined in section 3(a)(26) of the Securities Exchange Act of 1934, 15 U.S.C. 78c(a)(26).",
+      "citations": [
+        {
+          "quote": "self-regulatory organization (\u201cSRO\u201d) (as defined in section 3(a)(26) of the Securities Exchange Act of 1934, 15 U.S.C. 78c(a)(26))",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "Federal securities laws",
+      "definition": "For purposes of paragraph (c), means the 'securities laws,' as that term is defined in section 3(a)(47) of the Securities Exchange Act of 1934, 15 U.S.C. 78c(a)(47), and the rules and regulations promulgated by the SEC under such laws.",
+      "citations": [
+        {
+          "quote": "the term \u201cFederal securities laws\u201d means the \u201csecurities laws,\u201d as that term is defined in section 3(a)(47) of the Securities Exchange Act of 1934, 15 U.S.C. 78c(a)(47), and the rules and regulations promulgated by the Securities and Exchange Commission under such laws.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "Suspicious Activity Report (SAR)",
+      "definition": "(undefined here) \u2014 referenced as the form by which a suspicious transaction shall be reported; 'a SAR shall include any suspicious activity report filed with FinCEN pursuant to any regulation in this chapter' for purposes of the confidentiality paragraph.",
+      "citations": [
+        {
+          "quote": "For purposes of this paragraph (e) only, a SAR shall include any suspicious activity report filed with FinCEN pursuant to any regulation in this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owners of legal entity customers",
+      "definition": "(undefined here \u2014 cross-referenced) as defined in \u00a7 1010.230 of this chapter.",
+      "citations": [
+        {
+          "quote": "customer information shall include information regarding the beneficial owners of legal entity customers (as defined in \u00a7 1010.230 of this chapter)",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The other financial institution is subject to a rule implementing 31 U.S.C. 5318(h), and regulated by a Federal functional regulator; and",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Brokers or dealers in securities are directed to Part 1010 Subpart B for AML program requirements applicable to them beyond Part 1023 Subpart B.",
+      "references": [
+        "31 CFR Part 1010 Subpart B"
+      ],
+      "citations": [
+        {
+          "quote": "Brokers or dealers in securities should also refer to subpart B of part 1010 of this chapter for program requirements contained in that subpart which apply to brokers or dealers in securities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The AML program must comply with the correspondent account and private banking due diligence program requirements at \u00a7\u00a7 1010.610 and 1010.620.",
+      "references": [
+        "31 CFR 1010.610",
+        "31 CFR 1010.620"
+      ],
+      "citations": [
+        {
+          "quote": "Complies with the requirements of \u00a7\u00a7 1010.610 and 1010.620 of this chapter and any applicable regulation of its Federal functional regulator governing the establishment and implementation of anti-money laundering programs;",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "General definitions not noted in \u00a7 1023.100 are to be found in \u00a7 1010.100 of this chapter, which governs except where \u00a7 1023.100 supplies a differing definition.",
+      "references": [
+        "31 CFR 1010.100"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to \u00a7 1010.100 of this chapter for general definitions not noted herein.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Currency transaction report filing obligations, identification requirements, aggregation rules, structured transaction rules, and exemptions for broker-dealers are located in Part 1010 Subpart C via cross-reference sections 1023.311-1023.315.",
+      "references": [
+        "31 CFR 1010.311",
+        "31 CFR 1010.312",
+        "31 CFR 1010.313",
+        "31 CFR 1010.314",
+        "31 CFR 1010.315"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to \u00a7 1010.311 of this chapter for reports of transactions in currency filing obligations for brokers or dealers in securities.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Special information sharing procedures to deter money laundering and terrorist activity for broker-dealers are found at \u00a7 1010.520 and \u00a7 1010.540 of this chapter.",
+      "references": [
+        "31 CFR 1010.520",
+        "31 CFR 1010.540"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to \u00a7 1010.520 of this chapter.",
+          "verified": false
+        },
+        {
+          "quote": "Refer to \u00a7 1010.540 of this chapter.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Special standards of diligence for correspondent accounts, private banking accounts, foreign shell bank prohibitions, and summons/subpoena of foreign bank records for broker-dealers are cross-referenced to Part 1010 Subpart F.",
+      "references": [
+        "31 CFR 1010.610",
+        "31 CFR 1010.620",
+        "31 CFR 1010.630",
+        "31 CFR 1010.670"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to \u00a7 1010.610 of this chapter.",
+          "verified": false
+        },
+        {
+          "quote": "Refer to \u00a7 1010.630 of this chapter.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Filing a SAR does not relieve a broker-dealer from complying with other reporting requirements imposed by the SEC or an SRO.",
+      "references": [
+        "15 U.S.C. 78c(a)(26)"
+      ],
+      "citations": [
+        {
+          "quote": "Filing a report of a suspicious transaction does not relieve a broker-dealer from the responsibility of complying with any other reporting requirements imposed by the Securities and Exchange Commission or a self-regulatory organization",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Recordkeeping under Part 1023 Subpart D otherwise follows the provisions of 17 CFR 240.17a-4 and incorporates records described in 17 CFR 240.17a-3(a).",
+      "references": [
+        "17 CFR 240.17a-4",
+        "17 CFR 240.17a-3(a)"
+      ],
+      "citations": [
+        {
+          "quote": "In all other respects, the records must be maintained pursuant to the provisions of 17 CFR 240.17a-4.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Section 1023.210(c) makes SRO AML-program rules a compliance component of the federal program requirement, conditioned on SEC/FinCEN effectiveness approval, illustrating the FINRA SRO layer referenced in scope. Section 1023.220(a)(2)(iii) uses 'should' for sub-elements of the lack-of-verification procedures (e.g., 'These procedures should describe') while the overarching duty to include such procedures uses 'must' \u2014 preserved as written per the fidelity rule; the modality of the parent obligation (OBL-15) is recorded as 'must' since the enclosing sentence uses 'must include procedures,' with the softer 'should' governing only the content descriptors. SAR/CTR/CDD operational filing mechanics are treated as coordination-layer per ratified scope but the program-establishment duties to include CDD, SAR-related, and CIP procedures within the AML program itself are extracted as in-scope program/pillars obligations. OFAC/sanctions, fraud, and state licensing are out of scope and not addressed by this Part. The confidentiality and limitation-on-liability provisions of \u00a7 1023.320(e)-(f) are extracted as they define programmatic non-disclosure duties tied to SAR program operation, though the SAR filing act itself is coordination-layer; included here for completeness of the program's binding text without further interpretation."
+}

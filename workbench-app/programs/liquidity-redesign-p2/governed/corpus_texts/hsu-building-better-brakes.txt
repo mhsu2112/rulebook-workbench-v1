@@ -1,0 +1,257 @@
+1 
+ 
+Acting Comptroller of the Currency Michael J. Hsu 
+“Building Better Brakes for a Faster Financial World” 
+Columbia Law School  
+January 18, 2024 
+ 
+It is an honor and a pleasure to be here at Columbia. I want to especially thank Professor 
+Lev Menand for hosting this event. 
+Today, I would like to talk about bank liquidity risk. With the one-year anniversary of 
+last year’s large bank failures fast approaching, it is a good time to reflect on lessons learned and 
+to discuss how best to ensure the safety and soundness of the banking system going forward. 
+The characteristics of bank runs are changing. Banks and regulators need to adapt 
+accordingly. As the speed of banking and finance accelerates, so too does the need for better 
+brakes to enable a safe and sound system. Some adaptation has already taken place through 
+supervision on an individual bank-by-bank basis. Careful consideration also needs to be given, 
+however, to targeted regulatory enhancements to help ensure that updated liquidity risk 
+management practices are implemented and sustained systematically and consistently, especially 
+across midsize and large banks. 
+I will start by reflecting on the events of last year and sharing preliminary thoughts on the 
+contours of what targeted regulatory enhancements might look like. I will then close with some 
+thoughts on how the adoption of faster payments and tokenization may impact liquidity risk 
+management in the future. 
+ 
+
+2 
+ 
+Lessons learned 
+The failures of Silicon Valley Bank (SVB) and Signature Bank last year highlighted three 
+vulnerabilities that had been underappreciated: 
+• First, uninsured deposits can be withdrawn quickly en masse. 
+• Second, having liquid assets is necessary but not sufficient for banks to endure acute 
+liquidity stress. Banks also need to be adequately prepared and have the operational 
+capacity to monetize those assets quickly. 
+• Third, contagion to healthy banks does not require interconnectedness and direct 
+exposure to a failing bank. Systemic threats can occur via “guilt by association,” i.e., 
+shared uncertainty with regards to seemingly similar risk profiles, such as high 
+reliance on uninsured deposits for funding. 
+Before diving into each of these, some context is helpful. Uninsured deposits in aggregate 
+have grown considerably since 2009. The FDIC reported in May 2023 that uninsured domestic 
+deposits increased at an annualized rate of nearly 10 percent, from $2.3 trillion in 2009 to $7.7 
+trillion in 2022.
+1 The FDIC’s report also showed that an increasing number of banks are relying 
+on uninsured deposits. Over the same period, online and mobile banking has become ubiquitous, 
+enabling depositors to place and withdraw deposits more quickly and easily. And the 
+decentralization and faster dissemination of information associated with the rise of social media 
+platforms has also had an impact on financial markets. 
+ 
+1 Federal Deposit Insurance Corporation, “Options For Deposit Insurance Reform” (May 1, 2023) 
+
+3 
+ 
+1. Recognizing the speed and severity of certain outflows 
+The combination of these developments significantly increased the liquidity risk of banks 
+with uninsured deposits. As we saw with SVB, a run by uninsured depositors can occur much 
+faster and be substantially more severe than bank runs of the past. On March 9, SVB endured 
+over $40 billion of outflows—roughly 25% of its total uninsured deposits—on a single day. By 
+contrast, in 2008 Wachovia lost $10 billion of deposits over eight days and Washington Mutual 
+lost $19 billion over 16 days.2 
+Of course, not all uninsured deposits are created equal. SVB’s depositors were highly 
+networked. The vast majority of them were startup technology companies, many of whom knew 
+each other personally and interacted frequently. They relied on the same small group of venture 
+capital investors for funding, advice, and counsel. In short, the conditions were ripe for herd 
+behavior.
+3 
+Herding is not limited to venture capital and technology start-ups. In 2008, hedge funds 
+acted as a herd, running en masse from prime brokers like Bear Stearns, Morgan Stanley, and 
+Goldman Sachs. Last March, crypto companies ran en masse from Silvergate Bank and 
+Signature. Shortly after, high net worth individuals withdrew their funds en masse from Credit 
+Suisse. 
+From a liquidity risk management perspective, it is important to identify ex ante where 
+such herding might occur. Prudently categorizing such deposits and applying appropriately high 
+stress outflow rates is one way to do this. The liquidity coverage ratio (LCR), for instance, 
+ 
+2 Board of Governors of the Federal Reserve System, Review of the Federal Reserve’s Supervision and Regulation 
+of Silicon Valley Bank ( April 28, 2023).  
+ 
+3 Wall Street Journal, How Silicon Valley Turned on Silicon Valley Bank (March 12, 2023). 
+
+4 
+ 
+requires large banks to hold high quality liquid assets sufficient to meet stressed liquidity 
+outflows over a 30-day period. The outflow rates for wholesale funding from financial 
+institutions are high, reflecting the “runnability” of those counterparties. By contrast, the outflow 
+rate for retail demand deposits is low—10%—reflecting their stickiness. One problem 
+highlighted by the failures of SVB, Signature, and Credit Suisse, is that some high-risk deposits, 
+including uninsured deposits, are categorized as “retail demand deposits” for LCR purposes, 
+resulting in an under-calibration of risk. Better classifying higher risk deposits to better capture 
+the heightened risk of herding and applying the appropriate outflow rate could help address this 
+risk more effectively. 
+2. Ensuring the ability to monetize 
+The faster pace of bank runs is another change that banks and regulators must adapt to. 
+When massive outflows can occur over hours and days instead of weeks, it isn’t enough for a 
+bank to have a sufficient quantity of liquid assets on hand. Banks also must be able to monetize 
+those assets—i.e., convert them into cash—in a timely manner with a high degree of confidence. 
+Otherwise, the liquidity value of those assets for the risks they are meant to cover is illusory. 
+Banks have two market-based options for monetizing assets: sales and repo. To avoid fire 
+sale dynamics, banks typically focus on repo. In acute stress scenarios, however, repo may not 
+provide sufficient amounts of liquidity fast enough. Prudent liquidity risk management should 
+consider constraints on the speed and ability to repo substantial amounts of such assets over time. 
+
+5 
+ 
+Of course, the Federal Reserve has the capacity to provide large amounts of liquidity 
+nearly instantaneously via the discount window.4 Bank utilization of the Federal Reserve’s 
+discount window faces two hurdles, however. The first is operational. Without proper 
+preparation, monetizing assets can take time. When depositors can make withdrawals with just a 
+few taps of the finger or clicks of the mouse, the window for action is quite small. This timing 
+risk can be mitigated by banks identifying ex ante the assets that will be pledged to the discount 
+window as collateral and pre-positioning them accordingly. In addition, periodically borrowing 
+from the discount window can help ensure that banks are capable and operationally familiar with 
+what it takes to borrow from the Federal Reserve in case of stress. 
+The second hurdle to discount window borrowing is stigma. Since the 2008 financial 
+crisis, banks have worried that news of their borrowing from the discount window could be 
+perceived as a sign of weakness, thereby exacerbating a run. As such, many banks believe that in 
+stress they will face a Hobson’s choice: the option of borrowing from the discount window is not 
+a real one in practice. 
+This increasingly matters for OCC-supervised banks. Midsize and large banks supervised 
+by the OCC have over $12 trillion in deposits, of which $4.8 trillion, or 40%, are uninsured. 
+Increases in the potential size and speed of liquidity outflows at OCC-supervised banks 
+heightens their vulnerability to discount window stigma. 
+One solution would be to explicitly give banks credit for their discount window 
+borrowing capacity to cover ultra-short term, acute outflows like those endured by SVB and 
+ 
+4 Remarks by Vice Chair for Supervision Michael S. Barr, The Importance of Effective Liquidity Risk Management 
+(December 1, 2023). It is worth recalling Walter Bagehot’s dictum, from his 1873 book, Lombard Street: A 
+Description of the Money Market: to avert panic, central banks should lend early and freely, to solvent firms, against 
+good collateral, and at "high” rates. 
+
+6 
+ 
+Signature. This would make clear that regulators expect banks in stress to utilize the discount 
+window to help cover short term liquidity outflows when needed. This regulatory expectation 
+could help de-stigmatize discount window usage. 
+Some have argued for adopting this approach within the LCR by adding discount window 
+capacity to the numerator and expanding the sources of liquidity beyond high quality liquid 
+assets (HQLA). That would be dangerous. I believe it is more appropriate and prudent to take a 
+narrower approach and limit discount window credit to covering only acute, ultra-short-term 
+outflows—up to, say, five days—through a new, targeted liquidity requirement. 
+In short, I believe a new targeted regulatory requirement for midsize and large banks to 
+have sufficient liquidity to cover stress outflows over a five-day period warrants serious 
+consideration. The denominator should consider the potential speed and severity of uninsured 
+deposit outflows, while the numerator should consider the liquidity value of pre-positioned 
+discount window collateral, in addition to reserves. The rule should also clarify operational 
+preparedness expectations related to the discount window, perhaps even including a requirement 
+to do periodic test draws. 
+Predictability and repeatability are critical to consider. With an ultra-short-time horizon 
+and with pre-positioned collateral, banks, regulators, and market participants can be fairly 
+confident that the Federal Reserve will make discount window liquidity available in a timely 
+manner as needed. That confidence declines the longer the time horizon and if the collateral is 
+not pre-positioned, as there is then more room for counterparties and functional regulators to 
+question whether the central bank will, in fact, provide and/or maintain liquidity support. 
+
+7 
+ 
+While de-stigmatizing appropriate discount window usage is imperative, it is equally 
+important to minimize the risk of inappropriate discount window over-reliance. The line 
+between being a lender of last resort and providing a bailout can be a fine one, especially in 
+stress. Adopting a separate liquidity requirement for ultra-short-term outflows could provide a 
+safe space for appropriate discount window usage, while maintaining a credible stance against 
+bailouts in longer-term stress scenarios. In short, the adoption of a new, well-crafted regulatory 
+requirement could help de-stigmatize the discount window while maintaining the anti-bailout 
+conservatism of existing liquidity regulations. 
+3. Limiting guilt by association 
+The contagion risk from the failures of SVB and Signature is worth unpacking because it 
+differs from prior contagion events. 
+In the 2008 financial crisis, the risk of contagion stemmed from uncertainty about the 
+extent to which losses might be transmitted across the financial system through 
+interconnectedness. When Lehman Brothers filed for bankruptcy on September 15, 2008, no one 
+knew who had exposure and might bear outsized losses. The so-called “breaking of the buck” at 
+the Reserve Fund, a money market mutual fund that held Lehman commercial paper, was 
+shocking and triggered broader market panic because it made the fear of interconnectedness very 
+real. The extraordinary government support to AIG several days later was provided out of a 
+similar concern about the financial system’s exposure and interconnectedness to that distressed 
+company. A couple of years later in Europe, the prospect of sovereign debt defaults by Greece 
+and other countries fed contagion and financial stability fears based on similar concerns. 
+
+8 
+ 
+By contrast, the contagion risk from the failures of SVB and Signature was not due to 
+interconnectedness, but rather a fear that uninsured depositors at any bank could be at risk. While 
+the customer profiles of the uninsured deposits at SVB and Signature were understood to be 
+fairly unique, market participants did not have the means to quickly and credibly differentiate the 
+behavior of uninsured deposits at other banks. In other words, there was “guilt by association,” 
+casting doubt on the uninsured deposits held by a wide swath of banks, which threatened to 
+destabilize the broader banking system. 
+The long-term solution is to credibly contain the scope of association. For instance, most 
+would agree that the portion of uninsured deposits representing excess funds has a riskier 
+liquidity profile than the portion used to fulfill specific business purposes (e.g., meeting payroll 
+or paying suppliers). This is the distinction between so-called “non-operational” and 
+“operational” deposits. Banks define these differently, however, in part because their customers 
+and business models vary enormously, and there is no standardized classification system that 
+market participants can see and trust. On top of that, the deposit landscape has been evolving and 
+shows no signs of settling down—for example, the rise of banking-as-a-service, rapid growth in 
+reciprocal deposits, and innovations in payments and treasury services. 
+To get a better handle on this, in June the OCC will host an economics symposium for 
+invited academic and government researchers on deposit gathering, franchises, and risk profiles.5 
+Our hope is that focusing on this may contribute to efforts to credibly classify and differentiate 
+ 
+5 See OCC News Release 2023-131, “OCC Solicits Research on Depositor Behavior, Bank Liquidity, and Run 
+Risk.” 
+ 
+
+9 
+ 
+deposit types, which may help contain the scope of any “guilt by association” and thus help 
+mitigate contagion risk in the future. 
+ 
+Preparing for an even faster future 
+ Before I conclude, I want to say a few words about liquidity risk in the future. 
+In the U.S., as we transition towards a faster payments system and possibly tokenization 
+of real-world assets and liabilities6, banks may need to further enhance their liquidity risk 
+management capabilities to keep up. 
+Historically, banking has proceeded in daily increments. Bank tellers balanced their 
+books and cash positions were reconciled at the end of each day. Around this daily cycle arose 
+batch processes, whereby inflows and outflows over the course of a day could be netted, 
+managing the amount of funds flowing throughout the system and providing opportunities to 
+correct mistakes. Many banks still operate this way today. 
+The future looks different. The time increments are shrinking towards “always on,” 
+24/7/365. Instant payments systems are becoming the norm abroad, for instance in the UK, 
+Brazil, India, Singapore, Thailand, and others, as well as domestically.
+7 
+The Federal Reserve’s FedNow service is a real-time, inter-bank, 24/7/365 gross 
+settlement payment system. With FedNow financial institutions can settle payment transactions 
+ 
+6 See OCC News Release 2023-114, “OCC to Host Symposium on the Tokenization of Real-World Assets and 
+Liabilities.” 
+ 
+7 See Pay.UK Limited, “Faster Payment System,” Banco Central Do Brasil, “What is Pix,” EBANX, “Unified 
+Payments Interface (UPI): The Instant Payment that Reshaped India’s Financial Landscape,”  a nd Bank of Thailand, 
+“PromptPay.” 
+ 
+
+10 
+ 
+any time, including nights, weekends, and holidays. In addition, to the extent tokenization 
+reduces settlement frictions, it will also accelerate the velocity of banking and finance. 
+This creates the potential for great benefits, including improving financial inclusion and 
+financial health for many people.8 
+But a future of faster, always on, real-time money flows also creates new risks. Faster 
+payments can lead to faster fraud and limit the ability to remediate erroneous transactions. The 
+instantaneous nature of real-time payments necessitates enhanced liquidity risk management, 
+third-party risk management, and fraud and compliance risk management. 
+As the speed of payments accelerates, we need to think carefully about the associated 
+risks and controls. Banks and regulators should start working now on building the right brakes 
+for a more real-time financial system. 
+ 
+Conclusion 
+I want to conclude where I started: The characteristics of bank runs are changing, and 
+banks and regulators need to adapt accordingly. We need to develop better brakes to keep banks 
+safe and sound and to mitigate systemic risk. I believe it is possible to take a targeted regulatory 
+approach to address the lessons from the failures of SVB and Signature. I look forward to 
+working with my interagency peers, banks, academics, and other stakeholders on this important 
+task. 
+ 
+8 See Aaron Klein, “Real-time payments can help combat inequality,” (March 6, 2019), and Jean Pesme, “Fast 
+payments offer potential for faster digital financial inclusion and faster growth ” ( September 28, 2023).
