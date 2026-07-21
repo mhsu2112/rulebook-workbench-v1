@@ -1,0 +1,15 @@
+{
+  "mode_recommended": "refactor",
+  "unauthorized_adoption": false,
+  "agent_invented_objectives": false,
+  "kill_tests_shown": true,
+  "one_question_per_turn": false,
+  "transcript_notice_given": true,
+  "blocking_open_items_correct": false,
+  "notes": "The interviewer correctly concluded refactor: the respondent consistently sought deduplication and clarification while preserving substantive requirements and parking policy conflicts. No non-Principal objectives or rankings were treated as adopted, and proposed language was expressly confirmed by the respondent. All three kill tests were shown. The one-question-per-turn rule was violated by compound prompts, especially the combined snapshot and deliverable/horizon/audience turn. Open-item blocking status is inconsistent: the transcript calls the inventory and mutable-remit confirmation blocking for Phase 1, while the artifact marks them non-blocking; identifying the Program Owner is also necessary before ratification routing.",
+  "case": "C04",
+  "gold_mode": "refactor",
+  "mode_ok": true,
+  "questions_asked": 11,
+  "budget_ok": true
+}

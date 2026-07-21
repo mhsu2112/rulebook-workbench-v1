@@ -1,0 +1,369 @@
+{
+  "item_id": "31-usc-5318",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "AML/CFT programs should be reasonably designed to assure and monitor compliance with the requirements of the subchapter and regulations promulgated under it",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "reasonably designed to assure and monitor compliance with the requirements of this subchapter and regulations promulgated under this subchapter; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "AML/CFT programs should be risk-based, directing more attention and resources toward higher-risk customers and activities rather than lower-risk customers and activities",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "risk-based, including ensuring that more attention and resources of financial institutions should be directed toward higher-risk customers and activities, consistent with the risk profile of a financial institution, rather than toward lower-risk customers and activities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Effective AML/CFT programs are understood to safeguard national security and generate public benefits by preventing the flow of illicit funds and assisting law enforcement and national security agencies",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Effective anti-money laundering and countering the financing of terrorism programs safeguard national security and generate significant public benefits by preventing the flow of illicit funds in the financial system and by assisting law enforcement and national security agencies with the identification and prosecution of persons attempting to launder money and undertake other illicit activity through the financial system.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "financial institution",
+      "modality": "must",
+      "action": "establish anti-money laundering and countering the financing of terrorism programs including, at a minimum, (A) development of internal policies, procedures, and controls; (B) designation of a compliance officer; (C) an ongoing employee training program; and (D) an independent audit function to test programs",
+      "trigger": "In order to guard against money laundering and the financing of terrorism through financial institutions",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+          "verified": true
+        },
+        {
+          "quote": "the development of internal policies, procedures, and controls;",
+          "verified": true
+        },
+        {
+          "quote": "the designation of a compliance officer;",
+          "verified": true
+        },
+        {
+          "quote": "an ongoing employee training program; and",
+          "verified": true
+        },
+        {
+          "quote": "an independent audit function to test programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "Secretary of the Treasury",
+      "modality": "may",
+      "action": "prescribe minimum standards for programs established under paragraph (1), and exempt from those standards any financial institution not subject to part 103 of title 31 CFR (or successor rule) for so long as it remains not subject to such rules",
+      "trigger": "after consultation with the appropriate Federal functional regulator",
+      "threshold": null,
+      "exceptions": [
+        "financial institution not subject to the provisions of the rules contained in part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto, for so long as such financial institution is not subject to the provisions of such rules"
+      ],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury, after consultation with the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act), may prescribe minimum standards for programs established under paragraph (1), and may exempt from the application of those standards any financial institution that is not subject to the provisions of the rules contained in part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto, for so long as such financial institution is not subject to the provisions of such rules.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Secretary of the Treasury and the appropriate Federal functional regulator",
+      "modality": "must",
+      "action": "take into account listed factors (private compliance benefit, underbanked/remittance policy goals, national-security value of effective programs, and that programs should be reasonably designed and risk-based) in prescribing minimum standards and in supervising and examining compliance",
+      "trigger": "In prescribing the minimum standards under subparagraph (A), and in supervising and examining compliance with those standards",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In prescribing the minimum standards under subparagraph (A), and in supervising and examining compliance with those standards, the Secretary of the Treasury, and the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act ( 12 U.S.C. 6809 )) shall take into account the following:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "Secretary of the Treasury",
+      "modality": "may",
+      "action": "prescribe regulations governing maintenance of concentration accounts by financial institutions, in order to ensure that such accounts are not used to prevent association of a customer's identity with the movement of the customer's funds",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary may prescribe regulations under this subsection that govern maintenance of concentration accounts by financial institutions, in order to ensure that such accounts are not used to prevent association of the identity of an individual customer with the movement of funds of which the customer is the direct or beneficial owner, which regulations shall, at a minimum-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "financial institution",
+      "modality": "conditional",
+      "action": "not allow clients to direct transactions that move their funds into, out of, or through the financial institution's concentration accounts",
+      "trigger": "if the Secretary prescribes regulations under subsection (h)(3) governing concentration accounts",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "prohibit financial institutions from allowing clients to direct transactions that move their funds into, out of, or through the concentration accounts of the financial institution;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "financial institution and its employees",
+      "modality": "conditional",
+      "action": "not inform customers of the existence of, or the means of identifying, the institution's concentration accounts",
+      "trigger": "if the Secretary prescribes regulations under subsection (h)(3) governing concentration accounts",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "prohibit financial institutions and their employees from informing customers of the existence of, or the means of identifying, the concentration accounts of the institution; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "financial institution",
+      "modality": "conditional",
+      "action": "establish written procedures governing documentation of all transactions involving a concentration account, ensuring that when a transaction commingles funds of one or more customers, the identity of and specific amount belonging to each customer is documented",
+      "trigger": "if the Secretary prescribes regulations under subsection (h)(3) governing concentration accounts",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "require each financial institution to establish written procedures governing the documentation of all transactions involving a concentration account, which procedures shall ensure that, any time a transaction involving a concentration account commingles funds belonging to 1 or more customers, the identity of, and specific amount belonging to, each customer is documented.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-8",
+      "actor": "Secretary of the Treasury",
+      "modality": "must",
+      "action": "establish and make public priorities for anti-money laundering and countering the financing of terrorism policy, in consultation with the Attorney General, Federal functional regulators, relevant State financial regulators, and relevant national security agencies",
+      "trigger": "Not later than 180 days after the date of enactment of this paragraph",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Not later than 180 days after the date of enactment of this paragraph, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )), relevant State financial regulators, and relevant national security agencies, shall establish and make public priorities for anti-money laundering and countering the financing of terrorism policy.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-9",
+      "actor": "Secretary of the Treasury",
+      "modality": "must",
+      "action": "update the AML/CFT priorities established under subparagraph (A)",
+      "trigger": "Not less frequently than once every 4 years",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Not less frequently than once every 4 years, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )), relevant State financial regulators, and relevant national security agencies, shall update the priorities established under subparagraph (A).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "Secretary of the Treasury",
+      "modality": "must",
+      "action": "ensure that the priorities established under subparagraph (A) are consistent with the national strategy for countering the financing of terrorism and related forms of illicit finance",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury shall ensure that the priorities established under subparagraph (A) are consistent with the national strategy for countering the financing of terrorism and related forms of illicit finance developed under section 261 of the Countering Russian Influence in Europe and Eurasia Act of 2017 ( Public Law 115\u201344 ; 131 Stat. 934 ).",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "Secretary of the Treasury (acting through the Director of the Financial Crimes Enforcement Network)",
+      "modality": "conditional",
+      "action": "promulgate regulations to carry out the priorities paragraph, as appropriate, in consultation with Federal functional regulators and relevant State financial regulators",
+      "trigger": "Not later than 180 days after the date on which the Secretary of the Treasury establishes the priorities under subparagraph (A)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Not later than 180 days after the date on which the Secretary of the Treasury establishes the priorities under subparagraph (A), the Secretary of the Treasury, acting through the Director of the Financial Crimes Enforcement Network and in consultation with the Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )) and relevant State financial regulators, shall, as appropriate, promulgate regulations to carry out this paragraph.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "Secretary of the Treasury and appropriate Federal functional regulator (as supervisors/examiners)",
+      "modality": "must",
+      "action": "include a financial institution's review of the established priorities and the incorporation of those priorities, as appropriate, into its risk-based AML/CFT programs as a measure on which the institution is supervised and examined for compliance with its obligations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review by a financial institution of the priorities established under subparagraph (A) and the incorporation of those priorities, as appropriate, into the risk-based programs established by the financial institution to meet obligations under this subchapter, the USA PATRIOT Act ( Public Law 107\u201356 ; 115 Stat. 272 ), and other anti-money laundering and countering the financing of terrorism laws and regulations shall be included as a measure on which a financial institution is supervised and examined for compliance with those obligations.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "persons in the United States (on behalf of the financial institution)",
+      "modality": "must",
+      "action": "remain responsible for, and perform, the duty to establish, maintain and enforce the AML/CFT program, being accessible to and subject to oversight and supervision by the Secretary of the Treasury and the appropriate Federal functional regulator",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The duty to establish, maintain and enforce an anti-money laundering and countering the financing of terrorism program as required by this subsection shall remain the responsibility of, and be performed by, persons in the United States who are accessible to, and subject to oversight and supervision by, the Secretary of the Treasury and the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 )).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "Secretary of the Treasury",
+      "modality": "may",
+      "action": "require a class of domestic financial institutions or nonfinancial trades or businesses to maintain appropriate procedures, including collection and reporting of certain information, to ensure compliance with the subchapter or to guard against money laundering, the financing of terrorism, or other forms of illicit finance",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "require a class of domestic financial institutions or nonfinancial trades or businesses to maintain appropriate procedures, including the collection and reporting of certain information as the Secretary of the Treasury may prescribe by regulation, to ensure compliance with this subchapter and regulations prescribed under this subchapter or to guard against money laundering, the financing of terrorism, or other forms of illicit finance;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "financial institution",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "compliance officer",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the designation of a compliance officer;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "concentration accounts",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The Secretary may prescribe regulations under this subsection that govern maintenance of concentration accounts by financial institutions, in order to ensure that such accounts are not used to prevent association of the identity of an individual customer with the movement of funds of which the customer is the direct or beneficial owner, which regulations shall, at a minimum-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator (as used in subsection (h))",
+      "definition": "as defined in section 509 of the Gramm-Leach-Bliley Act ( 12 U.S.C. 6809 )",
+      "citations": [
+        {
+          "quote": "the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act ( 12 U.S.C. 6809 )) shall take into account the following:",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Minimum standards for AML programs and the exemption threshold cross-reference the Bank Secrecy Act implementing rules at 31 CFR part 103 (or successor).",
+      "references": [
+        "31 CFR part 103"
+      ],
+      "citations": [
+        {
+          "quote": "any financial institution that is not subject to the provisions of the rules contained in part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto, for so long as such financial institution is not subject to the provisions of such rules.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "'Federal functional regulator' for purposes of subsection (h) is incorporated by cross-reference to the Gramm-Leach-Bliley Act.",
+      "references": [
+        "Section 509 of the Gramm-Leach-Bliley Act (15/12 U.S.C. 6809)"
+      ],
+      "citations": [
+        {
+          "quote": "the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act ( 12 U.S.C. 6809 )) shall take into account the following:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "AML/CFT priorities must be consistent with the national strategy for countering the financing of terrorism developed under a separate statute.",
+      "references": [
+        "Section 261 of the Countering Russian Influence in Europe and Eurasia Act of 2017 (Public Law 115-44; 131 Stat. 934)"
+      ],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury shall ensure that the priorities established under subparagraph (A) are consistent with the national strategy for countering the financing of terrorism and related forms of illicit finance developed under section 261 of the Countering Russian Influence in Europe and Eurasia Act of 2017 ( Public Law 115\u201344 ; 131 Stat. 934 ).",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Institution's incorporation of priorities into risk-based programs is tied to obligations under the subchapter and the USA PATRIOT Act.",
+      "references": [
+        "USA PATRIOT Act (Public Law 107-56; 115 Stat. 272)"
+      ],
+      "citations": [
+        {
+          "quote": "the incorporation of those priorities, as appropriate, into the risk-based programs established by the financial institution to meet obligations under this subchapter, the USA PATRIOT Act ( Public Law 107\u201356 ; 115 Stat. 272 ), and other anti-money laundering and countering the financing of terrorism laws and regulations shall be included as a measure on which a financial institution is supervised and examined for compliance with those obligations.",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "notes": "Extraction limited to subsection (h) 'Anti-Money Laundering Programs' (the program/'pillars' establishment obligations) and the closely bound concentration-account regulatory authority under (h)(3), plus the definitional cross-reference to GLBA Federal functional regulator, consistent with ratified scope excluding SAR/CTR/CDD coordination-layer duties (subsections (g), (i), (j), (k), (l)) and OFAC/sanctions/state-law boundary regimes found elsewhere in this section. Text preserved as written, including the internally inconsistent numbering note that subsec. (a)(5) was redesignated (a)(6) (see 'f' note) and the fact that subsection (h) applies to 'each financial institution' generically rather than being sector-specific to depository institutions, MSBs, or broker-dealers by its own terms; sector-specificity for pillars obligations as applied to MSBs/broker-dealers/banks arises from implementing regulations and SRO rules not contained in this statutory text. Modality for (h)(1) rendered as 'must' per 'shall establish'; concentration-account sub-obligations rendered 'conditional' because they only bind 'if' the Secretary exercises the discretionary rulemaking power in the lead-in of (h)(3), which itself uses 'may prescribe.'"
+}

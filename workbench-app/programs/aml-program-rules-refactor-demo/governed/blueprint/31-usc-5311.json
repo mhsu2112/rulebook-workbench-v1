@@ -1,0 +1,276 @@
+{
+  "item_id": "31-usc-5311",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The purpose of the subchapter (except section 5315) is to require certain reports or records highly useful in criminal, tax, or regulatory investigations, risk assessments, or proceedings, or in intelligence or counterintelligence activities including analysis to protect against terrorism.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "It is the purpose of this subchapter (except section 5315) to-",
+          "verified": true
+        },
+        {
+          "quote": "(1) require certain reports or records that are highly useful in-",
+          "verified": true
+        },
+        {
+          "quote": "(A) criminal, tax, or regulatory investigations, risk assessments, or proceedings; or",
+          "verified": true
+        },
+        {
+          "quote": "(B) intelligence or counterintelligence activities, including analysis, to protect against terrorism;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The purpose is to prevent the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs to combat money laundering and the financing of terrorism.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(2) prevent the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The purpose is to facilitate the tracking of money that has been sourced through criminal activity or is intended to promote criminal or terrorist activity.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(3) facilitate the tracking of money that has been sourced through criminal activity or is intended to promote criminal or terrorist activity;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The purpose is to assess the money laundering, terrorism finance, tax evasion, and fraud risks to financial institutions, products, or services to protect the U.S. financial system from criminal abuse and safeguard national security.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(4) assess the money laundering, terrorism finance, tax evasion, and fraud risks to financial institutions, products, or services to-",
+          "verified": true
+        },
+        {
+          "quote": "(A) protect the financial system of the United States from criminal abuse; and",
+          "verified": true
+        },
+        {
+          "quote": "(B) safeguard the national security of the United States; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The purpose is to establish appropriate frameworks for information sharing among financial institutions, their agents and service providers, their regulatory authorities, associations of financial institutions, the Department of the Treasury, and law enforcement authorities to identify, stop, and apprehend money launderers and those who finance terrorists.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(5) establish appropriate frameworks for information sharing among financial institutions, their agents and service providers, their regulatory authorities, associations of financial institutions, the Department of the Treasury, and law enforcement authorities to identify, stop, and apprehend money launderers and those who finance terrorists.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "It is a purpose of the AMLA 2020 division to reinforce that the anti-money laundering and countering the financing of terrorism policies, procedures, and controls of financial institutions shall be risk-based.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "\"(4) to reinforce that the anti-money laundering and countering the financing of terrorism policies, procedures, and controls of financial institutions shall be risk-based;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "5311-OB-01",
+      "actor": "financial institutions",
+      "modality": "conditional",
+      "action": "establish reasonably designed risk-based programs to combat money laundering and the financing of terrorism",
+      "trigger": "the statutory purpose of preventing the laundering of money and the financing of terrorism through the establishment by financial institutions of such programs",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "(2) prevent the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act",
+      "definition": "This subchapter and chapter 21 (\u00a71951 et seq.) of Title 12, Banks and Banking, are each popularly known as the \"Bank Secrecy Act\". (Per \u00a76003 definition: section 21 of the Federal Deposit Insurance Act (12 U.S.C. 1829b); chapter 2 of title I of Public Law 91-508 (12 U.S.C. 1951 et seq.); and subchapter II of chapter 53 of title 31, United States Code.)",
+      "citations": [
+        {
+          "quote": "This subchapter and chapter 21 (&sect;1951 et seq.) of Title 12 , Banks and Banking, are each popularly known as the \"Bank Secrecy Act\".",
+          "verified": true
+        },
+        {
+          "quote": "\"(1) Bank secrecy act .-The term 'Bank Secrecy Act' means- \n\n \"(A) section 21 of the Federal Deposit Insurance Act ( 12 U.S.C. 1829b ); \n\n \"(B) chapter 2 of title I of Public Law 91&ndash;508 ( 12 U.S.C. 1951 et seq. ); and \n\n \"(C) subchapter II of chapter 53 of title 31, United States Code .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator",
+      "definition": "Has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809); and includes any Federal regulator that examines a financial institution for compliance with the Bank Secrecy Act. (Per \u00a76003.)",
+      "citations": [
+        {
+          "quote": "\"(3) Federal functional regulator .-The term 'Federal functional regulator'- \n\n \"(A) has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act ( 15 U.S.C. 6809 ); and \n\n \"(B) includes any Federal regulator that examines a financial institution for compliance with the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "financial institution",
+      "definition": "Has the meaning given the term in section 5312 of title 31, United States Code; and includes (i) an electronic fund transfer network; and (ii) a clearing and settlement system. (Per \u00a76003.)",
+      "citations": [
+        {
+          "quote": "\"(5) Financial institution .-The term 'financial institution'- \n\n \"(A) has the meaning given the term in section 5312 of title 31, United States Code ; and \n\n \"(B) includes- \n\n \"(i) an electronic fund transfer network; and \n\n \"(ii) a clearing and settlement system.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FinCEN",
+      "definition": "The term 'FinCEN' means the Financial Crimes Enforcement Network of the Department of the Treasury. (Per \u00a76003.)",
+      "citations": [
+        {
+          "quote": "\"(6) FinCEN .-The term 'FinCEN' means the Financial Crimes Enforcement Network of the Department of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Secretary",
+      "definition": "The term 'Secretary' means the Secretary of the Treasury. (Per \u00a76003.)",
+      "citations": [
+        {
+          "quote": "\"(7) Secretary .-The term 'Secretary' means the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "financial agency",
+      "definition": "Has the meaning given the term in section 5312(a) of title 31, United States Code, as amended by section 6102 of this division. (Per \u00a76003.)",
+      "citations": [
+        {
+          "quote": "\"(4) Financial agency .-The term 'financial agency' has the meaning given the term in section 5312(a) of title 31, United States Code , as amended by section 6102 of this division.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "State bank supervisor",
+      "definition": "Has the meaning given the term in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813). (Per \u00a76003.)",
+      "citations": [
+        {
+          "quote": "\"(8) State bank supervisor .-The term 'State bank supervisor' has the meaning given the term in section 3 of the Federal Deposit Insurance Act ( 12 U.S.C. 1813 ).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money laundering",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "(2) prevent the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "reasonably designed risk-based programs",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The subchapter and chapter 21 (\u00a71951 et seq.) of Title 12, Banks and Banking, are each popularly known as the \"Bank Secrecy Act\"; see the Short Title note under section 1951 of Title 12.",
+      "references": [
+        "12 U.S.C. 1951 et seq.",
+        "Title 12 section 1951 Short Title note"
+      ],
+      "citations": [
+        {
+          "quote": "This subchapter and chapter 21 (&sect;1951 et seq.) of Title 12 , Banks and Banking, are each popularly known as the \"Bank Secrecy Act\". See Short Title note set out under section 1951 of Title 12 .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Section 5311 was added by Pub. L. 116-283, div. F, title LXI, \u00a76101(a), and a prior section 5311 (Pub. L. 97-258; Pub. L. 107-56 \u00a7358(a)) relating to purpose of the subchapter was repealed by the same enactment.",
+      "references": [
+        "Pub. L. 116-283, div. F, title LXI, \u00a76101(a)",
+        "Pub. L. 97-258",
+        "Pub. L. 107-56, title III, \u00a7358(a)"
+      ],
+      "citations": [
+        {
+          "quote": "A prior section 5311, \n Pub. L. 97&ndash;258, Sept. 13, 1982, 96 Stat. 995 \n ; \n Pub. L. 107&ndash;56, title III, &sect;358(a), Oct. 26, 2001, 115 Stat. 326 \n , related to purpose of this subchapter, prior to repeal by \n Pub. L. 116&ndash;283, div. F, title LXI, &sect;6101(a), Jan. 1, 2021, 134 Stat. 4549 \n .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Secretary shall revise the Customer Due Diligence Requirements final rule (81 Fed. Reg. 29397 (May 11, 2016)) to account for access to beneficial ownership information filed under section 5336; shall rescind paragraphs (b) through (j) of 31 C.F.R. 1010.230 but may not repeal the requirement that financial institutions identify and verify beneficial owners of legal entity customers under 31 C.F.R. 1010.230(a).",
+      "references": [
+        "31 U.S.C. 5336(b)(4)",
+        "81 Fed. Reg. 29397 (May 11, 2016)",
+        "31 C.F.R. 1010.230"
+      ],
+      "citations": [
+        {
+          "quote": "the Secretary of the Treasury shall revise the final rule entitled 'Customer Due Diligence Requirements for Financial Institutions' (81 Fed. Reg. 29397 (May 11, 2016)) to-",
+          "verified": true
+        },
+        {
+          "quote": "\"(A) In general .-In carrying out paragraph (1), the Secretary of the Treasury shall rescind paragraphs (b) through (j) of section 1010.230 of title 31, Code of Federal Regulations upon the effective date of the revised rule promulgated under this subsection.",
+          "verified": true
+        },
+        {
+          "quote": "\"(B) Rule of construction .-Nothing in this section may be construed to authorize the Secretary of the Treasury to repeal the requirement that financial institutions identify and verify beneficial owners of legal entity customers under section 1010.230(a) of title 31, Code of Federal Regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Secretary, in consultation with the Federal functional regulators, the Financial Institutions Examination Council, and others, shall undertake a formal review of the regulations implementing the Bank Secrecy Act and related guidance.",
+      "references": [
+        "Pub. L. 116-283, div. F, title LXII, \u00a76216"
+      ],
+      "citations": [
+        {
+          "quote": "\"(1) undertake a formal review of the regulations implementing the Bank Secrecy Act and guidance related to that Act-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Semiannual reports to the financial services industry on suspicious financial activities are distributed to financial institutions as defined in section 5312 of title 31, United States Code (USA PATRIOT Act \u00a7314).",
+      "references": [
+        "Pub. L. 107-56, title III, \u00a7314",
+        "31 U.S.C. 5312"
+      ],
+      "citations": [
+        {
+          "quote": "\"(2) distribute such report to financial institutions (as defined in section 5312 of title 31, United States Code ).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Section 5311 itself is a declaration of purpose and contains no operative modal duty in its body; the only program-establishment content within ratified scope is purpose clause (2) referencing financial institutions' establishment of 'reasonably designed risk-based programs.' It is worded as a statutory purpose, not a directly imposed 'shall' duty, so obligation 5311-OB-01 is coded 'conditional' and flagged: the pillars/program mandate is stated as a purpose here, with the actual operative program requirement located elsewhere (e.g., 31 U.S.C. 5318(h)), outside this source. The numerous statutory notes (AMLA 2020 \u00a7\u00a76002-6303, USA PATRIOT Act \u00a7\u00a7302-359, and older provisions) impose duties primarily on the Secretary/agencies (studies, reports, officer appointments, international coordination) rather than program-establishment obligations on covered institutions; most fall outside the ratified program/'pillars' scope and are recorded as objectives/interactions only where scope-relevant. Definitions in \u00a76003 apply 'in this division' (AMLA 2020), not to \u00a75311 text proper; captured because materially scope-relevant. Purposes note \u00a76002(4) reinforces the risk-based character of AML/CFT programs and is recorded as an objective."
+}

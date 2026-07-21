@@ -1,0 +1,1526 @@
+{
+  "manifest_hash": "sha256:24b2ba2a5c692e3f3da317dd46e68d3cf5e53108061c5316db220041b134844c",
+  "runs": {
+    "defects-guidance_interagency": {
+      "detected_at": "2026-07-20T01:28:52.600924+00:00",
+      "scope_label": "family: guidance_interagency",
+      "cost_usd": 0.15133,
+      "findings": [
+        {
+          "code": "D3",
+          "title": "Duplicate contingency-funding-plan maintenance duty across three interagency instruments",
+          "description": "The obligation that depository institutions maintain actionable contingency funding plans considering a range of stress scenarios is stated in materially identical terms across the interagency addendum and the FDIC FIL transmitting it. The OCC bulletin transmits the same addendum. This is the same duty restated in multiple instruments.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Depository institutions should maintain actionable contingency funding plans that consider a range of possible stress scenarios.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "Maintain actionable contingency funding plans that take into account an appropriate\n range of possible stress scenarios.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "maintaining, assessing, and testing their contingency funding plans as part of their liquidity risk management program and activities",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate funding-stability assessment / broad-range-of-sources duty across instruments",
+          "description": "The obligation to assess the stability of funding and maintain a broad range of funding sources accessible in adverse circumstances is stated in materially identical terms in both the interagency addendum and the FDIC FIL.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Depository institutions should assess the stability of their funding and maintain a broad range of funding sources that can be accessed in adverse circumstances.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "Proactively assess the stability of their funding and maintain a broad range of funding\n sources that can be accessed in adverse circumstances.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate periodic review/revision of contingency funding plans duty across instruments",
+          "description": "The obligation to review and revise contingency funding plans periodically and more frequently as market conditions and strategic initiatives change is stated verbatim in both the interagency addendum and the FDIC FIL.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Depository institutions should review and revise contingency funding plans periodically and more frequently as market conditions and strategic initiatives change in order to address evolving liquidity risks.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "Review and revise contingency funding plans periodically and more frequently as market\n conditions and strategic initiatives change in order to address evolving liquidity\n risks.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate collateral-movement operational-challenge planning duty across instruments",
+          "description": "The obligation to plan for the operational challenges involved in moving and posting collateral appears in both the interagency addendum and the FDIC FIL.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "In particular, depository institutions should engage in planning that recognizes the operational challenges involved in moving and posting collateral to access critical funding in a timely fashion.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "Additionally, depository institutions should plan for\n potential operational challenges involved in moving and posting collateral.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate discount-window operational-readiness duty across instruments",
+          "description": "The conditional obligation to maintain operational readiness to borrow from the discount window if it is part of the institution's contingency funding plans appears both in the interagency addendum and in the OCC bulletin, addressed to overlapping institution populations.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "If the depository institution's contingency funding plans, the depository institution should establish and maintain operational readiness to borrow from the discount window.",
+              "verified": false
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material term 'contingency funding plans' undefined across all three instruments",
+          "description": "The term 'contingency funding plans' is the central object of nearly every obligation in these instruments yet is defined in none of them; each extraction expressly notes the text describes contents/review cadence but gives no formal definition.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "(undefined here) \u2014 text describes required contents and review cadence but does not give a formal definition of the term itself",
+              "verified": false
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "(undefined here) \u2014 the text discusses banks maintaining, assessing, and testing their contingency funding plans as part of their liquidity risk management program and activities, but does not itself define the term.",
+              "verified": false
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "(undefined here)",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material term 'discount window' undefined across instruments",
+          "description": "The 'discount window' is the primary federal contingency funding facility referenced throughout, and is a core focus of the ratified scope, yet is left undefined in the addendum, the OCC bulletin, and the FDIC FIL.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "(undefined here)",
+              "verified": false
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "(undefined here) \u2014 referenced only as an example of a federal funding facility for which banks should understand requirements and maintain operational readiness.",
+              "verified": false
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "(undefined here)",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material term 'less stable funding' undefined",
+          "description": "The addendum conditions an obligation to increase contingency-borrowing capacity on an institution increasing the share of liabilities comprised of 'less stable funding,' but the term is left undefined, leaving the trigger threshold indeterminate.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "(undefined here)",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Unverified external reference to Central Liquidity Facility resource",
+          "description": "The addendum directs credit unions to an external informational resource for the Central Liquidity Facility, but the citation for this reference is marked not verified, indicating a potentially dangling/unconfirmed reference.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Information regarding the Central Liquidity Facility is available at NCUA.gov/support-services/central-liquidity-facility.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Divergent modality on incorporating the discount window into contingency funding plans",
+          "description": "The FDIC FIL states the agencies 'encourage' institutions to incorporate the discount window as part of contingency funding arrangements (extracted as 'should'/affirmative expectation), whereas the addendum and OCC bulletin frame discount-window use only conditionally ('if the discount window is a part of' the CFP), imposing readiness duties without any affirmative expectation to incorporate it. The instruments differ on whether incorporating the discount window is itself expected versus merely a conditional predicate.",
+          "locations": [
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "The agencies encourage depository institutions to incorporate the discount window as part of their contingency funding\n arrangements.",
+              "verified": true
+            },
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "If the discount window is a part of a depository institution's contingency funding plans, the depository institution should establish and maintain operational readiness to borrow from the discount window.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability-scope mismatch across the interagency instruments transmitting the same addendum",
+          "description": "The same addendum obligations are transmitted through instruments with materially different applicability scopes: the OCC bulletin applies to 'national banks, federal savings associations, and federal branches and agencies of foreign banking organizations'; the FDIC FIL applies to 'all FDIC-supervised financial institutions'; and the addendum layers in NCUA credit-union tiers ($250M, $50-250M, <$50M). The population subject to a given obligation therefore depends on which transmitting instrument governs.",
+          "locations": [
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "\u201cBanks\u201d refers collectively to national banks, federal savings associations, and federal branches and agencies of foreign banking organizations.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "The contents of, and material referenced in,\n this FIL apply to all FDIC-supervised financial institutions.",
+              "verified": true
+            },
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Credit unions with assets greater than $250 million must, among other things, establish and document access to at least one contingent federal liquidity source.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Reporting timing/granularity obligations (Call Report, FR 2052a) absent from all extracted instruments",
+          "description": "The ratified scope treats the timing and granularity of liquidity reporting (Call Reports, FR 2052a) as a structural source of slow detection/response, but none of the three extracted instruments address these reporting instruments at all, per each extraction's own notes \u2014 the obligation to report liquidity in a run-relevant timeframe is implied by the diagnostic structure but stated nowhere in these sources.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "does not address Call Report or FR 2052a reporting timing/granularity at all",
+              "verified": false
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "No FHLB, Call Report, FR 2052a, discount-window-stigma-mechanism, or reform-proposal content appears anywhere in this source",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Full discount-window operational-readiness obligation assembled only across multiple instruments",
+          "description": "A complete statement of the discount-window operational-readiness duty must be assembled by reading several instruments: the addendum supplies the definition of 'operational readiness' (borrowing arrangements plus available collateral), the small-value-transaction familiarity practice, and the pre-pledging/pledging-process awareness; the OCC bulletin supplies the 'understand requirements' framing; and the FDIC FIL supplies the collateral-availability and testing components. No single instrument states the obligation in full.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Operational readiness includes establishing borrowing arrangements and ensuring collateral is available for borrowing in an amount appropriate for a depository institution's potential contingency funding needs.",
+              "verified": true
+            },
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Depository institutions that include the discount window as part of their contingency funding plan should also consider conducting small value transactions at regular intervals to ensure familiarity with discount window operations.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "Be aware of the operational requirements to obtain funding from contingent sources,\n including testing access to contingent funding sources on a regular basis.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-legislation_horizon": {
+      "detected_at": "2026-07-20T01:29:41.784661+00:00",
+      "scope_label": "family: legislation_horizon",
+      "cost_usd": 0.045485,
+      "findings": [
+        {
+          "code": "D4",
+          "title": "Discount window stigma referenced as reduction target but never defined",
+          "description": "The source treats 'discount window stigma' as a material term the bill aims to reduce and study, yet the extraction records the definition as '(undefined here)'. The term is central to the in-scope diagnostic of stigma sources but is not defined in this instrument.",
+          "locations": [
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "reduce the unnecessary stigma associated with that use",
+              "verified": true
+            },
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "Requires the Federal Reserve Board to conduct a study and submit a report to Congress about additional measures that could be taken to reduce discount window stigma and improve the process for obtaining advances on behalf of depository institutions.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'Lender of last resort' invoked without definition",
+          "description": "The material term 'lender of last resort' is used to frame the discount window's purpose but the extraction records its definition as '(undefined here)'.",
+          "locations": [
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "The Federal Reserve\u2019s discount window exists to be the lender of last resort",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'Eligible depository institutions' undefined despite carrying a mandate scope",
+          "description": "The scope of the test-borrowing mandate turns on which institutions are 'eligible depository institutions,' but the extraction records this term as '(undefined here)'.",
+          "locations": [
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "Mandates that eligible depository institutions operating in the United States engage in test borrowing at the Federal Reserve\u2019s Discount Window:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'Section 10B' cited as statutory basis but not defined/reproduced",
+          "description": "Section 10B is invoked as the statutory basis for Federal Reserve independence as a liquidity provider, framing a constraint on reform, yet its content/definition is recorded as '(undefined here)' in this extraction.",
+          "locations": [
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "given its clear mandate under Section 10B to act independently",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference to Discount Window Enhancement Act (2024)",
+          "description": "The source situates the 2026 bill as a successor to Sen. Warner's earlier Discount Window Enhancement Act (2024), referencing that prior instrument without its content being present in this extraction.",
+          "locations": [
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "Sen. Warner first introduced the Discount Window Enhancement Act in 2024.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling references to related post-SVB accountability bills",
+          "description": "The source cross-references the DEPOSIT Act, Bank Management Accountability Act, and Failed Bank Executives Clawback Act as related but distinct efforts, none of whose content is present in the extraction.",
+          "locations": [
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "Sen. Warner cosponsored the DEPOSIT Act, the Bank Management Accountability Act, and the Failed Bank Executives Clawback Act, efforts to ensure that bank executives do not profit in the wake of bank failures.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-operational_spec": {
+      "detected_at": "2026-07-20T01:31:04.353342+00:00",
+      "scope_label": "family: operational_spec",
+      "cost_usd": 0.147795,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'Reserve Bank' collateral security interest / valuation role",
+          "description": "The term 'Reserve Bank' is defined at different levels of specificity and role across two Fed-side instruments, but the underlying secured-lending duty diverges materially in how 'collateral' is treated. In frbdw-discount-window, collateralization 'usually means that the Reserve Bank has a first-priority security interest on pledged collateral,' whereas frbdw-collateral defines the Reserve Bank purely as the entity that 'assigns a value to the collateral' without reference to security-interest priority. The same actor's collateral duty is defined on incompatible axes (priority interest vs. valuation) across the two sources.",
+          "locations": [
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "This usually means that the Reserve Bank has a first-priority security interest on pledged collateral.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "When a depository institution (also known as pledging institution, or institution) pledges acceptable collateral to a Federal Reserve Bank (Reserve Bank), the Reserve Bank assigns a value to the collateral according to various factors.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability/threshold mismatch between discount-window eligibility ($500M seasonal / any depository) and collateral in-scope threshold ($50B)",
+          "description": "The discount-window operational spec applies obligations to all eligible depository institutions, with a seasonal-credit threshold keyed to 'deposits of $500 million or less.' The collateral spec introduces an entirely different scoping regime \u2014 'in-scope institution' keyed to '$50,000,000,000 or more in total consolidated assets' \u2014 governing which institutions are subject to particular collateral treatment. The two Fed-side instruments governing the same discount-window lending activity apply materially different scope thresholds ($500M deposits vs. $50B consolidated assets) without reconciliation.",
+          "locations": [
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Seasonal credit may be available to depository institutions with deposits of $500 million or less that can demonstrate a clear pattern of recurring intra-yearly swings in funding needs.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "All depository institutions (12 CFR 201.2(c)(1)) that are controlled (12 CFR 225.2(e)) by a Bank Holding Company (12 CFR 225.2(c)(1)) (including a Financial Holding Company (12 CFR 225.81)) or an Intermediate Holding Company (12 CFR 252.2(y)) with Fifty Billion Dollars ($50,000,000,000) or more in total consolidated assets, defined as the average over the last four calendar quarters;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Secondary-credit collateral obligation assembled only by reading discount-window and collateral instruments together",
+          "description": "The full duty governing secondary credit borrowing is scattered across two instruments. frbdw-discount-window establishes the eligibility/availability conditions for secondary credit (backup liquidity, above primary rate, overnight, consistency with return to market funding or orderly resolution), while frbdw-collateral separately establishes the collateral consequence of secondary-credit borrowing (an additional margin applied to pledged collateral other than U.S. Treasury and Agency securities). Neither instrument states the complete secondary-credit obligation; it can only be assembled by reading both.",
+          "locations": [
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Secondary credit is available to meet backup liquidity needs when its use is consistent with a timely return to a reliance on market sources of funding or the orderly resolution of a troubled institution.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "For depository institutions borrowing under the secondary credit program, the Reserve Banks generally apply an additional margin to the collateral value of any pledged collateral, other than U.S. Treasury and Agency securities.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material terms 'Advances,' 'Obligations,' 'Collateral' in OC 10 index",
+          "description": "In frb-operating-circulars the capitalized terms 'Advances,' 'Obligations,' and 'Collateral' \u2014 material to the discount-window lending regime that anchors the fragmentation diagnostic \u2014 appear as apparent defined terms but are not defined within the extracted text.",
+          "locations": [
+            {
+              "item_id": "frb-operating-circulars",
+              "quote": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material term 'secondary credit program' in collateral instrument",
+          "description": "frbdw-collateral imposes a collateral-margin obligation triggered by borrowing 'under the secondary credit program' but does not define the term within the instrument (recorded '(undefined here)'). The defining content sits in a separate instrument (frbdw-discount-window), leaving the term undefined at the point where the material collateral obligation attaches.",
+          "locations": [
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "For depository institutions borrowing under the secondary credit program, the Reserve Banks generally apply an additional margin to the collateral value of any pledged collateral, other than U.S. Treasury and Agency securities.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling references to off-page web resources and untraceable cross-references",
+          "description": "Multiple obligations and definitions depend on resources not present in the extractions and identified only by web-page name or table title, leaving the substantive rule dangling. Examples: discount-window collateral acceptance/valuation/pledging depend on the 'Collateral Eligibility page,' 'Collateral Valuation page,' and 'Pledging Collateral page'; the Call Report mapping depends on the 'Loan Types and Call Report Mapping Table'; margins depend on a 'Margins Table below' and a 'Historical Collateral Margins Tables page.' None of the referenced content is in the extraction.",
+          "locations": [
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Information on the types of assets that the Reserve Banks accept as collateral can be found on the Collateral Eligibility page.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "The Loan Types and Call Report Mapping Table, found within the Pledging Collateral section of this website shows the collateral category that corresponds to report codes on the FFIEC 031/041/051 Call Report, the FBO FFIEC 002 Call Report, or the NCUA Call Report, as applicable (Call Report).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Reliance on 1994 Federal Reserve Bulletin for FDICIA discount-window interaction",
+          "description": "The discount-window spec's guidance on FDICIA's interaction with advance limitations for undercapitalized institutions is supported only by a cross-reference to a November 1994 Federal Reserve Bulletin article, an archaic source used to explain a current obligation (OBL-4).",
+          "locations": [
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "For more information on this topic, see \"FDICIA and the Discount Window\" on page 975 of the November 1994 issue of the Federal Reserve Bulletin.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "No stated obligation to determine/notify collateral value despite enforcement consequences hinging on it",
+          "description": "The collateral instrument imposes zero-collateral-value and general-assumption consequences (OBL-4, OBL-5, OBL-6) and states collateral value determines borrowing capacity and overdraft credit capacity, but no provision states an affirmative obligation on the pledging institution to supply loan information, nor an obligation on the Reserve Bank to communicate assigned value or margin. The duty to provide information is implied by the enforcement consequence ('missing information ... the loan will receive zero collateral value') yet stated nowhere as an obligation.",
+          "locations": [
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "If a loan\u2019s value or its margin cannot be determined due to missing information about a pledged loan, or any other reason, the loan will receive zero collateral value.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "The collateral value is used by the Reserve Bank to determine how much the pledging institution may borrow through discount window programs, as well as determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate cross-reference to Operating Circular 10 as governing lending instrument",
+          "description": "The duty to conduct discount-window lending under the terms of Operating Circular 10 is stated across three instruments: frb-operating-circulars establishes OC 10's terms directly, while both frbdw-discount-window and frbdw-collateral cross-reference 'Operating Circular 10: Lending' as the governing guideline for the same discount-window operations, duplicating the same governing-instrument provision.",
+          "locations": [
+            {
+              "item_id": "frb-operating-circulars",
+              "quote": "OC 10 contains the terms under which an entity may obtain Advances from, incur Obligations to, or pledge Collateral to a Federal Reserve Bank.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Operating Circular 10: Lending (FRB Services)",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "Operating Circular 10: Lending (FRB Services)",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material terms 'discount window programs' and 'overdraft credit capacity / Payment System Risk'",
+          "description": "frbdw-collateral uses 'discount window programs' and 'overdraft credit capacity' (Payment System Risk) as terms material to how collateral value governs borrowing capacity, but each is recorded '(undefined here)' with no definition supplied in the instrument.",
+          "locations": [
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "The collateral value is used by the Reserve Bank to determine how much the pledging institution may borrow through discount window programs, as well as determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-policy_report": {
+      "detected_at": "2026-07-20T01:32:15.234381+00:00",
+      "scope_label": "family: policy_report",
+      "cost_usd": 0.1405,
+      "findings": [
+        {
+          "code": "D4",
+          "title": "'lender of last resort' used but undefined",
+          "description": "The term 'lender of last resort' is used to describe the Federal Reserve's role that FHLBanks cannot functionally serve, yet is not defined in the source. It is material to the interoperability distinction the source draws.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "the FHLBanks cannot functionally serve as the lender of last resort, particularly for large, troubled members that can have significant borrowing needs over a short period of time",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'IBDAs' used but undefined",
+          "description": "IBDAs is referenced as the subject of a planned unsecured-credit-limit rulemaking but is never defined, despite being material to the scope of that obligation (OB-6).",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA plans to undertake a rulemaking to amend its regulation establishing limits on unsecured extensions of credit to provide deposits held in IBDAs at highly-rated banks with the higher limit that currently applies only to overnight fed funds.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'advances' used but undefined",
+          "description": "'Advances' \u2014 the core FHLBank product distinguished from Federal Reserve facilities \u2014 is used throughout (including in the Advances regulation reference at OB-10) but is not defined here.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "The role of the FHLBanks in providing secured advances must be distinguished from the Federal Reserve\u2019s financing facilities",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'primary federal regulator' used but undefined",
+          "description": "'Primary federal regulator' is material across multiple obligations (OB-4, OB-8, OB-19, OB-23) governing information sharing and coordination, but is not defined in the source.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "By statute, members\u2019 primary federal regulators are required to make those members\u2019 reports of examination available to the appropriate FHLBank upon request.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'multi-district members' used but undefined",
+          "description": "'Multi-district members' is the subject of monitoring and guidance obligations (OB-15, OB-16) but is never defined.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA will continue to monitor the effect multi-district members have on the FHLBanks and encourages improved communication and information sharing among the FHLBanks on the borrowing activity of multi-district members.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'prepayment fees' used but undefined",
+          "description": "'Prepayment fees' is the subject of a planned study (OB-9) and possible rulemaking (OB-10) but is not defined in the source.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA will initiate a study of the FHLBank System\u2019s treatment of prepayment fees for certain situations.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference to 'exceptions described above' regarding district consolidation floor",
+          "description": "OB-14 and the consolidation-floor interaction refer to 'the exceptions described above' governing the eight-district statutory floor, but those exceptions are not present in the extraction, leaving the reference dangling.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "because that general authority for consolidation is limited by the requirement that the number of FHLBank districts not be reduced to fewer than eight, subject to the exceptions described above",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Reference to unspecified statute for examination-report sharing",
+          "description": "The source asserts a statutory duty ('By statute') on primary federal regulators to share reports of examination with FHLBanks, but the statute is not identified, leaving the citation unresolvable within the extraction.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "By statute, members\u2019 primary federal regulators are required to make those members\u2019 reports of examination available to the appropriate FHLBank upon request.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Discount-window transition obligation assembled only by reading multiple provisions",
+          "description": "The obligation to ensure members can transition to the Federal Reserve discount window is scattered across OB-3 (FHLBanks coordinate to establish protocols), OB-4 (FHFA guidance to ensure protocols), OB-5/OB-18 (negotiate/draft collateral-transfer agreements), and OB-24 (FHFA to establish infrastructure). The complete transition duty exists only by reading these together, with differing actors and modalities.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "make certain that these members have established protocols to meet their emergency liquidity needs from the Federal Reserve discount window when necessary",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA will provide guidance to the FHLBanks to work with their members and the members\u2019 primary federal regulators to ensure all large depository members have established protocols to borrow from the Federal Reserve discount window",
+              "verified": false
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member\u2019s lending activity must be moved to the Federal Reserve discount window",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA is working with the FHLBanks to ensure they are preemptively establishing the necessary expectations and infrastructure to transition members from their FHLBank to the Federal Reserve discount window when necessary.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate collateral-transfer-agreement duty stated twice",
+          "description": "The duty for FHLBanks to arrange agreements with Federal Reserve Banks to move collateral to the discount window is stated in both OB-5 ('negotiate appropriate agreements ... expedited movement of collateral') and OB-18 ('draft agreements that would facilitate the transfer of a member\u2019s collateral'), covering the same underlying obligation within a single instrument.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member\u2019s lending activity must be moved to the Federal Reserve discount window.",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "the FHLBanks have already begun discussions with the Federal Reserve Banks to draft agreements that would facilitate the transfer of a member\u2019s collateral to the Federal Reserve if the member needs to borrow from the discount window",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Statutory exam-report availability conflicts with observed lag/inaccessibility",
+          "description": "The source asserts primary federal regulators are required by statute to make examination reports available to FHLBanks upon request, yet simultaneously states FHLBanks obtain them only upon request and 'may receive reports of examination long after problems are identified,' and that they are 'not directly available to FHFA' \u2014 an incompatibility between the stated availability duty and the actual access outcome.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "By statute, members\u2019 primary federal regulators are required to make those members\u2019 reports of examination available to the appropriate FHLBank upon request.",
+              "verified": false
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHLBanks generally obtain reports of examination from primary federal regulators only upon request, and consequently, FHLBanks may receive reports of examination long after problems are identified.",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "However, the examination reports are not directly available to FHFA.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "No stated mechanism giving FHFA access to member examination reports",
+          "description": "The source establishes FHFA obligations premised on timely member-financial-condition information (OB-8, OB-19, OB-20) and notes examination reports are 'not directly available to FHFA,' yet no provision states any obligation or channel by which FHFA obtains those reports \u2014 a gap implied by the enforcement/monitoring structure but stated nowhere.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "However, the examination reports are not directly available to FHFA.",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA has also initiated discussions with members\u2019 primary federal regulators to improve the timely exchange of information on member financial condition.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Scope mismatch across coordination obligations: 'all large depository members' vs 'large depository institution members' vs 'members'",
+          "description": "Related discount-window coordination duties apply to inconsistent populations: OB-3 targets 'large depository institution members,' OB-4 targets 'all large depository members,' while OB-1/OB-2/OB-24 apply generally to 'members' in all market conditions \u2014 producing an applicability/threshold inconsistency across provisions describing the same interoperability objective.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "The FHLBanks can better serve their members if they coordinate with their large depository institution members and the members\u2019 prudential regulators to make certain that these members have established protocols",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA will provide guidance to the FHLBanks to work with their members and the members\u2019 primary federal regulators to ensure all large depository members have established protocols to borrow from the Federal Reserve discount window",
+              "verified": false
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "The FHLBanks must also work with their members\u2019 primary regulators to ensure processes are built to meet the needs of members in all market conditions.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent designation of member regulator: 'prudential regulators' vs 'primary federal regulators' vs 'primary regulators'",
+          "description": "Within the same instrument the member's regulator is referred to variously as 'prudential regulators' (OB-3), 'primary federal regulators' (OB-4, OB-8, OB-19, OB-23), and 'primary regulators' (OB-1, OB-2), without reconciliation of whether these denote the same body, creating divergent usage for a term material to coordination duties.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "coordinate with their large depository institution members and the members\u2019 prudential regulators",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "work with their members and the members\u2019 primary federal regulators",
+              "verified": false
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "work with their members\u2019 primary regulators to ensure processes are built to meet the needs of members in all market conditions",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-reform_proposal": {
+      "detected_at": "2026-07-20T01:32:55.879031+00:00",
+      "scope_label": "family: reform_proposal",
+      "cost_usd": 0.09612,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'discount window stigma' across the two reform proposals",
+          "description": "Both sources use the term 'discount window stigma' but frame it materially differently. Hsu defines it substantively as a 2008-origin phenomenon in which banks fear that news of borrowing is perceived as weakness, exacerbating a run (a 'Hobson's choice'). McKernan uses the term without any definition, treating it only as an agreed problem needing a 'better solution.' The term is thus materially under-specified in one instrument relative to the other.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "Since the 2008 financial \ncrisis, banks have worried that news of their borrowing from the discount window could be \nperceived as a sign of weakness, thereby exacerbating a run.",
+              "verified": true
+            },
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "almost everyone now agrees that operational readiness and discount window stigma need a better solution.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'High quality liquid assets (HQLA)' used as material term but left undefined in Hsu source",
+          "description": "HQLA is a load-bearing term in the Hsu source (the LCR's designated liquidity source, and the object of a proposal to 'expand sources of liquidity beyond' it), yet the extraction records it as undefined in that item.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "expanding the sources of liquidity beyond high quality liquid \nassets (HQLA)",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "'Uninsured deposits' used as material term without formal definition in Hsu source",
+          "description": "The term 'uninsured deposits' is used throughout the Hsu source as a central risk driver (growth statistics, contagion via 'guilt by association') but is recorded as undefined beyond descriptive/behavioral characterization.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "Uninsured deposits in aggregate \nhave grown considerably since 2009.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Multiple material terms in McKernan source used without definition",
+          "description": "Several load-bearing terms in the McKernan source are recorded as undefined here: 'collateral prepositioning', 'lender of last resort (LOLR)', and 'recognized borrowing capacity (proposed cap)' \u2014 the last being the central mechanism of the proposed reform yet described only, not defined.",
+          "locations": [
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "incentivizing collateral prepositioning, and normalizing routine testing of central bank facilities.",
+              "verified": true
+            },
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "reflect[s] a desire to reduce dependence on the central bank as a lender of last resort (LOLR)",
+              "verified": true
+            },
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "recognized borrowing capacity could be capped at the lesser of the overall ceiling and some multiple of the bank's discount window borrowing over a specified period of time.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent scope of what 'liquidity regulation'/liquidity rules encompasses across the two sources",
+          "description": "McKernan defines 'liquidity regulation' expansively as a bundle including LCR, net stable funding ratio, internal liquidity stress tests, and resolution liquidity adequacy/positioning and execution-need requirements, plus supervisory expectations. Hsu's source treats liquidity requirements principally through the LCR (and a proposed separate five-day requirement) without articulating this broader defined set. The two sources thus operate on materially different conceptions of the governing liquidity-rule set within which discount-window-capacity recognition is debated.",
+          "locations": [
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "Liquidity regulation includes the liquidity coverage ratio requirement, the net stable funding ratio requirement, internal liquidity stress tests conducted pursuant to rule, the resolution liquidity adequacy and positioning requirement, and the resolution liquidity execution need requirement, as well as the related supervisory expectations with respect to liquidity risk management.",
+              "verified": true
+            },
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "Some have argued for adopting this approach within the LCR by adding discount window \ncapacity to the numerator and expanding the sources of liquidity beyond high quality liquid \nassets (HQLA). That would be dangerous.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Conflicting positions on recognizing discount-window borrowing capacity within the LCR",
+          "description": "Hsu explicitly rejects adding discount-window capacity to the LCR numerator and expanding liquidity sources beyond HQLA ('That would be dangerous'), instead favoring a separate targeted five-day requirement. McKernan proposes exactly that the LCR and other liquidity rules 'should give appropriate capped recognition' of discount-window-prepositioned collateral borrowing capacity. The two reform proposals adopt incompatible stances on the same design question.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "Some have argued for adopting this approach within the LCR by adding discount window \ncapacity to the numerator and expanding the sources of liquidity beyond high quality liquid \nassets (HQLA). That would be dangerous.",
+              "verified": true
+            },
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "This reform would help rebalance the boundary between self-insurance and the lender of last resort. It also would enhance operational preparedness by creating strong incentives for prepositioning collateral and regular testing. And it could reduce discount window stigma by normalizing access.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Scope-mandated FHLB, Call Report, and FR 2052a coverage absent from both reform-proposal extractions",
+          "description": "The ratified program scope requires mapping FHLB collateral/operational rules and the timing/granularity of Call Reports, FR 2052a, and related liquidity-reporting instruments. Both extractions' notes affirmatively record that these elements are not addressed in either source. Relative to the enforcement structure of the program's stated scope, this obligation is presently stated nowhere in the provided extractions.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "The source does not address FHLB collateral/operational rules, Call Reports, or FR 2052a, and does not mention McKernan; those scope elements are absent from this particular item",
+              "verified": false
+            },
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "This item does not address FHLB collateral/operational rules, FHLB-discount-window interoperability, or the timing/granularity of Call Report, FR 2052a, or related liquidity-reporting instruments",
+              "verified": false
+            }
+          ]
+        }
+      ]
+    },
+    "defects-regulation_frb": {
+      "detected_at": "2026-07-20T01:33:46.366854+00:00",
+      "scope_label": "family: regulation_frb",
+      "cost_usd": 0.10679,
+      "findings": [
+        {
+          "code": "D4",
+          "title": "Material scope term 'discount-window stigma' undefined",
+          "description": "The ratified scope requires cataloguing the structural sources of discount-window stigma, yet the extraction records 'discount-window stigma' as undefined-here, with only a closest verbatim anchor and no substantive definition or treatment in the source text.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "discount-window stigma (undefined here)",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A Federal Reserve Bank may lend to a depository institution either by making an advance secured by acceptable collateral under \u00a7 201.4 of this part or by discounting certain types of paper.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material scope term 'FHLB collateral/operational rules' undefined",
+          "description": "The ratified scope references FHLB collateral/operational rules as a locus of fragmentation/interoperability with discount-window rules, yet the extraction records the term as undefined-here, anchored only to the FHLB-member cross-reference in the depository-institution definition, with no substantive treatment.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "FHLB collateral/operational rules (undefined here)",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A member as defined in section 2 of the Federal Home Loan Bank Act (12 U.S.C. 1422(4)); or",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Material scope terms 'Call Reports / FR 2052a / liquidity reporting' undefined",
+          "description": "The ratified scope requires identifying where liquidity-reporting timing/granularity (Call Reports, FR 2052a) contributes to slow detection/response, yet the extraction records these as undefined-here, with the general collateral-information provision as the only anchor and no substantive definition or timing/granularity provision.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Call Reports / FR 2052a / liquidity reporting (undefined here)",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Each Federal Reserve Bank shall require any information it believes appropriate or desirable to ensure that assets tendered as collateral for advances or for discount are acceptable and that the borrower uses the credit provided in a manner consistent with this part.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Divergent modality for materially similar informational duties within Reg A",
+          "description": "Reg A imposes a mandatory 'shall/must' informational duty on the Federal Reserve Bank to require collateral-acceptability information (OBL-2), while imposing only a 'should' modality on the closely related duty to keep informed of and consider the general character/amount of loans and investments and to determine capitalization status before extending credit (OBL-3, OBL-5). The extraction notes this preserved 'shall' vs 'should' inconsistency for similar informational duties.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Each Federal Reserve Bank shall require any information it believes appropriate or desirable to ensure that assets tendered as collateral for advances or for discount are acceptable and that the borrower uses the credit provided in a manner consistent with this part.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Before extending credit to a depository institution, a Federal Reserve Bank should determine if the institution is an undercapitalized insured depository institution or a critically undercapitalized insured depository institution and, if so, follow the lending procedures specified in \u00a7 201.5.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "No interoperability provision between discount-window and FHLB collateral/operational rules",
+          "description": "The ratified scope presumes and the enforcement structure of Reg A lending (collateral acceptability, lendable value, information-gathering) implies coordination with FHLB collateral practices, yet the extraction observes that Reg A as written contains no cross-referenced interoperability provisions with FHLB collateral/operational rules despite incorporating FHLB membership into the depository-institution definition.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A member as defined in section 2 of the Federal Home Loan Bank Act (12 U.S.C. 1422(4)); or",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "An advance to a depository institution must be secured to the satisfaction of the Federal Reserve Bank that makes the advance.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "No liquidity-reporting timing/granularity provision tied to discount-window lending decisions",
+          "description": "Reg A requires Reserve Banks to keep informed of and consider institution loan/investment information in credit decisions (OBL-3) and to obtain solvency and market-access evidence (OBL-8, OBL-10), implying reliance on timely liquidity data, yet the source contains no provision governing the timing or granularity of liquidity reporting (Call Reports, FR 2052a) that would feed such decisions.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Keep itself informed of the general character and amount of the loans and investments of a depository institution as provided in section 4(8) of the Federal Reserve Act (12 U.S.C. 301); and",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Call Reports / FR 2052a / liquidity reporting (undefined here)",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability threshold divergence for lending to undercapitalized vs critically undercapitalized institutions",
+          "description": "Reg A applies materially different time-window thresholds to advances depending on capitalization status: for undercapitalized institutions, advances may not be outstanding for more than 60 days in any 120-day period (OBL-14), whereas for critically undercapitalized institutions, advances are limited to a 5-day period beginning on the date the institution became critically undercapitalized (OBL-15). Both draw on the same section 38 FDI Act definitional scheme yet impose divergent scope windows.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "If, in any 120-day period, advances or discounts from any Federal Reserve Bank to that depository institution are not outstanding for more than 60 days during which the institution is an undercapitalized insured depository institution; or",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "During the 5-day period beginning on the date the institution became a critically undercapitalized insured depository institution; or",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-reporting_instruction": {
+      "detected_at": "2026-07-20T01:34:25.042900+00:00",
+      "scope_label": "family: reporting_instruction",
+      "cost_usd": 0.08152,
+      "findings": [
+        {
+          "code": "D4",
+          "title": "Undefined material term: 'Category I, II, III, or IV standards'",
+          "description": "The FR 2052a respondent panel and all frequency-tier obligations turn on the actor's classification under Category I-IV standards, but the term is expressly recorded as undefined in this source, which merely cross-references Regulation YY and Regulation LL. Because the daily-vs-monthly reporting cadence (directly relevant to detection speed) depends entirely on this classification, the term is material and unstated here.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "banking organizations subject to Category I, II, III, or IV standards under the Board's Regulation YY and Regulation LL",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material term: 'average weighted short-term wholesale funding'",
+          "description": "The $75 billion threshold that determines whether Category III filers report daily (FR2052A-OB-1/OB-3) versus monthly (FR2052A-OB-2/OB-4) is keyed to 'average weighted short-term wholesale funding,' but this measure is recorded as undefined in the source. The term is material because it directly sets the reporting cadence bearing on detection speed.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "average weighted short-term wholesale funding of $75 billion or more",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material term: 'material entity subsidiary'",
+          "description": "The FR 2052a definition requires reporting 'by material entity subsidiary,' which governs the granularity of the collected liquidity data, but 'material entity subsidiary' is recorded as undefined in this source.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "on a consolidated basis and by material entity subsidiary",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference: 'covered depository institution holding company' definition imported but not reproduced",
+          "description": "The FR 2052a source determines savings-and-loan-holding-company respondents by importing the definition of 'covered depository institution holding company' from the LCR and NSFR rules, but that definition is not reproduced in the source, leaving the reference unresolved within the provided extractions.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "a covered depository institution holding company as defined by the Liquidity Coverage Ratio and Net Stable Funding Ratio rules",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability/cadence mismatch between FR 2052a and Call Report liquidity reporting",
+          "description": "The two liquidity-reporting instruments diverge sharply in both scope and cadence. FR 2052a applies only to Category I-IV organizations (largest firms) and requires daily or at most monthly submission, while the Call Report applies to banks generally (including FFIEC 051 filers with total assets under $5 billion) but only quarterly. The result is that firms outside the FR 2052a panel have no sub-quarterly liquidity reporting obligation observable in these extractions, a scope/threshold and frequency mismatch across the two instruments relevant to detection speed.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "U.S. banking organizations that are identified as (1) banking organizations subject to Category III standards with average weighted short-term wholesale funding of less than $75 billion, or (2) banking organizations subject to Category IV standards must submit a report monthly.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-call-report",
+              "quote": "The Call Report is filed QUARTERLY, as of each calendar quarter-end \u2014 the cadence datum the diagnostic cites.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Historical/superseded Call Report forms referenced as replaced",
+          "description": "The FFIEC index records that FFIEC 041 'replaces FFIEC 032, FFIEC 033, FFIEC 034,' indicating those three prior forms are obsolete/superseded within the Call Report family as reflected in the source.",
+          "locations": [
+            {
+              "item_id": "ffiec-call-report",
+              "quote": "FFIEC 041 \u2014 Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only \u2014 replaces FFIEC 032, FFIEC 033, FFIEC 034",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material term: 'Call Report'",
+          "description": "The FFIEC source refers to 'the Call Report' (encompassing FFIEC 031/041/051) as the instrument whose quarterly cadence the diagnostic cites, but provides no formal definition of the term. The term is material because the diagnostic relies on it as a distinct liquidity-reporting instrument.",
+          "locations": [
+            {
+              "item_id": "ffiec-call-report",
+              "quote": "The Call Report is filed QUARTERLY, as of each calendar quarter-end \u2014 the cadence datum the diagnostic cites.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Gap: no sub-quarterly liquidity detection mechanism for non-FR 2052a filers",
+          "description": "The scope reminder targets fast-moving bank runs and detection speed. The extractions show FR 2052a's accelerated (daily) reporting reaches only GSIB/Category II/Category III-above-threshold firms, monthly filers may only be accelerated at Board discretion during stress, and the Call Report \u2014 the sole instrument covering smaller banks including sub-$5-billion FFIEC 051 filers \u2014 is quarterly. No instrument in these extractions imposes any faster-than-quarterly liquidity reporting on firms outside the FR 2052a panel, so an obligation implied by the run-detection enforcement purpose is stated nowhere here.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "Consistent with current supervisory authority and processes, the Board, during periods of stress, may temporarily require FR 2052a liquidity data from monthly filers on a more frequent basis.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-call-report",
+              "quote": "FFIEC 051 \u2014 Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only and Total Assets Less than $5 Billion",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-statute": {
+      "detected_at": "2026-07-20T01:34:41.629803+00:00",
+      "scope_label": "family: statute",
+      "cost_usd": 0.1011,
+      "findings": [
+        {
+          "code": "D8",
+          "title": "Statutory reference to abolished Office of Thrift Supervision retained in FHLB special liquidity advance trigger",
+          "description": "12 U.S.C. 1430(h) conditions FHLB short-term liquidity advances to a supervisory-concern savings association on a request from the 'Director of the Office of Thrift Supervision,' an office abolished by the Dodd-Frank Act (2010). The trigger names an office that no longer exists, rendering the provision obsolete/archaic as codified.",
+          "locations": [
+            {
+              "item_id": "12-usc-1430",
+              "quote": "the Federal Home Loan Banks may, upon the request of the Director of the Office of Thrift Supervision, make short-term liquidity advances to a savings association that-",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    "defects-cross": {
+      "detected_at": "2026-07-20T01:36:34.577650+00:00",
+      "scope_label": "cross-corpus (definitions and duties across all families)",
+      "cost_usd": 0.55693,
+      "findings": [
+        {
+          "code": "D2",
+          "title": "Divergent definition of 'viable' / viability certification mechanics vs. 60-day suspension trigger",
+          "description": "The term 'viable' and the viability-certification suspension mechanism are defined consistently in substance across 12 USC 347b and Regulation A, but the certification-timing structures differ materially. 347b-5 keys the 60-day suspension to 'the date such certification is received' with renewable 60-day extensions, while Reg A OBL-14 frames the same relief as 'during the 60 calendar days after receipt of a written certification of viability; or after consultation with the Board of Governors' \u2014 the regulation adds an alternative 'consultation with the Board' pathway not present in the statutory suspension text.",
+          "locations": [
+            {
+              "item_id": "12-usc-347b",
+              "quote": "the limitation contained in paragraph (1) shall not apply during the 60-day period beginning on the date such certification is received.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A Federal Reserve Bank may make or have outstanding advances to or discounts for a depository institution that it knows to be an undercapitalized insured depository institution, only:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'insolvent' for emergency-lending purposes",
+          "description": "12 USC 343 defines 'insolvent' for \u00a713(3) certification purposes solely as being 'in bankruptcy, resolution under title II of the Dodd-Frank Act, or any other Federal or State insolvency proceeding.' Regulation A materially expands this same term for its paragraph (d) program: it adds two further alternative tests \u2014 being 'generally not paying its undisputed debts as they become due during the 90 days preceding the date of borrowing' and a residual 'the Board or Federal Reserve Bank otherwise determines the person or entity is insolvent.' The regulatory definition is materially broader than the statutory one it implements.",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "A borrower shall be considered insolvent for purposes of this subparagraph, if the borrower is in bankruptcy, resolution under title II of the Dodd-Frank Wall Street Reform and Consumer Protection Act",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "The person or entity is generally not paying its undisputed debts as they become due during the 90 days preceding the date of borrowing under the program or facility; or",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'program or facility with broad-based eligibility'",
+          "description": "12 USC 343 defines 'program or facility with broad-based eligibility' only negatively (exclusion of single-company rescues), and the extraction notes it is 'Not affirmatively defined.' Regulation A supplies an affirmative definition ('designed to provide liquidity to an identifiable market or sector of the financial system') plus an additional quantitative exclusion absent from the statute: 'it will not be considered broad-based ... if fewer than five persons/entities would be eligible.' Same term, materially different definitional content across instruments.",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "shall not be considered a program or facility with broad-based eligibility.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "For purposes of this paragraph (d), a program or facility has broad-based eligibility only if the program or facility is designed to provide liquidity to an identifiable market or sector of the financial system;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'undercapitalized depository institution' \u2014 CAMEL vs. CAMELS",
+          "description": "12 USC 347b defines the qualifying weak institution by reference to 'a composite CAMEL rating of 5 under the Uniform Financial Institutions Rating System.' Regulation A's parallel definition of 'undercapitalized insured depository institution' uses 'a composite CAMELS rating of 5.' The rating-system acronym differs (CAMEL vs. CAMELS) across the statutory and regulatory definitions of the substantively identical qualifying term.",
+          "locations": [
+            {
+              "item_id": "12-usc-347b",
+              "quote": "has a composite CAMEL rating of 5 under the Uniform Financial Institutions Rating System (or an equivalent rating by any such agency under a comparable rating system) as of the most recent examination of such institution",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Has received from its appropriate federal banking agency a composite CAMELS rating of 5 under the Uniform Financial Institutions Rating System (or an equivalent rating by its appropriate federal banking agency under a comparable rating system) as of the most recent examination of such institution.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'discount window stigma' across sources",
+          "description": "The Hsu speech supplies a substantive definition of discount window stigma (the post-2008 phenomenon whereby banks fear that news of borrowing signals weakness and exacerbates a run \u2014 a 'Hobson's choice'). Multiple other in-scope sources use the same term as material but leave it undefined: the Warner-Kennedy bill, Regulation A, and the McKernan remarks all invoke 'stigma' without definition. The single defined instance materially differs from the undefined uses that anchor obligations/study mandates.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "Since the 2008 financial \ncrisis, banks have worried that news of their borrowing from the discount window could be \nperceived as a sign of weakness, thereby exacerbating a run.",
+              "verified": true
+            },
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "reduce the unnecessary stigma associated with that use",
+              "verified": true
+            },
+            {
+              "item_id": "mckernan-reset-liquidity",
+              "quote": "almost everyone now agrees that operational readiness and discount window stigma need a better solution.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate 60-day/120-day advance limitation on undercapitalized institutions in statute and regulation",
+          "description": "The identical duty limiting Federal Reserve advances to an undercapitalized depository institution to not more than 60 days in any 120-day period is stated both in the statute (12 USC 347b, 347b-4) and re-stated in the implementing regulation (Reg A, OBL-14). The same substantive obligation appears in two instruments.",
+          "locations": [
+            {
+              "item_id": "12-usc-347b",
+              "quote": "Except as provided in paragraph (2), no advances to any undercapitalized depository institution by any Federal Reserve bank under this section may be outstanding for more than 60 days in any 120-day period.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "If, in any 120-day period, advances or discounts from any Federal Reserve Bank to that depository institution are not outstanding for more than 60 days during which the institution is an undercapitalized insured depository institution; or",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate prior-Treasury-approval requirement for \u00a713(3) programs across three instruments",
+          "description": "The requirement that the Board obtain the prior approval of the Secretary of the Treasury before establishing any emergency lending program/facility is stated in the statute (12 USC 343, OBL-11), in Regulation A (OBL-6), and again in the Federal Reserve Discount Window operational description (frbdw-discount-window, OBL-2). The same duty is repeated across three instruments.",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "The Board may not establish any program or facility under this paragraph without the prior approval of the Secretary of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A program or facility may not be established under this paragraph (d) without obtaining the prior approval of the Secretary of the Treasury.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Such emergency credit programs must be approved by the Board of Governors, in consultation with the Secretary of the Treasury.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate 'lendable value / collateral to protect the taxpayer' requirement across statute and regulation",
+          "description": "The duty to assign a lendable value to all collateral for a \u00a713(3) loan 'consistent with sound risk management practices and to ensure protection for the taxpayer' is stated in both 12 USC 343 (OBL-7) and Regulation A (OBL-9) in materially identical terms.",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "The policies and procedures established by the Board shall require that a Federal reserve bank assign, consistent with sound risk management practices and to ensure protection for the taxpayer, a lendable value to all collateral for a loan executed by a Federal reserve bank under this paragraph",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "a Federal Reserve Bank must, prior to or at the time the credit is initially extended, assign a lendable value to all collateral for the program or facility, consistent with sound risk management practices and to ensure protection for the taxpayer.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate 'unable to secure adequate credit from other banking institutions' evidence requirement",
+          "description": "The duty that a Federal Reserve Bank obtain evidence that a \u00a713(3) participant is unable to secure adequate credit accommodations from other banking institutions appears in both 12 USC 343 (OBL-4) and Regulation A (OBL-10).",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "Provided, That before discounting any such note, draft, or bill of exchange, the Federal reserve bank shall obtain evidence that such participant in any program or facility with broad-based eligibility is unable to secure adequate credit accommodations from other banking institutions.",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "Each lending Federal Reserve Bank must obtain evidence that, under the prevailing circumstances, participants in a program or facility established under this paragraph (d) are unable to secure adequate credit accommodations from other banking institutions.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D3",
+          "title": "Duplicate contingency-funding-plan / discount-window operational-readiness expectations across interagency guidance",
+          "description": "The core supervisory expectations \u2014 maintain actionable CFPs across stress scenarios, assess funding stability/maintain broad funding sources, ensure collateral availability, plan for operational challenges of moving/posting collateral, incorporate discount window into CFPs, and periodically review/revise CFPs \u2014 are stated redundantly across the 2023 interagency addendum, the OCC bulletin, and the FDIC FIL, which all transmit the same underlying addendum.",
+          "locations": [
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "Depository institutions should maintain actionable contingency funding plans that consider a range of possible stress scenarios.",
+              "verified": true
+            },
+            {
+              "item_id": "fdic-fil-23-039",
+              "quote": "Maintain actionable contingency funding plans that take into account an appropriate\n range of possible stress scenarios.",
+              "verified": true
+            },
+            {
+              "item_id": "occ-bulletin-2023-25",
+              "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D7",
+          "title": "Scattered requirement: FHLB-to-discount-window collateral transition obligation assembled only across multiple instruments",
+          "description": "The complete obligation for handling a member's transition from FHLB advances to the Federal Reserve discount window (including expedited collateral movement, pre-established protocols, and interoperability) is not stated in any single instrument. It must be assembled by reading FHFA's System at 100 guidance (FHLBanks negotiate agreements/draft collateral-transfer agreements/establish transition infrastructure), the interagency CFP addendum (institutions must be operationally ready and aware of time constraints establishing lines with both Fed and FHLB), and the Warner-Kennedy bill (Fed must work with FHFA/FHLB to harmonize collateral pledging/transfer). No one instrument states the full duty.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "Additionally, FHFA expects the FHLBanks to negotiate appropriate agreements with the regional Federal Reserve Banks to ensure expedited movement of collateral if a member\u2019s lending activity must be moved to the Federal Reserve discount window.",
+              "verified": true
+            },
+            {
+              "item_id": "cfp-addendum-2023",
+              "quote": "it is important to consider time constraints associated with initially establishing lines with the  appropriate Federal Reserve Bank and/or the appropriate Federal Home Loan Bank",
+              "verified": true
+            },
+            {
+              "item_id": "warner-kennedy-dw-modernization",
+              "quote": "The Federal Reserve Board must work with the FHFA and the FHLB system to simplify and harmonize policies and procedures for pledging and transferring collateral among FHLBs and Federal Reserve Banks.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability inconsistency: FHLB-side member credit distress triggers vs. Fed-side undercapitalization thresholds are not aligned",
+          "description": "The FHLB and Fed regimes use non-aligned scope triggers for restricting credit to weak institutions. FHFA/FHLB restrict/limit credit based on 'when [members] no longer meet the FHLBanks' credit criteria' and 'supervisory concern' (undefined, discretionary), while the Federal Reserve discount window keys limitations to statutory categories \u2014 'fallen below minimum capital standards' / 'poor supervisory rating' and, in Reg A/347b, the precise 'undercapitalized'/'critically undercapitalized' PCA and CAMEL(S)-5 thresholds. The instruments governing the same distressed institution use mismatched scope/threshold definitions for when credit is curtailed and transition to the discount window is required.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "To address this, the FHLBanks should coordinate with their members\u2019 primary regulators and the regional Federal Reserve Banks to ensure financial institutions\u2019 borrowing needs continue to be met when they no longer meet the FHLBanks\u2019 credit criteria.",
+              "verified": false
+            },
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Federal Reserve Banks have limitations on extending advances to depository institutions that have fallen below minimum capital standards or have received a poor supervisory rating from its federal supervisor.",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A Federal Reserve Bank may make or have outstanding advances to or discounts for a depository institution that it knows to be a critically undercapitalized insured depository institution only:",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D10",
+          "title": "Applicability/threshold mismatch: FR 2052a daily-vs-monthly liquidity reporting tiers vs. quarterly Call Report cadence vs. discount-window collateral scoping",
+          "description": "The liquidity-reporting instruments apply on materially inconsistent scope thresholds and cadences. FR 2052a keys frequency to Category I-IV / a $75B short-term wholesale funding threshold / $100B combined-assets FBO threshold, filed daily or monthly. The Call Report applies to all banks but only quarterly. The Fed discount-window collateral 'in-scope' determination uses a distinct $50,000,000,000 total-consolidated-assets threshold. Three instruments bearing on liquidity detection use three different applicability thresholds and cadences, with no common scoping.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "U.S. banking organizations that are identified as (1) global systemically important bank holding companies, (2) banking organizations subject to Category II standards, or (3) banking organizations subject to Category III standards with average weighted short-term wholesale funding of $75 billion or more must submit a report on each business day.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-call-report",
+              "quote": "The Call Report is filed QUARTERLY, as of each calendar quarter-end \u2014 the cadence datum the diagnostic cites.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "All depository institutions (12 CFR 201.2(c)(1)) that are controlled (12 CFR 225.2(e)) by a Bank Holding Company (12 CFR 225.2(c)(1)) (including a Financial Holding Company (12 CFR 225.81)) or an Intermediate Holding Company (12 CFR 252.2(y)) with Fifty Billion Dollars ($50,000,000,000) or more in total consolidated assets, defined as the average over the last four calendar quarters;",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D8",
+          "title": "Obsolete reference to abolished Office of Thrift Supervision in current FHLB Act text",
+          "description": "12 USC 1430(h) still conditions special short-term liquidity advances on 'the request of the Director of the Office of Thrift Supervision' \u2014 an office abolished by the Dodd-Frank Act in 2010. The extraction expressly flags that the codified text has not been updated and the archaic agency reference is preserved as-is.",
+          "locations": [
+            {
+              "item_id": "12-usc-1430",
+              "quote": "the Federal Home Loan Banks may, upon the request of the Director of the Office of Thrift Supervision, make short-term liquidity advances to a savings association that-",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D5",
+          "title": "Dangling reference to non-existent subsection (f) in 12 USC 1430",
+          "description": "The FHLB Act as codified contains a lettering gap: the statute's own footnote states that no subsection (f) has been enacted, and the extraction notes this gap is preserved as-is. Provisions cross-referencing the subsection structure encounter a dangling lettering slot.",
+          "locations": [
+            {
+              "item_id": "12-usc-1430",
+              "quote": "(4) The statute's own footnote states no subsection (f) has been enacted -- lettering gap preserved as-is, not corrected.",
+              "verified": false
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material term 'lendable value' central to taxpayer-protection collateral duty",
+          "description": "'Lendable value' is the operative measure governing collateral assignment for \u00a713(3) loans in both the statute and Regulation A, yet is left undefined in both instruments. Both extractions record it as '(undefined here)' despite anchoring a mandatory duty 'to ensure protection for the taxpayer.'",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "a lendable value to all collateral for a loan executed by a Federal reserve bank under this paragraph",
+              "verified": true
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "a Federal Reserve Bank must, prior to or at the time the credit is initially extended, assign a lendable value to all collateral for the program or facility, consistent with sound risk management practices and to ensure protection for the taxpayer.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material terms 'operational deposits'/'non-operational deposits' and absence of standardized deposit classification",
+          "description": "The Hsu diagnostic identifies 'operational' vs 'non-operational' deposits as materially determinative of run risk and LCR calibration, but expressly states banks define these differently and 'there is no standardized classification system.' The material term driving liquidity-outflow calibration is undefined across the regime.",
+          "locations": [
+            {
+              "item_id": "hsu-building-better-brakes",
+              "quote": "This is the distinction between so-called \u201cnon-operational\u201d and \n\u201coperational\u201d deposits. Banks define these differently, however, in part because their customers \nand business models vary enormously, and there is no standardized classification system that \nmarket participants can see and trust.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D4",
+          "title": "Undefined material term 'average weighted short-term wholesale funding' driving FR 2052a filing frequency",
+          "description": "FR 2052a's daily-vs-monthly reporting cadence \u2014 the reporting-timing feature directly relevant to run-detection speed \u2014 turns on the '$75 billion' threshold of 'average weighted short-term wholesale funding,' but the source records this determinative term as '(undefined here).'",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "average weighted short-term wholesale funding of $75 billion or more",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Gap: no instrument sets a required speed/latency for detecting fast-moving runs despite reporting-cadence structure implying detection duty",
+          "description": "The regime's enforcement/supervisory structure implies an obligation to detect fast-moving deposit runs (e.g., the noted SVB 25%-in-one-day outflow), yet no instrument states a detection-latency requirement. Call Reports are only quarterly, FR 2052a is daily only for the largest filers and merely monthly for others (with discretionary temporary acceleration only 'during periods of stress'), and no source states any affirmative near-real-time liquidity monitoring duty. The obligation to detect a run in time to respond is implied by structure but stated nowhere.",
+          "locations": [
+            {
+              "item_id": "fr-2052a",
+              "quote": "Consistent with current supervisory authority and processes, the Board, during periods of stress, may temporarily require FR 2052a liquidity data from monthly filers on a more frequent basis.",
+              "verified": true
+            },
+            {
+              "item_id": "ffiec-call-report",
+              "quote": "filed QUARTERLY, as of each calendar quarter-end",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D9",
+          "title": "Gap: FHLB expressly cannot serve as lender of last resort, yet no instrument assures continuity of emergency liquidity at the FHLB-to-Fed handoff",
+          "description": "FHFA states plainly that 'the FHLBanks cannot functionally serve as the lender of last resort,' and that credit is curtailed 'when a member's distress signals potential failure' \u2014 precisely when emergency liquidity is most needed. The transition to the Fed discount window is only aspirational ('should coordinate,' 'begun discussions to draft agreements,' 'preemptively establishing infrastructure'), so the obligation ensuring an uninterrupted lender-of-last-resort backstop at the moment FHLB credit is withdrawn is implied by the structure but not affirmatively imposed on any actor.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "the FHLBanks cannot functionally serve as the lender of last resort, particularly for large, troubled members that can have significant borrowing needs over a short period of time",
+              "verified": true
+            },
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "Additionally, FHFA has provided guidance to the FHLBanks to improve communication with members regarding the FHLBanks\u2019 limitations on extending further credit when a member\u2019s distress signals potential failure.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D1",
+          "title": "Conflicting duties: FHLB expected not to rely on collateral in tenuous situations vs. Fed collateral-driven lending framework",
+          "description": "FHFA directs that FHLBanks 'should not rely primarily on collateral to mitigate risk in tenuous situations' and must capture all dimensions of member risk. The Federal Reserve discount-window regime, by contrast, is expressly collateral-satisfaction-driven ('advances must be collateralized to the satisfaction of the Reserve Bank'; secondary credit available even to institutions not in sound condition against additional-margin collateral). For the same distressed institution at the transition point, the two systems impose incompatible risk-mitigation postures \u2014 FHLB pulls back precisely as the Fed extends on a collateral basis \u2014 creating conflicting duties across the two families the diagnostic must reconcile.",
+          "locations": [
+            {
+              "item_id": "fhfa-system-at-100",
+              "quote": "FHFA has also emphasized the importance of capturing all appropriate dimensions of risk when assessing member creditworthiness and that the FHLBanks should not rely primarily on collateral to mitigate risk in tenuous situations.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "All discount window advances must be collateralized to the satisfaction of the Reserve Bank.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-collateral",
+              "quote": "For depository institutions borrowing under the secondary credit program, the Reserve Banks generally apply an additional margin to the collateral value of any pledged collateral, other than U.S. Treasury and Agency securities.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D2",
+          "title": "Divergent definitions of 'depository institution' eligibility across statute, Reg A, and discount-window operational text",
+          "description": "'Depository institution' is defined differently across the discount-window family. Regulation A defines it via reservable transaction accounts/nonpersonal time deposits and enumerated categories (including FHLB Act 'member'), with an express carve-out for institutions organized solely to do business with other financial institutions. The discount-window operational page defines eligibility by reference to Section 19(b)(1)(A) of the Federal Reserve Act plus Regulation D reservable-account status, and does not reproduce the FHLB-member category or the carve-out. The eligibility scope of the same term diverges between the two instruments.",
+          "locations": [
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "The term depository institution does not include a financial institution that is not required to maintain reserves under \u00a7 204.1(c)(4) of Regulation D (12 CFR 204.1(c)(4)) because it is organized solely to do business with other financial institutions, is owned primarily by the financial institutions with which it does business, and does not do business with the general public.",
+              "verified": true
+            },
+            {
+              "item_id": "frbdw-discount-window",
+              "quote": "Financial institutions that are considered \u201cdepository institutions\u201d under Section 19(b)(1)(A) of the Federal Reserve Act, and that maintain reservable transaction accounts or nonpersonal time deposits (as defined in Regulation D) are eligible to participate in discount window lending programs.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "code": "D6",
+          "title": "Fed \u00a713(3) authority framed by CARES-era construction note as fixed to a pre-2020 baseline while Reg A restates it with added constraints",
+          "description": "The 2020 construction provision cross-referenced in 12 USC 343 preserves the Board's \u00a713(3) authority 'as of the day before the date of enactment of the CARES Act ... except as expressly set forth.' Regulation A, however, states the operative \u00a713(3) program regime with additional constraints (affirmative broad-based definition, five-entity minimum, expanded insolvency test, six-month review, one-year sunset). The statutory-baseline preservation note and the more-constrained regulatory restatement coexist without the statute reflecting the regulatory overlay \u2014 a substantive superseding of the bare statutory grant by regulation that the statute's own preserved-baseline text does not acknowledge.",
+          "locations": [
+            {
+              "item_id": "12-usc-343",
+              "quote": "nothing in this Act [div. N of Pub. L. 116\u2013260, see Tables for classification] shall be construed to modify or limit the authority of the Board of Governors of the Federal Reserve System under section 13(3) of the Federal Reserve Act ( 12 U.S.C. 343(3) ) as of the day before the date of enactment of the CARES Act",
+              "verified": false
+            },
+            {
+              "item_id": "12-cfr-201-reg-a",
+              "quote": "A program or facility established under this paragraph (d) shall cease extending new credit no later than one year after the date of the first extension of credit under the program or facility or the date of any extension of the program or facility by the Board under paragraph (d)(9)(ii) of this section.",
+              "verified": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

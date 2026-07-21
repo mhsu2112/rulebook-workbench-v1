@@ -1,0 +1,544 @@
+{
+  "item_id": "fincen-guid-existing-program-rule-obligations",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Reiterate the AML program obligations on MSB principals to understand and appropriately account for the risks associated with their agents.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This guidance reiterates the anti-money laundering (AML) program obligations on the principals of money services businesses (MSBs)1 to understand and appropriately account for the risks associated with their agents,2 as broadly set forth by FinCEN in 2004 guidance primarily focused on foreign agents and counterparties.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Provide clarity so that MSB principals and their agents can more easily understand how to comply with AML requirements while providing important financial services.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This guidance is intended to provide clarity so that MSB principals and their agents can more easily understand how to comply with AML requirements while providing important financial services.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-01",
+      "actor": "all MSBs, both principals and their agents",
+      "modality": "must",
+      "action": "establish and maintain an effective written AML program reasonably designed to prevent the MSB from being used to facilitate money laundering and the financing of terrorist activities",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Bank Secrecy Act (BSA) requires all MSBs, both principals and their agents, to establish and maintain an effective written AML program reasonably designed to prevent the MSB from being used to facilitate money laundering and the financing of terrorist activities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-02",
+      "actor": "each MSB",
+      "modality": "must",
+      "action": "remain independently and wholly responsible for implementing adequate AML program requirements; cannot avoid liability by pointing to a contract assigning this responsibility to another party",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Moreover, each MSB remains independently and wholly responsible for implementing adequate AML program requirements.7 Accordingly, neither the agent nor the principal can avoid liability for failing to establish and maintain an effective AML program by pointing to a contract assigning this responsibility to another party (whether the agent or principal).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-03",
+      "actor": "an MSB's AML program",
+      "modality": "must",
+      "action": "at a minimum: incorporate policies, procedures, and internal controls reasonably designed to assure compliance with the BSA and its implementing regulations",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Under 31 CFR \u00a7 1022.210, an MSB\u2019s AML program must, at a minimum:",
+          "verified": true
+        },
+        {
+          "quote": "Incorporate policies, procedures, and internal controls reasonably designed to assure compliance with the BSA and its implementing regulations",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-04",
+      "actor": "an MSB's AML program",
+      "modality": "must",
+      "action": "designate a person to assure day to day compliance with the program and the BSA and its implementing regulations",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate a person to assure day to day compliance with the program and the BSA and its implementing regulations",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-05",
+      "actor": "an MSB's AML program",
+      "modality": "must",
+      "action": "provide education and training of appropriate personnel concerning their responsibilities under the program, including training in the detection of suspicious transactions to the extent that the MSB is required to report such transactions under the BSA",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide education and training of appropriate personnel concerning their responsibilities under the program, including training in the detection of suspicious transactions to the extent that the money services business is required to report such transactions under the BSA",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-06",
+      "actor": "an MSB's AML program",
+      "modality": "must",
+      "action": "provide for independent review to monitor and maintain an adequate program",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for independent review to monitor and maintain an adequate program",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-07",
+      "actor": "the MSB principal",
+      "modality": "must",
+      "action": "have procedures in place to identify those agents conducting activities that appear to lack commercial purpose, lack justification, or otherwise are not supported by verifiable documentation",
+      "trigger": "in order to reduce exposure to risks when an agent engages in transactions that create a risk for money laundering, terrorist financing, or other financial crime",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the MSB principal must have procedures in place to identify those agents conducting activities that appear to lack commercial purpose, lack justification, or otherwise are not supported by verifiable documentation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-08",
+      "actor": "the principal",
+      "modality": "must",
+      "action": "implement risk-based procedures to monitor the agents' transactions to ensure that they are legitimate",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The principal must implement risk-based procedures to monitor the agents\u2019 transactions to ensure that they are legitimate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-09",
+      "actor": "the principal (procedures)",
+      "modality": "must",
+      "action": "ensure that, if the agents' transactions trigger reporting or recordkeeping requirements, the principal handles the information in accordance with regulatory reporting and recordkeeping obligations",
+      "trigger": "if the agents' transactions trigger reporting or recordkeeping requirements",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The procedures must also ensure that, if the agents\u2019 transactions trigger reporting or recordkeeping requirements, the principal handles the information in accordance with regulatory reporting and recordkeeping obligations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "the MSB principal",
+      "modality": "should",
+      "action": "implement procedures for handling non-compliant agents, including agent contract terminations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the MSB principal should implement procedures for handling non-compliant agents, including agent contract terminations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "principals",
+      "modality": "must",
+      "action": "develop and implement risk-based policies, procedures, and internal controls that ensure adequate ongoing monitoring of agent activity, as part of the principal's implementation of its AML program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "principals are required to develop and implement risk-based policies, procedures, and internal controls that ensure adequate ongoing monitoring of agent activity, as part of the principal\u2019s implementation of its AML program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "principals",
+      "modality": "must",
+      "action": "when conducting monitoring of their agents, at a minimum: identify the owners of the MSB's agents",
+      "trigger": "when conducting monitoring of their agents",
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When conducting monitoring of their agents, principals must, at a minimum:",
+          "verified": true
+        },
+        {
+          "quote": "Identify the owners of the MSB\u2019s agents",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "principals",
+      "modality": "must",
+      "action": "when conducting monitoring of their agents, evaluate on an ongoing basis the operations of agents, and monitor for variations in those operations",
+      "trigger": "when conducting monitoring of their agents",
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Evaluate on an ongoing basis the operations of agents, and monitor for variations in those operations",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "principals",
+      "modality": "must",
+      "action": "when conducting monitoring of their agents, evaluate agents' implementation of policies, procedures, and controls",
+      "trigger": "when conducting monitoring of their agents",
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Evaluate agents\u2019 implementation of policies, procedures, and controls",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-15",
+      "actor": "principals",
+      "modality": "must",
+      "action": "periodically reassess risks associated with their agents and update the principals' programs to address any changing or additional related risks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Principals must periodically reassess risks associated with their agents and update the principals\u2019 programs to address any changing or additional related risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-16",
+      "actor": "principals",
+      "modality": "must",
+      "action": "take corrective action once becoming aware of any weaknesses or deficiencies in their AML programs",
+      "trigger": "once becoming aware of any weaknesses or deficiencies in their AML programs",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Principals must also take corrective action once becoming aware of any weaknesses or deficiencies in their AML programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-17",
+      "actor": "MSB principals and agents",
+      "modality": "must",
+      "action": "conduct reviews with a scope and frequency commensurate with the risks of money laundering or other illicit activity such principal or agent faces",
+      "trigger": null,
+      "threshold": "scope and frequency commensurate with the risks of money laundering or other illicit activity",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "MSB principals and agents are required to conduct reviews with a scope and frequency commensurate with the risks of money laundering or other illicit activity such principal or agent faces.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-18",
+      "actor": "a principal",
+      "modality": "must",
+      "action": "conduct internal and/or external independent testing to ensure there are no material weaknesses or internal control deficiencies; the testing must factor in products and services provided to determine if the procedures are sufficient to detect and report suspicious activity",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A principal must conduct internal and/or external independent testing to ensure there are no material weaknesses (e.g., inadequate training) or internal control deficiencies (e.g., monitoring agents).",
+          "verified": true
+        },
+        {
+          "quote": "In addition, the testing must factor in products and services provided to determine if the procedures are sufficient to detect and report suspicious activity.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-19",
+      "actor": "principals",
+      "modality": "should",
+      "action": "consider risk factors when conducting agent monitoring, including but not limited to whether owners are known or suspected associated with criminal conduct or terrorism, whether the agent has an established AML program, the nature of markets served, services expected and anticipated activity level, and the nature and duration of the relationship",
+      "trigger": "when conducting agent monitoring",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Risk factors that principals should consider when conducting agent monitoring include, but are not limited to:",
+          "verified": true
+        },
+        {
+          "quote": "Whether the owners are known or suspected to be associated with criminal conduct or terrorism",
+          "verified": true
+        },
+        {
+          "quote": "The services an agent is expected to provide and the agent\u2019s anticipated level of activity",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-20",
+      "actor": "principals (with agents providing services involving regions affected by conflict or terrorism)",
+      "modality": "must",
+      "action": "take steps to account for and mitigate such risks",
+      "trigger": "agents providing services involving regions affected by conflict or terrorism",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "This does not mean that principals with agents providing services involving regions affected by conflict or terrorism cannot manage such risks, but rather that principals must take steps to account for and mitigate such risks",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-21",
+      "actor": "MSB principals and agents (as expected by FinCEN)",
+      "modality": "should",
+      "action": "tailor their AML programs to reflect the risks associated with their particular business services, clients, size, locations, and circumstances",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FinCEN expects MSB principals and agents to tailor their AML programs to reflect the risks associated with their particular business services, clients, size, locations, and circumstances.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-22",
+      "actor": "principals",
+      "modality": "conditional",
+      "action": "encouraged to share information with other eligible financial institutions through participation in the 314(b) voluntary information-sharing program where an agent has more than one principal or provides additional services on its own",
+      "trigger": "an agent may enter into contracts to offer services with more than one principal or may provide additional services on its own",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In such situations, principals are encouraged to share information with other eligible financial institutions through participation in the 314(b) voluntary information-sharing program.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "agent",
+      "definition": "For purposes of this guidance includes authorized delegates, foreign agents or counterparties, agents and sub-agents.",
+      "citations": [
+        {
+          "quote": "The term \u201cagent\u201d for purposes of this guidance includes authorized delegates, foreign agents or counterparties, agents and sub-agents.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money services businesses (MSBs)",
+      "definition": "(undefined here) \u2014 cross-referenced to 31 CFR \u00a7 1010.100(ff).",
+      "citations": [
+        {
+          "quote": "See 31 CFR \u00a7 1010.100(ff).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "principal",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the anti-money laundering (AML) program obligations on the principals of money services businesses (MSBs)1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The Bank Secrecy Act (BSA) requires all MSBs, both principals and their agents, to establish and maintain an effective written AML program",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML program",
+      "definition": "(undefined here) \u2014 described by minimum requirements under 31 CFR \u00a7 1022.210.",
+      "citations": [
+        {
+          "quote": "Under 31 CFR \u00a7 1022.210, an MSB\u2019s AML program must, at a minimum:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML risks",
+      "definition": "AML risks can be jurisdictional, product-related, service-related, or client-related.",
+      "citations": [
+        {
+          "quote": "AML risks can be jurisdictional, product-related, service-related, or client-related.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "314(b) voluntary information-sharing program",
+      "definition": "(undefined here) \u2014 cross-referenced to the Section 314(b) Fact Sheet (Oct. 2013).",
+      "citations": [
+        {
+          "quote": "The Section 314(b) Fact Sheet (Oct. 2013) available at /system/files/shared/314bfactsheet.pdf.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The AML program minimum requirements are set under 31 CFR \u00a7 1022.210, and joint liability for existence of respective policies is grounded in 31 CFR \u00a7 1022.210(d)(1)(iii).",
+      "references": [
+        "31 CFR \u00a7 1022.210",
+        "31 CFR \u00a7 1022.210(d)(1)(iii)"
+      ],
+      "citations": [
+        {
+          "quote": "Under 31 CFR \u00a7 1022.210, an MSB\u2019s AML program must, at a minimum:",
+          "verified": true
+        },
+        {
+          "quote": "31 CFR \u00a7 1022.210(d)(1)(iii).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The guidance reiterates 2004 guidance on AML program requirements for MSBs with respect to foreign agents or foreign counterparties (Interpretive Release 2004-1, 69 Fed. Reg. 74439).",
+      "references": [
+        "Interpretive Release 2004-1, 69 Fed. Reg. 74439 (Dec. 14, 2004)",
+        "69 Fed. Reg. at 74440",
+        "69 Fed. Reg. at 74441"
+      ],
+      "citations": [
+        {
+          "quote": "See Interpretive Release 2004-1-Anti-Money Laundering Program Requirements for Money Services Businesses With Respect to Foreign Agents or Foreign Counterparties, 69 Fed. Reg. 74439 (Dec. 14, 2004).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The guidance complements recent state guidance and is consistent with the purposes of the Money Remittances Improvement Act to encourage coordination between Federal and state regulators.",
+      "references": [
+        "Money Remittances Improvement Act of 2014, Pub. L. 113\u2013156 (Aug. 8, 2014)"
+      ],
+      "citations": [
+        {
+          "quote": "consistent with the purposes of the Money Remittances Improvement Act to encourage coordination between Federal and state regulators on such issues.4",
+          "verified": true
+        },
+        {
+          "quote": "Money Remittances Improvement Act of 2014, Pub. L. 113\u2013156 (Aug. 8, 2014).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "References the BSA/AML Examination Manual for Money Services Businesses and other FinCEN guidance for information on BSA examinations, risk assessment, AML program requirements, and risk management expectations.",
+      "references": [
+        "The Bank Secrecy Act/Anti-Money Laundering Examination Manual for Money Services Businesses"
+      ],
+      "citations": [
+        {
+          "quote": "The Bank Secrecy Act/Anti-Money Laundering Examination Manual for Money Services Businesses (/system/files/shared/fin-2009-g001.pdf) and other FinCEN guidance provide information on BSA examinations, risk assessment, AML program requirements, BSA/AML risks and risk management expectations, and industry practices.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "References FinCEN's Advisory to U.S. Financial Institutions on Promoting a Culture of Compliance regarding organizational compliance culture at principal and agent levels.",
+      "references": [
+        "FinCEN Advisory on Promoting a Culture of Compliance (FIN-2014-A007, Aug. 11, 2014)"
+      ],
+      "citations": [
+        {
+          "quote": "as has been highlighted in FinCEN\u2019s Advisory to U.S. Financial Institutions on Promoting a Culture of Compliance.",
+          "verified": true
+        },
+        {
+          "quote": "The Advisory (Aug. 11, 2014) available at /system/files/shared/FIN-2014-A007.pdf.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FinCEN is working with its delegated examiner, the IRS Small Business/Self-Employed Division, and with state regulators to coordinate compliance and enforcement; expects a principal to have information readily available demonstrating effective risk-based monitoring of agent activity.",
+      "references": [
+        "Internal Revenue Service's Small Business/Self-Employed Division"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN is working closely with its delegated examiner, the Internal Revenue Service\u2019s Small Business/Self-Employed Division, as well as with state regulators, to better coordinate compliance and enforcement efforts and maximize resources.",
+          "verified": true
+        },
+        {
+          "quote": "FinCEN expects a principal to have information readily available to demonstrate that it has effectively developed and implemented risk-based policies, procedures, and internal controls to ensure adequate ongoing monitoring of agent activity.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This item is FinCEN agency guidance (FIN-2016-G001, evidence role agency_guidance) reiterating existing AML program-establishment/'pillars' obligations for MSB principals and agents \u2014 squarely within scope for MSBs under FinCEN. The document mixes binding modalities: it states program requirements are 'required'/'must' but also frames certain agent-monitoring elements with 'should' (e.g., handling non-compliant agents; risk factors principals 'should consider'), while stating FinCEN 'expects' tailoring \u2014 these expectation-framed duties are extracted at 'should' per the modality mapping since 'expects' is not a shall/must. Preserved as-written: OBL-17 uses 'are required to' (mapped must) for reviews, while OBL-18 uses 'must' for testing; the guidance also notes an internal ambiguity in that contractual allocation is permitted yet both parties 'remain liable' and 'each MSB remains independently and wholly responsible' (extracted verbatim, not harmonized). SAR/CTR/recordkeeping references (OBL-09) touch the coordination layer but are extracted only as stated in the program-establishment context. Depository Institutions is tagged on the page but the substantive obligations address MSB principals/agents only."
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/decision_log_entry.schema.json",
+  "title": "DecisionLogEntry",
+  "description": "One line of a program's append-only decisions.log.jsonl. Every ⚖ action, waiver, and override is one entry.",
+  "type": "object",
+  "required": ["entry_id", "timestamp", "type", "decided_by", "decision", "rationale"],
+  "properties": {
+    "entry_id": { "type": "string", "pattern": "^DL-[0-9]{3,}$" },
+    "timestamp": { "type": "string" },
+    "type": { "enum": ["ratification", "disposition", "waiver", "scope_election", "mode_election", "model_override", "gate_exception", "manifest_freeze", "other"] },
+    "artifact": { "type": "string" },
+    "artifact_version": { "type": "string" },
+    "decided_by": {
+      "type": "object",
+      "required": ["name", "role"],
+      "properties": { "name": { "type": "string" }, "role": { "type": "string" } }
+    },
+    "decision": { "type": "string" },
+    "rationale": { "type": "string", "minLength": 1 },
+    "normative_flag": { "type": "string" },
+    "basis": { "type": "array", "items": { "type": "string" } },
+    "open_items_at_decision": { "type": "array", "items": { "type": "string" } }
+  }
+}

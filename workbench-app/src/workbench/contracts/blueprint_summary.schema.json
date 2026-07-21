@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlueprintExecutiveSummary",
+  "description": "ADVISORY orientation for readers of a Derived Blueprint. Not a governed artifact, never ratified, never a source of truth \u2014 a reading guide. It describes; it must not resolve, harmonize, or evaluate policy merits. Every highlight and tension carries refs into the blueprint (item_ids and/or defect codes) so a skeptical reader can check the claim against the tables.",
+  "type": "object",
+  "required": [
+    "headline",
+    "how_to_read",
+    "regime_shape",
+    "highlights",
+    "tensions",
+    "caveats"
+  ],
+  "properties": {
+    "headline": {
+      "type": "string",
+      "maxLength": 800,
+      "description": "One or two sentences: what this regime is, at forest level"
+    },
+    "how_to_read": {
+      "type": "string",
+      "maxLength": 1200,
+      "description": "Orientation to the document's structure: families, element tables, verification marks, the defect appendix"
+    },
+    "regime_shape": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "description": "Short narrative paragraphs describing the as-built architecture: who is regulated, by whom, through what instrument layers, with what center of gravity",
+      "items": {
+        "type": "object",
+        "required": [
+          "heading",
+          "text"
+        ],
+        "properties": {
+          "heading": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 1500
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 10,
+      "description": "Where a reader's attention pays off \u2014 dense nodes, load-bearing definitions, obligations everything else hangs from",
+      "items": {
+        "type": "object",
+        "required": [
+          "point",
+          "refs"
+        ],
+        "properties": {
+          "point": {
+            "type": "string",
+            "maxLength": 600
+          },
+          "refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "tensions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "description": "The as-built frictions the Defect Register documents, stated AS tensions \u2014 never with a proposed resolution (that is Phase 3's job, under governance)",
+      "items": {
+        "type": "object",
+        "required": [
+          "point",
+          "refs"
+        ],
+        "properties": {
+          "point": {
+            "type": "string",
+            "maxLength": 600
+          },
+          "refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "caveats": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "What this summary is not: evidentiary ceilings honored, \u2205 items explained, manual-posture disclosures"
+    }
+  }
+}

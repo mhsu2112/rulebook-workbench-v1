@@ -1,0 +1,287 @@
+{
+  "item_id": "ffiec-man-cp-04",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Confirm that the bank's board of directors has designated a qualified individual or individuals (BSA compliance officer) responsible for coordinating and monitoring day-to-day compliance with BSA regulatory requirements, and assess whether the BSA compliance officer has appropriate authority, independence, access to resources, and competence to execute all duties.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective: Confirm that the bank's board of directors has designated a qualified individual or individuals (BSA compliance officer) responsible for coordinating and monitoring day-to-day compliance with BSA regulatory requirements. Assess whether the BSA compliance officer has the appropriate authority, independence, access to resources, and competence to effectively execute all duties.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "cp04-o1",
+      "actor": "the bank's board of directors",
+      "modality": "must",
+      "action": "designate a qualified individual or individuals to serve as the BSA compliance officer",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank's board of directors must designate a qualified individual or individuals to serve as the BSA compliance officer.[18]",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o2",
+      "actor": "the board of directors",
+      "modality": "should",
+      "action": "provide oversight for senior management and the BSA compliance officer in the implementation of the bank's board-approved BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors is ultimately responsible for the bank's BSA/AML compliance and should provide oversight for senior management and the BSA compliance officer in the implementation of the bank's board-approved BSA/AML compliance program.[19]",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o3",
+      "actor": "the board of directors",
+      "modality": "must",
+      "action": "ensure that the BSA compliance officer has appropriate authority, independence, and access to resources to administer an adequate BSA/AML compliance program based on the bank's ML/TF and other illicit financial activity risk profile",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors is responsible for ensuring that the BSA compliance officer has appropriate authority, independence, and access to resources to administer an adequate BSA/AML compliance program based on the bank's ML/TF and other illicit financial activity risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o4",
+      "actor": "the BSA compliance officer",
+      "modality": "should",
+      "action": "regularly report the status of ongoing compliance with the BSA to the board of directors and senior management so that they can make informed decisions about existing risk exposure and the overall BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA compliance officer should regularly report the status of ongoing compliance with the BSA to the board of directors and senior management so that they can make informed decisions about existing risk exposure and the overall BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o5",
+      "actor": "the BSA compliance officer (in reporting to the board of directors or a designated board committee)",
+      "modality": "should",
+      "action": "include pertinent BSA-related information, including the required notification of suspicious activity report (SAR) filings, in reporting about the status of ongoing compliance",
+      "trigger": "reporting to the board of directors or a designated board committee about the status of ongoing compliance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Reporting to the board of directors or a designated board committee about the status of ongoing compliance should include pertinent BSA-related information, including the required notification of suspicious activity report (SAR) filings.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o6",
+      "actor": "the BSA compliance officer",
+      "modality": "may",
+      "action": "delegate BSA/AML duties to staff, while remaining responsible for overseeing the day-to-day BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA compliance officer may delegate BSA/AML duties to staff, but the officer is responsible for overseeing the day-to-day BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o7",
+      "actor": "the BSA compliance officer",
+      "modality": "should",
+      "action": "be competent, as demonstrated by knowledge of the BSA and related regulations, implementation of the bank's BSA/AML compliance program, and understanding of the bank's ML/TF and other illicit financial activity risk profile associated with its banking activities",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA compliance officer should be competent, as demonstrated by knowledge of the BSA and related regulations, implementation of the bank's BSA/AML compliance program, and understanding of the bank's ML/TF and other illicit financial activity risk profile associated with its banking activities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o8",
+      "actor": "the BSA compliance officer",
+      "modality": "should",
+      "action": "have access to suitable resources, which may include adequate staffing with the necessary skills and expertise and systems to support the timely identification, measurement, monitoring, reporting, and management of the bank's ML/TF and other illicit financial activity risks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA compliance officer should have access to suitable resources.",
+          "verified": true
+        },
+        {
+          "quote": "adequate staffing with the skills and expertise necessary for the bank's overall risk level (based on products, services, customers, and geographic locations), size or complexity, and organizational structure; and systems to support the timely identification, measurement, monitoring, reporting, and management of the bank's ML/TF and other illicit financial activity risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o9",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "confirm that the bank's board of directors has designated an individual or individuals responsible for the overall BSA/AML compliance program who are appropriately qualified",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should confirm that the bank's board of directors has designated an individual or individuals responsible for the overall BSA/AML compliance program who are appropriately qualified.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o10",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "review reports to the board of directors and senior management regarding the status of ongoing compliance and pertinent BSA-related information, including the required notification of SAR filings",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should review reports to the board of directors and senior management regarding the status of ongoing compliance and pertinent BSA-related information, including the required notification of SAR filings.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "cp04-o11",
+      "actor": "examiners",
+      "modality": "should",
+      "action": "confirm that the BSA compliance officer has the appropriate authority, independence, and access to resources",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should confirm that the BSA compliance officer has the appropriate authority, independence, and access to resources.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "BSA compliance officer",
+      "definition": "A qualified individual or individuals designated by the bank's board of directors, responsible for coordinating and monitoring day-to-day BSA/AML compliance and charged with managing all aspects of the BSA/AML compliance program, including managing the bank's compliance with BSA regulatory requirements.",
+      "citations": [
+        {
+          "quote": "The BSA compliance officer is responsible for coordinating and monitoring day-to-day BSA/AML compliance. The BSA compliance officer is also charged with managing all aspects of the BSA/AML compliance program, including managing the bank's compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "responsible for coordinating and monitoring day-to-day compliance with BSA regulatory requirements",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA/AML compliance program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "managing all aspects of the BSA/AML compliance program",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "suspicious activity report (SAR)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "including the required notification of suspicious activity report (SAR) filings",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "ML/TF and other illicit financial activity risk profile",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "based on the bank's ML/TF and other illicit financial activity risk profile",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "authority (of the BSA compliance officer)",
+      "definition": "(undefined here) \u2014 described only by indicators, e.g., senior management seeking the officer's input regarding ML/TF risks of expansion or operational changes.",
+      "citations": [
+        {
+          "quote": "Indicators of appropriate authority of the BSA compliance officer may include senior management seeking the BSA compliance officer's input regarding: the ML/TF and other illicit financial activity risks related to expansion into new products, services, customer types and geographic locations; or operational changes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "independence (of the BSA compliance officer)",
+      "definition": "(undefined here) \u2014 described only by indicators, e.g., clear lines of reporting up to the board that do not compromise independence, ability to act without undue influence from business lines, and identification/reporting of issues.",
+      "citations": [
+        {
+          "quote": "Indicators of appropriate independence of the BSA compliance officer may include, but are not limited to: clear lines of reporting and communication ultimately up to the board of directors or a designated board committee that do not compromise the BSA compliance officer's independence, the ability to undertake the BSA compliance officer's role without undue influence from the bank's business lines",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The guidance references the underlying regulatory requirement to establish and maintain a BSA/AML compliance program reasonably designed to assure and monitor compliance with the BSA; the act of appointing a BSA compliance officer alone is stated as insufficient to meet that requirement.",
+      "references": [
+        "BSA regulatory requirement to establish and maintain a BSA/AML compliance program"
+      ],
+      "citations": [
+        {
+          "quote": "The act by the bank's board of directors of appointing a BSA compliance officer is not, by itself, sufficient to meet the regulatory requirement to establish and maintain a BSA/AML compliance program reasonably designed to assure and monitor compliance with the BSA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Footnote citations [18] and [19] are referenced as authority for the designation obligation and for board oversight responsibility, but their targets are not reproduced in this source text.",
+      "references": [
+        "[18]",
+        "[19]"
+      ],
+      "citations": [
+        {
+          "quote": "The bank's board of directors must designate a qualified individual or individuals to serve as the BSA compliance officer.[18]",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Footnotes [18] and [19] are cited but their content is not included in the source text, so the underlying authorities cannot be identified from this item. SAR filings are referenced as reporting content but are treated as a coordination-layer duty per scope. The document mixes mandatory ('must') board-designation language with hortatory ('should') guidance for the officer's competence, reporting, and resources; extracted as written without harmonization. 'Access to resources' is stated as both an obligation the board must ensure (o3) and a condition the officer should have (o8); preserved as separately worded provisions."
+}

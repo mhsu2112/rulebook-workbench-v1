@@ -1,0 +1,271 @@
+{
+  "item_id": "occ-b-2024-19",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The agencies (OCC, Federal Reserve, FDIC, NCUA) issued a joint notice of proposed rulemaking to amend requirements for supervised banks to establish, implement, and maintain effective, risk-based, and reasonably designed AML/CFT programs, aligned with concurrently proposed FinCEN changes resulting from the AML Act of 2020.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "issued a joint notice of proposed rulemaking that would amend the requirements that each agency has issued for its supervised banks, currently referred to as Bank Secrecy Act (BSA) compliance programs, to establish, implement, and maintain effective, risk-based, and reasonably designed anti-money laundering (AML) and countering the financing of terrorism (CFT) programs",
+          "verified": true
+        },
+        {
+          "quote": "The amendments align with changes that are being concurrently proposed by the Financial Crimes Enforcement Network (FinCEN) as a result of the Anti-Money Laundering Act of 2020 (AML Act).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The proposed changes would incorporate a risk assessment process requiring consideration of national AML/CFT priorities published by FinCEN, include customer due diligence requirements, codify longstanding supervisory expectations, and encourage but not require innovative approaches.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Incorporating a risk assessment process in AML/CFT program rules that would require, among other things, consideration of national AML/CFT priorities published by FinCEN.",
+          "verified": true
+        },
+        {
+          "quote": "Including customer due diligence requirements to reflect prior amendments to FinCEN\u2019s requirements.",
+          "verified": true
+        },
+        {
+          "quote": "Including amendments to codify longstanding supervisory expectations and conform to changes made by the AML Act.",
+          "verified": true
+        },
+        {
+          "quote": "Encouraging, but not requiring, banks to consider, evaluate, and as appropriate, implement innovative approaches to meet compliance obligations pursuant to the BSA.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "occ-b-2024-19-OB1",
+      "actor": "banks (supervised banks; national banks and federal savings associations)",
+      "modality": "must",
+      "action": "establish, implement, and maintain effective, risk-based, and reasonably designed anti-money laundering (AML) and countering the financing of terrorism (CFT) programs (as proposed amendments to BSA compliance program requirements)",
+      "trigger": "proposed rulemaking amending each agency's program requirements",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "amend the requirements that each agency has issued for its supervised banks, currently referred to as Bank Secrecy Act (BSA) compliance programs, to establish, implement, and maintain effective, risk-based, and reasonably designed anti-money laundering (AML) and countering the financing of terrorism (CFT) programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "occ-b-2024-19-OB2",
+      "actor": "banks",
+      "modality": "conditional",
+      "action": "under the proposed risk assessment process, consider national AML/CFT priorities published by FinCEN, among other things",
+      "trigger": "incorporation of a risk assessment process in AML/CFT program rules (as proposed)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Incorporating a risk assessment process in AML/CFT program rules that would require, among other things, consideration of national AML/CFT priorities published by FinCEN.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "occ-b-2024-19-OB3",
+      "actor": "banks",
+      "modality": "may",
+      "action": "consider, evaluate, and as appropriate, implement innovative approaches to meet compliance obligations pursuant to the BSA (encouraged but not required)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Encouraging, but not requiring, banks to consider, evaluate, and as appropriate, implement innovative approaches to meet compliance obligations pursuant to the BSA.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "occ-b-2024-19-OB4",
+      "actor": "the agencies (OCC, Federal Reserve, FDIC, NCUA)",
+      "modality": "may",
+      "action": "prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of the BSA (independent authority)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The agencies have independent authority to prescribe regulations requiring banks to establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of the BSA.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "the agencies",
+      "definition": "the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively)",
+      "citations": [
+        {
+          "quote": "the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration (collectively, the agencies)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML Act",
+      "definition": "the Anti-Money Laundering Act of 2020",
+      "citations": [
+        {
+          "quote": "as a result of the Anti-Money Laundering Act of 2020 (AML Act)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA",
+      "definition": "Bank Secrecy Act",
+      "citations": [
+        {
+          "quote": "currently referred to as Bank Secrecy Act (BSA) compliance programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML",
+      "definition": "anti-money laundering",
+      "citations": [
+        {
+          "quote": "anti-money laundering (AML)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "CFT",
+      "definition": "countering the financing of terrorism",
+      "citations": [
+        {
+          "quote": "countering the financing of terrorism (CFT) programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "CDD / customer due diligence",
+      "definition": "customer due diligence requirements; per background, FinCEN's 2016 amendment adding beneficial ownership information collection requirements. The proposed rule would add CDD as a required component of the agencies' AML/CFT program rules.",
+      "citations": [
+        {
+          "quote": "FinCEN amended its AML compliance program rules to incorporate customer due diligence (CDD) requirements, adding beneficial ownership information collection requirements into FinCEN\u2019s AML compliance program rule for certain financial institutions, including banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FinCEN",
+      "definition": "the Financial Crimes Enforcement Network",
+      "citations": [
+        {
+          "quote": "the Financial Crimes Enforcement Network (FinCEN)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "national AML/CFT priorities",
+      "definition": "(undefined here) \u2014 priorities published by FinCEN, to be considered under the proposed risk assessment process",
+      "citations": [
+        {
+          "quote": "consideration of national AML/CFT priorities published by FinCEN",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "national banks",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The proposed amendments would apply to all national banks and all federal savings associations, including community banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "federal savings associations",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The proposed amendments would apply to all national banks and all federal savings associations, including community banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "community banks",
+      "definition": "(undefined here) \u2014 included within national banks and federal savings associations to which the proposed amendments would apply",
+      "citations": [
+        {
+          "quote": "The proposed amendments would apply to all national banks and all federal savings associations, including community banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial ownership information",
+      "definition": "(undefined here) \u2014 collection requirements added into FinCEN's AML compliance program rule",
+      "citations": [
+        {
+          "quote": "adding beneficial ownership information collection requirements into FinCEN\u2019s AML compliance program rule for certain financial institutions, including banks",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The agencies' proposed amendments align with and are proposed concurrently with FinCEN's amendments to its BSA compliance program rules to incorporate national AML/CFT priorities and other changes, all as a result of the AML Act of 2020.",
+      "references": [
+        "FinCEN",
+        "Anti-Money Laundering Act of 2020"
+      ],
+      "citations": [
+        {
+          "quote": "The amendments align with changes that are being concurrently proposed by the Financial Crimes Enforcement Network (FinCEN) as a result of the Anti-Money Laundering Act of 2020 (AML Act).",
+          "verified": true
+        },
+        {
+          "quote": "Pursuant to the AML Act, FinCEN is amending its BSA compliance program rules to incorporate national AML/CFT priorities and other changes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The proposed rule would add CDD as a required component of the agencies' AML/CFT program rules, which would mirror FinCEN's existing rule (its 2016 CDD/beneficial ownership amendment).",
+      "references": [
+        "FinCEN existing CDD rule (2016 amendment)"
+      ],
+      "citations": [
+        {
+          "quote": "The proposed rule would add CDD as a required component of the agencies\u2019 AML/CFT program rules, which would mirror FinCEN\u2019s existing rule.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The agencies and FinCEN are also issuing a joint statement describing their proposed rules and additional steps necessary to implement the AML Act.",
+      "references": [
+        "Interagency Statement on the Issuance of the AML/CFT Program Notices of Proposed Rulemaking",
+        "AML Act"
+      ],
+      "citations": [
+        {
+          "quote": "The agencies and FinCEN are also issuing a joint statement that describes their proposed rules and the additional steps necessary to implement the AML Act.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This item is a Notice of Proposed Rulemaking (status: horizon; evidence role: supervisory_guidance) \u2014 the obligations described are PROPOSED, not final, and are stated in conditional/would-form throughout (e.g., 'would amend', 'would require', 'The proposed rule would add'). The extracted obligations reflect the text's own hortatory/proposed framing; modalities are drawn from the described program-establishment duties but the operative force is prospective. Actual regulatory text is in the linked PDF ('Anti-Money Laundering and Countering the Financing of Terrorism Program Requirements (PDF)') which is not included in this source. The bulletin does not quantify thresholds. CDD/beneficial ownership and national priorities appear as coordination-layer/FinCEN cross-references per scope."
+}

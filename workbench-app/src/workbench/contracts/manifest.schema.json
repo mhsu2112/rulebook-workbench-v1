@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/manifest.schema.json",
+  "title": "FrozenManifest",
+  "description": "The deterministic corpus list for a program (instruction set P1.7). M0 base contract; richer per-family metadata lands with M2.",
+  "type": "object",
+  "required": ["program_id", "manifest_version", "frozen", "items"],
+  "properties": {
+    "program_id": { "type": "string" },
+    "manifest_version": { "type": "string" },
+    "frozen": { "type": "boolean" },
+    "frozen_at": { "type": ["string", "null"] },
+    "content_hash": { "type": ["string", "null"], "description": "sha256 over canonicalized items; REQUIRED non-null when frozen=true (enforced in code)" },
+    "scope_contract_version": { "type": ["string", "null"] },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item_id", "title", "issuer", "family", "status", "locator"],
+        "properties": {
+          "item_id": { "type": "string" },
+          "title": { "type": "string" },
+          "issuer": { "type": "string" },
+          "family": { "type": "string" },
+          "status": { "enum": ["live", "superseded", "rescinded", "expired", "stayed", "vacated", "proposed", "horizon"] },
+          "locator": { "type": "string" },
+          "evidence_role": { "type": ["string", "null"] },
+          "applicability": { "type": ["object", "null"] }
+        }
+      }
+    }
+  }
+}

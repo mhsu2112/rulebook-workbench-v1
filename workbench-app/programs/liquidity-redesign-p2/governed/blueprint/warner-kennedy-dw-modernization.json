@@ -1,0 +1,232 @@
+{
+  "item_id": "warner-kennedy-dw-modernization",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Legislation intended to improve the effectiveness of the Federal Reserve discount window as a liquidity tool.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "legislation to improve the effectiveness of the Federal Reserve discount window",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Reduce the unnecessary stigma associated with discount window use and improve the window's operations for the digital age.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "reduce the unnecessary stigma associated with that use",
+          "verified": true
+        },
+        {
+          "quote": "improve the window\u2019s operations to meet the challenges of the digital age",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Mandate that eligible depository institutions engage in test borrowing at the discount window, with frequency tiered by institution size (large >$100B quarterly; $10B-$100B semi-annual; under $10B not in scope).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Mandates that eligible depository institutions operating in the United States engage in test borrowing at the Federal Reserve\u2019s Discount Window:",
+          "verified": true
+        },
+        {
+          "quote": "Large Institutions (> $100 Billion): Quarterly.",
+          "verified": true
+        },
+        {
+          "quote": "Smaller and Larger Institutions ($10 Billion \u2013 $100 Billion): Semi-annual.",
+          "verified": true
+        },
+        {
+          "quote": "Small Institutions (Under $10 Billion): Not in scope.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Require regulators to give positive consideration in liquidity evaluations to depositories that can use the discount window successfully, including successful testing and pre-pledged collateral.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Regulators must \u201cgive credit\u201d in their evaluations of bank liquidity preparedness to depositories that can use the discount window successfully \u2013 \u201cpositive consideration\u201d must be given to successful testing and pre-pledged collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Require financial institution risk committees or equivalent to review and approve liquidity contingency plans, which must include detailed policies/procedures for seeking advances and be submitted to the Federal Reserve Board, the regional Reserve Bank of membership, and the primary supervisor.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Depositories\u2019 liquidity contingency plans are to include detailed policies and procedures for seeking advances and be submitted to Federal Reserve Board, Regional Federal Reserve Bank of membership, and primary supervisor.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Require the Federal Reserve Board to modernize discount window operations.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Require the Federal Reserve Board to Modernize Discount Window Operations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Require the Federal Reserve System to simplify and harmonize collateral pledging/transfer processes with the Federal Home Loan Bank System, working with FHFA and the FHLBs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Federal Reserve Board must work with the FHFA and the FHLB system to simplify and harmonize policies and procedures for pledging and transferring collateral among FHLBs and Federal Reserve Banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Require the Federal Reserve Board to comprehensively review weekly balance-sheet reporting and consider changes to avoid market distortions that could disadvantage individual institutions.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Federal Reserve Board must comprehensively review the weekly reporting of its balance sheet activities, and consider changes to avoid market distortions that could inadvertently place individual financial institutions at a disadvantage.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Require the Federal Reserve Board to study and report to Congress on additional measures to reduce discount window stigma and improve the advance-obtaining process.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Requires the Federal Reserve Board to conduct a study and submit a report to Congress about additional measures that could be taken to reduce discount window stigma and improve the process for obtaining advances on behalf of depository institutions.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "discount window",
+      "definition": "a liquiditytool that provides short-term loans to depository institutions, such as commercial and community banks in order to support the liquidity and stability of the banking system, and help implement monetary policy effectively",
+      "citations": [
+        {
+          "quote": "a liquiditytool that provides short-term loans to depository institutions, such as commercial and community banks in order to support the liquidity and stability of the banking system, and help implement monetary policy effectively",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount window stigma",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "reduce the unnecessary stigma associated with that use",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "lender of last resort",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The Federal Reserve\u2019s discount window exists to be the lender of last resort",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Section 10B",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "given its clear mandate under Section 10B to act independently",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "eligible depository institutions",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Mandates that eligible depository institutions operating in the United States engage in test borrowing at the Federal Reserve\u2019s Discount Window:",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Bill requires the Federal Reserve Board to work with FHFA and the FHLB System to simplify and harmonize collateral pledging/transfer procedures between FHLBs and Federal Reserve Banks \u2014 directly bearing on the FHLB/discount-window interoperability gap within scope.",
+      "references": [
+        "FHFA",
+        "Federal Home Loan Bank (FHLB) System",
+        "Federal Reserve Banks"
+      ],
+      "citations": [
+        {
+          "quote": "The Federal Reserve Board must work with the FHFA and the FHLB system to simplify and harmonize policies and procedures for pledging and transferring collateral among FHLBs and Federal Reserve Banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Press release situates this 2026 bill as a successor to Sen. Warner's earlier Discount Window Enhancement Act (2024).",
+      "references": [
+        "Discount Window Enhancement Act (2024)"
+      ],
+      "citations": [
+        {
+          "quote": "Sen. Warner first introduced the Discount Window Enhancement Act in 2024.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to other post-SVB accountability bills cosponsored by Sen. Warner, presented as related but distinct legislative efforts.",
+      "references": [
+        "DEPOSIT Act",
+        "Bank Management Accountability Act",
+        "Failed Bank Executives Clawback Act"
+      ],
+      "citations": [
+        {
+          "quote": "Sen. Warner cosponsored the DEPOSIT Act, the Bank Management Accountability Act, and the Failed Bank Executives Clawback Act, efforts to ensure that bank executives do not profit in the wake of bank failures.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Commentary (Hal S. Scott) invokes Federal Reserve Act Section 10B as the statutory basis for Fed independence as liquidity provider, framing a constraint on how far discount-window reform can go.",
+      "references": [
+        "Federal Reserve Act Section 10B"
+      ],
+      "citations": [
+        {
+          "quote": "it is also imperative that the Federal Reserve maintain its independence as a liquidity provider to banks, given its clear mandate under Section 10B to act independently",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Bill would require a Federal Reserve Board report to Congress specifically on discount-window stigma, creating a future reporting obligation running from Fed to Congress (not yet in force).",
+      "references": [
+        "U.S. Congress"
+      ],
+      "citations": [
+        {
+          "quote": "Requires the Federal Reserve Board to conduct a study and submit a report to Congress about additional measures that could be taken to reduce discount window stigma and improve the process for obtaining advances on behalf of depository institutions.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is an introduced-bill press release (horizon status), not enacted law; per the ceiling note, none of its provisions are extracted as operative obligations \u2014 all are captured as 'stated' objectives and cross-instrument interactions only, since they describe what the bill 'will' do or 'requires' upon (unenacted) passage. Quotes are taken verbatim from the press release's paraphrase of bill provisions and from quoted third-party commentary (Warner, Kennedy, Kohn, Duke, Bair, Dudley, Liang, Goldsmith Romero, Ludwig, Baer, Scott); the press release does not reproduce bill text itself, so provision language reflects the release's own summary phrasing, preserved as-is per the fidelity rule, including the source's internal quotation marks around 'give credit' and 'positive consideration' and the run-together word 'liquiditytool' in the discount-window description. A quantitative claim relevant to the fast-run diagnostic is present but not independently defined or sourced: Hal S. Scott's statement that 'SVB experienced a total outflow of 25% of deposits in one day' is preserved here in notes as evidentiary color rather than as an objective or obligation, since it is a factual assertion, not a duty or defined term. No defect register, Call Report/FR 2052a timing analysis, or Hsu/McKernan proposal content appears in this source; those elements of the ratified scope must be drawn from other corpus items."
+}

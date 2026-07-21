@@ -1,0 +1,363 @@
+{
+  "item_id": "12-usc-1430",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Authorize Federal Home Loan Banks to make secured advances to members and establish the collateral-eligibility categories and origination/renewal collateralization duty that govern such advances.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Each Federal Home Loan Bank is authorized to make secured advances to its members upon collateral sufficient, in the judgment of the Bank, to fully secure advances obtained from the Bank under this section or section 1431(g) of this title .",
+          "verified": true
+        },
+        {
+          "quote": "A Bank, at the time of origination or renewal of a loan or advance, shall obtain and maintain a security interest in collateral eligible pursuant to one or more of the following categories:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Establish that security interests granted to a Federal Home Loan Bank by a member (or affiliate) are entitled to priority over most other claimants' rights, notwithstanding other law, subject to two enumerated exceptions.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Notwithstanding any other provision of law, any security interest granted to a Federal Home Loan Bank by any member of any Federal Home Loan Bank or any affiliate of any such member shall be entitled to priority over the claims and rights of any party (including any receiver, conservator, trustee, or similar party having rights of a lien creditor) other than claims and rights that-",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "O1",
+      "actor": "Federal Home Loan Bank",
+      "modality": "may",
+      "action": "make secured advances to its members upon collateral sufficient, in the Bank's judgment, to fully secure advances obtained under this section or section 1431(g)",
+      "trigger": null,
+      "threshold": "collateral sufficient, in the judgment of the Bank, to fully secure advances obtained from the Bank under this section or section 1431(g)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each Federal Home Loan Bank is authorized to make secured advances to its members upon collateral sufficient, in the judgment of the Bank, to fully secure advances obtained from the Bank under this section or section 1431(g) of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O2",
+      "actor": "Federal Home Loan Bank",
+      "modality": "conditional",
+      "action": "make a long-term advance only for the purposes of providing funds for residential housing finance or, for community financial institutions, for small businesses, small farms, small agri-businesses, and community development activities",
+      "trigger": "the advance is a long-term advance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A long-term advance may only be made for the purposes of-",
+          "verified": true
+        },
+        {
+          "quote": "providing funds to any member for residential housing finance; and",
+          "verified": true
+        },
+        {
+          "quote": "providing funds to any community financial institution for small businesses, small farms, small agri-businesses, and community development activities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O3",
+      "actor": "Federal Home Loan Bank",
+      "modality": "must",
+      "action": "obtain and maintain a security interest in collateral eligible pursuant to one or more of the categories set out in paragraph (3)",
+      "trigger": "at the time of origination or renewal of a loan or advance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A Bank, at the time of origination or renewal of a loan or advance, shall obtain and maintain a security interest in collateral eligible pursuant to one or more of the following categories:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O4",
+      "actor": "member",
+      "modality": "must",
+      "action": "reduce its level of outstanding advances promptly and prudently in accordance with a schedule determined by the Federal home loan bank",
+      "trigger": "the member has an advance secured by collateral the Bank determines is insufficient eligible collateral following renewal of a pre-August 9, 1989 advance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A member that has an advance secured by such insufficient eligible collateral must reduce its level of outstanding advances promptly and prudently in accordance with a schedule determined by the Federal home loan bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O5",
+      "actor": "Director",
+      "modality": "may",
+      "action": "review the collateral standards applicable to each Federal home loan bank for classes of collateral in subparagraphs (D) and (E) of paragraph (3), and require an increase in those standards",
+      "trigger": "if necessary for safety and soundness purposes",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Director may review the collateral standards applicable to each Federal home loan bank for the classes of collateral described in subparagraphs (D) and (E) of paragraph (3), and may, if necessary for safety and soundness purposes, require an increase in the collateral standards for any or all of those classes of collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O6",
+      "actor": "Home Loan Bank",
+      "modality": "may",
+      "action": "make, or cause or require to be made, such appraisals and other investigations as it deems necessary",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "each Home Loan Bank shall have power to make, or to cause or require to be made, such appraisals and other investigations as it may deem necessary.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O7",
+      "actor": "Home Loan Bank",
+      "modality": "must_not",
+      "action": "accept a home mortgage otherwise eligible as collateral security for an advance",
+      "trigger": "any director, officer, employee, attorney or agent of the Home Loan Bank or of the borrowing institution is personally liable on the mortgage",
+      "threshold": null,
+      "exceptions": [
+        "unless the Director has specifically approved such acceptance"
+      ],
+      "citations": [
+        {
+          "quote": "No home mortgage otherwise eligible to be accepted as collateral security for an advance by a Home Loan Bank shall be accepted if any director, officer, employee, attorney or agent of the Home Loan Bank or of the borrowing institution is personally liable thereon, unless the Director has specifically approved such acceptance.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O8",
+      "actor": "Federal Home Loan Bank",
+      "modality": "must",
+      "action": "hold a lien upon and hold the stock of the borrowing member as further collateral security for all indebtedness of the member to the Bank",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the Federal Home Loan Bank shall have a lien upon and shall hold the stock of such member as further collateral security for all indebtedness of the member to the Federal Home Loan Bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O9",
+      "actor": "institution applying for an advance",
+      "modality": "must",
+      "action": "enter into a primary and unconditional obligation to pay off all advances, together with interest and any unpaid costs and expenses, according to the terms under which they were made, in a form meeting the bank's requirements",
+      "trigger": "applying for an advance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The institution applying for an advance shall enter into a primary and unconditional obligation to pay off all advances, together with interest and any unpaid costs and expenses in connection therewith according to the terms under which they were made, in such form as shall meet the requirements of the bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O10",
+      "actor": "bank (Federal Home Loan Bank)",
+      "modality": "may",
+      "action": "require at any time, when deemed necessary for its protection, deposits of additional collateral security or substitutions of security by the borrowing institution",
+      "trigger": "when deemed necessary for the Bank's protection",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank shall reserve the right to require at any time, when deemed necessary for its protection, deposits of additional collateral security or substitutions of security by the borrowing institution,",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O11",
+      "actor": "borrowing institution",
+      "modality": "must",
+      "action": "assign additional or substituted security",
+      "trigger": "when and as so required by the bank",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "each borrowing institution shall assign additional or substituted security when and as so required.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O12",
+      "actor": "Federal Home Loan Bank",
+      "modality": "may",
+      "action": "sell to any other Federal Home Loan Bank, with or without recourse, any advance made under the chapter, or allow such other bank a participation therein",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Any Federal Home Loan Bank shall have power to sell to any other Federal Home Loan Bank, with or without recourse, any advance made under the provisions of this chapter, or to allow to such bank a participation therein,",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O13",
+      "actor": "Federal Home Loan Bank",
+      "modality": "conditional",
+      "action": "make special liquidity advances subject to all applicable collateral requirements (including subsection (a)) and at an interest rate no less favorable than that for similar short-term liquidity advances to savings associations not presenting supervisory concern",
+      "trigger": "a special liquidity advance is made pursuant to subsection (h)(1)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Any loan by a Federal Home Loan Bank pursuant to paragraph (1) shall be subject to all applicable collateral requirements, including the requirements of subsection (a), and shall be at an interest rate no less favorable than those made available for similar short-term liquidity advances to savings associations that do not present such supervisory concern.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O14",
+      "actor": "Federal Home Loan Banks",
+      "modality": "conditional",
+      "action": "make short-term liquidity advances to a savings association that is solvent but presents a supervisory concern and has reasonable and demonstrable prospects of returning to satisfactory financial condition",
+      "trigger": "upon the request of the Director of the Office of Thrift Supervision",
+      "threshold": "association is solvent but presents a supervisory concern because of poor financial condition, and has reasonable and demonstrable prospects of returning to satisfactory financial condition",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the Federal Home Loan Banks may, upon the request of the Director of the Office of Thrift Supervision, make short-term liquidity advances to a savings association that-",
+          "verified": true
+        },
+        {
+          "quote": "is solvent but presents a supervisory concern because of such association's poor financial condition; and",
+          "verified": true
+        },
+        {
+          "quote": "has reasonable and demonstrable prospects of returning to a satisfactory financial condition.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "eligible collateral (categories under (a)(3))",
+      "definition": "Collateral eligible pursuant to one or more of five categories: (A) fully disbursed, whole first mortgages on improved residential property (not more than 90 days delinquent), or securities representing a whole interest in such mortgages; (B) securities issued, insured, or guaranteed by the U.S. Government or an agency thereof; (C) cash or deposits of a Federal Home Loan Bank; (D) other real estate related collateral acceptable to the Bank with readily ascertainable value that the Bank can perfect an interest in; (E) secured loans for small business, agriculture, or community development activities (for community financial institutions).",
+      "citations": [
+        {
+          "quote": "A Bank, at the time of origination or renewal of a loan or advance, shall obtain and maintain a security interest in collateral eligible pursuant to one or more of the following categories:",
+          "verified": true
+        },
+        {
+          "quote": "Fully disbursed, whole first mortgages on improved residential property (not more than 90 days delinquent), or securities representing a whole interest in such mortgages.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "small business / agriculture / small farm / small agri-business / community development activities",
+      "definition": "shall have the meanings given those terms by regulation of the Director",
+      "citations": [
+        {
+          "quote": "the terms \"small business\", \"agriculture\", \"small farm\", \"small agri-business\", and \"community development activities\" shall have the meanings given those terms by regulation of the Director.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "advance",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Each Federal Home Loan Bank is authorized to make secured advances to its members upon collateral sufficient, in the judgment of the Bank, to fully secure advances obtained from the Bank under this section or section 1431(g) of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "long-term advance",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A long-term advance may only be made for the purposes of-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "member",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Each Federal Home Loan Bank is authorized to make secured advances to its members upon collateral sufficient, in the judgment of the Bank, to fully secure advances obtained from the Bank under this section or section 1431(g) of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "community financial institution",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "providing funds to any community financial institution for small businesses, small farms, small agri-businesses, and community development activities.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Advance collateral sufficiency is tied to advances obtained under this section 'or section 1431(g)' of Title 12, cross-referencing another provision of the Federal Home Loan Bank Act.",
+      "references": [
+        "12 U.S.C. 1431(g)"
+      ],
+      "citations": [
+        {
+          "quote": "to fully secure advances obtained from the Bank under this section or section 1431(g) of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Priority of FHLB security interests overrides other claimants' rights 'notwithstanding any other provision of law,' interacting with (and displacing) general receivership/conservatorship lien-priority law, subject to two stated exceptions.",
+      "references": [],
+      "citations": [
+        {
+          "quote": "Notwithstanding any other provision of law, any security interest granted to a Federal Home Loan Bank by any member of any Federal Home Loan Bank or any affiliate of any such member shall be entitled to priority over the claims and rights of any party (including any receiver, conservator, trustee, or similar party having rights of a lien creditor) other than claims and rights that-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Special liquidity advances under subsection (h) are triggered by a request from the Director of the Office of Thrift Supervision, an agency reference retained in the current statutory text.",
+      "references": [
+        "Office of Thrift Supervision"
+      ],
+      "citations": [
+        {
+          "quote": "the Federal Home Loan Banks may, upon the request of the Director of the Office of Thrift Supervision, make short-term liquidity advances to a savings association that-",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Scope limitation applied: this item (12 U.S.C. 1430) contains extensive material on the Affordable Housing Program, community investment cash advance programs, and public-use mortgage databases (subsecs. (g), (i), (j), (k)) that does not bear on discount-window/FHLB interoperability, stigma, or liquidity-reporting timing for fast-moving bank runs; that material was excluded as outside the ratified scope. Retained material (subsecs. (a)-(e), (h)) concerns FHLB collateral eligibility, advance mechanics, security-interest priority, and special liquidity advances, which are directly relevant to mapping FHLB collateral/operational rules against Federal Reserve discount-window rules. FIDELITY NOTES: (1) Text uses 'shall have power to' phrasing (subsecs. (b), (d)) which is permissive/authorizing in substance; extracted as modality 'may' per the text's own grant-of-power framing rather than harmonizing to 'must' -- flagged as an interpretive judgment, not a resolution of ambiguity. (2) Subsection (h)(1) still refers to the 'Director of the Office of Thrift Supervision,' an office abolished by the Dodd-Frank Act (2010); the statutory text as codified has not been updated and is extracted as written, preserving the inconsistency rather than modernizing it. (3) The statute's own footnote states no subsection (f) has been enacted -- lettering gap preserved as-is, not corrected. (4) Subsection (a)(2)'s 'may only be made for the purposes of' was extracted as modality 'conditional' (a restrictive permission) rather than forcing it into must/must_not, since the text's own phrasing is a conditioned permission, not a flat prohibition or command."
+}

@@ -1,0 +1,303 @@
+{
+  "item_id": "FINRA-RN-18-36",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Amend CAB Rule 331 to reflect FinCEN's adoption of the CDD Rule by incorporating the ongoing customer due diligence 'fifth pillar' into CAB AML programs and to conform the rule to the CDD Rule.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "FINRA has filed for immediate effectiveness amendments to Capital Acquisition Broker (CAB) Rule 331 (Anti-Money Laundering Compliance Program) to reflect the Financial Crimes Enforcement Network's (FinCEN) adoption of a final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule).1",
+          "verified": true
+        },
+        {
+          "quote": "the recently filed amendments to CAB Rule 331 incorporate into the rule this ongoing customer due diligence element, or \"fifth pillar\" required for AML programs to conform the rule to the CDD Rule and aid CABs in complying with its requirements.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "O1",
+      "actor": "each capital acquisition broker",
+      "modality": "must",
+      "action": "develop and implement a written anti-money laundering program reasonably designed to achieve and monitor its compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each capital acquisition broker shall develop and implement a written anti-money laundering program reasonably designed to achieve and monitor its compliance with the requirements of the Bank Secrecy Act (31 U.S.C. 5311, et seq.), and the implementing regulations promulgated thereunder by the Department of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O2",
+      "actor": "each capital acquisition broker's anti-money laundering program",
+      "modality": "must",
+      "action": "be approved, in writing, by a member of senior management",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each capital acquisition broker's anti-money laundering program must be approved, in writing, by a member of senior management.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O3",
+      "actor": "capital acquisition broker (via the AML program required by CAB Rule 331)",
+      "modality": "must",
+      "action": "Designate and identify to FINRA (by name, title, mailing address, e-mail address, telephone number, and facsimile number) an individual or individuals responsible for implementing and monitoring the day-to-day operations and internal controls of the program (such individual or individuals must be an associated person of the capital acquisition broker) and provide prompt notification to FINRA regarding any change in such designation(s)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate and identify to FINRA (by name, title, mailing address, e-mail address, telephone number, and facsimile number) an individual or individuals responsible for implementing and monitoring the day-to-day operations and internal controls of the program",
+          "verified": true
+        },
+        {
+          "quote": "(such individual or individuals must be an associated person of the capital acquisition broker) and provide prompt notification to FINRA regarding any change in such designation(s); [and]",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O4",
+      "actor": "capital acquisition broker (via the AML program required by CAB Rule 331)",
+      "modality": "must",
+      "action": "Provide ongoing training for appropriate personnel",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide ongoing training for appropriate personnel;[.] and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O5",
+      "actor": "capital acquisition broker (via the AML program required by CAB Rule 331)",
+      "modality": "must",
+      "action": "Include appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to: (i) Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and (ii) Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Include appropriate risk-based procedures for conducting ongoing customer due diligence, to include, but not be limited to:",
+          "verified": true
+        },
+        {
+          "quote": "(i) Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+          "verified": true
+        },
+        {
+          "quote": "(ii) Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information. For purposes of paragraph (f)(ii), customer information shall include information regarding the beneficial owners of legal entity customers (as defined in 31 CFR 1010.230(e)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "O6",
+      "actor": "CABs",
+      "modality": "must",
+      "action": "continue to comply with the requirements of CAB Rule 331 (FinCEN's CDD Rule does not change those requirements)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FinCEN's CDD Rule does not change the requirements of CAB Rule 331 and CABs must continue to comply with its requirements.12",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "capital acquisition broker (CAB)",
+      "definition": "member firms that engage in a limited range of activities, essentially advising companies and private equity funds on capital raising and corporate restructuring, and acting as placement agents for sales of unregistered securities to institutional investors under limited conditions; firms that meet the definition of a \"capital acquisition broker\" and that elect to be governed under this rule set",
+      "citations": [
+        {
+          "quote": "CABs are member firms that engage in a limited range of activities, essentially advising companies and private equity funds on capital raising and corporate restructuring, and acting as placement agents for sales of unregistered securities to institutional investors under limited conditions.",
+          "verified": true
+        },
+        {
+          "quote": "In 2016, FINRA adopted a separate set of FINRA rules for firms that meet the definition of a \"capital acquisition broker\" and that elect to be governed under this rule set.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "CDD Rule",
+      "definition": "FinCEN's final rule on Customer Due Diligence Requirements for Financial Institutions, issued May 11, 2016, to clarify and strengthen customer due diligence for covered financial institutions",
+      "citations": [
+        {
+          "quote": "FinCEN, the bureau of the Department of the Treasury responsible for administering the Bank Secrecy Act4 (BSA) and its implementing regulations, issued the CDD Rule5 to clarify and strengthen customer due diligence for covered financial institutions,6 including broker-dealers that have elected CAB status.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer due diligence (four components identified by FinCEN)",
+      "definition": "(1) customer identification and verification; (2) beneficial ownership identification and verification; (3) understanding the nature and purpose of customer relationships; and (4) ongoing monitoring for reporting suspicious transactions and, on a risk basis, maintaining and updating customer information",
+      "citations": [
+        {
+          "quote": "In its CDD Rule, FinCEN identifies four components of customer due diligence: (1) customer identification and verification; (2) beneficial ownership identification and verification; (3) understanding the nature and purpose of customer relationships; and (4) ongoing monitoring for reporting suspicious transactions and, on a risk basis, maintaining and updating customer information.7",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "fifth pillar",
+      "definition": "the ongoing customer due diligence obligations (the third and fourth CDD components) that the CDD Rule amends the existing AML program rules to explicitly require to be included in AML programs",
+      "citations": [
+        {
+          "quote": "by amending the existing AML program rules for covered financial institutions to explicitly require these components to be included in AML programs as a new \"fifth pillar.\"",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owner",
+      "definition": "(undefined here) \u2014 defined by cross-reference to 31 CFR 1010.230(d)",
+      "citations": [
+        {
+          "quote": "See 31 CFR 1010.230(d) (defining \"beneficial owner\") and 31 CFR 1010.230(e) (defining \"legal entity customer\").",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "legal entity customer",
+      "definition": "(undefined here) \u2014 defined by cross-reference to 31 CFR 1010.230(e); used in CAB Rule 331(f)(ii): \"customer information shall include information regarding the beneficial owners of legal entity customers (as defined in 31 CFR 1010.230(e))\"",
+      "citations": [
+        {
+          "quote": "customer information shall include information regarding the beneficial owners of legal entity customers (as defined in 31 CFR 1010.230(e)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "covered financial institution",
+      "definition": "(undefined here) \u2014 defined by cross-reference to 31 CFR 1010.230(f)",
+      "citations": [
+        {
+          "quote": "See 31 CFR 1010.230(f) (defining \"covered financial institution\").",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here) \u2014 31 U.S.C. 5311, et seq.; administered by FinCEN",
+      "citations": [
+        {
+          "quote": "FinCEN, the bureau of the Department of the Treasury responsible for administering the Bank Secrecy Act4 (BSA) and its implementing regulations",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer risk profile",
+      "definition": "(undefined here) \u2014 referenced as the purpose of understanding the nature and purpose of customer relationships",
+      "citations": [
+        {
+          "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "CAB Rule 331 was amended for the same reasons FINRA amended FINRA Rule 3310, to reflect FinCEN's adoption of the CDD Rule; the amendments incorporate the ongoing customer due diligence 'fifth pillar' to conform to the CDD Rule.",
+      "references": [
+        "FINRA Rule 3310",
+        "CAB Rule 331",
+        "CDD Rule"
+      ],
+      "citations": [
+        {
+          "quote": "For the same reasons that FINRA amended FINRA Rule 3310 to reflect FinCEN's adoption of the CDD Rule, FINRA has amended CAB Rule 331.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FinCEN is authorized to impose AML program requirements on financial institutions and to require them to maintain procedures to ensure compliance with the BSA and associated regulations, per 31 U.S.C. 5318(h)(2) and (a)(2).",
+      "references": [
+        "31 U.S.C. 5318(h)(2)",
+        "31 U.S.C. 5318(a)(2)"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN is authorized to impose AML program requirements on financial institutions and to require financial institutions to maintain procedures to ensure compliance with the BSA and associated regulations. 31 U.S.C. 5318(h)(2) and (a)(2).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The CDD Rule's ongoing CDD requirement for CABs is stated as codifying existing expectations under the BSA, not imposing new requirements; broker-dealers must continue to comply with FINRA rules notwithstanding differences between the CDD Rule and FINRA rules.",
+      "references": [
+        "CDD Rule",
+        "BSA",
+        "FINRA rules"
+      ],
+      "citations": [
+        {
+          "quote": "these provisions are not new and merely codify existing expectations for broker-dealers, including CABs, to adequately identify and report suspicious transactions as required under the BSA",
+          "verified": true
+        },
+        {
+          "quote": "In fact, FinCEN notes that broker-dealers must continue to comply with FINRA rules, notwithstanding differences between the CDD Rule and the FINRA rules. See CDD Rule Release at 29421, n. 85.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The ongoing customer due diligence requirement for CABs' AML programs derives from FinCEN's CDD Rule which amends the minimum regulatory requirements, with reference to 31 CFR \u00a71023.210 (the broker-dealer AML program rule).",
+      "references": [
+        "31 CFR \u00a71023.210",
+        "CDD Rule"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN's CDD Rule amends the minimum regulatory requirements for CABs' AML programs by explicitly requiring such programs to include risk-based procedures for conducting ongoing customer due diligence,13",
+          "verified": false
+        },
+        {
+          "quote": "See CDD Rule Release at 29420; 31 CFR \u00a71023.210.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Regulatory Notice 17-40 (Nov. 2017) provided guidance on FINRA Rule 3310 obligations in light of the CDD Rule, and Regulatory Notice 18-19 (May 3, 2018) announced amendments to FINRA Rule 3310.",
+      "references": [
+        "Regulatory Notice 17-40",
+        "Regulatory Notice 18-19",
+        "FINRA Rule 3310"
+      ],
+      "citations": [
+        {
+          "quote": "On November 21, 2017, FINRA published Regulatory Notice 17-40 to provide guidance to member firms regarding their obligations under FINRA Rule 3310 (Anti-Money Laundering Compliance Program) in light of the adoption of FinCEN's CDD Rule.9",
+          "verified": true
+        },
+        {
+          "quote": "On May 3, 2018, FINRA published Regulatory Notice 18-19, which announced its amendments to FINRA Rule 3310.11",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is FINRA SRO guidance (evidence role: sro_guidance) announcing an amendment; the operative obligations are found in the Attachment A amended text of CAB Rule 331. Paragraphs (a) through (c) of CAB Rule 331 are marked 'No change' and their full text is not reproduced in this source, so only the reproduced duties (d), (e), (f), the chapeau, and senior-management approval are extracted; (a)-(c) content is not available here. The source frames the fifth-pillar provisions as 'not new' merely codifying existing expectations, while simultaneously being 'a new requirement'/'new \"fifth pillar\"' \u2014 this tension is preserved as written. CAB status is elective; CAB Rule 331 applies only to member firms that elect the CAB rule set, which is preserved as the text's own framing. Modality: chapeau uses 'shall develop and implement' -> must, and 'must, at a minimum' governs the enumerated elements -> must for O3-O5."
+}

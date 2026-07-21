@@ -1,0 +1,681 @@
+General Information
+ 
+ 
+
+ 
+ 
+ The Discount Window
+
+ 
+ 
+
+ 
+ 
+ Discount Window Setup
+
+ 
+ 
+
+ 
+ 
+ Frequently Asked Questions
+
+ 
+ 
+
+
+ 
+ 
+ Primary and Secondary Credit Programs
+
+ 
+ 
+
+ 
+ 
+ Seasonal Credit Program
+
+ 
+ 
+
+ 
+ 
+ Historical Programs
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Guidelines
+ 
+ 
+
+ 
+ 
+ Operating Circular 1: Account Relationships (FRB Services)
+
+ 
+ 
+
+ 
+ 
+ Operating Circular 10: Lending (FRB Services)
+
+ 
+ 
+
+ 
+ 
+ The Federal Reserve Act (federalreserve.gov)
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Agreements
+ 
+ 
+
+ 
+ 
+ OC-10 Agreements
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Discount Rates
+ 
+ 
+
+ 
+ 
+ Discount Rates
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Collateral
+ 
+ 
+
+ 
+ 
+ Collateral Eligibility
+
+ 
+ 
+
+ 
+ 
+ Collateral Valuation
+
+ 
+ 
+
+ 
+ 
+ Pledging Collateral
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Payment System Risk
+ 
+ 
+
+ 
+ 
+ Payment System Risk
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Select Your District
+ 
+ 
+
+ 
+ 
+ Atlanta (6th District)
+
+ 
+ 
+
+ 
+ 
+ Boston (1st District)
+
+ 
+ 
+
+ 
+ 
+ Chicago (7th District)
+
+ 
+ 
+
+
+ 
+ 
+ Cleveland (4th District)
+
+ 
+ 
+
+ 
+ 
+ Dallas (11th District)
+
+ 
+ 
+
+ 
+ 
+ Kansas City (10th District)
+
+ 
+ 
+
+
+ 
+ 
+ Minneapolis (9th District)
+
+ 
+ 
+
+ 
+ 
+ New York (2nd District)
+
+ 
+ 
+
+ 
+ 
+ Philadelphia (3rd District)
+
+ 
+ 
+
+
+ 
+ 
+ Richmond (5th District)
+
+ 
+ 
+
+ 
+ 
+ San Francisco (12th District)
+
+ 
+ 
+
+ 
+ 
+ St. Louis (8th District)
+
+ 
+ 
+
+
+ 
+ 
+ Federal Reserve Board
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ General Information
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ The Discount Window
+
+ Discount Window Setup
+
+ Frequently Asked Questions
+
+ Primary and Secondary Credit Programs
+
+ Seasonal Credit Program
+
+ Historical Programs
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Guidelines
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ Operating Circular 1: Account Relationships (FRB Services)
+
+ Operating Circular 10: Lending (FRB Services)
+
+ The Federal Reserve Act (federalreserve.gov)
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Agreements
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ OC-10 Agreements
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Discount Rates
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ Discount Rates
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Collateral
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ Collateral Eligibility
+
+ Collateral Valuation
+
+ Pledging Collateral
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Payment System Risk
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ Payment System Risk
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Select Your District
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ Atlanta (6th District)
+
+ Boston (1st District)
+
+ Chicago (7th District)
+
+ Cleveland (4th District)
+
+ Dallas (11th District)
+
+ Kansas City (10th District)
+
+ Minneapolis (9th District)
+
+ New York (2nd District)
+
+ Philadelphia (3rd District)
+
+ Richmond (5th District)
+
+ San Francisco (12th District)
+
+ St. Louis (8th District)
+
+ Federal Reserve Board
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ General Information
+
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ The Discount Window
+
+
+ 
+
+Last Updated:12.01.2025
+
+  
+
+Introduction
+
+Federal Reserve Banks (Reserve Banks) extend credit to banks, credit unions and other depository institutions through ordinary lending programs, collectively referred to as the Discount Window. The Discount Window plays an important role in supporting the liquidity and stability of the banking system and the effective implementation of monetary policy. By providing ready access to funding, the Discount Window helps depository institutions manage their liquidity risks efficiently and avoid actions that have negative consequences for their customers, such as withdrawing credit during times of market stress. Thus, the Discount Window supports the smooth flow of credit to households and businesses. Providing liquidity in this way is one of the original purposes of the Federal Reserve System and other central banks around the world.
+
+On This Page
+
+ Types of Lending Programs
+
+ Interest Rates on Primary, Secondary, and Seasonal Credit
+
+ Eligibility to Borrow
+
+ Restrictions on Lending to Undercapitalized Depository Institutions
+
+ Arrangements for Borrowing
+
+ Pledging of Collateral
+
+ Emergency Credit
+
+Types of Lending Programs
+
+There are three regular discount window lending programs: primary credit, secondary credit, and seasonal credit, each with its own interest rate.
+
+ Primary credit is available to depository institutions in generally sound condition on a short-term basis and at a rate relative to the Federal Open Market Committee's target range of the federal funds rate. Because primary credit is the Federal Reserve's main discount window program, the Federal Reserve at times uses the term "discount rate" to refer to the primary credit rate.
+
+ Secondary credit may be available to depository institutions that are not eligible for primary credit. It is extended on a very short-term basis, typically overnight, at a rate that is above the primary credit rate. Secondary credit is available to meet backup liquidity needs when its use is consistent with a timely return to a reliance on market sources of funding or the orderly resolution of a troubled institution.
+
+ Seasonal credit may be available to depository institutions with deposits of $500 million or less that can demonstrate a clear pattern of recurring intra-yearly swings in funding needs. Advances accrue interest at a floating rate that is consistent with market rates.
+
+Discount window advances must be secured by collateral acceptable to the Reserve Bank.
+
+Additional information on discount window lending can be found in Section 10B of the Federal Reserve Act and also the Federal Reserve’s Regulation A.
+
+Interest Rates on Primary, Secondary, and Seasonal Credit
+
+The interest rates charged on primary, secondary and seasonal credit advances are established by the Federal Reserve System and uniformly adopted across all Reserve Banks. The current rates can be found on the Discount Rates page.
+
+Accrued interest on advances is due and payable to the lending Reserve Bank at maturity or when repayment of principal on the advance is requested. Interest will be charged at the applicable rate in effect at the time the advance is made. However, if the interest rate stated is changed while an advance is still outstanding, the new rate will apply on and after the effective date of the change.
+
+Interest accrues on the unpaid balance of advances until the maturity date, at which time the remaining principal and any accrued interest will be automatically charged to the depository institution's account or the designated correspondent's account.
+
+Interest on advances is charged for 24 hours (or a multiple thereof, for multi-day advances) on the basis of a 365-day year.
+
+Eligibility to Borrow
+
+Financial institutions that are considered “depository institutions” under Section 19(b)(1)(A) of the Federal Reserve Act, and that maintain reservable transaction accounts or nonpersonal time deposits (as defined in Regulation D) are eligible to participate in discount window lending programs. U.S. branches and agencies of foreign banks that hold reserves may also be eligible. Bankers' banks, corporate credit unions, and other financial institutions that are not required to maintain reserves under the Federal Reserve’s Regulation D may also be eligible for Discount Window access if they voluntarily agree to maintain reserves.
+
+Restrictions on Lending to Undercapitalized Depository Institutions
+
+Federal Reserve Banks have limitations on extending advances to depository institutions that have fallen below minimum capital standards or have received a poor supervisory rating from its federal supervisor. For more information on this topic, see "FDICIA and the Discount Window" on page 975 of the November 1994 issue of the Federal Reserve Bulletin.
+
+Pledging of Collateral
+
+All discount window advances must be collateralized to the satisfaction of the Reserve Bank. This usually means that the Reserve Bank has a first-priority security interest on pledged collateral. Reserve Banks accept pledges of securities and pledges of loans. Information on the types of assets that the Reserve Banks accept as collateral can be found on the Collateral Eligibility page. Pledged collateral is assigned a value by the Reserve Bank which helps determine how much the depository institution can borrow. Information on collateral valuation, including collateral margin tables, can be found on the Collateral Valuation page. The Pledging Collateral page explains how depository institutions pledge assets as collateral.
+
+Emergency Credit
+
+In unusual and exigent circumstances, the Board of Governors of the Federal Reserve System may authorize the Reserve Banks to provide credit to institutions that qualify under broad-based eligibility criteria. Such emergency credit programs must be approved by the Board of Governors, in consultation with the Secretary of the Treasury.
+
+
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ Select Your District
+ 
+ 
+ 
+ Atlanta (6th District)
+
+ 
+ 
+ Boston (1st District)
+
+ 
+ 
+ Chicago (7th District)
+
+ 
+ 
+ Cleveland (4th District)
+
+ 
+ 
+ Dallas (11th District)
+
+ 
+ 
+ Kansas City (10th District)
+
+ 
+ 
+ Minneapolis (9th District)
+
+ 
+ 
+ New York (2nd District)
+
+ 
+ 
+ Philadelphia (3rd District)
+
+ 
+ 
+ Richmond (5th District)
+
+ 
+ 
+ San Francisco (12th District)
+
+ 
+ 
+ St. Louis (8th District)
+
+ 
+ 
+ Federal Reserve Board
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+Discount RatesCollateralSelect Your DistrictFrequently Asked QuestionsPrivacy Policy | Legal NoticesContact Us

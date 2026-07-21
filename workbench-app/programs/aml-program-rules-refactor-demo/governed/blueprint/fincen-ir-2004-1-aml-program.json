@@ -1,0 +1,413 @@
+{
+  "item_id": "fincen-ir-2004-1-aml-program",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The Interpretive Release/Guidance clarifies that the MSB anti-money laundering program regulation requires MSBs to establish adequate and appropriate policies, procedures and controls commensurate with the risk of money laundering and terrorist financing posed by their relationships with foreign agents or foreign counterparties.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the anti-money laundering program regulation requires such Money Services Businesses to establish adequate and appropriate policies, procedures and controls commensurate with the risk of money laundering and the financing of terrorism posed by their relationship with foreign agents or foreign counterparties of the Money Services Business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Ensuring U.S.-based financial institutions establish and apply adequate and appropriate AML program policies, procedures, and controls to protect the international gateways to the U.S. financial system is an essential element of the BSA regulatory regime.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Ensuring that financial institutions based in the United States establish and apply adequate and appropriate policies, procedures, and controls in their anti-money laundering compliance programs to protect the international gateways to the U.S. financial system is an essential element of the Bank Secrecy Act regulatory regime.",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-01",
+      "actor": "Money Services Businesses required to register with FinCEN",
+      "modality": "must",
+      "action": "develop, implement, and maintain an effective anti-money laundering program reasonably designed to prevent the MSB from being used to facilitate money laundering and the financing of terrorist activities",
+      "trigger": "MSB status under 31 CFR 103.125(a)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Money Services Businesses are required to develop, implement, and maintain an effective anti-money laundering program reasonably designed to prevent the Money Services Business from being used to facilitate money laundering and the financing of terrorist activities.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-02",
+      "actor": "Money Services Business",
+      "modality": "must",
+      "action": "make the program commensurate with the risks posed by the location, size, nature, and volume of the financial services provided",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The program must be commensurate with the risks posed by the location, size, nature, and volume of the financial services provided by the Money Services Business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-03",
+      "actor": "Money Services Business",
+      "modality": "must",
+      "action": "incorporate policies, procedures, and controls reasonably designed to assure compliance with the Bank Secrecy Act and implementing regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the program must incorporate policies, procedures, and controls reasonably designed to assure compliance with the Bank Secrecy Act and implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-04",
+      "actor": "Money Services Business that utilizes foreign agents or counterparties",
+      "modality": "must",
+      "action": "include in its AML program risk-based policies, procedures, and controls designed to identify and minimize money laundering and terrorist financing risks associated with foreign agents and counterparties that facilitate the flow of funds into and out of the United States",
+      "trigger": "MSB utilizes foreign agents or foreign counterparties facilitating cross-border flow of funds",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "a Money Services Business\u2019 anti-money laundering program must include risk-based policies, procedures, and controls designed to identify and minimize money laundering and terrorist financing risks associated with foreign agents and counterparties that facilitate the flow of funds into and out of the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-05",
+      "actor": "Money Services Business",
+      "modality": "must",
+      "action": "aim the program at preventing its products and services from being used to facilitate money laundering or terrorist financing through foreign agent/counterparty relationships and at detecting such use",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The program must be aimed at preventing the products and services of the Money Services Business from being used to facilitate money laundering or terrorist financing through these relationships and detecting the use of these products and services for money laundering or terrorist financing by the Money Services Business or agent.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-06",
+      "actor": "Money Services Business",
+      "modality": "must",
+      "action": "conduct due diligence, at a minimum including reasonable procedures to identify the owners of its foreign agents and counterparties and to evaluate on an ongoing basis their operations and implementation of policies, procedures, and controls",
+      "trigger": "MSB has potential or existing foreign agents or counterparties",
+      "threshold": null,
+      "exceptions": [
+        "May allocate responsibility for the program to domestic agents under 31 CFR 103.125(d)(iii), which does not relieve the MSB of ultimate responsibility"
+      ],
+      "citations": [
+        {
+          "quote": "Such due diligence must, at a minimum, include reasonable procedures to identify the owners of the Money Services Business\u2019 foreign agents and counterparties, as well as to evaluate, on an ongoing basis, the operations of those foreign agents and counterparties and their implementation of policies, procedures, and controls reasonably designed to help assure that the Money Services Business\u2019 products and services are not subject to abuse by the foreign agent\u2019s or counterparty\u2019s customers, employees, or contractors.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-07",
+      "actor": "Money Services Business",
+      "modality": "should",
+      "action": "establish procedures for conducting reasonable, risk-based due diligence on potential and existing foreign agents and counterparties",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Money Services Businesses should establish procedures for conducting reasonable, risk-based due diligence on potential and existing foreign agents and counterparties to help ensure that such foreign agents and counterparties are not themselves complicit in illegal activity involving the Money Services Business\u2019 products and services",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-08",
+      "actor": "Money Services Business",
+      "modality": "should",
+      "action": "establish procedures for risk-based monitoring and review of transactions from, to, or through the United States that are conducted through foreign agents and counterparties",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Money Services Businesses should establish procedures for risk-based monitoring and review of transactions from, to, or through the United States that are conducted through foreign agents and counterparties.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-09",
+      "actor": "Money Services Business",
+      "modality": "should",
+      "action": "focus monitoring procedures on identifying material changes in the agent's risk profile, such as a change in ownership, business, or the regulatory scrutiny to which it is subject",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Such procedures should also focus on identifying material changes in the agent\u2019s risk profile, such as a change in ownership, business, or the regulatory scrutiny to which it is subject.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-10",
+      "actor": "Money Services Business",
+      "modality": "should",
+      "action": "establish procedures to assure foreign agents or counterparties are effectively implementing an anti-money laundering program and to discern obvious breakdowns in implementation",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Money Services Businesses should establish procedures to assure that their foreign agents or counterparties are effectively implementing an anti-money laundering program and to discern obvious breakdowns in the implementation of the program by the foreign agent or counterparty.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-11",
+      "actor": "money transmitters",
+      "modality": "should",
+      "action": "have procedures in place to review foreign agent or counterparty activity for signs of structuring or unnecessarily complex transmissions through multiple jurisdictions that may be indicative of layering, and to discern attempts to evade identification or other requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "money transmitters should have procedures in place to enable them to review foreign agent or counterparty activity for signs of structuring or unnecessarily complex transmissions through multiple jurisdictions that may be indicative of layering.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-12",
+      "actor": "Money Services Business",
+      "modality": "must",
+      "action": "scrutinize activity by agents or counterparties that appears aimed at evading the MSB's own controls, report as appropriate, and take corrective action as warranted",
+      "trigger": "activity by agents or counterparties appears aimed at evading MSB's own controls",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "this activity must be scrutinized, reported as appropriate, and corrective action taken as warranted.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-13",
+      "actor": "Money Services Business",
+      "modality": "should",
+      "action": "have procedures for responding to foreign agents or counterparties that present unreasonable risks of money laundering or the financing of terrorism, providing for corrective action or termination of the relationship",
+      "trigger": "foreign agent/counterparty poses unacceptable risk of ML/TF or has demonstrated systemic, willful, or repeated lapses in compliance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Such procedures should provide for the implementation of corrective action on the part of the foreign agent or counterparty or for the termination of the relationship with any foreign agent or counterparty that the Money Services Business determines poses an unacceptable risk of money laundering or terrorist financing, or that has demonstrated systemic, willful, or repeated lapses in compliance with the Money Services Business\u2019 own anti-money laundering procedures or requirements.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "fincen-ir-2004-1-ob-14",
+      "actor": "affected Money Services Businesses",
+      "modality": "must",
+      "action": "achieve full compliance with this Interpretive Release",
+      "trigger": null,
+      "threshold": "within 180 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "We will expect full compliance with this Interpretive Release within 180 days.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Money Services Business",
+      "definition": "Under existing Bank Secrecy Act regulations, defined to include five distinct types of financial services providers and the U.S. Postal Service: (1) Currency dealers or exchangers; (2) check cashers; (3) issuers of traveler\u2019s checks, money orders, or stored value; (4) sellers or redeemers of traveler\u2019s checks, money orders, or stored value; and (5) money transmitters.",
+      "citations": [
+        {
+          "quote": "we have defined Money Services Businesses to include five distinct types of financial services providers and the U.S. Postal Service: (1) Currency dealers or exchangers; (2) check cashers; (3) issuers of traveler\u2019s checks, money orders, or stored value; (4) sellers or redeemers of traveler\u2019s checks, money orders, or stored value; and (5) money transmitters.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "foreign agent or foreign counterparty",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the establishment of, and ongoing relationship between, a Money Services Business and its foreign agent or foreign counterparty that facilitates the flow of funds cross-border into and out of the United States on behalf of customers.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "anti-money laundering program",
+      "definition": "An effective program, reasonably designed to prevent the Money Services Business from being used to facilitate money laundering and the financing of terrorist activities, required under 31 CFR 103.125(a), commensurate with risks posed by location, size, nature, and volume of financial services provided, incorporating policies, procedures, and controls reasonably designed to assure compliance with the Bank Secrecy Act and implementing regulations.",
+      "citations": [
+        {
+          "quote": "Money Services Businesses are required to develop, implement, and maintain an effective anti-money laundering program reasonably designed to prevent the Money Services Business from being used to facilitate money laundering and the financing of terrorist activities.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "term": "hawala system",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Other Money Services Businesses may operate through more informal relationships, such as the trust-based hawala system.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "layering",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "unnecessarily complex transmissions through multiple jurisdictions that may be indicative of layering.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "This Interpretive Guidance is issued as an interpretation of, and forms Appendix C to, the MSB anti-money laundering program regulation at 31 CFR 103.125.",
+      "references": [
+        "31 CFR 103.125"
+      ],
+      "citations": [
+        {
+          "quote": "This Interpretive Guidance sets forth our interpretation of the regulation requiring Money Services Businesses that are required to register with FinCEN to establish and maintain anti-money laundering programs. See 31 CFR 103.125.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The underlying statutory basis is Section 5318(h) of the Bank Secrecy Act, codified in subchapter II of chapter 53 of title 31, which requires every financial institution to establish an anti-money laundering program.",
+      "references": [
+        "31 U.S.C. 5318(h)"
+      ],
+      "citations": [
+        {
+          "quote": "Section 5318(h) of the Bank Secrecy Act, which is codified in subchapter II of chapter 53 of title 31, United States Code, requires every financial institution to establish an anti-money laundering program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FinCEN issued interim final rules at 31 CFR 103.125 on April 29, 2002, concerning application of the AML program requirement to money services businesses.",
+      "references": [
+        "31 CFR 103.125",
+        "67 FR 21114"
+      ],
+      "citations": [
+        {
+          "quote": "On April 29, 2002, FinCEN issued interim final rules-31 CFR 103.125-concerning the application of the anti-money laundering program requirement to money services businesses. 67 FR 21114.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "MSB registration requirement referenced as limiting applicability of this guidance to MSB principals who establish agency/counterparty relationships.",
+      "references": [
+        "31 CFR 103.41"
+      ],
+      "citations": [
+        {
+          "quote": "Under existing FinCEN regulations, only Money Service Business principals are required to register with FinCEN, and only Money Service Business principals establish the counterparty or agency relationships. 31 CFR 103.41.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to other BSA regulatory controls applicable to MSBs: CTR filing, SAR filing, identity verification/recordkeeping for instrument purchases, transmittal of funds recordkeeping, and currency exchange recordkeeping.",
+      "references": [
+        "31 CFR 103.22",
+        "31 CFR 103.20",
+        "31 CFR 103.29",
+        "31 CFR 103.33(f)",
+        "31 CFR 103.37"
+      ],
+      "citations": [
+        {
+          "quote": "31 CFR 103.22 (requirement for Money Service Businesses to file currency transaction reports); 31 CFR 103.20 (requirement for Money Service Businesses, other than check cashers and issuers, sellers, or redeemers of stored value, to file suspicious activity reports)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Prior FinCEN interpretation imposing a similar domestic-agent obligation, referenced as precedent for this guidance.",
+      "references": [
+        "Matter of Western Union, No. 2003-2 (Mar. 6, 2003)"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN previously interpreted 31 CFR 103.125 to impose a similar obligation on a money transmitter with respect to its domestic agents. See Matter of Western Union, No. 2003\u20132 (Mar. 6, 2003) (www.fincen.gov).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Allocation of program responsibility to domestic agents permitted under 31 CFR 103.125(d)(iii), without relieving MSB of ultimate responsibility.",
+      "references": [
+        "31 CFR 103.125(d)(iii)"
+      ],
+      "citations": [
+        {
+          "quote": "Our anti-money laundering program rule, 31 CFR 103.125(d)(iii), permits Money Service Businesses to satisfy this last requirement with regard to their domestic agents",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Reference to FinCEN's Report to Congress Pursuant to Section 359 of the Patriot Act for analysis of informal value transfer systems.",
+      "references": [
+        "Section 359, USA PATRIOT Act"
+      ],
+      "citations": [
+        {
+          "quote": "For an analysis of informal value transfer systems, see FinCEN\u2019s Report to Congress Pursuant to Section 359 of the Patriot Act, available on www.fincen.gov.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Codification of this Interpretive Release as Appendix C to 31 CFR Part 103, issued under statutory authority citations.",
+      "references": [
+        "12 U.S.C. 1829b",
+        "12 U.S.C. 1951-1959",
+        "31 U.S.C. 5311-5314",
+        "31 U.S.C. 5316-5332",
+        "Pub. L. 107-56, secs. 312, 313, 314, 319, 326, 352",
+        "12 U.S.C. 1786(q)"
+      ],
+      "citations": [
+        {
+          "quote": "Authority: 12 U.S.C. 1829b and 1951\u20131959: 31 U.S.C 5311\u20135314 and 5316\u20135332; title III, secs. 312, 313, 314, 319, 326, 352, Pub. L. 107\u201356, 115 Stat. 307, 12 U.S.C. 1786(q).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This item is a FinCEN interpretive release (Appendix C to 31 CFR Part 103) rather than a standalone regulation; it interprets the pre-existing 31 CFR 103.125 AML program rule as applied specifically to MSB foreign agent/counterparty relationships. The text uses 'must' in the operative program-elements section but 'should' throughout the specific procedural recommendations (due diligence, monitoring, corrective action/termination), preserved here as written despite the apparent modality shift between mandatory program content and recommended implementing procedures. Citations to CFR provisions are given in the pre-recodification 31 CFR Part 103 numbering used by the source (later recodified in 31 CFR Chapter X); extracted as written per fidelity rule. SAR/CTR/CDD-specific operational rules cited in footnote 2 are boundary/coordination-layer cross-references only, not separately extracted as obligations per ratified scope."
+}

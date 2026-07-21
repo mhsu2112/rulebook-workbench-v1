@@ -1,0 +1,338 @@
+{
+  "item_id": "frbdw-discount-window",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The Discount Window plays an important role in supporting the liquidity and stability of the banking system and the effective implementation of monetary policy.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Discount Window plays an important role in supporting the liquidity and stability of the banking system and the effective implementation of monetary policy.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "By providing ready access to funding, the Discount Window helps depository institutions manage their liquidity risks efficiently and avoid actions that have negative consequences for their customers, such as withdrawing credit during times of market stress.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "By providing ready access to funding, the Discount Window helps depository institutions manage their liquidity risks efficiently and avoid actions that have negative consequences for their customers, such as withdrawing credit during times of market stress.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Thus, the Discount Window supports the smooth flow of credit to households and businesses.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Thus, the Discount Window supports the smooth flow of credit to households and businesses.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "Depository institution (borrower)",
+      "modality": "must",
+      "action": "secure/collateralize discount window advances to the satisfaction of the Reserve Bank",
+      "trigger": "receipt of a discount window advance",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Discount window advances must be secured by collateral acceptable to the Reserve Bank.",
+          "verified": true
+        },
+        {
+          "quote": "All discount window advances must be collateralized to the satisfaction of the Reserve Bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "Board of Governors of the Federal Reserve System / Reserve Banks",
+      "modality": "must",
+      "action": "obtain Board of Governors approval, in consultation with the Secretary of the Treasury, for emergency credit programs",
+      "trigger": "unusual and exigent circumstances",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Such emergency credit programs must be approved by the Board of Governors, in consultation with the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Board of Governors of the Federal Reserve System",
+      "modality": "may",
+      "action": "authorize the Reserve Banks to provide credit to institutions that qualify under broad-based eligibility criteria",
+      "trigger": "In unusual and exigent circumstances",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In unusual and exigent circumstances, the Board of Governors of the Federal Reserve System may authorize the Reserve Banks to provide credit to institutions that qualify under broad-based eligibility criteria.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "Federal Reserve Banks",
+      "modality": "conditional",
+      "action": "limit extending advances to depository institutions",
+      "trigger": "depository institution has fallen below minimum capital standards or received a poor supervisory rating from its federal supervisor",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Federal Reserve Banks have limitations on extending advances to depository institutions that have fallen below minimum capital standards or have received a poor supervisory rating from its federal supervisor.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "Depository institution (borrower)",
+      "modality": "must",
+      "action": "pay accrued interest on advances to the lending Reserve Bank",
+      "trigger": "at maturity or when repayment of principal on the advance is requested",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Accrued interest on advances is due and payable to the lending Reserve Bank at maturity or when repayment of principal on the advance is requested.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "Reserve Bank (as lender of secondary credit)",
+      "modality": "conditional",
+      "action": "extend secondary credit to meet backup liquidity needs",
+      "trigger": "use is consistent with a timely return to a reliance on market sources of funding or the orderly resolution of a troubled institution",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Secondary credit is available to meet backup liquidity needs when its use is consistent with a timely return to a reliance on market sources of funding or the orderly resolution of a troubled institution.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "Depository institution seeking seasonal credit",
+      "modality": "conditional",
+      "action": "qualify for seasonal credit availability",
+      "trigger": "can demonstrate a clear pattern of recurring intra-yearly swings in funding needs",
+      "threshold": "deposits of $500 million or less",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Seasonal credit may be available to depository institutions with deposits of $500 million or less that can demonstrate a clear pattern of recurring intra-yearly swings in funding needs.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Discount Window",
+      "definition": "Federal Reserve Banks (Reserve Banks) extend credit to banks, credit unions and other depository institutions through ordinary lending programs, collectively referred to as the Discount Window.",
+      "citations": [
+        {
+          "quote": "Federal Reserve Banks (Reserve Banks) extend credit to banks, credit unions and other depository institutions through ordinary lending programs, collectively referred to as the Discount Window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Primary credit",
+      "definition": "Available to depository institutions in generally sound condition on a short-term basis and at a rate relative to the Federal Open Market Committee's target range of the federal funds rate.",
+      "citations": [
+        {
+          "quote": "Primary credit is available to depository institutions in generally sound condition on a short-term basis and at a rate relative to the Federal Open Market Committee's target range of the federal funds rate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Secondary credit",
+      "definition": "May be available to depository institutions that are not eligible for primary credit; extended on a very short-term basis, typically overnight, at a rate above the primary credit rate.",
+      "citations": [
+        {
+          "quote": "Secondary credit may be available to depository institutions that are not eligible for primary credit. It is extended on a very short-term basis, typically overnight, at a rate that is above the primary credit rate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Seasonal credit",
+      "definition": "May be available to depository institutions with deposits of $500 million or less that can demonstrate a clear pattern of recurring intra-yearly swings in funding needs; advances accrue interest at a floating rate consistent with market rates.",
+      "citations": [
+        {
+          "quote": "Seasonal credit may be available to depository institutions with deposits of $500 million or less that can demonstrate a clear pattern of recurring intra-yearly swings in funding needs.",
+          "verified": true
+        },
+        {
+          "quote": "Advances accrue interest at a floating rate that is consistent with market rates.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "depository institution (eligibility)",
+      "definition": "Financial institutions that are considered \u201cdepository institutions\u201d under Section 19(b)(1)(A) of the Federal Reserve Act, and that maintain reservable transaction accounts or nonpersonal time deposits (as defined in Regulation D) are eligible to participate in discount window lending programs.",
+      "citations": [
+        {
+          "quote": "Financial institutions that are considered \u201cdepository institutions\u201d under Section 19(b)(1)(A) of the Federal Reserve Act, and that maintain reservable transaction accounts or nonpersonal time deposits (as defined in Regulation D) are eligible to participate in discount window lending programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "collateral (pledged, first-priority)",
+      "definition": "(undefined here) \u2014 text states only that collateralization 'usually means that the Reserve Bank has a first-priority security interest on pledged collateral,' without a formal definition of 'collateral' itself.",
+      "citations": [
+        {
+          "quote": "This usually means that the Reserve Bank has a first-priority security interest on pledged collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Emergency Credit",
+      "definition": "Credit the Board of Governors may authorize Reserve Banks to provide, in unusual and exigent circumstances, to institutions that qualify under broad-based eligibility criteria; such programs must be approved by the Board of Governors in consultation with the Secretary of the Treasury.",
+      "citations": [
+        {
+          "quote": "In unusual and exigent circumstances, the Board of Governors of the Federal Reserve System may authorize the Reserve Banks to provide credit to institutions that qualify under broad-based eligibility criteria.",
+          "verified": true
+        },
+        {
+          "quote": "Such emergency credit programs must be approved by the Board of Governors, in consultation with the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Reserve Banks",
+      "definition": "(undefined here beyond) Federal Reserve Banks, referred to collectively as Reserve Banks, that extend Discount Window credit.",
+      "citations": [
+        {
+          "quote": "Federal Reserve Banks (Reserve Banks) extend credit to banks, credit unions and other depository institutions through ordinary lending programs, collectively referred to as the Discount Window.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Cross-reference to statutory and regulatory basis for discount window lending.",
+      "references": [
+        "Section 10B of the Federal Reserve Act",
+        "Regulation A"
+      ],
+      "citations": [
+        {
+          "quote": "Additional information on discount window lending can be found in Section 10B of the Federal Reserve Act and also the Federal Reserve\u2019s Regulation A.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to historical guidance on FDICIA's interaction with discount window lending restrictions on undercapitalized institutions.",
+      "references": [
+        "FDICIA and the Discount Window, Federal Reserve Bulletin, November 1994, page 975"
+      ],
+      "citations": [
+        {
+          "quote": "For more information on this topic, see \"FDICIA and the Discount Window\" on page 975 of the November 1994 issue of the Federal Reserve Bulletin.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to Collateral Eligibility page for types of assets Reserve Banks accept as collateral.",
+      "references": [
+        "Collateral Eligibility page"
+      ],
+      "citations": [
+        {
+          "quote": "Information on the types of assets that the Reserve Banks accept as collateral can be found on the Collateral Eligibility page.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to Collateral Valuation page, including collateral margin tables, for how pledged collateral is valued.",
+      "references": [
+        "Collateral Valuation page"
+      ],
+      "citations": [
+        {
+          "quote": "Information on collateral valuation, including collateral margin tables, can be found on the Collateral Valuation page.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to Pledging Collateral page explaining the pledging process.",
+      "references": [
+        "Pledging Collateral page"
+      ],
+      "citations": [
+        {
+          "quote": "The Pledging Collateral page explains how depository institutions pledge assets as collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Eligibility to borrow is defined by reference to the Federal Reserve Act and Regulation D's treatment of reservable transaction accounts and nonpersonal time deposits.",
+      "references": [
+        "Section 19(b)(1)(A) of the Federal Reserve Act",
+        "Regulation D"
+      ],
+      "citations": [
+        {
+          "quote": "Financial institutions that are considered \u201cdepository institutions\u201d under Section 19(b)(1)(A) of the Federal Reserve Act, and that maintain reservable transaction accounts or nonpersonal time deposits (as defined in Regulation D) are eligible to participate in discount window lending programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Navigation-level cross-reference to lending guideline instrument governing Discount Window operations.",
+      "references": [
+        "Operating Circular 10: Lending (FRB Services)"
+      ],
+      "citations": [
+        {
+          "quote": "Operating Circular 10: Lending (FRB Services)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Navigation-level cross-reference to account relationship guideline instrument.",
+      "references": [
+        "Operating Circular 1: Account Relationships (FRB Services)"
+      ],
+      "citations": [
+        {
+          "quote": "Operating Circular 1: Account Relationships (FRB Services)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is an operational specification of the Fed's own Discount Window (primary/secondary/seasonal credit, collateral, eligibility, emergency credit) and does not itself mention FHLB rules, discount-window stigma, or Call Report/FR 2052a reporting timing/granularity; it is extracted here solely as the Federal Reserve-side operational baseline evidence against which fragmentation/interoperability with FHLB rules, stigma sources, and reporting-timing defects (to be identified from other corpus items) would later be mapped. Per fidelity rule, wording such as 'may be available,' 'have limitations on,' and 'is due and payable' is preserved as-is even though modality is not always phrased as clear shall/must language; classification into must/conditional above reflects best-fit mapping of the text's own phrasing, not harmonization of substance. No content on Acting Comptroller Hsu, Undersecretary McKernan, or reform proposals appears in this source."
+}

@@ -1,0 +1,218 @@
+{
+  "item_id": "mckernan-reset-liquidity",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The conversation, post-March 2023, is about reducing discount window stigma, incentivizing collateral prepositioning, and normalizing routine testing of central bank facilities.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Now, the conversation is about reducing discount window stigma, incentivizing collateral prepositioning, and normalizing routine testing of central bank facilities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Proposal that the liquidity coverage ratio requirements and other liquidity rules should give appropriate capped recognition of borrowing capacity associated with collateral prepositioned at the discount window.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the liquidity coverage ratio requirements and other liquidity rules5 should give appropriate capped recognition of borrowing capacity associated with collateral prepositioned at the discount window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Objective to align liquidity regulation with the appropriate role of the lender of last resort.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "What this would do is align liquidity regulation with the appropriate role of the lender of last resort.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Diagnosis that requiring banks to exhaust regulatory buffers before accessing the discount window has entrenched discount window stigma, because going to the window only when things are really bad signals that things are really bad.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "by driving banks to exhaust regulatory buffers before accessing the discount window, we have entrenched discount window stigma.",
+          "verified": true
+        },
+        {
+          "quote": "If you only go to the window when things are really bad, then going to the window signals that things are really bad.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Diagnosis that both regulators and markets have treated liquidity buffers as untouchable hard minimums despite the buffers' architects intending useability, causing buffers to exacerbate hoarding and accelerate transmission of liquidity stress.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "But in practice, both regulators and markets have treated the buffers as untouchable hard minimums. As a result, instead of acting as shock absorbers, buffer requirements can actually exacerbate the hoarding of liquid assets, accelerating the transmission of liquidity stress throughout the system.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "liquidity regulation",
+      "definition": "Liquidity regulation includes the liquidity coverage ratio requirement, the net stable funding ratio requirement, internal liquidity stress tests conducted pursuant to rule, the resolution liquidity adequacy and positioning requirement, and the resolution liquidity execution need requirement, as well as the related supervisory expectations with respect to liquidity risk management.",
+      "citations": [
+        {
+          "quote": "Liquidity regulation includes the liquidity coverage ratio requirement, the net stable funding ratio requirement, internal liquidity stress tests conducted pursuant to rule, the resolution liquidity adequacy and positioning requirement, and the resolution liquidity execution need requirement, as well as the related supervisory expectations with respect to liquidity risk management.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount window stigma",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "almost everyone now agrees that operational readiness and discount window stigma need a better solution.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "collateral prepositioning",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "incentivizing collateral prepositioning, and normalizing routine testing of central bank facilities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "lender of last resort (LOLR)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "reflect[s] a desire to reduce dependence on the central bank as a lender of last resort (LOLR)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "recognized borrowing capacity (proposed cap)",
+      "definition": "(undefined here) \u2014 described only as capped recognition, within liquidity rules, of borrowing capacity associated with collateral prepositioned at the discount window, potentially sized per bank as the lesser of an overall ceiling and a multiple of the bank's discount window borrowing over a specified period.",
+      "citations": [
+        {
+          "quote": "recognized borrowing capacity could be capped at the lesser of the overall ceiling and some multiple of the bank's discount window borrowing over a specified period of time.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Remarks delivered at a roundtable on bank liquidity and the lender of last resort convened by Hal Scott.",
+      "references": [
+        "Hal Scott roundtable on bank liquidity and the lender of last resort"
+      ],
+      "citations": [
+        {
+          "quote": "Let me begin by thanking Hal Scott for convening this roundtable on bank liquidity and the lender of last resort.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Proposed reform (horizon item, not operative): the LCR and other liquidity rules should give appropriate capped recognition of discount-window-prepositioned collateral borrowing capacity, intended to rebalance self-insurance vs. lender-of-last-resort risk-bearing, enhance operational preparedness, and reduce discount window stigma by normalizing access.",
+      "references": [
+        "liquidity coverage ratio requirement",
+        "other liquidity rules (footnote 5: internal liquidity stress tests, resolution-related liquidity requirements)"
+      ],
+      "citations": [
+        {
+          "quote": "This reform would help rebalance the boundary between self-insurance and the lender of last resort. It also would enhance operational preparedness by creating strong incentives for prepositioning collateral and regular testing. And it could reduce discount window stigma by normalizing access.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Proposed calibration mechanism (horizon item): sizing the recognized borrowing-capacity cap per bank based on the bank's demonstrated discount window usage, as the lesser of an overall ceiling and a multiple of borrowing over a specified period.",
+      "references": [],
+      "citations": [
+        {
+          "quote": "In designing and calibrating the cap, regulators could explore whether it should be sized for each bank based on the bank's demonstrated usage of the discount window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Proposed stress-period adjustment mechanism (horizon item): regulators could explore adjusting the recognition cap during severe stress to enhance buffer useability and create automatic structural stabilizers involving early, limited discount-window use.",
+      "references": [],
+      "citations": [
+        {
+          "quote": "Regulators could also explore a mechanism to adjust the cap during severe stress.",
+          "verified": true
+        },
+        {
+          "quote": "Increasing the cap during stress also could interact with incentives for ongoing, limited use to create automatic structural stabilizers that involve the discount window early on when stress is incipient.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to then-Governor Tarullo's 2014 remarks recognizing the absence of a settled conceptual framework for calibrating liquidity self-insurance requirements.",
+      "references": [
+        "Daniel K. Tarullo, Liquidity Regulation, Remarks at The Clearing House 2014 Annual Conference (Nov. 20, 2014)"
+      ],
+      "citations": [
+        {
+          "quote": "In November 2014, then-Governor Tarullo said, \u201cLiquidity regulation is still a relatively new undertaking . . . . There is still need for conceptual work on such questions as how to specify the extent to which banks should be required to self-insure against liquidity risk . . . .\u201d",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to then-Governor Stein's 2013 remarks on the moral-hazard rationale for liquidity regulation reducing dependence on the central bank as lender of last resort, and his openness to counting some committed LOLR capacity in the LCR if accompanied by an upfront fee.",
+      "references": [
+        "Jeremy C. Stein, Liquidity Regulation and Central Banking, Remarks at 2013 Credit Markets Symposium, Federal Reserve Bank of Richmond (Apr. 19, 2013)"
+      ],
+      "citations": [
+        {
+          "quote": "the use of an LOLR to support banks when they get into trouble can lead to moral hazard problems.",
+          "verified": true
+        },
+        {
+          "quote": "Governor Stein did however express an openness to counting some committed LOLR capacity in the liquidity coverage ratio requirement, but only to the extent it had an upfront fee.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference (footnote 4) to the Group of Governors and Heads of Supervision's stated view that banks should use HQLA during stress even if it means falling below the minimum, and the observed reluctance to do so for fear of signaling weakness.",
+      "references": [
+        "Group of Governors and Heads of Supervision"
+      ],
+      "citations": [
+        {
+          "quote": "The [Group of Governors and Heads of Supervision] has also made clear its view that, during periods of stress, it would be appropriate for banks to use their [high-quality liquid assets], thereby falling below the minimum.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference (footnote 5) noting other liquidity regulations regulators could consider adjusting alongside the LCR, including internal liquidity stress tests and resolution-related liquidity requirements.",
+      "references": [
+        "internal liquidity stress tests",
+        "resolution-related liquidity requirements"
+      ],
+      "citations": [
+        {
+          "quote": "The regulators could consider adjustments to other liquidity regulations, including the internal liquidity stress tests and the resolution-related liquidity requirements.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Per the ceiling note, this source is a proposal/horizon item (Under Secretary McKernan's remarks, as prepared by Secretary Bessent) and never anchors a current-law claim; accordingly no operative obligations were extracted (obligations array is empty) and all substantive content is captured as stated objectives and interactions describing proposed reforms. This item does not address FHLB collateral/operational rules, FHLB-discount-window interoperability, or the timing/granularity of Call Report, FR 2052a, or related liquidity-reporting instruments \u2014 those elements of the ratified scope, if present, must be sourced from other corpus items. Acting Comptroller Hsu is not mentioned anywhere in this source text, notwithstanding the program's ratified scope referencing Hsu's proposals generally. The text's own hedged, exploratory language ('could explore,' 'should give appropriate capped recognition') is preserved as-is per the fidelity rule rather than restated as firm commitments."
+}

@@ -1,0 +1,746 @@
+{
+  "slice_id": "aml-program-rules-slice",
+  "built": "2026-07-18",
+  "source_note": "Curated from statute-distill_lex-allium/bsa-aml-corpus/censuses (census_statutes_regs, census_fincen, census_fba_ffiec, census_sro_enforcement; census as_of 2026-07). Scope: ratified PS ps-aml-prog-001 v0.2 \u2014 AML/CFT program-establishment obligations, banks + MSBs + broker-dealers incl. FINRA SRO layer. Snapshot policy DL-002 (2026-07-18; pending = horizon). Completeness classes: statutes/regulations = census; guidance/manual/SRO = curated_set; enforcement = official_index_census (index-level).",
+  "scope_contract_version": "PS-0.2/DL-002 (Scope Contract doc pending)",
+  "gaps": [
+    {
+      "gap_id": "GAP-1",
+      "description": "DOJ criminal prosecutions family excluded: law-enforcement layer, weak program-rule linkage; revisit if an LE consumer is added.",
+      "owner": "Scope Owner"
+    },
+    {
+      "gap_id": "GAP-2",
+      "description": "CIP guidance items excluded: Customer Identification Program is a distinct obligation family (coordination layer per scope sentence).",
+      "owner": "Scope Owner"
+    },
+    {
+      "gap_id": "GAP-3",
+      "description": "Insurance/casino/precious-metals program guidance excluded: sectors are named boundaries per ratified PS 0.2 (A12).",
+      "owner": "Scope Owner"
+    },
+    {
+      "gap_id": "GAP-4",
+      "description": "Second census (C-ADV2) not yet run over this slice \u2014 presumptively mandatory (PS OI-4); runs as the second_census task before Phase 2.",
+      "owner": "Distillation Lead"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "31-usc-5311",
+      "title": "Declaration of purpose (BSA)",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "31 U.S.C. 5311",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "law_enforcement",
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5311",
+      "note": "BSA declaration of purpose \u2014 objectives anchor"
+    },
+    {
+      "item_id": "31-usc-5312",
+      "title": "Definitions and application",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "31 U.S.C. 5312",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5312",
+      "note": "Definitions/application \u2014 general part"
+    },
+    {
+      "item_id": "31-usc-5318",
+      "title": "Compliance, exemptions, and summons authority",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "31 U.S.C. 5318",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "law_enforcement",
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5318",
+      "note": "Incl. 5318(h): the AML/CFT program mandate \u2014 the slice's statutory core"
+    },
+    {
+      "item_id": "31-usc-5334",
+      "title": "Training regarding anti-money laundering",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "31 U.S.C. 5334",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator"
+        ]
+      },
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5334",
+      "note": "Training regarding AML (AMLA) \u2014 program pillar at statutory level"
+    },
+    {
+      "item_id": "amla-2020-uncodified",
+      "title": "AMLA 2020 provisions not codified in 31 U.S.C. main text",
+      "issuer": "Congress",
+      "family": "statute",
+      "status": "live",
+      "locator": "AML Act of 2020, Div. F, P.L. 116-283 (uncodified/note provisions)",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.congress.gov/bill/116th-congress/house-bill/6395",
+      "note": "AMLA note provisions incl. sec. 6101 program reforms and 6101(b) priorities duty"
+    },
+    {
+      "item_id": "31-cfr-1010",
+      "title": "General Provisions (all BSA financial institutions)",
+      "issuer": "FinCEN",
+      "family": "regulation_fincen",
+      "status": "live",
+      "locator": "31 CFR Part 1010",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "law_enforcement",
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010",
+      "note": "General provisions backbone incl. 1010.210 program general rule"
+    },
+    {
+      "item_id": "31-cfr-1020",
+      "title": "Rules for Banks",
+      "issuer": "FinCEN",
+      "family": "regulation_fincen",
+      "status": "live",
+      "locator": "31 CFR Part 1020",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020",
+      "note": "Banks \u2014 incl. 1020.210 AML program requirements"
+    },
+    {
+      "item_id": "31-cfr-1022",
+      "title": "Rules for Money Services Businesses",
+      "issuer": "FinCEN",
+      "family": "regulation_fincen",
+      "status": "live",
+      "locator": "31 CFR Part 1022",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "law_enforcement",
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1022",
+      "note": "MSBs \u2014 incl. 1022.210 AML program requirements"
+    },
+    {
+      "item_id": "31-cfr-1023",
+      "title": "Rules for Brokers or Dealers in Securities",
+      "issuer": "FinCEN",
+      "family": "regulation_fincen",
+      "status": "live",
+      "locator": "31 CFR Part 1023",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1023",
+      "note": "Broker-dealers \u2014 incl. 1023.210 AML program requirements"
+    },
+    {
+      "item_id": "31-cfr-1010-230-cdd",
+      "title": "Customer Due Diligence (CDD) Rule - beneficial ownership of legal entity customers",
+      "issuer": "FinCEN",
+      "family": "regulation_fincen",
+      "status": "live",
+      "locator": "31 CFR 1010.230",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-31/section-1010.230",
+      "note": "COORDINATION LAYER per scope: CDD as the program's fifth pillar cross-reference \u2014 cited, not distilled"
+    },
+    {
+      "item_id": "12-cfr-21-occ",
+      "title": "OCC SAR rule (21.11) and BSA compliance program rule (21.21)",
+      "issuer": "OCC",
+      "family": "regulation_fba",
+      "status": "live",
+      "locator": "12 CFR 21.11 and 21.21",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-12/part-21",
+      "note": "Combined census entry (SAR + program rule); program provisions in scope, SAR = coordination layer"
+    },
+    {
+      "item_id": "12-cfr-208-fed",
+      "title": "Federal Reserve SAR and BSA compliance program rules",
+      "issuer": "Federal Reserve Board",
+      "family": "regulation_fba",
+      "status": "live",
+      "locator": "12 CFR 208.62, 208.63, 211.5(k), 211.24(j)",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-12/part-208",
+      "note": "Combined census entry (SAR + program rule); program provisions in scope, SAR = coordination layer"
+    },
+    {
+      "item_id": "12-cfr-326-353-fdic",
+      "title": "FDIC BSA compliance program rule (326.8) and SAR rule (Part 353)",
+      "issuer": "FDIC",
+      "family": "regulation_fba",
+      "status": "live",
+      "locator": "12 CFR 326.8 and 12 CFR Part 353",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-12/part-353",
+      "note": "Combined census entry (SAR + program rule); program provisions in scope, SAR = coordination layer"
+    },
+    {
+      "item_id": "12-cfr-748-ncua",
+      "title": "NCUA BSA compliance and SAR rules",
+      "issuer": "NCUA",
+      "family": "regulation_fba",
+      "status": "live",
+      "locator": "12 CFR 748.1(c), 748.2, Part 748 App. B",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.ecfr.gov/current/title-12/part-748",
+      "note": "Combined census entry (SAR + program rule); program provisions in scope, SAR = coordination layer"
+    },
+    {
+      "item_id": "fincen-program-nprm-2026",
+      "title": "Anti-Money Laundering and Countering the Financing of Terrorism Programs (program-rule modernization NPRM)",
+      "issuer": "FinCEN",
+      "family": "horizon_rulemaking",
+      "status": "horizon",
+      "locator": "91 FR (April 10, 2026), FR Doc. 2026-07033, RIN 1506-AB60",
+      "evidence_role": "horizon",
+      "applicability": {
+        "sectors": [
+          "regulator",
+          "regulated_institution"
+        ]
+      },
+      "url": "https://www.federalregister.gov/documents/2026/04/10/2026-07033/anti-money-laundering-and-countering-the-financing-of-terrorism-programs",
+      "note": "AMLA program-rule modernization NPRM \u2014 HORIZON per DL-002: never anchors a current-law claim"
+    },
+    {
+      "item_id": "ffiec-man-ra",
+      "title": "BSA/AML Risk Assessment",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "BSAAMLRiskAssessment/01",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "credit_unions",
+          "examiners"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/BSAAMLRiskAssessment/01",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "ffiec-man-cp-01",
+      "title": "Assessing the BSA/AML Compliance Program",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "AssessingTheBSAAMLComplianceProgram/01",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "credit_unions",
+          "examiners"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/01",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "ffiec-man-cp-02",
+      "title": "BSA/AML Internal Controls",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "AssessingTheBSAAMLComplianceProgram/02",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "credit_unions",
+          "examiners"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/02",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "ffiec-man-cp-03",
+      "title": "BSA/AML Independent Testing",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "AssessingTheBSAAMLComplianceProgram/03",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "credit_unions",
+          "examiners",
+          "auditors"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/03",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "ffiec-man-cp-04",
+      "title": "BSA Compliance Officer",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "AssessingTheBSAAMLComplianceProgram/04",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "credit_unions",
+          "examiners"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/04",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "ffiec-man-cp-05",
+      "title": "BSA/AML Training",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "AssessingTheBSAAMLComplianceProgram/05",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "credit_unions",
+          "examiners"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/05",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "ffiec-man-ps-01",
+      "title": "BSA/AML Compliance Program Structures",
+      "issuer": "FFIEC",
+      "family": "exam_manual",
+      "status": "live",
+      "locator": "ProgramStructures/01",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "examiners"
+        ]
+      },
+      "url": "https://bsaaml.ffiec.gov/manual/ProgramStructures/01",
+      "note": "FFIEC BSA/AML manual \u2014 examiner expectations for the program pillars"
+    },
+    {
+      "item_id": "frb-sr-24-4",
+      "title": "Interagency Statement on the Issuance of the AML/CFT Program Notices of Proposed Rulemaking",
+      "issuer": "Federal Reserve",
+      "family": "guidance_fba",
+      "status": "live",
+      "locator": "SR 24-4",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "state_member_banks"
+        ]
+      },
+      "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2404.htm",
+      "note": "Interagency statement on AML/CFT program NPRM issuance (horizon-linked, itself live)"
+    },
+    {
+      "item_id": "occ-b-2024-19",
+      "title": "AML/CFT Program Requirements: Notice of Proposed Rulemaking",
+      "issuer": "OCC",
+      "family": "guidance_fba",
+      "status": "horizon",
+      "locator": "OCC 2024-19",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "national_banks",
+          "fsas"
+        ]
+      },
+      "url": "https://www.occ.gov/news-issuances/bulletins/2024/bulletin-2024-19.html",
+      "note": "OCC bulletin announcing program-rule NPRM (horizon-linked)"
+    },
+    {
+      "item_id": "occ-b-2026-11",
+      "title": "AML/CFT Program Requirements: Notice of Proposed Rulemaking",
+      "issuer": "OCC",
+      "family": "guidance_fba",
+      "status": "horizon",
+      "locator": "OCC 2026-11",
+      "evidence_role": "supervisory_guidance",
+      "applicability": {
+        "sectors": [
+          "national_banks",
+          "fsas"
+        ]
+      },
+      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-11.html",
+      "note": "OCC bulletin announcing program-rule NPRM (horizon-linked)"
+    },
+    {
+      "item_id": "fincen-guid-existing-program-rule-obligations",
+      "title": "Guidance on Existing AML Program Rule Compliance Obligations for MSB Principals with Respect to Agent Monitoring",
+      "issuer": "FinCEN",
+      "family": "guidance_fincen",
+      "status": "live",
+      "locator": "https://www.fincen.gov/resources/statutes-regulations/guidance/guidance-existing-aml-program-rule-compliance-obligations",
+      "evidence_role": "agency_guidance",
+      "applicability": {
+        "sectors": [
+          "money services businesses",
+          "depository institutions"
+        ]
+      },
+      "url": "https://www.fincen.gov/resources/statutes-regulations/guidance/guidance-existing-aml-program-rule-compliance-obligations",
+      "note": "Existing AML program rule compliance obligations (MSBs/prepaid; touches DIs)"
+    },
+    {
+      "item_id": "fincen-ir-2004-1-aml-program",
+      "title": "Guidance - (Interpretive Release 2004-1) Anti-Money Laundering Program - Requirements for Money Services Businesses With Respect to Foreign Agents or Foreign Counterparties",
+      "issuer": "FinCEN",
+      "family": "guidance_fincen",
+      "status": "live",
+      "locator": "https://www.fincen.gov/resources/statutes-regulations/guidance/guidance-interpretive-release-2004-1-anti-money-laundering",
+      "evidence_role": "agency_guidance",
+      "applicability": {
+        "sectors": [
+          "money services businesses",
+          "depository institutions"
+        ]
+      },
+      "url": "https://www.fincen.gov/resources/statutes-regulations/guidance/guidance-interpretive-release-2004-1-anti-money-laundering",
+      "note": "Interpretive Release 2004-1 \u2014 AML program requirements interpretation"
+    },
+    {
+      "item_id": "fincen-faq-msb-independent-review",
+      "title": "Frequently Asked Questions Conducting Independent Reviews of Money Services Business Anti-Money Laundering Programs",
+      "issuer": "FinCEN",
+      "family": "guidance_fincen",
+      "status": "live",
+      "locator": "https://www.fincen.gov/resources/statutes-regulations/guidance/frequently-asked-questions-conducting-independent-reviews",
+      "evidence_role": "agency_guidance",
+      "applicability": {
+        "sectors": [
+          "money services businesses"
+        ]
+      },
+      "url": "https://www.fincen.gov/resources/statutes-regulations/guidance/frequently-asked-questions-conducting-independent-reviews",
+      "note": "MSB independent-review FAQs \u2014 the independent-testing pillar for MSBs"
+    },
+    {
+      "item_id": "fincen-amlcft-national-priorities",
+      "title": "AML/CFT National Priorities (issued pursuant to AML Act sec. 6101(b)(2)(C); no update issued as of July 2026)",
+      "issuer": "FinCEN",
+      "family": "guidance_fincen",
+      "status": "live",
+      "locator": "https://www.fincen.gov/system/files/shared/AML_CFT%20Priorities%20(June%2030%2C%202021).pdf",
+      "evidence_role": "agency_guidance",
+      "applicability": {
+        "sectors": [
+          "all BSA-covered financial institutions",
+          "policy audience"
+        ]
+      },
+      "url": "https://www.fincen.gov/system/files/shared/AML_CFT%20Priorities%20(June%2030%2C%202021).pdf",
+      "note": "AML/CFT National Priorities (AMLA 6101(b)) \u2014 program rules must incorporate once final rule effective"
+    },
+    {
+      "item_id": "fincen-priorities-statement-nonbank",
+      "title": "Statement on the Issuance of AML/CFT Priorities for non-bank financial institutions",
+      "issuer": "FinCEN",
+      "family": "guidance_fincen",
+      "status": "live",
+      "locator": "https://www.fincen.gov/system/files/shared/Statement%20for%20Non-Bank%20Financial%20Institutions%20(June%2030%2C%202021).pdf",
+      "evidence_role": "agency_guidance",
+      "applicability": {
+        "sectors": [
+          "all BSA-covered financial institutions",
+          "policy audience"
+        ]
+      },
+      "url": "https://www.fincen.gov/system/files/shared/Statement%20for%20Non-Bank%20Financial%20Institutions%20(June%2030%2C%202021).pdf",
+      "note": "Interagency statement on priorities issuance (non-bank FIs incl. MSBs, BDs)"
+    },
+    {
+      "item_id": "FINRA-3310",
+      "title": "Anti-Money Laundering Compliance Program",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "Rule 3310 (incl. Supplementary Material .01-.02)",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3310",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-CAB-331",
+      "title": "Anti-Money Laundering Compliance Program (CAB firms)",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "Capital Acquisition Broker Rule 331",
+      "evidence_role": "binding_authority",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/rulebooks/capital-acquisition-broker-rules/331",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-RN-18-19",
+      "title": "FINRA Amends Rule 3310 to Conform to FinCEN's Final Rule on Customer Due Diligence Requirements for Financial Institutions",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "RN 18-19",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/notices/18-19",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-RN-18-36",
+      "title": "FINRA Amends Capital Acquisition Broker Rule 331 to Conform to FinCEN's Final Rule on Customer Due Diligence Requirements",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "RN 18-36",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/notices/18-36",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-RN-17-40",
+      "title": "Guidance Regarding AML Program Requirements Under FINRA Rule 3310 Following Adoption of FinCEN's CDD Rule",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "RN 17-40",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/notices/17-40",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-RN-09-60",
+      "title": "SEC Approval and Effective Dates for New Consolidated FINRA Rules (incl. Rule 3310)",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "RN 09-60",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/notices/09-60",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-AML-TEMPLATE",
+      "title": "Anti-Money Laundering (AML) Template for Small Firms",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "n/a",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/compliance-tools/anti-money-laundering-template-small-firms",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-AML-FAQ",
+      "title": "Frequently Asked Questions (FAQ) Regarding Anti-Money Laundering (AML)",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "n/a",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml/faq",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "FINRA-ORR-AML-2024-2026",
+      "title": "FINRA Annual Regulatory Oversight Report - Anti-Money Laundering, Fraud and Sanctions topic",
+      "issuer": "FINRA",
+      "family": "sro_rule_guidance",
+      "status": "live",
+      "locator": "2024 (2024-01-09), 2025 (2025-01-28), 2026 (2025-12-09) editions",
+      "evidence_role": "sro_guidance",
+      "applicability": {
+        "sectors": [
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/aml",
+      "note": "FINRA SRO layer implementing the BD program duty"
+    },
+    {
+      "item_id": "enf-index-fincen-civil-enforcement-actions",
+      "title": "FinCEN civil enforcement actions",
+      "issuer": "FinCEN (Treasury)",
+      "family": "enforcement_index",
+      "status": "live",
+      "locator": "https://www.fincen.gov/news/enforcement-actions",
+      "evidence_role": "enforcement_evidence",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "msbs",
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.fincen.gov/news/enforcement-actions",
+      "note": "Index-level entry (~118 listed actions on the index (single-page table of assessments/consent orders with PDF links)). CEILING: evidences applied expectations; never independently establishes an operative duty."
+    },
+    {
+      "item_id": "enf-index-federal-banking-agency-bsa-related-forma",
+      "title": "Federal banking agency BSA-related formal actions",
+      "issuer": "OCC / Federal Reserve / FDIC / NCUA (each self-publishes)",
+      "family": "enforcement_index",
+      "status": "live",
+      "locator": "OCC EASearch: https://apps.occ.gov/EASearch ; FRB: https://www.federalreserve.gov/supervisionreg/enforcementactions.htm ; FDIC ED&O: https://orders.fdic.gov/s/ ; NCUA: https://ncua.gov/regulation-supervision/enforcement-actions",
+      "evidence_role": "enforcement_evidence",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "msbs",
+          "broker_dealers"
+        ]
+      },
+      "url": "https://apps.occ.gov/EASearch",
+      "note": "Index-level entry (OCC EASearch is filterable by 'Bank Secrecy Act/Money Laundering' category (hundreds of formal actions since 1990s; roughly 5-15 BSA-related formal actions/yr recently, e.g., Community Federal Savings Bank May 2026, a Northeast FSA April 2026). FRB: BSA-cited written agreements/C&Ds typically <10/yr. FDIC ED&O: monthly lists; BSA consent orders concentrated in community banks (e.g., Quaint Oak Bank, 2025-05-15). NCUA: fewest; mostly LUAs/administrative, occasional BSA orders.). CEILING: evidences applied expectations; never independently establishes an operative duty."
+    },
+    {
+      "item_id": "enf-index-sec-finra-cftc-aml-enforcement",
+      "title": "SEC / FINRA / CFTC AML enforcement",
+      "issuer": "SEC (Administrative Proceedings + Litigation Releases, sec.gov); FINRA (Disciplinary Actions Online database + monthly disciplinary reports + AWC letters); CFTC (enforcement actions page)",
+      "family": "enforcement_index",
+      "status": "live",
+      "locator": "https://www.sec.gov/litigation/admin ; https://www.finra.org/rules-guidance/oversight-enforcement/disciplinary-actions-online ; https://www.cftc.gov/LawRegulation/Enforcement/EnforcementActions",
+      "evidence_role": "enforcement_evidence",
+      "applicability": {
+        "sectors": [
+          "banks",
+          "msbs",
+          "broker_dealers"
+        ]
+      },
+      "url": "https://www.sec.gov/litigation/admin",
+      "note": "Index-level entry (FINRA AML actions: 14 (2024) -> 20 (2025), ~$6.5-10M in AML fines 2025 (total FINRA sanctions 2025: $154M, +77% YoY); AML has been a FINRA exam/enforcement priority every year since 2002. SEC brings a handful of standalone 17a-8/SAR cases per year. CFTC standalone BSA cases remain rare (first: Interactive Brokers 2020).). CEILING: evidences applied expectations; never independently establishes an operative duty."
+    }
+  ]
+}

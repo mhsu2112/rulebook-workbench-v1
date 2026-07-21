@@ -1,0 +1,428 @@
+{
+  "item_id": "31-cfr-1020",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Banks are subject to program requirements (the AML compliance program 'pillars') set forth and cross referenced in Subpart B of 31 CFR Part 1020.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Banks are subject to the program requirements set forth and cross referenced in this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The Customer Identification Program requirement exists to help the government fight the funding of terrorism and money laundering by requiring banks to obtain, verify, and record identifying information for each person who opens an account.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1020.210-a-ffr-program",
+      "actor": "A bank regulated by a Federal functional regulator",
+      "modality": "conditional",
+      "action": "Implement and maintain an anti-money laundering program that complies with \u00a7\u00a7 1010.610 and 1010.620, includes a system of internal controls, independent testing, a designated compliance coordinator, training, and appropriate risk-based CDD procedures, and complies with its Federal functional regulator's program regulation, in order to be deemed to satisfy 31 U.S.C. 5318(h)(1).",
+      "trigger": "Bank is regulated by a Federal functional regulator and seeks to satisfy 31 U.S.C. 5318(h)(1)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A bank regulated by a Federal functional regulator shall be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1) if it implements and maintains an anti-money laundering program that:",
+          "verified": true
+        },
+        {
+          "quote": "A system of internal controls to assure ongoing compliance;",
+          "verified": true
+        },
+        {
+          "quote": "Independent testing for compliance to be conducted by bank personnel or by an outside party;",
+          "verified": true
+        },
+        {
+          "quote": "Designation of an individual or individuals responsible for coordinating and monitoring day-to-day compliance;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.210-a-cdd-pillar",
+      "actor": "A bank regulated by a Federal functional regulator",
+      "modality": "must",
+      "action": "Maintain appropriate risk-based procedures for conducting ongoing customer due diligence, including understanding the nature and purpose of customer relationships to develop a customer risk profile and conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, maintain and update customer information including beneficial owners of legal entity customers.",
+      "trigger": "Bank maintains an AML program under \u00a7 1020.210(a)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+          "verified": true
+        },
+        {
+          "quote": "Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.210-b-nonffr-program",
+      "actor": "A bank lacking a Federal functional regulator (including private banks, non-federally insured credit unions, certain trust companies)",
+      "modality": "conditional",
+      "action": "Establish and maintain a written anti-money laundering program that complies with \u00a7\u00a7 1010.610 and 1010.620 and includes internal controls, independent testing, a designated compliance coordinator, training, and risk-based CDD procedures, in order to be deemed to satisfy 31 U.S.C. 5318(h)(1).",
+      "trigger": "Bank lacks a Federal functional regulator and seeks to satisfy 31 U.S.C. 5318(h)(1)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A bank lacking a Federal functional regulator shall be deemed to satisfy the requirements of 31 U.S.C. 5318(h)(1) if the bank establishes and maintains a written anti-money laundering program that:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.210-b-board-approval",
+      "actor": "A bank lacking a Federal functional regulator",
+      "modality": "must",
+      "action": "Have its written anti-money laundering program approved by the board of directors or, if none, an equivalent governing body.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Is approved by the board of directors or, if the bank does not have a board of directors, an equivalent governing body within the bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.210-b-availability",
+      "actor": "A bank lacking a Federal functional regulator",
+      "modality": "must",
+      "action": "Make a copy of its anti-money laundering program available to the Financial Crimes Enforcement Network or its designee upon request.",
+      "trigger": "Request by FinCEN or its designee",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank shall make a copy of its anti-money laundering program available to the Financial Crimes Enforcement Network or its designee upon request.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a1-cip-implement",
+      "actor": "A bank required to have an anti-money laundering compliance program under regulations implementing 31 U.S.C. 5318(h), 12 U.S.C. 1818(s), or 12 U.S.C. 1786(q)(1)",
+      "modality": "must",
+      "action": "Implement a written Customer Identification Program (CIP) appropriate for the bank's size and type of business, meeting the minimum requirements of paragraphs (a)(1) through (5), and the CIP must be a part of the anti-money laundering compliance program.",
+      "trigger": "Bank is required to have an AML compliance program",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "must implement a written Customer Identification Program (CIP) appropriate for the bank's size and type of business that, at a minimum, includes each of the requirements of paragraphs (a)(1) through (5) of this section.",
+          "verified": true
+        },
+        {
+          "quote": "The CIP must be a part of the anti-money laundering compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a2-verification-procedures",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Include risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable, enabling the bank to form a reasonable belief that it knows the true identity of each customer, based on the bank's risk assessment.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable.",
+          "verified": true
+        },
+        {
+          "quote": "The procedures must enable the bank to form a reasonable belief that it knows the true identity of each customer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a2i-info-required",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Obtain, prior to opening an account, at minimum the customer's name, date of birth (for an individual), address, and identification number (TIN for U.S. persons; TIN, passport, alien ID, or other government-issued document for non-U.S. persons).",
+      "trigger": "Prior to opening an account",
+      "threshold": null,
+      "exceptions": [
+        "Exception for persons who have applied for but not received a taxpayer identification number (\u00a71020.220(a)(2)(i)(B))",
+        "Credit card accounts may obtain identifying information from a third-party source prior to extending credit (\u00a71020.220(a)(2)(i)(C))"
+      ],
+      "citations": [
+        {
+          "quote": "the bank must obtain, at a minimum, the following information from the customer prior to opening an account:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a2ii-verification",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Contain procedures for verifying the identity of the customer within a reasonable time after the account is opened, using documents, non-documentary methods, or a combination.",
+      "trigger": "Within a reasonable time after account opened",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must contain procedures for verifying the identity of the customer, using information obtained in accordance with paragraph (a)(2)(i) of this section, within a reasonable time after the account is opened.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a2iii-lack-of-verification",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Include procedures for responding to circumstances in which the bank cannot form a reasonable belief that it knows the true identity of a customer, describing when not to open, restrict use of, or close an account, and when to file a SAR.",
+      "trigger": "Bank cannot form reasonable belief it knows customer's true identity",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for responding to circumstances in which the bank cannot form a reasonable belief that it knows the true identity of a customer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a3-recordkeeping",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Include procedures for making and maintaining a record of all information obtained under CIP identification and verification procedures.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for making and maintaining a record of all information obtained under the procedures implementing paragraph (a) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a3ii-retention",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Retain identifying information for five years after the account is closed (or, for credit card accounts, five years after closure or dormancy); retain document description/verification/discrepancy-resolution records for five years after the record is made.",
+      "trigger": "Account closed / record made",
+      "threshold": "five years",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The bank must retain the information in paragraph (a)(3)(i)(A) of this section for five years after the date the account is closed or, in the case of credit card accounts, five years after the account is closed or becomes dormant.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a4-govt-lists",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Include procedures for determining whether the customer appears on any Treasury-designated list of known or suspected terrorists or terrorist organizations, within a reasonable period after the account is opened (or earlier if required), and follow all related Federal directives.",
+      "trigger": "Account opened",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for determining whether the customer appears on any list of known or suspected terrorists or terrorist organizations issued by any Federal government agency and designated as such by Treasury in consultation with the Federal functional regulators.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a5-notice",
+      "actor": "Bank (CIP)",
+      "modality": "must",
+      "action": "Include procedures for providing customers with adequate notice that the bank is requesting information to verify their identities.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP must include procedures for providing bank customers with adequate notice that the bank is requesting information to verify their identities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-a6-reliance",
+      "actor": "Bank (CIP)",
+      "modality": "may",
+      "action": "Include procedures specifying reliance on another financial institution's performance of CIP procedures for a shared customer, subject to reasonableness, the other institution being subject to a rule implementing 5318(h) and regulated by a Federal functional regulator, and an annual certification contract.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The CIP may include procedures specifying when a bank will rely on the performance by another financial institution (including an affiliate) of any procedures of the bank's CIP",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-1020.220-b-exemption",
+      "actor": "The appropriate Federal functional regulator, with the concurrence of the Secretary",
+      "modality": "may",
+      "action": "By order or regulation, exempt any bank or type of account from the CIP requirements of \u00a7 1020.220, considering consistency with BSA purposes and safe and sound banking.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The appropriate Federal functional regulator, with the concurrence of the Secretary, may, by order or regulation, exempt any bank or type of account from the requirements of this section.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Account (for purposes of \u00a7 1020.220)",
+      "definition": "A formal banking relationship established to provide or engage in services, dealings, or other financial transactions including a deposit account, a transaction or asset account, a credit account, or other extension of credit; also includes safety deposit box, safekeeping, cash management, custodian, and trust service relationships. Excludes relationships without a formal banking relationship (e.g., check-cashing, wire transfer, sale of a check or money order), accounts acquired via acquisition/merger/purchase of assets/assumption of liabilities, and accounts opened for participation in an ERISA employee benefit plan.",
+      "citations": [
+        {
+          "quote": "Account means a formal banking relationship established to provide or engage in services, dealings, or other financial transactions including a deposit account, a transaction or asset account, a credit account, or other extension of credit.",
+          "verified": true
+        },
+        {
+          "quote": "Account also includes a relationship established to provide a safety deposit box or other safekeeping services, or cash management, custodian, and trust services.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Customer (for purposes of \u00a7 1020.220)",
+      "definition": "A person that opens a new account, and an individual who opens a new account for an individual lacking legal capacity or for an entity that is not a legal person. Excludes a financial institution regulated by a Federal functional regulator or a bank regulated by a State bank regulator, persons described in \u00a7 1020.315(b)(2)-(4), and a person with an existing account where the bank reasonably believes it knows the person's true identity.",
+      "citations": [
+        {
+          "quote": "A person that opens a new account; and",
+          "verified": true
+        },
+        {
+          "quote": "A financial institution regulated by a Federal functional regulator or a bank regulated by a State bank regulator;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator",
+      "definition": "(undefined here) \u2014 used throughout \u00a7\u00a7 1020.210 and 1020.220 as the entity whose program regulations a bank's AML program must comply with, without a definition given in Part 1020 text extracted.",
+      "citations": [
+        {
+          "quote": "Complies with the regulation of its Federal functional regulator governing such programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer risk profile",
+      "definition": "(undefined here) \u2014 referenced as the output of understanding the nature and purpose of customer relationships under the CDD pillar, with no definition given.",
+      "citations": [
+        {
+          "quote": "Understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owners of legal entity customers",
+      "definition": "(undefined here) \u2014 the term is used and cross-referenced to \u00a7 1010.230 of the chapter rather than defined within Part 1020 text extracted.",
+      "citations": [
+        {
+          "quote": "customer information shall include information regarding the beneficial owners of legal entity customers (as defined in \u00a7 1010.230 of this chapter)",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Part 1020 program definitions incorporate by reference the general definitions of \u00a7 1010.100, applying the Part 1020 definition where it differs.",
+      "references": [
+        "31 CFR 1010.100"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to \u00a7 1010.100 of this Chapter for general definitions not noted herein.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Both the Federal-functional-regulator and non-FFR bank AML program requirements require compliance with the due diligence program rules for correspondent accounts (foreign financial institutions) and private banking accounts found in Part 1010.",
+      "references": [
+        "31 CFR 1010.610",
+        "31 CFR 1010.620"
+      ],
+      "citations": [
+        {
+          "quote": "Complies with the requirements of \u00a7\u00a7 1010.610 and 1010.620 of this chapter;",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "Section 1020.610 (correspondent account due diligence), 1020.620 (private banking due diligence), 1020.630 (foreign shell bank prohibition/records), and 1020.670 (summons/subpoena of foreign bank records; termination) are stubs that refer entirely to the substantive Part 1010 counterpart provisions.",
+      "references": [
+        "31 CFR 1010.610",
+        "31 CFR 1010.620",
+        "31 CFR 1010.630",
+        "31 CFR 1010.670"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to \u00a7 1010.610 of this chapter.",
+          "verified": false
+        },
+        {
+          "quote": "Refer to \u00a7 1010.630 of this chapter.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "The CDD pillar's ongoing-monitoring element is linked to the bank's separate suspicious activity reporting obligation under \u00a7 1020.320, which this extraction treats as coordination-layer (SAR operational duty) rather than a program-establishment obligation.",
+      "references": [
+        "31 CFR 1020.320"
+      ],
+      "citations": [
+        {
+          "quote": "Conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "CIP is required for banks that have an AML compliance program under regulations implementing 31 U.S.C. 5318(h), 12 U.S.C. 1818(s), or 12 U.S.C. 1786(q)(1), linking the CIP program duty to these statutory provisions.",
+      "references": [
+        "31 U.S.C. 5318(h)",
+        "12 U.S.C. 1818(s)",
+        "12 U.S.C. 1786(q)(1)"
+      ],
+      "citations": [
+        {
+          "quote": "A bank required to have an anti-money laundering compliance program under the regulations implementing 31 U.S.C. 5318(h), 12 U.S.C. 1818(s), or 12 U.S.C. 1786(q)(1) must implement a written Customer Identification Program (CIP)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Extraction confined to the 'pillars'/program-establishment rules of Part 1020: \u00a7 1020.210 (AML program requirements, both for banks with and without a Federal functional regulator) and \u00a7 1020.220 (Customer Identification Program requirements), per ratified scope. Per the FIDELITY RULE, the text's internal structure is preserved as written, including that the CDD pillar in \u00a7 1020.210(a)(2)(v)/(b)(2)(v) textually embeds the coordination-layer topics of ongoing customer due diligence, beneficial ownership, and suspicious-transaction monitoring/reporting inside the program-pillar list itself; these embedded CDD/SAR elements are extracted only insofar as they define the pillar's content, not as separate operational CDD/SAR duties (which are treated as coordination layer per ratified scope and are addressed in full in \u00a7\u00a7 1020.310-1020.320, Subpart C, which was excluded from detailed obligation extraction as boundary/coordination content). Subparts D (recordkeeping), E (information sharing), and F (due diligence programs/shell bank prohibition, given here only as 'Refer to \u00a7 1010.xxx' stubs with no substantive text in this source) were excluded from obligation extraction as either operational/coordination layer or lacking extractable substantive text in this instrument, but are noted as interactions. No internal inconsistency was identified beyond the dual-track (FFR vs. non-FFR) program structure, which is preserved as written (e.g., only non-FFR banks have an explicit board-approval and FinCEN-availability duty in the text as given)."
+}

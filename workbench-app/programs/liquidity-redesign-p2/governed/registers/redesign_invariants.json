@@ -1,0 +1,31 @@
+{
+  "ran_at": "2026-07-21T02:06:21.028845+00:00",
+  "checks": [
+    {
+      "name": "every_finalized_move_hooked",
+      "status": "pass",
+      "details": "unhooked finalized moves: none"
+    },
+    {
+      "name": "no_orphan_objectives",
+      "status": "pass",
+      "details": "objectives neither served nor explicitly deferred: none"
+    },
+    {
+      "name": "zero_open_dispositions",
+      "status": "pass",
+      "details": "open (incl. returned-tradeoff moves awaiting Principal): none"
+    },
+    {
+      "name": "backlog_fully_dispositioned",
+      "status": "pass",
+      "details": "undecided backlog items: 0"
+    },
+    {
+      "name": "misalignment_register_fully_worked",
+      "status": "pass",
+      "details": "unworked findings: 0"
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,348 @@
+{
+  "item_id": "frbdw-collateral",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Reserve Banks assign a value to pledged collateral in order to determine how much a pledging institution may borrow through discount window programs and to determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The collateral value is used by the Reserve Bank to determine how much the pledging institution may borrow through discount window programs, as well as determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The Reserve Banks seek to value securities collateral at a fair market value estimate, with margins designed to account for historical price volatility.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "In general, the Reserve Banks seek to value securities collateral at a fair market value estimate.",
+          "verified": true
+        },
+        {
+          "quote": "Margins are applied to the Reserve Banks\u2019 fair market value estimates and are designed to account for the historical price volatility of each category of securities collateral (as identified in the Margins Table below) measured over liquidation periods determined by the Reserve Banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "For pledged loans, the Reserve Banks determine collateral value as fair market value estimate times a margin designed to protect the Reserve Banks from financial loss.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Reserve Banks determine the collateral value of pledged loans as the product of their fair market value estimate and a margin designed to protect the Reserve Banks from financial loss.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "frbdw-collateral-OBL-1",
+      "actor": "Institutions (pledging institutions)",
+      "modality": "should",
+      "action": "contact their local Reserve Bank to discuss specific questions regarding collateral valuation and margining",
+      "trigger": "specific questions regarding collateral valuation and margining",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Institutions should contact their local Reserve Bank to discuss specific questions regarding collateral valuation and margining.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frbdw-collateral-OBL-2",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "contact their local Reserve Bank with questions about their pledged collateral",
+      "trigger": "questions about pledged collateral",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions should contact their local Reserve Bank with questions about their pledged collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frbdw-collateral-OBL-3",
+      "actor": "Reserve Banks",
+      "modality": "conditional",
+      "action": "apply an additional margin to the collateral value of pledged collateral",
+      "trigger": "depository institution is borrowing under the secondary credit program",
+      "threshold": null,
+      "exceptions": [
+        "other than U.S. Treasury and Agency securities"
+      ],
+      "citations": [
+        {
+          "quote": "For depository institutions borrowing under the secondary credit program, the Reserve Banks generally apply an additional margin to the collateral value of any pledged collateral, other than U.S. Treasury and Agency securities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frbdw-collateral-OBL-4",
+      "actor": "Reserve Bank",
+      "modality": "conditional",
+      "action": "assign zero collateral value to a security",
+      "trigger": "a price is unavailable from external vendors for that security",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Securities for which a price is unavailable from external vendors will receive zero collateral value.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frbdw-collateral-OBL-5",
+      "actor": "Reserve Banks",
+      "modality": "conditional",
+      "action": "assign zero collateral value to a pledged loan",
+      "trigger": "a loan's value or its margin cannot be determined due to missing information about a pledged loan, or any other reason",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If a loan\u2019s value or its margin cannot be determined due to missing information about a pledged loan, or any other reason, the loan will receive zero collateral value.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frbdw-collateral-OBL-6",
+      "actor": "Reserve Banks",
+      "modality": "conditional",
+      "action": "make general assumptions when determining a loan's value or its margin",
+      "trigger": "information about a loan is not available",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Reserve Banks will make general assumptions in all cases where information about a loan is not available when determining either a loan\u2019s value or its margin.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "frbdw-collateral-OBL-7",
+      "actor": "In-scope institution",
+      "modality": "must_not",
+      "action": "become (revert to) an out-of-scope institution",
+      "trigger": "the institution has voluntarily become an in-scope institution",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "An institution that voluntarily becomes an in-scope institution. This is a permanent conversion -- an in-scope institution cannot become out-of-scope.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "depository institution / pledging institution / institution",
+      "definition": "A depository institution, also known as pledging institution or institution, that pledges acceptable collateral to a Federal Reserve Bank.",
+      "citations": [
+        {
+          "quote": "When a depository institution (also known as pledging institution, or institution) pledges acceptable collateral to a Federal Reserve Bank (Reserve Bank), the Reserve Bank assigns a value to the collateral according to various factors.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Reserve Bank",
+      "definition": "A Federal Reserve Bank, as referenced parenthetically in connection with pledging of collateral.",
+      "citations": [
+        {
+          "quote": "When a depository institution (also known as pledging institution, or institution) pledges acceptable collateral to a Federal Reserve Bank (Reserve Bank), the Reserve Bank assigns a value to the collateral according to various factors.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "in-scope institution",
+      "definition": "An institution considered in-scope if it meets one of a listed set of criteria (control by a Bank/Financial/Intermediate Holding Company or being a domestic depository institution with $50,000,000,000 or more in total consolidated assets averaged over the last four calendar quarters; being a Foreign Banking Organization; or voluntarily electing in-scope status, which is a permanent conversion).",
+      "citations": [
+        {
+          "quote": "An institution is considered in-scope if it meets one of the criteria listed below, while all other institutions are considered out-of-scope.",
+          "verified": true
+        },
+        {
+          "quote": "All depository institutions (12 CFR 201.2(c)(1)) that are controlled (12 CFR 225.2(e)) by a Bank Holding Company (12 CFR 225.2(c)(1)) (including a Financial Holding Company (12 CFR 225.81)) or an Intermediate Holding Company (12 CFR 252.2(y)) with Fifty Billion Dollars ($50,000,000,000) or more in total consolidated assets, defined as the average over the last four calendar quarters;",
+          "verified": true
+        },
+        {
+          "quote": "All Foreign Banking Organizations (12 CFR 211.21(o)(1));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "out-of-scope institution",
+      "definition": "All institutions other than those meeting the in-scope criteria.",
+      "citations": [
+        {
+          "quote": "An institution is considered in-scope if it meets one of the criteria listed below, while all other institutions are considered out-of-scope.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "minimal risk rating / normal risk rating",
+      "definition": "A minimal risk rating is roughly equivalent to investment grade while a normal risk rating is roughly equivalent to below investment grade.",
+      "citations": [
+        {
+          "quote": "A minimal risk rating is roughly equivalent to investment grade while a normal risk rating is roughly equivalent to below investment grade.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Call Report",
+      "definition": "The report codes on the FFIEC 031/041/051 Call Report, the FBO FFIEC 002 Call Report, or the NCUA Call Report, as applicable, referenced collectively as \"Call Report\" via the Loan Types and Call Report Mapping Table.",
+      "citations": [
+        {
+          "quote": "The Loan Types and Call Report Mapping Table, found within the Pledging Collateral section of this website shows the collateral category that corresponds to report codes on the FFIEC 031/041/051 Call Report, the FBO FFIEC 002 Call Report, or the NCUA Call Report, as applicable (Call Report).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Margins",
+      "definition": "Values applied to the Reserve Banks' fair market value estimates, designed to account for the historical price volatility of each category of collateral, measured over liquidation periods determined by the Reserve Banks; for loans, margins also take into account cash flow and credit characteristics and risk rating.",
+      "citations": [
+        {
+          "quote": "Margins are applied to the Reserve Banks\u2019 fair market value estimates and are designed to account for the historical price volatility of each category of securities collateral (as identified in the Margins Table below) measured over liquidation periods determined by the Reserve Banks.",
+          "verified": true
+        },
+        {
+          "quote": "Margins take into account both cash flow and credit characteristics of pledged loans, as well as historical price volatility of each category of loan collateral (as identified in the Margins Table below) measured over liquidation periods determined by the Reserve Banks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "secondary credit program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "For depository institutions borrowing under the secondary credit program, the Reserve Banks generally apply an additional margin to the collateral value of any pledged collateral, other than U.S. Treasury and Agency securities.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount window programs",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The collateral value is used by the Reserve Bank to determine how much the pledging institution may borrow through discount window programs, as well as determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "overdraft credit capacity / Payment System Risk",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The collateral value is used by the Reserve Bank to determine how much the pledging institution may borrow through discount window programs, as well as determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The Discount Window Loan Types and Call Report Mapping Table cross-references collateral categories to report codes on the FFIEC 031/041/051 Call Report, the FBO FFIEC 002 Call Report, and the NCUA Call Report \u2014 linking Fed discount-window collateral operations to the Call Report reporting instrument named in the ratified scope.",
+      "references": [
+        "Loan Types and Call Report Mapping Table (Pledging Collateral section)",
+        "FFIEC 031/041/051 Call Report",
+        "FBO FFIEC 002 Call Report",
+        "NCUA Call Report"
+      ],
+      "citations": [
+        {
+          "quote": "The Loan Types and Call Report Mapping Table, found within the Pledging Collateral section of this website shows the collateral category that corresponds to report codes on the FFIEC 031/041/051 Call Report, the FBO FFIEC 002 Call Report, or the NCUA Call Report, as applicable (Call Report).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "In-scope institution status is defined by cross-reference to Regulation Y / Regulation K / Regulation YY holding-company and foreign banking organization definitions in the Code of Federal Regulations.",
+      "references": [
+        "12 CFR 201.2(c)(1)",
+        "12 CFR 225.2(e)",
+        "12 CFR 225.2(c)(1)",
+        "12 CFR 225.81",
+        "12 CFR 252.2(y)",
+        "12 CFR 211.21(o)(1)"
+      ],
+      "citations": [
+        {
+          "quote": "All depository institutions (12 CFR 201.2(c)(1)) that are controlled (12 CFR 225.2(e)) by a Bank Holding Company (12 CFR 225.2(c)(1)) (including a Financial Holding Company (12 CFR 225.81)) or an Intermediate Holding Company (12 CFR 252.2(y)) with Fifty Billion Dollars ($50,000,000,000) or more in total consolidated assets, defined as the average over the last four calendar quarters;",
+          "verified": true
+        },
+        {
+          "quote": "All Foreign Banking Organizations (12 CFR 211.21(o)(1));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Collateral pages sit alongside, and are governed in conjunction with, Operating Circular 10 (Lending) and the Federal Reserve Act as the guidelines for discount window lending.",
+      "references": [
+        "Operating Circular 10: Lending (FRB Services)",
+        "The Federal Reserve Act (federalreserve.gov)",
+        "OC-10 Agreements"
+      ],
+      "citations": [
+        {
+          "quote": "Operating Circular 10: Lending (FRB Services)",
+          "verified": true
+        },
+        {
+          "quote": "The Federal Reserve Act (federalreserve.gov)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Collateral value determined under this page also feeds into overdraft credit capacity determinations under the Payment System Risk framework, referenced as a separate guideline area on the same site.",
+      "references": [
+        "Payment System Risk"
+      ],
+      "citations": [
+        {
+          "quote": "Payment System Risk",
+          "verified": true
+        },
+        {
+          "quote": "The collateral value is used by the Reserve Bank to determine how much the pledging institution may borrow through discount window programs, as well as determine its overdraft credit capacity for Reserve Bank account activity and associated charges.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Historical versions of the margins tables are maintained on a separate Historical Collateral Margins Tables page, referenced from this page.",
+      "references": [
+        "Historical Collateral Margins Tables page"
+      ],
+      "citations": [
+        {
+          "quote": "The historical collateral margins tables may be found on the Historical Collateral Margins Tables page.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is purely a Federal Reserve Discount Window collateral eligibility/valuation/margin operational specification; it does not itself mention the FHLB, discount-window stigma, or the timing/granularity of FR 2052a liquidity reporting. It is retained in scope only as the Fed-side collateral/operational rulebook (margins, in-scope/out-of-scope institution categories, valuation methodology) that the ratified scope contemplates mapping against FHLB collateral/operational rules for interoperability gaps, and because it contains one explicit cross-reference to the Call Report (FFIEC 031/041/051, FBO FFIEC 002, NCUA) named in the scope's reporting-instrument list. Per the fidelity rule, the extensive numeric margin tables (securities and loan valuation percentages by duration/maturity bucket) are administrative data, not verbal obligations/definitions, and were not converted into obligation rows; the 'should' phrasing for institution-Reserve Bank contact is preserved as non-mandatory exactly as written, alongside the more categorical 'will'/'cannot' language used elsewhere in the same document, without harmonizing the differing modal registers."
+}

@@ -1,0 +1,211 @@
+{
+  "item_id": "12-cfr-21-occ",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This subpart is issued to assure that all national banks and savings associations establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations promulgated thereunder by the Department of the Treasury at 31 CFR Chapter X.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This subpart is issued to assure that all national banks and savings associations establish and maintain procedures reasonably designed to assure and monitor their compliance with the requirements of subchapter II of chapter 53 of title 31, United States Code, and the implementing regulations promulgated thereunder by the Department of the Treasury at 31 CFR Chapter X.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1",
+      "actor": "Each national bank and each savings association",
+      "modality": "must",
+      "action": "develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code and the implementing regulations issued by the Department of the Treasury at 31 CFR Chapter X",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each national bank and each savings association shall develop and provide for the continued administration of a program reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-2",
+      "actor": "national bank's or savings association's board of directors / the compliance program",
+      "modality": "must",
+      "action": "ensure the compliance program is written, approved by the board of directors, and reflected in the minutes of the national bank or savings association",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The compliance program must be written, approved by the national bank's or savings association's board of directors, and reflected in the minutes of the national bank or savings association.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3",
+      "actor": "Each national bank and each savings association",
+      "modality": "conditional",
+      "action": "implement a customer identification program as part of the BSA compliance program required under this section, per 31 U.S.C. 5318(l) and 31 CFR 1020.220",
+      "trigger": "subject to the requirements of 31 U.S.C. 5318(l) and 31 CFR 1020.220",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each national bank and each savings association is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulations jointly promulgated by the OCC and the Department of the Treasury at 31 CFR 1020.220, which require a customer identification program to be implemented as part of the BSA compliance program required under this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-4",
+      "actor": "Each national bank and each savings association",
+      "modality": "must",
+      "action": "provide, within the compliance program, for a system of internal controls to assure ongoing compliance",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for a system of internal controls to assure ongoing compliance;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-5",
+      "actor": "Each national bank and each savings association",
+      "modality": "must",
+      "action": "provide, within the compliance program, for independent testing for compliance, conducted by the institution's personnel or by an outside party",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide for independent testing for compliance to be conducted by national bank or savings association personnel or by an outside party;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-6",
+      "actor": "Each national bank and each savings association",
+      "modality": "must",
+      "action": "designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-7",
+      "actor": "Each national bank and each savings association",
+      "modality": "must",
+      "action": "provide training for appropriate personnel",
+      "trigger": null,
+      "threshold": "at a minimum",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Provide training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "savings association",
+      "definition": "For purposes of this subpart C, the term savings association means a savings association as defined in section 3 of the Federal Deposit Insurance Act (FDI Act), the deposits of which are insured by the Federal Deposit Insurance Corporation. It includes a Federal savings association or Federal savings bank, chartered under section 5 of the FDI Act, or a building and loan, savings and loan, or homestead association, or a cooperative bank (other than a cooperative bank which is a state bank as defined in section 3(a)(2) of the FDI Act) organized and operating according to the laws of the state in which it is chartered or organized, or a corporation (other than a bank as defined in section 3(a)(1) of the FDI Act) that the Board of Directors of the Federal Deposit Insurance Corporation and the Comptroller jointly determine to be operating substantially in the same manner as a savings association.",
+      "citations": [
+        {
+          "quote": "the term savings association means a savings association as defined in section 3 of the Federal Deposit Insurance Act (FDI Act), the deposits of which are insured by the Federal Deposit Insurance Corporation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA compliance program",
+      "definition": "A program reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code and the implementing regulations issued by the Department of the Treasury at 31 CFR Chapter X, which must be written, board-approved, and minuted, and which must contain, at a minimum, internal controls, independent testing, a designated compliance coordinator, and training, and must incorporate a customer identification program.",
+      "citations": [
+        {
+          "quote": "a program reasonably designed to assure and monitor compliance with the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "national bank",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Each national bank and each savings association shall develop and provide for the continued administration of a program",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer identification program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "which require a customer identification program to be implemented as part of the BSA compliance program required under this section",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The \u00a7 21.21 program requirement is defined by reference to the BSA recordkeeping/reporting subchapter of title 31 and Treasury's implementing regulations at 31 CFR Chapter X.",
+      "references": [
+        "31 U.S.C. subchapter II of chapter 53",
+        "31 CFR Chapter X"
+      ],
+      "citations": [
+        {
+          "quote": "the recordkeeping and reporting requirements set forth in subchapter II of chapter 53 of title 31, United States Code and the implementing regulations issued by the Department of the Treasury at 31 CFR Chapter X",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The customer identification program component of the \u00a7 21.21 compliance program is cross-referenced to a separate statutory provision and a jointly-promulgated OCC/Treasury regulation.",
+      "references": [
+        "31 U.S.C. 5318(l)",
+        "31 CFR 1020.220"
+      ],
+      "citations": [
+        {
+          "quote": "Each national bank and each savings association is subject to the requirements of 31 U.S.C. 5318(l) and the implementing regulations jointly promulgated by the OCC and the Department of the Treasury at 31 CFR 1020.220",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The \u00a7 21.21(b) definition of 'savings association' is built from cross-references to sections 3 and 5 of the Federal Deposit Insurance Act.",
+      "references": [
+        "Federal Deposit Insurance Act section 3",
+        "Federal Deposit Insurance Act section 5"
+      ],
+      "citations": [
+        {
+          "quote": "a savings association as defined in section 3 of the Federal Deposit Insurance Act (FDI Act)",
+          "verified": true
+        },
+        {
+          "quote": "chartered under section 5 of the FDI Act",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Per ratified scope, only 12 CFR 21.21 (the BSA compliance program 'pillars' rule) was extracted as program-establishment obligation content. 12 CFR 21.11 (the SAR rule) was excluded because SAR filing is an operational reporting duty designated as coordination layer under the ratified scope, not a program-establishment obligation; it is not represented in obligations/definitions/interactions above even though it appears in the source text. Subpart A (12 CFR 21.1-21.4, physical security devices/procedures against robbery, burglary, larceny) was excluded entirely as it is not an AML/CFT program obligation and falls outside the ratified scope. The \u00a7 21.21(c)(2)/(d)-list obligations are extracted as written, without harmonizing the 'shall' phrasing of (c)(1)/(d) with the 'must' phrasing of the board-approval sentence in (c)(1), per the fidelity rule."
+}

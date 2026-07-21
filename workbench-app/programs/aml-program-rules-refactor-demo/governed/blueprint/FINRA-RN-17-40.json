@@ -1,0 +1,524 @@
+{
+  "item_id": "FINRA-RN-17-40",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "FINRA is issuing this Notice to provide guidance regarding member firms' obligations under FINRA Rule 3310 (Anti-Money Laundering Compliance Program) in light of the Financial Crimes Enforcement Network's (FinCEN) adoption of a final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "FINRA is issuing this Notice to provide guidance regarding member firms' obligations under FINRA Rule 3310 (Anti-Money Laundering Compliance Program) in light of the Financial Crimes Enforcement Network's (FinCEN) adoption of a final rule on Customer Due Diligence Requirements for Financial Institutions (CDD Rule).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The Notice summarizes the CDD Rule's impact on member firms, including the addition of the new fifth pillar required for member firms' AML programs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "In addition, the Notice summarizes the CDD Rule's impact on member firms, including the addition of the new fifth pillar required for member firms' AML programs.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "ob-1",
+      "actor": "FINRA member firm",
+      "modality": "must",
+      "action": "develop and implement a written AML program reasonably designed to achieve and monitor the member firm's compliance with the BSA and implementing regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FINRA Rule 3310 requires each member firm to develop and implement a written AML program reasonably designed to achieve and monitor the member firm's compliance with the BSA and implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-2",
+      "actor": "FINRA member firm",
+      "modality": "must",
+      "action": "establish and implement policies and procedures that can be reasonably expected to detect and cause the reporting of suspicious transactions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "(1) establish and implement policies and procedures that can be reasonably expected to detect and cause the reporting of suspicious transactions;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-3",
+      "actor": "FINRA member firm",
+      "modality": "must",
+      "action": "establish and implement policies, procedures, and internal controls reasonably designed to achieve compliance with the BSA and implementing regulations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "(2) establish and implement policies, procedures, and internal controls reasonably designed to achieve compliance with the BSA and implementing regulations;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-4",
+      "actor": "FINRA member firm",
+      "modality": "must",
+      "action": "provide for annual (calendar-year basis) independent testing for compliance conducted by member firm personnel or a qualified outside party",
+      "trigger": null,
+      "threshold": "annual, calendar-year basis",
+      "exceptions": [
+        "If a member firm does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts (e.g., engages solely in proprietary trading or conducts business only with other broker-dealers), then \"independent testing\" is required every two years."
+      ],
+      "citations": [
+        {
+          "quote": "(3) provide for annual (on a calendar-year basis) independent testing for compliance to be conducted by member firm personnel or a qualified outside party;10",
+          "verified": true
+        },
+        {
+          "quote": "If a member firm does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts (e.g., engages solely in proprietary trading or conducts business only with other broker-dealers), then \"independent testing\" is required every two years.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-5",
+      "actor": "FINRA member firm",
+      "modality": "must",
+      "action": "designate and identify to FINRA an individual or individuals (AML compliance person(s)) responsible for implementing and monitoring the day-to-day operations and internal controls of the AML program, and provide prompt notification to FINRA of any changes to the designation",
+      "trigger": "any change to the designation",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "(4) designate and identify to FINRA an individual or individuals (i.e., AML compliance person(s)) who will be responsible for implementing and monitoring the day-to-day operations and internal controls of the AML program and provide prompt notification to FINRA of any changes to the designation;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-6",
+      "actor": "FINRA member firm",
+      "modality": "must",
+      "action": "provide ongoing training for appropriate persons",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "(5) provide ongoing training for appropriate persons.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-7",
+      "actor": "member firm (covered financial institution broker-dealer)",
+      "modality": "must",
+      "action": "continue to comply with FINRA Rule 3310's requirements notwithstanding adoption of the CDD Rule, because the CDD Rule does not change FINRA Rule 3310's requirements",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FinCEN's CDD Rule does not change the requirements of FINRA Rule 3310, and member firms must continue to comply with its requirements.11",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-8",
+      "actor": "member firm (covered financial institution broker-dealer)",
+      "modality": "must",
+      "action": "be in compliance with the CDD Rule's provisions",
+      "trigger": null,
+      "threshold": "by May 11, 2018",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Member firms must be in compliance with its provisions by May 11, 2018.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-9",
+      "actor": "member firm",
+      "modality": "should",
+      "action": "ensure that their AML programs are updated, as necessary, to comply with the CDD Rule",
+      "trigger": null,
+      "threshold": "by May 11, 2018",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "member firms should ensure that their AML programs are updated, as necessary, to comply with the CDD Rule by May 11, 2018.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-10",
+      "actor": "member firm (covered financial institution broker-dealer)",
+      "modality": "must",
+      "action": "include risk-based procedures for conducting ongoing customer due diligence in AML programs, comprising (1) understanding the nature and purpose of customer relationships for developing a customer risk profile and (2) conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FinCEN's CDD Rule amends the minimum statutory requirements for member firms' AML programs by requiring such programs to include risk-based procedures for conducting ongoing customer due diligence.12",
+          "verified": true
+        },
+        {
+          "quote": "This ongoing customer due diligence element, or \"fifth pillar\" required for AML programs, includes: (1) understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and (2) conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-11",
+      "actor": "member firm",
+      "modality": "conditional",
+      "action": "update the customer information, including information regarding the beneficial owners of legal entity customers",
+      "trigger": "if, in the course of its normal monitoring for suspicious activity, the member firm detects information that is relevant to assessing the customer's risk profile",
+      "threshold": null,
+      "exceptions": [
+        "there is no expectation that the member firm update customer information, including beneficial ownership information, on an ongoing or continuous basis"
+      ],
+      "citations": [
+        {
+          "quote": "If, in the course of its normal monitoring for suspicious activity, the member firm detects information that is relevant to assessing the customer's risk profile, the member firm must update the customer information, including the information regarding the beneficial owners of legal entity customers, as discussed below.23",
+          "verified": true
+        },
+        {
+          "quote": "However, there is no expectation that the member firm update customer information, including beneficial ownership information, on an ongoing or continuous basis.24",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-12",
+      "actor": "member firm (covered financial institution broker-dealer)",
+      "modality": "must",
+      "action": "establish and maintain written procedures as part of AML programs that are reasonably designed to identify and verify the identities of beneficial owners of legal entity customers",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the CDD Rule also requires member firms to establish and maintain written procedures as part of their AML programs that are reasonably designed to identify and verify the identities of beneficial owners25 of legal entity customers.26",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-13",
+      "actor": "member firm",
+      "modality": "must",
+      "action": "obtain from the natural person opening the account on behalf of the legal entity customer the identity of the beneficial owners of the entity, and that individual must certify, to the best of his or her knowledge, as to the accuracy of the information",
+      "trigger": "opening a new account on behalf of a legal entity customer",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Under the CDD Rule, member firms must obtain from the natural person opening the account29 on behalf of the legal entity customer, the identity of the beneficial owners of the entity.30",
+          "verified": true
+        },
+        {
+          "quote": "In addition, that individual must certify, to the best of his or her knowledge, as to the accuracy of the information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-14",
+      "actor": "member firm",
+      "modality": "must",
+      "action": "maintain records of the beneficial ownership information they obtain",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In any case, the CDD Rule requires that member firms maintain records of the beneficial ownership information they obtain.35",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-15",
+      "actor": "member firm",
+      "modality": "must",
+      "action": "verify the identity of the beneficial owner(s) through risk-based procedures that include, at a minimum, the elements required for member firms' CIP procedures for verifying the identity of individual customers, completed within a reasonable time after account opening",
+      "trigger": "after obtaining required beneficial ownership information",
+      "threshold": "within a reasonable time after account opening",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Once member firms obtain the required beneficial ownership information, the CDD Rule requires that member firms verify the identity of the beneficial owner(s)\u2014in other words, that they are who they say they are and not their status as beneficial owners\u2014through riskbased procedures that include, at a minimum, the elements required for member firms' CIP procedures for verifying the identity of individual customers.36",
+          "verified": true
+        },
+        {
+          "quote": "Such verification must be completed within a reasonable time after account opening.37",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-16",
+      "actor": "member firm",
+      "modality": "may",
+      "action": "rely on the beneficial ownership information supplied by the individual opening the account",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "provided that they have no knowledge of facts that would reasonably call into question the reliability of that information"
+      ],
+      "citations": [
+        {
+          "quote": "Member firms may rely on the beneficial ownership information supplied by the individual opening the account, provided that they have no knowledge of facts that would reasonably call into question the reliability of that information.38",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-17",
+      "actor": "member firm",
+      "modality": "may",
+      "action": "rely on another financial institution for the performance of the CDD Rule's requirements, to the same extent as permitted under the CIP rules",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "To the same extent as permitted under the CIP rules, the CDD Rule permits member firms to rely on another financial institution for the performance of the CDD Rule's requirements.39",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-18",
+      "actor": "member firm",
+      "modality": "conditional",
+      "action": "obtain beneficial ownership information for an existing legal entity customer",
+      "trigger": "if, during the course of normal monitoring, the firm receives information that is needed to assess or reevaluate the risk of the customer",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "However, a member firm should obtain beneficial ownership information for an existing legal entity customer if, during the course of normal monitoring, it receives information that is needed to assess or reevaluate the risk of the customer.40",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "four pillars",
+      "definition": "The statutorily enumerated minimum requirements for AML programs: (1) establishment and implementation of policies, procedures and internal controls reasonably designed to achieve compliance with the applicable provisions of the BSA and implementing regulations; (2) independent testing for compliance by broker-dealer personnel or a qualified outside party; (3) designation of an individual or individuals responsible for implementing and monitoring the operations and internal controls of the AML program; and (4) ongoing training for appropriate persons.",
+      "citations": [
+        {
+          "quote": "These four pillars require brokerdealers to have written AML programs that include, at a minimum:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "fifth pillar",
+      "definition": "A new requirement, added by the CDD Rule, explicitly requiring AML programs to include risk-based procedures for conducting ongoing customer due diligence, including: (1) understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and (2) conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+      "citations": [
+        {
+          "quote": "by amending the existing AML program rules for covered financial institutions to explicitly require these components to be included in AML programs as a new \"fifth pillar.\"",
+          "verified": true
+        },
+        {
+          "quote": "This ongoing customer due diligence element, or \"fifth pillar\" required for AML programs, includes: (1) understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile; and (2) conducting ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer risk profile",
+      "definition": "Information gathered about a customer to form the baseline against which customer activity is assessed for suspicious transaction reporting.",
+      "citations": [
+        {
+          "quote": "The customer risk profile refers to information gathered about a customer to form the baseline against which customer activity is assessed for suspicious transaction reporting.16",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial owner",
+      "definition": "There are both ownership and control prongs of the definition of beneficial owner for purposes of the CDD Rule. A beneficial owner is: (1) each individual (if any) who directly or indirectly owns 25 percent of the equity interests of a legal entity customer; and (2) a single individual with significant responsibility to control, manage, or direct a legal entity customer, including an executive officer or senior manager.",
+      "citations": [
+        {
+          "quote": "A beneficial owner is: (1) each individual (if any) who directly or indirectly owns 25 percent of the equity interests of a legal entity customer; and (2) a single individual with significant responsibility to control, manage, or direct a legal entity customer, including an executive officer or senior manager.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "legal entity customer",
+      "definition": "A \"corporation, limited liability company, or other entity that is created by the filing of a public document with a Secretary of State or similar office, a general partnership, and any similar entity formed under the laws of a foreign jurisdiction, that opens an account.\"",
+      "citations": [
+        {
+          "quote": "A legal entity customer is a \"corporation, limited liability company, or other entity that is created by the filing of a public document with a Secretary of State or similar office, a general partnership, and any similar entity formed under the laws of a foreign jurisdiction, that opens an account.\" 31 CFR 1010.230(e)(1).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "covered financial institution",
+      "definition": "(undefined here; term used with cross-reference to 31 CFR 1010.230(f))",
+      "citations": [
+        {
+          "quote": "See 31 CFR. 1010.230(f) (defining \"covered financial institution\").",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "financial institution",
+      "definition": "(undefined here; term used with cross-reference to 31 U.S.C. 5312(a)(2))",
+      "citations": [
+        {
+          "quote": "See 31 U.S.C. 5312(a)(2) (defining \"financial institution\").",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "account",
+      "definition": "(undefined here; the CDD Rule incorporates the definition of \"account\" used in the CIP rules)",
+      "citations": [
+        {
+          "quote": "The CDD Rule incorporates the definition of \"account\" that is used in the CIP rules. See 31 CFR 1010.230(c).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "AML compliance person(s)",
+      "definition": "(undefined here) individual(s) designated and identified to FINRA who will be responsible for implementing and monitoring the day-to-day operations and internal controls of the AML program.",
+      "citations": [
+        {
+          "quote": "(4) designate and identify to FINRA an individual or individuals (i.e., AML compliance person(s)) who will be responsible for implementing and monitoring the day-to-day operations and internal controls of the AML program and provide prompt notification to FINRA of any changes to the designation;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "FINRA Rule 3310 is described as consistent with, and incorporating, the four pillars required by Section 352 of the USA PATRIOT Act's amendment to the BSA.",
+      "references": [
+        "Section 352 of the USA PATRIOT Act of 2001",
+        "Bank Secrecy Act",
+        "FINRA Rule 3310"
+      ],
+      "citations": [
+        {
+          "quote": "Section 352 of the USA PATRIOT Act of 20019 amended the BSA to require broker-dealers to develop and implement AML programs that include the four pillars mentioned above.",
+          "verified": true
+        },
+        {
+          "quote": "Consistent with Section 352 of the PATRIOT Act, and incorporating the four pillars, FINRA Rule 3310 requires each member firm to develop and implement a written AML program reasonably designed to achieve and monitor the member firm's compliance with the BSA and implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FinCEN's CDD Rule (31 CFR 1023.210) amends the minimum statutory AML program requirements applicable to broker-dealers without changing FINRA Rule 3310 itself; broker-dealers must continue to comply with FINRA Rules notwithstanding differences between the CDD Rule and FINRA Rule 3310.",
+      "references": [
+        "31 CFR 1023.210",
+        "FINRA Rule 3310",
+        "CDD Rule Release 29421, n.85"
+      ],
+      "citations": [
+        {
+          "quote": "FinCEN's CDD Rule does not change the requirements of FINRA Rule 3310, and member firms must continue to comply with its requirements.11",
+          "verified": true
+        },
+        {
+          "quote": "In fact, FinCEN notes that broker-dealers must continue to comply with FINRA Rules, notwithstanding differences between the CDD Rule and FINRA Rule 3310.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FINRA is considering whether further rulemaking is necessary to more closely align FINRA Rule 3310 with FinCEN's CDD Rule in light of the fifth pillar.",
+      "references": [
+        "FINRA Rule 3310",
+        "CDD Rule"
+      ],
+      "citations": [
+        {
+          "quote": "FINRA is considering whether further rulemaking is necessary to more closely align FINRA Rule 3310 with FinCEN's CDD Rule in light of the now-codified fifth pillar requirement for firms' AML programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Member firms are directed to consult FinCEN's CDD Rule and related FAQs for additional guidance, which FinCEN indicates it will periodically update.",
+      "references": [
+        "FinCEN FAQs FIN-2016-G003"
+      ],
+      "citations": [
+        {
+          "quote": "Member firms should also consult the CDD Rule as well as FinCEN's related FAQs,8 which FinCEN indicates it will periodically update.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The CDD Rule's verification requirements for beneficial owners cross-reference and incorporate, at a minimum, the elements required for member firms' CIP procedures for verifying the identity of individual customers, and the CDD Rule permits reliance on other financial institutions to the same extent as permitted under the CIP rules.",
+      "references": [
+        "CIP rules"
+      ],
+      "citations": [
+        {
+          "quote": "through riskbased procedures that include, at a minimum, the elements required for member firms' CIP procedures for verifying the identity of individual customers.36",
+          "verified": true
+        },
+        {
+          "quote": "To the same extent as permitted under the CIP rules, the CDD Rule permits member firms to rely on another financial institution for the performance of the CDD Rule's requirements.39",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The definition of legal entity customer excludes certain entities, including those regulated by a Federal functional regulator, SEC-registered investment advisers and Exchange Act registrants, state-regulated insurance companies, and specified pooled investment vehicles, per 31 CFR 1010.230(e)(2).",
+      "references": [
+        "31 CFR 1010.230(e)(2)"
+      ],
+      "citations": [
+        {
+          "quote": "The requirements to identify and verify the identity of beneficial owners do not apply to, among others, financial institutions regulated by a Federal functional regulator or a bank regulated by a state bank regulator, investment advisers, as defined in the Investment Advisers Act of 1940, that are registered with the Securities and Exchange Commission (SEC), entities registered with the SEC under the Securities Exchange Act of 1934, state-regulated insurance companies and specified pooled investment vehicles.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "SEC no-action relief (SIFMA SEC No-Action Letter) extends relief when broker-dealers rely on investment advisers for identifying and verifying beneficial owners of legal entity customers, subject to enumerated conditions.",
+      "references": [
+        "SIFMA SEC No-Action Letter, December 12, 2016"
+      ],
+      "citations": [
+        {
+          "quote": "Letter from Emily Westerberg Russell, Senior Special Counsel, Division of Trading and Markets, SEC, to Aseel Rabie, Managing Director and Associate General Counsel, Securities Industry and Financial Markets Association (SIFMA), dated December 12, 2016 (SIFMA SEC No-Action Letter)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Per the fidelity rule, the source's own terminology is preserved, including its internally described distinction between the 'fifth pillar' requirement (understanding nature/purpose of relationship and ongoing monitoring) and the separate beneficial ownership identification/verification requirement, even though FINRA's text sometimes groups both under 'CDD Rule requirements' without perfectly harmonizing pillar counts. The obligation regarding obtaining beneficial ownership info for existing customers (ob-18) is textually phrased with 'should' ('a member firm should obtain') though surrounding context frames it as a rule-driven expectation; this is preserved as-written (modality 'conditional' selected because the action is contingent on a triggering event, per the given modality-mapping instructions, while noting the text's own verb is 'should'). Footnote citations (numbers) are retained inline where they appear as part of the verbatim quoted text and could not be removed without altering the quote's exact match to source."
+}

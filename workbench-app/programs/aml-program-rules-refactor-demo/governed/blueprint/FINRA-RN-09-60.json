@@ -1,0 +1,208 @@
+{
+  "item_id": "FINRA-RN-09-60",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "FINRA is adopting NASD Rule 3011 (AML Compliance Program) without substantive change into the Consolidated FINRA Rulebook as FINRA Rule 3310, along with supplementary material, with an effective date of January 1, 2010.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The rule change adopts NASD Rule 3011 (AML Compliance Program) without substantive change into the Consolidated FINRA Rulebook as FINRA Rule 3310 (AML Compliance Program) and adopts NASD IM-3011-1, subject to certain amendments, and NASD IM-3011-2 (Review of AML Compliance Person Information), without substantive change, as supplementary material to FINRA Rule 3310.",
+          "verified": true
+        },
+        {
+          "quote": "The effective date of FINRA Rule 3310 is January 1, 2010.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-3310-01",
+      "actor": "each member firm",
+      "modality": "must",
+      "action": "develop and implement a written AML program that is reasonably designed to achieve and monitor compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FINRA Rule 3310 requires each member firm to develop and implement a written AML program (that must be approved, in writing, by a member of senior management) that is reasonably designed to achieve and monitor compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3310-02",
+      "actor": "member firm's written AML program",
+      "modality": "must",
+      "action": "be approved, in writing, by a member of senior management",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "to develop and implement a written AML program (that must be approved, in writing, by a member of senior management)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3310-03",
+      "actor": "member firm",
+      "modality": "must",
+      "action": "provide for annual (on a calendar-year basis) independent testing for compliance, conducted by member firm personnel or by a qualified outside party",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "a member firm that does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts may conduct its independent tests every two years (on a calendar-year basis)"
+      ],
+      "citations": [
+        {
+          "quote": "including the requirement that a firm provide for annual (on a calendar-year basis) independent testing for compliance to be conducted by member firm personnel or by a qualified outside party.",
+          "verified": true
+        },
+        {
+          "quote": "The rule permits a member firm that does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts to conduct its independent tests every two years (on a calendar-year basis).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3310-04",
+      "actor": "member firm (AML program testing)",
+      "modality": "must_not",
+      "action": "conduct AML program testing by personnel with an interest in the outcome of the testing (the NASD IM-3011-1 exception permitting testing by persons who report to the AML compliance person or persons performing the functions being tested is not retained)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "FINRA Rule 3310, however, does not retain the exception in NASD IM-3011-1 that permits, under certain conditions, the AML compliance program testing to be conducted by persons who report to either the AML compliance person or persons performing the functions being tested.",
+          "verified": true
+        },
+        {
+          "quote": "the independent testing provision of the BSA precludes AML program testing by personnel with an interest in the outcome of the testing and that an independent testing exception, such as the one in NASD IM-3011-1, is inconsistent with the BSA's independent testing provision and FinCEN's interpretation of this provision.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "FINRA Rule 3310",
+      "definition": "Anti-Money Laundering Compliance Program (Rule Title); requires each member firm to develop and implement a written AML program reasonably designed to achieve and monitor compliance with the BSA and implementing regulations, and sets forth minimum requirements including independent testing.",
+      "citations": [
+        {
+          "quote": "Rule 3310\n Anti-Money Laundering Compliance Program",
+          "verified": true
+        },
+        {
+          "quote": "FINRA Rule 3310 requires each member firm to develop and implement a written AML program",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act (BSA)",
+      "definition": "(undefined here) \u2014 referenced as the statute, with implementing regulations promulgated by the Department of the Treasury, that the AML program must be reasonably designed to achieve and monitor compliance with",
+      "citations": [
+        {
+          "quote": "compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Financial Crimes Enforcement Network (FinCEN)",
+      "definition": "a bureau within the Department of the Treasury that is responsible for administering the BSA and its implementing regulations",
+      "citations": [
+        {
+          "quote": "The Financial Crimes Enforcement Network (FinCEN), a bureau within the Department of the Treasury that is responsible for administering the BSA and its implementing regulations",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "member firm",
+      "definition": "(undefined here) \u2014 the covered actor subject to FINRA Rule 3310; the notice states new FINRA Rules apply to all member firms unless more limited by their terms",
+      "citations": [
+        {
+          "quote": "The new FINRA Rules apply to all member firms, unless such rules have a more limited application by their terms.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "introducing broker",
+      "definition": "(undefined here) \u2014 used in the context of the biennial testing exception for firms that do not execute transactions, hold customer accounts, or act as an introducing broker",
+      "citations": [
+        {
+          "quote": "or act as an introducing broker with respect to customer accounts to conduct its independent tests every two years",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "independent testing provision of the BSA",
+      "definition": "(undefined here) \u2014 provision that, per FinCEN, precludes AML program testing by personnel with an interest in the outcome of the testing",
+      "citations": [
+        {
+          "quote": "the independent testing provision of the BSA precludes AML program testing by personnel with an interest in the outcome of the testing",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "FINRA Rule 3310 adopts NASD Rule 3011 (AML Compliance Program) without substantive change and adopts NASD IM-3011-1 (subject to certain amendments) and NASD IM-3011-2 as supplementary material; it also deletes Incorporated NYSE Rule 445 (AML Compliance Program) in its entirety as duplicative.",
+      "references": [
+        "NASD Rule 3011",
+        "NASD IM-3011-1",
+        "NASD IM-3011-2",
+        "Incorporated NYSE Rule 445"
+      ],
+      "citations": [
+        {
+          "quote": "The rule change adopts NASD Rule 3011 (AML Compliance Program) without substantive change into the Consolidated FINRA Rulebook as FINRA Rule 3310 (AML Compliance Program) and adopts NASD IM-3011-1, subject to certain amendments, and NASD IM-3011-2 (Review of AML Compliance Person Information), without substantive change, as supplementary material to FINRA Rule 3310.",
+          "verified": true
+        },
+        {
+          "quote": "Additionally, the rule change deletes Incorporated NYSE Rule 445 (AML Compliance Program) in its entirety as duplicative.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The AML program must be reasonably designed to achieve and monitor compliance with the Bank Secrecy Act and the implementing regulations promulgated by the Department of the Treasury; FinCEN administers the BSA and its implementing regulations.",
+      "references": [
+        "Bank Secrecy Act (BSA)",
+        "Department of the Treasury implementing regulations",
+        "FinCEN"
+      ],
+      "citations": [
+        {
+          "quote": "reasonably designed to achieve and monitor compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FINRA Rule 3310 was approved by the SEC via Exchange Act Release No. 60645 (September 10, 2009), File No. SR-FINRA-2009-039, as part of the Consolidated FINRA Rulebook.",
+      "references": [
+        "Exchange Act Release No. 60645",
+        "File No. SR-FINRA-2009-039",
+        "74 FR 47630"
+      ],
+      "citations": [
+        {
+          "quote": "See Exchange Act Release No. 60645 (September 10, 2009), 74 FR 47630 (September 16, 2009) (Order Approving Proposed Rule Change; File No. SR-FINRA-2009-039).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Only FINRA Rule 3310 (Anti-Money Laundering Compliance Program) falls within the ratified scope (AML/CFT program-establishment 'pillars' obligations for broker-dealers under the FINRA SRO layer). The other ten consolidated rules described in this notice (Rules 2124, 2150, 2220, 2262, 2264, 2269, 4370, 5230, 5250, 5260) concern net transactions, customer funds, options communications, disclosures, margin, business continuity, market-making payments, and trading halts, which are outside the AML program-establishment scope and were excluded. This source is an SRO guidance/rule-approval notice (evidence role sro_guidance) that summarizes Rule 3310 rather than reproducing the rule text; obligations are extracted as the notice states them. The notice describes the annual independent testing as required and permits a biennial alternative for certain firms \u2014 extracted as written."
+}

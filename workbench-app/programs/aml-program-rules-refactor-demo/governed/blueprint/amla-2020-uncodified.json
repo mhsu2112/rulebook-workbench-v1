@@ -1,0 +1,350 @@
+{
+  "item_id": "amla-2020-uncodified",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Purpose of the AML/CFT subchapter: to prevent money laundering and terrorist financing through the establishment by financial institutions of reasonably designed, risk-based programs to combat money laundering and the financing of terrorism.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "prevent the laundering of money and the financing of terrorism through the establishment by financial institutions of reasonably designed risk-based programs to combat money laundering and the financing of terrorism;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Purpose of AMLA 2020 to reinforce that AML/CFT policies, procedures, and controls of financial institutions must be risk-based.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "to reinforce that the anti-money laundering and countering the financing of terrorism policies, procedures, and controls of financial institutions shall be risk-based;",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1",
+      "actor": "Secretary of the Treasury and the appropriate Federal functional regulator",
+      "modality": "must",
+      "action": "take into account specified statutory factors when prescribing minimum AML/CFT program standards and when supervising and examining institutions for compliance with those standards",
+      "trigger": "prescribing minimum standards under 31 U.S.C. 5318(h)(2)(A) and supervising/examining compliance with those standards",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In prescribing the minimum standards under subparagraph (A), and in supervising and examining compliance with those standards, the Secretary of the Treasury, and the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act (12 U.S.C. 6809)) shall take into account the following:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-2",
+      "actor": "anti-money laundering and countering the financing of terrorism programs described in 31 U.S.C. 5318(h)(1) (i.e., financial institutions' programs)",
+      "modality": "should",
+      "action": "be reasonably designed to assure and monitor compliance with the requirements of the subchapter and its regulations, and be risk-based, directing more attention and resources toward higher-risk customers and activities rather than lower-risk customers and activities, consistent with the institution's risk profile",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "reasonably designed to assure and monitor compliance with the requirements of this subchapter and regulations promulgated under this subchapter",
+          "verified": true
+        },
+        {
+          "quote": "risk-based, including ensuring that more attention and resources of financial institutions should be directed toward higher-risk customers and activities, consistent with the risk profile of a financial institution, rather than toward lower-risk customers and activities.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3",
+      "actor": "Secretary of the Treasury",
+      "modality": "must",
+      "action": "establish and make public priorities for anti-money laundering and countering the financing of terrorism policy, in consultation with the Attorney General, Federal functional regulators, relevant State financial regulators, and relevant national security agencies",
+      "trigger": "not later than 180 days after the date of enactment of 31 U.S.C. 5318(h)(4)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Not later than 180 days after the date of enactment of this paragraph, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators",
+          "verified": true
+        },
+        {
+          "quote": "shall establish and make public priorities for anti-money laundering and countering the financing of terrorism policy.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-4",
+      "actor": "Secretary of the Treasury",
+      "modality": "must",
+      "action": "update the AML/CFT priorities established under subparagraph (A), in consultation with the Attorney General, Federal functional regulators, relevant State financial regulators, and relevant national security agencies",
+      "trigger": "not less frequently than once every 4 years",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Not less frequently than once every 4 years, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators",
+          "verified": true
+        },
+        {
+          "quote": "shall update the priorities established under subparagraph (A).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-5",
+      "actor": "financial institution",
+      "modality": "conditional",
+      "action": "review the priorities established by the Secretary and incorporate those priorities, as appropriate, into the institution's risk-based AML/CFT programs established to meet obligations under the subchapter, the USA PATRIOT Act, and other AML/CFT laws and regulations; that review and incorporation is then used as a supervisory/examination measure",
+      "trigger": "existence of published national AML/CFT priorities under subparagraph (A)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review by a financial institution of the priorities established under subparagraph (A) and the incorporation of those priorities, as appropriate, into the risk-based programs established by the financial institution to meet obligations under this subchapter",
+          "verified": true
+        },
+        {
+          "quote": "shall be included as a measure on which a financial institution is supervised and examined for compliance with those obligations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-6",
+      "actor": "persons in the United States responsible for a financial institution's AML/CFT program",
+      "modality": "must",
+      "action": "remain responsible for, and personally perform, the duty to establish, maintain, and enforce the institution's anti-money laundering and countering the financing of terrorism program, while being accessible to and subject to oversight and supervision by the Secretary of the Treasury and the appropriate Federal functional regulator",
+      "trigger": "duty to establish, maintain and enforce an AML/CFT program as required under 31 U.S.C. 5318(h)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The duty to establish, maintain and enforce an anti-money laundering and countering the financing of terrorism program as required by this subsection shall remain the responsibility of, and be performed by, persons in the United States",
+          "verified": true
+        },
+        {
+          "quote": "who are accessible to, and subject to oversight and supervision by, the Secretary of the Treasury and the appropriate Federal functional regulator",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Bank Secrecy Act",
+      "definition": "means-- (A) section 21 of the Federal Deposit Insurance Act (12 U.S.C. 1829b); (B) chapter 2 of title I of Public Law 91-508 (12 U.S.C. 1951 et seq.); and (C) subchapter II of chapter 53 of title 31, United States Code.",
+      "citations": [
+        {
+          "quote": "The term ``Bank Secrecy Act'' means--",
+          "verified": true
+        },
+        {
+          "quote": "chapter 2 of title I of Public Law 91-508 (12 U.S.C. 1951 et seq.); and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal functional regulator",
+      "definition": "has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809); and includes any Federal regulator that examines a financial institution for compliance with the Bank Secrecy Act.",
+      "citations": [
+        {
+          "quote": "has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809); and",
+          "verified": true
+        },
+        {
+          "quote": "includes any Federal regulator that examines a financial institution for compliance with the Bank Secrecy Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Financial institution",
+      "definition": "has the meaning given the term in section 5312 of title 31, United States Code; and includes an electronic fund transfer network and a clearing and settlement system.",
+      "citations": [
+        {
+          "quote": "has the meaning given the term in section 5312 of title 31, United States Code; and",
+          "verified": true
+        },
+        {
+          "quote": "an electronic fund transfer network; and (ii) a clearing and settlement system.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Financial agency",
+      "definition": "has the meaning given the term in section 5312(a) of title 31, United States Code, as amended by section 6102 of this division.",
+      "citations": [
+        {
+          "quote": "has the meaning given the term in section 5312(a) of title 31, United States Code, as amended by section 6102 of this division.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FinCEN",
+      "definition": "means the Financial Crimes Enforcement Network of the Department of the Treasury.",
+      "citations": [
+        {
+          "quote": "The term ``FinCEN'' means the Financial Crimes Enforcement Network of the Department of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Secretary",
+      "definition": "means the Secretary of the Treasury.",
+      "citations": [
+        {
+          "quote": "The term ``Secretary'' means the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal depository institution",
+      "definition": "has the meaning given the term in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813).",
+      "citations": [
+        {
+          "quote": "The term `Federal depository institution' has the meaning given the term in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal credit union",
+      "definition": "has the meaning given the term in section 101 of the Federal Credit Union Act (12 U.S.C. 1752).",
+      "citations": [
+        {
+          "quote": "The term `Federal credit union' has the meaning given the term in section 101 of the Federal Credit Union Act (12 U.S.C. 1752).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "risk-based",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "to reinforce that the anti-money laundering and countering the financing of terrorism policies, procedures, and controls of financial institutions shall be risk-based;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "covered financial institution",
+      "definition": "(undefined here) -- the text states the term means an institution referred to in subsection (j)(1), but that subsection's text is not reproduced in this source item.",
+      "citations": [
+        {
+          "quote": "Covered financial institution.--The term `covered financial institution' means an institution referred to in subsection (j)(1).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "anti-money laundering and countering the financing of terrorism program",
+      "definition": "(undefined here) -- the term is used and its duty-holder and location are addressed, but this source does not reproduce a definitional text for the program itself.",
+      "citations": [
+        {
+          "quote": "The duty to establish, maintain and enforce an anti-money laundering and countering the financing of terrorism program as required by this subsection shall remain the responsibility of, and be performed by, persons in the United States",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money services businesses",
+      "definition": "(undefined here) -- referenced by cross-reference to 31 C.F.R. 1010.100(ff) without restating the definition.",
+      "citations": [
+        {
+          "quote": "money service businesses (as defined in section 1010.100(ff) of title 31, Code of Federal Regulations)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Definition of 'Federal functional regulator' cross-references the Gramm-Leach-Bliley Act provision governing federal functional regulation.",
+      "references": [
+        "Gramm-Leach-Bliley Act sec. 509 (15 U.S.C. 6809)"
+      ],
+      "citations": [
+        {
+          "quote": "has the meaning given the term in section 509 of the Gramm-Leach-Bliley Act (15 U.S.C. 6809); and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Definition of 'Bank Secrecy Act' incorporates FDIA sec. 21, Public Law 91-508 chapter 2 of title I, and 31 U.S.C. subchapter II of chapter 53.",
+      "references": [
+        "12 U.S.C. 1829b",
+        "12 U.S.C. 1951 et seq.",
+        "31 U.S.C. subchapter II, chapter 53"
+      ],
+      "citations": [
+        {
+          "quote": "chapter 2 of title I of Public Law 91-508 (12 U.S.C. 1951 et seq.); and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The examination measure for institutional incorporation of national AML/CFT priorities cross-references obligations under the subchapter and the USA PATRIOT Act.",
+      "references": [
+        "USA PATRIOT Act, Public Law 107-56, 115 Stat. 272"
+      ],
+      "citations": [
+        {
+          "quote": "the USA PATRIOT Act (Public Law 107-56; 115 Stat. 272), and other anti-money laundering and countering the financing of terrorism laws and regulations shall be included as a measure on which a financial institution is supervised and examined for compliance with those obligations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Secretary's national AML/CFT priorities must be consistent with the national strategy for countering the financing of terrorism and related illicit finance developed under a separate statute.",
+      "references": [
+        "Countering Russian Influence in Europe and Eurasia Act of 2017, sec. 261, Public Law 115-44, 131 Stat. 934"
+      ],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury shall ensure that the priorities established under subparagraph (A) are consistent with the national strategy for countering the financing of terrorism and related forms of illicit finance developed under section 261 of the Countering Russian Influence in Europe and Eurasia Act of 2017 (Public Law 115-44; 131 Stat. 934).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "SAR compliance-program provision ties suspicious activity reporting (coordination layer) to the covered financial institution's Bank Secrecy Act compliance program and its risk assessment processes, which are to consider the Secretary's priorities.",
+      "references": [
+        "31 U.S.C. 5318(g)"
+      ],
+      "citations": [
+        {
+          "quote": "Reports filed under this subsection shall be guided by the compliance program of a covered financial institution with respect to the Bank Secrecy Act, including the risk assessment processes of the covered institution",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Interagency coordination provision inviting State bank/credit union supervisors into rulemaking consultation cross-references the Federal Deposit Insurance Act and Federal Credit Union Act definitions.",
+      "references": [
+        "12 U.S.C. 1813",
+        "12 U.S.C. 1752"
+      ],
+      "citations": [
+        {
+          "quote": "The term `Federal depository institution' has the meaning given the term in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source item is Division F of the AML Act of 2020 as an uncodified/note-level compilation; most operative program-establishment text (the substance of 31 U.S.C. 5318(h)(1)-(2)) is amended by cross-reference/insertion rather than reproduced in full, so several core program obligations (e.g., the base duty to establish an AML program) are only partially visible in this source and are extracted as given, without filling gaps from the main codified text (out of scope for this item). Per the fidelity rule, ambiguity as to full program content is preserved rather than resolved. Boundary/coordination-layer content (SAR/CTR specifics, OFAC/sanctions, whistleblower provisions, beneficial ownership/CTA reporting details, GAO studies, personnel/administrative provisions) is described only where it bears directly on program-establishment obligations; most of Titles LXI-LXV is administrative, reporting, or study-related and outside the ratified program-rules scope, so it was not extracted as obligations."
+}

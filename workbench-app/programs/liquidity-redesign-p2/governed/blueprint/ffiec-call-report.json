@@ -1,0 +1,86 @@
+{
+  "item_id": "ffiec-call-report",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The FFIEC Call Report index is in scope only for the timing/granularity-vs-fast-runs connection: the Call Report's quarterly filing cadence is the datum the liquidity-regime diagnostic cites.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Scope note per manifest: in scope ONLY for the timing/granularity-vs-fast-runs connection. The Call Report is filed QUARTERLY, as of each calendar quarter-end \u2014 the cadence datum the diagnostic cites. Schedules are cited, not distilled.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "FFIEC 031",
+      "definition": "Consolidated Reports of Condition and Income for a Bank with Domestic and Foreign Offices",
+      "citations": [
+        {
+          "quote": "FFIEC 031 \u2014 Consolidated Reports of Condition and Income for a Bank with Domestic and Foreign Offices",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FFIEC 041",
+      "definition": "Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only \u2014 replaces FFIEC 032, FFIEC 033, FFIEC 034",
+      "citations": [
+        {
+          "quote": "FFIEC 041 \u2014 Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only \u2014 replaces FFIEC 032, FFIEC 033, FFIEC 034",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FFIEC 051",
+      "definition": "Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only and Total Assets Less than $5 Billion",
+      "citations": [
+        {
+          "quote": "FFIEC 051 \u2014 Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only and Total Assets Less than $5 Billion",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Call Report",
+      "definition": "(undefined here) \u2014 the source index refers to \"the Call Report\" (encompassing FFIEC 031/041/051) without a formal definition; its cadence is described as: \"filed QUARTERLY, as of each calendar quarter-end\"",
+      "citations": [
+        {
+          "quote": "The Call Report is filed QUARTERLY, as of each calendar quarter-end \u2014 the cadence datum the diagnostic cites.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Call Report filing cadence",
+      "definition": "filed QUARTERLY, as of each calendar quarter-end",
+      "citations": [
+        {
+          "quote": "filed QUARTERLY, as of each calendar quarter-end",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "FFIEC 041 is presented as the successor/replacement form to three prior historical Call Report forms.",
+      "references": [
+        "FFIEC 032",
+        "FFIEC 033",
+        "FFIEC 034"
+      ],
+      "citations": [
+        {
+          "quote": "FFIEC 041 \u2014 Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only \u2014 replaces FFIEC 032, FFIEC 033, FFIEC 034",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Source is an FFIEC index page plus an acquisition/scope note; it contains no shall/must/should/may modality language, so no obligation rows are extracted (fidelity rule: not invented). The scope note itself explicitly restricts extraction to the quarterly cadence datum ('Schedules are cited, not distilled'), so the internal Call Report schedules (e.g., liquidity schedules) are not separately distilled here. Related, non-liquidity-relevant forms listed on the same FFIEC index (FFIEC 002, 002S, 009/009A, 019, 030/030S, 101, 102 \u2014 covering foreign branches, country exposure, regulatory capital, and market risk) fall outside the ratified liquidity/bank-run scope and are therefore omitted from this extraction notwithstanding their presence in the source text. No reference to FR 2052a or Call Report Schedule-level detail appears in this source text, so no such citation/interaction could be produced verbatim."
+}

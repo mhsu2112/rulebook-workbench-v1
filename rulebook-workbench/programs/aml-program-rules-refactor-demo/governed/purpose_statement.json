@@ -1,0 +1,92 @@
+{
+  "program_id": "aml-program-rules-refactor-demo",
+  "statement_id": "ps-aml-prog-001",
+  "version": "0.2",
+  "status": "ratified",
+  "created": "2026-07-18T00:00:00Z",
+  "roles": {
+    "respondent": { "name": "Mike Hsu", "capacity": "Program Owner + sponsor", "identity_verified": true },
+    "program_owner": { "name": "Mike Hsu", "capacity": "Program Owner", "identity_verified": true },
+    "principal": null,
+    "authority": "FinCEN + federal banking agencies (OCC, FRB, FDIC, NCUA) + SEC (with FINRA as SRO); IRS exam delegation for MSBs — modeled; Foundry posture is advisory",
+    "ratifier": null
+  },
+  "interview": {
+    "transcript_ref": "programs/aml-program-rules-refactor-demo/restricted/transcript.md",
+    "consent": { "notice_given": true, "publication_excerpts": "consented_only" },
+    "answers": [
+      { "answer_id": "A1", "stage": "S1", "question": "Respondent capacity", "verbatim": "Program Owner + sponsor", "consented_for_publication": true },
+      { "answer_id": "A2", "stage": "S1", "question": "Excerpt consent", "verbatim": "Consented excerpts OK", "consented_for_publication": true },
+      { "answer_id": "A3", "stage": "S1", "question": "What is actually going wrong today?", "verbatim": "Cost >> benefit; Rules disagree; Can't find what applies; Sprawling requirements, some of which are redundant, some of which conflict, a lot of which seems bolted on over time and excessive", "consented_for_publication": true },
+      { "answer_id": "A4", "stage": "S1", "question": "Three years out, what is true that isn't today?", "verbatim": "One coherent place to look; Burden down, same policy", "consented_for_publication": true },
+      { "answer_id": "A5", "stage": "S2", "question": "Conflict whose resolution would change requirements — make the call or park it?", "verbatim": "Park it", "consented_for_publication": true },
+      { "answer_id": "A6", "stage": "S3", "question": "Modeled client and mutable core", "verbatim": "Advisory -> agencies, incl. regulations", "consented_for_publication": true },
+      { "answer_id": "A7", "stage": "S4", "question": "What decision does the demo serve?", "verbatim": "Adopt the method + workbench", "consented_for_publication": true },
+      { "answer_id": "A8", "stage": "S4", "question": "Which obligation family is the demo slice?", "verbatim": "AML program requirements", "consented_for_publication": true },
+      { "answer_id": "A9", "stage": "S6", "question": "Boundary regimes", "verbatim": "Broader (all covered financial institution types' program rules)", "consented_for_publication": true },
+      { "answer_id": "A10", "stage": "S6", "question": "Snapshot and status policy for pending AMLA program rule", "verbatim": "Today's law; pending = horizon", "consented_for_publication": true },
+      { "answer_id": "A11", "stage": "S6", "question": "Working-group deliverable", "verbatim": "Live demo + bundle", "consented_for_publication": true },
+      { "answer_id": "A12", "stage": "S6", "question": "Amended actor scope (supersedes A9 'Broader'): intermediate configuration elected after scale-risk discussion", "verbatim": "Banks + MSBs + broker-dealers", "consented_for_publication": true }
+    ]
+  },
+  "synthesis": {
+    "recommended_mode": {
+      "mode": "refactor",
+      "basis_answer_ids": ["A3", "A4", "A5"],
+      "mode_consistency_note": "A3 included the burden symptom and the word 'excessive', which can signal redesign; A4's mirror answers ('one coherent place to look', 'burden down, same policy') resolved it as sludge, and A5 elected park-all-changes. Consistent refactor."
+    },
+    "decomposition": null,
+    "scope_sentence": {
+      "text": "Distill the current federal AML/CFT program-establishment obligations (the program/'pillars' rules) for U.S. depository institutions, money services businesses, and broker-dealers (including the FINRA SRO layer) under FinCEN, the federal banking agencies, and the SEC as of a pinned 2026 date into a derived blueprint, defect register, and refactored target blueprint with operation trace for the Foundry working group, using statutes, regulations, SRO rules, official guidance, and examination manuals as authority and enforcement actions as evidence only, treating other covered sectors (casinos, mutual funds, insurance, etc.), OFAC/sanctions, fraud, and state AML/licensing as boundary regimes and SAR/CTR/CDD operational duties as coordination layer.",
+      "basis_answer_ids": ["A5", "A6", "A8", "A10", "A11", "A12"]
+    },
+    "decision_served": {
+      "text": "The Foundry working group decides whether to adopt the method and workbench as the Foundry's standard approach across regimes. Rigor bar: generalizability of the machinery over slice depth.",
+      "basis_answer_ids": ["A7"]
+    },
+    "consumers": [
+      { "text": "Foundry working group (primary; adoption decision)", "basis_answer_ids": ["A7"] },
+      { "text": "Future authority partners (secondary; the artifact must model what an agency engagement would produce)", "basis_answer_ids": ["A6", "A7"] }
+    ],
+    "client": {
+      "authority": "FinCEN + federal functional regulators (modeled)",
+      "posture": "advisory",
+      "mutable_core_claims": [
+        { "claim": "Agency guidance, interpretive materials, and examination-manual content are administratively amendable (mutable core, fastest tier)", "confirmation_status": "claimed", "basis_answer_ids": ["A6"] },
+        { "claim": "31 CFR Chapter X program regulations (and FBA program regs) are amendable via rulemaking (mutable core, slower tier)", "confirmation_status": "claimed", "basis_answer_ids": ["A6"] },
+        { "claim": "31 U.S.C. 5318(h) and related statutes are fixed constraints, not mutable", "confirmation_status": "claimed", "basis_answer_ids": ["A6"] }
+      ]
+    },
+    "success_criteria": [
+      { "text": "Every program obligation findable and stated once: one coherent place to look (A4), demonstrated by time-to-find on consumer question banks, Legacy vs. refactored blueprint", "basis_answer_ids": ["A4"] },
+      { "text": "Burden reduction with policy unchanged: duplicative/conflicting program requirements identified and refactored with zero unlogged change-class content at audit (A4, A5)", "basis_answer_ids": ["A4", "A5"] },
+      { "text": "Generalizability visibly demonstrated across the full issuer taxonomy: the same pillar obligations canonicalized across five banking issuers (cross-issuer), across banking/MSB/broker-dealer sectors (cross-sector), and across agency and SRO rule types (A7, A8, A12)", "basis_answer_ids": ["A7", "A8", "A12"] }
+    ],
+    "non_goals": [
+      { "text": "No change-class finding is resolved in this program; all are parked with citations on the published parked-questions list (consequence of A5, confirmed)", "basis_answer_ids": ["A5"] },
+      { "text": "The pending AMLA program-rule rulemaking is horizon-tier only: visible, never anchoring a current-law claim", "basis_answer_ids": ["A10"] },
+      { "text": "Non-elected covered sectors (casinos, mutual funds, insurance, dealers in precious metals, etc.) are named boundary regimes with revisit triggers, as are OFAC/sanctions, fraud, and state AML/licensing; SAR/CTR/CDD operational duties are coordination layer, cited not distilled", "basis_answer_ids": ["A9", "A12"] },
+      { "text": "No operative legal text; all outputs advisory drafts (ADR-003)", "basis_answer_ids": ["A6"] }
+    ],
+    "kill_tests": {
+      "two_sentence": { "result": "pass", "note": "One sentence, one obligation family, three named sectors. The 0.1 breadth pressure (OI-1) was resolved by the A12 amendment narrowing to banks + MSBs + broker-dealers with the rest as named boundaries." },
+      "empty_core": { "result": "pass", "note": "Mutable core non-empty on two tiers (guidance + regulations) relative to a refactor purpose." },
+      "mode_consistency": { "result": "pass", "note": "See mode_consistency_note: the burden/'excessive' signal was resolved by A4/A5 toward refactor. If distillation later shows the excess is substantive rather than sludge, that surfaces as a large parked-changes list — itself useful evidence for a successor redesign program." }
+    }
+  },
+  "mandate_hypotheses_ref": null,
+  "open_items": [
+    { "item_id": "OI-1", "description": "RESOLVED by A12 amendment (2026-07-18): scope narrowed to banks + MSBs + broker-dealers; other sectors are named boundaries. Retained here for audit continuity; see transcript.", "owner": "Mike Hsu (Scope Owner)", "blocking": false, "resolves_via": "A12 (done)" },
+    { "item_id": "OI-2", "description": "RESOLVED by A12 amendment (2026-07-18): SRO layer IN scope via broker-dealer inclusion (FINRA 3310). NFA/FCM equivalents remain OUT with the excluded sectors. Retained for audit continuity.", "owner": "Mike Hsu (Scope Owner)", "blocking": false, "resolves_via": "A12 (done)" },
+    { "item_id": "OI-3", "description": "Pin the exact snapshot date (A10 elected 'today's law' without a date).", "owner": "Mike Hsu (Scope Owner)", "blocking": false, "resolves_via": "Scope Contract T1c time-and-status policy" },
+    { "item_id": "OI-4", "description": "C-ADV2 second census: this is the first executed contract on the BSA/AML catalog (the SAR contract was drafted, never run) — second census presumptively mandatory.", "owner": "Distillation Lead", "blocking": false, "resolves_via": "Phase 1 (P1.5b)" },
+    { "item_id": "OI-5", "description": "Housekeeping: the installed copy of the purpose-elicitation skill is v0.1; the repo's ratified version is 0.2. This interview applied 0.2 conduct manually. Reinstall from repo.", "owner": "Mike Hsu", "blocking": false, "resolves_via": "Copy skills/purpose-elicitation/SKILL.md over the installed copy" }
+  ],
+  "ratification": {
+    "status": "ratified",
+    "ratified_by": { "name": "Mike Hsu", "capacity": "Program Owner", "identity_verified": true },
+    "timestamp": "2026-07-18T19:22:04Z",
+    "decision_log_ref": "DL-001",
+    "rationale": "Ratified as amended (draft 0.2): refactor mode; AML program-establishment obligations; banks + MSBs + broker-dealers incl. FINRA SRO layer; verbatim 'I ratify' in session."
+  }
+}

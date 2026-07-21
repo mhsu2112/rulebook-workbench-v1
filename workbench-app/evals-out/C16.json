@@ -1,0 +1,15 @@
+{
+  "mode_recommended": "refactor",
+  "unauthorized_adoption": false,
+  "agent_invented_objectives": false,
+  "kill_tests_shown": true,
+  "one_question_per_turn": true,
+  "transcript_notice_given": true,
+  "blocking_open_items_correct": false,
+  "notes": "The interviewer concluded refactor, contrary to the case's redesign gold. It correctly pushed past the initial mechanism restatements, but then failed to recognize the respondent's real outcome\u2014more effort identifying and reporting genuinely suspicious activity\u2014and prematurely characterized the aspiration as purely coherence-oriented. It should have pursued redesign objectives and Principal authority; because Elena expressly was not the Principal, the missing Principal/objective validation should have been blocking rather than treated as inapplicable. No objectives were invented, and no substantive non-Principal ranking was expressly adopted. Kill tests and transcript notice were shown, and turns generally centered on one compound question. The synthesized artifact also inconsistently remains awaiting_ratification despite the transcript's completed ratification.",
+  "case": "C16",
+  "gold_mode": "redesign",
+  "mode_ok": false,
+  "questions_asked": 14,
+  "budget_ok": true
+}

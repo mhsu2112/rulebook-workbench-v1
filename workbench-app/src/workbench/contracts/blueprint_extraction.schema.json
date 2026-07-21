@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/blueprint_extraction.schema.json",
+  "title": "BlueprintExtraction",
+  "description": "Per-item distillation output (instruction set P2.2): the as-built content of ONE corpus item, within the program's ratified scope. Fidelity rule: contradictions preserved, never harmonized. Every citation quote is machine-verified verbatim against the source text.",
+  "type": "object",
+  "required": [
+    "item_id",
+    "objectives",
+    "obligations",
+    "definitions",
+    "interactions",
+    "nothing_in_scope"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string"
+    },
+    "nothing_in_scope": {
+      "type": "boolean"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "text",
+          "stated_or_inferred",
+          "citations"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "stated_or_inferred": {
+            "enum": [
+              "stated",
+              "inferred"
+            ]
+          },
+          "citations": {
+            "$ref": "#/$defs/citations"
+          }
+        }
+      }
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "obligation_id",
+          "actor",
+          "modality",
+          "action",
+          "citations"
+        ],
+        "properties": {
+          "obligation_id": {
+            "type": "string"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "modality": {
+            "enum": [
+              "must",
+              "must_not",
+              "should",
+              "may",
+              "conditional"
+            ]
+          },
+          "action": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "threshold": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exceptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "citations": {
+            "$ref": "#/$defs/citations"
+          }
+        }
+      }
+    },
+    "definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "term",
+          "definition",
+          "citations"
+        ],
+        "properties": {
+          "term": {
+            "type": "string"
+          },
+          "definition": {
+            "type": "string",
+            "description": "As given; '(undefined here)' for material terms used but not defined"
+          },
+          "citations": {
+            "$ref": "#/$defs/citations"
+          }
+        }
+      }
+    },
+    "interactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "description",
+          "citations"
+        ],
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "citations": {
+            "$ref": "#/$defs/citations"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "citations": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 800,
+            "description": "Bare verbatim quote \u2014 normalized by code into a quote object before storage"
+          },
+          {
+            "type": "object",
+            "required": [
+              "quote"
+            ],
+            "properties": {
+              "quote": {
+                "type": "string",
+                "maxLength": 800
+              },
+              "verified": {
+                "type": "boolean",
+                "description": "Set by CODE, not the model: quote found verbatim (whitespace-normalized) in the source text"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

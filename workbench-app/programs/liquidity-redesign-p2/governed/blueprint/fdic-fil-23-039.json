@@ -1,0 +1,182 @@
+{
+  "item_id": "fdic-fil-23-039",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The agencies are issuing this updated guidance to remind depository institutions to maintain actionable contingency funding plans that take into account a range of possible stress scenarios.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The agencies are issuing this updated guidance to remind depository institutions to maintain actionable contingency funding plans that take into account a range of possible stress scenarios.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-1",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Maintain actionable contingency funding plans that take into account an appropriate range of possible stress scenarios.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Maintain actionable contingency funding plans that take into account an appropriate\n range of possible stress scenarios.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-2",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Proactively assess the stability of their funding and maintain a broad range of funding sources that can be accessed in adverse circumstances.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Proactively assess the stability of their funding and maintain a broad range of funding\n sources that can be accessed in adverse circumstances.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-3",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Incorporate the discount window as part of their contingency funding arrangements (as encouraged by the agencies).",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The agencies encourage depository institutions to incorporate the discount window as part of their contingency funding\n arrangements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-4",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Be aware of the operational requirements to obtain funding from contingent sources, including testing access to contingent funding sources on a regular basis.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Be aware of the operational requirements to obtain funding from contingent sources,\n including testing access to contingent funding sources on a regular basis.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-5",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Ensure that collateral is available for borrowing in an amount appropriate for potential contingency funding needs.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Ensure that collateral is available for borrowing in an amount appropriate for potential\n contingency funding needs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-6",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Plan for potential operational challenges involved in moving and posting collateral.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Additionally, depository institutions should plan for\n potential operational challenges involved in moving and posting collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-7",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "Review and revise contingency funding plans periodically and more frequently as market conditions and strategic initiatives change in order to address evolving liquidity risks.",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Review and revise contingency funding plans periodically and more frequently as market\n conditions and strategic initiatives change in order to address evolving liquidity\n risks.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "contingency funding plans",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Maintain actionable contingency funding plans that take into account an appropriate\n range of possible stress scenarios.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount window",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The agencies encourage depository institutions to incorporate the discount window as part of their contingency funding\n arrangements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FDIC-supervised financial institutions",
+      "definition": "(undefined here) \u2014 used as the scope of applicability for this FIL",
+      "citations": [
+        {
+          "quote": "The contents of, and material referenced in,\n this FIL apply to all FDIC-supervised financial institutions.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "This FIL transmits and references an attachment titled the Addendum to the Interagency Policy Statement on Funding and Liquidity Risk Management: Importance of Contingency Funding Plans.",
+      "references": [
+        "Addendum to the Interagency Policy Statement on Funding and Liquidity Risk Management: Importance of Contingency Funding Plans"
+      ],
+      "citations": [
+        {
+          "quote": "Addendum to the Interagency Policy Statement on Funding and Liquidity Risk Management: Importance of Contingency Funding Plans",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The FIL links to the underlying 2010 Interagency Policy Statement on Funding and Liquidity Risk Management via a hosted FIL URL.",
+      "references": [
+        "https://www.fdic.gov/news/financial-institution-letters/2010/fil10013.html"
+      ],
+      "citations": [
+        {
+          "quote": "https://www.fdic.gov/news/financial-institution-letters/2010/fil10013.html",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source (FIL-39-2023, July 28, 2023) is interagency supervisory guidance on contingency funding plans (CFPs), not a diagnostic analysis of discount-window/FHLB fragmentation, stigma sources, or reporting-granularity defects, and it predates and does not reference the Hsu/McKernan reform proposals named in the ratified scope. It is included here only insofar as it bears on the scope's discount-window and collateral/operational-readiness themes (e.g., encouragement to incorporate the discount window into CFPs and to plan for collateral-movement operational challenges), which are relevant background/evidentiary material for the diagnostic; no defect register or reform-proposal mapping content is present in this source. The word 'encourage' (not 'shall/must/should/may') was mapped to modality 'should' per the closest available category, per the fidelity rule this substitution is flagged rather than silently normalized. All 'should' statements are reproduced as written from the bulleted list under 'Depository institutions should:' without modification."
+}

@@ -1,0 +1,1270 @@
+Skip to main content
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FINRA Utility Menu
+
+ 
+
+ 
+ 
+ About Us
+ 
+
+ 
+ Careers
+ 
+
+ 
+ BrokerCheck
+ 
+
+ 
+ Data
+ 
+
+ 
+ Media Center
+ 
+
+ 
+ For Firms
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+For the Public
+FINRA DATA
+FINRA Data provides non-commercial use of data, specifically the ability to save data views and create and manage a Bond Watchlist.
+Login
+
+For Industry Professionals
+FINPRO GATEWAY
+Registered representatives can fulfill Continuing Education requirements, view their industry CRD record and perform other compliance tasks.
+Login
+
+For Member Firms
+FINRA GATEWAY
+Firm compliance professionals can access filings and requests, run reports and submit support tickets.
+Login
+
+For Case Participants
+DR PORTAL
+Arbitration and mediation case participants and FINRA neutrals can view case information and submit documents through this Dispute Resolution Portal.
+Login
+
+Need Help? | Check System Status
+Log In to other FINRA systems
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ EXPLORE THIS SECTION
+ 
+
+ 
+ 
+ 
+ FINRA Main Navigation
+
+ 
+
+ 
+ 
+ 
+ FINRA Manual
+ 
+ 
+ Updates
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ Interpreting the Rules
+ 
+ 
+ Notices
+ 
+
+ 
+ Guidance
+ 
+
+ 
+ Frequently Asked Questions
+ 
+
+ 
+ Key Topics
+ 
+
+ 
+ Interpretive Questions
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ The Rulemaking Process
+ 
+ 
+ Rule Filings
+ 
+
+ 
+ Rule Filing Status Report
+ 
+
+ 
+ Requests for Comments
+ 
+
+ 
+ Regulatory Policy Agenda
+ 
+
+ 
+ Rulebook Consolidation
+ 
+
+ 
+ Retrospective Rule Review
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ Enforcement
+ 
+ 
+ Disciplinary Actions Online
+ 
+
+ 
+ Monthly Disciplinary Actions
+ 
+
+ 
+ Sanction Guidelines
+ 
+
+ 
+ Individuals Barred by FINRA
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ Adjudication & Decisions
+ 
+ 
+ National Adjudicatory Council (NAC)
+ 
+
+ 
+ Office of Hearing Officers (OHO)
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Regulatory Notice 09-60
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ SEC Approval and Effective Dates for New Consolidated FINRA Rules
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Published Date:
+
+ October 15, 2009
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Effective Date (all rules except FINRA Rule 3310): December 14, 2009 Effective Date (FINRA Rule 3310): January 1, 2010
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ Notice
+ 
+ 
+ Comments
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ SEC Approves New Consolidated FINRA Rules
+
+ 
+ 
+ Regulatory Notice
+ 
+
+ 
+ Notice Type
+ 
+ Consolidated Rulebook
+ Rule Approval
+ Referenced Rules & Notices
+ 
+ FINRA Rule 2124
+ FINRA Rule 2150
+ FINRA Rule 2220
+ FINRA Rule 2262
+ FINRA Rule 2264
+ FINRA Rule 2269
+ FINRA Rule 3310
+ FINRA Rule 4370
+ FINRA Rule 5230
+ FINRA Rule 5250
+ FINRA Rule 5260
+ Information Notice 03/12/08
+ Information Notice 10/06/08
+ Regulatory Notice 08-57
+ 
+
+ 
+ Suggested Routing
+ 
+ Compliance
+ Legal
+ Operations
+ Senior Management
+ Key Topics
+ 
+ Anti-Money Laundering
+ Business Continuity Plans
+ Control Relationship with Issuer
+ Customers' Securities or Funds
+ Emergency Contact Information
+ Margin Disclosure Statement
+ Market Making
+ Market Price of a Security
+ Net Transactions with Customers
+ Options Communications
+ Participation or Interest in Primary or Secondary Distribution
+ Trading Halts
+ 
+
+ 
+
+Executive Summary
+
+Following the consolidation of NASD and the member regulation, enforcement and arbitration functions of NYSE Regulation into FINRA, FINRA established a process to develop a new consolidated rulebook (Consolidated FINRA Rulebook), which FINRA has discussed in previous Information Notices.1 FINRA is proposing new consolidated rules in phases for approval by the SEC as part of the Consolidated FINRA Rulebook.2 In August and September, the SEC approved eleven new consolidated FINRA Rules. The new rules, except for FINRA Rule 3310 (Anti-Money Laundering Compliance Program), take effect on December 14, 2009. FINRA Rule 3310 takes effect on January 1, 2010.
+
+Questions regarding this Notice should be directed to:
+
+•   Patricia Albrecht, Assistant General Counsel, Office of General Counsel (OGC), at (202) 728-8026 (regarding FINRA Rules 2220, 3310 and 4370);
+
+•   Adam Arkel, Assistant General Counsel, OGC, at (202) 728-6961 (regarding FINRA Rules 2262 and 2269);
+
+•   Afshin Atabaki, Assistant General Counsel, OGC, at (202) 728-8902 (regarding FINRA Rule 2150);
+
+•   Brant Brown, Associate General Counsel, OGC, at (202) 728-8264 (regarding FINRA Rule 5230); or
+
+•   Racquel Russell, Assistant General Counsel, OGC, at (202) 728-8363 (regarding FINRA Rules 2124, 2264, 5250 and 5260).
+
+Background & Discussion
+
+In August and September 2009, the SEC approved eleven FINRA Rules as part of the Consolidated FINRA Rulebook:
+
+•   Rule 2124 (Net Transactions with Customers);3
+
+•   Rule 2150 (Improper Use of Customers' Securities or Funds; Prohibition Against Guarantees and Sharing in Accounts);4
+
+•   Rule 2220 (Options Communications);5
+
+•   Rule 2262 (Disclosure of Control Relationship with Issuer);6
+
+•   Rule 2264 (Margin Disclosure Statement);7
+
+•   Rule 2269 (Disclosure of Participation or Interest in Primary or Secondary Distribution);8
+
+•   Rule 3310 (Anti-Money Laundering Compliance Program);9
+
+•   Rule 4370 (Business Continuity Plans and Emergency Contact Information);10
+
+•   Rule 5230 (Payments Involving Publications that Influence the Market Price of a Security);11
+
+•   Rule 5250 (Payments for Market Making);12 and
+
+•   Rule 5260 (Prohibition on Transactions, Publication of Quotations, or Publication of Indications of Interest During Trading Halts).13
+
+The attachment to this Notice sets forth additional information regarding these new consolidated rules and includes a hyperlink to each related rule filing. The filings provide, among other things, FINRA's statement of the purpose of the rule changes and an exhibit showing the changes between the new rule text and the text of the NASD rule as it exists in the Transitional Rulebook. Also, the text of each new FINRA Rule is available in the online FINRA Manual at www.finra.org/finramanual.14
+
+Rule Conversion Chart
+
+As discussed in additional detail in Information Notice 10/06/08 and Regulatory Notice 08-57, FINRA has posted a Rule Conversion Chart on its Web site to help firms become familiar with the new rules and show how the new rules relate to the NASD and/or Incorporated NYSE Rules in the Transitional Rulebook that they will replace.
+
+Firms should be aware that the chart is intended as a reference aid only. FINRA reminds firms that the chart does not in any way serve as a substitute for diligent review of the relevant new rule language. The Rule Conversion Chart is located at www.finra.org/ruleconversionchart.
+
+1 See Information Notice 10/06/08 (Rulebook Consolidation Process: Effective Dates of New Consolidated Rules; Introduction of Rule Conversion Chart); see also Information Notice 03/12/08 (Rulebook Consolidation Process).
+
+2 The current FINRA rulebook consists of (1) FINRA Rules; (2) NASD Rules; and (3) rules incorporated from NYSE (Incorporated NYSE Rules) (together the NASD Rules and Incorporated NYSE Rules are referred to as the Transitional Rulebook). While the NASD Rules generally apply to all FINRA member firms, the Incorporated NYSE Rules apply only to those members of FINRA that are also members of the NYSE (Dual Members). The new FINRA Rules apply to all member firms, unless such rules have a more limited application by their terms. As the Consolidated FINRA Rulebook expands with the SEC's approval and with the new FINRA Rules taking effect, the rules in the Transitional Rulebook that address the same subject matter of regulation will be eliminated. When the Consolidated FINRA Rulebook is completed, the Transitional Rulebook will have been eliminated in its entirety.
+
+3 See Exchange Act Release No. 60534 (August 19, 2009), 74 FR 44410 (August 28, 2009) (Order Granting Accelerated Approval of Proposed Rule Change, as Modified by Amendment No. 1; File No. SR-FINRA-2009-036).
+
+4 See Exchange Act Release No. 60701 (September 21, 2009); 74 FR 49425 (September 28, 2009 (Order Approving Proposed Rule Change; File No. SR-FINRA-2009-014).
+
+5 See supra note 3.
+
+6 See Exchange Act Release No. 60659 (September 11, 2009), 74 FR 48117 (September 21, 2009) (Order Approving Proposed Rule Change; File No. SR-FINRA-2009-044).
+
+7 See Exchange Act Release No. 60697 (September 21, 2009), 74 FR 49051 (September 25, 2009) (Order Approving Proposed Rule Change; File No. SR-FINRA-2009-052).
+
+8 See supra note 6.
+
+9 See Exchange Act Release No. 60645 (September 10, 2009), 74 FR 47630 (September 16, 2009) (Order Approving Proposed Rule Change; File No. SR-FINRA-2009-039).
+
+10 See supra note 3.
+
+11 See Exchange Act Release No. 60648 (September 10, 2009), 74 FR 47837 (September 17, 2009) (Order Approving Proposed Rule Change; File No. SR-FINRA-2009-048).
+
+12 See supra note 3.
+
+13 See supra note 6.
+
+14 FINRA updates the rule text on its online Manual within two business days of SEC approval of changes to the rule text.
+
+Attachment A
+
+List of Approved FINRA Rules (and Related Rule Filings)
+
+The SEC approved the following new FINRA Rules in August and September 2009. The effective date of the all of the rules, except FINRA Rule 3310 (Anti-Money Laundering Compliance Progam), is December 14, 2009. The effective date of FINRA Rule 3310 is January 1, 2010.
+
+FINRA Rule Filing SR-FINRA-2009-014
+
+www.finra.org/rulefilings/2009-014
+
+FINRA Rule 2150
+
+The rule change adopts certain paragraphs of NASD Rule 2330 (Customers' Securities or Funds) as FINRA Rule 2150 (Improper Use of Customers' Securities or Funds; Prohibition Against Guarantees and Sharing in Accounts) in the Consolidated FINRA Rulebook with minor changes. The rule change also deletes Incorporated NYSE Rule 352 (with the exception of paragraphs (e), (f) and (g)) from the Transitional Rulebook.
+
+FINRA Rule 2150 prohibits member firms and associated persons from making improper use of a customer's securities or funds and from guaranteeing a customer against loss in connection with any securities transaction or in any securities account of the customer. FINRA Rule 2150 also prohibits member firms and associated persons from sharing in the profits or losses in a customer's account except under certain limited conditions. Additionally, the rule permits, under certain conditions, a member firm or associated person acting as an investment adviser to receive compensation based on a share in the profits or gains in a customer's account.
+
+Supplementary material to FINRA Rule 2150 codifies existing staff guidance that a "guarantee" extended to all holders of a particular security by an issuer as part of that security generally would not be subject to the prohibition against guarantees and that a permissible sharing arrangement remains subject to other applicable FINRA rules. The supplementary material also provides clarification regarding: (1) reimbursement to a customer for transaction losses on an after-the-fact basis; (2) a member firm's ability to correct a bona fide error; and (3) applicable record retention requirements.
+
+ 
+ 
+ Rule/Series Number
+ Rule Title
+ 
+
+ 
+ 2000 Series
+ DUTIES AND CONFLICTS
+ 
+
+ 
+ 2100 Series
+ TRANSACTIONS WITH CUSTOMERS
+ 
+
+ 
+ Rule 2150
+ Improper Use of Customers' Securities or Funds; Prohibition Against Guarantees and Sharing in Accounts
+ 
+
+ 
+
+FINRA Rule Filing SR-FINRA-2009-036
+
+www.finra.org/rulefilings/2009-036
+
+The rule change adopts, without material change:
+
+•   NASD Rule 2441 (Net Transactions with Customers) as FINRA Rule 2124;
+
+•   NASD Rule 2220 (Options Communications) as FINRA Rule 2220;
+
+•   NASD Rule 3510 (Business Continuity Plans) and NASD 3520 (Emergency Contact Information) as FINRA Rule 4370; and
+
+•   NASD Rule 2460 (Payment for Market Making) as FINRA Rule 5250.
+
+FINRA Rule 2124
+
+FINRA Rule 2124 (Net Transactions with Customers) requires member firms to provide disclosure and obtain consent when trading on a "net" basis with customers. With respect to non-institutional customers, the member firm must obtain the customer's written consent on an order-by-order basis prior to executing the transaction and such consent must evidence the customer's understanding of the terms and conditions of the order. With respect to institutional customers, a member firm must obtain the customer's consent prior to executing the transaction and such consent may be obtained by either: (1) use of a negative consent letter; (2) oral disclosure and consent on an order-by order basis; or (3) written consent on an order-by-order basis.
+
+FINRA Rule 2220
+
+FINRA Rule 2220 (Options Communications) sets forth a member firm's obligations with respect to its options communications with the public and carries over the 2008 revisions to NASD Rule 2220 that make the options communications rule more consistent with FINRA's general rules on communications with the public and the options communications rules of other self-regulatory organizations.1 Among other things, those revisions include: (1) using, to the extent appropriate, the same terminology and definitions as in FINRA's general rules on communications with the public; (2) making the requirements for principal review of correspondence concerning options the same as for correspondence generally; and (3) updating the standards on the content of communications that precede the delivery of the options disclosure document (ODD).
+
+FINRA Rule 4370
+
+FINRA Rule 4370 (Business Continuity Plans and Emergency Contact Information) requires a member firm to create, maintain, review at least annually and update upon any material change, a written business continuity plan identifying procedures relating to an emergency or significant business disruption and enumerates the minimum elements that a member firm's business continuity plan must address, to the extent those elements are applicable and necessary to the firm's business. Additionally, the rule requires each member firm to disclose (at a minimum, in writing at account opening, by posting on the member firm's Web site, and by mailing it upon request) to its customers how its business continuity plan addresses the possibility of a future significant business disruption and how the member firm plans to respond to events of varying scope.
+
+FINRA Rule 4370 also requires each firm to provide (and promptly update upon any material change) to FINRA via electronic process or other means as FINRA may specify, prescribed emergency contact information, including the designation of two emergency contact persons. FINRA Rule 4370, however, modifies the former requirement in NASD Rule 3520 that both persons must be registered principals and members of senior management to require, instead, that only one of those persons must be a member of senior management and a registered principal of the member firm. The rule requires, however, that someone designated as a second emergency contact person who is not a registered principal must be a member of senior management who has knowledge of the firm's business operations. FINRA Rule 4370 also clarifies that both emergency contact persons must be associated persons of the member firm. Finally, the new rule codifies current guidance that, for a firm with only one associated person (e.g., a sole proprietorship without any other associated persons), the second emergency contact person may be an individual, either registered with another firm or nonregistered, who has knowledge of the member firm's business operations, such as the firm's attorney, accountant or clearing firm contact.
+
+FINRA Rule 5250
+
+FINRA Rule 5250 (Payments for Market Making) prohibits any payments by an issuer or an issuer's affiliates and promoters, directly or indirectly, to a member firm or person associated with a member firm for publishing a quotation, acting as a market maker or submitting an application in connection therewith. The rule, however, contains two exceptions that permit a member firm to accept: (1) payment for bona fide services, including, but not limited to, investment banking services; and (2) reimbursement for registration or listing fees.
+
+ 
+ 
+ Rule/Series Number
+ Rule Title
+ 
+
+ 
+ 2000 Series
+ DUTIES AND CONFLICTS
+ 
+
+ 
+ 2100 Series
+ TRANSACTIONS WITH CUSTOMERS
+ 
+
+ 
+ 2120 Series
+ Commissions, Mark Ups and Charges Disclosures
+ 
+
+ 
+ Rule 2124
+ Net Transactions with Customers
+ 
+
+ 
+ 2200 Series
+ COMMUNICATIONS AND DISCLOSURES
+ 
+
+ 
+ Rule 2220
+ Options Communications
+ 
+
+ 
+ 4000 Series
+ FINANCIAL AND OPERATIONAL RULES
+ 
+
+ 
+ 4300 Series
+ OPERATIONS
+ 
+
+ 
+ Rule 4370
+ Business Continuity Plans and Emergency Contact Information
+ 
+
+ 
+ 5000 Series
+ SECURITIES OFFERING AND TRADING STANDARDS AND PRACTICES
+ 
+
+ 
+ 5200 Series
+ QUOTATION AND TRADING OBLIGATIONS AND PRACTICES
+ 
+
+ 
+ Rule 5250
+ Payments for Market Making
+ 
+
+ 
+
+FINRA Rule Filing SR-FINRA-2009-039
+
+www.finra.org/rulefilings/2009-039
+
+FINRA Rule 3310
+
+The rule change adopts NASD Rule 3011 (AML Compliance Program) without substantive change into the Consolidated FINRA Rulebook as FINRA Rule 3310 (AML Compliance Program) and adopts NASD IM-3011-1, subject to certain amendments, and NASD IM-3011-2 (Review of AML Compliance Person Information), without substantive change, as supplementary material to FINRA Rule 3310. Additionally, the rule change deletes Incorporated NYSE Rule 445 (AML Compliance Program) in its entirety as duplicative.
+
+FINRA Rule 3310 requires each member firm to develop and implement a written AML program (that must be approved, in writing, by a member of senior management) that is reasonably designed to achieve and monitor compliance with the requirements of the Bank Secrecy Act (BSA) and the implementing regulations promulgated by the Department of the Treasury. The rule also sets forth the minimum requirements for an AML compliance program, including the requirement that a firm provide for annual (on a calendar-year basis) independent testing for compliance to be conducted by member firm personnel or by a qualified outside party. The rule permits a member firm that does not execute transactions for customers or otherwise hold customer accounts or act as an introducing broker with respect to customer accounts to conduct its independent tests every two years (on a calendar-year basis).
+
+FINRA Rule 3310, however, does not retain the exception in NASD IM-3011-1 that permits, under certain conditions, the AML compliance program testing to be conducted by persons who report to either the AML compliance person or persons performing the functions being tested. The Financial Crimes Enforcement Network (FinCEN), a bureau within the Department of the Treasury that is responsible for administering the BSA and its implementing regulations, has stated that the independent testing provision of the BSA precludes AML program testing by personnel with an interest in the outcome of the testing and that an independent testing exception, such as the one in NASD IM-3011-1, is inconsistent with the BSA's independent testing provision and FinCEN's interpretation of this provision.
+
+ 
+ 
+ Rule/Series Number
+ Rule Title
+ 
+
+ 
+ 3000 Series
+ SUPERVISION AND RESPONSIBILITIES RELATING TO ASSOCIATED PERSONS
+ 
+
+ 
+ 3300 Series
+ ANTI-MONEY LAUNDERING
+ 
+
+ 
+ Rule 3310
+ Anti-Money Laundering Compliance Program
+ 
+
+ 
+
+FINRA Rule Filing SR-FINRA-2009-044
+
+www.finra.org/rulefilings/2009-044
+
+The rule change adopts without material change NASD Rules 2240 (Disclosure of Control Relationship with Issuer), 2250 (Disclosure of Participation or Interest in Primary or Secondary Distribution) and 3340 (Prohibition on Transactions, Publication of Quotations, or Publication of Indications of Interest During Trading Halts) as FINRA rules in the Consolidated FINRA Rulebook and deletes Incorporated NYSE Rules 312(f)(1) through 312(f)(3) and 321.24. The rule change renumbers NASD Rules 2240, 2250 and 3340 as FINRA Rules 2262, 2269 and 5260, respectively, in the Consolidated FINRA Rulebook.
+
+FINRA Rules 2262 and 2269
+
+FINRA Rules 2262 (Disclosure of Control Relationship with Issuer) and 2269 (Disclosure of Participation or Interest in Primary or Secondary Distribution) address disclosures or notifications that member firms must provide to customers in connection with securities transactions. Rule 2262 provides that a member firm controlled by, controlling or under common control with the issuer of any security must, before entering into any contract with or for a customer for the purchase or sale of such security, disclose to the customer the existence of such control; if such disclosure is not made in writing, it must be supplemented by written disclosure at or before the completion of the transaction. Rule 2269 provides that if a member firm is acting as a broker for a customer, or is acting for both the customer and some other person, or is acting as a dealer and receives or has promise of receiving a fee from a customer for advising the customer with respect to securities, then the member firm must, at or before the completion of any transaction for or with the customer in any security in the primary or secondary distribution of which the member firm is participating or is otherwise financially interested, give the customer written notification of the existence of such participation or interest.
+
+ 
+ 
+ Rule/Series Number
+ Rule Title
+ 
+
+ 
+ 2200 Series
+ Communications and Disclosures
+ 
+
+ 
+ 2260 Series
+ Disclosures
+ 
+
+ 
+ Rule 2262
+ Disclosure of Control Relationship with Issuer
+ 
+
+ 
+ Rule 2269
+ Disclosure of Participation or Interest in Primary or Secondary Distribution
+ 
+
+ 
+
+FINRA Rule 5260
+
+FINRA Rule 5260 (Prohibition on Transactions, Publication of Quotations, or Publication of Indications of Interest During Trading Halts) generally prohibits members from, directly or indirectly, effecting transactions or publishing quotations or indications of interest in: (1) any security with respect to which a trading halt is in effect; (2) any security future when there is a regulatory trading halt in effect with respect to the underlying security; or (3) any future on a narrow-based securities index when one or more underlying securities that constitute 50 percent or more of the market capitalization of the index has a regulatory trading halt that is currently in effect. The rule also provides that, in the event that FINRA halts over-the-counter trading and quoting in an NMS stock because the Alternative Display Facility (ADF) or a Trade Reporting Facility (TRF) is unable to transmit real-time information to the applicable Securities Information Processor, member firms are not prohibited from trading through other markets for which trading is not halted.
+
+ 
+ 
+ Rule/Series Number
+ Rule Title
+ 
+
+ 
+ 5000 Series
+ Securities Offering and Trading Standards and Practices
+ 
+
+ 
+ 5200 Series
+ Quotation and Trading Obligations and Practices
+ 
+
+ 
+ Rule 5260
+ Prohibition on Transactions, Publication of Quotations, or Publication of Indications of Interest During Trading Halts
+ 
+
+ 
+
+FINRA Rule Filing SR-FINRA-2009-048
+
+www.finra.org/rulefilings/2009-048
+
+FINRA Rule 5230
+
+The rule change adopts, with certain modifications, NASD Rule 3330 (Payment Designed to Influence Market Prices, Other than Paid Advertising) as FINRA Rule 5230 (Payments Involving Publications that Influence the Market Price of a Security) in the Consolidated FINRA Rulebook.
+
+NASD Rule 3330 provided that no member firm may, "directly or indirectly, give, permit to be given, or offer to give, anything of value to any person for the purpose of influencing or rewarding the action of such person in connection with the publication or circulation in any newspaper, investment service, or similar publication, of any matter which has, or is intended to have, an effect upon the market price of any security . . . ." The rule includes an exception for any matter that is "clearly distinguishable as paid advertising."
+
+FINRA Rule 5230 adopts these requirements with two changes. First, the rule change updates the list of media to which the rule refers to include electronic and other types of media, including magazines, Web sites and television programs. Second, Rule 5230 expands the exceptions in the rule beyond paid advertising to also include compensation paid in connection with research reports and communications published in reliance on Section 17(b) of the Securities Act of 1933.
+
+ 
+ 
+ Rule/Series Number
+ Rule Title
+ 
+
+ 
+ 5000 Series
+ SECURITIES OFFERING AND TRADING STANDARDS AND PRACTICES
+ 
+
+ 
+ 5200 Series
+ QUOTATION AND TRADING OBLIGATIONS AND PRACTICES
+ 
+
+ 
+ Rule 5230
+ Payments Involving Publications that Influence the Market Price of a Security
+ 
+
+ 
+
+FINRA Rule Filing SR-FINRA-2009-052
+
+www.finra.org/rulefilings/2009-052
+
+FINRA Rule 2264
+
+The rule change adopts NASD Rule 2341 (Margin Disclosure Statement) with minor changes as FINRA Rule 2264 (Margin Disclosure Statement) in the Consolidated FINRA Rulebook.
+
+NASD Rule 2341 required member firms that open margin accounts for or on behalf of non-institutional customers to deliver to such customers, prior to or at the time of opening the account, a specified margin disclosure statement highlighting the risks involved in trading securities in a margin account. Member firms also had to provide the margin disclosure statement (or an abbreviated version provided by the rule) to non-institutional margin account customers not less than once a calendar year. NASD Rule 2341 also provided member firms with the flexibility to use an alternative disclosure statement provided that the alternative disclosures are substantially similar to the disclosures specified in the rule. Additionally, NASD Rule 2341 required member firms to deliver the initial and annual disclosure statement, in writing or electronically, to customers covered by the rule on an individual basis. The former rule also required member firms that permit non-institutional customers to open accounts online, or engage in transactions in securities online, to post the margin disclosure statement on their Web sites in a clear and conspicuous manner.
+
+FINRA Rule 2264 adopts the requirements of the former rule with two changes. First, the new rule clarifies that the initial margin disclosure statement may be furnished to customers in a separate document (or contained by itself on a separate page as part of another document), and that the annual disclosure statement may be provided within other documentation, such as the account statement, and does not have to be on a separate page. Second, because electronic documents may be considered a form of "writing," Rule 2264 revises the former requirement that disclosure statements may be provided either "in writing or electronically" to clarify that the documents may be provided "in paper or electronic form."
+
+1 See Exchange Act Release No. 58738 (October 6, 2008), 73 FR 60371 (October 10, 2008) (Order Approving Proposed Rule Change; File No. SR-FINRA-2008-013). FINRA recently proposed for comment substantial revisions to its general rules on communications with the public. See Regulatory Notice 09-55 (September 2009). FINRA expects to make conforming changes to FINRA Rule 2220 upon the SEC's approval of any proposed changes to the general communications rules.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ DOWNLOAD AS pdf
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Notice Suggested Routing
+
+ 
+ Compliance
+
+ Legal
+
+ Operations
+
+ Senior Management
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Notice Key Topics
+
+ 
+ Anti-Money Laundering
+
+ Business Continuity Plans
+
+ Control Relationship with Issuer
+
+ Customers' Securities or Funds
+
+ Emergency Contact Information
+
+ Margin Disclosure Statement
+
+ Market Making
+
+ Market Price of a Security
+
+ Net Transactions with Customers
+
+ Options Communications
+
+ Participation or Interest in Primary or Secondary Distribution
+
+ Trading Halts
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ Referenced Rules & Notices
+
+ 
+ 
+ 
+ 
+ FINRA Rule 2124
+
+ FINRA Rule 2150
+
+ FINRA Rule 2220
+
+ FINRA Rule 2262
+
+ FINRA Rule 2264
+
+ FINRA Rule 2269
+
+ FINRA Rule 3310
+
+ FINRA Rule 4370
+
+ FINRA Rule 5230
+
+ FINRA Rule 5250
+
+ FINRA Rule 5260
+
+ Information Notice 03/12/08
+
+ Information Notice 10/06/08
+
+ Regulatory Notice 08-57
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ FINRA Utility Menu
+
+ 
+
+ 
+ 
+ About Us
+ 
+
+ 
+ Careers
+ 
+
+ 
+ BrokerCheck
+ 
+
+ 
+ Data
+ 
+
+ 
+ Media Center
+ 
+
+ 
+ For Firms
+ 
+
+ 
+ 
+
+ 
+
+ 
+ FINRA Main Navigation
+
+ 
+
+ 
+ 
+ Rules & Guidance
+ 
+
+ 
+ Registration, Exams & CE
+ 
+
+ 
+ Events & Training
+ 
+
+ 
+ Filing & Reporting
+ 
+
+ 
+ Compliance Tools
+ 
+
+ 
+ For Investors
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ General Inquiries
+301-590-6500
+
+Securities Helpline for Seniors®
+844-574-3577 (Mon-Fri 9am-5pm ET)
+
+File a Regulatory Tip
+To report on abuse or fraud in the industry
+
+Arbitration & Mediation
+FINRA operates the largest securities dispute resolution forum in the United States
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ File an Investor Complaint
+File a complaint about fraud or unfair practices.
+
+Small Firm Help Line
+833-26-FINRA (Mon-Fri 9am-6pm ET)
+
+Office of the Ombuds
+Report a concern about FINRA at 888-700-0028
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Footer Legal Links
+
+ 
+
+ 
+ 
+ Site Map
+ 
+
+ 
+ Privacy Policy
+ 
+
+ 
+ Terms of Use
+ 
+
+ 
+ Translate
+ 
+
+ 
+ Contact Us
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ © 2026 FINRA. All Rights Reserved.
+FINRA is a Registered Trademark of the Financial Industry Regulatory Authority, Inc.

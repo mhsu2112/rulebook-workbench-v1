@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/provenance_stamp.schema.json",
+  "title": "ProvenanceStamp",
+  "description": "Attached to every model response that contributes to an artifact (PRD spec/40 §6.3). Records what actually happened; the full reproducibility manifest is ADR-017b.",
+  "type": "object",
+  "required": ["task_id", "model_requested", "model_served", "provider", "params", "request_id", "timestamp", "app_commit", "registry_version", "prompt_hash", "input_hash", "output_hash", "fallback_history", "cost"],
+  "properties": {
+    "task_id": { "type": "string" },
+    "model_requested": { "type": "string" },
+    "model_served": { "type": "string" },
+    "provider": { "type": "string" },
+    "params": { "type": "object" },
+    "request_id": { "type": ["string", "null"] },
+    "timestamp": { "type": "string" },
+    "app_commit": { "type": "string" },
+    "registry_version": { "type": "string", "description": "sha256 of models.yaml at call time" },
+    "prompt_hash": { "type": "string" },
+    "skill_version": { "type": ["string", "null"] },
+    "fallback_history": { "type": "array", "items": { "type": "string" } },
+    "input_hash": { "type": "string" },
+    "output_hash": { "type": "string" },
+    "resolution_source": { "enum": ["program_override", "user_override", "default"] },
+    "cost": {
+      "type": "object",
+      "required": ["prompt_tokens", "completion_tokens", "usd"],
+      "properties": {
+        "prompt_tokens": { "type": "integer" },
+        "completion_tokens": { "type": "integer" },
+        "usd": { "type": "number" }
+      }
+    }
+  }
+}

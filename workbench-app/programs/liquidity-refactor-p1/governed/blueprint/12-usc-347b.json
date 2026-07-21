@@ -1,0 +1,328 @@
+{
+  "item_id": "12-usc-347b",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Authorize Federal Reserve banks, under Board-prescribed rules, to make secured advances to member banks on short-maturity time or demand notes, and on longer-maturity time notes secured by one-to-four family residential mortgage loans.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Any Federal Reserve bank, under rules and regulations prescribed by the Board of Governors of the Federal Reserve System, may make advances to any member bank on its time or demand notes having maturities of not more than four months and which are secured to the satisfaction of such Federal Reserve bank.",
+          "verified": true
+        },
+        {
+          "quote": "Notwithstanding the foregoing, any Federal Reserve bank, under rules and regulations prescribed by the Board of Governors of the Federal Reserve System, may make advances to any member bank on its time notes having such maturities as the Board may prescribe and which are secured by mortgage loans covering a one-to-four family residence.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Constrain the duration and consequences of Federal Reserve advances to undercapitalized and critically undercapitalized depository institutions, coupling continued lending to viability certification and imposing loss-liability and reporting consequences on the Board \u2014 structural features bearing on how discount-window access to weak institutions is gated and monitored.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Except as provided in paragraph (2), no advances to any undercapitalized depository institution by any Federal Reserve bank under this section may be outstanding for more than 60 days in any 120-day period.",
+          "verified": true
+        },
+        {
+          "quote": "the Board shall, subject to the limitations in subparagraph (B), be liable to the Federal Deposit Insurance Corporation for the excess loss, without regard to the terms of the advance or any collateral pledged to secure the advance.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "347b-1",
+      "actor": "Federal Reserve bank",
+      "modality": "may",
+      "action": "make advances to any member bank on its time or demand notes having maturities of not more than four months and which are secured to the satisfaction of such Federal Reserve bank",
+      "trigger": "under rules and regulations prescribed by the Board of Governors of the Federal Reserve System",
+      "threshold": "maturities of not more than four months; secured to the satisfaction of such Federal Reserve bank",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Any Federal Reserve bank, under rules and regulations prescribed by the Board of Governors of the Federal Reserve System, may make advances to any member bank on its time or demand notes having maturities of not more than four months and which are secured to the satisfaction of such Federal Reserve bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-2",
+      "actor": "Federal Reserve bank",
+      "modality": "may",
+      "action": "make advances to any member bank on its time notes having such maturities as the Board may prescribe and which are secured by mortgage loans covering a one-to-four family residence",
+      "trigger": "under rules and regulations prescribed by the Board of Governors of the Federal Reserve System",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Notwithstanding the foregoing, any Federal Reserve bank, under rules and regulations prescribed by the Board of Governors of the Federal Reserve System, may make advances to any member bank on its time notes having such maturities as the Board may prescribe and which are secured by mortgage loans covering a one-to-four family residence.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-3",
+      "actor": "Federal Reserve bank",
+      "modality": "must",
+      "action": "charge interest on advances made under the one-to-four family residence mortgage-secured note provision at a rate equal to the lowest discount rate in effect at such Federal Reserve bank on the date of such note",
+      "trigger": "advance made under the mortgage-secured time note provision",
+      "threshold": "rate equal to the lowest discount rate in effect at such Federal Reserve bank on the date of such note",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Such advances shall bear interest at a rate equal to the lowest discount rate in effect at such Federal Reserve bank on the date of such note.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-4",
+      "actor": "Federal Reserve bank",
+      "modality": "must_not",
+      "action": "have advances to any undercapitalized depository institution outstanding for more than 60 days in any 120-day period",
+      "trigger": "advance under this section to an undercapitalized depository institution",
+      "threshold": "not more than 60 days in any 120-day period",
+      "exceptions": [
+        "Except as provided in paragraph (2) [viability exception, including certification by the head of the appropriate Federal banking agency or by the Chairman of the Board following Board examination, and further extensions upon additional certifications]"
+      ],
+      "citations": [
+        {
+          "quote": "Except as provided in paragraph (2), no advances to any undercapitalized depository institution by any Federal Reserve bank under this section may be outstanding for more than 60 days in any 120-day period.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-5",
+      "actor": "Federal Reserve bank",
+      "modality": "conditional",
+      "action": "suspend application of the 60-day/120-day limitation on advances to an undercapitalized depository institution during the 60-day period beginning on the date a written viability certification is received, and extend that suspension upon receipt of additional written certifications",
+      "trigger": "receipt of a written certification of viability under subparagraph (A) (either from the head of the appropriate Federal banking agency in advance, or from the Chairman of the Board following a Board examination)",
+      "threshold": "60-day period per certification, renewable for additional 60-day periods upon additional certifications",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the limitation contained in paragraph (1) shall not apply during the 60-day period beginning on the date such certification is received.",
+          "verified": true
+        },
+        {
+          "quote": "The 60-day period may be extended for additional 60-day periods upon receipt by the Federal Reserve bank of additional written certifications under subparagraph (A) with respect to each such additional period.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-6",
+      "actor": "head of the appropriate Federal banking agency (or Chairman of the Board, as applicable)",
+      "modality": "must_not",
+      "action": "delegate the authority to issue a written certification of viability under this paragraph to any other person",
+      "trigger": "authority to issue a certificate of viability under paragraph (2)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The authority of the head of any agency to issue a written certification of viability under this paragraph may not be delegated to any other person.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-7",
+      "actor": "Board",
+      "modality": "conditional",
+      "action": "be liable to the Federal Deposit Insurance Corporation for the excess loss, without regard to the terms of the advance or any collateral pledged to secure the advance",
+      "trigger": "an advance under this section to a critically undercapitalized depository institution remains outstanding without payment demanded as of the end of a 5-day period after the institution becomes critically undercapitalized, or a new advance is made after that period, and the Deposit Insurance Fund thereafter incurs a loss exceeding what it would have incurred had the institution been liquidated as of the end of that 5-day period",
+      "threshold": "subject to the limitations in subparagraph (B)",
+      "exceptions": [
+        "limitation on excess loss under subparagraph (B): lesser of (i) the loss on the increased advances if unsecured, or (ii) the interest received on the increased advances"
+      ],
+      "citations": [
+        {
+          "quote": "the Board shall, subject to the limitations in subparagraph (B), be liable to the Federal Deposit Insurance Corporation for the excess loss, without regard to the terms of the advance or any collateral pledged to secure the advance.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-8",
+      "actor": "Board",
+      "modality": "must",
+      "action": "pay the Federal Deposit Insurance Corporation the amount of any liability of the Board under subparagraph (A)",
+      "trigger": "Board incurs liability for excess loss under subparagraph (A)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Board shall pay the Federal Deposit Insurance Corporation the amount of any liability of the Board under subparagraph (A).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-9",
+      "actor": "Board",
+      "modality": "must",
+      "action": "report to the Congress on any excess loss liability it incurs under subparagraph (A), as limited by subparagraph (B)(i), and the reasons therefore",
+      "trigger": "Board incurs excess loss liability under subparagraph (A)",
+      "threshold": "not later than 6 months after incurring the liability",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Board shall report to the Congress on any excess loss liability it incurs under subparagraph (A), as limited by subparagraph (B)(i), and the reasons therefore, not later than 6 months after incurring the liability.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "347b-10",
+      "actor": "Federal Reserve bank",
+      "modality": "may",
+      "action": "decline to make, increase, renew, or extend any advance or discount under this chapter to any depository institution, there being no obligation to do so",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A Federal Reserve bank shall have no obligation to make, increase, renew, or extend any advance or discount under this chapter to any depository institution.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "appropriate Federal banking agency",
+      "definition": "has the same meaning as in section 1813 of this title",
+      "citations": [
+        {
+          "quote": "The term \"appropriate Federal banking agency\" has the same meaning as in section 1813 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "critically undercapitalized",
+      "definition": "has the same meaning as in section 1831o of this title",
+      "citations": [
+        {
+          "quote": "The term \"critically undercapitalized\" has the same meaning as in section 1831o of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "depository institution",
+      "definition": "has the same meaning as in section 1813 of this title",
+      "citations": [
+        {
+          "quote": "The term \"depository institution\" has the same meaning as in section 1813 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "undercapitalized depository institution",
+      "definition": "any depository institution which (i) is undercapitalized, as defined in section 1831o of this title; or (ii) has a composite CAMEL rating of 5 under the Uniform Financial Institutions Rating System (or an equivalent rating by any such agency under a comparable rating system) as of the most recent examination of such institution",
+      "citations": [
+        {
+          "quote": "The term \"undercapitalized depository institution\" means any depository institution which- (i) is undercapitalized, as defined in section 1831o of this title ; or (ii) has a composite CAMEL rating of 5 under the Uniform Financial Institutions Rating System (or an equivalent rating by any such agency under a comparable rating system) as of the most recent examination of such institution.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "viable",
+      "definition": "A depository institution is \"viable\" if the Board or the appropriate Federal banking agency determines, giving due regard to the economic conditions and circumstances in the market in which the institution operates, that the institution (i) is not critically undercapitalized; (ii) is not expected to become critically undercapitalized; and (iii) is not expected to be placed in conservatorship or receivership.",
+      "citations": [
+        {
+          "quote": "A depository institution is \"viable\" if the Board or the appropriate Federal banking agency determines, giving due regard to the economic conditions and circumstances in the market in which the institution operates, that the institution-",
+          "verified": true
+        },
+        {
+          "quote": "(i) is not critically undercapitalized; (ii) is not expected to become critically undercapitalized; and (iii) is not expected to be placed in conservatorship or receivership.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "this chapter",
+      "definition": "(undefined here in the operative text itself, but per Editorial Notes) referred to in subsec. (b)(4), was in the original \"this Act\", meaning act Dec. 23, 1913, ch. 6, 38 Stat. 251, known as the Federal Reserve Act",
+      "citations": [
+        {
+          "quote": "This chapter, referred to in subsec. (b)(4), was in the original \"this Act\", meaning act Dec. 23, 1913, ch. 6, 38 Stat. 251 , known as the Federal Reserve Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "advances",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Any Federal Reserve bank, under rules and regulations prescribed by the Board of Governors of the Federal Reserve System, may make advances to any member bank on its time or demand notes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "member bank",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "may make advances to any member bank on its time or demand notes having maturities of not more than four months",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The term 'appropriate Federal banking agency' and the term 'depository institution' are defined by cross-reference to 12 U.S.C. 1813.",
+      "references": [
+        "12 U.S.C. 1813"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"appropriate Federal banking agency\" has the same meaning as in section 1813 of this title .",
+          "verified": true
+        },
+        {
+          "quote": "The term \"depository institution\" has the same meaning as in section 1813 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The terms 'critically undercapitalized' and 'undercapitalized' (as used within 'undercapitalized depository institution') are defined by cross-reference to 12 U.S.C. 1831o.",
+      "references": [
+        "12 U.S.C. 1831o"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"critically undercapitalized\" has the same meaning as in section 1831o of this title .",
+          "verified": true
+        },
+        {
+          "quote": "The term \"undercapitalized depository institution\" means any depository institution which- (i) is undercapitalized, as defined in section 1831o of this title ;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The phrase 'this chapter' in subsection (b)(4) is explained editorially as referring, in the original enactment, to 'this Act' \u2014 the Federal Reserve Act (Dec. 23, 1913, ch. 6, 38 Stat. 251) \u2014 with classification detail cross-referenced to the note under 12 U.S.C. 226.",
+      "references": [
+        "12 U.S.C. 226 (References in Text note)",
+        "Federal Reserve Act, Dec. 23, 1913, ch. 6, 38 Stat. 251"
+      ],
+      "citations": [
+        {
+          "quote": "This chapter, referred to in subsec. (b)(4), was in the original \"this Act\", meaning act Dec. 23, 1913, ch. 6, 38 Stat. 251 , known as the Federal Reserve Act. For complete classification of this Act to the Code, see References in Text note set out under section 226 of this title and Tables.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is the raw statutory text of 12 U.S.C. 347b (Federal Reserve Act s.10B), governing Federal Reserve bank advances to individual member banks, including special time limits, viability-certification mechanics, and Board loss-liability/reporting duties for advances to undercapitalized/critically undercapitalized institutions. The source text contains no explicit discussion of FHLB collateral/operational rules, discount-window stigma, Call Report or FR 2052a reporting timing/granularity, or the Hsu/McKernan reform proposals named in the ratified scope; it is included here strictly as binding statutory authority underlying the discount-window mechanics (differential treatment of weak institutions, certification gating, Board liability/reporting) that bear on the program's diagnostic mapping of discount-window structure and potential stigma sources. No harmonization, paraphrase, or interpretive gloss has been applied; ambiguities and internal structure (e.g., the negative-obligation phrasing in (b)(4), and the layered certification/exception scheme in (b)(2)-(3)) are preserved as written. All editorial/amendment/effective-date material outside the operative text of s.10B itself was excluded as non-operative history, consistent with the ratified scope's focus on the current regime."
+}

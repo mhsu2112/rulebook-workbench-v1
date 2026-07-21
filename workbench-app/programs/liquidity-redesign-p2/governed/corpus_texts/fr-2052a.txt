@@ -1,0 +1,628 @@
+Skip to main content
+ 
+ An official website of the United States Government
+
+Here's how you know
+Official websites use .gov
+A .gov website belongs to an official government organization in the United States.
+
+Secure .gov websites use HTTPS
+A lock (LockLocked padlock icon) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+ 
+ 
+ Back to Home
+ 
+ Board of Governors of the Federal Reserve System
+ 
+ 
+ Stay Connected
+ 
+ 
+ 
+ 
+
+ Federal Reserve Facebook Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Federal Reserve Instagram Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Federal Reserve YouTube Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Federal Reserve Flickr Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Federal Reserve LinkedIn Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Federal Reserve Threads Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Federal Reserve Twitter Page
+ 
+ 
+
+ 
+ 
+ 
+
+ Subscribe to RSS
+ 
+ 
+
+ 
+ 
+ 
+
+ Subscribe to Email
+ 
+ 
+
+ 
+ 
+
+ 
+ Recent Postings
+ 
+
+ 
+ Calendar
+ 
+
+ 
+ Publications
+ 
+
+ 
+ Site Map
+ 
+
+ 
+ A-Z index
+ 
+
+ 
+ Careers
+ 
+
+ 
+ FAQs
+ 
+
+ 
+ Videos
+ 
+
+ 
+ Contact
+ 
+
+ 
+ 
+ 
+ Search
+ 
+ 
+ 
+ Submit Search Button
+ 
+ 
+ 
+ 
+
+ 
+ Advanced
+ 
+
+ 
+ 
+ 
+ Toggle Dropdown Menu
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Board of Governors of the Federal Reserve System
+ 
+
+ 
+ 
+ The Federal Reserve, the central bank of the United States,
+ provides the nation with a safe, flexible, and stable monetary and
+ financial system.
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Main Menu Toggle Button
+ 
+ Sections
+ 
+ Search Toggle Button
+ 
+ 
+
+ 
+ 
+ 
+ Search
+ 
+ 
+ Search Submit Button
+ Submit
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Home
+ 
+
+ 
+ Reporting Forms
+ 
+
+ 
+ 
+ 
+ Reporting Forms
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ Please enable JavaScript if it is disabled in your browser or
+ access the information through the links provided below.
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ Information collections under review
+ Recent Reporting Form Updates
+ Application filing information
+ Micro Data Reference Manual
+ Savings and Loan Holding Company Reporting Forms
+ 
+ Incorporating FASB Accounting
+ Standards Codification References into Federal Reserve Report (16 KB PDF)
+ 
+ 
+
+ 
+
+ 
+
+ 
+ FR 2052a 
+ Complex Institution Liquidity 
+Monitoring Report
+ 
+
+ Form:
+ 
+ 
+ Current (2.6 MB .PDF)
+ 
+
+ Instructions:
+ 
+ Included with forms
+ 
+
+ 
+ Description: The FR 2052a report collects 
+quantitative information on selected assets, 
+liabilities, funding activities, and contingent 
+liabilities on a consolidated basis and by 
+material entity subsidiary. The FR 2052a 
+comprises sections covering broad funding 
+classifications by product, outstanding balance 
+and purpose, segmented by maturity date.
+ OMB Control Number:
+ 7100-0361
+
+ Purpose: The data are used to monitor an 
+individual organization's overall liquidity 
+profile for institutions supervised by the Federal 
+Reserve. These data also provide detailed 
+information on the liquidity risks within 
+different business lines (e.g., financing of 
+securities positions and prime brokerage 
+activities). In particular, the data serve as 
+part of the Federal Reserve's supervisory 
+surveillance program in its liquidity risk 
+management area and provide timely information on 
+firm-specific liquidity risks during periods of 
+stress.
+ Background: The financial crisis of 2007 and 
+2008 highlighted the need for timely liquidity 
+data to identify and monitor liquidity risks at 
+individual firms as well as in aggregate across 
+the financial system. The data provided in the FR 
+2052a report meets this need. The crisis 
+highlighted the importance of understanding intra-
+company flows and exposures within a consolidated 
+institution. Capturing such flows is a focus of 
+the FR 2052a, particularly at large, systemically 
+important, globally active U.S. banking 
+institutions. A single, consolidated view is not 
+sufficient to provide meaningful insight into an 
+institution's liquidity profile. Rather, 
+disaggregated views by legal entities (parent 
+company, broker/dealer entities, bank entities 
+etc.) have contributed to supervisory monitoring 
+efforts and risk supervision by identifying 
+vulnerabilities posed by potential impediments to 
+the movement of liquidity across legal entities. 
+Finally, the collection of these data assist the 
+Federal Reserve's macroprudential supervision.
+ Respondent Panel: The FR 2052a is filed by banking 
+organizations subject to Category I, II, III, or 
+IV standards under the Board's Regulation YY and 
+Regulation LL. This includes (1) any top-tier U.S. 
+bank holding company with $100 billion or more in 
+total consolidated assets that is not a subsidiary 
+of a foreign banking organization, (2) any top-
+tier U.S. savings and loan holding company with 
+$100 billion or more in total consolidated assets 
+that is a covered depository institution holding 
+company as defined by the Liquidity Coverage Ratio 
+and Net Stable Funding Ratio rules and is not a 
+subsidiary of a foreign banking organization, and 
+(3) any foreign banking organization, as defined 
+by the Board's Regulation YY, with combined U.S. 
+assets of $100 billion or more.
+ Frequency: U.S. banking organizations that 
+are identified as (1) global systemically 
+important bank holding companies, (2) banking 
+organizations subject to Category II standards, or 
+(3) banking organizations subject to Category III 
+standards with average weighted short-term 
+wholesale funding of $75 billion or more must 
+submit a report on each business day. U.S. banking 
+organizations that are identified as (1) banking 
+organizations subject to Category III standards 
+with average weighted short-term wholesale funding 
+of less than $75 billion, or (2) banking 
+organizations subject to Category IV standards 
+must submit a report monthly. Foreign banking 
+organizations identified as (1) foreign banking 
+organizations subject to Category II standards, or 
+(2) foreign banking organizations subject to 
+Category III standards with average weighted 
+short-term wholesale funding of $75 billion or 
+more must submit a report on each business day. 
+Foreign banking organizations identified as (1) 
+foreign banking organizations subject to Category 
+III standards with average weighted short-term 
+wholesale funding of less than $75 billion, or (2) 
+foreign banking organizations subject to Category 
+IV standards must submit a report monthly. 
+Consistent with current supervisory authority and 
+processes, the Board, during periods of stress, 
+may temporarily require FR 2052a liquidity data 
+from monthly filers on a more frequent basis.
+ Public Release: Micro data from the FR 2052a are 
+considered confidential and are not published.
+
+ Historical
+
+ 
+ 
+ 
+ 
+ 
+ Forms and Instructions
+ 
+ 
+ 
+
+ 
+ 
+ 
+ Form: March 2023 (2.7 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: April 2022 (2.6 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: June 2020 (7.3 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: May 2020 (9.2 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: March 2019 (1.7 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: December 2016 (1.7 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: December 2015 (1.4 MB .PDF) 
+ | Instructions: Included in Form 
+ 
+
+ 
+ Form: September 2014 (81.7 KB .PDF) 
+ | Instructions: September 2014 (250.5 KB .PDF) 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ Last Update: February 26, 2025
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ Back to
+ Top
+ 
+ 
+
+ 
+ 
+ 
+ 
+ Board of Governors
+ of the
+ Federal Reserve System
+ 
+ 
+ 
+ About the Fed
+ 
+
+ 
+ News & Events
+ 
+
+ 
+ Monetary Policy
+ 
+
+ 
+ Supervision & Regulation
+ 
+
+ 
+ Financial Stability
+ 
+
+ 
+ Payment Systems
+ 
+
+ 
+ Economic Research
+ 
+
+ 
+ Data
+ 
+
+ 
+ Consumers & Communities
+ 
+
+ 
+ 
+
+ 
+ Tools and Information
+ 
+ 
+ Contact
+ 
+
+ 
+ Publications
+ 
+
+ 
+ Freedom of Information (FOIA)
+ 
+
+ 
+ Office of Inspector General
+ 
+
+ 
+ Budget & Performance
+ | Audit
+ 
+
+ 
+ No FEAR Act
+ 
+
+ 
+ Español
+ 
+
+ 
+ Website Policies
+ | Privacy Program
+ 
+
+ 
+ Accessibility
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ Stay Connected
+ 
+ 
+ 
+ Federal Reserve Facebook
+ Page
+ 
+ 
+ 
+ 
+ Federal Reserve
+ Instagram Page
+ 
+ 
+
+ 
+ 
+ Federal Reserve YouTube
+ Page
+ 
+ 
+
+ 
+ 
+ Federal Reserve
+ Flickr Page
+ 
+ 
+
+ 
+ 
+ Federal
+ Reserve LinkedIn Page
+ 
+ 
+
+ 
+ 
+ Federal
+ Reserve Threads Page
+ 
+ 
+ 
+ Link to Federal Reserve Twitter Page
+ 
+
+ 
+ Subscribe to RSS
+ 
+
+ 
+ Subscribe to Email
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ Board of Governors of the Federal
+ Reserve System
+ 
+
+ 
+ 20th Street and Constitution Avenue N.W., Washington, DC 20551

@@ -1,0 +1,298 @@
+{
+  "item_id": "31-usc-5312",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "To provide definitions and application rules for the terms used in this subchapter (Records and Reports on Monetary Instruments Transactions).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "\u00a75312. Definitions and application",
+          "verified": false
+        },
+        {
+          "quote": "(a) In this subchapter-",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-5312-c1",
+      "actor": "the term \"financial institution\" (as defined in subsection (a))",
+      "modality": "conditional",
+      "action": "includes certain additional institutions for purposes of this subchapter",
+      "trigger": "For purposes of this subchapter, the following definitions shall apply",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "(c) Additional Definitions .-For purposes of this subchapter, the following definitions shall apply:",
+          "verified": true
+        },
+        {
+          "quote": "Certain institutions included in definition .-The term \"financial institution\" (as defined in subsection (a)) includes the following:",
+          "verified": true
+        },
+        {
+          "quote": "Any futures commission merchant, commodity trading advisor, or commodity pool operator registered, or required to register, under the Commodity Exchange Act.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "financial agency",
+      "definition": "a person acting for a person (except for a country, a monetary or financial authority acting as a monetary or financial authority, or an international financial institution of which the United States Government is a member) as a financial institution, bailee, depository trustee, or agent, or acting in a similar way related to money, credit, securities, gold, a transaction in money, credit, securities or gold, or a service provided with respect to money, securities, futures, precious metals, stones and jewels, or value that substitutes for currency.",
+      "citations": [
+        {
+          "quote": "(1) \"financial agency\" means a person acting for a person (except for a country, a monetary or financial authority acting as a monetary or financial authority, or an international financial institution of which the United States Government is a member) as a financial institution, bailee, depository trustee, or agent, or acting in a similar way related to money, credit, securities, gold",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "financial institution",
+      "definition": "means the enumerated list in subsection (a)(2): (A) an insured bank (as defined in section 3(h) of the Federal Deposit Insurance Act); (B) a commercial bank or trust company; (C) a private banker; (D) an agency or branch of a foreign bank in the United States; (E) any credit union; (F) a thrift institution; (G) a broker or dealer registered with the SEC under the Securities Exchange Act of 1934; (H) a broker or dealer in securities or commodities; (I) an investment banker or investment company; (J) a currency exchange, or a business engaged in the exchange of currency, funds, or value that substitutes for currency or funds; (K) an issuer, redeemer, or cashier of travelers' checks, checks, money orders, or similar instruments; (L) an operator of a credit card system; (M) an insurance company; (N) a dealer in precious metals, stones, or jewels; (O) a pawnbroker; (P) a loan or finance company; (Q) a travel agency; (R) a licensed sender of money or any other person who engages as a business in the transmission of currency, funds, or value that substitutes for currency; (S) a telegraph company; (T) a business engaged in vehicle sales; (U) persons involved in real estate closings and settlements; (V) the United States Postal Service; (W) an agency of the United States Government or of a State or local government carrying out a duty or power of a business described in this paragraph; (X) a casino with annual gaming revenue of more than $1,000,000 meeting stated conditions; (Y) any business or agency which engages in any activity the Secretary determines by regulation to be similar to, related to, or a substitute for; (Z) any other business designated by the Secretary whose cash transactions have a high degree of usefulness in criminal, tax, or regulatory matters.",
+      "citations": [
+        {
+          "quote": "(2) \"financial institution\" means-",
+          "verified": true
+        },
+        {
+          "quote": "(A) an insured bank (as defined in section 3(h) of the Federal Deposit Insurance Act ( 12 U.S.C. 1813(h) ));",
+          "verified": true
+        },
+        {
+          "quote": "(G) a broker or dealer registered with the Securities and Exchange Commission under the Securities Exchange Act of 1934 ( 15 U.S.C. 78a et seq. );",
+          "verified": true
+        },
+        {
+          "quote": "(H) a broker or dealer in securities or commodities;",
+          "verified": true
+        },
+        {
+          "quote": "(R) a licensed sender of money or any other person who engages as a business in the transmission of currency, funds, or value that substitutes for currency, including any person who engages as a business in an informal money transfer system",
+          "verified": true
+        },
+        {
+          "quote": "(Z) any other business designated by the Secretary whose cash transactions have a high degree of usefulness in criminal, tax, or regulatory matters.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "insured bank",
+      "definition": "as defined in section 3(h) of the Federal Deposit Insurance Act (12 U.S.C. 1813(h)) \u2014 cross-referenced, not defined here.",
+      "citations": [
+        {
+          "quote": "(A) an insured bank (as defined in section 3(h) of the Federal Deposit Insurance Act ( 12 U.S.C. 1813(h) ));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "casino, gambling casino, or gaming establishment",
+      "definition": "a casino, gambling casino, or gaming establishment with an annual gaming revenue of more than $1,000,000 which (i) is licensed as a casino, gambling casino, or gaming establishment under the laws of any State or any political subdivision of any State; or (ii) is an Indian gaming operation conducted under or pursuant to the Indian Gaming Regulatory Act other than an operation which is limited to class I gaming (as defined in section 4(6) of such Act).",
+      "citations": [
+        {
+          "quote": "(X) a casino, gambling casino, or gaming establishment with an annual gaming revenue of more than $1,000,000 which-",
+          "verified": true
+        },
+        {
+          "quote": "(i) is licensed as a casino, gambling casino, or gaming establishment under the laws of any State or any political subdivision of any State; or",
+          "verified": true
+        },
+        {
+          "quote": "(ii) is an Indian gaming operation conducted under or pursuant to the Indian Gaming Regulatory Act other than an operation which is limited to class I gaming (as defined in section 4(6) of such Act);",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "monetary instruments",
+      "definition": "means (A) United States coins and currency; (B) as the Secretary may prescribe by regulation, coins and currency of a foreign country, travelers' checks, bearer negotiable instruments, bearer investment securities, bearer securities, stock on which title is passed on delivery, and similar material; (C) as the Secretary shall provide by regulation for purposes of sections 5316 and 5331, checks, drafts, notes, money orders, and other similar instruments which are drawn on or by a foreign financial institution and are not in bearer form; and (D) as the Secretary shall provide by regulation, value that substitutes for any monetary instrument described in subparagraph (A), (B), or (C).",
+      "citations": [
+        {
+          "quote": "(3) \"monetary instruments\" means-",
+          "verified": true
+        },
+        {
+          "quote": "(A) United States coins and currency;",
+          "verified": true
+        },
+        {
+          "quote": "(C) as the Secretary of the Treasury shall provide by regulation for purposes of sections 5316 and 5331, checks, drafts, notes, money orders, and other similar instruments which are drawn on or by a foreign financial institution and are not in bearer form; and",
+          "verified": true
+        },
+        {
+          "quote": "(D) as the Secretary shall provide by regulation, value that substitutes for any monetary instrument described in subparagraph (A), (B), or (C).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "nonfinancial trade or business",
+      "definition": "any trade or business other than a financial institution that is subject to the reporting requirements of section 5313 and regulations prescribed under such section.",
+      "citations": [
+        {
+          "quote": "The term \"nonfinancial trade or business\" means any trade or business other than a financial institution that is subject to the reporting requirements of section 5313 and regulations prescribed under such section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "person",
+      "definition": "in addition to its meaning under section 1 of title 1, includes a trustee, a representative of an estate and, when the Secretary prescribes, a governmental entity.",
+      "citations": [
+        {
+          "quote": "(5) \"person\", in addition to its meaning under section 1 of title 1 , includes a trustee, a representative of an estate and, when the Secretary prescribes, a governmental entity.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "United States",
+      "definition": "means the States of the United States, the District of Columbia, and, when the Secretary prescribes by regulation, the Commonwealth of Puerto Rico, the Virgin Islands, Guam, the Northern Mariana Islands, American Samoa, the Trust Territory of the Pacific Islands, a territory or possession of the United States, or a military or diplomatic establishment.",
+      "citations": [
+        {
+          "quote": "(6) \"United States\" means the States of the United States, the District of Columbia, and, when the Secretary prescribes by regulation, the Commonwealth of Puerto Rico, the Virgin Islands, Guam, the Northern Mariana Islands, American Samoa, the Trust Territory of the Pacific Islands, a territory or possession of the United States, or a military or diplomatic establishment.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "domestic financial agency / domestic financial institution",
+      "definition": "apply to an action in the United States of a financial agency or institution.",
+      "citations": [
+        {
+          "quote": "(1) \"domestic financial agency\" and \"domestic financial institution\" apply to an action in the United States of a financial agency or institution.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "foreign financial agency / foreign financial institution",
+      "definition": "apply to an action outside the United States of a financial agency or institution.",
+      "citations": [
+        {
+          "quote": "(2) \"foreign financial agency\" and \"foreign financial institution\" apply to an action outside the United States of a financial agency or institution.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Secretary / Secretary of the Treasury",
+      "definition": "(undefined here) \u2014 used throughout as the authority prescribing regulations, but not defined in this section.",
+      "citations": [
+        {
+          "quote": "(Y) any business or agency which engages in any activity which the Secretary of the Treasury determines, by regulation, to be an activity which is similar to, related to, or a substitute for any activity in which any business described in this paragraph is authorized to engage; or",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "futures commission merchant, commodity trading advisor, commodity pool operator",
+      "definition": "any futures commission merchant, commodity trading advisor, or commodity pool operator registered, or required to register, under the Commodity Exchange Act \u2014 included within \"financial institution\" for purposes of this subchapter.",
+      "citations": [
+        {
+          "quote": "Any futures commission merchant, commodity trading advisor, or commodity pool operator registered, or required to register, under the Commodity Exchange Act.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Definition of \"insured bank\" cross-references section 3(h) of the Federal Deposit Insurance Act (12 U.S.C. 1813(h)).",
+      "references": [
+        "12 U.S.C. 1813(h)",
+        "Federal Deposit Insurance Act section 3(h)"
+      ],
+      "citations": [
+        {
+          "quote": "(A) an insured bank (as defined in section 3(h) of the Federal Deposit Insurance Act ( 12 U.S.C. 1813(h) ));",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Broker or dealer registration references the Securities Exchange Act of 1934 (15 U.S.C. 78a et seq.), administered by the SEC.",
+      "references": [
+        "Securities Exchange Act of 1934",
+        "15 U.S.C. 78a et seq."
+      ],
+      "citations": [
+        {
+          "quote": "(G) a broker or dealer registered with the Securities and Exchange Commission under the Securities Exchange Act of 1934 ( 15 U.S.C. 78a et seq. );",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Casino definition references the Indian Gaming Regulatory Act and its class I gaming definition in section 4(6) of that Act.",
+      "references": [
+        "Indian Gaming Regulatory Act",
+        "section 4(6) (25 U.S.C. 2703(6))"
+      ],
+      "citations": [
+        {
+          "quote": "(ii) is an Indian gaming operation conducted under or pursuant to the Indian Gaming Regulatory Act other than an operation which is limited to class I gaming (as defined in section 4(6) of such Act);",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Monetary instruments subparagraph (C) is defined by regulation for purposes of sections 5316 and 5331.",
+      "references": [
+        "31 U.S.C. 5316",
+        "31 U.S.C. 5331"
+      ],
+      "citations": [
+        {
+          "quote": "(C) as the Secretary of the Treasury shall provide by regulation for purposes of sections 5316 and 5331, checks, drafts, notes, money orders, and other similar instruments which are drawn on or by a foreign financial institution and are not in bearer form; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Nonfinancial trade or business is defined by reference to the reporting requirements of section 5313 and its regulations.",
+      "references": [
+        "31 U.S.C. 5313"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"nonfinancial trade or business\" means any trade or business other than a financial institution that is subject to the reporting requirements of section 5313 and regulations prescribed under such section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "\"person\" cross-references section 1 of title 1 (the Dictionary Act) as the baseline meaning.",
+      "references": [
+        "1 U.S.C. 1"
+      ],
+      "citations": [
+        {
+          "quote": "(5) \"person\", in addition to its meaning under section 1 of title 1 , includes a trustee, a representative of an estate and, when the Secretary prescribes, a governmental entity.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Subsection (c)(1)(A) inclusion of FCMs, CTAs, and CPOs references the Commodity Exchange Act.",
+      "references": [
+        "Commodity Exchange Act (7 U.S.C. 1 et seq.)"
+      ],
+      "citations": [
+        {
+          "quote": "Any futures commission merchant, commodity trading advisor, or commodity pool operator registered, or required to register, under the Commodity Exchange Act.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This section is a definitions/application provision; it contains almost no operative duties, only definitional scope. The one obligation-like construct is subsection (c)'s mandatory application clause (\"shall apply\"), extracted as a conditional definitional inclusion. The text as printed carries a pending but not-yet-effective amendment (Pub. L. 116-283 \u00a76110(a)) adding a new subparagraph (Y) for antiquities dealers, effective only on the effective date of final rules issued by the Secretary; that amendment is not reflected in the current operative text of subsec. (a)(2) as printed, so per the fidelity rule the enacted list (A)-(Z) is extracted as written. Note the source's own two footnotes flagging internal inconsistencies: subsection (c) shows a paragraph numbered (1) with the note '1 So in original. No par. (2) has been enacted.' and a subparagraph (A) with '2 So in original. No subpar. (B) has been enacted.' These are preserved as-is and not harmonized. Text states it 'contains those laws in effect on July 18, 2026,' consistent with the pinned 2026 date."
+}

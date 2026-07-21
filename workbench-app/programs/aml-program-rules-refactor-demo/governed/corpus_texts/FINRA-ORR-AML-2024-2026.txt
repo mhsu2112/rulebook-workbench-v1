@@ -1,0 +1,795 @@
+Skip to main content
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FINRA Utility Menu
+
+ 
+
+ 
+ 
+ About Us
+ 
+
+ 
+ Careers
+ 
+
+ 
+ BrokerCheck
+ 
+
+ 
+ Data
+ 
+
+ 
+ Media Center
+ 
+
+ 
+ For Firms
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+For the Public
+FINRA DATA
+FINRA Data provides non-commercial use of data, specifically the ability to save data views and create and manage a Bond Watchlist.
+Login
+
+For Industry Professionals
+FINPRO GATEWAY
+Registered representatives can fulfill Continuing Education requirements, view their industry CRD record and perform other compliance tasks.
+Login
+
+For Member Firms
+FINRA GATEWAY
+Firm compliance professionals can access filings and requests, run reports and submit support tickets.
+Login
+
+For Case Participants
+DR PORTAL
+Arbitration and mediation case participants and FINRA neutrals can view case information and submit documents through this Dispute Resolution Portal.
+Login
+
+Need Help? | Check System Status
+Log In to other FINRA systems
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ EXPLORE THIS SECTION
+ 
+
+ 
+ 
+ 
+ 2026 FINRA Annual Regulatory Oversight Report
+
+ 
+
+ 
+ 
+ Table of Contents
+ 
+
+ 
+ Message from the Chief Regulatory Operations Officer
+ 
+
+ 
+ Introduction
+ 
+
+ 
+ 
+ Financial Crimes Prevention
+ 
+ 
+ Cybersecurity and Cyber-Enabled Fraud
+ 
+
+ 
+ Anti-Money Laundering, Fraud and Sanctions
+ 
+
+ 
+ Manipulative Trading
+ 
+
+ 
+ 
+ 
+
+ 
+ GenAI: Continuing and Emerging Trends
+ 
+
+ 
+ Firm Operations
+ 
+
+ 
+ Member Firms’ Nexus to Crypto
+ 
+
+ 
+ Communications and Sales
+ 
+
+ 
+ Market Integrity
+ 
+
+ 
+ Financial Management
+ 
+
+ 
+ Appendix—Using FINRA Reports in Your Firm’s Compliance Program
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Anti-Money Laundering, Fraud and Sanctions
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Regulatory Obligations
+The Bank Secrecy Act (BSA) is the common name for the collection of laws enacted in the United States to combat money laundering and terrorist financing. The purposes of the BSA include, among others, requiring certain reports or records that are highly useful in criminal, tax or regulatory investigations, risk assessments or proceedings; or intelligence or counterintelligence activities, including analysis, to protect against terrorism.1
+FINRA Rule 3310 (Anti-Money Laundering Compliance Program) requires that each member develop and implement a written anti-money laundering (AML) program that is approved, in writing, by senior management and is reasonably designed to achieve and monitor the member’s compliance with the BSA and its implementing regulations.2
+FINRA Rule 3310 sets forth minimum standards for a member's written AML compliance program, requiring firms to: 
+establish and implement policies and procedures that can be reasonably expected to detect and cause reporting of suspicious transactions (3310(a));
+establish and implement policies, procedures and internal controls reasonably designed to achieve compliance with the BSA and its implementing regulations, including regulations relating to Customer Identification Programs and beneficial owner verification (3310(b));
+conduct independent testing for compliance each calendar year (or every two calendar years in some specialized cases) (3310(c));
+designate an individual or individuals responsible for implementing and monitoring the day-to-day operations and internal controls of the program (3310(d));
+provide ongoing training for appropriate personnel (3310(e)); and
+maintain risk-based procedures for conducting ongoing customer due diligence, including to understand the nature and purpose of customer relationships for the purpose of developing a customer risk profile and conduct ongoing monitoring to identify and report suspicious transactions, and, on a risk basis, to maintain and update customer information (3310(f)).
+Evolving Risk: External Fraud
+According to the recent FBI Internet Crime Report, fraud represented the most reported losses tracked by the FBI’s Internet Crime Complaint Center (IC3) again this year. FINRA also continues to observe the evolution of external fraud threats impacting investors, markets and member firms. FINRA has previously highlighted external fraud threats—such as fraudulent requests to the Automated Customer Account Transfer System (ACATS), fraudulent options trading, account takeovers (ATOs) and new account fraud (NAF)—as well as related effective practices.3 In addition, threat actors are attempting to entice investors to withdraw funds from their securities accounts and send the funds to the threat actor as part of a fraudulent scheme. 
+The 2025 FINRA Annual Regulatory Oversight Report included examples of external fraud schemes targeting investors directly. Examples of updated trends in this space include:
+Disaster-Related Scams: Schemes in which fraudsters seek to exploit natural disasters or other events that commonly prompt large volumes of donations to commit fraud.4
+Investment Club Scams: These schemes, often associated with pump and dump or other forms of market abuse, continue to evolve. Bad actors associated with an investment club scam will post fraudulent social media advertisements—often using the likeness of well-known finance personalities or financial professionals unaffiliated with the scam—to direct victims to purported “investment clubs” on encrypted messaging applications, where victims are persuaded to purchase shares of low-volume and thinly traded securities (most commonly, shares of stock). When enough victims purchase the shares that are the target of the scheme, the price of the shares rise (the “pump”). Bad actors then sell their shares at a profit, causing the price to plummet and leaving the victims with losses (the “dump”).5
+Gold Bar Courier Scams: In a Gold Bar Courier scam, a fraudster will instruct victims to liquidate assets in securities accounts and purchase precious metals, such as gold bars. The bad actors later convince victims to turn over the precious metals to couriers, sometimes impersonating government officials, under the guise of offering custody or safekeeping services.
+Crypto Confidence Frauds: In a crypto confidence fraud, bad actors befriend people to entice them to make crypto investments through phony apps and websites. The investments may start out slowly with small sums of money, but it is a scam aimed at stealing tens of thousands to millions of dollars.6
+Mail Theft-Related Check Frauds: In a mail theft-related check fraud, bad actors steal physical checks sent via mail, then alter or counterfeit those checks to make unauthorized withdrawals.
+Firms may consider incorporating the following effective practices into their risk-based compliance programs to help detect and mitigate the threat posed by external fraud: 
+Leveraging strong risk-based compliance—especially related to FINRA Rules 3110 (Supervision) as it relates to the transmittal of customer funds (e.g., establishing reasonable risk-based criteria for determining the authenticity of transmittal instructions), and FINRA Rule 3310 (Anti-Money Laundering) as it relates to the reasonable detection, investigation and reporting of potentially suspicious transactions—to assist member firms in identifying red flags of external fraud targeting their investors.
+Providing educational material to associated persons and customers explaining how scams occur and providing resources for victimized customers (including those on FINRA’s For Investors page and FINRA’s Scam Prevention and Assistance Resource Key Topics page).
+Establishing effective communication channels between anti-money laundering and anti-fraud compliance programs to quickly detect and respond to red flags of external fraud.
+Relying on FINRA Rule 2165 (Financial Exploitation of Specified Adults) to place a temporary hold on a customer’s securities transactions or disbursements where there is a reasonable belief of customer financial exploitation.7
+Emphasizing the importance of trusted contact persons and promoting effective practices in connection with FINRA Rule 4512 (Customer Account Information).8
+Contacting FINRA’s Securities Helpline for assistance.
+Developing response plans for situations where the firm identifies that a customer has been victimized, including:notifying a customer’s trusted contact person of any concerns;
+for elder or vulnerable adults, notifying Adult Protective Services;
+in addition to filing required suspicious activity reports (SARs), reporting the fraud to the appropriate regulatory (e.g., FTC, SEC) and law enforcement agencies (e.g., FBI, the customer’s state’s Attorney General’s Consumer Protection Office and Crime Victim Coalition); and
+engaging with the FBI’s IC3 Recovery Asset Team via its Internet Crime Complaint Center to attempt to recall outgoing wire transactions.
+
+For additional guidance concerning external fraud identification, mitigation and prevention, please see:
+The Senior Investors and Trusted Contact Persons topic in the 2025 Report
+FINRA Scam Prevention and Assistance Resource Key Topics page
+FINRA Securities Helpline for Seniors
+FINRA Investor Alert: Relationship Investment Scams (Sept. 10, 2024)
+FINRA Threat Intelligence Product: Protecting Vulnerable Adult and Senior Investors (May 2024)
+FINRA Foundation’s Taking Action: An Advocate’s Guide to Assisting Victims of Financial Fraud (2021)
+Regulatory Notice 20-30 (Fraudsters Using Registered Representatives' Names to Establish Imposter Websites)
+Regulatory Notice 20-32 (FINRA Reminds Firms to Be Aware of Fraudulent Options Trading in Connection With Potential Account Takeovers and New Account Fraud)
+Regulatory Notices 22-21 (FINRA Alerts Firms to Recent Trend in Fraudulent Transfers of Accounts Through ACATS) and 23-06 (FINRA Shares Effective Practices to Address Risks of Fraudulent Transfers of Accounts Through ACATS)
+
+Findings
+Failing to Reasonably Detect and Investigate Red Flags and Report Suspicious Transactions: Failing to establish and implement an AML program reasonably designed to detect and cause the reporting of suspicious transactions. This included:failing to reasonably tailor an AML program, including the detection and investigation of red flags, as well as monitoring processes and tools, to the firm’s business;
+failing to establish and implement reasonably designed policies and procedures related to the detection and investigation of red flags of suspicious trading and money movement activity—including suspicious activity in omnibus accounts;
+not reasonably detecting and investigating red flags of potentially suspicious activity associated with small cap public offerings as highlighted in Regulatory Notice 22-25 (Heightened Threat of Fraud), including investments well beyond the stated net worth of the customer(s), investments made by multiple customers that exhibit red flags of being nominee accounts, and simultaneous or near simultaneous trading by seemingly unrelated accounts that lacks a business purpose or appears designed to artificially inflate the price of the security;9
+failing to commit sufficient staff and resources to the AML program, including following a material business expansion or change in business, or where new threats are applicable to the member;
+failing to establish and implement reasonably designed policies and procedures for escalating and reviewing red flags of suspicious activity detected by another team or department outside of the AML compliance program that may require the filing of a SAR (e.g., cybersecurity events, account compromise, account takeovers);
+failing to reasonably detect and consider red flags of identity theft, either at onboarding or during investigations of potentially suspicious activity; and
+failing to reasonably detect and investigate red flags associated with inquiries about potentially suspicious transactions received from the member’s clearing firm about an introduced customer.10
+
+Failing to Reasonably Establish and Implement Policies and Procedures to Achieve Compliance With Customer Identification Program (CIP) and Customer Due Diligence (CDD):Not recognizing that certain relationships established with the firm to effect securities transactions are customer relationships (and, consequently, not conducting CIP or CDD as required).
+Unreasonable Verification of Customer Identities: Not establishing and implementing a reasonably designed CIP. For example, failing to collect required identifying information, and not reasonably verifying the identity of customers and beneficial owners of legal entity customers within a reasonable timeframe, especially in situations where red flags related to the customer’s identity are present, including red flags of identity theft, red flags that the customer may be acting as agent for an undisclosed principal using a nominee account, and other red flags in customer due diligence and interactions with customers).11
+Auto-approving the opening of customer accounts without reasonably verifying the identity of the customer within a reasonable timeframe despite red flags (e.g., applicant provided a Social Security number that was not valid or was associated with the name of a different person, including a deceased individual).
+Not reasonably detecting and investigating red flags, including situations where the stated business, occupation or financial resources of the customer are not commensurate with the type or level of activity of the customer, to reasonably determine whether to file a SAR or update the customer risk profile.
+Failing to establish policies and procedures that can be reasonably expected to detect identity theft or synthetic identity fraud in connection with account opening (e.g., common identifying information across multiple seemingly unrelated accounts).
+Not conducting initial and ongoing risk-based CDD to reasonably understand the nature and purpose of customer relationships to develop a customer risk profile, identify and report suspicious transactions and, on a risk basis, to maintain and update customer information.
+
+Inadequate Due Diligence on Correspondent Accounts of Foreign Financial Institutions: Not reasonably conducting required due diligence on correspondent accounts the firm maintains for foreign financial institutions, including by failing to assess the money laundering risk posed by such correspondent accounts, and failing to apply risk-based procedures and controls to each correspondent account reasonably designed to detect and report known or suspected money laundering activity, including a periodic review of the correspondent account activity sufficient to determine consistency with information obtained about the type, purpose and anticipated activity of the account.
+Inadequate Testing:Not providing for annual testing of the program on a calendar-year basis (or every two calendar years in specialized circumstances).
+Not ensuring that AML independent tests include a reasonably designed assessment of critical aspects of the AML program (e.g., suspicious activity detection and reporting), including following a material business expansion or change in business, or where new threats to the industry are applicable to the member.
+Not ensuring that persons performing the AML independent test have the requisite independence and qualifications to perform the testing.
+
+Inadequate Training: Not providing ongoing AML training to appropriate personnel that is tailored to the firm’s business.
+Continuing Risk: New Account Fraud and Account Takeovers
+FINRA has observed continued fraudulent activity associated with NAF, which are accounts opened using stolen identities, and ATOs, where bad actors use stolen customer credentials to access an existing customer account. Fraudsters are increasingly using GenAI tools to gain access to financial accounts and create new accounts in the names of unsuspecting investors. For example, fraudsters are using GenAI to exploit identification (ID) verification processes and commit new account fraud and account takeovers in multiple ways, including:
+Social Engineering—This involves tricking or manipulating investors into giving away sensitive information or allowing remote access to their computer. Fraudsters might use GenAI to analyze social media activity to create highly personalized phishing emails that could lead investors to fraudulent websites embedded with malicious links.
+Voice Clones—With GenAI, fraudsters can create a credible-sounding imitation, or voice clone, of an investor. Using this voice clone, they might persuade the member firm to grant or change access to the investor’s accounts.
+Fake ID Documents—Fraudsters can use GenAI to create convincing fake ID documents—such as driver’s licenses, professional credentials or bank statements—that might also incorporate AI-generated images. They can use these documents to fraudulently open a new account or to take over an existing account.
+Deepfake Selfies—Some firms have incorporated requests for selfie photos and videos into their customer-verification process. Fraudsters can take images from customers’ social media and use GenAI to create deepfakes to circumvent these types of security checks.
+Some effective practices for firms to consider incorporating into their risk-based compliance programs to help mitigate the threat posed by this type of fraud include the following, especially for firms that offer fully online account opening services and rely on automated account opening or customer verification services:
+Inform customers about identity-theft protection services and periodically remind customers to change user login information, including passwords, particularly after known data breaches and leaks that expose consumer login credentials.
+Encourage customers who know their SSNs have been compromised to use credit-monitoring services and consider requesting a credit freeze.
+Train employees, especially those involved in customer onboarding, on the latest in AI capabilities and threats, and be on alert for repetitive patterns of behavior in the opening of multiple accounts that could be indicative of bots and bad actors.
+Perform additional verification or authentication when anomalies are detected in customer login attempts or when the customer engages in transactions that would not be expected from unusual locations or Internet Protocol (IP) addresses, which can include phone calls, likeness checks or use of multi-factor authentication.
+Prevent or limit outgoing transfers of funds from potentially compromised accounts—for example, if an account password or contact information has just been changed and the account user is attempting to make out-of-pattern or higher-risk transactions.
+If the firm identifies one attempt by a bad actor to open an account, look for accounts opened at around the same time with similar characteristics.
+Join industry, regulatory and law-enforcement anti-fraud networks, and subscribe to their mailing lists. Members of these networks can more quickly learn of new threats and how to counter them.
+For additional guidance, FINRA recommends:
+Investor Insights: Protecting Your Investment Accounts From GenAI Fraud (January 2025)
+Regulatory Notice 21-18 (FINRA Shares Practices Firms Use to Protect Customers From Online Account Takeover Attempts)
+Nacha’s ACH Operations Bulletin #1-2023 Update to Sample Written Statement of Unauthorized Debit
+FINRA Fraud Spotlight Webinar: New Account Fraud
+
+Effective Practices 
+Reviewing Regulatory Updates: Reviewing alerts, advisories, significant cases and other updates from FINRA, the SEC, FinCEN, OFAC, and other regulators and agencies, and assessing the relevance of the information to the member’s business and whether adjustments to the firm’s risk-based AML compliance program are warranted.
+Clear Delegation of AML Responsibilities and Effective Communication Channels: Establishing clear delegation of AML-related responsibilities across individuals and business units that are in the best position to identify red flags of suspicious activity through written procedures and recurring cross-department communication. This may include specifying which individuals and business units are responsible for:detecting account compromise, account takeovers and other potential cyber events;
+identifying potential insider trading, market manipulation or other market abuse;
+reasonably detecting and responding to red flags of potential identity theft as part of the member’s Identity Theft Prevention Program as required under Regulation S-ID; and
+detecting potentially fraudulent transmittals of funds or securities from customer accounts and using a reasonable risk-based criteria to determine the authenticity of transmittal instructions.
+
+Independent Testing: Comprehensive AML independent testing can identify areas of the member firm’s AML Compliance Program that may be unreasonably designed or implemented, and provide members with the ability to take prompt corrective action that can mitigate the risk of illicit proceeds being laundered or generated by, at or through the firm.
+Training: Establishing and maintaining an AML training program for appropriate personnel that is tailored to the individuals’ roles and responsibilities, addresses AML risks relevant to the member’s business and recent regulatory developments, and, where applicable, leverages trends and findings from the firm’s quality assurance controls and AML independent testing.
+Conducting Risk Assessments:Conducting AML risk assessments that are updated in appropriate situations, such as:following material findings of an independent AML test or other internal or external audits;
+following changes in the size or risk profile of the firm (e.g., changes to business lines, products and services, registered representatives, customers or geographic areas in which the firm operates); or
+following material macroeconomic or geopolitical events.
+
+Periodically assessing alerts or exception reports to confirm they are functioning as intended, reasonably detecting the suspicious activity the alert or report is designed to identify, and properly ingesting the required data.
+
+Additional Steps for Verifying Customers’ Identities When Establishing Online Accounts: Incorporating additional methods for verifying customer identities, for example:obtaining both documentary (e.g., driver licenses, government issued IDs) and non-documentary identifying information, or multiple forms of documentary information;
+asking follow-up questions or requesting additional documents based on information from credit bureaus, credit reporting agencies or digital identity intelligence (e.g., automobile and home purchases);
+contracting third-party vendors to help verify the legitimacy of suspicious information in customer applications (e.g., cross-referencing information across multiple third-party vendors);
+validating identifying information that applicants provide through likeness checks;12
+reviewing the IP address or other available geolocation data associated with:new online account applications for consistency with the customer’s home address; and
+transfer requests (for consistency with locations from which the firm has previously received legitimate customer communications);
+
+obtaining a copy of the account statement from the account slated to be transferred before sending an ACATS request;
+for firms that initiate ACATS transfers (i.e., delivering firms), sending notifications to account owners (e.g., “push” notifications on mobile apps, emails, phone calls) or contacting any broker(s) assigned to the account or both;
+ensuring that any tools used for automated customer verification are reasonably designed to detect red flags of identity theft and synthetic identity fraud;
+limiting automated approval of multiple accounts for a single customer;
+reviewing account applications for common identifiers (e.g., email address, phone number, physical address) present in other applications and in existing accounts, especially seemingly unrelated accounts; and
+reviewing account applications for use of temporary or fictitious email addresses (e.g., @temporaryemail.org) or phone numbers (e.g., 555-555-5555, 999-999-9999).
+
+Additional Resources
+FINRAAnti-Money Laundering (AML) Key Topics Page
+Anti-Money Laundering (AML) Template for Small Firms (Sept. 8, 2020)
+Frequently Asked Questions (FAQ) regarding Anti Money Laundering (AML)
+Industry Risks and Threats – Resources for Member Firms
+Identity Theft Red Flags Rule Template
+Regulatory NoticesRegulatory Notice 22-25 (Heightened Threat of Fraud)
+Regulatory Notice 21-03 (FINRA Urges Firms to Review Their Policies and Procedures Relating to Red Flags of Potential Securities Fraud Involving Low-Priced Securities)
+Regulatory Notice 19-18 (FINRA Provides Guidance to Firms Regarding Suspicious Activity Monitoring and Reporting Obligations)
+
+SECInvestor Alert: Beware of Fraudsters Impersonating Investment Professionals and Firms (Dec. 11, 2024)
+Staff Bulletin: Risks Associated with Omnibus Accounts Transacting in Low-Priced Securities (Oct. 17, 2023)
+Risk Alert: Observations from Anti-Money Laundering Compliance Examinations of Broker-Dealers (July 31, 2023)
+Risk Alert: Observations from Broker-Dealer and Investment Adviser Compliance Examinations Related to Prevention of Identity Theft Under Regulation S-ID (Dec. 5, 2022)
+Anti-Money Laundering (AML) Source Tool for Broker-Dealers (May 16, 2022)
+Risk Alert: Compliance Issues Related to Suspicious Activity Monitoring and Reporting at Broker-Dealers (March 29, 2021)
+
+Treasury and FinCENFrequently Asked Questions Regarding Suspicious Activity Reporting Requirements (Oct. 9, 2025)
+FinCEN Alerts/Advisories/Notices/Bulletins/Fact Sheets, including:Financial Action Task Force Identifies Jurisdictions with Anti-Money Laundering, Countering the Financing of Terrorism, and Counter-Proliferation Finance Deficiencies (June 23, 2025)
+FinCEN Reminds Financial Institutions to Remain Vigilant Regarding Potential Relationship Investment Scams (Feb. 26, 2025)
+FinCEN Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (Nov. 13, 2024)
+FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (April 15, 2024)
+FinCEN Alert to Financial Institutions to Counter Financing to Hamas and its Terrorist Activities (Oct. 20, 2023)
+FinCEN Alert on Prevalent Virtual Currency Investment Scam Commonly Known as “Pig Butchering” (Sept. 8, 2023)
+
+2024 National Money Laundering Risk Assessment
+The Anti-Money Laundering Act of 2020 (June 30, 2021)
+Anti-Money Laundering and Countering the Financing of Terrorism National Priorities (June 30, 2021)
+
+Financial Action Task ForceRisk-based Approach Guidance for the Securities Sector (Oct. 26, 2018)
+
+Previous:Cybersecurity and Cyber-Enabled Fraud
+Up:Anti-Money Laundering, Fraud and Sanctions
+Next:Manipulative Trading
+
+1 31 U.S. Code § 5311(1). 
+2 Capital Acquisition Broker (CAB) Rule 331 (Anti-Money Laundering Compliance Program) applies AML compliance program requirements to Capital Acquisition Brokers.
+3 For effective practices related to external fraud threats, see Regulatory Notice 22-21 (FINRA Alerts Firms to Recent Trend in Fraudulent Transfers of Accounts Through ACATS), the Investor Insights article Avoid Fraud: Protecting Your Investment Accounts From GenAI Fraud and FINRA’s Firm Checklist for Compromised Accounts.
+4 For additional guidance related to identifying and avoiding potential disaster-related scams, see the Investor Insights article Avoid Fraud—Beware of Stock Fraud in the Wake of Natural Disasters.
+5 For additional guidance, see the Investor Insights article Avoid Fraud—Avoiding Pump-and-Dump Scams.
+6 For additional guidance on identifying and avoiding both relationship investment scams and crypto investment scams, see the Investor Insights article Avoid Fraud—Relationship Investment Scams: What They Are and Tips to Avoid Them and the infographic Crypto Investment Scams. 
+7 See the Senior Investors and Trusted Contact Persons topic for additional guidance.
+8 Id.
+9 See Increase in Small Cap Fraud Involving Exchange-Listed Equities “callout” box in the Manipulative Trading topic for additional guidance.
+10 For additional guidance, see the Federal banking agencies’ Answers to Frequently Asked Questions Regarding Suspicious Activity Reporting and Other Anti-Money Laundering Considerations. 
+11 For additional guidance, see the SEC Identity Theft Red Flags Rule Template and Regulatory Notice 19-18 (FINRA Provides Guidance to Firms Regarding Suspicious Activity Monitoring and Reporting Obligations).
+12 An identity verification method where applicants upload a photo or video of themselves, which is then compared with their recently submitted identity documents. (See Regulatory Notice 21-18 (FINRA Shares Practices Firms Use to Protect Customers from Online Account Takeover Attempts).)
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Download the Report
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ FINRA Utility Menu
+
+ 
+
+ 
+ 
+ About Us
+ 
+
+ 
+ Careers
+ 
+
+ 
+ BrokerCheck
+ 
+
+ 
+ Data
+ 
+
+ 
+ Media Center
+ 
+
+ 
+ For Firms
+ 
+
+ 
+ 
+
+ 
+
+ 
+ FINRA Main Navigation
+
+ 
+
+ 
+ 
+ Rules & Guidance
+ 
+
+ 
+ Registration, Exams & CE
+ 
+
+ 
+ Events & Training
+ 
+
+ 
+ Filing & Reporting
+ 
+
+ 
+ Compliance Tools
+ 
+
+ 
+ For Investors
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ General Inquiries
+301-590-6500
+
+Securities Helpline for Seniors®
+844-574-3577 (Mon-Fri 9am-5pm ET)
+
+File a Regulatory Tip
+To report on abuse or fraud in the industry
+
+Arbitration & Mediation
+FINRA operates the largest securities dispute resolution forum in the United States
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ File an Investor Complaint
+File a complaint about fraud or unfair practices.
+
+Small Firm Help Line
+833-26-FINRA (Mon-Fri 9am-6pm ET)
+
+Office of the Ombuds
+Report a concern about FINRA at 888-700-0028
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ Footer Legal Links
+
+ 
+
+ 
+ 
+ Site Map
+ 
+
+ 
+ Privacy Policy
+ 
+
+ 
+ Terms of Use
+ 
+
+ 
+ Translate
+ 
+
+ 
+ Contact Us
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ © 2026 FINRA. All Rights Reserved.
+FINRA is a Registered Trademark of the Financial Industry Regulatory Authority, Inc.

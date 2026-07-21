@@ -1,0 +1,84 @@
+{
+  "item_id": "occ-bulletin-2023-25",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "The addendum highlights, in the context of the early-2023 stress events, that banks should maintain operational readiness to borrow from federal funding facilities such as the Federal Reserve discount window when such facilities form part of their contingency funding plans.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The events of the first half of 2023 have further underscored the importance of liquidity risk management and contingency funding planning.",
+          "verified": true
+        },
+        {
+          "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "O1",
+      "actor": "banks (national banks, federal savings associations, and federal branches and agencies of foreign banking organizations)",
+      "modality": "conditional",
+      "action": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window",
+      "trigger": "if these facilities are part of their contingency funding plans",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Banks",
+      "definition": "\u201cBanks\u201d refers collectively to national banks, federal savings associations, and federal branches and agencies of foreign banking organizations.",
+      "citations": [
+        {
+          "quote": "\u201cBanks\u201d refers collectively to national banks, federal savings associations, and federal branches and agencies of foreign banking organizations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "contingency funding plans",
+      "definition": "(undefined here) \u2014 the text discusses banks maintaining, assessing, and testing contingency funding plans as part of their liquidity risk management program and activities, but does not itself define the term.",
+      "citations": [
+        {
+          "quote": "maintaining, assessing, and testing their contingency funding plans as part of their liquidity risk management program and activities",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal Reserve discount window",
+      "definition": "(undefined here) \u2014 referenced only as an example of a federal funding facility for which banks should understand requirements and maintain operational readiness.",
+      "citations": [
+        {
+          "quote": "understand requirements and maintain operational readiness to borrow from federal funding facilities, such as the Federal Reserve discount window, if these facilities are part of their contingency funding plans.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The Bulletin transmits an addendum to, and operates in conjunction with, the 2010 Interagency Policy Statement on Funding and Liquidity Risk Management, extending its expectations regarding contingency funding plans in light of the 2023 stress events.",
+      "references": [
+        "Interagency Policy Statement on Funding and Liquidity Risk Management (March 22, 2010)"
+      ],
+      "citations": [
+        {
+          "quote": "issuing an addendum to the \u201cInteragency Policy Statement on Funding and Liquidity Risk Management\u201d issued March 22, 2010",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Only the portion of this bulletin that bears on Federal Reserve discount-window operational readiness (a topic within the ratified scope's treatment of discount-window rules/stigma) was extracted as an obligation. The bulletin's other three highlighted expectations (assessing funding stability/maintaining a broad range of funding sources; ensuring access to a range of contingent funding sources; and periodic review/revision of contingency funding plans) concern general contingency-funding-plan and liquidity-risk-management practice and do not address the ratified scope's specific foci \u2014 Fed discount-window/FHLB interoperability and collateral-rule fragmentation, the structural sources of discount-window stigma, the timing/granularity of Call Report or FR 2052a liquidity reporting, or the Hsu/McKernan reform proposals \u2014 and were therefore not extracted as in-scope obligations. No FHLB, Call Report, FR 2052a, discount-window-stigma-mechanism, or reform-proposal content appears anywhere in this source; nothing further in this document falls within the ratified scope. Text preserved as written per the fidelity rule; the bulletin uses no explicit shall/must/should language for the highlighted bank actions, only the conditional framing quoted above, which is why modality 'conditional' was selected rather than an inferred 'must' or 'should'."
+}

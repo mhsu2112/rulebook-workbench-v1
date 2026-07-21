@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OperationProposal",
+  "description": "Model-proposed refactor operations for ONE defect finding (P3.2). Advisory blueprint-level moves per ADR-003 \u2014 never operative legal text. Every operation must come from the spec/20 whitelist; a needed move that cannot be expressed goes in cannot_express, never improvised.",
+  "type": "object",
+  "required": [
+    "finding_ref",
+    "operations",
+    "cannot_express"
+  ],
+  "properties": {
+    "finding_ref": {
+      "type": "string"
+    },
+    "operations": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "op_type",
+          "targets",
+          "proposal",
+          "rationale",
+          "citations"
+        ],
+        "properties": {
+          "op_type": {
+            "enum": [
+              "MERGE",
+              "SPLIT",
+              "INTRODUCE",
+              "REPEAL",
+              "RELOCATE",
+              "CANONICALIZE-DEFINITION",
+              "DEFINE-TERM",
+              "SUBSTITUTE-TERM",
+              "NORMALIZE-ELEMENTS",
+              "FACTOR-EXCEPTION",
+              "ELEVATE-GENERAL-RULE",
+              "RESOLVE-CROSS-REFERENCE",
+              "RELATE-OBLIGATION",
+              "RECALIBRATE"
+            ]
+          },
+          "targets": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "item_id"
+              ],
+              "properties": {
+                "item_id": {
+                  "type": "string"
+                },
+                "element_ref": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "obligation_id / defined term / cross-reference the move touches"
+                }
+              }
+            }
+          },
+          "parameters": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Operands beyond targets, e.g. the canonical definition text chosen, the destination of a RELOCATE"
+          },
+          "proposal": {
+            "type": "string",
+            "maxLength": 2000,
+            "description": "What the move does, at blueprint level"
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 800
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "quote"
+                  ],
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "maxLength": 800
+                    },
+                    "item_id": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "verified": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "composition_note": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "When this op only works composed with another proposed op"
+          },
+          "objective_hook": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "REQUIRED in the redesign pass (P3D.4): the Ratified Mandate objective this move serves and how. A move with no hook cannot enter review. Must reference an ADOPTED objective \u2014 hypotheses confer no authority.",
+            "properties": {
+              "objective_id": {
+                "type": "string"
+              },
+              "how": {
+                "type": "string",
+                "maxLength": 600
+              }
+            },
+            "required": [
+              "objective_id",
+              "how"
+            ]
+          },
+          "tradeoff": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "P3D.5: if this move advances one objective at cost to another, name both; the Mandate's ranking must cover them or the move returns to the Principal.",
+            "properties": {
+              "advances": {
+                "type": "string"
+              },
+              "costs": {
+                "type": "string"
+              },
+              "ranking_basis": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "How the Mandate ranks these; null if it does not (which forces a return)"
+              }
+            },
+            "required": [
+              "advances",
+              "costs"
+            ]
+          }
+        }
+      }
+    },
+    "cannot_express": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "P3.1: a needed move the whitelist cannot express \u2014 a logged finding proposing an ADR, not an edit"
+    }
+  }
+}

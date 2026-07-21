@@ -1,0 +1,705 @@
+{
+  "item_id": "ffiec-man-ps-01",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Assess the structure and management of the organization's BSA/AML compliance program and, if applicable, the consolidated or partially consolidated approach to BSA/AML compliance.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective. Assess the structure and management of the organization's BSA/AML compliance program and if applicable, the organization's consolidated or partially consolidated approach to BSA/AML compliance.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "ob-01",
+      "actor": "Every bank",
+      "modality": "must",
+      "action": "have a comprehensive BSA/AML compliance program that addresses BSA requirements applicable to all operations of the organization",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Every bank must have a comprehensive BSA/AML compliance program that addresses BSA requirements applicable to all operations of the organization.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-02",
+      "actor": "A banking organization",
+      "modality": "may",
+      "action": "structure and manage the BSA/AML compliance program or some parts of the program within a legal entity; with some degree of consolidation across entities; or as part of a comprehensive enterprise risk management framework",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A banking organization may structure and manage the BSA/AML compliance program or some parts of the program within a legal entity; with some degree of consolidation across entities within an organization; or as part of a comprehensive enterprise risk management framework.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-03",
+      "actor": "Consolidated BSA/AML compliance program",
+      "modality": "should",
+      "action": "reflect the organization's business structure, size, and complexity, and be designed to effectively address risks, exposures, and applicable legal requirements across the organization",
+      "trigger": "Regardless of how a consolidated BSA/AML compliance program is organized",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Regardless of how a consolidated BSA/AML compliance program is organized, it should reflect the organization's business structure, size, and complexity, and be designed to effectively address risks, exposures, and applicable legal requirements across the organization.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-04",
+      "actor": "A consolidated approach",
+      "modality": "should",
+      "action": "include the establishment of corporate standards for BSA/AML compliance that reflect the expectations of the organization's board of directors",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A consolidated approach should also include the establishment of corporate standards for BSA/AML compliance that reflect the expectations of the organization's board of directors, with senior management working to ensure that the BSA/AML compliance program implements these corporate standards.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-05",
+      "actor": "Senior management (under consolidated approach)",
+      "modality": "should",
+      "action": "work to ensure that the BSA/AML compliance program implements the corporate standards",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "with senior management working to ensure that the BSA/AML compliance program implements these corporate standards",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-06",
+      "actor": "Risk (under a consolidated approach)",
+      "modality": "should",
+      "action": "be assessed both within and across all business lines, legal entities, and jurisdictions of operation",
+      "trigger": "Under a consolidated approach",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Under a consolidated approach, risk should be assessed both within and across all business lines, legal entities, and jurisdictions of operation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-07",
+      "actor": "Programs for global organizations",
+      "modality": "should",
+      "action": "incorporate the AML laws and requirements of the various jurisdictions in which they operate",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Programs for global organizations should incorporate the AML laws and requirements of the various jurisdictions in which they operate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-08",
+      "actor": "Internal audit",
+      "modality": "should",
+      "action": "assess the level of compliance with the consolidated BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Internal audit should assess the level of compliance with the consolidated BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-09",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "coordinate efforts with other regulatory agencies in order to address these challenges or ensure the examination scope appropriately covers the legal entity examined",
+      "trigger": "As appropriate, when a diversified banking organization uses multiple legal entities examined by multiple regulators",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As appropriate, examiners should coordinate efforts with other regulatory agencies in order to address these challenges or ensure the examination scope appropriately covers the legal entity examined.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-10",
+      "actor": "Small institution combining BSA/AML compliance with other functions",
+      "modality": "should",
+      "action": "there should still be adequate senior-level attention to BSA/AML compliance, and sufficient dedicated resources",
+      "trigger": "In such circumstances (small institution combining BSA/AML compliance with other functions)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In such circumstances, there should still be adequate senior-level attention to BSA/AML compliance, and sufficient dedicated resources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-11",
+      "actor": "The audit function",
+      "modality": "should",
+      "action": "remain independent",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As is the case in all structures, the audit function should remain independent.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-12",
+      "actor": "Banking organization (when BSA/AML compliance responsibilities are delegated and staff located within lines of business)",
+      "modality": "should",
+      "action": "clearly set forth expectations in order to ensure effective implementation of the BSA/AML compliance program",
+      "trigger": "when there is delegation of BSA/AML compliance responsibilities, and BSA/AML compliance staff is located within lines of business",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "when there is delegation of BSA/AML compliance responsibilities, and BSA/AML compliance staff is located within lines of business, expectations should be clearly set forth in order to ensure effective implementation of the BSA/AML compliance program",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-13",
+      "actor": "Allocation of responsibility",
+      "modality": "should",
+      "action": "be clear with respect to the content and comprehensiveness of MIS reports, the depth and frequency of monitoring efforts, and the role of different parties within the banking organization in BSA/AML compliance decision-making processes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In particular, allocation of responsibility should be clear with respect to the content and comprehensiveness of MIS reports, the depth and frequency of monitoring efforts, and the role of different parties within the banking organization (e.g., risk, business lines, operations) in BSA/AML compliance decision-making processes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-14",
+      "actor": "An appropriate level of BSA/AML compliance independence",
+      "modality": "should",
+      "action": "be maintained (e.g., by providing a reporting line to corporate compliance; ensuring active involvement in all matters affecting AML risk; establishing a dispute escalation/resolution process; establishing internal controls to maintain objectivity)",
+      "trigger": "when compliance staff reports to the management of the business line, presenting risks of potential conflicts of interest",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "To ensure the strength of compliance controls, an appropriate level of BSA/AML compliance independence should be maintained, for example, by:",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-15",
+      "actor": "The board of directors",
+      "modality": "must",
+      "action": "has primary responsibility for ensuring that the bank has a comprehensive and effective BSA/AML compliance program and oversight framework reasonably designed to ensure compliance with BSA/AML regulation",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors has primary responsibility for ensuring that the bank has a comprehensive and effective BSA/AML compliance program and oversight framework that is reasonably designed to ensure compliance with BSA/AML regulation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-16",
+      "actor": "Senior management",
+      "modality": "must",
+      "action": "is responsible for implementing the board-approved BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Senior management is responsible for implementing the board-approved BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-17",
+      "actor": "The board of directors",
+      "modality": "must",
+      "action": "is responsible for approving the BSA/AML compliance program and for overseeing the structure and management of the bank's BSA/AML compliance function",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board of directors is responsible for approving the BSA/AML compliance program and for overseeing the structure and management of the bank's BSA/AML compliance function.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-18",
+      "actor": "The board",
+      "modality": "should",
+      "action": "ensure that senior management is fully capable, qualified, and properly motivated to manage the BSA/AML compliance risks in a manner consistent with the board's expectations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board should ensure that senior management is fully capable, qualified, and properly motivated to manage the BSA/AML compliance risks arising from the organization's business activities in a manner that is consistent with the board's expectations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-19",
+      "actor": "The board",
+      "modality": "should",
+      "action": "ensure that the BSA/AML compliance function has an appropriately prominent status within the organization",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board should ensure that the BSA/AML compliance function has an appropriately prominent status within the organization.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-20",
+      "actor": "The board",
+      "modality": "should",
+      "action": "ensure that its views about the importance of BSA/AML compliance are understood and communicated across all levels of the banking organization",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board should ensure that its views about the importance of BSA/AML compliance are understood and communicated across all levels of the banking organization.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-21",
+      "actor": "The board",
+      "modality": "should",
+      "action": "ensure that senior management has established appropriate incentives to integrate BSA/AML compliance objectives into management goals and compensation structure, and that corrective actions, including disciplinary measures if appropriate, are taken when serious BSA/AML compliance failures are identified",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The board also should ensure that senior management has established appropriate incentives to integrate BSA/AML compliance objectives into management goals and compensation structure across the organization, and that corrective actions, including disciplinary measures, if appropriate, are taken when serious BSA/AML compliance failures are identified.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-22",
+      "actor": "Senior management",
+      "modality": "must",
+      "action": "is responsible for communicating and reinforcing the BSA/AML compliance culture established by the board, and implementing and enforcing the board-approved BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Senior management is responsible for communicating and reinforcing the BSA/AML compliance culture established by the board, and implementing and enforcing the board-approved BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-23",
+      "actor": "Senior management of the BSA/AML compliance function",
+      "modality": "should",
+      "action": "establish, support, and oversee the organization's BSA/AML compliance program",
+      "trigger": "If the banking organization has a separate BSA/AML compliance function",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If the banking organization has a separate BSA/AML compliance function, senior management of the function should establish, support, and oversee the organization's BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-24",
+      "actor": "BSA/AML compliance staff",
+      "modality": "should",
+      "action": "report to the board, or a committee thereof, on the effectiveness of the BSA/AML compliance program and significant BSA/AML compliance matters",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "BSA/AML compliance staff should report to the board, or a committee thereof, on the effectiveness of the BSA/AML compliance program and significant BSA/AML compliance matters.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-25",
+      "actor": "Senior management of a foreign banking organization's U.S. operations",
+      "modality": "should",
+      "action": "provide sufficient information relating to the U.S. operations' BSA/AML compliance to the governance or control functions in its home country, and ensure that responsible senior management in the home country has an appropriate understanding of the BSA/AML risk and control environment governing U.S. operations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Senior management of a foreign banking organization's U.S. operations should provide sufficient information relating to the U.S. operations' BSA/AML compliance to the governance or control functions in its home country, and should ensure that responsible senior management in the home country has an appropriate understanding of the BSA/AML risk and control environment governing U.S. operations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-26",
+      "actor": "U.S. management (of a foreign banking organization's U.S. operations)",
+      "modality": "should",
+      "action": "assess the effectiveness of established BSA/AML control mechanisms for U.S. operations on an ongoing basis and report and escalate areas of concern as needed",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "U.S. management should assess the effectiveness of established BSA/AML control mechanisms for U.S. operations on an ongoing basis and report and escalate areas of concern as needed.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-27",
+      "actor": "Banking organizations that centrally manage the operations and functions of their subsidiary banks, other subsidiaries, and business lines",
+      "modality": "should",
+      "action": "ensure that comprehensive risk management policies, procedures, and processes are in place across the organization to address the entire organization's spectrum of risk",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banking organizations that centrally manage the operations and functions of their subsidiary banks, other subsidiaries, and business lines should ensure that comprehensive risk management policies, procedures, and processes are in place across the organization to address the entire organization's spectrum of risk.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-28",
+      "actor": "Banking organizations that centrally manage a consolidated BSA/AML compliance program",
+      "modality": "should",
+      "action": "among other things provide appropriate structure; and advise the business lines, subsidiaries, and foreign branches on the development of appropriate guidelines",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "banking organizations that centrally manage a consolidated BSA/AML compliance program should, among other things provide appropriate structure; and advise the business lines, subsidiaries, and foreign branches on the development of appropriate guidelines",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-29",
+      "actor": "Examiners",
+      "modality": "must",
+      "action": "identify which portions of the BSA/AML compliance program are part of the consolidated BSA/AML compliance program",
+      "trigger": "When an organization manages only specific compliance controls on a consolidated basis with others managed within affiliates, subsidiaries, and business lines",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When this approach is taken, examiners must identify which portions of the BSA/AML compliance program are part of the consolidated BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-30",
+      "actor": "The examiner",
+      "modality": "should",
+      "action": "determine reporting lines and how each affiliate, subsidiary, business line, and jurisdiction fits into the overall compliance structure, including an assessment of how clearly roles and responsibilities are communicated",
+      "trigger": "When evaluating a consolidated BSA/AML compliance program for adequacy",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When evaluating a consolidated BSA/AML compliance program for adequacy, the examiner should determine reporting lines and how each affiliate, subsidiary, business line, and jurisdiction fits into the overall compliance structure.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-31",
+      "actor": "The examiner",
+      "modality": "should",
+      "action": "assess how effectively the bank or banking organization monitors BSA/AML compliance throughout the organization, including how well the consolidated and nonconsolidated program captures relevant data from subsidiaries",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The examiner also should assess how effectively the bank or banking organization monitors BSA/AML compliance throughout the organization, including how well the consolidated and nonconsolidated BSA/AML compliance program captures relevant data from subsidiaries.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-32",
+      "actor": "The evaluation of a consolidated BSA/AML compliance program",
+      "modality": "should",
+      "action": "take into consideration available information about the adequacy of the individual subsidiaries' BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The evaluation of a consolidated BSA/AML compliance program should take into consideration available information about the adequacy of the individual subsidiaries' BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-33",
+      "actor": "The (consolidated) program",
+      "modality": "should",
+      "action": "ensure that all affiliates, including those operating within foreign jurisdictions, meet their applicable regulatory requirements",
+      "trigger": "Regardless of the decision to implement a consolidated BSA/AML compliance program in whole or in part",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Regardless of the decision to implement a consolidated BSA/AML compliance program in whole or in part, the program should ensure that all affiliates, including those operating within foreign jurisdictions, meet their applicable regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-34",
+      "actor": "Audit",
+      "modality": "should",
+      "action": "be aware and ensure AML controls are commensurate with those risks",
+      "trigger": "If dissemination of certain information is limited and therefore transparency across the organization is restricted",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If dissemination of certain information is limited and therefore transparency across the organization is restricted, audit should be aware and ensure AML controls are commensurate with those risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-35",
+      "actor": "Bank holding companies (BHC) or any nonbank subsidiary thereof, or a foreign bank subject to the BHC Act or any nonbank subsidiary of such a foreign bank operating in the United States",
+      "modality": "must",
+      "action": "file SARs",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "A BHC's nonbank subsidiaries operating only outside the United States are not required to file SARs"
+      ],
+      "citations": [
+        {
+          "quote": "Bank holding companies (BHC) or any nonbank subsidiary thereof, or a foreign bank that is subject to the BHC Act or any nonbank subsidiary of such a foreign bank operating in the United States, are required to file SARs.",
+          "verified": true
+        },
+        {
+          "quote": "A BHC's nonbank subsidiaries operating only outside the United States, are not required to file SARs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-36",
+      "actor": "Certain savings and loan holding companies, and their nondepository subsidiaries",
+      "modality": "must",
+      "action": "file SARs pursuant to Treasury regulations (e.g., insurance companies (31 CFR 1025.320) and broker/dealers (31 CFR 1023.320))",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Certain savings and loan holding companies, and their nondepository subsidiaries, are required to file SARs pursuant to Treasury regulations (e.g., insurance companies (31 CFR 1025.320) and broker/dealers (31 CFR 1023.320)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-37",
+      "actor": "Savings and loan holding companies (if not required)",
+      "modality": "should",
+      "action": "are strongly encouraged to file SARs in appropriate circumstances",
+      "trigger": "if not required",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In addition, savings and loan holding companies, if not required, are strongly encouraged to file SARs in appropriate circumstances.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "BSA/AML compliance program",
+      "definition": "(undefined here) \u2014 described as a comprehensive program that addresses BSA requirements applicable to all operations of the organization; structure and management are at the banking organization's discretion.",
+      "citations": [
+        {
+          "quote": "Every bank must have a comprehensive BSA/AML compliance program that addresses BSA requirements applicable to all operations of the organization.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Consolidated BSA/AML compliance program",
+      "definition": "A program that typically includes a central point where BSA/AML risks throughout the organization are aggregated; provides the framework for all subsidiaries, business lines, and foreign branches to meet their specific regulatory requirements.",
+      "citations": [
+        {
+          "quote": "A consolidated BSA/AML compliance program typically includes a central point where BSA/AML risks throughout the organization are aggregated.",
+          "verified": true
+        },
+        {
+          "quote": "An adequate consolidated BSA/AML compliance program provides the framework for all subsidiaries, business lines, and foreign branches to meet their specific regulatory requirements (e.g., country or industry requirements).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Board of directors",
+      "definition": "(undefined here) \u2014 has primary responsibility for ensuring the bank has a comprehensive and effective BSA/AML compliance program and oversight framework; responsible for approving the program and overseeing the structure and management of the compliance function.",
+      "citations": [
+        {
+          "quote": "The board of directors is responsible for approving the BSA/AML compliance program and for overseeing the structure and management of the bank's BSA/AML compliance function.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Senior management",
+      "definition": "(undefined here) \u2014 responsible for implementing the board-approved BSA/AML compliance program, and for communicating and reinforcing the BSA/AML compliance culture established by the board.",
+      "citations": [
+        {
+          "quote": "Senior management is responsible for implementing the board-approved BSA/AML compliance program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Foreign banking organization's U.S. operations",
+      "definition": "(undefined here) \u2014 used to describe U.S. operations of a foreign banking organization whose senior management must provide information to home-country governance/control functions.",
+      "citations": [
+        {
+          "quote": "Senior management of a foreign banking organization's U.S. operations should provide sufficient information relating to the U.S. operations' BSA/AML compliance to the governance or control functions in its home country",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank holding companies (BHC)",
+      "definition": "(undefined here) \u2014 used as an actor required to file SARs (or any nonbank subsidiary thereof, or a foreign bank subject to the BHC Act or its nonbank subsidiary operating in the U.S.).",
+      "citations": [
+        {
+          "quote": "Bank holding companies (BHC) or any nonbank subsidiary thereof, or a foreign bank that is subject to the BHC Act or any nonbank subsidiary of such a foreign bank operating in the United States, are required to file SARs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Independent testing / internal audit",
+      "definition": "(undefined here) \u2014 audit function should remain independent and internal audit should assess the level of compliance with the consolidated program; transaction testing at all subsidiaries subject to the BSA is required to meet regulatory requirements for independent testing.",
+      "citations": [
+        {
+          "quote": "an audit program implemented solely on a consolidated basis that does not conduct appropriate transaction testing at all subsidiaries subject to the BSA would not be sufficient to meet regulatory requirements for independent testing for those subsidiaries",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "MIS reports",
+      "definition": "(undefined here) \u2014 referenced in the context of allocation of responsibility for content and comprehensiveness.",
+      "citations": [
+        {
+          "quote": "allocation of responsibility should be clear with respect to the content and comprehensiveness of MIS reports",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "SAR filing obligations for certain savings and loan holding companies and nondepository subsidiaries arise pursuant to Treasury regulations, citing insurance companies (31 CFR 1025.320) and broker/dealers (31 CFR 1023.320).",
+      "references": [
+        "31 CFR 1025.320",
+        "31 CFR 1023.320"
+      ],
+      "citations": [
+        {
+          "quote": "Certain savings and loan holding companies, and their nondepository subsidiaries, are required to file SARs pursuant to Treasury regulations (e.g., insurance companies (31 CFR 1025.320) and broker/dealers (31 CFR 1023.320)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "SAR-filing obligations for BHCs and foreign banks are tied to being subject to the BHC Act.",
+      "references": [
+        "BHC Act"
+      ],
+      "citations": [
+        {
+          "quote": "a foreign bank that is subject to the BHC Act or any nonbank subsidiary of such a foreign bank operating in the United States, are required to file SARs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "On January 20, 2006, FinCEN, the Federal Reserve Board, FDIC, OCC, and OTS issued guidance authorizing banking organizations to share SARs with head offices and controlling companies, whether located in the United States or abroad.",
+      "references": [
+        "FinCEN / Federal Reserve / FDIC / OCC / OTS January 20, 2006 guidance"
+      ],
+      "citations": [
+        {
+          "quote": "On January 20, 2006, the Financial Crimes Enforcement Network, Board of Governors of the Federal Reserve System, Federal Deposit Insurance Corporation, Office of the Comptroller of the Currency, and the Office of Thrift Supervision issued guidance authorizing banking organizations to share SARs with head offices and controlling companies, whether located in the United States or abroad.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is FFIEC supervisory guidance (examination manual), not a statute or regulation; modalities were mapped from the manual's own verbs (must/should/may). Many 'should' statements are supervisory expectations rather than binding rules; preserved as written. Footnote markers [166]-[170] in the source point to underlying authorities not included in the provided text, so those authorities could not be extracted. The core program 'must' obligation ('Every bank must have a comprehensive BSA/AML compliance program') is attributed by the manual to footnote [166]. The manual states both that a BHC's nonbank subsidiaries operating only outside the U.S. are NOT required to file SARs and that certain SLHCs/nondepository subsidiaries ARE required to file SARs under Treasury regs \u2014 extracted as written; not internally inconsistent but recorded for precision. SAR/CTR/CDD operational duties are treated as coordination-layer per scope; the SAR-filing rows are included because they appear as program-structure obligations in this source. Definition entries for board/senior management/BHC are marked '(undefined here)' where the manual uses the term without a formal definition."
+}

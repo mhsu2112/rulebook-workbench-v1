@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/purpose_statement.schema.json",
+  "title": "PurposeStatement",
+  "description": "Typed contract for the P0.1 purpose-elicitation output (spec/30 P0.1; ADR-006/007/010). The artifact of record for Phase 0 ratification; the prose rendering is derived from this object.",
+  "type": "object",
+  "required": ["program_id", "statement_id", "version", "status", "roles", "interview", "synthesis", "open_items", "ratification"],
+  "properties": {
+    "program_id": { "type": "string", "description": "Stable slug for the program, e.g. 'aml-refactor-2026'" },
+    "statement_id": { "type": "string" },
+    "version": { "type": "string", "description": "Draft semver of this statement, e.g. '0.3'" },
+    "status": { "enum": ["draft", "awaiting_ratification", "ratified", "superseded"] },
+    "created": { "type": "string", "format": "date-time" },
+    "roles": {
+      "type": "object",
+      "description": "Distinct by rule; never inferred equal.",
+      "required": ["respondent", "program_owner"],
+      "properties": {
+        "respondent": { "$ref": "#/$defs/person_ref" },
+        "program_owner": { "$ref": "#/$defs/person_ref" },
+        "principal": {
+          "anyOf": [{ "$ref": "#/$defs/person_ref" }, { "type": "null" }],
+          "description": "Redesign mode: null or unverified is permitted in a draft but is always a blocking open item."
+        },
+        "authority": { "type": "string", "description": "Body with legal power over the instruments" },
+        "ratifier": { "anyOf": [{ "$ref": "#/$defs/person_ref" }, { "type": "null" }] }
+      }
+    },
+    "interview": {
+      "type": "object",
+      "required": ["transcript_ref", "consent", "answers"],
+      "properties": {
+        "transcript_ref": { "type": "string", "description": "Pointer to the internal evidentiary transcript (ADR-010); never inline the full transcript here." },
+        "consent": {
+          "type": "object",
+          "required": ["notice_given", "publication_excerpts"],
+          "properties": {
+            "notice_given": { "type": "boolean" },
+            "publication_excerpts": { "enum": ["none", "consented_only", "all"] }
+          }
+        },
+        "answers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["answer_id", "stage", "question", "verbatim"],
+            "properties": {
+              "answer_id": { "type": "string" },
+              "stage": { "enum": ["S1", "S2", "S3", "S4", "S5", "S6"] },
+              "question": { "type": "string" },
+              "verbatim": { "type": "string" },
+              "consented_for_publication": { "type": "boolean", "default": false }
+            }
+          }
+        }
+      }
+    },
+    "synthesis": {
+      "type": "object",
+      "description": "Conclusions only; every entry cites the answer IDs it rests on.",
+      "required": ["recommended_mode", "scope_sentence", "decision_served", "consumers", "client", "success_criteria", "non_goals"],
+      "properties": {
+        "recommended_mode": {
+          "type": "object",
+          "required": ["mode", "basis_answer_ids"],
+          "properties": {
+            "mode": { "enum": ["refactor", "redesign"] },
+            "basis_answer_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+            "mode_consistency_note": { "type": "string", "description": "Required when S1/S2/S6 signals diverged; states the surfaced tension and the respondent's resolution." }
+          }
+        },
+        "decomposition": {
+          "anyOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["split_type", "deferred_program"],
+              "properties": {
+                "split_type": { "enum": ["sequence", "subprogram", "tier_or_authority"] },
+                "deferred_program": { "type": "string" },
+                "trigger": { "type": "string" },
+                "basis_answer_ids": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          ],
+          "description": "Present when ADR-007 decomposition ran."
+        },
+        "scope_sentence": { "$ref": "#/$defs/conclusion" },
+        "decision_served": { "$ref": "#/$defs/conclusion" },
+        "consumers": { "type": "array", "items": { "$ref": "#/$defs/conclusion" } },
+        "client": {
+          "type": "object",
+          "required": ["authority", "posture", "mutable_core_claims"],
+          "properties": {
+            "authority": { "type": "string" },
+            "posture": { "enum": ["direct", "advisory"] },
+            "mutable_core_claims": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["claim", "confirmation_status", "basis_answer_ids"],
+                "properties": {
+                  "claim": { "type": "string" },
+                  "confirmation_status": { "enum": ["claimed", "confirmed", "refuted"] },
+                  "basis_answer_ids": { "type": "array", "items": { "type": "string" } }
+                }
+              }
+            }
+          }
+        },
+        "success_criteria": { "type": "array", "items": { "$ref": "#/$defs/conclusion" } },
+        "non_goals": { "type": "array", "items": { "$ref": "#/$defs/conclusion" } },
+        "kill_tests": {
+          "type": "object",
+          "properties": {
+            "two_sentence": { "$ref": "#/$defs/kill_test_result" },
+            "empty_core": { "$ref": "#/$defs/kill_test_result" },
+            "mode_consistency": { "$ref": "#/$defs/kill_test_result" }
+          }
+        }
+      }
+    },
+    "mandate_hypotheses_ref": {
+      "anyOf": [{ "type": "string" }, { "type": "null" }],
+      "description": "Pointer to the MandateHypotheses object (schemas/mandate.schema.json, status=hypothesis). Required non-null when recommended_mode is redesign."
+    },
+    "open_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item_id", "description", "owner", "blocking"],
+        "properties": {
+          "item_id": { "type": "string" },
+          "description": { "type": "string" },
+          "owner": { "type": "string" },
+          "blocking": { "type": "boolean", "description": "true = blocks ratification" },
+          "resolves_via": { "type": "string" }
+        }
+      }
+    },
+    "ratification": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["awaiting_ratification", "ratified", "declined"] },
+        "ratified_by": { "anyOf": [{ "$ref": "#/$defs/person_ref" }, { "type": "null" }] },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "decision_log_ref": { "type": "string" },
+        "rationale": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "person_ref": {
+      "type": "object",
+      "required": ["name", "capacity"],
+      "properties": {
+        "name": { "type": "string" },
+        "capacity": { "type": "string", "description": "e.g. 'sponsor', 'staff', 'claimed principal'" },
+        "identity_verified": { "type": "boolean", "default": false }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "required": ["text", "basis_answer_ids"],
+      "properties": {
+        "text": { "type": "string" },
+        "basis_answer_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "kill_test_result": {
+      "type": "object",
+      "required": ["result"],
+      "properties": {
+        "result": { "enum": ["pass", "fail", "fail_proceeded"] },
+        "note": { "type": "string", "description": "Required on fail/fail_proceeded; fail_proceeded also requires a Decision Log entry." }
+      }
+    }
+  }
+}

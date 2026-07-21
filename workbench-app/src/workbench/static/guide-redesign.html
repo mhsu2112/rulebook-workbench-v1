@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reviewer's Guide — Redesign Pass</title>
+<style>
+body { font: 15px/1.6 -apple-system, Segoe UI, sans-serif; color: #1a1f2e;
+       max-width: 46rem; margin: 2rem auto; padding: 0 1.2rem; }
+h1 { font-size: 1.5rem; border-bottom: 2px solid #1a1f2e; padding-bottom: .4rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #c9ced9; padding-bottom: .25rem; }
+h3 { font-size: 1rem; margin-top: 1.3rem; }
+table { border-collapse: collapse; width: 100%; margin: .6rem 0 1rem; font-size: .88rem; }
+th, td { border: 1px solid #d7dbe4; padding: .4rem .6rem; text-align: left; vertical-align: top; }
+th { background: #eef1f6; }
+.ex { border: 1px solid #b9c3d8; border-radius: 8px; padding: .8rem 1.1rem; margin: 1rem 0; background: #f8fafd; }
+.ex b.step { color: #31456e; }
+.rule { background: #fdf8ef; border-left: 3px solid #8a5a00; padding: .5rem .9rem; margin: .8rem 0; }
+.contrast { background: #f0f4fb; border-left: 3px solid #31456e; padding: .5rem .9rem; margin: .8rem 0; }
+.badge { display: inline-block; background: #eef1f6; border: 1px solid #d7dbe4; border-radius: 4px;
+         padding: 0 .35rem; font-size: .8rem; }
+code { background: #eef1f6; padding: 0 .25rem; border-radius: 3px; font-size: .85em; }
+@media print { body { max-width: none; } }
+</style>
+</head>
+<body>
+
+<h1>Reviewer's Guide to the Redesign Pass</h1>
+<p><i>Companion to the refactor-pass guide — read that one first. This pass runs only in
+redesign-mode programs (e.g., liquidity), only after the Refactored Blueprint is certified,
+and only under a Ratified Mandate. Some screens described here arrive with the redesign
+release; the rules are stable now.</i></p>
+
+<h2>1. How your job changes</h2>
+<div class="contrast">
+<p><b>In the refactor pass you were a guard.</b> The question on every card was "does this quietly
+change what the law requires?" — and if it did, your duty was to stop it (park it).</p>
+<p><b>In the redesign pass you are advising a policy process.</b> Changing what the rules require
+is now the <i>purpose</i>. The discipline doesn't relax — it changes direction. The question on
+every card becomes: <b>"which adopted objective does this serve, and who authorized wanting it?"</b></p>
+</div>
+<p>Three things stay exactly the same: every move comes from a fixed whitelist (no free-form edits),
+every claim carries verified quotes, and every decision is logged with a name and a rationale.</p>
+
+<h2>2. The Mandate — the only source of "want"</h2>
+<p>Before this pass can run, the <b>Principal</b> — the person or body with actual authority over
+the regime (not the workbench, not the AI, not even the Program Owner acting alone) — has adopted,
+ranked, and taken ownership of a short list of <b>objectives</b>, stated as outcomes
+("depositors can access liquidity within hours of a run starting"), not as instruments
+("amend Regulation A"). That list is the <b>Ratified Mandate</b>. It is frozen for the pass.</p>
+<div class="rule"><b>The cardinal rule of provenance:</b> ideas collected during interviews —
+including good ones from smart people — are <i>hypotheses</i>, and hypotheses confer no authority.
+Nothing becomes an objective by default, by silence, or by the AI's enthusiasm. If it isn't in the
+Ratified Mandate, the workbench cannot want it, and neither can a reviewer.</div>
+
+<h2>3. The Misalignment Register (M-codes)</h2>
+<p>Where the refactor pass worked defects (flaws in the drawing), this pass works
+<b>misalignments</b> (gaps between the cleaned drawing and the Mandate):</p>
+<table>
+<tr><th>Code</th><th>Plain English</th></tr>
+<tr><td><b>M1</b></td><td>An adopted objective that nothing in the blueprint actually advances.</td></tr>
+<tr><td><b>M2</b></td><td>A provision that serves no adopted objective — candidate for repeal, or for a renewed justification.</td></tr>
+<tr><td><b>M3</b></td><td>A mechanism that costs far more than its contribution to the objective warrants.</td></tr>
+<tr><td><b>M4</b></td><td>Two objectives colliding as implemented — a mechanism advances one by defeating a higher-ranked one.</td></tr>
+<tr><td><b>M5</b></td><td>An objective served only by accident of drafting — it works, but fragilely.</td></tr>
+</table>
+<p>M-entries are findings, not decisions — same as D-entries were.</p>
+
+<h2>4. What's different on a card</h2>
+<table>
+<tr><th>Element</th><th>What changed from the refactor pass</th></tr>
+<tr><td><b>Effect class</b></td><td><code>change</code> is now workable — it no longer auto-parks.
+But it routes to the <b>Principal or named delegate</b>, not to an ordinary Policy Reviewer.
+Nothing in this pass finalizes automatically — not even codify.</td></tr>
+<tr><td><b>Objective hook</b></td><td>New, mandatory. Every move names the Mandate objective it
+serves. <b>A move with no hook cannot even enter review</b> — the system refuses it the way it
+refused fabricated quotes.</td></tr>
+<tr><td><span class="badge">RECALIBRATE</span></td><td>New move: adjust a threshold, ratio,
+frequency, deadline, or applicability line. The most consequential move in the toolbox — treat
+every instance as the policy decision it is.</td></tr>
+<tr><td><span class="badge">INTRODUCE</span></td><td>Unshackled: it may now create genuinely new
+duties — under change-class governance, with an objective hook and the Principal's disposition.</td></tr>
+</table>
+
+<h2>5. The tradeoff rule — the line the tool will not cross</h2>
+<div class="rule">
+<p>A move that advances objective A <i>at a cost to</i> objective B must cite the Mandate's ranking
+of A over B. If the Mandate doesn't rank them, <b>nobody in the review queue may resolve the
+conflict — not you, not the AI, not the Program Owner</b>. The question goes back to the Principal
+as a proposed Mandate amendment. The tool surfaces tradeoffs; it never prices them.</p>
+<p>This is the redesign pass's version of the refactor pass's "change must park." When you feel
+the pull to just decide — that pull is the thing this rule exists for.</p>
+</div>
+
+<h2>6. The Redesign Backlog comes due</h2>
+<p>Every move parked during the refactor pass ("this would change the law — not our call") lands
+here, where changing the law is on the table. Each parked item must be dispositioned:
+<b>adopt</b> (it gets an objective hook and enters the queue), <b>decline</b> (with rationale), or
+<b>defer</b> (explicitly, with the Principal's logged reasons). The pass cannot close with
+undispositioned backlog items — the "later" you wrote in the refactor pass arrives now.</p>
+
+<h2>7. Worked examples</h2>
+
+<div class="ex">
+<h3>Example D — M2: a provision serving no objective</h3>
+<p><b>Card:</b> <span class="badge">REPEAL</span> <span class="badge">change</span> "Retire the
+weekly paper attestation requirement; no Mandate objective is served by it." Hook: <i>none claimed
+— cites M2 finding.</i></p>
+<p><b class="step">Step 1 — check the M2 finding.</b> Is it true that no objective is served?
+Look for indirect service (M5): does the attestation feed anything an objective needs?</p>
+<p><b class="step">Step 2 — remember what M2 permits.</b> An M2 finding supports <i>either</i>
+repeal <i>or</i> renewed justification. If the Principal values the provision, the honest path is
+amending the Mandate to say so — not quietly keeping it.</p>
+<p><b class="step">Step 3 — route.</b> REPEAL of an operative duty is change-class → Principal
+disposition. Your role as reviewer: verify the finding is sound and the record complete, then pass
+it up with your note.</p>
+</div>
+
+<div class="ex">
+<h3>Example E — RECALIBRATE with a clean hook</h3>
+<p><b>Card:</b> <span class="badge">RECALIBRATE</span> <span class="badge">change</span>
+"Shift liquidity-report cadence for run-susceptible institutions from monthly to daily-on-trigger."
+Hook: <i>Objective 2 — supervisors detect run dynamics within hours.</i></p>
+<p><b class="step">Step 1 — test the hook.</b> Does the move actually advance the cited objective,
+or just gesture at it? Here: cadence is precisely the mechanism the objective needs — hook is real.</p>
+<p><b class="step">Step 2 — look for the losing objective.</b> Faster reporting costs burden
+(Objective 5, say: proportionate compliance costs). Does the Mandate rank 2 over 5? If yes, the
+move cites that ranking and proceeds to the Principal. If the Mandate is silent — <b>stop; tradeoff
+rule; back to the Principal as an amendment question.</b></p>
+<p><b class="step">Step 3 — check the evidence.</b> Quotes verified? Does the burden claim rest on
+operative sources or on advocacy material? (Reform proposals inform design; they still don't
+establish current-law claims.)</p>
+</div>
+
+<div class="ex">
+<h3>Example F — the redesign trap: enthusiasm without authority</h3>
+<p><b>Card:</b> <span class="badge">INTRODUCE</span> <span class="badge">change</span> "Require
+pre-positioning of collateral at the discount window" — an idea a respected interviewee proposed,
+and the AI drafted persuasively. Hook cited: <i>"Mandate Hypothesis H-3."</i></p>
+<p><b class="step">Step 1 — read the hook carefully.</b> H-3 is a <i>hypothesis</i> — collected in
+an interview, never adopted by the Principal. A hypothesis is not an objective.</p>
+<p><b class="step">Step 2 — apply the provenance rule.</b> However good the idea, it has no
+authority behind it. The move cannot enter review with this hook. It is not rejected on the
+merits — it is <b>returned</b>: the Principal may adopt H-3 into the Mandate (logged, attributed),
+after which the move comes back with a real hook.</p>
+<p><b class="step">Step 3 — note the asymmetry.</b> In the refactor pass the trap was a change
+dressed as a clarification. Here the trap is <b>authority dressed as analysis</b> — the AI's
+fluency making an unadopted idea feel decided. Same discipline, new costume.</p>
+</div>
+
+<h2>8. Golden rules (redesign edition)</h2>
+<p>① No hook, no review — an unhooked move isn't rejected, it's returned.
+② Unranked tradeoffs go up, never sideways — the Principal prices; you surface.
+③ The Mandate is frozen during the pass; wanting to edit it mid-review is a sign the pass
+found something real — log it for the amendment step, don't improvise.
+④ Hypotheses confer no authority, no matter how good they sound — especially then.
+⑤ The Backlog must end empty of undecided items: adopt, decline, or defer-with-reasons.
+⑥ Every objective must end served or explicitly deferred — orphan objectives fail the gate too.</p>
+
+<p><i>Exit: the Principal has dispositioned every change-class move, every Mandate objective is
+served or deferred with reasons, the Backlog is empty of undecided items, and the Program Owner
+ratifies the Target Blueprint. What the working group then holds is not "what the AI thinks the
+rules should be" — it is the Principal's adopted objectives, made structural, with the receipts.</i></p>
+
+</body>
+</html>

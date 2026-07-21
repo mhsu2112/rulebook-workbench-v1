@@ -1,0 +1,443 @@
+{
+  "item_id": "ffiec-man-cp-01",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Assess whether the bank has designed, implemented, and maintains an adequate BSA/AML compliance program that complies with BSA regulatory requirements.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Objective: Assess whether the bank has designed, implemented, and maintains an adequate BSA/AML compliance program that complies with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OB-01",
+      "actor": "Banks",
+      "modality": "must",
+      "action": "establish and maintain procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements (BSA/AML compliance program)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Banks must establish and maintain procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements (BSA/AML compliance program).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-02",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "have the BSA/AML compliance program be written, approved by the board of directors, and noted in the board minutes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA/AML compliance program[10] must be written, approved by the board of directors,[11] and noted in the board minutes.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-03",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "should",
+      "action": "make the BSA/AML compliance program commensurate with the bank's ML/TF and other illicit financial activity risk profile",
+      "trigger": "To achieve the purposes of the BSA",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "To achieve the purposes of the BSA, the BSA/AML compliance program should be commensurate with the bank's ML/TF and other illicit financial activity risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-04",
+      "actor": "Bank (policies, procedures, processes, and practices)",
+      "modality": "should",
+      "action": "align policies, procedures, processes, and practices with the bank's unique ML/TF and other illicit financial activity risk profile",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "policies, procedures, processes, and practices should align with the bank's unique ML/TF and other illicit financial activity risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-05",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "provide for a system of internal controls to assure ongoing compliance",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA/AML compliance program must provide for the following requirements:[12]\n\nA system of internal controls to assure ongoing compliance.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-06",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "provide for independent testing for compliance to be conducted by bank personnel or by an outside party",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Independent testing for compliance to be conducted by bank personnel or by an outside party.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-07",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "provide for designation of an individual or individuals responsible for coordinating and monitoring day-to-day compliance (BSA compliance officer)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Designation of an individual or individuals responsible for coordinating and monitoring day-to-day compliance (BSA compliance officer).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-08",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "provide for training for appropriate personnel",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Training for appropriate personnel.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-09",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "include a customer identification program (CIP) with risk-based procedures that enable the bank to form a reasonable belief that it knows the true identity of its customers",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the BSA/AML compliance program must include a customer identification program (CIP) with risk-based procedures that enable the bank to form a reasonable belief that it knows the true identity of its customers.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-10",
+      "actor": "Bank (via the BSA/AML compliance program)",
+      "modality": "must",
+      "action": "include appropriate risk-based procedures for conducting ongoing customer due diligence (CDD) and complying with beneficial ownership requirements for legal entity customers as set forth in regulations issued by FinCEN",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The BSA/AML compliance program must also include appropriate risk-based procedures for conducting ongoing customer due diligence (CDD) and complying with beneficial ownership requirements for legal entity customers as set forth in regulations issued by Financial Crimes Enforcement Network (FinCEN).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-11",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "consider all pertinent information when assessing the adequacy of the bank's BSA/AML compliance program",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The assessment of the adequacy of the bank's BSA/AML compliance program is bank-specific, and examiners should consider all pertinent information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-12",
+      "actor": "Examiners / bank management",
+      "modality": "should",
+      "action": "discuss BSA/AML examination findings with relevant bank management",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "BSA/AML examination findings should be discussed with relevant bank management",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-13",
+      "actor": "Examiners",
+      "modality": "must",
+      "action": "include findings in the report of examination (ROE) or supervisory correspondence",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "findings must be included in the report of examination (ROE) or supervisory correspondence.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-14",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "develop and document a preliminary assessment of the bank's program",
+      "trigger": "Once examiners complete the review of the bank's BSA/AML compliance program",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Once examiners complete the review of the bank's BSA/AML compliance program, they should develop and document a preliminary assessment of the bank's program.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-15",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "revisit the initial BSA/AML examination plan to determine whether additional areas of review are necessary to assess the adequacy of the bank's BSA/AML compliance program, relative to its risk profile, and the bank's compliance with BSA regulatory requirements",
+      "trigger": "At this point (after completing review)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "At this point, examiners should revisit the initial BSA/AML examination plan to determine whether additional areas of review are necessary to assess the adequacy of the bank's BSA/AML compliance program, relative to its risk profile, and the bank's compliance with BSA regulatory requirements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-16",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "document and support any changes to the examination plan, if necessary, then proceed to the applicable examination and testing procedures",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Examiners should document and support any changes to the examination plan, if necessary, then proceed to the applicable examination and testing procedures in Assessing Compliance with BSA Regulatory Requirements, Risks Associated with Money Laundering and Terrorist Financing, and Office of Foreign Assets Control.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OB-17",
+      "actor": "Examiners",
+      "modality": "should",
+      "action": "proceed to Developing Conclusions and Finalizing the Examination",
+      "trigger": "Once all relevant examination and testing procedures are completed as documented in the examination plan",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Once all relevant examination and testing procedures are completed as documented in the examination plan, examiners should proceed to Developing Conclusions and Finalizing the Examination.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "BSA/AML compliance program",
+      "definition": "procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements",
+      "citations": [
+        {
+          "quote": "Banks must establish and maintain procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements (BSA/AML compliance program).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA compliance officer",
+      "definition": "An individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+      "citations": [
+        {
+          "quote": "Designation of an individual or individuals responsible for coordinating and monitoring day-to-day compliance (BSA compliance officer).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer identification program (CIP)",
+      "definition": "a customer identification program with risk-based procedures that enable the bank to form a reasonable belief that it knows the true identity of its customers",
+      "citations": [
+        {
+          "quote": "the BSA/AML compliance program must include a customer identification program (CIP) with risk-based procedures that enable the bank to form a reasonable belief that it knows the true identity of its customers.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "customer due diligence (CDD)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "appropriate risk-based procedures for conducting ongoing customer due diligence (CDD) and complying with beneficial ownership requirements for legal entity customers",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "beneficial ownership requirements for legal entity customers",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "complying with beneficial ownership requirements for legal entity customers as set forth in regulations issued by Financial Crimes Enforcement Network (FinCEN)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "To achieve the purposes of the BSA, the BSA/AML compliance program should be commensurate with the bank's ML/TF and other illicit financial activity risk profile.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "BSA regulatory requirements",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "procedures reasonably designed to assure and monitor compliance with BSA regulatory requirements",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "ML/TF and other illicit financial activity risk profile",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the BSA/AML compliance program should be commensurate with the bank's ML/TF and other illicit financial activity risk profile",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "report of examination (ROE)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "findings must be included in the report of examination (ROE) or supervisory correspondence.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Financial Crimes Enforcement Network (FinCEN)",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "as set forth in regulations issued by Financial Crimes Enforcement Network (FinCEN)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Refers to the BSA/AML Risk Assessment section and Appendix I - Risk Assessment Link to the BSA/AML Compliance Program for more information on making the program commensurate with the risk profile.",
+      "references": [
+        "BSA/AML Risk Assessment section",
+        "Appendix I - Risk Assessment Link to the BSA/AML Compliance Program"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to the BSA/AML Risk Assessment section and Appendix I - Risk Assessment Link to the BSA/AML Compliance Program for more information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "CDD and beneficial ownership procedures are required as set forth in regulations issued by FinCEN.",
+      "references": [
+        "FinCEN regulations"
+      ],
+      "citations": [
+        {
+          "quote": "complying with beneficial ownership requirements for legal entity customers as set forth in regulations issued by Financial Crimes Enforcement Network (FinCEN)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Refers to the Customer Identification Program, Customer Due Diligence, and Beneficial Ownership Requirements for Legal Entity Customers sections for more information.",
+      "references": [
+        "Customer Identification Program section",
+        "Customer Due Diligence section",
+        "Beneficial Ownership Requirements for Legal Entity Customers section"
+      ],
+      "citations": [
+        {
+          "quote": "Refer to the Customer Identification Program, Customer Due Diligence, and Beneficial Ownership Requirements for Legal Entity Customers sections for more information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Directs examiners to applicable examination and testing procedures in three named sections, including Office of Foreign Assets Control (a boundary/sanctions regime).",
+      "references": [
+        "Assessing Compliance with BSA Regulatory Requirements",
+        "Risks Associated with Money Laundering and Terrorist Financing",
+        "Office of Foreign Assets Control"
+      ],
+      "citations": [
+        {
+          "quote": "proceed to the applicable examination and testing procedures in Assessing Compliance with BSA Regulatory Requirements, Risks Associated with Money Laundering and Terrorist Financing, and Office of Foreign Assets Control.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Directs examiners to proceed to a further examination stage section once procedures are complete.",
+      "references": [
+        "Developing Conclusions and Finalizing the Examination"
+      ],
+      "citations": [
+        {
+          "quote": "examiners should proceed to Developing Conclusions and Finalizing the Examination.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Source is FFIEC supervisory guidance (examination manual), evidence role supervisory_guidance; it restates program/'pillars' obligations rather than being the primary regulation. Actor for many program obligations is stated as 'Banks'/'the BSA/AML compliance program' rather than the specific covered institution; preserved as written. The four listed pillar requirements are introduced by a single 'must provide for the following requirements' stem \u2014 modality 'must' applied to each list item per the stem. Footnote markers ([9]-[12]) appear in source but referenced authorities are not reproduced in this text. CIP, CDD, and beneficial ownership are treated in scope here as the manual frames them as part of the mandatory program content; the ratified scope treats CDD as a coordination layer, but this text embeds them as program-establishment obligations, so extracted as written and flagged. OFAC/sanctions referenced only as a cross-reference (boundary regime)."
+}

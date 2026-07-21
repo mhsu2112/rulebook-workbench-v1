@@ -1,0 +1,417 @@
+{
+  "item_id": "fincen-faq-msb-independent-review",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Assist money services businesses in understanding the regulatory requirements regarding conducting independent reviews of their anti-money laundering programs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "We are issuing this guidance to assist money services businesses in understanding the regulatory requirements regarding conducting independent reviews of their anti-money laundering programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Clarify that money services businesses are not required to hire a certified public accountant or an outside consultant to conduct a review of their programs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "we determined to make clear that money services businesses are not required to hire a certified public accountant or an outside consultant to conduct a review of their programs.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "money services businesses",
+      "modality": "must",
+      "action": "establish anti-money laundering programs that include an independent audit function to test programs",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs that include \"an independent audit function to test programs.\"",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "money services businesses",
+      "modality": "must",
+      "action": "establish anti-money laundering programs with written policies and procedures that provide for independent review to monitor and maintain an adequate program",
+      "trigger": null,
+      "threshold": "The scope and frequency of the review shall be commensurate with the risk of the financial services provided by the money services business",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the relevant Bank Secrecy Act regulation requires money services businesses to establish anti-money laundering programs with written policies and procedures that:",
+          "verified": true
+        },
+        {
+          "quote": "Provide for independent review to monitor and maintain an adequate program.The scope and frequency of the review shall be commensurate with the risk of thefinancial services provided by the money services business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "money services business (reviewer)",
+      "modality": "may",
+      "action": "conduct the review by an officer or employee of the money services business",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "so long as the reviewer is not the person designated in paragraph (d)(2) of this section"
+      ],
+      "citations": [
+        {
+          "quote": "Such review may beconducted by an officer or employee of the money services business so long as thereviewer is not the person designated in paragraph (d)(2) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "money services businesses",
+      "modality": "must",
+      "action": "take reasonable steps to manage money laundering risks",
+      "trigger": "Regardless of where risks arise",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Regardless of where risks arise, money services businesses must take reasonable steps to manage them.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "each money services business",
+      "modality": "should",
+      "action": "identify and assess the money laundering risks that may be associated with its unique products, services, customers, and geographic locations",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each money servicesbusiness should identify and assess the money laundering risks that may be associated with its unique products, services, customers, and geographic locations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "each money services business",
+      "modality": "should",
+      "action": "focus resources on the areas of its business that management believes pose the greatest risks",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each money services business should focus resources on the areas of its business that management believes pose the greatest risks, and the level of sophistication of the associated internal controls should be appropriate for the size, structure, risks, and complexity of the money services business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "the review",
+      "modality": "should",
+      "action": "determine whether the business is operating in compliance with the requirements of the Bank Secrecy Act and the business' own policies and procedures",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review should determine whether the business is operating in compliance with the requirements of the Bank Secrecy Act and the business\u2019 own policies and procedures.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-8",
+      "actor": "the review",
+      "modality": "should",
+      "action": "provide a fair and unbiased appraisal of each of the required elements of the company's anti-money laundering program, including its Bank Secrecy Act-related policies, procedures, internal controls, recordkeeping and reporting functions, and training",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review should provide a fair and unbiased appraisal of each of the required elements of the company\u2019s anti-money laundering program, including its Bank Secrecy Act-related policies, procedures, internal controls, recordkeeping and reporting functions, and training.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-9",
+      "actor": "the review",
+      "modality": "should",
+      "action": "include testing of internal controls and transactional systems and procedures to identify problems and weaknesses and, if necessary, recommend to management appropriate corrective actions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review should include testing of internal controls and transactional systems and procedures to identify problems and weaknesses and, if necessary, recommend to management appropriate corrective actions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "the review",
+      "modality": "should",
+      "action": "cover all of the anti-money laundering program actions taken by - or defined as part of the responsibility of - the designated compliance officer",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review also should cover all of the anti-money laundering program actions taken by - or defined as part of the responsibility of - the designated compliance officer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "the review (reviewer)",
+      "modality": "must_not",
+      "action": "be conducted by the designated compliance officer or someone who reports directly to the compliance officer",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review may be conducted by an officer, employee or group of employees, so long as the reviewer is not the designated compliance officer and does not report directly to the compliance officer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "the review",
+      "modality": "should",
+      "action": "be conducted on a periodic basis",
+      "trigger": null,
+      "threshold": "The scope and frequency of the review will depend on the money services business' risk assessment",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The review should be conducted on a periodic basis.",
+          "verified": true
+        },
+        {
+          "quote": "The scope and frequency of the review will depend on the money services business\u2019 risk assessment, which should take into account the business\u2019 products, services, customers, and geographic locations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "the person or persons responsible for conducting the review",
+      "modality": "should",
+      "action": "document the scope of the review, procedures performed, transaction testing completed, if any, findings of the review, and recommendations to management for corrective actions, if any",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The person or persons responsible for conducting the review should document the scope of the review, procedures performed, transaction testing completed, if any, findings of the review, and recommendations to management for corrective actions, if any.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "the reviewer or the designated compliance officer",
+      "modality": "should",
+      "action": "track deficiencies and weaknesses discovered during the review and document corrective actions taken by the money services business",
+      "trigger": "After the review",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "After the review, the reviewer or the designated compliance officer should track deficiencies and weaknesses discovered during the review and document corrective actions taken by the money services business.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-15",
+      "actor": "the documentation (money services business)",
+      "modality": "should",
+      "action": "be made accessible to government examiners and law enforcement personnel who have authority to examine such documents",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "as appropriate"
+      ],
+      "citations": [
+        {
+          "quote": "All of the documentation should, as appropriate, be made accessible to government examiners and law enforcement personnel who have authority to examine such documents.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-16",
+      "actor": "money services businesses",
+      "modality": "must",
+      "action": "establish anti-money laundering programs tailored to their operations and the money laundering risks posed",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Our regulations at 31 C.F.R. \u00a7 103.125 require money services businesses to establish anti-money laundering programs tailored to their operations and the money laundering risks posed.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "independent review",
+      "definition": "A review whose primary purpose is to monitor the adequacy of the money services business' anti-money laundering program; not a formal audit by a certified public accountant or third-party consultant.",
+      "citations": [
+        {
+          "quote": "The primary purpose of the independent review is to monitor the adequacy of the money services business\u2019 anti-money laundering program.",
+          "verified": true
+        },
+        {
+          "quote": "Our regulations require an independent review, not a formal audit by a certified public accountant or third-party consultant.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "money services business",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "designated compliance officer",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the reviewer is not the designated compliance officer and does not report directly to the compliance officer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "anti-money laundering program",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "money services businesses to establish anti-money laundering programs that include \"an independent audit function to test programs.\"",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Bank Secrecy Act",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "whether the business is operating in compliance with the requirements of the Bank Secrecy Act",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "risk assessment",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The scope and frequency of the review will depend on the money services business\u2019 risk assessment",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The statutory program requirement, including the independent audit function to test programs, derives from 31 U.S.C. \u00a7 5318(h)(1)(D).",
+      "references": [
+        "31 U.S.C. \u00a7 5318(h)(1)(D)"
+      ],
+      "citations": [
+        {
+          "quote": "1 31 U.S.C. \u00a7 5318(h)(1)(D).",
+          "verified": true
+        },
+        {
+          "quote": "The Bank Secrecy Act requires money services businesses to establish anti-money laundering programs that include \"an independent audit function to test programs.\"",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The independent review requirement is set out in the regulation at 31 C.F.R. \u00a7 103.125(d)(4).",
+      "references": [
+        "31 C.F.R. \u00a7 103.125(d)(4)"
+      ],
+      "citations": [
+        {
+          "quote": "2 31 C.F.R. \u00a7 103.125(d)(4).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The compliance officer requirement referenced in the independence exclusion is at 31 C.F.R. \u00a7 103.125(d)(2).",
+      "references": [
+        "31 C.F.R. \u00a7 103.125(d)(2)"
+      ],
+      "citations": [
+        {
+          "quote": "3See 31 C.F.R. \u00a7 103.125(d)(2) regarding the compliance officer requirement.",
+          "verified": true
+        },
+        {
+          "quote": "the reviewer is not the person designated in paragraph (d)(2) of this section.",
+          "verified": false
+        }
+      ]
+    },
+    {
+      "description": "The general anti-money laundering program requirement for money services businesses is at 31 C.F.R. \u00a7 103.125.",
+      "references": [
+        "31 C.F.R. \u00a7 103.125"
+      ],
+      "citations": [
+        {
+          "quote": "Our regulations at 31 C.F.R. \u00a7 103.125 require money services businesses to establish anti-money laundering programs tailored to their operations and the money laundering risks posed.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The periodic-basis point for the review is supported by the Federal Register at 67 Fed. Reg. 21114, 21115 (Apr. 29, 2002).",
+      "references": [
+        "67 Fed. Reg. 21114, 21115 (Apr. 29, 2002)"
+      ],
+      "citations": [
+        {
+          "quote": "4See 67 Fed. Reg. 21114, 21115 (Apr. 29, 2002).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This is 2006 agency guidance (FIN-2006-G012) citing the former 31 C.F.R. \u00a7 103.125 numbering (since recodified into 31 C.F.R. Chapter X); the guidance is extracted as written and its old citations are preserved per the fidelity rule. The source uses 'independent review' and 'independent audit function' somewhat interchangeably; the statute quotes 'an independent audit function to test programs' while the guidance clarifies no CPA or outside consultant/formal audit is required \u2014 extracted as written. Some quotes contain missing word-spaces reflecting OCR/spacing artifacts in the source text (e.g., 'money servicesbusiness', 'may beconducted'); quotes copied exactly as they appear."
+}

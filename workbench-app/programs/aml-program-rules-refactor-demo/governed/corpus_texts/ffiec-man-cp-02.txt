@@ -1,0 +1,23 @@
+FFIEC BSA/AML Examination Manual — BSA/AML Internal Controls
+[Acquired via browser-assisted rendering, 2026-07-19; source: https://bsaaml.ffiec.gov/manual/AssessingTheBSAAMLComplianceProgram/02]
+
+ASSESSING THE BSA/AML COMPLIANCE PROGRAM
+BSA/AML INTERNAL CONTROLS
+
+Objective: Assess the bank's system of internal controls to assure ongoing compliance with BSA regulatory requirements.
+
+The board of directors, acting through senior management, is ultimately responsible for ensuring that the bank maintains a system of internal controls to assure ongoing compliance with BSA regulatory requirements.[13] Internal controls are the bank's policies, procedures, and processes designed to mitigate and manage ML/TF and other illicit financial activity risks and to achieve compliance with BSA regulatory requirements. The board of directors plays an important role in establishing and maintaining an appropriate culture that places a priority on compliance, and a structure that provides oversight and holds senior management accountable for implementing the bank's BSA/AML internal controls. The system of internal controls, including the level and type, should be commensurate with the bank's size or complexity, and organizational structure. Large or more complex banks may implement specific departmental internal controls for BSA/AML compliance. Departmental internal controls typically address risks and compliance requirements unique to a particular line of business or department and are part of a comprehensive, bank-wide BSA/AML compliance program.
+
+Examiners should determine whether the bank's internal controls are designed to assure ongoing compliance with BSA regulatory requirements and:
+
+Incorporate the bank's BSA/AML risk assessment and the identification of ML/TF and other illicit financial activity risks, along with any changes in those risks.
+Provide for program continuity despite changes in operations, management, or employee composition or structure.
+Facilitate oversight of information technology sources, systems, and processes that support BSA/AML compliance.
+Provide for timely updates in response to changes in regulations.
+Incorporate dual controls and the segregation of duties to the extent possible. For example, employees who complete the reporting forms (such as suspicious activity reports (SARs), currency transaction reports (CTRs), and CTR exemptions) generally should not also be responsible for the decision to file the reports or grant the exemptions.
+Include mechanisms to identify and inform the board of directors, or a committee thereof, and senior management of BSA compliance initiatives, identified compliance deficiencies and corrective action taken, and notify the board of directors of SARs filed.
+Identify and establish specific BSA compliance responsibilities for bank personnel and provide oversight for execution of those responsibilities, as appropriate.
+
+This list is not all-inclusive and should be tailored to reflect the bank's ML/TF and other illicit financial activity risk profile. More information concerning individual regulatory requirements and specific risk areas is in the Assessing Compliance with BSA Regulatory Requirements and Risks Associated with Money Laundering and Terrorist Financing sections.
+
+Examiners should determine whether the bank's system of internal controls is designed to mitigate and manage the ML/TF and other illicit financial activity risks, and comply with BSA regulatory requirements. Examiners should assess the adequacy of internal controls based on the factors listed above.

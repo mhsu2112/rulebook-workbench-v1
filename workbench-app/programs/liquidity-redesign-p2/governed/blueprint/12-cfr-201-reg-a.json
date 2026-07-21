@@ -1,0 +1,520 @@
+{
+  "item_id": "12-cfr-201-reg-a",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This part establishes rules under which a Federal Reserve Bank may extend credit to depository institutions and others.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This part establishes rules under which a Federal Reserve Bank may extend credit to depository institutions and others.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The Federal Reserve System extends credit with due regard to the basic objectives of monetary policy and the maintenance of a sound and orderly financial system.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Federal Reserve System extends credit with due regard to the basic objectives of monetary policy and the maintenance of a sound and orderly financial system.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "Federal Reserve Bank",
+      "modality": "must",
+      "action": "secure an advance to a depository institution to the satisfaction of the Federal Reserve Bank making the advance",
+      "trigger": "when making an advance to a depository institution",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "An advance to a depository institution must be secured to the satisfaction of the Federal Reserve Bank that makes the advance.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "Federal Reserve Bank",
+      "modality": "must",
+      "action": "require any information it believes appropriate or desirable to ensure that assets tendered as collateral for advances or for discount are acceptable and that the borrower uses the credit provided in a manner consistent with this part",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each Federal Reserve Bank shall require any information it believes appropriate or desirable to ensure that assets tendered as collateral for advances or for discount are acceptable and that the borrower uses the credit provided in a manner consistent with this part.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Federal Reserve Bank",
+      "modality": "must",
+      "action": "keep itself informed of the general character and amount of the loans and investments of a depository institution and consider such information in determining whether to extend credit",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Keep itself informed of the general character and amount of the loans and investments of a depository institution as provided in section 4(8) of the Federal Reserve Act (12 U.S.C. 301); and",
+          "verified": true
+        },
+        {
+          "quote": "Consider such information in determining whether to extend credit.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-4",
+      "actor": "depository institution",
+      "modality": "must_not",
+      "action": "act as the medium or agent of another depository institution in receiving Federal Reserve credit",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "for depository institutions that receive primary credit as described in \u00a7 201.4(a)",
+        "with the permission of the Federal Reserve Bank extending credit"
+      ],
+      "citations": [
+        {
+          "quote": "Except for depository institutions that receive primary credit as described in \u00a7 201.4(a), no depository institution shall act as the medium or agent of another depository institution in receiving Federal Reserve credit except with the permission of the Federal Reserve Bank extending credit.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-5",
+      "actor": "Federal Reserve Bank",
+      "modality": "should",
+      "action": "determine if the institution is an undercapitalized insured depository institution or a critically undercapitalized insured depository institution and, if so, follow the lending procedures specified in \u00a7 201.5",
+      "trigger": "Before extending credit to a depository institution",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Before extending credit to a depository institution, a Federal Reserve Bank should determine if the institution is an undercapitalized insured depository institution or a critically undercapitalized insured depository institution and, if so, follow the lending procedures specified in \u00a7 201.5.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-6",
+      "actor": "Board",
+      "modality": "must_not",
+      "action": "establish a program or facility under paragraph (d) without obtaining the prior approval of the Secretary of the Treasury",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A program or facility may not be established under this paragraph (d) without obtaining the prior approval of the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-7",
+      "actor": "Board and the authorized Federal Reserve Bank or Federal Reserve Banks",
+      "modality": "must",
+      "action": "make publicly available a description of the program or facility, the market/sector it addresses, the unusual and exigent circumstances, intended effect, and terms and conditions, and provide the same information to the relevant congressional committees",
+      "trigger": "a program or facility is authorized under paragraph (d)",
+      "threshold": "no later than 7 days after a program or facility is authorized",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As soon as is reasonably practicable, and no later than 7 days after a program or facility is authorized under this paragraph (d), the Board and the authorized Federal Reserve Bank or Federal Reserve Banks, as appropriate, will make publicly available a description of the program or facility",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-8",
+      "actor": "Federal Reserve Bank",
+      "modality": "must",
+      "action": "obtain evidence that the person or entity is not insolvent",
+      "trigger": "before extending credit through a program or facility established under paragraph (d) to any person or entity",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Before extending credit through a program or facility established under this paragraph (d) to any person or entity, the Federal Reserve Bank must obtain evidence that the person or entity is not insolvent.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-9",
+      "actor": "Federal Reserve Bank",
+      "modality": "must",
+      "action": "assign a lendable value to all collateral for the program or facility, consistent with sound risk management practices and to ensure protection for the taxpayer",
+      "trigger": "prior to or at the time the credit is initially extended",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "a Federal Reserve Bank must, prior to or at the time the credit is initially extended, assign a lendable value to all collateral for the program or facility, consistent with sound risk management practices and to ensure protection for the taxpayer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-10",
+      "actor": "lending Federal Reserve Bank",
+      "modality": "must",
+      "action": "obtain evidence that, under the prevailing circumstances, participants are unable to secure adequate credit accommodations from other banking institutions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Each lending Federal Reserve Bank must obtain evidence that, under the prevailing circumstances, participants in a program or facility established under this paragraph (d) are unable to secure adequate credit accommodations from other banking institutions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-11",
+      "actor": "program or facility established under paragraph (d)",
+      "modality": "must",
+      "action": "cease extending new credit",
+      "trigger": null,
+      "threshold": "no later than one year after the date of the first extension of credit under the program or facility or the date of any extension of the program or facility by the Board",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A program or facility established under this paragraph (d) shall cease extending new credit no later than one year after the date of the first extension of credit under the program or facility or the date of any extension of the program or facility by the Board under paragraph (d)(9)(ii) of this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-12",
+      "actor": "Board",
+      "modality": "must",
+      "action": "periodically review the existence of unusual and exigent circumstances, the extent of usage of the program or facility, the extent to which continuing authorization facilitates restoring or sustaining confidence, the ongoing need for liquidity support, and other appropriate factors",
+      "trigger": null,
+      "threshold": "no less frequently than once every 6 months",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the Board will periodically review, no less frequently than once every 6 months, the existence of unusual and exigent circumstances, the extent of usage of the program or facility, the extent to which the continuing authorization of the program or facility facilitates restoring or sustaining confidence in the identified financial markets, the ongoing need for the liquidity support provided by such program or facility, and such other factors as the Board may deem to be appropriate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-13",
+      "actor": "Board",
+      "modality": "must",
+      "action": "terminate lending under a program or facility promptly upon finding that conditions no longer warrant continuation or that continuation is no longer appropriate",
+      "trigger": "finding that conditions no longer warrant the continuation of the program or facility",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Board will terminate lending under a program or facility promptly upon finding that conditions no longer warrant the continuation of the program or facility or that continuation of the program or facility is no longer appropriate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-14",
+      "actor": "Federal Reserve Bank",
+      "modality": "conditional",
+      "action": "make or have outstanding advances to or discounts for a depository institution that it knows to be an undercapitalized insured depository institution",
+      "trigger": "the depository institution is known to be an undercapitalized insured depository institution",
+      "threshold": "only if, in any 120-day period, advances or discounts are not outstanding for more than 60 days during which the institution is undercapitalized; or during the 60 calendar days after receipt of a written certification of viability; or after consultation with the Board of Governors",
+      "exceptions": [
+        "in unusual circumstances, when prior consultation with the Board is not possible, the Reserve Bank should consult with the Board as soon as possible after extending the credit"
+      ],
+      "citations": [
+        {
+          "quote": "A Federal Reserve Bank may make or have outstanding advances to or discounts for a depository institution that it knows to be an undercapitalized insured depository institution, only:",
+          "verified": true
+        },
+        {
+          "quote": "If, in any 120-day period, advances or discounts from any Federal Reserve Bank to that depository institution are not outstanding for more than 60 days during which the institution is an undercapitalized insured depository institution; or",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-15",
+      "actor": "Federal Reserve Bank",
+      "modality": "conditional",
+      "action": "make or have outstanding advances to or discounts for a depository institution that it knows to be a critically undercapitalized insured depository institution",
+      "trigger": "the depository institution is known to be a critically undercapitalized insured depository institution",
+      "threshold": "only during the 5-day period beginning on the date the institution became critically undercapitalized; or after consultation with the Board of Governors",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A Federal Reserve Bank may make or have outstanding advances to or discounts for a depository institution that it knows to be a critically undercapitalized insured depository institution only:",
+          "verified": true
+        },
+        {
+          "quote": "During the 5-day period beginning on the date the institution became a critically undercapitalized insured depository institution; or",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-16",
+      "actor": "Federal Reserve Bank",
+      "modality": "should",
+      "action": "consult with the Board as soon as possible after extending credit that requires consultation",
+      "trigger": "unusual circumstances, when prior consultation with the Board is not possible",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In unusual circumstances, when prior consultation with the Board is not possible, a Federal Reserve Bank should consult with the Board as soon as possible after extending credit that requires consultation under this paragraph (a)(3).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Appropriate federal banking agency",
+      "definition": "has the same meaning as in section 3 of the Federal Deposit Insurance Act (FDI Act) (12 U.S.C. 1813(q))",
+      "citations": [
+        {
+          "quote": "Appropriate federal banking agency has the same meaning as in section 3 of the Federal Deposit Insurance Act (FDI Act) (12 U.S.C. 1813(q)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Critically undercapitalized insured depository institution",
+      "definition": "any insured depository institution as defined in section 3 of the FDI Act (12 U.S.C. 1813(c)(2)) that is deemed to be critically undercapitalized under section 38 of the FDI Act (12 U.S.C. 1831o(b)(1)(E)) and its implementing regulations",
+      "citations": [
+        {
+          "quote": "Critically undercapitalized insured depository institution means any insured depository institution as defined in section 3 of the FDI Act (12 U.S.C. 1813(c)(2)) that is deemed to be critically undercapitalized under section 38 of the FDI Act (12 U.S.C. 1831o(b)(1)(E)) and its implementing regulations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Depository institution",
+      "definition": "an institution that maintains reservable transaction accounts or nonpersonal time deposits and falls within enumerated categories, including a member as defined in section 2 of the Federal Home Loan Bank Act; excludes institutions not required to maintain reserves under Regulation D \u00a7204.1(c)(4) because organized solely to do business with other financial institutions",
+      "citations": [
+        {
+          "quote": "Depository institution means an institution that maintains reservable transaction accounts or nonpersonal time deposits and is:",
+          "verified": true
+        },
+        {
+          "quote": "A member as defined in section 2 of the Federal Home Loan Bank Act (12 U.S.C. 1422(4)); or",
+          "verified": true
+        },
+        {
+          "quote": "The term depository institution does not include a financial institution that is not required to maintain reserves under \u00a7 204.1(c)(4) of Regulation D (12 CFR 204.1(c)(4)) because it is organized solely to do business with other financial institutions, is owned primarily by the financial institutions with which it does business, and does not do business with the general public.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Transaction account and nonpersonal time deposit",
+      "definition": "have the meanings specified in Regulation D (12 CFR part 204)",
+      "citations": [
+        {
+          "quote": "Transaction account and nonpersonal time deposit have the meanings specified in Regulation D (12 CFR part 204).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Undercapitalized insured depository institution",
+      "definition": "any insured depository institution as defined in section 3 of the FDI Act (12 U.S.C. 1813(c)(2)) that is not critically undercapitalized and is deemed undercapitalized under section 38 of the FDI Act or has received a composite CAMELS rating of 5 (or equivalent) as of the most recent examination",
+      "citations": [
+        {
+          "quote": "Undercapitalized insured depository institution means any insured depository institution as defined in section 3 of the FDI Act (12 U.S.C. 1813(c)(2)) that:",
+          "verified": true
+        },
+        {
+          "quote": "Has received from its appropriate federal banking agency a composite CAMELS rating of 5 under the Uniform Financial Institutions Rating System (or an equivalent rating by its appropriate federal banking agency under a comparable rating system) as of the most recent examination of such institution.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Viable",
+      "definition": "with respect to a depository institution, means that the Board of Governors or the appropriate federal banking agency has determined, giving due regard to economic conditions and circumstances in the institution's market, that the institution is not critically undercapitalized, is not expected to become critically undercapitalized, and is not expected to be placed in conservatorship or receivership",
+      "citations": [
+        {
+          "quote": "Viable, with respect to a depository institution, means that the Board of Governors or the appropriate federal banking agency has determined, giving due regard to the economic conditions and circumstances in the market in which the institution operates, that the institution is not critically undercapitalized, is not expected to become critically undercapitalized, and is not expected to be placed in conservatorship or receivership.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Primary credit",
+      "definition": "credit a Federal Reserve Bank may extend on a very short-term basis, usually overnight, as a backup source of funding to a depository institution that is in generally sound financial condition in the judgment of the Reserve Bank; also with maturities up to a few weeks if the institution is in sound condition and cannot obtain such credit in the market on reasonable terms",
+      "citations": [
+        {
+          "quote": "A Federal Reserve Bank may extend primary credit on a very short-term basis, usually overnight, as a backup source of funding to a depository institution that is in generally sound financial condition in the judgment of the Reserve Bank.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Secondary credit",
+      "definition": "credit a Federal Reserve Bank may extend on a very short-term basis, usually overnight, as a backup source of funding to a depository institution not eligible for primary credit, if consistent with a timely return to reliance on market funding sources; longer-term secondary credit may be extended if it would facilitate orderly resolution of serious financial difficulties",
+      "citations": [
+        {
+          "quote": "A Federal Reserve Bank may extend secondary credit on a very short-term basis, usually overnight, as a backup source of funding to a depository institution that is not eligible for primary credit if, in the judgment of the Reserve Bank, such a credit extension would be consistent with a timely return to a reliance on market funding sources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Seasonal credit",
+      "definition": "credit a Federal Reserve Bank may extend for periods longer than permitted under primary credit to assist a smaller depository institution in meeting regular needs for funds arising from expected patterns of movement in its deposits and loans",
+      "citations": [
+        {
+          "quote": "A Federal Reserve Bank may extend seasonal credit for periods longer than those permitted under primary credit to assist a smaller depository institution in meeting regular needs for funds arising from expected patterns of movement in its deposits and loans.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Insolvent",
+      "definition": "for purposes of paragraph (d): the person or entity is in bankruptcy, resolution under Title II of Public Law 111-203, or any other Federal or State insolvency proceeding; or is generally not paying its undisputed debts as they become due during the 90 days preceding the date of borrowing; or the Board or Federal Reserve Bank otherwise determines the person or entity is insolvent",
+      "citations": [
+        {
+          "quote": "A person or entity is \u201cinsolvent\u201d for purposes of this paragraph (d) if:",
+          "verified": true
+        },
+        {
+          "quote": "The person or entity is generally not paying its undisputed debts as they become due during the 90 days preceding the date of borrowing under the program or facility; or",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Broad-based eligibility",
+      "definition": "a program or facility has broad-based eligibility only if it is designed to provide liquidity to an identifiable market or sector of the financial system; it will not be considered broad-based if designed to assist specific companies avoid bankruptcy/resolution, aid failing financial companies, or if fewer than five persons/entities would be eligible",
+      "citations": [
+        {
+          "quote": "For purposes of this paragraph (d), a program or facility has broad-based eligibility only if the program or facility is designed to provide liquidity to an identifiable market or sector of the financial system;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Financial emergency",
+      "definition": "a significant disruption to the U.S. money markets resulting from an act of war, military or terrorist attack, natural disaster, or other catastrophic event",
+      "citations": [
+        {
+          "quote": "For purposes of this paragraph (d), a financial emergency is a significant disruption to the U.S. money markets resulting from an act of war, military or terrorist attack, natural disaster, or other catastrophic event.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "FHLB collateral/operational rules",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A member as defined in section 2 of the Federal Home Loan Bank Act (12 U.S.C. 1422(4)); or",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount-window stigma",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "A Federal Reserve Bank may lend to a depository institution either by making an advance secured by acceptable collateral under \u00a7 201.4 of this part or by discounting certain types of paper.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Call Reports / FR 2052a / liquidity reporting",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Each Federal Reserve Bank shall require any information it believes appropriate or desirable to ensure that assets tendered as collateral for advances or for discount are acceptable and that the borrower uses the credit provided in a manner consistent with this part.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Regulation A applies to United States branches and agencies of foreign banks that are subject to reserve requirements under Regulation D in the same manner as to depository institutions.",
+      "references": [
+        "12 CFR part 204 (Regulation D)"
+      ],
+      "citations": [
+        {
+          "quote": "Except as otherwise provided, this part applies to United States branches and agencies of foreign banks that are subject to reserve requirements under Regulation D (12 CFR part 204) in the same manner and to the same extent as this part applies to depository institutions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Definitions of transaction account and nonpersonal time deposit cross-reference Regulation D.",
+      "references": [
+        "12 CFR part 204 (Regulation D)"
+      ],
+      "citations": [
+        {
+          "quote": "Transaction account and nonpersonal time deposit have the meanings specified in Regulation D (12 CFR part 204).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Depository institution definition cross-references the FDI Act, Federal Credit Union Act, and Federal Home Loan Bank Act, including membership status under the Federal Home Loan Bank Act.",
+      "references": [
+        "12 U.S.C. 1813",
+        "12 U.S.C. 1752(7)",
+        "12 U.S.C. 1422(4)",
+        "Federal Home Loan Bank Act"
+      ],
+      "citations": [
+        {
+          "quote": "A member as defined in section 2 of the Federal Home Loan Bank Act (12 U.S.C. 1422(4)); or",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Assessments provision cross-references section 10B(b) of the Federal Reserve Act for excess-loss amounts paid to the FDIC.",
+      "references": [
+        "12 U.S.C. 347b (section 10B(b) of the Federal Reserve Act)"
+      ],
+      "citations": [
+        {
+          "quote": "The Board of Governors will assess the Federal Reserve Banks for any amount that the Board pays to the FDIC due to any excess loss in accordance with section 10B(b) of the Federal Reserve Act.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Emergency credit program reporting requirements cross-reference statutory reporting obligations under the Federal Reserve Act.",
+      "references": [
+        "12 U.S.C. 248(s)",
+        "12 U.S.C. 343(3)(C)"
+      ],
+      "citations": [
+        {
+          "quote": "The Board will comply with the reporting requirements of 12 U.S.C. 248(s) and 12 U.S.C. 343(3)(C) pursuant to their terms.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This source is Regulation A (12 CFR Part 201), governing Federal Reserve Bank discount-window/advance lending. It falls within the ratified scope only insofar as it evidences the discount-window side of the fragmentation/interoperability diagnostic (e.g., the depository-institution definition's cross-reference to Federal Home Loan Bank Act membership, and the discretionary, information-and-collateral-contingent structure of Reg A lending in \u00a7\u00a7201.3-201.5, which as written contains no cross-referenced interoperability provisions with FHLB collateral/operational rules, no defined discount-window stigma concept, and no liquidity-reporting timing/granularity provisions such as Call Reports or FR 2052a). No content in this source addresses Call Report timing, FR 2052a granularity, discount-window stigma causes, or reform proposals by Acting Comptroller Hsu or Undersecretary McKernan; those topics are outside what this instrument itself contains and are not extracted here per the fidelity rule (extract only what the text contains). Terms such as 'discount-window stigma,' 'FHLB collateral/operational rules,' and 'Call Reports/FR 2052a' are recorded as material scope-relevant but undefined-here because the ratified scope references them, yet the source text itself does not define or discuss them substantively; citations for these entries are the closest verbatim anchors available in the source (e.g., the depository-institution/FHLB-member definition and the general collateral-information provision), not evidence that the source itself defines or treats these scope topics. The regulation's own ambiguities/inconsistencies (e.g., 'shall' in \u00a7201.3(c)(3) vs. 'should' in \u00a7201.3(c)(1) for similar informational duties) are preserved as written per the fidelity rule."
+}

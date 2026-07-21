@@ -1,0 +1,422 @@
+{
+  "item_id": "cfp-addendum-2023",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Depository institutions should maintain actionable contingency funding plans that consider a range of possible stress scenarios, in light of the unprecedented level and speed of deposit outflows seen in early 2023.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "Depository institutions should maintain actionable contingency funding plans that consider a range of possible stress scenarios.",
+          "verified": true
+        },
+        {
+          "quote": "As seen in these events, the level and speed of deposit outflows at a few firms was unprecedented and contributed to acute liquidity and funding strain at those institutions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The agencies encourage depository institutions to incorporate the discount window as part of their contingency funding arrangements, given that liquidity stress can manifest quickly.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "In an environment where liquidity stress manifests quickly, the discount window is an important tool that depository institutions can utilize in managing liquidity risk, and the agencies encourage depository institutions to incorporate the discount window as part of their contingency funding arrangements.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The agencies view access to a range of reliable contingency funding sources as a key component of safety and soundness.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The agencies view having access to a range of reliable contingency funding sources as a key component of safety and soundness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Underlying objective (inferred) of the addendum is to close operational-readiness gaps in accessing discount-window and FHLB/CLF collateral and funding channels that were exposed by the speed of 2023 deposit runs, by promoting testing and pre-pledging.",
+      "stated_or_inferred": "inferred",
+      "citations": [
+        {
+          "quote": "depository institutions should engage in planning that recognizes the operational challenges involved in moving and posting collateral to access critical funding in a timely fashion.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "ob-1",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "maintain actionable contingency funding plans that consider a range of possible stress scenarios",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions should maintain actionable contingency funding plans that consider a range of possible stress scenarios.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-2",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "assess the stability of their funding and maintain a broad range of funding sources that can be accessed in adverse circumstances",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions should assess the stability of their funding and maintain a broad range of funding sources that can be accessed in adverse circumstances.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-3",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "be aware of the operational steps required to obtain funding from contingency funding sources, including potential counterparties, contact details, and availability of collateral",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "depository institutions should be aware of the operational steps required to obtain funding from contingency funding sources, including potential counterparties, contact details, and availability of collateral.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-4",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "regularly test any contingency borrowing lines to ensure staff are well versed in how to access them and that they function as envisioned",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "As part of operational readiness, depository institutions should regularly test any contingency borrowing lines to ensure the institution's staff are well versed in how to access them and that they function as envisioned.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-5",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "engage in planning that recognizes the operational challenges involved in moving and posting collateral to access critical funding in a timely fashion",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In particular, depository institutions should engage in planning that recognizes the operational challenges involved in moving and posting collateral to access critical funding in a timely fashion.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-6",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "recognize in contingency funding plans that contingency lines may become unavailable during times of stress, and include a range of contingency funding sources to account for this",
+      "trigger": "during times of stress",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions' contingency funding plans should recognize that during times of stress, contingency lines may become unavailable.",
+          "verified": true
+        },
+        {
+          "quote": "Depository institution contingency funding plans should take this dynamic into account and include a range of contingency funding sources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-7",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "review and revise contingency funding plans periodically and more frequently as market conditions and strategic initiatives change in order to address evolving liquidity risks",
+      "trigger": "market conditions and strategic initiatives change",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions should review and revise contingency funding plans periodically and more frequently as market conditions and strategic initiatives change in order to address evolving liquidity risks.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-8",
+      "actor": "an institution that increases the share of its liabilities comprised of less stable funding",
+      "modality": "conditional",
+      "action": "consider whether it needs to increase its capacity to borrow from contingency funding sources",
+      "trigger": "institution increases the share of its liabilities comprised of less stable funding",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "an institution that increases the share of its liabilities comprised of less stable funding should consider whether it needs to increase its capacity to borrow from contingency funding sources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-9",
+      "actor": "the depository institution",
+      "modality": "conditional",
+      "action": "establish and maintain operational readiness to borrow from the discount window, including establishing borrowing arrangements and ensuring collateral is available for borrowing in an amount appropriate for the institution's potential contingency funding needs",
+      "trigger": "If the discount window is a part of a depository institution's contingency funding plans",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If the discount window is a part of a depository institution's contingency funding plans, the depository institution should establish and maintain operational readiness to borrow from the discount window.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-10",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "ensure they are familiar with the pledging process for different collateral types and be aware that pre-pledging collateral can be useful if liquidity needs arise quickly",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions should ensure they are familiar with the pledging process for different collateral types and be aware that pre-pledging collateral can be useful if liquidity needs arise quickly.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-11",
+      "actor": "Depository institutions that include the discount window as part of their contingency funding plan",
+      "modality": "conditional",
+      "action": "consider conducting small value transactions at regular intervals to ensure familiarity with discount window operations",
+      "trigger": "discount window is part of contingency funding plan",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions that include the discount window as part of their contingency funding plan should also consider conducting small value transactions at regular intervals to ensure familiarity with discount window operations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-12",
+      "actor": "Depository institutions",
+      "modality": "should",
+      "action": "be aware that establishing contingency funding arrangements may take time, including time constraints associated with initially establishing lines with the appropriate Federal Reserve Bank and/or the appropriate Federal Home Loan Bank",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Depository institutions should be aware that establishing contingency funding arrangements may take time.",
+          "verified": true
+        },
+        {
+          "quote": "it is important to consider time constraints associated with initially establishing lines with the  appropriate Federal Reserve Bank and/or the appropriate Federal Home Loan Bank",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-13",
+      "actor": "Credit unions with assets greater than $250 million",
+      "modality": "must",
+      "action": "establish and document access to at least one contingent federal liquidity source, among other things",
+      "trigger": null,
+      "threshold": "assets greater than $250 million",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Credit unions with assets greater than $250 million must, among other things, establish and document access to at least one contingent federal liquidity source.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-14",
+      "actor": "Credit unions between $50 million and $250 million in total assets",
+      "modality": "must",
+      "action": "include in required policies, identification of contingent liquidity sources, among other things",
+      "trigger": null,
+      "threshold": "between $50 million and $250 million in total assets",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Credit unions between $50 million and $250 million in total assets must, among other things, include in required policies, identification of contingent liquidity sources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-15",
+      "actor": "Credit unions under $50 million",
+      "modality": "must",
+      "action": "maintain a basic written policy that provides a framework for managing liquidity and includes a list of contingent liquidity sources that can be employed under adverse circumstances",
+      "trigger": null,
+      "threshold": "assets under $50 million",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Credit unions under $50 million must maintain a basic written policy that provides a framework for managing liquidity and includes a list of contingent liquidity sources that can be employed under adverse circumstances.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "ob-16",
+      "actor": "Credit unions subject to the $250 million contingent-federal-liquidity-source requirement",
+      "modality": "may",
+      "action": "demonstrate access to a contingent federal liquidity source by maintaining membership in the Central Liquidity Facility or establishing borrowing access at the Federal Reserve discount window",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Credit unions subject to this requirement may demonstrate access to a contingent federal liquidity source by maintaining membership in the Central Liquidity Facility or establishing borrowing access at the Federal Reserve discount window.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Central Liquidity Facility",
+      "definition": "exists to provide federally sourced backup liquidity where a credit union's liquidity and market funding sources prove inadequate",
+      "citations": [
+        {
+          "quote": "The Central Liquidity Facility exists to provide federally sourced backup liquidity where a credit union's liquidity and market funding sources prove inadequate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "contingency funding plans",
+      "definition": "(undefined here) \u2014 text describes required contents and review cadence but does not give a formal definition of the term itself",
+      "citations": [
+        {
+          "quote": "Depository institutions should maintain actionable contingency funding plans that consider a range of possible stress scenarios.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "discount window",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the discount window is an important tool that depository institutions can utilize in managing liquidity risk",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "operational readiness",
+      "definition": "Includes establishing borrowing arrangements and ensuring collateral is available for borrowing in an amount appropriate for a depository institution's potential contingency funding needs.",
+      "citations": [
+        {
+          "quote": "Operational readiness includes establishing borrowing arrangements and ensuring collateral is available for borrowing in an amount appropriate for a depository institution's potential contingency funding needs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "less stable funding",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "an institution that increases the share of its liabilities comprised of less stable funding should consider whether it needs to increase its capacity to borrow from contingency funding sources.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The addendum is expressly an addition to the 2010 Interagency Policy Statement on Funding and Liquidity Risk Management, referencing the individual agency issuances that released it.",
+      "references": [
+        "Interagency Policy Statement on Funding and Liquidity Risk Management, Federal Reserve SR 10-6 (March 17, 2010)",
+        "FDIC FIL-13-2010 (April 10, 2010)",
+        "OCC Bulletin 2010-13 (March 22, 2010)"
+      ],
+      "citations": [
+        {
+          "quote": "See Interagency Policy Statement on Funding and Liquidity Risk Management, Federal Reserve SR 10- 6 (March 17, 2010), FDIC FIL-13-2010 (April 10, 2010), and OCC Bulletin 2010-13 (March 22, 2010).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Planning for contingency access may require initial or renewed contact with the Federal Reserve System and the Federal Home Loan Bank System, noting time constraints in establishing such lines.",
+      "references": [
+        "Federal Reserve System",
+        "Federal Home Loan Bank System"
+      ],
+      "citations": [
+        {
+          "quote": "Such planning may require initial or renewed contact with entities such as the Federal Reserve System and the Federal Home Loan Bank System.",
+          "verified": true
+        },
+        {
+          "quote": "it is important to consider time constraints associated with initially establishing lines with the  appropriate Federal Reserve Bank and/or the appropriate Federal Home Loan Bank",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Cross-reference to NCUA's own regulation setting liquidity and contingency funding plan requirements for federally insured credit unions, tiered by asset size.",
+      "references": [
+        "Section 741.12 of NCUA's regulations"
+      ],
+      "citations": [
+        {
+          "quote": "Section 741.12 of NCUA's regulations outlines requirements for federally insured credit unions to have liquidity and contingency funding plans.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Directs institutions to external informational resources for discount window details.",
+      "references": [
+        "FRBdiscountwindow.org"
+      ],
+      "citations": [
+        {
+          "quote": "Information regarding the discount window is available at FRBdiscountwindow.org.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Directs credit unions to external informational resources for the Central Liquidity Facility.",
+      "references": [
+        "NCUA.gov/support-services/central-liquidity-facility"
+      ],
+      "citations": [
+        {
+          "quote": "Information regarding the Central Liquidity Facility is available at NCUA.gov/support-services/central-liquidity-facility.",
+          "verified": false
+        }
+      ]
+    }
+  ],
+  "notes": "This source is interagency supervisory guidance (Fed/OCC/FDIC/NCUA), not a rule; nearly all obligations directed at depository institutions use 'should' (guidance-level expectation) rather than 'must,' and this is preserved verbatim/as-written rather than harmonized to a binding modality. The only 'must' obligations in the text are NCUA regulatory citations (Section 741.12) tiered by credit-union asset size ($250M, $50-250M, <$50M thresholds), extracted as given. The document addresses discount-window/FHLB operational-readiness and collateral-movement timing gaps and touches on testing/pre-pledging (relevant to stigma and speed-of-response diagnostics in the ratified scope), but it does not itself use the term 'stigma,' does not discuss FHLB collateral/operational rules in the same operational detail as the discount window, and does not address Call Report or FR 2052a reporting timing/granularity at all \u2014 those topics are outside what this particular source item contains, though the broader program scope covers them via other source items. No internal inconsistencies were found requiring flagging beyond the should/must distinction noted above."
+}
