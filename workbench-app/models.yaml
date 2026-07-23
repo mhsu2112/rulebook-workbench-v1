@@ -23,6 +23,9 @@ settings:
     - nvidia/nemotron-4-340b-instruct
     - moonshotai/kimi-k2
     - qwen/qwen3-235b-a22b
+    # Strong Gemini tier so the "Lab-first: Gemini" preset is credible for heavy
+    # reasoning (flash-lite alone is too light). Confirm the slug via `make models`.
+    - google/gemini-3.1-pro
 
 tasks:
   intake_interview:
@@ -104,6 +107,21 @@ tasks:
     fallbacks: [anthropic/claude-sonnet-5]
     params: { temperature: 0.1, max_tokens: 8192 }
     structured_output: effect_classification.schema.json
+
+  source_discovery:
+    phase: P1
+    description: Assisted census — propose candidate corpus sources for human review (spec/53); NOT a governed artifact, locators verified against the live catalog before display
+    default_model: anthropic/claude-opus-4.8
+    fallbacks: [openai/gpt-5.6-sol]
+    params: { temperature: 0.3, max_tokens: 8192 }
+    structured_output: source_candidates.schema.json
+
+  discovery_questions:
+    phase: P1
+    description: Up to 3 clarifying questions before assisted source discovery (spec/54); plain text, not a governed artifact
+    default_model: anthropic/claude-sonnet-5
+    fallbacks: [openai/gpt-5.6-sol]
+    params: { temperature: 0.4, max_tokens: 1024 }
 
   second_census:
     phase: P1

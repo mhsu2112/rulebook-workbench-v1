@@ -337,6 +337,16 @@ wiring that makes them *safely routable*:
   it visible. A short ADR note if the registry schema gains per-model
   eligibility/capability fields.
 
+### B11. Assisted source discovery — SHIPPED (see `spec/53-source-discovery.md`)
+
+Closes the last manual seam: the census. AI proposes candidate corpus sources
+(catalog-anchored via the eCFR search + Federal Register APIs, model-expanded
+with live CFR/USC verification); a human accepts them into the unfrozen manifest
+via the existing `add_item` path. Discovery writes nothing and freezes nothing —
+it fills a review queue. No new gate (its only write path is already governed);
+no ADR required. Follow-ups (more catalogs, scope-aware term suggestion, a
+corpus coverage critic) tracked in `spec/53` §8.
+
 ### B10. Parking lot (captured, not yet scoped)
 
 - Export bundle for working-group review (governed artifacts only, restricted

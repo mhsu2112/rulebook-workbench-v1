@@ -12,9 +12,10 @@
   header h1 { font-size:16px; margin:0; } .dim { color:var(--dim); }
   #spend { color:var(--dim); font-size:12px; margin-left:auto; }
   #errbar { display:none; background:#3a1f22; color:var(--bad); padding:8px 18px; white-space:pre-wrap; font-size:12.5px; }
-  .layout { display:grid; grid-template-columns:220px 1fr 380px; height:calc(100vh - 46px); }
+  .layout { display:grid; grid-template-columns:210px 1fr 360px; grid-template-rows:1fr 32vh;
+            grid-template-areas:"nav work ledger" "nav term term"; height:calc(100vh - 46px); }
   .col { border-right:1px solid var(--line); overflow-y:auto; }
-  #left { order:1; } #right { order:2; border-right:1px solid var(--line); } #mid { order:3; border-right:0; }
+  #right { grid-area:work; }
   .col h2, #left h2 { font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim); padding:12px 14px 4px; margin:0; }
   .prog { padding:8px 14px; cursor:pointer; border-left:3px solid transparent; }
   .prog:hover { background:var(--panel); }
@@ -22,6 +23,8 @@
   .newprog { display:flex; gap:6px; padding:10px 14px; }
   input, textarea, select { background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:7px 9px; font:inherit; width:100%; }
   button { background:var(--acc); color:#fff; border:0; border-radius:6px; padding:7px 14px; font:inherit; cursor:pointer; }
+  .dlbtn { background:var(--panel); color:var(--dim); border:1px solid var(--line); }
+  .dlbtn:hover, .kebab:hover { color:var(--text); }
   button:disabled { opacity:.45; cursor:default; }
   .chat { display:flex; flex-direction:column; height:100%; overflow:hidden; }
   .msgs { flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; }
@@ -46,13 +49,13 @@
 
   .present-toggle { margin-left:auto; font-size:12px; color:var(--dim); cursor:pointer; user-select:none; }
   body.present .pane button, body.present .pane textarea, body.present .pane select, body.present .pane input,
-  body.present #inputrow, body.present #mid-models button, body.present #mid-models select { display:none !important; }
+  body.present #inputrow, body.present #terminal .inputrow { display:none !important; }
   .ovstage { display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:7px; }
   .ovstage .dot { font-size:16px; line-height:1.2; }
   .ovstage .body { flex:1; } .ovstage .ph { font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--dim); }
   .dlog { border-left:2px solid var(--line); padding:5px 0 5px 10px; margin:5px 0; font-size:12px; }
 
-  #left { order:1; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--line); }
+  #left { grid-area:nav; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--line); }
   .leftscroll { flex:1; overflow-y:auto; }
   .lsec-head { cursor:pointer; }
   .navlink { display:block; padding:6px 14px; color:var(--acc); text-decoration:none; font-size:12.5px; }
@@ -62,13 +65,20 @@
   .uname { flex:1; font-size:12.5px; line-height:1.2; }
   .ro-toggle { font-size:11px; color:var(--dim); cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:4px; margin:0; text-transform:none; letter-spacing:0; }
   .ro-toggle input { width:auto; }
-  #mid { display:flex; flex-direction:column; overflow:hidden; }
-  .midtabs { display:flex; border-bottom:1px solid var(--line); }
-  .midtabs div { padding:9px 14px; cursor:pointer; color:var(--dim); font-size:13px; }
-  .midtabs div.on { color:var(--text); border-bottom:2px solid var(--acc); }
-  #mid-chat { flex:1; display:flex; flex-direction:column; justify-content:center; overflow:hidden; }
-  #mid-chat .msgs { flex:0 1 auto; max-height:78%; }
-  #mid-models { flex:1; overflow-y:auto; padding:14px; }
+  /* right column = read-only ledger (spec/55 §5) */
+  #ledger { grid-area:ledger; overflow-y:auto; border-left:1px solid var(--line); background:rgba(255,255,255,.015); }
+  .ledgerhead { font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim); padding:12px 14px 6px; position:sticky; top:0; background:var(--bg); }
+  #ledger-body { padding:0 14px 16px; }
+  .ledsec { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--dim); margin:14px 0 5px; font-weight:600; }
+  .ledcard { border:1px solid var(--line); border-left:2px solid var(--acc); border-radius:0 6px 6px 0; padding:6px 9px; margin-bottom:6px; font-size:12px; }
+  .ledconv { border:1px solid var(--line); border-radius:8px; padding:7px 10px; margin-bottom:6px; font-size:12px; white-space:pre-wrap; }
+  /* bottom = the terminal (always visible, contextual) */
+  #terminal { grid-area:term; display:flex; flex-direction:column; overflow:hidden; border-top:1px solid var(--line); background:var(--panel); }
+  #term-resize { flex:0 0 auto; height:6px; cursor:ns-resize; background:var(--line); opacity:.5; }
+  #term-resize:hover, body.resizing #term-resize { opacity:1; background:var(--acc); }
+  .termhead { flex:0 0 auto; padding:6px 14px; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--dim); border-bottom:1px solid var(--line); display:flex; align-items:center; gap:10px; }
+  #terminal .msgs { flex:1; overflow-y:auto; padding:12px 14px; display:flex; flex-direction:column; }
+  #terminal .inputrow { flex:0 0 auto; }
   #midhint { margin:auto; text-align:center; max-width:80%; }
   .m.user { align-self:flex-end; } .m.assistant { align-self:flex-start; }
   /* teal = a document the WORKBENCH produced (open & read) */
@@ -78,6 +88,8 @@
   /* violet = a GUIDE / instructions (reference reading), clearly a button, not a badge */
   .guidelink { display:inline-block; background:#7c6cd6; color:#fff !important; padding:7px 13px; border-radius:6px; font-size:12.5px; font-weight:600; text-decoration:none; margin:3px 6px 3px 0; }
   .guidelink:hover { filter:brightness(1.12); }
+  #tabhint { padding:7px 14px; font-size:12px; color:var(--dim); border-bottom:1px solid var(--line); background:rgba(91,141,239,.06); }
+  #tabhint a { color:var(--acc); margin-left:6px; }
 </style>
 </head>
 <body>
@@ -90,6 +102,7 @@
   <div id="left">
     <div class="leftscroll">
       <h2>Guides</h2>
+      <a class="navlink" href="/reading-guide.html" target="_blank">How to read the Workbench</a>
       <a class="navlink" href="/about.html" target="_blank">About the workbench &amp; the method</a>
       <a class="navlink" href="/guide.html" target="_blank">Reviewer's Guide — Refactor</a>
       <a class="navlink" href="/guide-redesign.html" target="_blank">Reviewer's Guide — Redesign</a>
@@ -106,20 +119,6 @@
       <label class="ro-toggle"><input type="checkbox" id="present-mode"> Read only</label>
     </div>
   </div>
-  <div id="mid">
-    <div class="midtabs">
-      <div id="mtab-chat" class="on">Chat</div>
-      <div id="mtab-models">Models</div>
-    </div>
-    <div id="mid-chat">
-      <div class="msgs" id="msgs"><div class="dim" id="midhint">Create or select a program to begin the Phase 0 interview.</div></div>
-      <div class="inputrow hidden" id="inputrow">
-        <textarea id="msgbox" rows="2" placeholder="Your answer…"></textarea>
-        <button id="sendbtn">Send</button>
-      </div>
-    </div>
-    <div class="hidden" id="mid-models"></div>
-  </div>
   <div class="col" id="right">
     <div class="tabs">
       <div id="tab-overview" class="on">Overview</div>
@@ -130,7 +129,9 @@
       <div id="tab-redesign">Redesign</div>
       <div id="tab-target">Target Blueprint</div>
       <div id="tab-align">Align</div>
+      <div id="tab-setup">Setup</div>
     </div>
+    <div id="tabhint"></div>
     <div class="pane" id="pane-overview"><div class="dim">Select a program to see its pipeline.</div></div>
     <div class="pane hidden" id="pane-purpose"><div class="dim">Select a program first.</div></div>
     <div class="pane hidden" id="pane-corpus"></div>
@@ -139,6 +140,20 @@
     <div class="pane hidden" id="pane-redesign"></div>
     <div class="pane hidden" id="pane-target"></div>
     <div class="pane hidden" id="pane-align"></div>
+    <div class="pane hidden" id="pane-setup"></div>
+  </div>
+  <div id="ledger">
+    <div class="ledgerhead">Record — <span id="ledger-scope">overview</span></div>
+    <div id="ledger-body"><div class="dim">Select a program.</div></div>
+  </div>
+  <div id="terminal">
+    <div id="term-resize" title="Drag to resize"></div>
+    <div class="termhead"><b id="term-label">Interview</b><span class="dim" id="term-sub"></span></div>
+    <div class="msgs" id="msgs"><div class="dim" id="midhint">Create or select a program to begin the Phase 0 interview.</div></div>
+    <div class="inputrow hidden" id="inputrow">
+      <textarea id="msgbox" rows="2" placeholder="Your answer…"></textarea>
+      <button id="sendbtn">Send</button>
+    </div>
   </div>
 </div>
 
@@ -146,7 +161,9 @@
 "use strict";
 /* Dependency-free UI. Any uncaught error is shown in the red bar, never a blank page. */
 
-var state = { pid: null, programs: [], busy: false, complete: false, purpose: null, models: null };
+var state = { pid: null, programs: [], busy: false, complete: false, purpose: null, models: null,
+              termMode: "interview", disco: null, discoQa: "", discoResult: null };
+function freshDisco() { return { started: false, msgs: [], questions: null, idx: 0, qa: [], phase: "topic", terms: "" }; }
 
 function $(id) { return document.getElementById(id); }
 function el(tag, attrs, children) {
@@ -175,6 +192,38 @@ function api(path, method, body) {
   });
 }
 
+/* ---------------- download helpers (spec/54 §2.3) ---------------- */
+
+function triggerDownload(blob, filename) {
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url; a.download = filename; document.body.appendChild(a); a.click();
+  setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 0);
+}
+function downloadText(filename, text, mime) {
+  triggerDownload(new Blob([text], { type: mime || "text/plain" }), filename);
+}
+// A small ⬇ download icon-button. onGet returns a Promise resolving to text, or
+// a string, that gets saved as `filename` with the given mime.
+function dlButton(filename, mime, onGet, title) {
+  return el("button", { text: "⬇", title: title || ("Download " + filename),
+    style: "font-size:11px; padding:2px 7px; margin-left:5px;", class: "dlbtn", onclick: function () {
+      Promise.resolve(typeof onGet === "function" ? onGet() : onGet)
+        .then(function (t) { downloadText(filename, t, mime); })
+        .catch(function (e) { showError(e.message); });
+    } }, []);
+}
+// ⬇ for a rendered HTML document served by an endpoint (fetches, saves .html).
+function dlDoc(url, filename) {
+  return dlButton(filename, "text/html", function () {
+    return fetch(url).then(function (r) { if (!r.ok) throw new Error("could not fetch " + filename); return r.text(); });
+  }, "Download " + filename);
+}
+function toCsv(rows, columns) {
+  function esc(v) { v = (v == null ? "" : String(v)); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+  return columns.join(",") + "\n" + rows.map(function (r) { return columns.map(function (c) { return esc(r[c]); }).join(","); }).join("\n");
+}
+
 /* ---------------- header / programs ---------------- */
 
 function refreshTop() {
@@ -184,18 +233,56 @@ function refreshTop() {
   }).then(function (m) {
     state.models = m;
     $("spend").textContent = "session $" + m.spent_usd.toFixed(4) + " (" + m.calls + " calls) · lifetime $" + (m.lifetime_usd || 0).toFixed(4) + " (" + (m.lifetime_calls || 0) + " calls)";
-    if (!$("mid-models").classList.contains("hidden")) renderModels();
+    if (!$("pane-setup").classList.contains("hidden")) renderModels();
   });
 }
 
 function renderPrograms() {
   var list = $("proglist"); list.innerHTML = "";
   state.programs.forEach(function (p) {
-    list.appendChild(el("div", {
-      class: "prog" + (p === state.pid ? " sel" : ""), text: p,
-      onclick: function () { selectProgram(p); }
-    }, []));
+    var name = el("span", { text: p, style: "flex:1; cursor:pointer; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;",
+      onclick: function () { selectProgram(p); } }, []);
+    var menu = el("div", { class: "hidden", style: "margin:4px 0 6px; padding:6px 8px; border:1px solid var(--line); border-radius:8px; background:var(--panel,#fff);" }, []);
+    var kebab = el("button", { text: "⋮", title: "Options", class: "kebab",
+      style: "background:none; color:var(--dim); border:none; font-size:16px; padding:0 6px; cursor:pointer;",
+      onclick: function (e) { e.stopPropagation(); menu.classList.toggle("hidden"); if (!menu.classList.contains("hidden")) buildProgMenu(p, menu); } }, []);
+    var row = el("div", { class: "prog" + (p === state.pid ? " sel" : ""), style: "display:flex; align-items:center; gap:4px;" }, [name, kebab]);
+    list.appendChild(row);
+    list.appendChild(menu);
   });
+}
+
+function buildProgMenu(p, menu) {
+  menu.innerHTML = "";
+  // (a) Download package — direct link (Content-Disposition triggers the save).
+  var dl = el("button", { text: "⬇ Download package", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0;",
+    onclick: function () { window.location = "/api/programs/" + encodeURIComponent(p) + "/package"; } }, []);
+  // (b) Rename — inline field.
+  var rn = el("button", { text: "✎ Rename…", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0;" }, []);
+  var rnBox = el("div", { class: "hidden", style: "margin:4px 0;" }, []);
+  var rnInput = el("input", { placeholder: "new name (slug)", style: "width:100%; font-size:12px;" }, []);
+  rnInput.value = p;
+  var rnGo = el("button", { text: "Rename", style: "font-size:11px; margin-top:3px;", onclick: function () {
+    showError("");
+    api("/api/programs/" + encodeURIComponent(p) + "/rename", "POST", { new_id: rnInput.value.trim() })
+      .then(function (r) { var was = (state.pid === p); return refreshTop().then(function () { if (was) selectProgram(r.program_id); }); })
+      .catch(function (e) { showError(e.message); });
+  } }, []);
+  rn.addEventListener("click", function () { rnBox.classList.toggle("hidden"); });
+  rnBox.appendChild(rnInput); rnBox.appendChild(rnGo);
+  // (c) Archive — confirm inline (restorable; never hard-deletes the decision log).
+  var ar = el("button", { text: "🗄 Archive…", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0; color:var(--bad);" }, []);
+  var arBox = el("div", { class: "hidden", style: "margin:4px 0;" }, []);
+  var arGo = el("button", { text: "Confirm archive", style: "font-size:11px; background:var(--bad);", onclick: function () {
+    showError("");
+    api("/api/programs/" + encodeURIComponent(p) + "/archive", "POST")
+      .then(function () { if (state.pid === p) { state.pid = null; showTab("overview"); } return refreshTop(); })
+      .catch(function (e) { showError(e.message); });
+  } }, []);
+  ar.addEventListener("click", function () { arBox.classList.toggle("hidden"); });
+  arBox.appendChild(el("div", { class: "dim", style: "font-size:11px; margin-bottom:3px;", text: "Moves it to Archived (restorable). The decision log is kept." }, []));
+  arBox.appendChild(arGo);
+  menu.appendChild(dl); menu.appendChild(rn); menu.appendChild(rnBox); menu.appendChild(ar); menu.appendChild(arBox);
 }
 
 function createProgram() {
@@ -210,10 +297,12 @@ function createProgram() {
 
 function selectProgram(pid) {
   state.pid = pid; state.complete = false; state.purpose = null;
+  state.disco = freshDisco(); state.discoQa = ""; state.discoResult = null;
   renderPrograms();
   $("inputrow").classList.remove("hidden");
   loadInterview(); loadPurpose();
   showTab("overview");
+  if (!$("pane-setup").classList.contains("hidden")) renderModels();
 }
 
 /* ---------------- interview ---------------- */
@@ -242,9 +331,87 @@ function loadInterview() {
   }).catch(function (e) { showError(e.message); });
 }
 
+/* ---- source-discovery interviewer, hosted in the terminal (spec/55) ---- */
+function renderDisco(thinking) {
+  var box = $("msgs"); box.innerHTML = "";
+  var d = state.disco || freshDisco();
+  if (!d.msgs.length) box.appendChild(el("div", { class: "dim", text: "Open a program's Corpus tab to start source discovery." }, []));
+  d.msgs.forEach(function (m) {
+    box.appendChild(el("div", { class: "m " + (m.role === "user" ? "user" : "assistant") }, [
+      el("div", { class: "who", text: m.role === "user" ? "you" : "source discovery" }, []),
+      el("span", { text: m.content }, [])
+    ]));
+  });
+  if (thinking) box.appendChild(el("div", { class: "dim", text: "…" }, []));
+  box.scrollTop = box.scrollHeight;
+}
+function startDiscovery() {
+  if (!state.disco) state.disco = freshDisco();
+  var d = state.disco;
+  if (d.started) { renderDisco(); return; }
+  d.started = true; d.phase = "topic";
+  d.msgs.push({ role: "assistant", content: "I'll help find sources for this corpus. What topic or keywords should I search for? (e.g. “FHLBank advances, membership”) — or type “skip” to work from the purpose statement alone." });
+  renderDisco();
+  // preload the clarifying questions in the background
+  api("/api/programs/" + state.pid + "/discover/questions", "POST", {})
+    .then(function (r) { d.questions = r.questions || []; })
+    .catch(function () { d.questions = []; });
+}
+
+function _askNextOrRun(d) {
+  if (d.questions === null) {   // still loading — wait briefly, then proceed
+    d.msgs.push({ role: "assistant", content: "One moment…" });
+    setTimeout(function () {
+      if (d.questions && d.idx < d.questions.length) { d.msgs.push({ role: "assistant", content: d.questions[d.idx] }); renderDisco(); }
+      else { _runDiscoSearch(d); }
+    }, 700);
+    return;
+  }
+  if (d.idx < d.questions.length) { d.msgs.push({ role: "assistant", content: d.questions[d.idx] }); renderDisco(); }
+  else { _runDiscoSearch(d); }
+}
+
+function _runDiscoSearch(d) {
+  d.phase = "done";
+  state.discoQa = d.qa.join("\n\n");
+  d.msgs.push({ role: "assistant", content: "Searching the eCFR and Federal Register catalogs and asking the model… (verifying each citation against the live catalog)" });
+  renderDisco(true);
+  api("/api/programs/" + state.pid + "/discover", "POST", { terms: d.terms || "", qa: state.discoQa }).then(function (r) {
+    state.discoResult = r;
+    var c = r.counts || {};
+    d.msgs.push({ role: "assistant", content: "Found " + (c.queued || 0) + " candidate" + (c.queued === 1 ? "" : "s") + " (" + (c.verified || 0) + " verified). Review and accept them in the worksheet above ↑. Type another topic to search again." });
+    renderDisco();
+    if ($("tab-corpus").className === "on") renderCorpus();
+  }).catch(function (e) {
+    d.msgs.push({ role: "assistant", content: "Search failed: " + e.message });
+    renderDisco();
+  });
+}
+
+function sendDiscovery(text) {
+  var d = state.disco; $("msgbox").value = "";
+  d.msgs.push({ role: "user", content: text });
+  var low = text.toLowerCase();
+  if (d.phase === "topic") {
+    d.terms = (low === "skip") ? "" : text;
+    d.phase = "questions"; d.idx = 0;
+    renderDisco(); _askNextOrRun(d);
+  } else if (d.phase === "questions") {
+    if (low === "skip") { renderDisco(); _runDiscoSearch(d); }
+    else {
+      if (d.questions && d.idx < d.questions.length) { d.qa.push("Q: " + d.questions[d.idx] + "\nA: " + text); d.idx++; }
+      renderDisco(); _askNextOrRun(d);
+    }
+  } else {   // done → treat a new message as a fresh topic and search again
+    d.terms = (low === "skip") ? "" : text;
+    renderDisco(); _runDiscoSearch(d);
+  }
+}
+
 function send() {
   var box = $("msgbox"); var text = box.value.trim();
   if (!text || state.busy || !state.pid) return;
+  if (state.termMode === "discovery") { return sendDiscovery(text); }
   state.busy = true; box.value = ""; showError("");
   chatHistory.push({ role: "user", content: text });
   renderMsgs(chatHistory, true);
@@ -280,17 +447,36 @@ function renderPurpose() {
       }).catch(function (e) { showError(e.message); renderPurpose(); });
     }
   }, []);
-  pane.appendChild(el("p", {}, [synthBtn]));
   if (!doc) {
+    pane.appendChild(el("p", {}, [synthBtn]));
     pane.appendChild(el("div", { class: "dim", text: "No Purpose Statement yet. Finish the interview, then synthesize." }, []));
     return;
   }
   var status = doc.status || "draft";
   var blocking = (doc.open_items || []).filter(function (o) { return o.blocking; }).length;
-  pane.appendChild(el("p", {}, [
-    el("span", { class: "badge " + (status === "ratified" ? "ratified" : "awaiting"), text: status }, []),
-    el("span", { class: "dim", text: "  mode: " + (((doc.synthesis || {}).recommended_mode || {}).mode || "?") + " · open items: " + (doc.open_items || []).length + " (" + blocking + " blocking)" }, [])
-  ]));
+
+  // Status header card (spec/54 §2.1): the statement + its status, up top.
+  var ratified = status === "ratified";
+  var scope = (((doc.synthesis || {}).scope_sentence || {}).text) || "(scope not yet synthesized)";
+  var mode = (((doc.synthesis || {}).recommended_mode || {}).mode) || "?";
+  var rb = (doc.ratification || {}).ratified_by || {};
+  var meta = ratified
+    ? (mode + " mode · ratified by " + (rb.name || "?") + ((doc.ratification || {}).timestamp ? " · " + String(doc.ratification.timestamp).slice(0, 10) : ""))
+    : (mode + " mode · " + (doc.open_items || []).length + " open items (" + blocking + " blocking)");
+  var card = el("div", { style: "border:1px solid " + (ratified ? "var(--ok)" : "var(--warn)") + "; border-radius:8px; padding:11px 13px; margin-bottom:12px;" }, [
+    el("div", { style: "display:flex; align-items:center; justify-content:space-between;" }, [
+      el("b", { style: "font-size:14px;", text: "Purpose Statement" }, []),
+      el("span", { class: "badge " + (ratified ? "ratified" : "awaiting"), text: ratified ? "RATIFIED" : "AWAITING RATIFICATION" }, [])
+    ]),
+    el("div", { style: "margin-top:6px; font-size:13px;", text: scope }, []),
+    el("div", { class: "dim", style: "font-size:11.5px; margin-top:5px;", text: meta }, []),
+    el("div", { style: "margin-top:7px;" }, [
+      dlButton(state.pid + "-purpose-statement.json", "application/json",
+               function () { return JSON.stringify(doc, null, 2); }, "Download the Purpose Statement")
+    ])
+  ]);
+  pane.appendChild(card);
+  pane.appendChild(el("p", {}, [synthBtn]));
 
   // Open items, readable, with the ⚖ resolve flow (each resolution is logged).
   (doc.open_items || []).forEach(function (item) {
@@ -352,45 +538,275 @@ function renderPurpose() {
 
 /* ---------------- models tab ---------------- */
 
+// Phase-grouped dials (spec/54 follow-on). Plumbing/eval tasks omitted → hidden.
+var MODEL_GROUPS = [
+  { title: "Purpose", tasks: ["intake_interview", "purpose_synthesis", "mandate_synthesis"] },
+  { title: "Corpus & discovery", tasks: ["source_discovery", "discovery_questions", "second_census"] },
+  { title: "Distillation", tasks: ["distill_extract", "defect_detect", "blueprint_summary"] },
+  { title: "Refactor", tasks: ["operation_propose", "effect_classify_assist"] },
+  { title: "Redesign", tasks: ["misalign_detect", "redesign_propose", "target_summary"] }
+];
+var TASK_LABELS = {
+  intake_interview: "Purpose interviewer", purpose_synthesis: "Purpose statement synthesis",
+  mandate_synthesis: "Mandate synthesis", source_discovery: "Source-discovery agent",
+  discovery_questions: "Source-discovery interviewer", second_census: "Independent second census",
+  distill_extract: "Blueprint extraction", defect_detect: "Defect detection",
+  blueprint_summary: "Blueprint summary (advisory)", operation_propose: "Refactor proposals",
+  effect_classify_assist: "Effect classifier (independent)", misalign_detect: "Misalignment detection",
+  redesign_propose: "Redesign proposals", target_summary: "Target-blueprint summary (advisory)"
+};
+var PRESET_LABELS = { recommended: "Recommended", cost: "Cost-optimized", open: "Open-weight-first", lab: "Lab-first", custom: "Customized" };
+var LAB_LABELS = { anthropic: "Anthropic", openai: "OpenAI", google: "Gemini" };
+
+var PRESET_LIST = [
+  { id: "recommended", blurb: "Curated defaults — strong models for the reasoning, cheap for the mechanical steps, independence built in." },
+  { id: "cost", blurb: "The cheapest capable model per task." },
+  { id: "open", blurb: "Prefer the open models (Nemotron / Kimi / Qwen) where capable and policy-eligible." },
+  { id: "lab", blurb: "One house everywhere it's allowed; the independence checks stay on a different house by rule." }
+];
+
+function reloadModels() {
+  if (!state.pid || !state.models) { renderModels(); return Promise.resolve(); }
+  return api("/api/models").then(function (m) { state.models = m; renderModels(); });
+}
+
 function renderModels() {
-  var pane = $("mid-models"); pane.innerHTML = "";
+  var pane = $("pane-setup"); pane.innerHTML = "";
+  if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program to set its model policy." }, [])); return; }
   if (!state.models) { pane.appendChild(el("div", { class: "dim", text: "loading…" }, [])); return; }
-  pane.appendChild(el("div", { class: "dim", text: "Per-task model toggle. Overrides are logged and stamped; diversity rules are enforced at call time." }, []));
-  var tasks = state.models.tasks;
+  api("/api/programs/" + state.pid + "/policy").then(function (pol) { drawPolicy(pane, pol); })
+    .catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
+}
+
+function applyProgramPreset(preset, lab) {
+  showError("");
+  api("/api/programs/" + state.pid + "/policy", "POST", { preset: preset, lab: lab || null })
+    .then(function (r) { window._presetNotes = r.notes || []; renderModels(); })
+    .catch(function (e) { showError(e.message); });
+}
+
+function drawPolicy(pane, pol) {
+  pane.innerHTML = "";
+  var tasks = state.models.tasks, ov = pol.overrides || {};
   var allModels = {};
-  Object.keys(tasks).forEach(function (t) {
-    allModels[tasks[t].default_model] = true; allModels[tasks[t].current_model] = true;
-  });
+  Object.keys(tasks).forEach(function (t) { allModels[tasks[t].default_model] = true; });
+  Object.keys(ov).forEach(function (t) { allModels[ov[t]] = true; });
   (state.models.catalog || []).forEach(function (m) { allModels[m] = true; });
-  var table = el("table", {}, []);
-  var thead = el("tr", {}, [el("th", { text: "task" }, []), el("th", { text: "model" }, []), el("th", { class: "dim", text: "source" }, [])]);
-  table.appendChild(thead);
-  Object.keys(tasks).forEach(function (tid) {
-    var t = tasks[tid];
-    var sel = el("select", {
-      onchange: function () {
-        var v = sel.value === "__default__" ? null : sel.value;
-        api("/api/models/override", "POST", { task_id: tid, model: v })
-          .then(function () { showError(""); return refreshTop(); })
-          .catch(function (e) { showError(e.message); });
-      }
-    }, []);
-    sel.appendChild(el("option", { value: "__default__", text: "default: " + t.default_model }, []));
-    Object.keys(allModels).forEach(function (m) {
-      if (m !== t.default_model) sel.appendChild(el("option", { value: m, text: m }, []));
-    });
-    sel.value = t.source === "default" ? "__default__" : t.current_model;
-    var meta = t.phase + (t.sensitive ? " · sensitive" : "") + (t.must_differ_family_from.length ? " · diversity-constrained" : "");
-    table.appendChild(el("tr", {}, [
-      el("td", {}, [el("b", { text: tid }, []), el("div", { class: "dim", text: meta }, [])]),
-      el("td", {}, [sel]),
-      el("td", { class: "dim", text: t.source }, [])
-    ]));
+  var locked = pol.status === "ratified";
+
+  pane.appendChild(el("div", { style: "display:flex; align-items:center; justify-content:space-between; margin-bottom:2px;" }, [
+    el("span", { style: "font-weight:600;", text: "Model policy — " + state.pid }, []),
+    el("span", { class: "badge " + (locked ? "ratified" : "awaiting"), text: locked ? "LOCKED" : "PROVISIONAL" }, [])
+  ]));
+  pane.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-bottom:8px;",
+    text: locked
+      ? "This program's model choices are a ratified decision — which model runs is now a record, not a live control. Re-open to change them."
+      : "Choose the models for this program, then lock them. Locking makes it a ratified decision, and it's required before you can freeze the corpus." }, []));
+  (window._presetNotes || []).forEach(function (n) {
+    pane.appendChild(el("div", { class: "dim", style: "font-size:11.5px;", text: "• " + n }, []));
   });
-  pane.appendChild(table);
+  pane.appendChild(el("div", { style: "font-size:12.5px; margin:8px 0 6px;" }, [
+    el("b", { text: "Strategy: " }, []),
+    el("span", { text: (PRESET_LABELS[pol.preset] || pol.preset) + (pol.lab ? " · " + (LAB_LABELS[pol.lab] || pol.lab) : "") }, [])
+  ]));
+
+  if (!locked) {
+    var labSub = el("div", { class: (pol.preset === "lab" ? "" : "hidden"), style: "margin-top:7px;" }, [
+      el("span", { class: "dim", style: "font-size:12px; margin-right:6px;", text: "Lab-first — pick a house:" }, [])
+    ]);
+    var row = el("div", { style: "display:flex; flex-wrap:wrap; gap:7px; align-items:center;" }, []);
+    PRESET_LIST.forEach(function (p) {
+      var on = pol.preset === p.id;
+      row.appendChild(el("button", { text: PRESET_LABELS[p.id], title: p.blurb,
+        style: "font-size:12.5px;" + (on ? "" : " background:var(--panel); color:var(--text); border:1px solid var(--line);"),
+        onclick: function () { if (p.id === "lab") { labSub.classList.remove("hidden"); return; } applyProgramPreset(p.id, null); } }, []));
+    });
+    pane.appendChild(row);
+    ["anthropic", "openai", "google"].forEach(function (lab) {
+      var on = pol.preset === "lab" && pol.lab === lab;
+      labSub.appendChild(el("button", { text: LAB_LABELS[lab],
+        style: "font-size:12px; margin-right:5px;" + (on ? "" : " background:var(--panel); color:var(--text); border:1px solid var(--line);"),
+        onclick: function () { applyProgramPreset("lab", lab); } }, []));
+    });
+    pane.appendChild(labSub);
+  }
+
+  function taskRow(tid) {
+    var t = tasks[tid]; if (!t) return null;
+    var overridden = !!ov[tid];
+    var sel = el("select", { disabled: locked, onchange: function () {
+      var v = sel.value === "__default__" ? null : sel.value;
+      api("/api/programs/" + state.pid + "/policy/override", "POST", { task_id: tid, model: v })
+        .then(function () { showError(""); renderModels(); })
+        .catch(function (e) { showError(e.message); });
+    } }, []);
+    sel.appendChild(el("option", { value: "__default__", text: "default: " + t.default_model }, []));
+    Object.keys(allModels).forEach(function (m) { if (m !== t.default_model) sel.appendChild(el("option", { value: m, text: m }, [])); });
+    sel.value = overridden ? ov[tid] : "__default__";
+    var tags = (t.sensitive ? "privacy-eligible only · " : "") + (t.must_differ_family_from.length ? "independence-locked · " : "") + (overridden ? "set by policy" : "default");
+    return el("tr", {}, [
+      el("td", {}, [el("b", { text: TASK_LABELS[tid] || tid }, []), el("div", { class: "dim", style: "font-size:11px;", text: tags }, [])]),
+      el("td", {}, [sel])
+    ]);
+  }
+  var dialsWrap = el("div", { class: "hidden", style: "margin-top:4px;" }, []);
+  var dlabel = locked ? "See the locked per-task models" : "Fine-tune individual dials";
+  var dialsToggle = el("button", { text: "▸ " + dlabel,
+    style: "background:none; border:none; color:var(--dim); cursor:pointer; font-size:12px; padding:2px 0; display:block; margin-top:8px;",
+    onclick: function () { var h = dialsWrap.classList.toggle("hidden"); dialsToggle.textContent = (h ? "▸ " : "▾ ") + dlabel; } }, []);
+  pane.appendChild(dialsToggle); pane.appendChild(dialsWrap);
+  MODEL_GROUPS.forEach(function (g) {
+    var rows = g.tasks.map(taskRow).filter(Boolean);
+    if (!rows.length) return;
+    dialsWrap.appendChild(el("div", { style: "font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--dim); margin:12px 0 2px;", text: g.title }, []));
+    var table = el("table", {}, []);
+    rows.forEach(function (r) { table.appendChild(r); });
+    dialsWrap.appendChild(table);
+  });
+
+  pane.appendChild(el("div", { style: "border-top:1px solid var(--line); margin:12px 0;" }, []));
+  if (!locked) {
+    var who = el("input", { placeholder: "Your name (Program Owner ⚖)", style: "margin-bottom:4px;" }, []);
+    var why = el("textarea", { rows: "2", placeholder: "Rationale (required — goes to the Decision Log)" }, []);
+    var lock = el("button", { text: "Lock model policy ⚖", style: "margin-top:5px;", onclick: function () {
+      showError("");
+      api("/api/programs/" + state.pid + "/policy/ratify", "POST", { name: who.value.trim(), role: "Program Owner", rationale: why.value.trim() })
+        .then(function () { window._presetNotes = []; return refreshTop(); }).then(renderModels)
+        .catch(function (e) { showError(e.message); });
+    } }, []);
+    pane.appendChild(who); pane.appendChild(why); pane.appendChild(el("div", {}, [lock]));
+  } else {
+    pane.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-bottom:5px;",
+      text: "Locked by " + ((pol.ratified_by || {}).name || "?") + (pol.ratified_at ? " · " + String(pol.ratified_at).slice(0, 10) : "") + ". " + (pol.rationale || "") }, []));
+    var who2 = el("input", { placeholder: "Your name (Program Owner ⚖)", style: "margin-bottom:4px;" }, []);
+    var why2 = el("textarea", { rows: "2", placeholder: "Why re-open? (required — goes to the Decision Log)" }, []);
+    var reopen = el("button", { text: "Re-open policy", style: "margin-top:5px; background:var(--panel); color:var(--text); border:1px solid var(--line);", onclick: function () {
+      showError("");
+      api("/api/programs/" + state.pid + "/policy/reopen", "POST", { name: who2.value.trim(), role: "Program Owner", rationale: why2.value.trim() })
+        .then(renderModels).catch(function (e) { showError(e.message); });
+    } }, []);
+    pane.appendChild(who2); pane.appendChild(why2); pane.appendChild(el("div", {}, [reopen]));
+  }
 }
 
 /* ---------------- corpus tab (P1: import → freeze) ---------------- */
+
+function discoverPanel() {
+  var terms = el("input", { placeholder: "topic / keywords — e.g. FHLBank advances, membership, collateral", style: "width:100%; margin:4px 0;" }, []);
+  var out = el("div", { style: "margin-top:8px;" }, []);
+
+  // The clarifying mini-interview now happens in the terminal below (spec/55):
+  // its answers are collected in state.discoQa and folded into the search here.
+  var qaHint = el("div", { class: "dim", style: "font-size:11.5px; margin:2px 0 4px;" }, []);
+  function refreshQaHint() {
+    qaHint.textContent = (state.discoQa && state.discoQa.trim())
+      ? "✓ Using your answers from the source-discovery interviewer to sharpen the search."
+      : "Tell the source-discovery interviewer in the terminal below a topic and it will search for you — results appear here. Or search directly:";
+  }
+  refreshQaHint();
+
+  var run = el("button", { text: "🔎 Search now", style: "margin-top:2px;", onclick: function () {
+    showError(""); run.disabled = true;
+    out.innerHTML = "";
+    out.appendChild(el("div", { class: "dim", style: "font-size:12px;", text: "Searching the eCFR and Federal Register catalogs and asking the model… (verifying citations against the live catalog)" }, []));
+    api("/api/programs/" + state.pid + "/discover", "POST", { terms: terms.value.trim(), qa: state.discoQa || "" })
+      .then(function (r) { run.disabled = false; state.discoResult = r; renderQueue(r); })
+      .catch(function (e) { run.disabled = false; out.innerHTML = ""; showError(e.message); });
+  } }, []);
+
+  function renderQueue(r) {
+    out.innerHTML = "";
+    var c = r.counts || {};
+    out.appendChild(el("div", { style: "font-size:12.5px; margin-bottom:4px;" }, [
+      el("b", { text: (c.queued || 0) + " candidate" + (c.queued === 1 ? "" : "s") }, []),
+      el("span", { class: "dim", text: "  " + (c.verified || 0) + " verified · " + (c.catalog || 0) + " from catalogs · " + (c.model || 0) + " model-proposed" }, [])
+    ]));
+    (r.notes || []).forEach(function (n) {
+      out.appendChild(el("div", { class: "dim", style: "font-size:11px; margin:2px 0;", text: "• " + n }, []));
+    });
+    if (!(r.candidates || []).length) {
+      out.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-top:6px;", text: "No candidates. Try broader or different keywords." }, []));
+      return;
+    }
+    r.candidates.forEach(function (cand) {
+      var vbadge = cand.verified
+        ? el("span", { class: "badge ratified", text: "✓ verified", title: cand.verify_note }, [])
+        : el("span", { class: "badge awaiting", text: "unverified", title: cand.verify_note }, []);
+      var msg = el("span", { class: "dim", style: "font-size:11px; margin-left:6px;" }, []);
+      var add = el("button", { text: "Add to corpus", style: "font-size:11px; padding:3px 9px;", onclick: function () {
+        showError(""); add.disabled = true; dismiss.disabled = true;
+        api("/api/programs/" + state.pid + "/manifest/items", "POST", {
+          item_id: cand.proposed_item_id, title: cand.title, issuer: cand.issuer,
+          family: cand.family, locator: cand.locator, status: cand.status,
+          evidence_role: cand.evidence_role || null, url: cand.url || null
+        }).then(function () {
+          msg.textContent = "✓ added"; card.style.opacity = "0.55";
+          drawManifestRows();  // reflect it in the table below without wiping the queue
+        }).catch(function (e) { add.disabled = false; dismiss.disabled = false; showError(e.message); });
+      } }, []);
+      var dismiss = el("button", { text: "Dismiss", style: "font-size:11px; padding:3px 9px; margin-left:5px; background:var(--dim,#888);", onclick: function () {
+        card.parentNode.removeChild(card);
+      } }, []);
+      var card = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:8px 11px; margin-top:7px;" }, [
+        el("div", {}, [vbadge, el("span", { style: "font-weight:600; margin-left:6px;", text: cand.title }, [])]),
+        el("div", { class: "dim", style: "font-size:11.5px; margin-top:2px;", text: cand.locator + "  ·  " + cand.issuer + "  ·  " + cand.family + "  ·  " + cand.origin }, []),
+        el("div", { class: "dim", style: "font-size:11.5px; margin-top:2px; font-style:italic;", text: cand.rationale || "" }, []),
+        el("div", { style: "margin-top:5px;" }, [add, dismiss, msg])
+      ]);
+      out.appendChild(card);
+    });
+  }
+
+  var panel = el("div", { style: "border:1px solid var(--accent-doc,#2b8a8a); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+    el("b", { text: "Discover sources" }, []),
+    el("div", { class: "dim", style: "font-size:11.5px; margin:3px 0 4px;",
+      text: "These are suggestions. Nothing here is in your corpus until you add it — you decide what belongs. The tool proposes candidates from the eCFR and Federal Register catalogs plus model recall, and verifies each citation against the live catalog." }, []),
+    qaHint, terms, el("div", { style: "margin-top:4px;" }, [run]), out
+  ]);
+  if (state.discoResult) renderQueue(state.discoResult);   // persist results across re-renders
+  return panel;
+}
+
+function drawManifestRows() {
+  // Best-effort refresh of the manifest table after an in-place add, without
+  // re-rendering the whole Corpus tab (which would wipe an open discovery queue).
+  if (window._redrawCorpusRows) { try { window._redrawCorpusRows(); } catch (e) {} }
+}
+
+function corpusAddForm() {
+  function inp(ph) { return el("input", { placeholder: ph, style: "margin:2px 0;" }, []); }
+  var iid = inp("id — short slug, e.g. 12-cfr-1266"), title = inp("title"),
+      issuer = inp("issuer — e.g. FHFA, Congress, OCC"),
+      locator = inp("citation / locator — e.g. 12 CFR 1266  or  12 U.S.C. 1430"),
+      url = inp("source URL (optional; helps the fetcher)");
+  var fam = el("input", { placeholder: "family — e.g. regulation, statute, guidance", list: "famlist", style: "margin:2px 0;" }, []);
+  var famlist = el("datalist", { id: "famlist" }, ["statute", "regulation", "guidance", "exam_manual",
+    "reporting_instruction", "enforcement_index", "sro_rule_guidance", "reform_proposal",
+    "operational_spec", "policy_report"].map(function (x) { var o = el("option", {}, []); o.value = x; return o; }));
+  var status = el("select", {}, ["live", "proposed", "superseded", "rescinded", "stayed", "vacated"]
+    .map(function (x) { var o = el("option", { text: x }, []); o.value = x; return o; }));
+  var role = el("select", {}, [["", "evidence role (optional)"], ["binding_authority", "binding authority"],
+    ["authoritative_interpretation", "authoritative interpretation"], ["nonbinding_guidance", "nonbinding guidance"],
+    ["enforcement_evidence", "enforcement evidence (evidence only)"], ["reform_proposal", "reform proposal (never current law)"]]
+    .map(function (p) { var o = el("option", { text: p[1] }, []); o.value = p[0]; return o; }));
+  var add = el("button", { text: "Add source", style: "margin-top:4px;", onclick: function () {
+    showError(""); add.disabled = true;
+    api("/api/programs/" + state.pid + "/manifest/items", "POST", {
+      item_id: iid.value.trim(), title: title.value.trim(), issuer: issuer.value.trim(),
+      family: fam.value.trim(), locator: locator.value.trim(), status: status.value,
+      evidence_role: role.value || null, url: url.value.trim() || null
+    }).then(function () { renderCorpus(); })
+      .catch(function (e) { showError(e.message); add.disabled = false; });
+  } }, []);
+  return el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+    el("b", { text: "Add a source rule" }, []),
+    el("div", { class: "dim", style: "font-size:11.5px; margin:3px 0 6px;",
+      text: "Build the corpus one instrument at a time. The locator (a CFR/USC citation, or the source URL) is what the fetcher uses to pull the text." }, []),
+    iid, title, issuer, fam, locator,
+    el("div", { style: "display:flex; gap:6px;" }, [status, role]),
+    url, famlist, el("div", {}, [add])
+  ]);
+}
 
 function renderCorpus() {
   var pane = $("pane-corpus"); pane.innerHTML = "";
@@ -453,12 +869,16 @@ function renderCorpus() {
           .then(function () { renderCorpus(); })
           .catch(function (e) { showError(e.message); });
       } }, []);
-      var box = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
-        el("span", { class: "badge awaiting", text: "UNFROZEN" }, []),
-        el("span", { class: "dim", text: "  " + m.items.length + " items — freeze to pin the corpus (OR-7: after this, changes go to the scope-change queue)" }, []),
-        who, role, rat, el("div", {}, [btn])
-      ]);
-      pane.appendChild(box);
+      pane.appendChild(discoverPanel());
+      pane.appendChild(corpusAddForm());
+      if (m.items.length) {
+        var box = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+          el("span", { class: "badge awaiting", text: "UNFROZEN" }, []),
+          el("span", { class: "dim", text: "  " + m.items.length + " items — freeze to pin the corpus (OR-7: after this, changes go to the scope-change queue)" }, []),
+          who, role, rat, el("div", {}, [btn])
+        ]);
+        pane.appendChild(box);
+      }
     }
     if ((m.gaps || []).length) {
       var g = el("div", { style: "margin-bottom:10px;" }, [el("b", { text: "Gap register (" + m.gaps.length + ")" }, [])]);
@@ -474,7 +894,16 @@ function renderCorpus() {
     Object.keys(fams).sort().forEach(function (f) {
       filt.appendChild(el("option", { value: f, text: f + " (" + fams[f] + ")" }, []));
     });
-    pane.appendChild(filt);
+    pane.appendChild(el("div", { style: "display:flex; align-items:center; gap:6px;" }, [
+      filt,
+      dlButton(state.pid + "-manifest.json", "application/json", function () { return JSON.stringify(m, null, 2); }, "Download the manifest (JSON)"),
+      dlButton(state.pid + "-manifest.csv", "text/csv", function () {
+        return toCsv((m.items || []).map(function (i) {
+          return { item_id: i.item_id, title: i.title, issuer: i.issuer, family: i.family,
+            status: i.status, locator: i.locator, evidence_role: i.evidence_role || "", url: i.url || "" };
+        }), ["item_id", "title", "issuer", "family", "status", "locator", "evidence_role", "url"]);
+      }, "Download the corpus as CSV")
+    ]));
     var tblWrap = el("div", {}, []);
     pane.appendChild(tblWrap);
     function drawRows(fam) {
@@ -484,7 +913,13 @@ function renderCorpus() {
       m.items.filter(function (i) { return !fam || i.family === fam; }).forEach(function (i) {
         table.appendChild(el("tr", {}, [
           el("td", {}, [el("b", { text: i.item_id }, []), el("div", { class: "dim", style: "font-size:11.5px;", text: (i.title || "").slice(0, 80) }, []),
-                        el("div", { class: "dim", style: "font-size:11px;", text: i.locator + " · " + (i.evidence_role || "") }, [])]),
+                        el("div", { class: "dim", style: "font-size:11px;", text: i.locator + " · " + (i.evidence_role || "") }, []),
+                        (m.frozen ? el("span", {}, []) : (function () {
+                          var rm = el("button", { text: "remove", style: "font-size:10.5px; padding:2px 7px; margin-top:3px; background:var(--bad);", onclick: function () {
+                            api("/api/programs/" + state.pid + "/manifest/items/" + encodeURIComponent(i.item_id), "DELETE")
+                              .then(function () { renderCorpus(); }).catch(function (e) { showError(e.message); });
+                          } }, []); return rm;
+                        })())]),
           el("td", { text: i.issuer }, []),
           el("td", {}, [el("span", { class: "badge " + (i.status === "live" ? "ratified" : "awaiting"), text: i.status }, [])])
         ]));
@@ -492,11 +927,20 @@ function renderCorpus() {
       tblWrap.appendChild(table);
     }
     drawRows("");
+    // Allow an in-place add (from the discovery queue) to refresh the table
+    // without re-rendering the whole tab and wiping the open queue.
+    window._redrawCorpusRows = m.frozen ? null : function () {
+      api("/api/programs/" + state.pid + "/manifest").then(function (mm) { m.items = mm.items || []; drawRows(filt.value); });
+    };
   }).catch(function () {
-    // No manifest yet — offer import
+    // No manifest yet — build one from scratch, or import a bundled slice.
+    window._redrawCorpusRows = null;
+    pane.appendChild(el("div", { class: "dim", style: "margin-bottom:8px;", text: "No corpus yet. Discover candidate sources, or add them one at a time:" }, []));
+    pane.appendChild(discoverPanel());
+    pane.appendChild(corpusAddForm());
     api("/api/slices").then(function (slices) {
-      if (!slices.length) { pane.appendChild(el("div", { class: "dim", text: "No corpus slices bundled with the app." }, [])); return; }
-      pane.appendChild(el("div", { class: "dim", style: "margin-bottom:8px;", text: "No manifest yet. Import a curated corpus slice:" }, []));
+      if (!slices.length) { return; }
+      pane.appendChild(el("div", { class: "dim", style: "margin:10px 0 8px;", text: "…or import a curated corpus slice bundled with the app:" }, []));
       slices.forEach(function (s) {
         var b = el("button", { text: "Import " + s.slice_id + " (" + s.items + " items)", onclick: function () {
           showError("");
@@ -516,8 +960,35 @@ function renderCorpus() {
 function renderBlueprint() {
   var pane = $("pane-blueprint"); pane.innerHTML = "";
   if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
-  api("/api/programs/" + state.pid + "/blueprint").then(function (b) {
+  Promise.all([
+    api("/api/programs/" + state.pid + "/blueprint"),
+    api("/api/programs/" + state.pid + "/corpus/status").catch(function () { return null; })
+  ]).then(function (_res) {
+    var b = _res[0], cs = _res[1];
     var c = b.counts;
+    // Distillation reads FETCHED source texts. If none are fetched, say so and
+    // let the user acquire them right here — keyed on acquisition status, so the
+    // notice clears the moment texts arrive (not on stale extraction errors).
+    if (cs && cs.counts && cs.counts.fetched === 0 && (cs.counts.pending + cs.counts.error) > 0) {
+      var need = cs.counts.pending + cs.counts.error;
+      var abProg = el("div", { class: "dim", style: "font-size:12px; margin-top:7px;" }, []);
+      var ab = el("button", { text: "Acquire source texts now", onclick: function () {
+        ab.disabled = true;
+        (function step() {
+          abProg.textContent = "fetching source texts…";
+          api("/api/programs/" + state.pid + "/corpus/acquire", "POST", { limit: 6, retry_errors: false }).then(function (r) {
+            var rc = r.counts;
+            abProg.textContent = rc.fetched + " fetched · " + rc.pending + " pending · " + rc.error + " errors";
+            if (r.processed > 0 && rc.pending > 0) { step(); } else { refreshTop(); renderBlueprint(); }
+          }).catch(function (e) { showError(e.message); ab.disabled = false; });
+        })();
+      } }, []);
+      pane.appendChild(el("div", { style: "border:1px solid var(--warn); background:rgba(217,164,65,.09); border-radius:8px; padding:10px 13px; margin-bottom:10px;" }, [
+        el("b", { text: "⚠ Source texts haven't been acquired yet" }, []),
+        el("div", { class: "dim", style: "font-size:12px; margin:4px 0 8px;", text: "Distillation reads each source's fetched text — but none have been fetched for this corpus. Acquire them here (fetching " + need + " sources may take a minute), then run “Distill next batch” below. You can also do this from the Corpus tab." }, []),
+        ab, abProg
+      ]));
+    }
     pane.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-bottom:8px;",
       text: "Scope: " + b.scope.slice(0, 220) + (b.scope.length > 220 ? "…" : "") }, []));
     var head = el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
@@ -528,6 +999,7 @@ function renderBlueprint() {
         a.href = "/api/programs/" + state.pid + "/blueprint/render"; a.target = "_blank";
         return a;
       })(),
+      dlDoc("/api/programs/" + state.pid + "/blueprint/render", state.pid + "-derived-blueprint.html"),
       (function () {
         var sb = el("button", { text: "Generate executive summary", style: "font-size:11.5px; margin-left:8px;", onclick: function () {
           sb.disabled = true; sb.textContent = "summarizing… (~1 min, advisory only)";
@@ -1075,6 +1547,30 @@ function renderOverview() {
     ]);
     pane.appendChild(hd);
 
+    // Next-step driver (spec/55 §6): always name the next action for this program.
+    var STAGE_TAB = { purpose: "purpose", corpus: "corpus", derived: "blueprint",
+      phase3: (o.mode === "redesign" ? "redesign" : "refactor"), target: "target", align: "align" };
+    var next = (o.stages || []).filter(function (s) { return !s.done; })[0];
+    if (next) {
+      pane.appendChild(el("div", { style: "border:1px solid var(--acc); border-radius:8px; padding:10px 13px; margin-bottom:14px;" }, [
+        el("div", { style: "font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--dim);", text: "Next step" }, []),
+        el("div", { style: "margin:3px 0 6px;" }, [el("b", { text: next.label }, []),
+          el("span", { class: "dim", text: "  " + (next.metric || "") }, [])]),
+        el("button", { text: "Go to " + next.label + " →", onclick: function () { showTab(STAGE_TAB[next.key] || "overview"); } }, [])
+      ]));
+    } else {
+      pane.appendChild(el("div", { style: "border:1px solid var(--ok); border-radius:8px; padding:9px 13px; margin-bottom:14px; color:var(--ok);",
+        text: "✓ All phases complete — download the program package below." }, []));
+    }
+
+    // Hero action (spec/54 §2.3c): one organized package of everything.
+    pane.appendChild(el("div", { style: "margin-bottom:14px;" }, [
+      el("button", { text: "⬇ Download program package", style: "font-weight:600;",
+        onclick: function () { window.location = "/api/programs/" + encodeURIComponent(state.pid) + "/package"; } }, []),
+      el("span", { class: "dim", style: "font-size:11.5px; margin-left:8px;",
+        text: "everything, organized — documents, decision log, corpus, transcripts" }, [])
+    ]));
+
     o.stages.forEach(function (st) {
       var row = el("div", { class: "ovstage" }, []);
       row.appendChild(el("div", { class: "dot", style: "color:" + (st.done ? "#1a7f37" : "#a9b0bd"),
@@ -1089,27 +1585,14 @@ function renderOverview() {
       if (st.link) {
         var a = el("a", { class: "doclink", text: "Open →" }, []);
         a.href = st.link; a.target = "_blank"; row.appendChild(a);
+        row.appendChild(dlDoc(st.link, state.pid + "-" + st.key + ".html"));
       }
       pane.appendChild(row);
     });
 
-    // decision log
-    pane.appendChild(el("div", { style: "margin:16px 0 6px 0;" }, [
-      el("b", { text: "Decision Log — " + o.decision_count + " entries" }, []),
-      el("span", { class: "dim", style: "font-size:12px;", text: "  every substantive act, on the record" }, [])
-    ]));
-    var box = el("div", { style: "max-height:46vh; overflow-y:auto; border:1px solid var(--line); border-radius:8px; padding:8px 11px;" }, []);
-    o.decisions.slice().reverse().forEach(function (dl) {
-      var who = (dl.decided_by || {});
-      box.appendChild(el("div", { class: "dlog" }, [
-        el("div", {}, [el("span", { class: "badge", text: dl.entry_id }, []),
-                       el("span", { class: "badge awaiting", text: dl.type }, []),
-                       el("b", { style: "font-size:12px;", text: "  " + (who.name || "?") + " (" + (who.role || who.capacity || "?") + ")" }, [])]),
-        el("div", { style: "margin-top:2px;", text: dl.decision || "" }, []),
-        dl.rationale ? el("div", { class: "dim", style: "font-size:11px; margin-top:1px;", text: "— " + dl.rationale }, []) : el("span", {}, [])
-      ]));
-    });
-    pane.appendChild(box);
+    // The decision log now lives in the read-only ledger on the right.
+    pane.appendChild(el("div", { class: "dim", style: "margin-top:14px; font-size:12px;",
+      text: "The full decision log, model provenance, and transcripts are in the Record panel on the right → (program-wide on this tab)." }, []));
   }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
 }
 
@@ -1135,13 +1618,14 @@ function renderTarget() {
     if (!htmlText) return;
     var openA = el("a", { class: "doclink", text: "Open Target Blueprint →" }, []);
     openA.href = url; openA.target = "_blank";
+    var dlA = dlDoc(url, state.pid + "-target-blueprint.html");
     var sb = el("button", { text: "Generate executive summary", style: "font-size:11.5px;", onclick: function () {
       sb.disabled = true; sb.textContent = "summarizing… (~1 min, advisory only)";
       api("/api/programs/" + state.pid + "/target-blueprint/summarize", "POST", {})
         .then(function () { renderTarget(); })
         .catch(function (e) { showError(e.message); sb.disabled = false; sb.textContent = "Generate executive summary"; });
     } }, []);
-    head.appendChild(el("div", { style: "margin-top:6px;" }, [openA, sb]));
+    head.appendChild(el("div", { style: "margin-top:6px;" }, [openA, dlA, sb]));
     var frame = el("iframe", { style: "width:100%; height:72vh; border:1px solid var(--line); border-radius:8px;" }, []);
     frame.srcdoc = htmlText;
     pane.appendChild(frame);
@@ -1158,7 +1642,8 @@ function renderAlign() {
     pane.appendChild(el("div", { style: "margin-bottom:8px;" }, [
       el("b", { text: "Align pass — accountability spine (Phase 4, P4.3–P4.5)" }, []),
       (function () { var a = el("a", { class: "doclink", text: "Open Crosswalk →" }, []);
-        a.href = "/api/programs/" + state.pid + "/crosswalk/render"; a.target = "_blank"; return a; })()
+        a.href = "/api/programs/" + state.pid + "/crosswalk/render"; a.target = "_blank"; return a; })(),
+      dlDoc("/api/programs/" + state.pid + "/crosswalk/render", state.pid + "-crosswalk.html")
     ]));
     pane.appendChild(el("div", { class: "dim", style: "font-size:12px; margin-bottom:8px;",
       text: "Every legacy provision accounted for exactly once. This is a working paper — where each provision went in the Target Blueprint. Drafting the consolidated instruments themselves (P4.2) is a separate, later step." }, []));
@@ -1217,7 +1702,7 @@ function renderAlign() {
 
 function applyTabVisibility(t) {
   function set(id, show) { var e = $(id); if (e) e.style.display = show ? "" : "none"; }
-  set("tab-overview", true); set("tab-purpose", true);
+  set("tab-overview", true); set("tab-purpose", true); set("tab-setup", true);
   set("tab-corpus", !!(t && t.corpus));
   set("tab-blueprint", !!(t && t.derived));
   set("tab-refactor", !!(t && t.refactor));
@@ -1226,8 +1711,28 @@ function applyTabVisibility(t) {
   set("tab-align", !!(t && t.align));
 }
 
+var TAB_HINTS = {
+  overview: "The whole project at a glance — what each step produced, links to open every document, and the log of human decisions.",
+  purpose: "What this project is for, agreed up front: is it a cleanup or a reshape, what is in scope, and the decision it supports.",
+  corpus: "The exact, frozen set of source rules this project works from — locked so the analysis can't shift onto other sources.",
+  blueprint: "The rulebook as it actually is, read and structured by AI: every duty and definition, contradictions kept, quotes checked against the source.",
+  refactor: "Proposed clean-ups you decide one at a time; each is labelled by its effect, and anything that would change the law is set aside, not done here.",
+  redesign: "Proposed changes that must each name an adopted objective they serve; only the responsible official signs them off.",
+  target: "The regime after your decisions: the blueprint plus the approved changes, and an honest list of what was left undecided.",
+  align: "Where every original rule ended up — merged, repealed, or kept — with a check that a cleanup did not change what the law requires.",
+  setup: "Choose the models this program uses for each task, then lock them — that makes it a ratified decision (required before you can freeze the corpus). What actually ran shows in the Record panel."
+};
+
 function showTab(which) {
-  ["overview", "purpose", "corpus", "blueprint", "refactor", "redesign", "target", "align"].forEach(function (t) {
+  var th = $("tabhint");
+  if (TAB_HINTS[which]) {
+    th.innerHTML = "";
+    th.appendChild(document.createTextNode(TAB_HINTS[which]));
+    var a = el("a", { text: "Full reading guide ↗", style: "white-space:nowrap;" }, []);
+    a.href = "/reading-guide.html"; a.target = "_blank"; th.appendChild(a);
+    th.style.display = "";
+  } else { th.style.display = "none"; }
+  ["overview", "purpose", "corpus", "blueprint", "refactor", "redesign", "target", "align", "setup"].forEach(function (t) {
     $("tab-" + t).className = which === t ? "on" : "";
     $("pane-" + t).classList.toggle("hidden", which !== t);
   });
@@ -1238,6 +1743,81 @@ function showTab(which) {
   if (which === "redesign") renderRedesign();
   if (which === "target") renderTarget();
   if (which === "align") renderAlign();
+  if (which === "setup") renderModels();
+  renderLedger(which);      // the read-only ledger re-scopes to this tab
+  setTerminal(which);       // the terminal's context label follows the tab
+}
+
+var LEDGER_PHASES = { overview: 1, purpose: 1, corpus: 1, blueprint: 1, refactor: 1, redesign: 1, target: 1, setup: 1 };
+
+function renderLedger(which) {
+  var body = $("ledger-body"), scope = $("ledger-scope");
+  var phase = LEDGER_PHASES[which] ? which : "overview";
+  if (scope) scope.textContent = phase;
+  if (!state.pid) { body.innerHTML = ""; body.appendChild(el("div", { class: "dim", text: "Select a program." }, [])); return; }
+  api("/api/programs/" + state.pid + "/ledger/" + phase).then(function (l) {
+    body.innerHTML = "";
+    // Decisions
+    var dh = el("div", { class: "ledsec" }, [el("span", { text: "Decisions (" + l.decisions.length + ")" }, [])]);
+    if (l.decisions.length) {
+      dh.appendChild(dlButton(state.pid + "-" + phase + "-decisions.csv", "text/csv", function () {
+        return toCsv(l.decisions.map(function (d) { var w = d.decided_by || {}; return {
+          entry_id: d.entry_id, timestamp: d.timestamp, type: d.type, decided_by: w.name || "",
+          role: w.role || w.capacity || "", decision: d.decision || "", rationale: d.rationale || "" }; }),
+          ["entry_id", "timestamp", "type", "decided_by", "role", "decision", "rationale"]);
+      }, "Download decisions CSV"));
+    }
+    body.appendChild(dh);
+    if (l.decisions.length) {
+      l.decisions.slice().reverse().forEach(function (d) {
+        var w = d.decided_by || {};
+        body.appendChild(el("div", { class: "ledcard" }, [
+          el("div", {}, [el("span", { class: "badge", text: d.entry_id || "" }, []),
+            el("span", { class: "badge awaiting", style: "margin-left:4px;", text: d.type || "" }, [])]),
+          el("div", { style: "margin-top:3px;", text: d.decision || "" }, []),
+          el("div", { class: "dim", style: "font-size:11px; margin-top:1px;", text: (w.name || "?") + " (" + (w.role || w.capacity || "?") + ")" + (d.rationale ? " — " + d.rationale : "") }, [])
+        ]));
+      });
+    } else { body.appendChild(el("div", { class: "dim", style: "font-size:12px;", text: "No decisions in this phase yet." }, [])); }
+    // Models used
+    body.appendChild(el("div", { class: "ledsec", text: "Models used (" + l.models.length + ")" }, []));
+    if (l.models.length) {
+      l.models.forEach(function (m) {
+        body.appendChild(el("div", { class: "ledcard" }, [
+          el("b", { text: TASK_LABELS[m.task] || m.task }, []),
+          el("div", { class: "dim", style: "font-size:11px; margin-top:1px;", text: m.model + " · " + m.calls + " call" + (m.calls === 1 ? "" : "s") + " · $" + (m.cost || 0).toFixed(4) }, [])
+        ]));
+      });
+    } else { body.appendChild(el("div", { class: "dim", style: "font-size:12px;", text: "No model runs in this phase yet." }, [])); }
+    // Conversation
+    body.appendChild(el("div", { class: "ledsec", text: "Conversation (" + l.conversation.length + ")" }, []));
+    if (l.conversation.length) {
+      l.conversation.forEach(function (c) {
+        body.appendChild(el("div", { class: "ledconv" }, [
+          el("div", { class: "dim", style: "font-size:10px; text-transform:uppercase; letter-spacing:.05em;", text: c.role + (c.source ? " · " + c.source : "") }, []),
+          el("div", { text: c.content || "" }, [])
+        ]));
+      });
+    } else { body.appendChild(el("div", { class: "dim", style: "font-size:12px;", text: "No conversation in this phase." }, [])); }
+  }).catch(function (e) { body.innerHTML = ""; body.appendChild(el("div", { class: "dim", style: "font-size:12px;", text: "—" }, [])); });
+}
+
+function setTerminal(which) {
+  var lbl = $("term-label"), sub = $("term-sub"), box = $("msgbox");
+  if (which === "corpus") {
+    state.termMode = "discovery";
+    lbl.textContent = "Source discovery"; sub.textContent = "answer to sharpen the search";
+    box.placeholder = "Your answer… (or “skip”)";
+    if (state.pid) startDiscovery(); else renderDisco();
+  } else {
+    state.termMode = "interview";
+    lbl.textContent = "Interview";
+    sub.textContent = (which === "purpose" || which === "overview")
+      ? (state.complete ? "interview complete" : "answer in the box below")
+      : "the Phase 0 interview";
+    box.placeholder = "Your answer…";
+    renderMsgs(chatHistory, false);
+  }
 }
 
 $("newbtn").addEventListener("click", createProgram);
@@ -1255,15 +1835,7 @@ $("tab-refactor").addEventListener("click", function () { showTab("refactor"); }
 $("tab-redesign").addEventListener("click", function () { showTab("redesign"); });
 $("tab-target").addEventListener("click", function () { showTab("target"); });
 $("tab-align").addEventListener("click", function () { showTab("align"); });
-function showMid(which) {
-  $("mtab-chat").className = which === "chat" ? "on" : "";
-  $("mtab-models").className = which === "models" ? "on" : "";
-  $("mid-chat").classList.toggle("hidden", which !== "chat");
-  $("mid-models").classList.toggle("hidden", which !== "models");
-  if (which === "models") renderModels();
-}
-$("mtab-chat").addEventListener("click", function () { showMid("chat"); });
-$("mtab-models").addEventListener("click", function () { showMid("models"); });
+$("tab-setup").addEventListener("click", function () { showTab("setup"); });
 Array.prototype.forEach.call(document.querySelectorAll(".lsec-head"), function (h) {
   h.addEventListener("click", function () {
     var body = $("lsec-" + h.getAttribute("data-sec"));
@@ -1271,6 +1843,20 @@ Array.prototype.forEach.call(document.querySelectorAll(".lsec-head"), function (
     var caret = h.querySelector("span"); if (caret) caret.textContent = body.classList.contains("hidden") ? "▸" : "▾";
   });
 });
+
+// Drag-resize the terminal (spec/55): adjust the layout's bottom grid row.
+(function () {
+  var handle = $("term-resize"), layout = document.querySelector(".layout"), dragging = false;
+  if (!handle) return;
+  handle.addEventListener("mousedown", function (e) { dragging = true; document.body.classList.add("resizing"); e.preventDefault(); });
+  window.addEventListener("mousemove", function (e) {
+    if (!dragging) return;
+    var h = window.innerHeight - e.clientY;
+    h = Math.max(90, Math.min(Math.round(window.innerHeight * 0.75), h));
+    layout.style.gridTemplateRows = "1fr " + h + "px";
+  });
+  window.addEventListener("mouseup", function () { if (dragging) { dragging = false; document.body.classList.remove("resizing"); } });
+})();
 
 applyTabVisibility(null);
 refreshTop().catch(function (e) { showError("Could not reach the workbench API: " + e.message); });

@@ -177,6 +177,7 @@ def test_endpoints_gated_on_frozen_manifest_and_ratified_ps(approot):  # noqa: F
     c = _mk_app(approot, ratified=False)
     assert c.get("/api/programs/p1/blueprint").status_code == 404  # no manifest yet
     c.post("/api/programs/p1/manifest/import", json={"slice_id": "aml-program-rules-slice"})
+    c.post("/api/programs/p1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "r"})
     c.post("/api/programs/p1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     r = c.get("/api/programs/p1/blueprint")
     assert r.status_code == 409 and "not ratified" in r.json()["detail"]
@@ -185,6 +186,7 @@ def test_endpoints_gated_on_frozen_manifest_and_ratified_ps(approot):  # noqa: F
 def test_extract_flow_via_api(approot):  # noqa: F811
     c = _mk_app(approot, ratified=True)
     c.post("/api/programs/p1/manifest/import", json={"slice_id": "aml-program-rules-slice"})
+    c.post("/api/programs/p1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "r"})
     c.post("/api/programs/p1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     # fake acquisition for two items
     ct = approot / "programs/p1/governed/corpus_texts"
@@ -274,6 +276,7 @@ def test_reconcile_evicts_stale_empty_and_heals_register(tmp_path):
 def test_blueprint_render_endpoint(approot):  # noqa: F811
     c = _mk_app(approot, ratified=True)
     c.post("/api/programs/p1/manifest/import", json={"slice_id": "aml-program-rules-slice"})
+    c.post("/api/programs/p1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "r"})
     c.post("/api/programs/p1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     gov = approot / "programs/p1/governed"
     (gov / "corpus_texts").mkdir(parents=True, exist_ok=True)
@@ -323,6 +326,7 @@ def test_summary_generated_and_rendered_as_advisory(approot):  # noqa: F811
     ps = json.loads(json.dumps(MIN_PS)); ps["program_id"] = "p1"; ps["status"] = "ratified"
     (approot / "programs/p1/governed/purpose_statement.json").write_text(json.dumps(ps))
     c.post("/api/programs/p1/manifest/import", json={"slice_id": "aml-program-rules-slice"})
+    c.post("/api/programs/p1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "r"})
     c.post("/api/programs/p1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     r = c.post("/api/programs/p1/blueprint/summarize")
     assert r.status_code == 200

@@ -103,6 +103,7 @@ def test_endpoints_gated_on_frozen_manifest(approot):  # noqa: F811
     c.post("/api/programs/p1/manifest/import", json={"slice_id": "aml-program-rules-slice"})
     assert c.get("/api/programs/p1/corpus/status").status_code == 409      # unfrozen
     assert c.post("/api/programs/p1/corpus/acquire", json={}).status_code == 409
+    c.post("/api/programs/p1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "r"})
     c.post("/api/programs/p1/manifest/freeze",
            json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     s = c.get("/api/programs/p1/corpus/status").json()

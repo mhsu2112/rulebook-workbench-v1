@@ -234,6 +234,7 @@ def _api_app(approot):  # noqa: F811
     ps["program_id"] = "p1"; ps["status"] = "ratified"
     (approot / "programs/p1/governed/purpose_statement.json").write_text(json.dumps(ps))
     c.post("/api/programs/p1/manifest/import", json={"slice_id": "aml-program-rules-slice"})
+    c.post("/api/programs/p1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "r"})
     c.post("/api/programs/p1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     return c
 

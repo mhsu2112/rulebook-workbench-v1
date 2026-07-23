@@ -74,6 +74,52 @@ def import_slice(program_dir: str | Path, slice_doc: dict, program_id: str) -> d
     return doc
 
 
+_ITEM_FIELDS = ["item_id", "title", "issuer", "family", "status", "locator",
+                "evidence_role", "applicability", "url", "note"]
+_ITEM_REQUIRED = ["item_id", "title", "issuer", "family", "status", "locator"]
+
+
+def add_item(program_dir: str | Path, item: dict, program_id: str) -> dict:
+    """Append one source to the (unfrozen) manifest, creating it if absent.
+    Lets a program build a corpus in-app instead of from a hand-authored slice."""
+    doc = load(program_dir)
+    if doc is None:
+        doc = {"program_id": program_id, "manifest_version": "0.1", "frozen": False,
+               "frozen_at": None, "content_hash": None, "scope_contract_version": None,
+               "source_note": "assembled in-app", "items": []}
+    if doc.get("frozen"):
+        raise FrozenError("Manifest is frozen (OR-7) — new material goes to the scope-change queue")
+    missing = [k for k in _ITEM_REQUIRED if not str(item.get(k) or "").strip()]
+    if missing:
+        raise ManifestError(f"Missing required field(s): {', '.join(missing)}")
+    iid = item["item_id"].strip()
+    if any(i["item_id"] == iid for i in doc["items"]):
+        raise ManifestError(f"item_id '{iid}' is already in the manifest")
+    clean = {k: item[k] for k in _ITEM_FIELDS if item.get(k) not in (None, "")}
+    clean["item_id"] = iid
+    doc["items"].append(clean)
+    jsonschema.validate(doc, _schema())
+    pth = manifest_path(program_dir)
+    pth.parent.mkdir(parents=True, exist_ok=True)
+    pth.write_text(json.dumps(doc, indent=2))
+    return doc
+
+
+def remove_item(program_dir: str | Path, item_id: str) -> dict:
+    """Drop one source from the unfrozen manifest (before freezing)."""
+    doc = load(program_dir)
+    if doc is None:
+        raise ManifestError("No manifest")
+    if doc.get("frozen"):
+        raise FrozenError("Manifest is frozen (OR-7) — items cannot be removed")
+    before = len(doc["items"])
+    doc["items"] = [i for i in doc["items"] if i["item_id"] != item_id]
+    if len(doc["items"]) == before:
+        raise ManifestError(f"item_id '{item_id}' not found")
+    manifest_path(program_dir).write_text(json.dumps(doc, indent=2))
+    return doc
+
+
 def freeze(program_dir: str | Path) -> dict:
     """Freeze the manifest: hash, timestamp, immutability. Caller logs the ⚖."""
     doc = load(program_dir)
