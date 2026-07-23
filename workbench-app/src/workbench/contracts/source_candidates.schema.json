@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foundry.local/schemas/source_candidates.schema.json",
+  "title": "SourceCandidates",
+  "description": "Model-expanded census proposals (spec/53). NOT a governed artifact: candidates a human reviews before any enters the manifest. Locators here are unverified until checked against the live catalog.",
+  "type": "object",
+  "required": ["candidates"],
+  "additionalProperties": false,
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "issuer", "family", "rationale"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "maxLength": 300 },
+          "issuer": { "type": "string", "maxLength": 160, "description": "Issuing agency or 'Congress' — required so the accepted manifest item has a non-empty issuer" },
+          "family": { "type": "string", "maxLength": 60, "description": "e.g. statute, regulation, guidance, exam_manual, sro_rule_guidance" },
+          "cfr_locator": { "type": ["string", "null"], "maxLength": 160, "description": "e.g. '12 CFR Part 1266' — omit if unsure; do not invent" },
+          "usc_locator": { "type": ["string", "null"], "maxLength": 160, "description": "e.g. '12 U.S.C. 1430' — omit if unsure; do not invent" },
+          "url": { "type": ["string", "null"], "maxLength": 600, "description": "Official URL for guidance/manuals when known" },
+          "status": { "type": ["string", "null"], "enum": ["live", "proposed", "superseded", "rescinded", "expired", "stayed", "vacated", null] },
+          "evidence_role": { "type": ["string", "null"], "maxLength": 60 },
+          "rationale": { "type": "string", "maxLength": 600, "description": "One line: why this source is in scope" }
+        }
+      }
+    }
+  }
+}

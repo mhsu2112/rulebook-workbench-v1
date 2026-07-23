@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How to Read the Workbench</title>
+<style>
+body { font: 15px/1.65 -apple-system, Segoe UI, sans-serif; color: #1a1f2e; max-width: 46rem; margin: 2rem auto; padding: 0 1.2rem; }
+h1 { font-size: 1.6rem; border-bottom: 2px solid #1a1f2e; padding-bottom: .4rem; }
+h2 { font-size: 1.2rem; margin-top: 2.2rem; color: #31456e; }
+h3 { font-size: 1.02rem; margin-top: 1.4rem; }
+.tab { border-left: 3px solid #31456e; background: #f4f6fa; padding: .6rem 1rem; margin: 1rem 0; border-radius: 0 6px 6px 0; }
+.tab .label { font-weight: 700; }
+.plain { color: #1a1f2e; }
+.jargon { background: #fbf7ec; border: 1px solid #e6d9b0; border-radius: 8px; padding: .8rem 1rem; margin: 1rem 0; }
+.jargon dt { font-weight: 700; margin-top: .5rem; }
+.jargon dd { margin: 0 0 .1rem 0; color: #3a4256; }
+table { border-collapse: collapse; width: 100%; margin: .8rem 0; font-size: .92rem; }
+th, td { border: 1px solid #d7dbe4; padding: .4rem .6rem; text-align: left; vertical-align: top; }
+th { background: #eef1f6; }
+.note { color: #5a6172; font-size: .92rem; }
+@media print { body { max-width: none; } }
+</style>
+</head>
+<body>
+
+<h1>How to Read the Workbench</h1>
+<p><i>A plain-English companion for policy readers. No technical background needed. It
+explains, in order, what each tab is, how to read each document the workbench produces,
+and what the recurring terms mean. Ten minutes cover to cover; or jump to the tab you're
+looking at.</i></p>
+
+<h2>The one-paragraph picture</h2>
+<p>A body of regulation is like a building added onto for a century with no master
+drawing. This tool does four things, in order. It <b>reads</b> the whole rulebook and
+draws it as it actually stands (the <b>Derived Blueprint</b>). A person then either
+<b>cleans up the drawing</b> without changing what the rules require (<b>Refactor</b>) or
+<b>reshapes it</b> to serve stated goals (<b>Redesign</b>), producing the <b>Target
+Blueprint</b>. Finally it shows <b>where every original rule ended up</b> (the
+<b>Crosswalk</b>, under <b>Align</b>). Nothing it produces is law — it produces working
+papers for the authority that owns the rules. The tabs across the top follow exactly that
+order, left to right.</p>
+
+<h2>The screen, in three parts</h2>
+<p><b>Left panel</b> — the list of <b>Programs</b> (each is one consolidation project),
+the <b>Guides</b> (this document, the About page, and the reviewer guides), and at the
+bottom your name and a <b>Read only</b> switch that hides all the action buttons so you
+can look without touching anything.</p>
+<p><b>Middle panel</b> — the working area. Its tabs follow the four-step method.</p>
+<p><b>Right panel</b> — a <b>Chat</b> used for the opening interview, and a <b>Models</b>
+view showing which AI model does each task (you can ignore this unless you're curious).</p>
+
+<h2>How to read each tab</h2>
+
+<div class="tab"><span class="label">Overview</span> — <span class="plain">The whole
+project at a glance.</span> A checklist of the four steps showing what each one produced
+(e.g. "411 obligations," "170 operations"), a button to open each finished document, and
+the <b>Decision Log</b> — every choice a human made, with their name and reason. Start
+here. If you read nothing else, the Overview tells you where the project stands and lets
+you open every output.</div>
+
+<div class="tab"><span class="label">Purpose</span> — <span class="plain">What this
+project is for, agreed up front.</span> Before any analysis, a short interview pins down:
+is this a <b>cleanup</b> or a <b>reshape</b>; which rules are in and out of scope; what
+decision the result is meant to support. This becomes the <b>Purpose Statement</b>, which
+everything downstream must stay true to. Reading it tells you the project's mandate and
+boundaries in a sentence or two.</div>
+
+<div class="tab"><span class="label">Corpus</span> — <span class="plain">The exact set of
+source rules the project works from.</span> "Corpus" just means "the body of source
+material." The list is <b>frozen</b> — locked with a fingerprint — so the analysis can't
+quietly shift onto different sources later. Each entry is a statute, regulation, guidance
+document, manual, or (as evidence only) an enforcement action.</div>
+
+<div class="tab"><span class="label">Derived Blueprint</span> — <span class="plain">The
+rulebook as it actually is, read and organized by AI.</span> This is the first big output.
+It lists every duty, every defined term, and how the pieces connect — grouped into
+families. Crucially, it is <b>faithful, not tidy</b>: where the sources contradict each
+other or define a word two ways, it records both rather than fixing them. Fixing is a later
+step. Every statement is backed by an exact quote from the source, and a ✓ means the tool
+checked that the quote really appears there. (How to read the document itself is below.)</div>
+
+<div class="tab"><span class="label">Refactor</span> — <span class="plain">Proposed
+clean-ups, one decision at a time.</span> The tool proposes tidy-ups — merge three copies
+of the same duty, give a term one official definition, retire a dead reference — and
+<b>you decide each one</b>. Every proposal is labelled with its <b>effect</b> (does it
+restate the law, clarify it, or actually change it?), and anything that would change the
+law is set aside rather than done here. This is where human judgment concentrates.</div>
+
+<div class="tab"><span class="label">Redesign</span> — <span class="plain">Proposed
+changes that serve stated goals.</span> (Only appears on reshape projects.) Here changing
+the rules is the point — but under tighter control: first the responsible official adopts
+a ranked list of <b>objectives</b> (the <b>Mandate</b>), and then every proposed change
+must name which objective it serves and is signed off by that official. A change with no
+objective behind it can't even enter the queue.</div>
+
+<div class="tab"><span class="label">Target Blueprint</span> — <span class="plain">The
+regime after your decisions.</span> The second big output: the Derived Blueprint plus all
+the approved changes, each still showing who approved it and why. It also lists what was
+<b>deliberately left undecided</b> — the honest record of questions parked for later.</div>
+
+<div class="tab"><span class="label">Align</span> — <span class="plain">Where every
+original rule ended up.</span> The <b>Crosswalk</b>: for each source provision, was it
+<b>merged</b> into a consolidated home, <b>repealed</b>, or <b>kept as-is</b> — each with a
+reason. Nothing vanishes silently. It also runs a check that confirms a "cleanup" really
+didn't change the law (or, on a reshape, that every change traces to a decision).</div>
+
+<h2>How to read the documents it produces</h2>
+
+<h3>The Derived Blueprint and Target Blueprint documents</h3>
+<p>Open either with the teal <b>📄 Open</b> button. Both start with an optional
+<b>Executive summary</b> in an amber box — a plain-English orientation to the regime and
+where to focus. <b>The amber box is a reading aid, not the record</b>; if it and the tables
+ever disagree, the tables win. Below it, the material is grouped by <b>family</b>
+(a cluster of related rules). Duties appear as table rows — <i>who</i> must do <i>what</i>,
+<i>when</i>, above what <i>threshold</i>, with what <i>exceptions</i> — each with its source
+quote. Definitions are listed as given. The Target Blueprint document additionally shows,
+for each approved change, the operation and the person who approved it.</p>
+
+<h3>The Crosswalk document (from Align)</h3>
+<p>A single table: every original provision on the left, its fate on the right (merged /
+repealed / kept), and the reason. At the top is the <b>effect-class audit</b> — the line
+that says, in effect, "we checked, and the cleanup changed nothing it shouldn't have." For
+a policy reader, that audit line is the trust anchor: it's the machine confirming the human
+claims.</p>
+
+<h3>The Decision Log (on the Overview)</h3>
+<p>An unchangeable, running list of every decision a person made — ratifying the purpose,
+disposing of a proposal, freezing the corpus — each stamped with a name, a role, a reason,
+and a time. This is the project's accountability record. You can hand it to an auditor.</p>
+
+<h3>The Defect Register (appendix of the Derived Blueprint)</h3>
+<p>The flaws the tool found in the <i>source</i> rulebook — duplicated duties, terms defined
+two ways, dead references, gaps. These are findings, not fixes; the fixes happen in Refactor.
+Each flaw has a short code (D1–D10) explained in the glossary below.</p>
+
+<h2>Glossary — the recurring terms in plain words</h2>
+<div class="jargon">
+<dl>
+<dt>Obligation</dt><dd>A duty a rule imposes: who must do what, when.</dd>
+<dt>Definition</dt><dd>A term the rules define — and the tool flags where the same term is
+defined inconsistently.</dd>
+<dt>Family</dt><dd>A cluster of related rules (e.g. "reporting requirements"), used to
+organize the blueprint instead of by which agency issued what.</dd>
+<dt>Corpus</dt><dd>The body of source material — the rulebook being analyzed.</dd>
+<dt>Frozen / manifest</dt><dd>The source list is locked with a fingerprint so it can't
+change unnoticed mid-project.</dd>
+<dt>Defect (D1–D10)</dt><dd>A flaw in the <i>source</i> rulebook the tool found: e.g. D1
+conflicting duties, D2 a term defined two ways, D3 duplicates, D4 an undefined term, D5 a
+dead reference, D9 a gap.</dd>
+<dt>Operation</dt><dd>One proposed change to the blueprint, from a fixed menu (merge, repeal,
+give-one-definition, etc.). Free-form edits aren't allowed — only named moves.</dd>
+<dt>Effect class</dt><dd>The label on every proposed change: <b>codify</b> (just restates
+what the law already requires), <b>clarify</b> (resolves an ambiguity), <b>fill-gap</b>
+(makes explicit a duty that was already implied), <b>change</b> (actually alters what the law
+requires). In a cleanup, "change" is not allowed — it's set aside.</dd>
+<dt>Disposition</dt><dd>A human's decision on a proposal: accept, modify, reject, or park it.</dd>
+<dt>Mandate / objective (reshape only)</dt><dd>The ranked goals the responsible official
+adopts; every change in a reshape must serve one.</dd>
+<dt>Misalignment (M1–M5)</dt><dd>A gap between the cleaned rulebook and the goals: e.g. a
+goal nothing serves, or a rule serving no goal.</dd>
+<dt>Crosswalk</dt><dd>The map of where every old provision went — merged, repealed, or kept.</dd>
+<dt>Provenance / citation</dt><dd>The source trail: every statement links to the exact rule
+it came from, with the quote checked (✓) against the original.</dd>
+<dt>Ratify</dt><dd>A formal human sign-off that locks an artifact (the purpose, the corpus,
+the final blueprint).</dd>
+</dl>
+</div>
+
+<p class="note">One line to keep in mind throughout: <b>the tool proposes and checks; people
+decide.</b> Nothing here is operative law — it's a set of carefully evidenced working papers
+for the authority that owns the rules.</p>
+
+</body>
+</html>

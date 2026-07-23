@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<DIV5 N="609" TYPE="PART" VOLUME="5" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-10/part-609&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;10 CFR Part 609&amp;quot;}">
+<HEAD>PART 609&#x2014;LOAN GUARANTEES FOR CLEAN ENERGY PROJECTS
+</HEAD>
+<AUTH>
+<HED>Authority:</HED><PSPACE>42 U.S.C. 7254, 16511-16517.
+</PSPACE></AUTH>
+<SOURCE>
+<HED>Source:</HED><PSPACE>88 FR 34428, May 30, 2023, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="609.1" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.1&quot;,&quot;citation&quot;:&quot;10 CFR 609.1&quot;}">
+<HEAD>&#xA7; 609.1 Purpose and scope.</HEAD>
+<P>(a) This part sets forth the policies and procedures that DOE uses for receiving, evaluating, and approving applications for loan guarantees to support Eligible Projects under Title XVII, including sections 1703 and 1706, of the Energy Policy Act of 2005.</P>
+<P>(b) This part applies to all Applications, Conditional Commitments, and Loan Guarantee Agreements.</P>
+<P>(c) Section 600.22 of title 10 of the Code of Federal Regulations shall not apply to actions taken under this part.</P>
+</DIV8>
+
+<DIV8 N="609.2" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.2&quot;,&quot;citation&quot;:&quot;10 CFR 609.2&quot;}">
+<HEAD>&#xA7; 609.2 Definitions.</HEAD>
+<P>When used in this part the following words have the following meanings.</P>
+<P><I>Administrative Cost of a Loan Guarantee</I> means</P>
+<P>(1) The total of all administrative expenses that DOE incurs during:</P>
+<P>(i) The evaluation of an Application for a Guarantee;</P>
+<P>(ii) The negotiation and offer of a Term Sheet;</P>
+<P>(iii) The negotiation of a Loan Guarantee Agreement and related documents, including the issuance of a Guarantee; and</P>
+<P>(iv) The servicing and monitoring of a Loan Guarantee Agreement, including during the construction, startup, commissioning, shakedown, and operational phases of an Eligible Project.</P>
+<P>(2) The Administrative Cost of a Loan Guarantee does not include Transaction Costs.</P>
+<P><I>Applicant</I> means a prospective Borrower, Project Sponsor, or Eligible Lender that submits an Application to DOE.</P>
+<P><I>Application</I> means a submission of written materials to DOE completed in accordance with the applicable requirements published by DOE in guidance on the Title XVII website.</P>
+<P><I>Attorney General</I> means the Attorney General of the United States.</P>
+<P><I>Borrower</I> means any Person that enters into a Loan Guarantee Agreement with DOE and issues or otherwise becomes obligated for the Guaranteed Obligations.</P>
+<P><I>Cargo Preference Act</I> means the Cargo Preference Act of 1954, 46 U.S.C. 55305, as amended.</P>
+<P><I>Commercial Technology</I> means a technology in general use in the commercial marketplace in the United States at the time the Term Sheet is offered by DOE. A technology is in general use if it is being used in three or more facilities that are in commercial operation in the United States for the same general purpose as the proposed project, and has been used in each such facility for a period of at least five years. The five-year period for each facility shall start on the in-service date of the facility employing that particular technology or, in the case of a retrofit of a facility to employ a particular technology, the date the facility resumes commercial operation following completion and testing of the retrofit. For purposes of this section, facilities considered to be in commercial operation for five years include projects that have been the recipients of a loan guarantee from DOE under this part whether or not commercial operations have commenced.</P>
+<P><I>Conditional Commitment</I> means a Term Sheet offered by DOE and accepted by the offeree of the Term Sheet, all in accordance with &#xA7; 609.6.</P>
+<P><I>Contracting Officer</I> means the Secretary of Energy or a DOE official authorized by the Secretary to enter into, administer or terminate DOE Loan Guarantee Agreements and related contracts on behalf of DOE.</P>
+<P><I>Credit Subsidy Cost</I> has the same meaning as &#x201C;cost of a loan guarantee&#x201D; in section 502(5)(C) of the Federal Credit Reform Act of 1990.</P>
+<P><I>Davis-Bacon Act</I> means the statute referenced in section 1702(k) of Title XVII.</P>
+<P><I>DOE</I> means the United States Department of Energy.</P>
+<P><I>Eligible Lender</I> means:</P>
+<P>(1) Any Person formed for the purpose of, or engaged in the business of, lending money, including State Energy Financing Institutions, financial institutions, and trusts or other entities designated as trustees or agents acting on behalf of institutional investors, bondholders, or other lenders that, as determined by DOE in each case, is:</P>
+<P>(i) Not debarred or suspended from participation in a Federal Government contract or participation in a non-procurement activity (under a set of uniform regulations implemented for numerous agencies, such as DOE, at 2 CFR part 180);</P>
+<P>(ii) Not delinquent on any Federal debt or loan;</P>
+<P>(iii) Legally authorized and empowered to enter into loan guarantee transactions authorized by Title XVII and this part;</P>
+<P>(iv) Able to demonstrate experience in originating and servicing loans for commercial projects similar in size and scope to the Eligible Project, or able to procure such experience through contracts acceptable to DOE; and</P>
+<P>(v) Able to demonstrate experience as the lead lender or underwriter by presenting evidence of its participation in large commercial projects or energy-related projects or other relevant experience, or able to procure such experience through contracts acceptable to DOE; or</P>
+<P>(2) The Federal Financing Bank.</P>
+<P><I>Eligible Project</I> has the meaning set forth in &#xA7; 609.3.</P>
+<P><I>Energy Dominance Financing Project</I> has the meaning set forth in &#xA7; 609.3.</P>
+<P><I>Energy Infrastructure</I> means a facility, and associated equipment, used for enabling the identification, leasing, development, production, processing, transportation, transmission, refining, and generation needed for energy and critical minerals.</P>
+<P><I>Equity</I> means cash, and at DOE's sole discretion and subject to DOE's sole determination of value, in-kind contributions and property, in each case contributed to the permanent capital stock (or equivalent) of the Borrower or the Eligible Project by the shareholders or other owners of the Borrower or the Eligible Project. In-kind contributions may not include services, but may include physical and/or intellectual property. Equity does not include proceeds from the non-guaranteed portion of a Guaranteed Obligation, proceeds from any other non-guaranteed loan or obligation of the Borrower, or the value of any Federal, State, or local government assistance or support or any cost-share requirements under a Federal award.</P>
+<P><I>Facility Fee</I> means the fee, to be paid in the amount and in the manner provided in the Term Sheet, to cover the Administrative Cost of a Loan Guarantee for the period from the Application through issuance of the Guarantee.</P>
+<P><I>Federal Financing Bank</I> means an instrumentality of the United States Government created by the Federal Financing Bank Act of 1973, under the general supervision of the Secretary of the Treasury.</P>
+<P><I>Guarantee</I> means the undertaking of the United States of America, acting through the Secretary pursuant to Title XVII, to pay in accordance with the terms thereof, principal and interest of a Guaranteed Obligation.</P>
+<P><I>Guaranteed Obligation</I> means any loan or other debt obligation of the Borrower for an Eligible Project for which DOE guarantees all or any part of the payment of principal and interest under a Loan Guarantee Agreement entered into pursuant to Title XVII.</P>
+<P><I>Holder</I> means any Person that holds a promissory note made by the Borrower evidencing the Guaranteed Obligation (or his or her designee or agent).</P>
+<P><I>Innovative Energy Project</I> has the meaning set forth in &#xA7; 609.3.</P>
+<P><I>Innovative Supply Chain Project</I> has the meaning set forth in &#xA7; 609.3.</P>
+<P><I>Intercreditor Agreement</I> means any agreement or instrument (or amendment or modification thereof) among DOE and one or more other Persons providing financing or other credit arrangements to the Borrower (or an Eligible Project) or that otherwise provides for rights of DOE in respect of a Borrower or in respect of an Eligible Project, in each case in form and substance satisfactory to DOE.</P>
+<P><I>Loan Agreement</I> means a written agreement between a Borrower and an Eligible Lender containing the terms and conditions under which the Eligible Lender will make a loan or loans to the Borrower for an Eligible Project.</P>
+<P><I>Loan Guarantee Agreement</I> means a written agreement that, when entered into by DOE and a Borrower, and, if applicable, an Eligible Lender, establishes the obligation of DOE to guarantee the payment of all or a portion of the principal of, and interest on, specified Guaranteed Obligations, subject to the terms and conditions specified in the Loan Guarantee Agreement.</P>
+<P><I>Maintenance Fee</I> means the fee, to be paid in the amount and manner provided in the Term Sheet, to cover the Administrative Cost of a Loan Guarantee, other than extraordinary expenses, incurred in servicing and monitoring a Loan Guarantee Agreement after the issuance of the Guarantee.</P>
+<P><I>New or Significantly Improved Technology</I> means</P>
+<P>(1) A technology, or a defined suite of technologies, concerned with the production, storage, consumption, or transportation of energy, including of associated critical minerals and other components or other eligible energy-related project categories under section 1703(b) of Title XVII, and that is not a Commercial Technology, and that either:</P>
+<P>(i) Has only recently been developed, discovered, or learned; or</P>
+<P>(ii) Involves or constitutes one or more meaningful and important improvements in productivity or value, in comparison to Commercial Technologies in use in the United States at the time the Term Sheet is issued.</P>
+<P>(2) If regional variation significantly affects the deployment of a technology, such technology may still be considered &#x201C;New or Significantly Improved Technology&#x201D; if no more than 6 projects employ the same or similar technology as another project, provided no more than 2 projects that use the same or a similar technology are located in the same region of the United States.</P>
+<P><I>OMB</I> means the Office of Management and Budget in the Executive Office of the President.</P>
+<P><I>Person</I> means any natural person or any legally constituted entity, including a state or local government, tribe, corporation, company, voluntary association, partnership, limited liability company, joint venture, and trust.</P>
+<P><I>Project Costs</I> mean those costs, including escalation and contingencies, that are expended or accrued by a Borrower and are necessary, reasonable, customary, and directly related to the design, engineering, financing, construction, startup, commissioning, and shakedown of an Eligible Project, as specified in &#xA7; 609.10. Project Costs do not include costs for the items set forth in &#xA7; 609.10(d).</P>
+<P><I>Project Sponsor</I> means any Person that assumes substantial responsibility for the development, financing, and structuring of an Eligible Project and owns or controls, by itself and/or through individuals in common or affiliated business entities, a five percent or greater interest in the proposed Eligible Project or the Borrower.</P>
+<P><I>Reasonable Prospect of Repayment</I> has the meaning set forth in 42 U.S.C. 16512(d)(1)(B).</P>
+<P><I>Risk-Based Charge</I> means a charge that, together with the principal and interest on the Guaranteed Obligation, or at such other times as DOE may determine, is payable on specified dates during the term of a Guaranteed Obligation.</P>
+<P><I>Secretary</I> means the Secretary of Energy or a duly authorized designee or successor in interest.</P>
+<P><I>State</I> means any State, the District of Columbia, the Commonwealth of Puerto Rico, the Virgin Islands, Guam, American Samoa, and any territory or possession of the United States.</P>
+<P><I>State Energy Financing Institution</I> means</P>
+<P>(1) A quasi-independent entity or an entity within a State agency or financing authority established by a State:</P>
+<P>(i) To provide financing support or credit enhancements, including loan guarantees and loan loss reserves, for Eligible Projects; and</P>
+<P>(ii) To create liquid markets for eligible projects, including warehousing and securitization, or take other steps to reduce financial barriers to the deployment of existing and new Eligible Projects.</P>
+<P>(2) The term &#x201C;State Energy Financing Institution&#x201D; includes an entity or organization established by an Indian Tribal entity or an Alaska Native Corporation to achieve the purposes described in paragraphs (1)(i) and (ii) of this definition.</P>
+<P><I>State Energy Financing Institution Project</I> has the meaning set forth in &#xA7; 609.3.</P>
+<P><I>Term Sheet</I> means a written offer for the issuance of a loan guarantee, executed by the Secretary (or a DOE official authorized by the Secretary to execute such offer), delivered to the Applicant, that sets forth the detailed terms and conditions under which DOE and the Applicant will execute a Loan Guarantee Agreement.</P>
+<P><I>Title XVII</I> means Title XVII of the Energy Policy Act of 2005 (42 U.S.C. 16511-16517), as amended.</P>
+<P><I>Title XVII Loan Guarantee Program</I> means the program administered by DOE pursuant to Title XVII, regulations under this part, DOE guidance and policy documents, and other applicable laws and requirements.</P>
+<P><I>Transaction Costs</I> mean:</P>
+<P>(1)(i) Out-of-pocket costs of financial, legal, and other professional services associated with the financing of an Eligible Project, including services necessary to obtain required licenses and permits, prepare environmental reports and data, conduct legal and technical due diligence, develop and audit a financial model, negotiate the terms and provisions of project contracts and financing documents, including those costs associated with the advisors to DOE and any other Eligible Lender; and</P>
+<P>(ii) Costs of issuing Eligible Project debt, such as commitment fees, upfront fees, and other applicable financing fees, costs and expenses imposed by Eligible Lenders.</P>
+<P>(2) Transaction Costs do not include the Administrative Cost of a Loan Guarantee or Credit Subsidy Costs.</P>
+<P><I>United States</I> means the several States, the District of Columbia, the Commonwealth of Puerto Rico, the Virgin Islands, Guam, American Samoa, and any territory or possession of the United States of America.</P>
+<CITA TYPE="N">[88 FR 34428, May 30, 2023, as amended at 90 FR 48710, Oct. 28, 2025]
+</CITA>
+</DIV8>
+
+<DIV8 N="609.3" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.3&quot;,&quot;citation&quot;:&quot;10 CFR 609.3&quot;}">
+<HEAD>&#xA7; 609.3 Title XVII eligible projects.</HEAD>
+<P>(a)(1) DOE is authorized to provide loan Guarantees for certain categories of projects under Title XVII including:</P>
+<P>(i) Innovative Energy Projects under section 1703 of Title XVII;</P>
+<P>(ii) Innovative Supply Chain Projects under section 1703 of Title XVII;</P>
+<P>(iii) State Energy Financing Institution Projects under section 1703 of Title XVII; and</P>
+<P>(iv) Energy Dominance Financing Projects under section 1706 of Title XVII.</P>
+<P>(2) A Project meeting the applicable eligibility requirements set forth herein constitutes an &#x201C;Eligible Project&#x201D; under Title XVII.</P>
+<P>(b) An eligible Innovative Energy Project is a project that:</P>
+<P>(1) Falls within a category set forth in section 1703(b) of Title XVII;</P>
+<P>(2) Is located in the United States;</P>
+<P>(3) Is at one location, except that the project may be located at two or more locations if the project is comprised of installations or facilities employing a single New or Significantly Improved Technology that is deployed pursuant to an integrated and comprehensive business plan. An Innovative Energy Project located in more than one location is a single Eligible Project;</P>
+<P>(4) Deploys a New or Significantly Improved Technology; and</P>
+<P>(5) Avoids, reduces, utilizes, or sequesters air pollutants or anthropogenic emissions of greenhouse gases.</P>
+<P>(c) An eligible Innovative Supply Chain Project is a project that:</P>
+<P>(1) Manufactures a product with an end-use set forth in section 1703(b) of Title XVII;</P>
+<P>(2) Is located in the United States;</P>
+<P>(3) Is at one location, except that the project may be located at two or more locations if the project is comprised of installations or facilities employing a single New or Significantly Improved Technology that is deployed pursuant to an integrated and comprehensive business plan. An Innovative Supply Chain Project located in more than one location is a single Eligible Project;</P>
+<P>(4) Either:</P>
+<P>(i) Deploys a New or Significantly Improved Technology in the manufacturing process; or</P>
+<P>(ii) Manufactures a product that represents a New or Significantly Improved Technology; and</P>
+<P>(5) Avoids, reduces, utilizes, or sequesters air pollutants or anthropogenic emissions of greenhouse gases through:</P>
+<P>(i) The relevant manufacturing process of the relevant product; or</P>
+<P>(ii) The end-use of the component on a full life-cycle basis.</P>
+<P>(d) An eligible State Energy Financing Institution Project is a project that:</P>
+<P>(1) Falls within a category set forth in section 1703(b) of Title XVII;</P>
+<P>(2) Is located at one or more locations in the United States;</P>
+<P>(3) Avoids, reduces, utilizes, or sequesters air pollutants or anthropogenic emissions of greenhouse gases;</P>
+<P>(4) Receives financial support or credit enhancements from a State Energy Financing Institution; and</P>
+<P>(5) May include a partnership between one or more State Energy Financing Institutions and private entities, Tribal entities, or Alaska Native corporations in carrying out the project.</P>
+<P>(e) An eligible Energy Dominance Financing Project is a project that:</P>
+<P>(1) Is located in the United States;</P>
+<P>(2) Either:</P>
+<P>(i) Retools, repowers, repurposes, or replaces Energy Infrastructure that has ceased operations;</P>
+<P>(ii) Enables operating Energy Infrastructure to increase capacity or output; or</P>
+<P>(iii) Supports or enables the provision of known or forecastable electric supply at time intervals necessary to maintain or enhance grid reliability or other system adequacy needs; and</P>
+<P>(3) May include the remediation of environmental damage associated with Energy Infrastructure.</P>
+<CITA TYPE="N">[88 FR 34428, May 30, 2023, as amended at 90 FR 48710, Oct. 28, 2025]
+</CITA>
+</DIV8>
+
+<DIV8 N="609.4" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.4&quot;,&quot;citation&quot;:&quot;10 CFR 609.4&quot;}">
+<HEAD>&#xA7; 609.4 Submission of applications.</HEAD>
+<P>(a) DOE may direct that Applications be submitted in more than one part; provided, that the parts of such Application, taken as a whole, contain such information published by DOE in guidance on the Title XVII Loan Guarantee Program website pursuant to &#xA7; 609.19. In such event, subsequent parts of an Application may be filed only after DOE invites an Applicant to make an additional submission. If DOE directs that Applications be submitted in more than one part, the initial part of an Application shall contain information sufficient for DOE to determine that the project proposed by an Applicant will be, or may reasonably become, an Eligible Project, and to evaluate such project's readiness to proceed. If there have been any material amendments, modifications, or additions made to the information previously submitted by an Applicant, the Applicant shall provide a detailed description thereof, including any changes in the proposed project's financing structure or other terms, promptly upon request by DOE.</P>
+<P>(b) An Applicant may submit Applications for multiple proposed projects and for projects using different technologies; provided that an Applicant for an Innovative Energy Project or Innovative Supply Chain Project may not submit an Application or Applications for multiple Innovative Energy Projects or multiple Innovative Supply Chain Projects using the same technology. For purposes of this paragraph (b), the term &#x201C;Applicant&#x201D; shall include the Project Sponsor and any subsidiaries or affiliates of the Project Sponsor.</P>
+<P>(c) DOE has no obligation to evaluate an Application that is not complete, and may proceed with such evaluation, or a partial evaluation, only in its discretion. DOE will not design an Eligible Project for Applicants, but may respond, in its discretion, in general terms to specific proposals. DOE's response to questions from potential Applicants are pre-decisional and preliminary in nature.</P>
+<P>(d) Unless an Applicant requests an extension and such an extension is granted by DOE in its discretion, an Application may be rejected if it is not complete within two years from the date of submission (or date of submission of the first part thereof, in the case of Applications made in more than one part).</P>
+<P>(e) DOE shall respond, in writing, to any inquiry by an Applicant about the status of its Application within ten (10) days of receipt of such request. If an Application has been pending before DOE for 180 days or more, such response shall include:</P>
+<P>(1) A description of the current status of review of the Application;</P>
+<P>(2) A summary of any factors that are delaying a final decision on the Application, a list of what items are required in order to reach a final decision, citations to authorities stating the reasons why such items are required, and a list of actions the Applicant can take to expedite the process; and</P>
+<P>(3) An estimate of when a final decision on the Application will be made.</P>
+</DIV8>
+
+<DIV8 N="609.5" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.5&quot;,&quot;citation&quot;:&quot;10 CFR 609.5&quot;}">
+<HEAD>&#xA7; 609.5 Evaluation of applications.</HEAD>
+<P>(a) Applications will be considered in a merit-based review process, considering such factors determined and published by DOE in guidance on its Title XVII Loan Guarantee Program website pursuant to &#xA7; 609.19. At any time, DOE may request additional information or supporting documentation from an Applicant.</P>
+<P>(b) Applications will be denied if:</P>
+<P>(1) The proposed project is not an Eligible Project;</P>
+<P>(2) With respect to applications for Innovative Energy Projects and Innovative Supply Chain Projects, the applicable technology is not ready to be deployed commercially in the United States, cannot yield a commercially viable product or service in the use proposed in the Application, does not have the potential to be deployed in other commercial projects in the United States, or is not or will not be available for further commercial use in the United States;</P>
+<P>(3) The Person proposed to issue the loan or purchase other debt obligations constituting the Guaranteed Obligations is not an Eligible Lender;</P>
+<P>(4) The proposed project is for demonstration, research, or development;</P>
+<P>(5) Significant Equity for the proposed project will not be provided by the date of issuance of the Guaranteed Obligations, or such later time as DOE in its discretion may determine;</P>
+<P>(6) The proposed project does not present a Reasonable Prospect of Repayment of the Guaranteed Obligations;</P>
+<P>(7) With respect to applications for Energy Dominance Financing Projects, where the Applicant is an electric utility, such application fails to include an assurance that Applicant will pass on the financial benefit from the Guarantee to the customers of, or associated communities served by, the electric utility; or</P>
+<P>(8) The Applicant or Project Sponsor does not satisfy DOE's &#x201C;know your customer&#x201D; requirements.</P>
+<P>(c) If an Application has not been denied pursuant to paragraph (b) of this section, DOE will evaluate the proposed project based on the criteria published by DOE in guidance on its Title XVII Loan Guarantee Program website pursuant to &#xA7; 609.19.</P>
+<P>(d) After DOE completes its review and evaluation of a proposed project, DOE will notify the Applicant in writing of its determination whether to proceed with due diligence and negotiation of a Term Sheet. DOE will proceed only if it determines that the proposed project is highly qualified and suitable for a Guarantee. Upon written confirmation from the Applicant that it desires to proceed, DOE and the Applicant will commence negotiations.</P>
+<P>(e) DOE shall provide all Applicants with a reasonable opportunity to correct or amend any Application in order to meet the criteria set forth in this part or any other conditions required by DOE, prior to any denial of such Application. A determination by DOE not to proceed with a proposed project shall be final and non-appealable, but shall not prejudice the Applicant or other affected Persons from applying for a Guarantee in respect of a different proposed project pursuant to another, separate Application. Prior to DOE's denial of any Application, DOE shall advise the Applicant in writing, not less than ten (10) business days prior to the effective date of such denial. If an Application could be amended or corrected such that DOE would determine that the project is highly qualified and suitable for a Guarantee, DOE may set forth the reasons for such proposed denial along with a list of items that may be corrected or amended by the Applicant. If requested by any Applicant, DOE shall meet with such Applicant in order to address questions or concerns raised by the Applicant.</P>
+<CITA TYPE="N">[88 FR 34428, May 30, 2023, as amended at 90 FR 48710, Oct. 28, 2025]
+</CITA>
+</DIV8>
+
+<DIV8 N="609.6" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.6&quot;,&quot;citation&quot;:&quot;10 CFR 609.6&quot;}">
+<HEAD>&#xA7; 609.6 Term sheets and conditional commitments.</HEAD>
+<P>(a) DOE, after negotiation of a Term Sheet with an Applicant, may offer such Term Sheet to an Applicant or such other Person that is an affiliate of the Applicant and that is acceptable to DOE. DOE's offer of a Term Sheet shall be in writing and signed by the Contracting Officer. DOE's negotiation of a Term Sheet imposes no obligation on the Secretary to offer a Term Sheet to the Applicant.</P>
+<P>(b) DOE shall terminate its negotiations of a Term Sheet if it has not offered a Term Sheet in respect of an Eligible Project within two years after the date of the written notification set forth in &#xA7; 609.5(d), unless extended in writing by DOE.</P>
+<P>(c) If and when the offeree specified in a Term Sheet satisfies all terms and conditions for acceptance of the Term Sheet, including written acceptance thereof, the Term Sheet shall become a Conditional Commitment. Each Conditional Commitment shall include an expiration date no more than two years from the date it is issued, unless extended in writing in the discretion of the Contracting Officer. When and if all of the terms and conditions specified in the Conditional Commitment have been met, DOE and the Applicant may enter into a Loan Guarantee Agreement. If applicable, the Conditional Commitment shall include the terms and conditions pursuant to which any Credit Subsidy Cost payment made by the Borrower to the Secretary is subject to refund to the Borrower in the event that the closing date of the Loan Guarantee Agreement does not occur.</P>
+<P>(d) Prior to or on the date of the Conditional Commitment, DOE will ensure that:</P>
+<P>(1) OMB has reviewed and approved DOE's calculation of the Credit Subsidy Cost of the Guarantee;</P>
+<P>(2) One of the following has occurred:</P>
+<P>(i) Appropriated funds for the Credit Subsidy Cost are available;</P>
+<P>(ii) The Secretary has received from the Borrower payment in full for the Credit Subsidy Cost and deposited the payment into the Treasury; or</P>
+<P>(iii) A combination of one or more appropriations under paragraph (d)(2)(i) of this section and one or more payments from the Borrower under paragraph (d)(2)(ii) of this section has been made that is equal to the Credit Subsidy Cost; and</P>
+<P>(3) The Department of the Treasury has been consulted as to the proposed terms and conditions of the Loan Guarantee Agreement.</P>
+<P>(e) If, subsequent to execution of a Conditional Commitment, the financing arrangements of the Borrower, or in respect of an Eligible Project, change from those described in the Conditional Commitment, the Applicant shall promptly provide updated financing information in writing to DOE. All such updated information shall be deemed to be information submitted in connection with an Application. Based on such updated information, DOE may take one or more of the following actions:</P>
+<P>(1) Determine that such changes are not material to the Borrower, the Eligible Project or DOE;</P>
+<P>(2) Amend the Conditional Commitment accordingly, including by re-calculating the Credit Subsidy Cost in accordance with &#xA7; 609.6(d);</P>
+<P>(3) Postpone the expected closing date of the associated Loan Guarantee Agreement; or</P>
+<P>(4) Terminate the Conditional Commitment.</P>
+</DIV8>
+
+<DIV8 N="609.7" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.7&quot;,&quot;citation&quot;:&quot;10 CFR 609.7&quot;}">
+<HEAD>&#xA7; 609.7 Closing on the loan guarantee agreement.</HEAD>
+<P>(a) Subsequent to entering into a Conditional Commitment with an Applicant, DOE, after consultation with the Applicant, will set a closing date for execution of a Loan Guarantee Agreement.</P>
+<P>(b) Prior to or on the closing date of a Loan Guarantee Agreement DOE will ensure that:</P>
+<P>(1) Pursuant to section 1702(h) of Title XVII, DOE will receive from the Applicant the Facility Fee referred to in &#xA7; 609.13(b) on the closing date;</P>
+<P>(2) The Department of the Treasury has been consulted as to the terms and conditions of the Loan Guarantee Agreement.</P>
+<P>(2) The Loan Guarantee Agreement and related documents contain all terms and conditions DOE deems reasonable and necessary to protect the interest of the United States;</P>
+<P>(3) Each holder of the Guaranteed Obligations is an Eligible Lender, and the servicer of the Guaranteed Obligations meets the servicing performance requirements of &#xA7; 609.9(b);</P>
+<P>(4) DOE has determined the principal amount of the Guaranteed Obligations expected to be issued in respect of the Eligible Project, as estimated at the time of issuance, will not exceed 80 percent of the Project Costs of the Eligible Project;</P>
+<P>(5) DOE has completed all necessary reviews under the National Environmental Policy Act of 1969; and</P>
+<P>(6) All conditions precedent specified in the Conditional Commitment are either satisfied or waived in writing by the Contracting Officer. If the counterparty to the Conditional Commitment has not satisfied all such terms and conditions on or prior to the closing date of the Loan Guarantee Agreement, DOE may, in its discretion, set a new closing date, or terminate the Conditional Commitment.</P>
+</DIV8>
+
+<DIV8 N="609.8" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.8&quot;,&quot;citation&quot;:&quot;10 CFR 609.8&quot;}">
+<HEAD>&#xA7; 609.8 Loan guarantee agreement.</HEAD>
+<P>(a) Only a Loan Guarantee Agreement executed by the Contracting Officer can obligate DOE to issue a Guarantee in respect of Guaranteed Obligations. DOE is not bound by oral representations.</P>
+<P>(b) Each Loan Guarantee Agreement shall contain the following requirements and conditions, and shall not be executed until the Contracting Officer determines that the following requirements and conditions are satisfied:</P>
+<P>(1) The Federal Financing Bank shall be the only Eligible Lender in transactions where DOE guarantees 100 percent (but not less than 100 percent) of the principal and interest of the Guaranteed Obligations issued under a Loan Guarantee Agreement. Where DOE guarantees 90 percent or less of the Guaranteed Obligation, the guaranteed portion may be separated from or &#x201C;stripped&#x201D; from the non-guaranteed portion of the Guaranteed Obligation, if the loan is participated, syndicated or otherwise resold in the secondary debt market.</P>
+<P>(2) The Borrower shall be obligated to make full repayment of the principal and interest on the Guaranteed Obligations and other debt of a Borrower over a period not to exceed:</P>
+<P>(i) In the case of an Innovative Energy Project, an Innovative Supply Chain Project, or a State Energy Financing Institution Project, the lesser of 30 years or 90 percent of the projected useful life of the Eligible Project's major physical assets, as calculated in accordance with U.S. generally accepted accounting principles and practices; and</P>
+<P>(ii) In the case of an Energy Dominance Financing Project, 30 years.</P>
+<P>(3) If any financing or credit arrangement of the Borrower or relating to the Eligible Project, other than the Guaranteed Obligations, has an amortization period shorter than that of the Guaranteed Obligations, DOE shall have determined that the resulting financing structure allocates to DOE a reasonably proportionate share of the default risk, in light of:</P>
+<P>(i) DOE's share of the total debt financing of the Borrower;</P>
+<P>(ii) Risk allocation among the credit providers to the Borrower; and</P>
+<P>(iii) Internal and external credit enhancements.</P>
+<P>(4) The Guarantee does not finance, either directly or indirectly tax-exempt debt obligations, consistent with the requirements of section 149(b) of the Internal Revenue Code.</P>
+<P>(5) The principal amount of the Guaranteed Obligations, when combined with funds from other sources committed and available to the Borrower, shall be sufficient to pay for expected Project Costs (including adequate contingency amounts) and otherwise to carry out the Eligible Project.</P>
+<P>(6) There shall be a Reasonable Prospect of Repayment by the Borrower of the principal of and interest on the Guaranteed Obligations and all of its other debt obligations.</P>
+<P>(7) The Borrower shall pledge collateral or surety determined by DOE to be necessary to secure the repayment of the Guaranteed Obligations. Such collateral or security may include Eligible Project assets and assets not related to the Eligible Project.</P>
+<P>(8) The Loan Guarantee Agreement and related documents shall include detailed terms and conditions that DOE deems necessary and appropriate to protect the interests of the United States in the case of default, including ensuring availability of all relevant intellectual property rights, technical data including software, and technology necessary for DOE or any Person selected by DOE, to complete, operate, convey, and dispose of the defaulted Borrower or the Eligible Project.</P>
+<P>(9) The Guaranteed Obligations shall not be subordinate in payment or lien priority to other financing. In DOE's discretion, Guaranteed Obligations may share a lien position with other financing on a <I>pari passu</I> basis.</P>
+<P>(10) There is satisfactory evidence that the Borrower will diligently pursue the Eligible Project and is willing, competent, and capable of performing its obligations under the Loan Guarantee Agreement and the loan documentation relating to its other debt obligations.</P>
+<P>(11) The Borrower shall have paid all fees and expenses due to DOE or the U.S. Government, including such amount of the Credit Subsidy Cost as may be due and payable from the Borrower at the time of the Conditional Commitment.</P>
+<P>(12) The Borrower, any Eligible Lender, and each other relevant party shall take, and be obligated to continue to take, those actions necessary to perfect and maintain liens on collateral in respect of the Guaranteed Obligations.</P>
+<P>(13) DOE or its representatives shall have access to the offices of the Borrower and the Eligible Project site at all reasonable times in order to monitor the&#x2014;</P>
+<P>(i) Performance by the Borrower of its obligations under the Loan Guarantee Agreement; and</P>
+<P>(ii) Performance of the Eligible Project.</P>
+<P>(14) DOE and Borrower have reached an agreement regarding the information that will be made available to DOE and the information that will be made publicly available.</P>
+<P>(15) The Borrower shall have filed applications for or obtained any required regulatory approvals for the Eligible Project and is in compliance, or promptly will be in compliance, where appropriate, with all Federal, State, and local regulatory requirements.</P>
+<P>(16) The Borrower shall have no delinquent Federal debt.</P>
+<P>(17) The Project Sponsors have made or will make a significant Equity investment in the Borrower or the Eligible Project, and will maintain control of the Borrower or the Eligible Project as agreed in the Loan Guarantee Agreement.</P>
+<P>(18) The Loan Guarantee Agreement and related agreements shall include such other terms and conditions as DOE deems necessary or appropriate to protect the interests of the United States.</P>
+<P>(c) The Loan Guarantee Agreement shall provide that, in the event of a default by the Borrower:</P>
+<P>(1) Interest on the Guaranteed Obligations shall accrue at the rate or penalty rate, as applicable, stated in the Loan Guarantee Agreement or the Loan Agreement until DOE makes full payment of the defaulted Guaranteed Obligations and, except when such Guaranteed Obligations are funded through the Federal Financing Bank, DOE shall not be required to pay any premiums, defaults, or prepayment penalties; and</P>
+<P>(2) The holder of collateral pledged in respect of the Guaranteed Obligations shall be obligated to take such actions as DOE may reasonably require to provide for the care, preservation, protection, and maintenance of such collateral so as to enable the United States to achieve maximum recovery.</P>
+<P>(d)(1) An Eligible Lender or other Holder may sell, assign or transfer a Guaranteed Obligation to another Eligible Lender that meets the requirements of &#xA7; 609.9. Such latter Eligible Lender shall be required to assume all servicing, monitoring, and reporting requirements as provided in the Loan Guarantee Agreement. Any transfer of the servicing, monitoring, and reporting functions shall be subject to the prior written approval of DOE.</P>
+<P>(2) The Secretary, or the Secretary's designee or contractual agent, for the purpose of identifying Holders with the right to receive payment under the Guaranteed Obligations, shall include in the Loan Guarantee Agreement or related documents a procedure for tracking and identifying Holders of Guaranteed Obligations. Any contractual agent approved by the Secretary to perform this function may transfer or assign this responsibility only with the Secretary's prior written approval.</P>
+<P>(e) Each Loan Guarantee Agreement shall require the Borrower to make representations and warranties, agree to covenants, and satisfy conditions precedent to closing and to each disbursement that, in each case, relate to its compliance with the Davis-Bacon Act and the Cargo Preference Act.</P>
+<P>(f) The Applicant, the Borrower, or the Project Sponsor must estimate, calculate, record, and provide to DOE any time DOE requests such information and at the times provided in the Loan Guarantee Agreement all costs incurred in the design, engineering, financing, construction, startup, commissioning, and shakedown of the Eligible Project in accordance with generally accepted accounting principles and practices.</P>
+<CITA TYPE="N">[88 FR 34428, May 30, 2023, as amended at 90 FR 48710, Oct. 28, 2025]
+</CITA>
+</DIV8>
+
+<DIV8 N="609.9" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.9&quot;,&quot;citation&quot;:&quot;10 CFR 609.9&quot;}">
+<HEAD>&#xA7; 609.9 Lender servicing requirements.</HEAD>
+<P>(a) When reviewing and evaluating a proposed Eligible Project, all Eligible Lenders (other than the Federal Financing Bank) shall at all times exercise the level of care and diligence that a reasonable and prudent lender would exercise when reviewing, evaluating, and disbursing a loan made by it without a Federal guarantee.</P>
+<P>(b) Loan servicing duties shall be performed by an Eligible Lender, DOE, or another qualified loan servicer approved by DOE. When performing its servicing duties, the loan servicer shall at all times exercise the level of care and diligence that a reasonable and prudent lender would exercise when servicing a loan made without a Federal guarantee, including:</P>
+<P>(1) During the construction period, monitoring the satisfaction of all of the conditions precedent to all loan disbursements, as provided in the Loan Guarantee Agreement, Loan Agreement, or related documents;</P>
+<P>(2) During the operational phase, monitoring and servicing the Guaranteed Obligations and collection of the outstanding principal and accrued interest as well as undertaking to ensure that the collateral package securing the Guaranteed Obligations remains uncompromised; and</P>
+<P>(3) Until the Guaranteed Obligations have been repaid, providing annual or more frequent financial and other reports on the status and condition of the Guaranteed Obligations and the Eligible Project, and promptly notifying DOE if it becomes aware of any problems or irregularities concerning the Eligible Project or the ability of the Borrower to make payment on the Guaranteed Obligations or its other debt obligations.</P>
+</DIV8>
+
+<DIV8 N="609.10" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.10&quot;,&quot;citation&quot;:&quot;10 CFR 609.10&quot;}">
+<HEAD>&#xA7; 609.10 Project costs.</HEAD>
+<P>(a) The Project Costs of an Eligible Project are those costs, including escalation and contingencies, that are expended or accrued by a Borrower and are necessary, reasonable, customary, and directly related to the design, engineering, financing, construction, startup, commissioning, and shakedown of an Eligible Project.</P>
+<P>(b) Project Costs include:</P>
+<P>(1) Costs of acquisition, lease, or rental of real property, including engineering fees, surveys, title insurance, recording fees, and legal fees incurred in connection with land acquisition, lease or rental, site improvements, site restoration, access roads, and fencing;</P>
+<P>(2) Costs of engineering, architectural, legal and bond fees, and insurance paid in connection with construction of the facility;</P>
+<P>(3) Costs of equipment purchases, including a reasonable reserve of spare parts to the extent required;</P>
+<P>(4) Costs to provide facilities and services related to safety and environmental protection;</P>
+<P>(5) Transaction Costs;</P>
+<P>(6) Costs of necessary and appropriate insurance and bonds of all types including letters of credit and any collateral required therefor;</P>
+<P>(7) Costs of design, engineering, startup, commissioning, and shakedown;</P>
+<P>(8) Costs of obtaining licenses to intellectual property necessary to design, construct, and operate the Eligible Project;</P>
+<P>(9) To the extent required by the Loan Guarantee Agreement and not intended or available for any cost referred to in paragraph (d) of this section, costs of funding any reserve fund, including without limitation, a debt service reserve, a maintenance reserve, and a contingency reserve for cost overruns during construction; provided that proceeds of a Guaranteed Obligation deposited to any reserve fund shall not be removed from such fund except to pay Project Costs, to pay principal of the Guaranteed Obligation, or otherwise to be used as provided in the Loan Guarantee Agreement;</P>
+<P>(10) Capitalized interest necessary to meet market requirements and other carrying costs during construction;</P>
+<P>(11) In DOE's sole discretion, the cost of refinancing outstanding indebtedness that is directly associated with the Eligible Project, including the principal amount of such indebtedness, accrued interest thereon, and any reasonable and customary prepayment premium or breakage costs; provided that DOE determines that the refinancing furthers the purpose of the Eligible Project.</P>
+<P>(12) With respect to Energy Dominance Financing Projects, the cost of remediation of environmental damage associated with the Energy Infrastructure; and</P>
+<P>(13) Other necessary and reasonable costs, including, without limitation, previously acquired real estate, equipment, or other materials, costs of interconnection, and any engineering, construction, make-ready, design, permitting, or other work completed on an existing facility or project;</P>
+<P>(c) Where a Project consists of the financing and installation of a series of distributed energy resources, DOE may deem the eligible Project Costs to consist of the reasonable and documented costs incurred by the end-user of each distributed energy resource in connection with the contractual agreement between the end-user and the Project Sponsor or its agent, provided that:</P>
+<P>(1) DOE is able to validate such reasonable and documented costs through standard customer contracts and standard distributed energy resource system attributes; and</P>
+<P>(2) The Borrower institutes a compliance system satisfactory to DOE to ensure that each distributed energy resource supported by a Guarantee complies with any eligibility criteria required by DOE, including with respect to approved customer contracts and approved distributed energy resource systems.</P>
+<P>(d) Project Costs do not include:</P>
+<P>(1) Fees and commissions charged to Borrower, including finder's fees, for obtaining Federal or other funds;</P>
+<P>(2) Parent corporation or other affiliated entity's general and administrative expenses, and non-Eligible Project related parent corporation or affiliated entity assessments, including organizational expenses;</P>
+<P>(3) Goodwill, franchise, trade, or brand name costs;</P>
+<P>(4) Dividends and profit sharing to stockholders, employees, and officers;</P>
+<P>(5) Research, development, and demonstration costs of readying an innovative technology for employment in a commercial project;</P>
+<P>(6) Costs that are excessive or are not directly required to carry out the Eligible Project, as determined by DOE;</P>
+<P>(7) Expenses incurred after startup, commissioning, and shakedown of the facility, or, in DOE's discretion, any portion of the facility that has completed startup, commissioning, and shakedown;</P>
+<P>(8) Borrower-paid Credit Subsidy Costs, the Administrative Cost of a Loan Guarantee, and any other fee collected by DOE; and</P>
+<P>(9) Operating costs.</P>
+<P>(e) Costs incurred in connection with an Eligible Project may be subject to such other criteria for inclusion as Project Costs as published by DOE from time to time in guidance on the Title XVII Loan Guarantee Program website pursuant to &#xA7; 609.19.</P>
+<CITA TYPE="N">[88 FR 34428, May 30, 2023, as amended at 90 FR 48710, Oct. 28, 2025]
+</CITA>
+</DIV8>
+
+<DIV8 N="609.11" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.11&quot;,&quot;citation&quot;:&quot;10 CFR 609.11&quot;}">
+<HEAD>&#xA7; 609.11 Transaction costs.</HEAD>
+<P>(a) Upon making a determination to engage independent consultants or outside counsel with respect to an Application, DOE will proceed to evaluate and process such Application only following execution by an Applicant or Project Sponsor, as appropriate, of an agreement satisfactory to DOE to pay the Transaction Costs charged by the independent consultants and outside legal counsel. Each Applicant, Borrower, or Project Sponsor, as applicable, shall be responsible for the payment of Transaction Costs associated with DOE's independent consultants and outside legal counsel in connection with an Application, Conditional Commitment, or Loan Guarantee Agreement, as applicable. Appropriate provisions regarding payment of such Transaction Costs shall also be included in each Term Sheet and Loan Guarantee Agreement or, upon a determination by DOE, in other appropriate agreements.</P>
+<P>(b) Notwithstanding payment by Applicant, Borrower, or Project Sponsor, all services rendered by an independent consultant or outside legal counsel to DOE in connection with an Application, Conditional Commitment, or Loan Guarantee Agreement shall be solely for the benefit of DOE (and such other creditors as DOE may agree in writing). DOE may require, in its discretion, the payment of an advance retainer to such independent consultants or outside legal counsel as security for the collection of the fees and expenses charged by the independent consultants and outside legal counsel. In the event an Applicant, Borrower, or Project Sponsor fails to comply with the provisions of such payment agreement, DOE in its discretion, may stop work on or terminate an Application, a Conditional Commitment, or a Loan Guarantee Agreement, or may take such other remedial measures in its discretion as it deems appropriate.</P>
+<P>(c) DOE shall not be financially liable under any circumstances to any independent consultant or outside counsel for services rendered in connection with an Application, Conditional Commitment, or Loan Guarantee Agreement except to the extent DOE has previously entered into an express written agreement to pay for such services.</P>
+</DIV8>
+
+<DIV8 N="609.12" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.12&quot;,&quot;citation&quot;:&quot;10 CFR 609.12&quot;}">
+<HEAD>&#xA7; 609.12 Credit ratings.</HEAD>
+<P>(a) Where conditions justify, in the sole discretion of the Secretary, DOE may require that an Applicant submit a preliminary credit assessment for the proposed project, reflecting the project without a Guarantee, from a nationally recognized statistical ratings organization.</P>
+<P>(b) Where conditions justify, in the sole discretion of the Secretary, DOE may require that an Applicant provide a credit rating for the proposed project, and subsequently provide updated ratings, from a nationally recognized statistical ratings organization.</P>
+</DIV8>
+
+<DIV8 N="609.13" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.13&quot;,&quot;citation&quot;:&quot;10 CFR 609.13&quot;}">
+<HEAD>&#xA7; 609.13 Fees and charges.</HEAD>
+<P>(a) Unless explicitly authorized by statute, no funds obtained from the Federal Government, or from a loan or other instrument guaranteed by the Federal Government, may be used to pay for the Credit Subsidy Cost, the Facility Fee, the Maintenance Fee, and any other fees charged by or paid to DOE relating to Title XVII or any Guarantee thereunder. An Applicant may, at any time, use non-Federal monies to pay the Credit Subsidy Cost or DOE fees.</P>
+<P>(b) DOE may charge Applicants a non-refundable Facility Fee, payable on the closing date for the Loan Guarantee Agreement.</P>
+<P>(c) In order to encourage and supplement private lending activity DOE may collect from Borrowers for deposit in the United States Treasury a non-refundable Risk-Based Charge which, together with the interest rate on the Guaranteed Obligation that LPO determines to be appropriate, will take into account the prevailing rate of interest in the private sector for similar loans and risks. The Risk-Based Charge shall be paid at such times and in such manner as may be determined by DOE, but no less frequently than once each year, commencing with payment of a pro-rated payment on the date the Guarantee is issued. The amount of the Risk-Based Charge will be specified in the Loan Guarantee Agreement.</P>
+<P>(d) DOE may collect a Maintenance Fee as set forth in the Loan Guarantee Agreement. The Maintenance Fee shall accrue from the date of execution of the Loan Guarantee Agreement through the date of payment in full of the related Guaranteed Obligations. If DOE determines to collect a Maintenance Fee, it shall be paid by the Borrower each year (or portion thereof) in advance in the amount specified in the applicable Loan Guarantee Agreement.</P>
+<P>(e) In the event a Borrower or an Eligible Project experiences difficulty relating to technical, financial, or legal matters or other events (<I>e.g.,</I> engineering failure or financial workouts), the Borrower shall be liable as follows:</P>
+<P>(1) If such difficulty requires DOE to incur time or expenses beyond those customarily expended to monitor and administer performing loans, DOE may collect an extraordinary expenses fee from the Borrower that will reimburse DOE for such time and expenses, as determined by DOE; and</P>
+<P>(2) For all fees and expenses of DOE's independent consultants and outside counsel, to the extent that such fees and expenses are elected to be paid by DOE notwithstanding the provisions of &#xA7; 609.11.</P>
+</DIV8>
+
+<DIV8 N="609.14" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.14&quot;,&quot;citation&quot;:&quot;10 CFR 609.14&quot;}">
+<HEAD>&#xA7; 609.14 Full faith and credit and incontestability.</HEAD>
+<P>The full faith and credit of the United States is pledged to the payment of principal and interest of Guaranteed Obligations pursuant to Guarantees issued in accordance with Title XVII and this part. The issuance by DOE of a Guarantee shall be conclusive evidence that it has been properly obtained; that the underlying loan qualified for such Guarantee; and that, but for fraud or material misrepresentation by the Holder, except when the Holder is the Federal Financing Bank, such Guarantee shall be legal, valid, binding, and enforceable against DOE in accordance with its terms.</P>
+</DIV8>
+
+<DIV8 N="609.15" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.15&quot;,&quot;citation&quot;:&quot;10 CFR 609.15&quot;}">
+<HEAD>&#xA7; 609.15 Default, demand, payment, and foreclosure on collateral.</HEAD>
+<P>(a) If a Borrower defaults in making a required payment of principal or interest on a Guaranteed Obligation and such default has not been cured within the applicable grace period, the Holder may make written demand for payment upon the Secretary in accordance with the terms of the applicable Guarantee. If a Borrower defaults in making a required payment of principal or interest on a Guaranteed Obligation and such default has not been cured within the applicable grace period, the Secretary shall notify the Attorney General.</P>
+<P>(b) Subject to the terms of the applicable Guarantee, the Secretary shall make payment within 60 days after receipt of written demand for payment from the Holder, provided that the demand for payment complies in all respects with the terms of the applicable Guarantee. Interest shall accrue to the Holder at the rate stated in the promissory note evidencing the Guaranteed Obligation, without giving effect to the Borrower's default in making a required payment of principal or interest on the applicable Guarantee Obligation or any other default by the Borrower, until the Guaranteed Obligation has been fully paid by DOE. Payment by the Secretary on the applicable Guarantee does not change Borrower's obligations under the promissory note evidencing the Guaranteed Obligation, Loan Guarantee Agreement, Loan Agreement, or related documents, including an obligation to pay default interest.</P>
+<P>(c) Following payment by the Secretary pursuant to the applicable Guarantee, upon demand by DOE, the Holder shall transfer and assign to the Secretary (or his or her designee or agent) the promissory note evidencing the Guaranteed Obligation, all rights and interests of the Holder in the Guaranteed Obligation, and all rights and interests of the Holder in respect of the Guaranteed Obligation, except to the extent that the Secretary determines that such promissory note or any of such rights and interests shall not be transferred and assigned to the Secretary. Such transfer and assignment shall include, without limitation, all of the liens, security, and collateral rights of the Holder (or his or her designee or agent) in respect of the Guaranteed Obligation.</P>
+<P>(d) Following payment by the Secretary pursuant to a Guarantee or other default of a Guaranteed Obligation, the Secretary is authorized to protect and foreclose on the collateral, take action to recover costs incurred by, and all amounts owed to, the United States as a result of the defaulted Guarantee Obligation, and take such other action necessary or appropriate to protect the interests of the United States. In respect of any such authorized actions that involve a judicial proceeding or other judicial action, the Secretary shall act through the Attorney General. The foregoing provisions of this paragraph (d) shall not relieve the Secretary from his or her obligations pursuant to any applicable Intercreditor Agreement. Nothing in this paragraph (d) shall limit the Secretary from exercising any rights or remedies pursuant to the terms of the Loan Guarantee Agreement.</P>
+<P>(e) The cash proceeds received as a result of any foreclosure on the collateral, or other action, shall be distributed in accordance with the Loan Guarantee Agreement (subject to any applicable Intercreditor Agreement).</P>
+<P>(f) The Loan Guarantee Agreement shall provide that cash proceeds received by the Secretary (or his or her designee or agent) as a result of any foreclosure on the collateral or other action shall be applied in the following order of priority:</P>
+<P>(1) Toward the pro rata payment of any costs and expenses (including unpaid fees, fees and expenses of counsel, contractors and agents, and liabilities and advances made or incurred) of the Secretary, the Attorney General, the Holder, a collateral agent, or other responsible person of any of them (solely in their individual capacities as such and not on behalf of or for the benefit of their principals), incurred in connection with any authorized action following payment by the Secretary pursuant to a Guarantee or other default of a Guaranteed Obligation, or as otherwise permitted under the Loan Agreement or Loan Guarantee Agreement;</P>
+<P>(2) To pay all accrued and unpaid fees due and payable to the Secretary, the Attorney General, the Holder, a collateral agent, or other responsible person of any of them on a pro rata basis in respect of the Guaranteed Obligation;</P>
+<P>(3) To pay all accrued and unpaid interest due and payable to the Secretary, the Attorney General, the Holder, a collateral agent, or other responsible person of any of them on a pro rata basis in respect of the Guaranteed Obligation;</P>
+<P>(4) To pay all unpaid principal of the Guaranteed Obligation;</P>
+<P>(5) To pay all other obligations of the Borrower under the Loan Guarantee Agreement, the Loan Agreement, and related documents that are remaining after giving effect to the preceding provisions and are then due and payable; and</P>
+<P>(6) To pay to the Borrower, or its successors and assigns, or as a court of competent jurisdiction may direct, any cash proceeds then remaining following the application of all payment described in paragraphs (f)(1) through (5) of this section.</P>
+<P>(g) No action taken by the Holder or its agent or designee in respect of any collateral will affect the rights of any person, including the Secretary, having an interest in the Guaranteed Obligations or other debt obligations, to pursue, jointly or severally, legal action against the Borrower or other liable persons, for any amounts owing in respect of the Guaranteed Obligation or other applicable debt obligations.</P>
+<P>(h) In the event that the Secretary considers it necessary or desirable to protect or further the interest of the United States in connection with exercise of rights as a lien holder or recovery of deficiencies due under the Guaranteed Obligation, the Secretary may take such action as he determines to be appropriate under the circumstances.</P>
+<P>(i) Nothing in this part precludes, nor shall any provision of this part be construed to preclude, the Secretary from purchasing any collateral or Holder's or other Person's interest in the Eligible Project upon foreclosure of the collateral.</P>
+<P>(j) Nothing in this part precludes, nor shall any provision of this part be construed to preclude, forbearance by any Holder with the consent of the Secretary for the benefit of the Borrower and the United States.</P>
+<P>(k) The Holder and the Secretary may agree to a formal or informal plan of reorganization in respect of the Borrower, to include a restructuring of the Guaranteed Obligation and other applicable debt of the Borrower on such terms and conditions as the Secretary determines are in the best interest of the United States.</P>
+</DIV8>
+
+<DIV8 N="609.16" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.16&quot;,&quot;citation&quot;:&quot;10 CFR 609.16&quot;}">
+<HEAD>&#xA7; 609.16 Preservation of collateral.</HEAD>
+<P>(a) If the Secretary exercises his or her right under the Loan Guarantee Agreement to require the holder of pledged collateral to take such actions as the Secretary (subject to any applicable Intercreditor Agreement) may reasonably require to provide for the care, preservation, protection, and maintenance of such collateral so as to enable the United States to achieve maximum recovery from the collateral, the Secretary shall, subject to compliance with the Antideficiency Act, 31 U.S.C. 1341 <I>et seq.,</I> reimburse the holder of such collateral for reasonable and appropriate expenses incurred in taking actions required by the Secretary (unless otherwise provided in applicable agreements). Except as provided in &#xA7; 609.15, no party may waive or relinquish, without the consent of the Secretary, any such collateral to which the United States would be subrogated upon payment under the Loan Guarantee Agreement.</P>
+<P>(b) In the event of a default, the Secretary may enter into such contracts as he determines are required or appropriate, taking into account the term of any applicable Intercreditor Agreement, to care for, preserve, protect or maintain collateral pledged in respect of Guaranteed Obligations. The cost of such contracts may be charged to the Borrower.</P>
+</DIV8>
+
+<DIV8 N="609.17" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.17&quot;,&quot;citation&quot;:&quot;10 CFR 609.17&quot;}">
+<HEAD>&#xA7; 609.17 Audit and access to records.</HEAD>
+<P>Each Loan Guarantee Agreement and related documents shall provide that:</P>
+<P>(a) The Eligible Lender, or DOE in conjunction with the Federal Financing Bank where loans are funded by the Federal Financing Bank or other Holder or other party servicing the Guaranteed Obligations, as applicable, and the Borrower, shall keep such records concerning the Eligible Project as are necessary, including the Application, Term Sheet, Conditional Commitment, Loan Guarantee Agreement, Credit Agreement, mortgage, note, disbursement requests and supporting documentation, financial statements, audit reports of independent accounting firms, lists of all Eligible Project assets and non-Eligible Project assets pledged in respect of the Guaranteed Obligations, all off-take and other revenue producing agreements, documentation for all Eligible Project indebtedness, income tax returns, technology agreements, documentation for all permits and regulatory approvals, and all other documents and records relating to the Borrower or the Eligible Project, as determined by the Secretary, to facilitate an effective audit and performance evaluation of the Eligible Project; and</P>
+<P>(b) The Secretary and the Comptroller General, or their duly authorized representatives, shall have access, for the purpose of audit and examination, to any pertinent books, documents, papers, and records of the Borrower, Eligible Lender, or DOE or other Holder or other party servicing the Guaranteed Obligation, as applicable. Such inspection may be made during regular office hours of the Borrower, Eligible Lender, DOE or other Holder, or other party servicing the Eligible Project and the Guaranteed Obligations, as applicable, or at any other time mutually convenient.</P>
+</DIV8>
+
+<DIV8 N="609.18" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.18&quot;,&quot;citation&quot;:&quot;10 CFR 609.18&quot;}">
+<HEAD>&#xA7; 609.18 Deviations.</HEAD>
+<P>(a) Subject to the requirements of Title XVII and as otherwise permitted by applicable law, the Secretary may authorize deviations from the requirements of this part upon:</P>
+<P>(1) Either receipt from the Applicant, Borrower, or Project Sponsor, as applicable, of&#x2014;</P>
+<P>(i) A written request that the Secretary deviate from one or more requirements; and</P>
+<P>(ii) A supporting statement briefly describing one or more justifications for such deviation; or</P>
+<P>(iii) A determination by the Secretary in his or her discretion to undertake a deviation;</P>
+<P>(2) A finding by the Secretary that such deviation supports program objectives and the special circumstances stated in the request make such deviation clearly in the best interest of the Government; and</P>
+<P>(3) If the waiver would constitute a substantial change in the financial terms of the Loan Guarantee Agreement and related documents, DOE's consultation with OMB and the Secretary of the Treasury.</P>
+<P>(b) If a deviation under this section results in an increase in the applicable Credit Subsidy Cost, such increase shall be funded either by additional fees paid by the Borrower or on behalf of the Borrower by any third party or, if an appropriation is available, by means of an appropriations act. The Secretary has discretion to determine how the cost of a deviation is funded.</P>
+</DIV8>
+
+<DIV8 N="609.19" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-609.19&quot;,&quot;citation&quot;:&quot;10 CFR 609.19&quot;}">
+<HEAD>&#xA7; 609.19 Title XVII loan guarantee program guidance.</HEAD>
+<P>(a) Invitations for the submission of Applications for loan guarantees for Eligible Projects shall be published on DOE's Title XVII Loan Guarantee Program website. The Title XVII Loan Guarantee Program website shall contain guidance for potential Title XVII Applicants and solicit applications for a Guarantee.</P>
+<P>(b) The Title XVII Loan Guarantee Program website must include, at a minimum, the following guidance:</P>
+<P>(1) The dollar amount of loan guarantee authority potentially being made available by DOE for Guarantees under Title XVII;</P>
+<P>(2) The method and further instructions for submission of Applications;</P>
+<P>(3) The name and address of the DOE representative whom a potential Applicant may contact to receive further information;</P>
+<P>(4) The programmatic, technical, financial, and other factors and criteria that DOE will use to evaluate Applications, including but not limited to consideration of the Reasonable Prospect of Repayment, the amount of Equity provided, and the reliance on other Federal assistance;</P>
+<P>(5) The required contents of the Application, which may vary by category of Eligible Project; and</P>
+<P>(6) Such other information as DOE may deem appropriate.</P>
+<P>(c) Using procedures as may be announced by DOE, a potential Applicant may request a meeting with DOE to discuss its potential Application. At its discretion, DOE may meet with a potential Applicant, either in person or electronically, to discuss its potential Application. DOE's responses to questions from potential Applicants and DOE's statements to potential Applicants, including any initial thoughts on the eligibility of the project, are pre-decisional and preliminary in nature. Any such responses and statements are subject in their entirety to any final action by DOE with respect to an Application submitted in accordance with &#xA7; 609.4.</P>
+</DIV8>
+
+</DIV5>

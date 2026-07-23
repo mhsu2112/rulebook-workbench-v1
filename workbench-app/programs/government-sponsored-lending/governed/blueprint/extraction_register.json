@@ -1,0 +1,196 @@
+{
+  "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01",
+  "items": {
+    "15-usc-636": {
+      "status": "error",
+      "errors": [
+        "HTTPException: 502: HTTP 402: {\"error\":{\"message\":\"Insufficient credits. Add more using https://openrouter.ai/settings/credits\",\"code\":402}}"
+      ]
+    },
+    "15-usc-695": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T14:11:21.335743+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 11,
+      "definitions": 8,
+      "nothing_in_scope": false,
+      "citations_verified": 29,
+      "citations_total": 29,
+      "cost_usd": 0.17536,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "13-cfr-120": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T14:12:55.371881+00:00",
+      "family": "regulation",
+      "focused": true,
+      "obligations": 21,
+      "definitions": 17,
+      "nothing_in_scope": false,
+      "citations_verified": 49,
+      "citations_total": 57,
+      "cost_usd": 0.286385,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "7-usc-1921": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T14:13:36.856050+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 6,
+      "definitions": 7,
+      "nothing_in_scope": false,
+      "citations_verified": 20,
+      "citations_total": 20,
+      "cost_usd": 0.14232,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "7-cfr-4279": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T14:22:19.654719+00:00",
+      "family": "regulation",
+      "focused": true,
+      "obligations": 14,
+      "definitions": 8,
+      "nothing_in_scope": false,
+      "citations_verified": 21,
+      "citations_total": 34,
+      "cost_usd": 0.193118,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "7-cfr-4287": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T16:30:45.089863+00:00",
+      "family": "regulation",
+      "focused": false,
+      "obligations": 52,
+      "definitions": 14,
+      "nothing_in_scope": false,
+      "citations_verified": 96,
+      "citations_total": 96,
+      "cost_usd": 0.608605,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "7-usc-901": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T14:27:41.621177+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 3,
+      "definitions": 5,
+      "nothing_in_scope": false,
+      "citations_verified": 17,
+      "citations_total": 17,
+      "cost_usd": 0.119905,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "42-usc-16511": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T15:45:01.772502+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 0,
+      "definitions": 11,
+      "nothing_in_scope": false,
+      "citations_verified": 23,
+      "citations_total": 23,
+      "cost_usd": 0.09402,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "10-cfr-609": {
+      "status": "error",
+      "errors": [
+        "HTTPException: 502: Structured output failed validation: Task 'distill_extract': model output failed schema validation after a repair attempt and may not enter an artifact: [JSONDecodeError] Expecting ',' delimiter: line 1 column 46286 (char 46285)"
+      ]
+    },
+    "42-usc-17013": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T16:12:56.845290+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 25,
+      "definitions": 10,
+      "nothing_in_scope": false,
+      "citations_verified": 51,
+      "citations_total": 56,
+      "cost_usd": 0.272815,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "12-usc-635": {
+      "status": "error",
+      "errors": [
+        "HTTPException: 502: Structured output failed validation: Task 'distill_extract': model output failed schema validation after a repair attempt and may not enter an artifact: [JSONDecodeError] Expecting ',' delimiter: line 1 column 49299 (char 49298)"
+      ]
+    },
+    "12-usc-4701": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T16:57:09.036745+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 0,
+      "definitions": 3,
+      "nothing_in_scope": false,
+      "citations_verified": 10,
+      "citations_total": 10,
+      "cost_usd": 0.06805,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "2-usc-661": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T17:13:48.374470+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 0,
+      "definitions": 3,
+      "nothing_in_scope": false,
+      "citations_verified": 11,
+      "citations_total": 11,
+      "cost_usd": 0.05641,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "31-usc-3711": {
+      "status": "extracted",
+      "extracted_at": "2026-07-23T18:11:44.832688+00:00",
+      "family": "statute",
+      "focused": false,
+      "obligations": 22,
+      "definitions": 8,
+      "nothing_in_scope": false,
+      "citations_verified": 47,
+      "citations_total": 47,
+      "cost_usd": 0.28207,
+      "manifest_hash": "sha256:232d8024e718b6b350a4bf62fda514c916abf570dc98db75fd56759098129c01"
+    },
+    "31-usc-3717": {
+      "status": "error",
+      "errors": [
+        "no acquired text for 31-usc-3717 \u2014 acquire first"
+      ]
+    },
+    "42-usc-3141": {
+      "status": "error",
+      "errors": [
+        "no acquired text for 42-usc-3141 \u2014 acquire first"
+      ]
+    },
+    "25-usc-1481": {
+      "status": "error",
+      "errors": [
+        "no acquired text for 25-usc-1481 \u2014 acquire first"
+      ]
+    },
+    "25-cfr-103": {
+      "status": "error",
+      "errors": [
+        "no acquired text for 25-cfr-103 \u2014 acquire first"
+      ]
+    },
+    "42-usc-292": {
+      "status": "error",
+      "errors": [
+        "no acquired text for 42-usc-292 \u2014 acquire first"
+      ]
+    }
+  }
+}

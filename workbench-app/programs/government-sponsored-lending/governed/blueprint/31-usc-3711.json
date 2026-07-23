@@ -1,0 +1,577 @@
+{
+  "item_id": "31-usc-3711",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Establish standards for collection and compromise of claims of the United States Government for money or property arising out of agency activities, including defaulted federal loans.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "shall try to collect a claim of the United States Government for money or property arising out of the activities of, or referred to, the agency;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Provide for transfer of delinquent nontax debts and claims to the Secretary of the Treasury for collection or termination of collection action.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "If a nontax debt or claim owed to the United States has been delinquent for a period of 180 days-",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "3711-a1",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "must",
+      "action": "try to collect a claim of the United States Government for money or property arising out of the activities of, or referred to, the agency",
+      "trigger": "existence of a claim of the United States Government arising out of or referred to the agency",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "shall try to collect a claim of the United States Government for money or property arising out of the activities of, or referred to, the agency;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-a2",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "may",
+      "action": "compromise a claim of the Government that has not been referred to another executive or legislative agency for further collection action",
+      "trigger": null,
+      "threshold": "not more than $100,000 (excluding interest) or such higher amount as the Attorney General may from time to time prescribe",
+      "exceptions": [
+        "only the Comptroller General may compromise a claim arising out of an exception the Comptroller General makes in the account of an accountable official"
+      ],
+      "citations": [
+        {
+          "quote": "may compromise a claim of the Government of not more than $100,000 (excluding interest) or such higher amount as the Attorney General may from time to time prescribe that has not been referred to another executive or legislative agency for further collection action, except that only the Comptroller General may compromise a claim arising out of an exception the Comptroller General makes in the account of an accountable official; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-a3",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "may",
+      "action": "suspend or end collection action on a claim referred to in clause (2)",
+      "trigger": "when it appears that no person liable on the claim has the present or prospective ability to pay a significant amount of the claim or the cost of collecting the claim is likely to be more than the amount recovered",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "may suspend or end collection action on a claim referred to in clause (2) of this subsection when it appears that no person liable on the claim has the present or prospective ability to pay a significant amount of the claim or the cost of collecting the claim is likely to be more than the amount recovered.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-b1",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "must_not",
+      "action": "act under subsection (a)(2) or (3) on a claim that appears fraudulent, false, or misrepresented, or that is based on conduct in violation of the antitrust laws",
+      "trigger": "claim that appears to be fraudulent, false, or misrepresented by a party with an interest in the claim, or that is based on conduct in violation of the antitrust laws",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The head of an executive, judicial, or legislative agency may not act under subsection (a)(2) or (3) of this section on a claim that appears to be fraudulent, false, or misrepresented by a party with an interest in the claim, or that is based on conduct in violation of the antitrust laws.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-b2",
+      "actor": "The Secretary of Transportation",
+      "modality": "must_not",
+      "action": "compromise for less than $500 a penalty under section 21302 of title 49 for a violation of chapter 203, 205, or 207 of title 49 or a regulation or requirement prescribed or order issued under any of those chapters",
+      "trigger": null,
+      "threshold": "less than $500",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary of Transportation may not compromise for less than $500 a penalty under section 21302 of title 49 for a violation of chapter 203 , 205, or 207 of title 49 or a regulation or requirement prescribed or order issued under any of those chapters.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-d",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "must",
+      "action": "act under regulations prescribed by the head of the agency and standards that the Attorney General, the Secretary of the Treasury, may prescribe",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The head of an executive, judicial, or legislative agency acts under-",
+          "verified": true
+        },
+        {
+          "quote": "regulations prescribed by the head of the agency; and",
+          "verified": true
+        },
+        {
+          "quote": "standards that the Attorney General, the Secretary of the Treasury, may prescribe.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-e1",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "conditional",
+      "action": "disclose to a consumer reporting agency information from a system of records that a person is responsible for a claim",
+      "trigger": "when trying to collect a claim of the Government under a law except the Internal Revenue Code of 1986, and the conditions in subparagraphs (A) through (F) are met",
+      "threshold": null,
+      "exceptions": [
+        "claims under the Internal Revenue Code of 1986"
+      ],
+      "citations": [
+        {
+          "quote": "When trying to collect a claim of the Government under a law except the Internal Revenue Code of 1986 ( 26 U.S.C. 1 et seq. ), the head of an executive, judicial, or legislative agency shall disclose to a consumer reporting agency information from a system of records that a person is responsible for a claim if-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-e1C",
+      "actor": "The head of the agency",
+      "modality": "conditional",
+      "action": "notify the person in writing that payment is overdue, of intent to disclose within not less than 60 days, of specific information to be disclosed, and of the person's rights",
+      "trigger": "as a condition prior to disclosure to a consumer reporting agency",
+      "threshold": "within not less than 60 days after sending the notice",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the head of the agency has notified the person in writing-",
+          "verified": true
+        },
+        {
+          "quote": "that, within not less than 60 days after sending the notice, the head of the agency intends to disclose to a consumer reporting agency that the person is responsible for the claim;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-e2",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "must",
+      "action": "provide, on request of a person alleged to be responsible for the claim, for a review of the obligation including an opportunity for reconsideration of the initial decision",
+      "trigger": "before disclosing information to a consumer reporting agency under paragraph (1) and at other times allowed by law, on request of the person",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Before disclosing information to a consumer reporting agency under paragraph (1) of this subsection and at other times allowed by law, the head of an executive, judicial, or legislative agency shall provide, on request of a person alleged by the agency to be responsible for the claim, for a review of the obligation of the person, including an opportunity for reconsideration of the initial decision on the claim.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-e3",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "must",
+      "action": "take reasonable action to locate a person for whom the agency does not have a current address to send the notice under paragraph (1)(C)",
+      "trigger": "before disclosing information to a consumer reporting agency under paragraph (1)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Before disclosing information to a consumer reporting agency under paragraph (1) of this subsection, the head of an executive, judicial, or legislative agency shall take reasonable action to locate a person for whom the head of the agency does not have a current address to send the notice under paragraph (1)(C).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-e4",
+      "actor": "The head of each executive agency",
+      "modality": "must",
+      "action": "require, as a condition for insuring or guaranteeing any loan, financing, or other extension of credit, that the lender provide information relating to the extension of credit to consumer reporting agencies or commercial reporting agencies, as appropriate",
+      "trigger": "insuring or guaranteeing any loan, financing, or other extension of credit under any law to a person",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The head of each executive agency shall require, as a condition for insuring or guaranteeing any loan, financing, or other extension of credit under any law to a person, that the lender provide information relating to the extension of credit to consumer reporting agencies or commercial reporting agencies, as appropriate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-e5",
+      "actor": "The head of each executive agency",
+      "modality": "may",
+      "action": "provide to a consumer reporting agency or commercial reporting agency information from a system of records that a person is responsible for a claim which is current",
+      "trigger": "if notice required by section 552a(e)(4) of title 5 indicates that information in the system may be disclosed",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The head of each executive agency may provide to a consumer reporting agency or commercial reporting agency information from a system of records that a person is responsible for a claim which is current, if notice required by section 552a(e)(4) of title 5 indicates that information in the system may be disclosed to a consumer reporting agency or commercial reporting agency, respectively.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-f1",
+      "actor": "The Secretary of Defense",
+      "modality": "may",
+      "action": "suspend or terminate an action under subsection (a) to collect a claim against the estate of a person who died while serving on active duty",
+      "trigger": "if the Secretary determines that, under the circumstances applicable with respect to the deceased person, it is appropriate to do so",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary of Defense may suspend or terminate an action by the Secretary or by the Secretary of a military department under subsection (a) to collect a claim against the estate of a person who died while serving on active duty as a member of the Army, Navy, Air Force, Marine Corps, Space Force, or Coast Guard during a period when the Coast Guard is operating as a service in the Navy if the Secretary determines that, under the circumstances applicable with respect to the deceased person, it is appropriate to do so.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-g1A",
+      "actor": "The head of the executive, judicial, or legislative agency that administers the program that gave rise to the debt or claim",
+      "modality": "must",
+      "action": "transfer the debt or claim to the Secretary of the Treasury",
+      "trigger": "if a nontax debt or claim owed to the United States has been delinquent for a period of 180 days",
+      "threshold": "180 days delinquent",
+      "exceptions": [
+        "debt or claim in litigation or foreclosure",
+        "debt to be disposed of under an asset sales program within specified periods",
+        "debt referred to a private collection contractor",
+        "debt referred to a debt collection center with Treasury consent",
+        "debt to be collected under internal offset within 3 years",
+        "any other specific class of debt or claim as determined by the Secretary of the Treasury"
+      ],
+      "citations": [
+        {
+          "quote": "the head of the executive, judicial, or legislative agency that administers the program that gave rise to the debt or claim shall transfer the debt or claim to the Secretary of the Treasury; and",
+          "verified": true
+        },
+        {
+          "quote": "Paragraph (1) shall not apply-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-g1B",
+      "actor": "The Secretary of the Treasury",
+      "modality": "must",
+      "action": "take appropriate action to collect or terminate collection actions on the debt or claim",
+      "trigger": "upon such transfer",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "upon such transfer the Secretary of the Treasury shall take appropriate action to collect or terminate collection actions on the debt or claim.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-g3",
+      "actor": "The Secretary of the Treasury",
+      "modality": "must",
+      "action": "designate debt collection centers on the basis of their performance in collecting delinquent claims owed to the Government",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury shall designate such centers on the basis of their performance in collecting delinquent claims owed to the Government.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-g5",
+      "actor": "The Secretary of the Treasury",
+      "modality": "must",
+      "action": "maintain competition, maximize collections by placing delinquent debts quickly, maintain a schedule of eligible contractors and centers, and refer delinquent debts to the person most appropriate to collect",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Secretary of the Treasury shall-",
+          "verified": true
+        },
+        {
+          "quote": "maintain competition in carrying out this subsection;",
+          "verified": true
+        },
+        {
+          "quote": "maximize collections of delinquent debts by placing delinquent debts quickly;",
+          "verified": true
+        },
+        {
+          "quote": "refer delinquent debts to the person most appropriate to collect the type or amount of claim involved.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-g9",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "must",
+      "action": "take all appropriate steps to collect a delinquent debt, including administrative offset, tax refund offset, Federal salary offset, referral to private collection contractors, referral to debt collection centers, reporting delinquencies to credit reporting bureaus, garnishing wages, and litigation or foreclosure",
+      "trigger": "before discharging any delinquent debt owed to the agency",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Before discharging any delinquent debt owed to any executive, judicial, or legislative agency, the head of such agency shall take all appropriate steps to collect such debt, including (as applicable)-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-h1",
+      "actor": "The head of an executive, judicial, or legislative agency acting under subsection (a)(1), (2), or (3)",
+      "modality": "may",
+      "action": "obtain a consumer report or comparable credit information on any person who is liable for the claim",
+      "trigger": "acting to collect a claim, compromise a claim, or terminate collection action",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The head of an executive, judicial, or legislative agency acting under subsection (a)(1), (2), or (3) of this section to collect a claim, compromise a claim, or terminate collection action on a claim may obtain a consumer report (as that term is defined in section 603 of the Fair Credit Reporting Act ( 15 U.S.C. 1681a )) or comparable credit information on any person who is liable for the claim.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-i1",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "may",
+      "action": "sell, using competitive procedures, any nontax debt owed to the United States that is delinquent for more than 90 days",
+      "trigger": null,
+      "threshold": "delinquent for more than 90 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The head of an executive, judicial, or legislative agency may sell, subject to section 504(b) of the Federal Credit Reform Act of 1990 and using competitive procedures, any nontax debt owed to the United States that is delinquent for more than 90 days.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-i2",
+      "actor": "The head of an executive, judicial, or legislative agency",
+      "modality": "conditional",
+      "action": "sell, using competitive procedures, any nontax debt or class of nontax debts owed to the United States after terminating collection action",
+      "trigger": "if the Secretary of the Treasury determines the sale is in the best interests of the United States",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "After terminating collection action, the head of an executive, judicial, or legislative agency shall sell, using competitive procedures, any nontax debt or class of nontax debts owed to the United States, if the Secretary of the Treasury determines the sale is in the best interests of the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "3711-i4A",
+      "actor": "Each executive agency with current and delinquent collateralized nontax debts",
+      "modality": "must",
+      "action": "report to the Congress on the valuation of its existing portfolio of loans, notes and guarantees, and other collateralized debts based on standards developed by the Director of the Office of Management and Budget",
+      "trigger": "within one year after the date of enactment of the Debt Collection Improvement Act of 1996",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Within one year after the date of enactment of the Debt Collection Improvement Act of 1996, each executive agency with current and delinquent collateralized nontax debts shall report to the Congress on the valuation of its existing portfolio of loans, notes and guarantees, and other collateralized debts based on standards developed by the Director of the Office of Management and Budget, in consultation with the Secretary of the Treasury.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "active duty",
+      "definition": "has the meaning given that term in section 101 of title 10",
+      "citations": [
+        {
+          "quote": "the term \"active duty\" has the meaning given that term in section 101 of title 10 .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "consumer report",
+      "definition": "as that term is defined in section 603 of the Fair Credit Reporting Act (15 U.S.C. 1681a)",
+      "citations": [
+        {
+          "quote": "a consumer report (as that term is defined in section 603 of the Fair Credit Reporting Act ( 15 U.S.C. 1681a ))",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "claim",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "shall try to collect a claim of the United States Government for money or property arising out of the activities of, or referred to, the agency;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "nontax debt or claim",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "If a nontax debt or claim owed to the United States has been delinquent for a period of 180 days-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "debt collection center",
+      "definition": "(undefined here) \u2014 centers operated by other Federal agencies designated and withdrawn by the Secretary of the Treasury on the basis of their performance in collecting delinquent claims",
+      "citations": [
+        {
+          "quote": "the Secretary of the Treasury may designate, and withdraw such designation of debt collection centers operated by other Federal agencies.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "financing account and liquidating account",
+      "definition": "as those terms are defined in sections 502(7) and 502(8), respectively, of the Federal Credit Reform Act of 1990",
+      "citations": [
+        {
+          "quote": "for each liquidating account (as those terms are defined in sections 502(7) and 502(8), respectively, of the Federal Credit Reform Act of 1990)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "consumer reporting agency",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "shall disclose to a consumer reporting agency information from a system of records that a person is responsible for a claim if-",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "commercial reporting agency",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "that the lender provide information relating to the extension of credit to consumer reporting agencies or commercial reporting agencies, as appropriate.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Collection excludes claims under the Internal Revenue Code of 1986 for purposes of disclosure to consumer reporting agencies.",
+      "references": [
+        "26 U.S.C. 1 et seq."
+      ],
+      "citations": [
+        {
+          "quote": "When trying to collect a claim of the Government under a law except the Internal Revenue Code of 1986 ( 26 U.S.C. 1 et seq. ),",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Notice requirement cross-references Privacy Act system-of-records notice under section 552a(e)(4) of title 5.",
+      "references": [
+        "5 U.S.C. 552a(e)(4)"
+      ],
+      "citations": [
+        {
+          "quote": "notice required by section 552a(e)(4) of title 5 indicates that information in the system may be disclosed to a consumer reporting agency;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Obtaining a consumer report under subsection (h) is deemed an authorized purpose under section 604 of the Fair Credit Reporting Act.",
+      "references": [
+        "15 U.S.C. 1681b",
+        "Fair Credit Reporting Act section 604"
+      ],
+      "citations": [
+        {
+          "quote": "The obtaining of a consumer report under this subsection is deemed to be a circumstance or purpose authorized or listed under section 604 of the Fair Credit Reporting Act ( 15 U.S.C. 1681b ).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Sale of nontax debt is subject to section 504(b) of the Federal Credit Reform Act of 1990; sections 502(7), 502(8), and 504(b) are classified to sections 661a(7), 661a(8), and 661c(b) of Title 2.",
+      "references": [
+        "section 504(b) of the Federal Credit Reform Act of 1990",
+        "2 U.S.C. 661a(7)",
+        "2 U.S.C. 661a(8)",
+        "2 U.S.C. 661c(b)"
+      ],
+      "citations": [
+        {
+          "quote": "may sell, subject to section 504(b) of the Federal Credit Reform Act of 1990 and using competitive procedures, any nontax debt owed to the United States that is delinquent for more than 90 days.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Fees charged for debt collection may relate to costs under section 3717(e), funding via section 3720C, and override the depositing rule of section 3302(b) of this title.",
+      "references": [
+        "31 U.S.C. 3717(e)",
+        "31 U.S.C. 3720C",
+        "31 U.S.C. 3302(b)"
+      ],
+      "citations": [
+        {
+          "quote": "Amounts charged under this subsection concerning delinquent claims may be considered as costs pursuant to section 3717(e) of this title .",
+          "verified": true
+        },
+        {
+          "quote": "Notwithstanding any other law concerning the depositing and collection of Federal payments, including section 3302(b) of this title , agencies collecting fees may retain the fees from amounts collected.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The penalty compromise limit references section 21302 of title 49 for violations of chapters 203, 205, or 207 of title 49.",
+      "references": [
+        "49 U.S.C. 21302",
+        "49 U.S.C. chapters 203, 205, 207"
+      ],
+      "citations": [
+        {
+          "quote": "a penalty under section 21302 of title 49 for a violation of chapter 203 , 205, or 207 of title 49",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Savings provision: nothing in the Act increases or diminishes existing authority of an agency head to litigate, settle, compromise, or close claims.",
+      "references": [
+        "Pub. L. 89-508, \u00a74"
+      ],
+      "citations": [
+        {
+          "quote": "Nothing in this Act [now this section] shall increase or diminish the existing authority of the head of an agency to litigate claims, or diminish his existing authority to settle, compromise, or close claims.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Source text presents this as the 'Current' edition, 'Text contains those laws in effect on July 22, 2026.' Subsection (d)(2) reads 'standards that the Attorney General, the Secretary of the Treasury, may prescribe' and is flagged in the source with footnote 1: 'So in original. Probably should be \"Attorney General and the Secretary of the Treasury may prescribe jointly.\"' \u2014 preserved as written per fidelity rule. Note internal inconsistency: subsection (b)(2) names 'The Secretary of Transportation' while the 2006 amendment note states Pub. L. 109-241 substituted 'Secretary of Homeland Security' for 'Secretary of Transportation'; the operative text as quoted still reads 'Secretary of Transportation' and is extracted verbatim. This provision is a cross-cutting framework governing defaulted federal loans/claims collection applicable to lending agencies within scope; it is not itself a lending subsidy/guarantee program. Subsection (e)(4) directly conditions the insuring/guaranteeing of loans on lender reporting, which is scope-relevant to commercial lending guarantee programs."
+}

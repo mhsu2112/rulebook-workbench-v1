@@ -1,0 +1,368 @@
+{
+  "program_id": "government-sponsored-lending",
+  "statement_id": "PS-government-sponsored-lending-0001",
+  "version": "0.1",
+  "status": "ratified",
+  "roles": {
+    "respondent": {
+      "name": "Mike Hsu",
+      "capacity": "Program Owner",
+      "identity_verified": false
+    },
+    "program_owner": {
+      "name": "Mike Hsu",
+      "capacity": "Program Owner (joint with Chris S.; either may ratify unilaterally)",
+      "identity_verified": false
+    },
+    "principal": null,
+    "authority": "No existing body holds cross-agency amendment authority over the in-scope programs; a proposed OMB coordination mechanism / interagency task force does not yet exist.",
+    "ratifier": null
+  },
+  "interview": {
+    "transcript_ref": "programs/government-sponsored-lending/restricted/interview.json",
+    "consent": {
+      "notice_given": true,
+      "publication_excerpts": "all"
+    },
+    "answers": [
+      {
+        "answer_id": "A-ROLE-01",
+        "stage": "S1",
+        "question": "What's your name, and in what capacity are you answering today?",
+        "verbatim": "Mike Hsu and Chris S.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-ROLE-02",
+        "stage": "S1",
+        "question": "For each of you: what's your role with respect to this program?",
+        "verbatim": "Program owner.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-ROLE-03",
+        "stage": "S1",
+        "question": "Is this joint Program Owner authority \u2014 i.e., either of you can ratify, or does it require both together?",
+        "verbatim": "either can ratify",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-CONSENT-01",
+        "stage": "S1",
+        "question": "Do you consent to this interview being logged verbatim internally, with only synthesized conclusions plus approved excerpts appearing in the ratification artifact?",
+        "verbatim": "we consent",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S1-01",
+        "stage": "S1",
+        "question": "What's actually going wrong today that makes this worth a project?",
+        "verbatim": "There seems to be a very scattered set of government sponsored programs that have different standards and operate under different visions, rules, etc.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S1-02",
+        "stage": "S1",
+        "question": "Imagine this succeeded completely three years from now. What's true that isn't true today?",
+        "verbatim": "everything in one place, coherent and linked to purpose.  all three",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S2-01",
+        "stage": "S2",
+        "question": "If the work turns up two subsidy programs using materially different underwriting standards for the same kind of loan, should this project (a) make the call, or (b) document and set it aside?",
+        "verbatim": "B",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S2-02",
+        "stage": "S2",
+        "question": "Did you mean documenting stated purpose as a factual matter, or evaluating whether programs still serve their purpose?",
+        "verbatim": "1",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S2-03",
+        "stage": "S2",
+        "question": "Does the draft sentence feel like it captures one project, or does it feel like it's straining under the weight of more than one?",
+        "verbatim": "caputres the project",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S3-01",
+        "stage": "S3",
+        "question": "Who is the intended client here, and what are they positioned to actually change?",
+        "verbatim": "multiple agencies",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S3-02",
+        "stage": "S3",
+        "question": "Which agencies, roughly, and what tier of instrument for each?",
+        "verbatim": "SBA, USDA, Dept of Commerce, Interior, Energy, Education, HHS, etc.",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S3-03",
+        "stage": "S3",
+        "question": "Is there any actual interagency body that could act jointly here, or is 'multiple agencies' shorthand for 'each agency controls its own slice'?",
+        "verbatim": "OMB coordination or task force",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S3-04",
+        "stage": "S3",
+        "question": "Is that an existing OMB coordination mechanism/task force, or something you're proposing should exist?",
+        "verbatim": "Not existing yet",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S3-05",
+        "stage": "S3",
+        "question": "Which revival path do you want: (1) re-scope to each agency individually, (2) advisory/analytical posture, or (3) narrow the roster?",
+        "verbatim": "2",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S4-01",
+        "stage": "S4",
+        "question": "When this map exists, who actually picks it up, and what decision does it help them make?",
+        "verbatim": "4",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S6-01",
+        "stage": "S6",
+        "question": "Accept the three proposed boundaries (state-level, consumer/mortgage, grants/direct spending as out of scope), amend, or add others?",
+        "verbatim": "accept",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S6-02",
+        "stage": "S6",
+        "question": "Accept the snapshot approach (current law as of today, pending noted as context only), or treat pending/proposed material differently?",
+        "verbatim": "2",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S6-03",
+        "stage": "S6",
+        "question": "Did you mean (a) include pending/proposed material substantively in scope, or (b) something else?",
+        "verbatim": "a",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S6-04",
+        "stage": "S6",
+        "question": "Should pending/proposed material be flagged as 'not yet law' throughout, or shown as-is/as-proposed side-by-side?",
+        "verbatim": "not yet law",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S6-05",
+        "stage": "S6",
+        "question": "Does the deliverable shape and horizon match what you have in mind?",
+        "verbatim": "matches",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-S6-06",
+        "stage": "S6",
+        "question": "Do you want to pin down the snapshot date and delivery horizon now, or leave as open items?",
+        "verbatim": "pin the date to today and horizon to Dec 1, 2026",
+        "consented_for_publication": true
+      },
+      {
+        "answer_id": "A-CONSENT-02",
+        "stage": "S6",
+        "question": "Do you consent to which verbatim excerpts may appear in the ratification artifact, or prefer synthesized conclusions only?",
+        "verbatim": "consent",
+        "consented_for_publication": true
+      }
+    ]
+  },
+  "synthesis": {
+    "recommended_mode": {
+      "mode": "refactor",
+      "basis_answer_ids": [
+        "A-S1-01",
+        "A-S2-01",
+        "A-S2-02",
+        "A-S6-05"
+      ],
+      "mode_consistency_note": "S1 surfaced scatter + incoherence (refactor signals) but the S1 aspiration answer (A-S1-02) selected 'all three,' including evaluating whether programs still make sense (a redesign-shaped signal). The tension was surfaced explicitly and resolved by the respondents: on the change-tolerance fork (A-S2-01) they chose 'document and set aside' rather than making policy calls, and on the purpose-linkage question (A-S2-02) they chose to document stated purpose as a factual matter rather than evaluating adequacy. S1/S2/S6 therefore all point to refactor."
+    },
+    "decomposition": null,
+    "scope_sentence": {
+      "text": "Map the current (as of today's snapshot date) federal commercial lending subsidy/guarantee programs administered by SBA, USDA, Commerce, Interior, Energy, Education, HHS, and similar agencies \u2014 documenting each program's current rules, standards, and stated statutory/regulatory purpose, flagging pending/proposed legislative and rulemaking changes as 'not yet law,' and listing cross-program divergences and conflicts as an explicit open-items list rather than resolving them \u2014 as an advisory deliverable to inform a working group's decision whether to fund a fuller consolidation program, by December 1, 2026, treating state-level lending programs, consumer/mortgage subsidies, and grants/direct-spending programs as boundary regimes.",
+      "basis_answer_ids": [
+        "A-S1-01",
+        "A-S2-01",
+        "A-S2-02",
+        "A-S3-02",
+        "A-S3-05",
+        "A-S4-01",
+        "A-S6-01",
+        "A-S6-03",
+        "A-S6-04",
+        "A-S6-06"
+      ]
+    },
+    "decision_served": {
+      "text": "A working group/commission decides whether to fund a fuller consolidation program; the map serves as the Phase 0-scale evidence base for that funding decision.",
+      "basis_answer_ids": [
+        "A-S4-01"
+      ]
+    },
+    "consumers": [
+      {
+        "text": "A working group/commission evaluating whether to fund a fuller consolidation program.",
+        "basis_answer_ids": [
+          "A-S4-01"
+        ]
+      }
+    ],
+    "client": {
+      "authority": "No existing body holds cross-agency amendment authority over SBA, USDA, Commerce, Interior, Energy, Education, HHS programs; a proposed OMB coordination mechanism/interagency task force does not yet exist. Posture is advisory.",
+      "posture": "advisory",
+      "mutable_core_claims": [
+        {
+          "claim": "Multiple agencies collectively are the intended client.",
+          "confirmation_status": "refuted",
+          "basis_answer_ids": [
+            "A-S3-01",
+            "A-S3-03",
+            "A-S3-04"
+          ]
+        },
+        {
+          "claim": "An OMB coordination mechanism or task force could act jointly on the deliverable.",
+          "confirmation_status": "refuted",
+          "basis_answer_ids": [
+            "A-S3-03",
+            "A-S3-04"
+          ]
+        },
+        {
+          "claim": "Mutable core is empty for direct amendment today; deliverable is advisory, aimed at informing the eventual creation of an interagency coordination body and a working group's funding decision.",
+          "confirmation_status": "confirmed",
+          "basis_answer_ids": [
+            "A-S3-04",
+            "A-S3-05",
+            "A-S4-01"
+          ]
+        }
+      ]
+    },
+    "success_criteria": [
+      {
+        "text": "A single coherent map/blueprint exists showing every in-scope federal commercial lending subsidy/guarantee program, its current rules and standards, and its stated statutory/regulatory purpose.",
+        "basis_answer_ids": [
+          "A-S1-02",
+          "A-S2-02"
+        ]
+      },
+      {
+        "text": "Pending/proposed legislative and rulemaking changes are included substantively and clearly flagged throughout as 'not yet law,' distinguished from current authority.",
+        "basis_answer_ids": [
+          "A-S6-03",
+          "A-S6-04"
+        ]
+      },
+      {
+        "text": "Cross-program divergences and conflicts are captured as an explicit first-class open-items list rather than resolved.",
+        "basis_answer_ids": [
+          "A-S2-01"
+        ]
+      },
+      {
+        "text": "The deliverable is presented to the working group/commission by December 1, 2026 to support its funding decision.",
+        "basis_answer_ids": [
+          "A-S4-01",
+          "A-S6-06"
+        ]
+      }
+    ],
+    "non_goals": [
+      {
+        "text": "Resolving cross-program standards conflicts (e.g., differing underwriting/eligibility criteria across SBA/USDA/etc.) \u2014 these are documented and set aside, not decided.",
+        "basis_answer_ids": [
+          "A-S2-01"
+        ]
+      },
+      {
+        "text": "Evaluating whether programs still serve their purpose given a changed world \u2014 only stated purpose is documented as a factual/citable matter.",
+        "basis_answer_ids": [
+          "A-S2-02"
+        ]
+      },
+      {
+        "text": "Mapping state-level lending programs (state SBDCs, state guarantee funds) in depth \u2014 out of scope; federal only.",
+        "basis_answer_ids": [
+          "A-S6-01"
+        ]
+      },
+      {
+        "text": "Consumer/mortgage lending subsidies (FHA, Fannie/Freddie, student consumer credit) \u2014 out of scope.",
+        "basis_answer_ids": [
+          "A-S6-01"
+        ]
+      },
+      {
+        "text": "Grants and direct-spending (non-lending) programs \u2014 out of scope; only loan guarantee/subsidy lending mechanisms in scope.",
+        "basis_answer_ids": [
+          "A-S6-01"
+        ]
+      }
+    ],
+    "kill_tests": {
+      "two_sentence": {
+        "result": "pass",
+        "note": "One long sentence but one project: one deliverable, one client decision, one mode (document, don't resolve). Does not split into two competing sentences."
+      },
+      "empty_core": {
+        "result": "fail_proceeded",
+        "note": "Failed as originally scoped \u2014 no existing body holds cross-agency amendment authority and the proposed OMB coordination mechanism does not yet exist (A-S3-04). Revived via explicit re-scoping to an advisory posture aimed at a working group's funding decision (A-S3-05, A-S4-01). Recorded as a deliberate re-scoping; a Decision Log entry should capture the revival."
+      },
+      "mode_consistency": {
+        "result": "pass",
+        "note": "S1 scatter/incoherence (A-S1-01), S2 document-and-set-aside (A-S2-01) and stated-purpose-only (A-S2-02), and S6 advisory map that lists rather than resolves conflicts (A-S6-05) all point to refactor."
+      }
+    }
+  },
+  "mandate_hypotheses_ref": null,
+  "open_items": [
+    {
+      "item_id": "OI-01",
+      "description": "Mutable core is empty for direct amendment as scoped; the project is advisory pending the working group's funding decision. This is a deliberate re-scoping (from an initially proposed but non-existent OMB coordination body), not a defect, and must be stated plainly in the deliverable's framing.",
+      "owner": "Mike Hsu / Chris S.",
+      "blocking": false,
+      "resolves_via": "Explicit framing statement in the deliverable and Decision Log entry recording the advisory re-scoping."
+    },
+    {
+      "item_id": "OI-02",
+      "description": "Cross-program standards divergences (e.g., underwriting/eligibility criteria across SBA/USDA/etc.) will be documented, not resolved \u2014 the explicit open-items list is a first-class required deliverable output.",
+      "owner": "Mike Hsu / Chris S.",
+      "blocking": false,
+      "resolves_via": "Inclusion of divergences as a required section of the deliverable."
+    },
+    {
+      "item_id": "OI-03",
+      "description": "Respondent identities (Mike Hsu, Chris S.) and their Program Owner authority were stated in the transcript but not independently verified; identity_verified is false.",
+      "owner": "Workbench / Program administration",
+      "blocking": false,
+      "resolves_via": "Identity verification at ratification time."
+    }
+  ],
+  "ratification": {
+    "status": "ratified",
+    "ratified_by": {
+      "name": "Mike Hsu",
+      "capacity": "Program Owner",
+      "identity_verified": true
+    },
+    "timestamp": "2026-07-22T14:39:31.723278+00:00",
+    "decision_log_ref": "DL-001",
+    "rationale": "done"
+  }
+}

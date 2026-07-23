@@ -1,0 +1,357 @@
+{
+  "item_id": "15-usc-695",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Foster economic development and create or preserve job opportunities in both urban and rural areas by providing long-term financing for small business concerns through the development company program.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The Congress hereby finds and declares that the purpose of this subchapter is to foster economic development and to create or preserve job opportunities in both urban and rural areas by providing long-term financing for small business concerns through the development company program authorized by this subchapter.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "695-b-1",
+      "actor": "The Administration",
+      "modality": "may",
+      "action": "make loans to State development companies to assist in carrying out the purposes of this chapter",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Administration is authorized to make loans to State development companies to assist in carrying out the purposes of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-b-2",
+      "actor": "Development company (funds advanced under this subsection)",
+      "modality": "must",
+      "action": "provide obligations in exchange for advanced funds which bear interest at such rate, and contain such other terms, as the Administration may fix",
+      "trigger": "Any funds advanced under this subsection",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Any funds advanced under this subsection shall be in exchange for obligations of the development company which bear interest at such rate, and contain such other terms, as the Administration may fix, and funds may be so advanced without regard to the use and investment by the development company of funds secured by it from other sources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-c-1",
+      "actor": "The Administration",
+      "modality": "must_not",
+      "action": "purchase and hold outstanding at any one time obligations from any one State development company exceeding the total amount borrowed by it from all other sources",
+      "trigger": null,
+      "threshold": "shall not exceed the total amount borrowed by it from all other sources",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The total amount of obligations purchased and outstanding at any one time by the Administration under this section from any one State development company shall not exceed the total amount borrowed by it from all other sources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-c-2",
+      "actor": "Funds advanced to a State development company (treatment)",
+      "modality": "must",
+      "action": "be treated on an equal basis with those funds borrowed by such company after August 21, 1958, regardless of source, which have the highest priority",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "except when this requirement is waived by the Administrator"
+      ],
+      "citations": [
+        {
+          "quote": "Funds advanced to a State development company under this section shall be treated on an equal basis with those funds borrowed by such company after August 21, 1958, regardless of source, which have the highest priority, except when this requirement is waived by the Administrator.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-d-1",
+      "actor": "Development company",
+      "modality": "must",
+      "action": "demonstrate that the project to be funded is directed toward at least one of the listed economic development objectives",
+      "trigger": "In order to qualify for assistance under this subchapter",
+      "threshold": "at least one of the following economic development objectives",
+      "exceptions": [
+        "If eligibility is based upon the criteria set forth in paragraph (2) or (3), the project need not meet the job creation or job preservation criteria developed by the Administration if the overall portfolio of the development company meets or exceeds such job creation or retention criteria."
+      ],
+      "citations": [
+        {
+          "quote": "In order to qualify for assistance under this subchapter, the development company must demonstrate that the project to be funded is directed toward at least one of the following economic development objectives-",
+          "verified": true
+        },
+        {
+          "quote": "If eligibility is based upon the criteria set forth in paragraph (2) or (3), the project need not meet the job creation or job preservation criteria developed by the Administration if the overall portfolio of the development company meets or exceeds such job creation or retention criteria.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-e-1",
+      "actor": "Project (job creation/retention standard)",
+      "modality": "conditional",
+      "action": "meets the objective set forth in subsection (d)(1) if the project creates or retains one job for every $65,000 guaranteed by the Administration",
+      "trigger": "if the project creates or retains one job for every $65,000 guaranteed by the Administration",
+      "threshold": "one job for every $65,000 guaranteed; except $100,000 in the case of a project of a small manufacturer",
+      "exceptions": [
+        "except that the amount is $100,000 in the case of a project of a small manufacturer"
+      ],
+      "citations": [
+        {
+          "quote": "A project meets the objective set forth in subsection (d)(1) if the project creates or retains one job for every $65,000 guaranteed by the Administration, except that the amount is $100,000 in the case of a project of a small manufacturer.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-e-2",
+      "actor": "Development company portfolio (alternative standard)",
+      "modality": "conditional",
+      "action": "Paragraph (1) does not apply to a project for which eligibility is based on the objectives set forth in paragraph (2) or (3) of subsection (d), if the portfolio of outstanding debentures creates or retains one job for every $65,000 guaranteed",
+      "trigger": "if the development company's portfolio of outstanding debentures creates or retains one job for every $65,000 guaranteed by the Administration",
+      "threshold": "one job for every $65,000 guaranteed",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Paragraph (1) does not apply to a project for which eligibility is based on the objectives set forth in paragraph (2) or (3) of subsection (d), if the development company's portfolio of outstanding debentures creates or retains one job for every $65,000 guaranteed by the Administration.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-e-3",
+      "actor": "Development company portfolio (special areas)",
+      "modality": "may",
+      "action": "average not more than $75,000 per job created or retained for projects in Alaska, Hawaii, State-designated enterprise zones, empowerment zones and enterprise communities, labor surplus areas, and other areas designated by the Administrator",
+      "trigger": "For projects in Alaska, Hawaii, State-designated enterprise zones, empowerment zones and enterprise communities, labor surplus areas, as determined by the Secretary of Labor, and for other areas designated by the Administrator",
+      "threshold": "not more than $75,000 per job created or retained",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "For projects in Alaska, Hawaii, State-designated enterprise zones, empowerment zones and enterprise communities, labor surplus areas, as determined by the Secretary of Labor, and for other areas designated by the Administrator, the development company's portfolio may average not more than $75,000 per job created or retained.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-e-4",
+      "actor": "Loans for projects of small manufacturers",
+      "modality": "must",
+      "action": "be excluded from calculations under paragraph (2) or (3)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Loans for projects of small manufacturers shall be excluded from calculations under paragraph (2) or (3).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-e-5a",
+      "actor": "The Administrator",
+      "modality": "may",
+      "action": "waive, on a case-by-case basis or by regulation, any requirement of this subsection (other than paragraph (4))",
+      "trigger": "Under regulations prescribed by the Administrator",
+      "threshold": null,
+      "exceptions": [
+        "other than paragraph (4)"
+      ],
+      "citations": [
+        {
+          "quote": "Under regulations prescribed by the Administrator, the Administrator may waive, on a case-by-case basis or by regulation, any requirement of this subsection (other than paragraph (4)).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "695-e-5b",
+      "actor": "The Administrator",
+      "modality": "must_not",
+      "action": "adopt a dollar amount that is lower than the amounts set forth in paragraphs (1), (2), and (3) with respect to any waiver",
+      "trigger": "With respect to any waiver",
+      "threshold": "lower than the amounts set forth in paragraphs (1), (2), and (3)",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "With respect to any waiver the Administrator is prohibited from adopting a dollar amount that is lower than the amounts set forth in paragraphs (1), (2), and (3).",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "small manufacturer",
+      "definition": "a small business concern (A) the primary business of which is classified in sector 31, 32, or 33 of the North American Industrial Classification System; and (B) all of the production facilities of which are located in the United States.",
+      "citations": [
+        {
+          "quote": "As used in this subsection, the term \"small manufacturer\" means a small business concern-",
+          "verified": true
+        },
+        {
+          "quote": "(A) the primary business of which is classified in sector 31, 32, or 33 of the North American Industrial Classification System; and",
+          "verified": true
+        },
+        {
+          "quote": "(B) all of the production facilities of which are located in the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "terms in subparagraphs (J) and (K)",
+      "definition": "terms have the meanings given those terms under the Leadership in Energy and Environmental Design (LEED) standard for green building certification, as determined by the Administrator.",
+      "citations": [
+        {
+          "quote": "In subparagraphs (J) and (K), terms have the meanings given those terms under the Leadership in Energy and Environmental Design (LEED) standard for green building certification, as determined by the Administrator.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "veterans",
+      "definition": "as defined in section 632(q) of this title",
+      "citations": [
+        {
+          "quote": "expansion of small business concerns owned and controlled by veterans, as defined in section 632(q) of this title , especially service-disabled veterans, as defined in such section 632(q) of this title ,",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "this chapter",
+      "definition": "(undefined here) \u2014 For definition of \"this chapter\", referred to in subsec. (b), see References in Text note set out under section 661 of this title.",
+      "citations": [
+        {
+          "quote": "For definition of \"this chapter\", referred to in subsec. (b), see References in Text note set out under section 661 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "State development company",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The Administration is authorized to make loans to State development companies to assist in carrying out the purposes of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "small business concern",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "long-term financing for small business concerns through the development company program authorized by this subchapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "labor surplus areas",
+      "definition": "as such areas are determined by the Secretary of Labor",
+      "citations": [
+        {
+          "quote": "reduction of rates of unemployment in labor surplus areas, as such areas are determined by the Secretary of Labor.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "rural areas",
+      "definition": "(undefined here \u2014 prior version defined it as \"those localities with populations of less than 20,000\" but that language was amended out in 1990)",
+      "citations": [
+        {
+          "quote": "As used in this subchapter, the term 'rural areas' means those localities with populations of less than 20,000.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Definition of veterans and service-disabled veterans cross-referenced to section 632(q) of Title 15.",
+      "references": [
+        "15 U.S.C. 632(q)"
+      ],
+      "citations": [
+        {
+          "quote": "expansion of small business concerns owned and controlled by veterans, as defined in section 632(q) of this title , especially service-disabled veterans, as defined in such section 632(q) of this title ,",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Definition of 'this chapter' referred to in subsec. (b) is set out under section 661 of Title 15.",
+      "references": [
+        "15 U.S.C. 661"
+      ],
+      "citations": [
+        {
+          "quote": "For definition of \"this chapter\", referred to in subsec. (b), see References in Text note set out under section 661 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Terms in subparagraphs (J) and (K) draw meanings from the Leadership in Energy and Environmental Design (LEED) standard for green building certification, as determined by the Administrator.",
+      "references": [
+        "Leadership in Energy and Environmental Design (LEED) standard"
+      ],
+      "citations": [
+        {
+          "quote": "In subparagraphs (J) and (K), terms have the meanings given those terms under the Leadership in Energy and Environmental Design (LEED) standard for green building certification, as determined by the Administrator.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Budgetary Treatment note: assistance under financings made during 2-year period beginning Oct. 1, 2002 treated as a separate program for purposes of the Federal Credit Reform Act of 1990 (2 U.S.C. 661 et seq.) only, per section 6(c) of Pub. L. 107-100, set out under section 636.",
+      "references": [
+        "Federal Credit Reform Act of 1990 (2 U.S.C. 661 et seq.)",
+        "Pub. L. 107-100 section 6(c)",
+        "15 U.S.C. 636"
+      ],
+      "citations": [
+        {
+          "quote": "Assistance made available under any financings made under this subchapter during 2-year period beginning Oct. 1, 2002, to be treated as a separate program of the Small Business Administration for purposes of the Federal Credit Reform Act of 1990 ( 2 U.S.C. 661 et seq. ) only, see section 6(c) of Pub. L. 107&ndash;100, set out as a note under section 636 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Loan Liquidation Pilot Program (Pub. L. 104-208 \u00a7204) authorized selected development companies making loans/issuing debentures under title V of the Small Business Investment Act of 1958 (15 U.S.C. 695 et seq.) to perform liquidation and foreclosure functions; scheduled to cease when final regulations under section 697g are issued.",
+      "references": [
+        "Pub. L. 104-208, div. D, title II, \u00a7204",
+        "Small Business Investment Act of 1958 title V (15 U.S.C. 695 et seq.)",
+        "15 U.S.C. 697g",
+        "Pub. L. 106-554 \u00a71(a)(9) [title III, \u00a7307(b)]"
+      ],
+      "citations": [
+        {
+          "quote": "certain development companies authorized to make loans and issue debentures under title V of the Small Business Investment Act of 1958 [ 15 U.S.C. 695 et seq. ] are selected by the Administrator in accordance with this subsection to carry out loan liquidations.",
+          "verified": true
+        },
+        {
+          "quote": "[Section 204 of title II of div. D of Pub. L. 104&ndash;208, set out above, to cease to have effect beginning on the date on which final regulations are issued to carry out section 697g of this title , see section 1(a)(9) [title III, &sect;307(b)] of Pub. L. 106&ndash;554, set out as a Regulations note under section 697g of this title .]",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Snapshot/currency note: header states 'Text contains those laws in effect on July 22, 2026.' The 2009 amendment note flags an internal drafting inconsistency preserved as written: Pub. L. 111-5 'directed amendment of section 501(e)(1), (2)' but was 'executed... to reflect the probable intent of Congress.' The prior-version 'rural areas' definition (populations less than 20,000) was amended out in 1990 and appears only in the Amendments editorial note; it is recorded here as (undefined here) in the current text. The Loan Liquidation Pilot Program provisions (Pub. L. 104-208 \u00a7204) are set-out statutory notes with several 'shall' duties on the Administrator and development companies; these are pilot/historical and scheduled to cease upon issuance of final regulations under \u00a7697g, so they were captured as an interaction rather than as live core obligations, consistent with the fidelity rule against resolving currency status."
+}

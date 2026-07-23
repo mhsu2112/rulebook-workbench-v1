@@ -1,0 +1,210 @@
+{
+  "item_id": "7-usc-901",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "It is the policy of Congress that the Rural Electrification Administration make loans that facilitate the development and enhancement of the rural telecommunications infrastructure in order to make modern telecommunications technology and services available at reasonable rates to the greatest practicable number of people in rural areas in the United States.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "It is the policy of the Congress that the Rural Electrification Administration make loans that facilitate the development and enhancement of the rural telecommunications infrastructure in order to make modern telecommunications technology and services available at reasonable rates to the greatest practicable number of people in rural areas in the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Congress finds that making modern telecommunications technology and services available in rural areas promotes economic development and improves quality of life, and that efficient operation of the Rural Telephone Bank and the REA telephone loan programs is essential to continued development of rural telecommunications infrastructure.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "making modern telecommunications technology and services available in rural areas in the United States promotes economic development and improves the quality of life in rural areas",
+          "verified": true
+        },
+        {
+          "quote": "the efficient operation of the Rural Telephone Bank and the Rural Electrification Administration telephone loan programs is essential to the continued development of the telecommunications infrastructure in rural areas in the United States.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-1",
+      "actor": "Administrator of the Rural Electrification Administration",
+      "modality": "must",
+      "action": "issue interim final regulations to carry out the amendments made by the Act to programs administered by the Administrator",
+      "trigger": "not later than 45 days after the date of enactment of this Act [Nov. 1, 1993]",
+      "threshold": null,
+      "exceptions": [
+        "Except as provided in section 2(b) of the Rural Electrification Act of 1936 [ 7 U.S.C. 902(b) ] and section 370 of the Consolidated Farm and Rural Development Act [ 7 U.S.C. 2008e ]"
+      ],
+      "citations": [
+        {
+          "quote": "not later than 45 days after the date of enactment of this Act [Nov. 1, 1993], interim final regulations shall be issued by-",
+          "verified": true
+        },
+        {
+          "quote": "\"(1) the Administrator of the Rural Electrification Administration to carry out the amendments made by this Act [see Short Title of 1993 Amendment note above] to programs administered by the Administrator;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-2",
+      "actor": "Administrator of the Rural Development Administration",
+      "modality": "must",
+      "action": "issue interim final regulations to carry out the amendments made by the Act to programs administered by the Administrator",
+      "trigger": "not later than 45 days after the date of enactment of this Act [Nov. 1, 1993]",
+      "threshold": null,
+      "exceptions": [
+        "Except as provided in section 2(b) of the Rural Electrification Act of 1936 [ 7 U.S.C. 902(b) ] and section 370 of the Consolidated Farm and Rural Development Act [ 7 U.S.C. 2008e ]"
+      ],
+      "citations": [
+        {
+          "quote": "\"(2) the Administrator of the Rural Development Administration to carry out the amendments made by this Act to programs administered by the Administrator; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-3",
+      "actor": "Secretary of Agriculture",
+      "modality": "must",
+      "action": "issue interim final regulations to carry out the amendments made by the Act to programs administered by the Farmers Home Administration",
+      "trigger": "not later than 45 days after the date of enactment of this Act [Nov. 1, 1993]",
+      "threshold": null,
+      "exceptions": [
+        "Except as provided in section 2(b) of the Rural Electrification Act of 1936 [ 7 U.S.C. 902(b) ] and section 370 of the Consolidated Farm and Rural Development Act [ 7 U.S.C. 2008e ]"
+      ],
+      "citations": [
+        {
+          "quote": "\"(3) the Secretary of Agriculture to carry out the amendments made by this Act to programs administered by the Farmers Home Administration.\"",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Rural Electrification Act of 1936",
+      "definition": "The short title by which this chapter may be cited.",
+      "citations": [
+        {
+          "quote": "This chapter may be cited as the \"Rural Electrification Act of 1936\".",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Rural Electrification Administration",
+      "definition": "(undefined here) \u2014 text describes it as an agency whose telephone loan programs and loan-making function are referenced; formerly an agency of the United States created by the struck-out former text, with powers exercised by an Administrator.",
+      "citations": [
+        {
+          "quote": "There is hereby created and established an agency of the United States to be known as the 'Rural Electrification Administration', all of the powers of which shall be exercised by an Administrator",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Rural Telephone Bank",
+      "definition": "(undefined here) \u2014 referenced entity; Title IV of the Rural Electrification Act of 1936 (former 7 U.S.C. 941\u2013950b), which established the Rural Telephone Bank, was repealed by Pub. L. 115\u2013334.",
+      "citations": [
+        {
+          "quote": "Title IV of the Rural Electrification Act of 1936 (former 7 U.S.C. 941&ndash;950b ), which established the Rural Telephone Bank, was repealed by",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "rural areas",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "modern telecommunications technology and services available at reasonable rates to the greatest practicable number of people in rural areas in the United States.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "loans",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "the Rural Electrification Administration make loans that facilitate the development and enhancement of the rural telecommunications infrastructure",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The regulations mandate is subject to an exception for section 2(b) of the Rural Electrification Act of 1936 (7 U.S.C. 902(b)) and section 370 of the Consolidated Farm and Rural Development Act (7 U.S.C. 2008e).",
+      "references": [
+        "7 U.S.C. 902(b)",
+        "7 U.S.C. 2008e",
+        "Consolidated Farm and Rural Development Act"
+      ],
+      "citations": [
+        {
+          "quote": "Except as provided in section 2(b) of the Rural Electrification Act of 1936 [ 7 U.S.C. 902(b) ] and section 370 of the Consolidated Farm and Rural Development Act [ 7 U.S.C. 2008e ], as added by sections 2(c)(1)(C) and 5 of this Act",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Rural Electrification Loan Restructuring Act of 1993 (Pub. L. 103-129) enacted sections 936d, 936e, and 2008e and amended numerous sections of this title including 902, 904, 913, 918, 924, 935, 936c, 937, 939, 940d, 946, 948, 1926, and 2006f.",
+      "references": [
+        "Pub. L. 103-129",
+        "sections 936d, 936e, and 2008e of this title",
+        "sections 902, 904, 913, 918, 924, 935, 936c, 937, 939, 940d, 946, 948, 1926, and 2006f of this title"
+      ],
+      "citations": [
+        {
+          "quote": "This Act [enacting sections 936d, 936e, and 2008e of this title , amending sections 902, 904, 913, 918, 924, 935, 936c, 937, 939, 940d, 946, 948, 1926, and 2006f of this title , and enacting provisions set out as a note below] may be cited as the 'Rural Electrification Loan Restructuring Act of 1993'.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Title IV of the Rural Electrification Act of 1936 (former 7 U.S.C. 941\u2013950b) establishing the Rural Telephone Bank was repealed by Pub. L. 115\u2013334, title VI, \u00a76602(a), Dec. 20, 2018.",
+      "references": [
+        "Pub. L. 115-334, title VI, \u00a76602(a)",
+        "former 7 U.S.C. 941-950b"
+      ],
+      "citations": [
+        {
+          "quote": "was repealed by \n Pub. L. 115&ndash;334, title VI, &sect;6602(a), Dec. 20, 2018, 132 Stat. 4776",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Rural Telecommunications Improvements Act of 1990 (Pub. L. 101-624, subtitle F) enacted sections 918 and 925 to 928 and amended sections 924, 932, 935, 936, 939, 945, 946, 948, and 950 of this title.",
+      "references": [
+        "Pub. L. 101-624, title XXIII, \u00a72351(a)",
+        "sections 918 and 925 to 928 of this title"
+      ],
+      "citations": [
+        {
+          "quote": "enacting sections 918 and 925 to 928 of this title , amending sections 924, 932, 935, 936, 939, 945, 946, 948, and 950 of this title , and enacting provisions set out as notes under this section and section 946 of this title ] may be cited as the 'Rural Telecommunications Improvements Act of 1990'.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Functions of Department of Agriculture officers/agencies transferred to Secretary of Agriculture by 1953 Reorg. Plan No. 2; REA and its functions transferred to Department of Agriculture by 1939 Reorg. Plan No. II.",
+      "references": [
+        "1953 Reorg. Plan No. 2",
+        "1939 Reorg. Plan No. II",
+        "section 2201 of this title"
+      ],
+      "citations": [
+        {
+          "quote": "Rural Electrification Administration and its functions and activities transferred to Department of Agriculture, to be administered therein by Administrator under general direction and supervision of Secretary of Agriculture, by 1939 Reorg. Plan No. II",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This section (7 U.S.C. 901) is itself only the short-title provision ('This chapter may be cited as the \"Rural Electrification Act of 1936\"'); the substantive scope-relevant content extracted here comes from the accompanying Statutory Notes (Findings; Statement of Policy, and the Regulations note under Pub. L. 103-129) reproduced in the source text. The operative loan-program rules reside in other sections of the chapter (e.g., 902, 935, 936) referenced but not set out here. The Findings/Statement of Policy and Regulations obligations are historical statutory notes tied to 1990 and 1993 enactments; the text presents them as reproduced in the current edition ('Text contains those laws in effect on July 22, 2026') without indicating repeal of these particular notes, so they are extracted as written. The Rural Telephone Bank referenced in the 1990 policy note was subsequently repealed (2018) per a bracketed editorial note \u2014 an internal tension preserved as written."
+}

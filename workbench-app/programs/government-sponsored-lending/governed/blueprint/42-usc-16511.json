@@ -1,0 +1,218 @@
+{
+  "item_id": "42-usc-16511",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Provide definitions applicable throughout the subchapter on incentives for innovative technologies (DOE Title XVII loan guarantee program).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "In this subchapter:",
+          "verified": true
+        },
+        {
+          "quote": "SUBCHAPTER XV-INCENTIVES FOR INNOVATIVE TECHNOLOGIES",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "Commercial technology",
+      "definition": "A technology in general use in the commercial marketplace. The term does not include a technology solely by use of the technology in a demonstration project funded by the Department.",
+      "citations": [
+        {
+          "quote": "The term \"commercial technology\" means a technology in general use in the commercial marketplace.",
+          "verified": true
+        },
+        {
+          "quote": "The term \"commercial technology\" does not include a technology solely by use of the technology in a demonstration project funded by the Department.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Cost",
+      "definition": "Has the meaning given the term \"cost of a loan guarantee\" within the meaning of section 661a(5)(C) of title 2.",
+      "citations": [
+        {
+          "quote": "The term \"cost\" has the meaning given the term \"cost of a loan guarantee\" within the meaning of section 661a(5)(C) of title 2 .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Eligible project",
+      "definition": "A project described in section 16513 of this title.",
+      "citations": [
+        {
+          "quote": "The term \"eligible project\" means a project described in section 16513 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Guarantee",
+      "definition": "Has the meaning given the term \"loan guarantee\" in section 661a of title 2, except that a loan guarantee may guarantee any debt obligation of a non-Federal borrower to any Eligible Lender (as defined in section 609.2 of title 10, Code of Federal Regulations). The term includes a loan guarantee commitment (as defined in section 661a of title 2).",
+      "citations": [
+        {
+          "quote": "The term \"guarantee\" has the meaning given the term \"loan guarantee\" in section 661a of title 2 , except that a loan guarantee may guarantee any debt obligation of a non-Federal borrower to any Eligible Lender (as defined in section 609.2 of title 10, Code of Federal Regulations).",
+          "verified": true
+        },
+        {
+          "quote": "The term \"guarantee\" includes a loan guarantee commitment (as defined in section 661a of title 2 ).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Obligation",
+      "definition": "The loan or other debt obligation that is guaranteed under this section.",
+      "citations": [
+        {
+          "quote": "The term \"obligation\" means the loan or other debt obligation that is guaranteed under this section.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "State",
+      "definition": "Has the meaning given the term in section 6802 of this title.",
+      "citations": [
+        {
+          "quote": "The term \"State\" has the meaning given the term in section 6802 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "State energy financing institution",
+      "definition": "A quasi-independent entity or an entity within a State agency or financing authority established by a State (i) to provide financing support or credit enhancements, including loan guarantees and loan loss reserves, for eligible projects; and (ii) to create liquid markets for eligible projects, including warehousing and securitization, or take other steps to reduce financial barriers to the deployment of existing and new eligible projects. Includes an entity or organization established to achieve those purposes by an Indian Tribal entity or an Alaska Native Corporation.",
+      "citations": [
+        {
+          "quote": "The term \"State energy financing institution\" means a quasi-independent entity or an entity within a State agency or financing authority established by a State-",
+          "verified": true
+        },
+        {
+          "quote": "to provide financing support or credit enhancements, including loan guarantees and loan loss reserves, for eligible projects; and",
+          "verified": true
+        },
+        {
+          "quote": "to create liquid markets for eligible projects, including warehousing and securitization, or take other steps to reduce financial barriers to the deployment of existing and new eligible projects.",
+          "verified": true
+        },
+        {
+          "quote": "The term \"State energy financing institution\" includes an entity or organization established to achieve the purposes described in clauses (i) and (ii) of subparagraph (A) by an Indian Tribal entity or an Alaska Native Corporation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Eligible Lender",
+      "definition": "(undefined here) \u2014 cross-referenced as defined in section 609.2 of title 10, Code of Federal Regulations.",
+      "citations": [
+        {
+          "quote": "any Eligible Lender (as defined in section 609.2 of title 10, Code of Federal Regulations)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "loan guarantee",
+      "definition": "(undefined here) \u2014 cross-referenced to section 661a of title 2.",
+      "citations": [
+        {
+          "quote": "The term \"guarantee\" has the meaning given the term \"loan guarantee\" in section 661a of title 2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "non-Federal borrower",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "a loan guarantee may guarantee any debt obligation of a non-Federal borrower",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Department",
+      "definition": "(undefined here) \u2014 used in reference to demonstration projects funded by the Department (i.e., Department of Energy).",
+      "citations": [
+        {
+          "quote": "a demonstration project funded by the Department",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "\"Cost\" incorporates the meaning of \"cost of a loan guarantee\" from section 661a(5)(C) of title 2.",
+      "references": [
+        "2 U.S.C. 661a(5)(C)"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"cost\" has the meaning given the term \"cost of a loan guarantee\" within the meaning of section 661a(5)(C) of title 2 .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "\"Eligible project\" is defined by reference to a project described in section 16513 of this title.",
+      "references": [
+        "42 U.S.C. 16513"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"eligible project\" means a project described in section 16513 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "\"Guarantee\" incorporates the meaning of \"loan guarantee\" and \"loan guarantee commitment\" from section 661a of title 2, and references Eligible Lender as defined in 10 CFR 609.2.",
+      "references": [
+        "2 U.S.C. 661a",
+        "10 CFR 609.2"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"guarantee\" has the meaning given the term \"loan guarantee\" in section 661a of title 2 , except that a loan guarantee may guarantee any debt obligation of a non-Federal borrower to any Eligible Lender (as defined in section 609.2 of title 10, Code of Federal Regulations).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "\"State\" incorporates the meaning given in section 6802 of this title.",
+      "references": [
+        "42 U.S.C. 6802"
+      ],
+      "citations": [
+        {
+          "quote": "The term \"State\" has the meaning given the term in section 6802 of this title .",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Wage rate requirements for laborers and mechanics on construction/alteration/repair work funded under div. D of Pub. L. 117-58 are addressed in section 18851 of this title, including authority of Secretary of Labor.",
+      "references": [
+        "42 U.S.C. 18851",
+        "Pub. L. 117-58 div. D"
+      ],
+      "citations": [
+        {
+          "quote": "For provisions relating to rates of wages to be paid to laborers and mechanics on projects for construction, alteration, or repair work funded under div. D or an amendment by div. D of Pub. L. 117&ndash;58, including authority of Secretary of Labor, see section 18851 of this title .",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This section is definitional only; it contains no operative duties, so the obligations array is empty. The permissive language 'a loan guarantee may guarantee any debt obligation' appears within the definition of 'guarantee' and describes the scope of what a guarantee may cover rather than imposing a duty on any actor, so it is captured in the definition rather than as an obligation row. Several referenced terms (Eligible Lender, loan guarantee, non-Federal borrower, Department) are used but not defined here and are recorded as '(undefined here)'. Amendments noted: 2022 (Pub. L. 117-169) added the Eligible Lender clause to par. (4)(A); 2021 (Pub. L. 117-58) added pars. (6) and (7). All amendments shown are already incorporated into the current text (laws in effect on July 22, 2026); no pending/proposed changes appear in this source."
+}

@@ -1,0 +1,116 @@
+{
+  "item_id": "12-usc-4701",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Create a Community Development Financial Institutions Fund to promote economic revitalization and community development through investment in and assistance to community development financial institutions, including enhancing their liquidity.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The purpose of this subchapter is to create a Community Development Financial Institutions Fund to promote economic revitalization and community development through investment in and assistance to community development financial institutions, including enhancing the liquidity of community development financial institutions.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Congressional findings recognizing that many urban, rural, and Native American communities face critical social and economic problems arising from lack of economic growth, poverty, and lack of employment and other opportunities.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "many of the Nation's urban, rural, and Native American communities face critical social and economic problems arising in part from the lack of economic growth, people living in poverty, and the lack of employment and other opportunities;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Congressional finding that restoration of these communities requires coordinated development strategies, intensive supportive services, and increased access to equity investments and loans for development activities.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the restoration and maintenance of the economies of these communities will require coordinated development strategies, intensive supportive services, and increased access to equity investments and loans for development activities, including investment in businesses, housing, commercial real estate, human development, and other activities that promote the long-term economic and social viability of the community;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Congressional finding that community development financial institutions have proven their ability to identify and respond to community needs for equity investments, loans, and development services.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "community development financial institutions have proven their ability to identify and respond to community needs for equity investments, loans, and development services.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "Community Development Financial Institutions Fund",
+      "definition": "(undefined here) \u2014 referenced as the entity to be created by this subchapter to promote economic revitalization and community development through investment in and assistance to community development financial institutions.",
+      "citations": [
+        {
+          "quote": "The purpose of this subchapter is to create a Community Development Financial Institutions Fund to promote economic revitalization and community development through investment in and assistance to community development financial institutions",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "community development financial institutions",
+      "definition": "(undefined here) \u2014 used but not defined in this section; described as having proven their ability to identify and respond to community needs for equity investments, loans, and development services.",
+      "citations": [
+        {
+          "quote": "community development financial institutions have proven their ability to identify and respond to community needs for equity investments, loans, and development services.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "this subchapter",
+      "definition": "In original \"this subtitle\", meaning subtitle A of title I of Pub. L. 103\u2013325, Sept. 23, 1994, 108 Stat. 2163, which is classified principally to this subchapter.",
+      "citations": [
+        {
+          "quote": "This subchapter, referred to in subsec. (b), was in original \"this subtitle\", meaning subtitle A of title I of \n Pub. L. 103&ndash;325, Sept. 23, 1994, 108 Stat. 2163",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "The subtitle enacting this subchapter also enacted section 1772c\u20131 of Title 12 and amended sections 1766 and 1834a of Title 12, section 5313 of Title 5, section 11 of Pub. L. 95\u2013452, section 657 of Title 18, and section 9101 of Title 31.",
+      "references": [
+        "12 U.S.C. 1772c-1",
+        "12 U.S.C. 1766",
+        "12 U.S.C. 1834a",
+        "5 U.S.C. 5313",
+        "Pub. L. 95-452 \u00a711",
+        "18 U.S.C. 657",
+        "31 U.S.C. 9101"
+      ],
+      "citations": [
+        {
+          "quote": "enacting this subchapter and section 1772c&ndash;1 of this title , amending sections 1766 and 1834a of this title , section 5313 of Title 5 , Government Organization and Employees, section 11 of Pub. L. 95&ndash;452 set out in the Appendix to Title 5, section 657 of Title 18 , Crimes and Criminal Procedure, and section 9101 of Title 31",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "The Act may be cited as the 'Riegle Community Development and Regulatory Improvement Act of 1994'; the subtitle enacting this subchapter may be cited as the 'Community Development Banking and Financial Institutions Act of 1994'.",
+      "references": [
+        "Pub. L. 103-325"
+      ],
+      "citations": [
+        {
+          "quote": "may be cited as the 'Riegle Community Development and Regulatory Improvement Act of 1994'.",
+          "verified": true
+        },
+        {
+          "quote": "may be cited as the 'Community Development Banking and Financial Institutions Act of 1994'.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This section (12 U.S.C. 4701) contains only findings and purposes; it imposes no obligations (no actor/modality/action duties), so the obligations array is empty. The section establishes the CDFI Fund's stated statutory purpose, which falls within scope as core program authority for a federal commercial lending subsidy/assistance program. The terms 'Community Development Financial Institutions Fund' and 'community development financial institutions' are used but not defined within this section (definitions would appear elsewhere in the subchapter, outside this source item). Text stated to contain laws in effect on July 22, 2026."
+}

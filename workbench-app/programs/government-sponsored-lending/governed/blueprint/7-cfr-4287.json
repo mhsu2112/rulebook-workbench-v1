@@ -1,0 +1,1241 @@
+{
+  "item_id": "7-cfr-4287",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "This subpart provides regulations for servicing Business and Industry (B&I) Loans guaranteed prior to October 1, 2020 and B&I CARES Act Program Loans made to support business operations in rural areas.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "this subpart is specifically applicable to and only contains regulations for servicing Business and Industry (B&amp;I) Loans guaranteed by the Agency prior to October 1, 2020 and Business and Industry loans under the authority of the Coronavirus Aid, Relief, and Economic Security Act (CARES Act) (Pub. L. 116-136) to provide B&amp;I guarantees for loans needed as a result of the Coronavirus Disease 2019 (COVID-19) pandemic for working capital loan purposes to support business operations and facilities in rural areas",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Subpart D supplements 7 CFR part 4279, subpart C by providing additional requirements and instructions for servicing and liquidating all loans guaranteed under 7 CFR part 4279, subpart C (Biorefinery, Renewable Chemical, and Biobased Manufacturing Assistance Guaranteed Loans).",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "This subpart supplements 7 CFR part 4279, subpart C by providing additional requirements and instructions for servicing and liquidating all loans guaranteed under 7 CFR part 4279, subpart C.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The paramount objective in considering options at default is providing a permanent cure without adversely affecting the risk to the Agency and the lender.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "the prospects for providing a permanent cure without adversely affecting the risk to the Agency and the lender is the paramount objective",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-101b",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Service the entire loan and remain mortgagee and secured party of record notwithstanding another party holding a portion of the loan",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender is responsible for servicing the entire loan and must remain mortgagee and secured party of record, notwithstanding the fact that another party may hold a portion of the loan.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-101c",
+      "actor": "Agency",
+      "modality": "conditional",
+      "action": "Provide required approval in writing whenever Agency approval is required",
+      "trigger": "whenever Agency approval is required",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Whether specifically stated or not, whenever Agency approval is required, it must be in writing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107a-report",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Report the outstanding principal and interest balance and current loan classification on each guaranteed loan semiannually using LINC or Form RD 1980-41",
+      "trigger": "semiannually (at June 30 and December 31)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must report the outstanding principal and interest balance and the current loan classification on each guaranteed loan semiannually (at June 30 and December 31), using either the USDA Lender Interactive Network Connection (LINC) system or Form RD 1980-41",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107a-fee",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Transmit the annual renewal fee to the Agency in accordance with \u00a7 4279.120(b), calculated based on the December 31 semiannual status report",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must transmit the annual renewal fee to the Agency in accordance with &#xA7; 4279.120(b) of this chapter calculated based on the December 31 semiannual status report.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107b",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Notify the Agency in writing of any change in the loan classification within 30 days",
+      "trigger": "When the lender changes the loan classification in the future",
+      "threshold": "within 30 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When the lender changes the loan classification in the future, the lender must notify the Agency within 30 days, in writing, of any change in the loan classification.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107c",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Consult with the Agency to ascertain how the guaranteed loan is being serviced and that loan agreement conditions and covenants are enforced",
+      "trigger": "At the Agency's request",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "At the Agency's request, the lender must consult with the Agency to ascertain how the guaranteed loan is being serviced and that the conditions and covenants of the loan agreement are being enforced.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107d-obtain",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Obtain, analyze, and forward to the Agency the borrower's and any guarantor's annual financial statements required by the loan agreement",
+      "trigger": null,
+      "threshold": "within 120 days of the end of the borrower's fiscal year",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must obtain, analyze, and forward to the Agency the borrower's and any guarantor's annual financial statements required by the loan agreement within 120 days of the end of the borrower's fiscal year.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107d-audit",
+      "actor": "States, local government, Indian tribes, institution of higher education, and nonprofit organization borrowers",
+      "modality": "conditional",
+      "action": "Submit an audit conducted in accordance with 2 CFR part 200, subpart F",
+      "trigger": "who meet the Federal awards expended threshold established in 2 CFR part 200, subpart F, during their fiscal year",
+      "threshold": "no later than nine months after the end of the borrower's fiscal year or 30 days after receipt of the auditor's report, whichever is earlier",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "States, local government, Indian tribes, institution of higher education, and nonprofit organization borrowers who meet the Federal awards expended threshold established in 2 CFR part 200, subpart F, during their fiscal year must submit an audit conducted in accordance with 2 CFR part 200, subpart F.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-107e",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Cooperate with the Agency to rectify the situation if the Agency exercises its right to protect its interests",
+      "trigger": "If the Agency exercises this right",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If the Agency exercises this right, the lender must cooperate with the Agency to rectify the situation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-112a",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Obtain prior Agency concurrence and provide a copy of the modification agreement to the Agency for interest rate reductions",
+      "trigger": "upon written agreement among borrower, lender, and holder to reduce the interest rate",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must obtain prior Agency concurrence and provide a copy of the modification agreement to the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-112b",
+      "actor": "Agency",
+      "modality": "must_not",
+      "action": "Permit increases in interest rates",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "normal fluctuations in approved variable interest rates",
+        "unless a temporary interest rate reduction occurred",
+        "to change from a variable rate to a fixed rate"
+      ],
+      "citations": [
+        {
+          "quote": "No increases in interest rates will be permitted, except the normal fluctuations in approved variable interest rates, unless a temporary interest rate reduction occurred or to change from a variable rate to a fixed rate.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-112d-notes",
+      "actor": "lender",
+      "modality": "must_not",
+      "action": "Issue new notes for interest-rate changes",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the lender is responsible for the legal documentation of interest-rate changes by an endorsement or any other legally effective amendment to the promissory note; however, no new notes shall be issued",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-113b",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Complete a written evaluation to justify the release and obtain written Agency concurrence in advance of the release",
+      "trigger": "If a release of collateral does not meet the requirements of paragraph (a)",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If a release of collateral does not meet the requirements of paragraph (a) of this section, the lender must complete a written evaluation to justify the release and obtain written Agency concurrence in advance of the release.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-113c",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Support releases of chattel collateral exceeding $250,000 and real estate collateral exceeding $500,000 with a current appraisal meeting \u00a7 4279.144",
+      "trigger": "For a release of collateral request when the Borrower is not in monetary default or liquidation",
+      "threshold": "chattel collateral value exceeding $250,000 and real estate collateral value exceeding $500,000",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the lender must support all releases of chattel collateral with a value exceeding $250,000 and real estate collateral with a value exceeding $500,000 with a current appraisal on the collateral being released and otherwise meets the requirements of &#xA7; 4279.144 of this chapter",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-123",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Request subordination of lien position in writing, including a financial analysis supported by current financial statements less than 90 days old, and obtain written Agency concurrence in advance",
+      "trigger": null,
+      "threshold": "financial statements less than 90 days old",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "A subordination of the lender's lien position must be requested in writing by the lender and concurred with in writing by the Agency in advance of the subordination. The lender's subordination proposal must include a financial analysis of the servicing action and be fully supported by current financial statements of the borrower and guarantors that are less than 90 days old.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-124",
+      "actor": "lender",
+      "modality": "must_not",
+      "action": "Alter or approve any alterations or modifications of any loan instrument without prior written Agency approval",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must neither alter nor approve any alterations or modifications of any loan instrument without the prior written approval of the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-133",
+      "actor": "borrower/transferee",
+      "modality": "must",
+      "action": "Obtain Agency written approval for any sale or transfer of corporate stock, which must be to an eligible individual or entity in accordance with \u00a7 4279.108(a) and (b)",
+      "trigger": "Any sale or transfer of corporate stock",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Any sale or transfer of corporate stock must be approved by the Agency in writing and must be to an eligible individual or entity in accordance with &#xA7; 4279.108(a) and 4279.108(b) of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-134a",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Provide credit reports for each individual or entity owning 20 percent or more interest in the transferee and other requested documentation; obtain written Agency approval for transfers to an eligible borrower",
+      "trigger": "All transfers and assumptions",
+      "threshold": "20 percent or more interest",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "All transfers and assumptions must be approved in writing by the Agency and must be to an eligible borrower. The lender must provide credit reports for each individual or entity owning 20 percent or more interest in the transferee, along with such other documentation as the Agency may request to determine eligibility.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-134d",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Credit any proceeds received from sale of collateral before a transfer and assumption to the transferor's guaranteed loan debt in order of lien priority before closing",
+      "trigger": "before a transfer and assumption",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must credit any proceeds received from the sale of collateral before a transfer and assumption to the transferor's guaranteed loan debt in order of lien priority before the transfer and assumption is closed.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-134l",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Pay any annual renewal fee published in the Federal Register in effect at the time the loan is closed for the duration of the Loan Note Guarantee",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must pay any annual renewal fee published in the Federal Register and then in effect at the time the loan is closed for the duration of the Loan Note Guarantee.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-135",
+      "actor": "lender",
+      "modality": "must_not",
+      "action": "Sell or transfer the entire loan without the prior written approval of the Agency (after issuance of a Loan Note Guarantee)",
+      "trigger": "After the issuance of a Loan Note Guarantee",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "After the issuance of a Loan Note Guarantee, the lender is prohibited from selling or transferring the entire loan without the prior written approval of the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-145a-notify",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Notify the Agency by submitting Form RD 1980-44 or processing the Default Status report in LINC when a borrower is more than 30 days past due and the delinquency cannot be cured within 30 days, or is otherwise in default of covenants",
+      "trigger": "when a borrower is more than 30 days past due on a payment and the delinquency cannot be cured within 30 days or when a borrower is otherwise in default of covenants",
+      "threshold": "more than 30 days past due",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must notify the Agency when a borrower is more than 30 days past due on a payment and the delinquency cannot be cured within 30 days or when a borrower is otherwise in default of covenants in the loan agreement by promptly submitting Form RD 1980-44, &#x201C;Guaranteed Loan Borrower Default Status,&#x201D; or processing the Default Status report in LINC.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-145a-meet",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Meet with the Agency and, if practical, the borrower to discuss the situation",
+      "trigger": "If a monetary default exceeds 60 days",
+      "threshold": "exceeds 60 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If a monetary default exceeds 60 days, the lender must meet with the Agency and, if practical, the borrower to discuss the situation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-145c",
+      "actor": "lender/borrower",
+      "modality": "must_not",
+      "action": "Perform debt write-downs for an existing borrower where the same principals retain control and decisionmaking authority",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "except as directed or ordered under the Bankruptcy Code"
+      ],
+      "citations": [
+        {
+          "quote": "Debt write-downs for an existing borrower, where the same principals retain control of and decisionmaking authority for the business, are prohibited, except as directed or ordered under the Bankruptcy Code.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-156c",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Obtain Agency written authorization when cumulative total of protective advances exceeds $200,000 or 10 percent of aggregate outstanding balance of principal and interest, whichever is less",
+      "trigger": null,
+      "threshold": "exceeds $200,000 or 10 percent of the aggregate outstanding balance of principal and interest, whichever is less",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Agency written authorization is required when the cumulative total of protective advances exceeds $200,000 or 10 percent of the aggregate outstanding balance of principal and interest, whichever is less.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-157-liquidate",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Liquidate the loan, with Agency consent",
+      "trigger": "In the event of one or more incidents of default or third party actions that the borrower cannot or will not cure within a reasonable period of time",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "the lender, with Agency consent, must liquidate the loan",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-157c",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Submit a written, proposed plan of liquidation to the Agency for approval within 30 days after a decision to liquidate, including the enumerated items",
+      "trigger": "Within 30 days after a decision to liquidate",
+      "threshold": "within 30 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Within 30 days after a decision to liquidate, the lender must submit a written, proposed plan of liquidation to the Agency for approval.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-157c13",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Obtain an independent appraisal report meeting \u00a7 4279.144 reflecting fair market value and potential liquidation value",
+      "trigger": "If the value of the collateral is $250,000 or more",
+      "threshold": "$250,000 or more",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If the value of the collateral is $250,000 or more, the lender must obtain an independent appraisal report meeting the requirements of &#xA7; 4279.144 of this chapter for the collateral securing the loan, which reflects the fair market value and potential liquidation value.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-157f",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "File an estimated loss claim once a decision has been made to liquidate",
+      "trigger": "When the lender owns any of the guaranteed portion of the loan and the liquidation is expected to exceed 90 days",
+      "threshold": "expected to exceed 90 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When the lender owns any of the guaranteed portion of the loan, the lender must file an estimated loss claim once a decision has been made to liquidate if the liquidation is expected to exceed 90 days.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-157j",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Take action to maximize recovery from all personal and corporate guarantees, including seeking deficiency judgments when there is a reasonable chance of future collection",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must take action to maximize recovery from all personal and corporate guarantees, including seeking deficiency judgments when there is a reasonable chance of future collection.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-158c",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Prepare a final report of loss and submit it to the Agency within 30 days after liquidation of all collateral is completed",
+      "trigger": "Within 30 days after liquidation of all collateral is completed",
+      "threshold": "within 30 days",
+      "exceptions": [
+        "except for certain unsecured personal or corporate guarantees as provided for in this section"
+      ],
+      "citations": [
+        {
+          "quote": "Within 30 days after liquidation of all collateral is completed (except for certain unsecured personal or corporate guarantees as provided for in this section), the lender must prepare a final report of loss and submit it to the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-158g2",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Reimburse the Agency for the overpayment plus interest at the note rate from the date of payment",
+      "trigger": "If the loss is less than the estimated loss payment",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If the loss is less than the estimated loss payment, the lender must reimburse the Agency for the overpayment plus interest at the note rate from the date of payment.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-169",
+      "actor": "lender",
+      "modality": "conditional",
+      "action": "Use reasonable efforts to attempt collection from any party still liable, splitting net proceeds pro rata with the Agency",
+      "trigger": "after the final loss claim has been paid, unless notified otherwise by the Agency",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "after the final loss claim has been paid, the lender must use reasonable efforts to attempt collection from any party still liable on any loan that was guaranteed. Any net proceeds from that effort must be split pro rata between the lender and the Agency based on the percentage of guarantee",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-170a6",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Submit a default status report when the borrower defaults and every 30 days until the default is resolved or a final loss claim is paid",
+      "trigger": "when the borrower defaults",
+      "threshold": "every 30 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must submit a default status report when the borrower defaults and every 30 days until the default is resolved or a final loss claim is paid by the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-170b5",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Apply estimated loss payments first to unsecured principal of the guaranteed portion then to unsecured interest of the guaranteed portion",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must apply estimated loss payments first to the unsecured principal of the guaranteed portion of the debt and then to the unsecured interest of the guaranteed portion of the debt.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-301b-D",
+      "actor": "Lender",
+      "modality": "must",
+      "action": "Service the entire loan and remain mortgagee and secured party of record; keep the entire loan secured by the same security with equal lien priority for guaranteed and unguaranteed portions",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The entire loan must continue to be secured by the same security with equal lien priority for the guaranteed and unguaranteed portions of the loan. The unguaranteed portion of a loan will neither be paid first nor given any preference or priority over the guaranteed portion of the loan.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-301c-D",
+      "actor": "Lender",
+      "modality": "conditional",
+      "action": "Obtain Agency concurrence for all loan servicing actions except those in \u00a7 4287.307(a) through (g), for Good Cause",
+      "trigger": "whenever Agency approval is required",
+      "threshold": null,
+      "exceptions": [
+        "those identified in \u00a7 4287.307(a) through (g)"
+      ],
+      "citations": [
+        {
+          "quote": "All loan servicing actions under this subpart, except for those identified in &#xA7; 4287.307(a) through (g), are subject to Agency concurrence. Whether specifically stated or not, whenever Agency approval is required, it must be in writing. Whenever Agency approval is required, such servicing action must be for Good Cause.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-307a-D",
+      "actor": "Lender",
+      "modality": "must",
+      "action": "Submit reports by the end of each Calendar Quarter regarding the condition of its Agency guaranteed loan portfolio and any Material Adverse Change, reporting outstanding principal and Interest balance and current Loan Classification via LINC or Form RD 1980-41",
+      "trigger": "by the end of each Calendar Quarter",
+      "threshold": null,
+      "exceptions": [
+        "unless more frequent ones are needed as determined by the Agency"
+      ],
+      "citations": [
+        {
+          "quote": "Each Lender must submit reports by the end of each Calendar Quarter, unless more frequent ones are needed as determined by the Agency to meet the financial interests of the United States, regarding the condition of its Agency guaranteed loan portfolio (including Borrower status and Loan Classification) and any Material Adverse Change in the general financial condition of the Borrower since the last report was submitted.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-307b-D",
+      "actor": "Lenders",
+      "modality": "must",
+      "action": "Submit monthly Default reports, including Borrower payment history, for each loan in monetary Default using a form approved by the Agency",
+      "trigger": "for each loan in monetary Default",
+      "threshold": "monthly",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Lenders must submit monthly Default reports, including Borrower payment history, for each loan in monetary Default using a form approved by the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-307e-D",
+      "actor": "Lender",
+      "modality": "must",
+      "action": "Obtain, analyze, and forward to the Agency the Borrower's and any guarantor's financial statements within 45 days of the end of each Calendar Quarter and audited financial statements within 180 days of the end of the Borrower's fiscal year",
+      "trigger": null,
+      "threshold": "within 45 days of end of each Calendar Quarter; audited within 180 days of end of fiscal year",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Lender must obtain, analyze, and forward to the Agency the Borrower's and any guarantor's financial statements required by the Loan Agreement within 45 days of the end of each Calendar Quarter and audited financial statements within 180 days of the end of the Borrower's fiscal year.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-307h-D",
+      "actor": "Lender",
+      "modality": "conditional",
+      "action": "Notify the Agency in writing of additional expenditures or new loans; make additional expenditures or new loans only with prior written Agency approval, junior in priority to the BAP loan",
+      "trigger": "when the Lender makes any additional expenditures or new loans to the Borrower",
+      "threshold": null,
+      "exceptions": [
+        "except for Working Capital loans for which the Agency may consider a subordinate lien"
+      ],
+      "citations": [
+        {
+          "quote": "The Lender must notify the Agency in writing when the Lender makes any additional expenditures or new loans to the Borrower. The Lender may make additional expenditures or new loans to a Borrower with an outstanding loan guaranteed only with prior written Agency approval.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-313-D",
+      "actor": "Agency",
+      "modality": "conditional",
+      "action": "Give prior written approval for the release of Collateral",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [
+        "as specified in paragraph (a)",
+        "where the release is made under the abundance of caution provision"
+      ],
+      "citations": [
+        {
+          "quote": "The Agency must give prior written approval for the release of Collateral, except as specified in paragraph (a) of this section or where the release of Collateral is made of Collateral under the abundance of caution provision of the applicable security agreement",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-345a-D",
+      "actor": "Lender",
+      "modality": "must",
+      "action": "Notify the Agency in writing within 15 calendar days when a Borrower is 30 days past due or otherwise in Default of the Loan Agreement, submitting Form RD 1980-44 or processing the Default Status report in LINC",
+      "trigger": "when a Borrower is 30 days past due on a payment or is otherwise in Default of the Loan Agreement",
+      "threshold": "within 15 calendar days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The Lender must provide this notification to the Agency within 15 calendar days of when a Borrower is 30 days past due on a payment or is otherwise in Default of the Loan Agreement.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-345d-D",
+      "actor": "Agency",
+      "modality": "must_not",
+      "action": "Cover Interest to the Lender accruing after the Interest Termination Date in the event of a loss",
+      "trigger": "In the event of a loss",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "In the event of a loss, the guarantee will not cover Interest to the Lender accruing after the Interest Termination Date.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-356c-D",
+      "actor": "Lender",
+      "modality": "conditional",
+      "action": "Obtain Agency written authorization when cumulative total of Protective Advances exceeds $200,000 or 10 percent of the outstanding balance of principal, whichever is less",
+      "trigger": null,
+      "threshold": "exceeds $200,000 or 10 percent of the outstanding balance of principal, whichever is less",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Agency written authorization is required when the cumulative total of Protective Advances exceeds $200,000 or 10 percent of the outstanding balance of principal, whichever is less.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-357h-D",
+      "actor": "Lender",
+      "modality": "conditional",
+      "action": "Transmit to the Agency within 14 calendar days its Pro Rata share of any payments received from the Borrower, liquidation, or other proceeds using Form RD 1980-43",
+      "trigger": "When the Agency is the Holder of a portion of the guaranteed loan",
+      "threshold": "within 14 calendar days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "When the Agency is the Holder of a portion of the guaranteed loan, the Lender must transmit to the Agency within 14 calendar days its Pro Rata share of any payments received from the Borrower, liquidation, or other proceeds using Form RD 1980-43",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-358c-D",
+      "actor": "Lender",
+      "modality": "must",
+      "action": "Prepare a final Guaranteed Loan Report of Loss and submit it to the Agency within 30 days after liquidation of all Collateral is completed",
+      "trigger": "within 30 days after liquidation of all Collateral is completed",
+      "threshold": "within 30 days",
+      "exceptions": [
+        "Except for certain unsecured personal or corporate guarantees as provided for in this section"
+      ],
+      "citations": [
+        {
+          "quote": "the Lender must prepare a final Guaranteed Loan Report of Loss and submit it to the Agency within 30 days after liquidation of all Collateral is completed",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-358h-D",
+      "actor": "Borrowers and guarantors",
+      "modality": "must_not",
+      "action": "Remain involved in a project any time the agency takes a loss (including related parties without an arm's length relationship)",
+      "trigger": "any time the agency takes a loss",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Borrowers and guarantors, as well as related parties with whom either the borrower or guarantor does not have an arm's length transaction relationship, are prohibited from remaining involved in a project any time the agency takes a loss.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-358g7-D",
+      "actor": "Lender",
+      "modality": "conditional",
+      "action": "Submit to the Agency an annual report on collection activities for each unsatisfied account for 3 years following payment of the final loss claim",
+      "trigger": "If a Lender receives a final loss payment and the Agency determines there is Future Recovery",
+      "threshold": "for 3 years following payment of the final loss claim",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "If a Lender receives a final loss payment and the Agency determines there is Future Recovery, the Lender must submit to the Agency an annual report on its collection activities for each unsatisfied account for 3 years following payment of the final loss claim.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-370a6-D",
+      "actor": "Lender",
+      "modality": "must",
+      "action": "Submit a Default status report within 15 days after the borrower Defaults and every 30 days thereafter until the Default is resolved or a final loss claim is paid",
+      "trigger": "within 15 days after the date when the Borrower Defaults",
+      "threshold": "within 15 days, then every 30 days",
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "Submitting a Default status report within 15 days after the date when the Borrower Defaults and every 30 days thereafter until the Default is resolved or a final loss claim is paid by the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-136b",
+      "actor": "lender",
+      "modality": "must",
+      "action": "Take such action that a reasonably prudent lender would take if it did not have a Loan Note Guarantee to protect the lender and Agency's mutual interest (insured lender / FDIC context)",
+      "trigger": null,
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "The lender must take such action that a reasonably prudent lender would take if it did not have a Loan Note Guarantee to protect the lender and Agency's mutual interest.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "obligation_id": "OBL-403-appeal-D",
+      "actor": "Lender and Borrower",
+      "modality": "conditional",
+      "action": "Jointly execute a written request for appeal for an alleged adverse decision that impacts the Borrower",
+      "trigger": "For an adverse decision that impacts the Borrower",
+      "threshold": null,
+      "exceptions": [],
+      "citations": [
+        {
+          "quote": "For an adverse decision that impacts the Borrower, the Lender and Borrower must jointly execute a written request for appeal for an alleged adverse decision made by the Agency.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "B&I CARES Act Program Loans",
+      "definition": "Business and Industry loans under the authority of the CARES Act (Pub. L. 116-136) to provide B&I guarantees for loans needed as a result of the COVID-19 pandemic for working capital loan purposes to support business operations and facilities in rural areas.",
+      "citations": [
+        {
+          "quote": "Business and Industry loans under the authority of the Coronavirus Aid, Relief, and Economic Security Act (CARES Act) (Pub. L. 116-136) to provide B&amp;I guarantees for loans needed as a result of the Coronavirus Disease 2019 (COVID-19) pandemic for working capital loan purposes to support business operations and facilities in rural areas (B&amp;I CARES Act Program Loans)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Definitions and abbreviations (Subpart B)",
+      "definition": "The definitions and abbreviations contained in \u00a7 4279.2 of this chapter apply to this subpart.",
+      "citations": [
+        {
+          "quote": "The definitions and abbreviations contained in &#xA7; 4279.2 of this chapter apply to this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Definitions (Subpart D)",
+      "definition": "The definitions and abbreviations contained in \u00a7 4279.202 of this chapter apply to this subpart.",
+      "citations": [
+        {
+          "quote": "The definitions and abbreviations contained in &#xA7; 4279.202 of this chapter apply to this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Protective advances",
+      "definition": "Advances made by the lender for the purpose of preserving and protecting the collateral where the debtor has failed to, will not, or cannot meet its obligations.",
+      "citations": [
+        {
+          "quote": "Protective advances are advances made by the lender for the purpose of preserving and protecting the collateral where the debtor has failed to, will not, or cannot meet its obligations.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Loan Note Guarantee",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Because the Loan Note Guarantee is associated with a specific promissory note and cannot be transferred to a new promissory note",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Interest Termination Date",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "In the event of a loss, the guarantee will not cover Interest to the Lender accruing after the Interest Termination Date.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Good Cause",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "Whenever Agency approval is required, such servicing action must be for Good Cause.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Arm's Length Transaction",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "The sale or release of Collateral must be based on an Arm's Length Transaction, unless otherwise approved by the Agency in writing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Negligent Loan Servicing / Grossly Negligent Loan Servicing",
+      "definition": "(undefined here) \u2014 as established in the Loan Note Guarantee",
+      "citations": [
+        {
+          "quote": "Negligent Loan Servicing or Grossly Negligent Loan Servicing as established in the Loan Note Guarantee",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Material Adverse Change",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "any Material Adverse Change in the general financial condition of the Borrower since the last report was submitted",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Future Recovery",
+      "definition": "(undefined here); unsecured personal or corporate guarantees outstanding at time of final loss claim submission are treated as a Future Recovery with net proceeds shared pro rata.",
+      "citations": [
+        {
+          "quote": "Unsecured personal or corporate guarantees outstanding at the time of the submission of the final loss claim will be treated as a Future Recovery with the net proceeds to be shared on a Pro Rata basis by the Lender and the Agency.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal Debt",
+      "definition": "(undefined here); debts owed to the Agency, collectible using DCIA authority.",
+      "citations": [
+        {
+          "quote": "Debts owed to the Agency (Federal debt) may be collected using DCIA authority.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Deficiency Judgments",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "including seeking Deficiency Judgments when there is a reasonable chance of future collection",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Liquidation Expenses / In-House Expenses",
+      "definition": "In-House Expenses include, but are not limited to, employee's salaries, staff lawyers, travel, and overhead.",
+      "citations": [
+        {
+          "quote": "In-House Expenses include, but are not limited to, employee's salaries, staff lawyers, travel, and overhead.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "Requirements for B&I loans guaranteed after October 1, 2020 (other than B&I CARES Act Loans) are found at 7 CFR part 5001.",
+      "references": [
+        "7 CFR part 5001"
+      ],
+      "citations": [
+        {
+          "quote": "Requirements for B&amp;I loans guaranteed by the Agency after October 1, 2020 (other than B&amp;I CARES Act Loans) may be found at 7 CFR part 5001.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Definitions and abbreviations in \u00a7 4279.2 apply to Subpart B; \u00a7 4279.202 definitions apply to Subpart D.",
+      "references": [
+        "\u00a7 4279.2",
+        "\u00a7 4279.202"
+      ],
+      "citations": [
+        {
+          "quote": "The definitions and abbreviations contained in &#xA7; 4279.2 of this chapter apply to this subpart.",
+          "verified": true
+        },
+        {
+          "quote": "The definitions and abbreviations contained in &#xA7; 4279.202 of this chapter apply to this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Exception authority: \u00a7 4279.15 applies to Subpart B; appeals under \u00a7 4279.16.",
+      "references": [
+        "\u00a7 4279.15",
+        "\u00a7 4279.16"
+      ],
+      "citations": [
+        {
+          "quote": "Section 4279.15 of this chapter applies to this subpart.",
+          "verified": true
+        },
+        {
+          "quote": "Section 4279.16 of this chapter applies to this subpart.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Annual renewal fee transmitted in accordance with \u00a7 4279.120(b) (Subpart B) and \u00a7 4279.231(b) (Subpart D).",
+      "references": [
+        "\u00a7 4279.120(b)",
+        "\u00a7 4279.231(b)"
+      ],
+      "citations": [
+        {
+          "quote": "The lender must transmit the annual renewal fee to the Agency in accordance with &#xA7; 4279.120(b) of this chapter",
+          "verified": true
+        },
+        {
+          "quote": "The Lender must transmit the Annual Renewal Fee to the Agency in accordance with &#xA7; 4279.231(b) of this chapter calculated based on the December 31 loan status report.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Financial audit requirements refer to 2 CFR part 200, subpart F.",
+      "references": [
+        "2 CFR part 200, subpart F"
+      ],
+      "citations": [
+        {
+          "quote": "audits must be submitted no later than nine months after the end of the borrower's fiscal year or 30 days after the borrower's receipt of the auditor's report, whichever is earlier",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Interest rates after adjustment must comply with \u00a7 4279.125 (Subpart B) / \u00a7 4279.233 (Subpart D).",
+      "references": [
+        "7 CFR 4279.125",
+        "\u00a7 4279.233"
+      ],
+      "citations": [
+        {
+          "quote": "After the rate change, the rate must meet the requirements of 7 CFR 4279.125.",
+          "verified": true
+        },
+        {
+          "quote": "The Interest rates, after adjustments, must comply with the requirements for Interest rates on new loans as established by &#xA7; 4279.233 of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Appraisals must meet the requirements of \u00a7 4279.144 (Subpart B) / \u00a7 4279.244 (Subpart D).",
+      "references": [
+        "\u00a7 4279.144",
+        "\u00a7 4279.244"
+      ],
+      "citations": [
+        {
+          "quote": "All other release of collateral requests must meet the appraisal requirements of &#xA7; 4279.144 of this chapter.",
+          "verified": true
+        },
+        {
+          "quote": "The appraisal must meet the requirements of &#xA7; 4279.244 of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Guarantees from owners with 20 percent or more interest required in accordance with \u00a7 4279.132 (Subpart B) / \u00a7 4279.245 (Subpart D).",
+      "references": [
+        "\u00a7 4279.132",
+        "\u00a7 4279.245"
+      ],
+      "citations": [
+        {
+          "quote": "the Agency will require personal and/or corporate guarantee(s) from all owners that have a 20 percent or more ownership interest in the transferee",
+          "verified": true
+        },
+        {
+          "quote": "Guarantees from owners are required in accordance with &#xA7; 4279.245 of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Repurchases of guaranteed loans refer to \u00a7 4279.78 (Subpart B) / \u00a7 4279.225 (Subpart D); portions sold/assigned under \u00a7 4279.75 (B) / \u00a7 4279.223 (D).",
+      "references": [
+        "\u00a7 4279.78",
+        "\u00a7 4279.75",
+        "\u00a7 4279.225",
+        "\u00a7 4279.223"
+      ],
+      "citations": [
+        {
+          "quote": "For repurchases of guaranteed loans, refer to &#xA7; 4279.78 of this chapter.",
+          "verified": true
+        },
+        {
+          "quote": "For repurchases of guaranteed loans, refer to &#xA7; 4279.225 of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Eligible lender determined in accordance with \u00a7 4279.29 (Subpart B) / \u00a7 4279.208 (Subpart D).",
+      "references": [
+        "\u00a7 4279.29",
+        "\u00a7 4279.208"
+      ],
+      "citations": [
+        {
+          "quote": "Is an eligible lender in accordance with &#xA7; 4279.29 of this chapter and is approved as such",
+          "verified": true
+        },
+        {
+          "quote": "Is an eligible Lender in accordance with &#xA7; 4279.208 of this chapter",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "FDIC and the Agency have entered into an Inter-Agency Agreement setting forth duties when an institution fails.",
+      "references": [
+        "Inter-Agency Agreement (FDIC and Agency)"
+      ],
+      "citations": [
+        {
+          "quote": "The FDIC and the Agency have entered into an Inter-Agency Agreement and all parties are to abide by this Agreement or successor document(s).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Abandonment of collateral must comply with 7 CFR part 1970 (Environmental Policies and Procedures); Subpart D treats abandonment as a servicing action under 7 CFR 1970.8(e) not requiring separate NEPA review.",
+      "references": [
+        "7 CFR part 1970",
+        "7 CFR 1970.8(e)"
+      ],
+      "citations": [
+        {
+          "quote": "When the lender makes a recommendation for abandonment of collateral, it must comply with 7 CFR part 1970, &#x201C;Environmental Policies and Procedures.&#x201D;",
+          "verified": true
+        },
+        {
+          "quote": "it will be considered a servicing action under 7 CFR 1970.8(e), and will not require separate NEPA review",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Appeals under Subpart D are conducted by the National Appeals Division (NAD) in accordance with 7 CFR part 11.",
+      "references": [
+        "7 CFR part 11",
+        "National Appeals Division (NAD)"
+      ],
+      "citations": [
+        {
+          "quote": "Appeals will be conducted by NAD and will be handled in accordance with 7 CFR part 11.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Loan terms authorized by \u00a7 4279.126 (Subpart B) / \u00a7 4279.234 (Subpart D); additional loan applications per \u00a7 4279.161(b) (B) / \u00a7\u00a7 4279.260 and 4279.261 (D); credit analysis per \u00a7 4279.131 (B) / \u00a7 4279.215 (D).",
+      "references": [
+        "\u00a7 4279.126",
+        "\u00a7 4279.234",
+        "\u00a7 4279.161(b)",
+        "\u00a7 4279.260",
+        "\u00a7 4279.261",
+        "\u00a7 4279.131",
+        "\u00a7 4279.215"
+      ],
+      "citations": [
+        {
+          "quote": "Any new loan terms must be within the terms authorized by &#xA7; 4279.126 of this chapter.",
+          "verified": true
+        },
+        {
+          "quote": "The Lender must make a complete credit analysis in accordance with &#xA7; 4279.215 of this chapter.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "OMB control numbers: Subpart B under OMB Control Number 0570-0069; Subpart D under OMB Control Number 0570-0065 (Paperwork Reduction Act of 1995).",
+      "references": [
+        "OMB Control Number 0570-0069",
+        "OMB Control Number 0570-0065",
+        "Paperwork Reduction Act of 1995"
+      ],
+      "citations": [
+        {
+          "quote": "under OMB Control Number 0570-0069 for OMB approval",
+          "verified": true
+        },
+        {
+          "quote": "under OMB Control Number 0570-0065 for approval",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Bankruptcy trustee liquidation references 11 U.S.C. 701, 702, 703 or 1104 (Subpart D).",
+      "references": [
+        "11 U.S.C. 701",
+        "11 U.S.C. 702",
+        "11 U.S.C. 703",
+        "11 U.S.C. 1104"
+      ],
+      "citations": [
+        {
+          "quote": "When a bankruptcy proceeding results in a liquidation of the Borrower by a bankruptcy trustee appointed under 11 U.S.C. 701, 702, 703 or 1104",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "Part 4287 contains multiple subparts with parallel but divergent rules: Subpart B (B&I loans guaranteed before Oct 1, 2020 and CARES Act loans) and Subpart D (Biorefinery/BAP loans). Divergences preserved as written, e.g.: (a) financial statement timing \u2014 Subpart B requires annual statements within 120 days of fiscal year end, while Subpart D requires quarterly statements within 45 days and audited within 180 days; (b) default notification timing \u2014 Subpart B says notify 'promptly' when >30 days past due, Subpart D adds a 'within 15 calendar days' deadline; (c) interest cutoff \u2014 Subpart B uses '90 days from most recent delinquency effective date' for loans closed on/after Aug 2, 2016, while Subpart D uses an 'Interest Termination Date'; (d) collateral release thresholds differ ($250k chattel/$500k real estate in Subpart B vs. cumulative 20% of original loan / $250k appraisal in Subpart D); (e) Subpart D \u00a7 4287.358(h) adds a prohibition on borrowers/guarantors remaining involved when the agency takes a loss, absent from Subpart B. Subpart A and C are Reserved (no C subpart present; header jumps from B to D). NOTE ON DATE ANOMALIES: \u00a7 4287.345 and \u00a7 4287.358 cite an amendment '91 FR 42337, July 9, 2026' \u2014 a future-dated Federal Register citation as it appears in the source; extracted verbatim as written, not resolved. Section heading '\u00a7\u00a7 4286.146-4287.155 [Reserved]' contains an apparent typo (4286 vs 4287) in the source; preserved as written. Definitions for many capitalized terms (Loan Note Guarantee, Good Cause, Interest Termination Date, Arm's Length Transaction, etc.) are incorporated by reference from \u00a7\u00a7 4279.2 / 4279.202 and are not spelled out in this source; recorded as '(undefined here)'."
+}

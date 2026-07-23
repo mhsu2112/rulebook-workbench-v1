@@ -1,0 +1,132 @@
+{
+  "item_id": "2-usc-661",
+  "nothing_in_scope": false,
+  "objectives": [
+    {
+      "text": "Measure more accurately the costs of Federal credit programs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(1) measure more accurately the costs of Federal credit programs;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Place the cost of credit programs on a budgetary basis equivalent to other Federal spending.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(2) place the cost of credit programs on a budgetary basis equivalent to other Federal spending;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Encourage the delivery of benefits in the form most appropriate to the needs of beneficiaries.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(3) encourage the delivery of benefits in the form most appropriate to the needs of beneficiaries; and",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "Improve the allocation of resources among credit programs and between credit and other spending programs.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "(4) improve the allocation of resources among credit programs and between credit and other spending programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "text": "The stated overall purpose of the Credit Reform subchapter.",
+      "stated_or_inferred": "stated",
+      "citations": [
+        {
+          "quote": "The purposes of this subchapter are to-",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "obligations": [],
+  "definitions": [
+    {
+      "term": "Federal credit programs",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "(1) measure more accurately the costs of Federal credit programs;",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "credit programs",
+      "definition": "(undefined here)",
+      "citations": [
+        {
+          "quote": "(4) improve the allocation of resources among credit programs and between credit and other spending programs.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "term": "Federal Credit Reform Act of 1990",
+      "definition": "(undefined here) \u2014 short title of title V of Pub. L. 93\u2013344, which enacted this subchapter.",
+      "citations": [
+        {
+          "quote": "which enacted this subchapter, as the \"Federal Credit Reform Act of 1990\"",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "description": "This section was enacted as \u00a7501 of title V of Pub. L. 93\u2013344, added by Pub. L. 101\u2013508 in 1990.",
+      "references": [
+        "Pub. L. 93\u2013344, title V, \u00a7501",
+        "Pub. L. 101\u2013508, title XIII, \u00a713201(a)"
+      ],
+      "citations": [
+        {
+          "quote": "( Pub. L. 93&ndash;344, title V, &sect;501, as added \n Pub. L. 101&ndash;508, title XIII, &sect;13201(a), Nov. 5, 1990, 104 Stat. 1388&ndash;610",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "A prior section 501 of Pub. L. 93\u2013344 was classified to section 1020 of former Title 31, then repealed and reenacted as section 1102 of Title 31 by Pub. L. 97\u2013258.",
+      "references": [
+        "section 1020 of former Title 31",
+        "section 1102 of Title 31",
+        "Pub. L. 97\u2013258, \u00a75(b)"
+      ],
+      "citations": [
+        {
+          "quote": "was classified to section 1020 of former Title 31, prior to repeal and reenactment as section 1102 of Title 31 , Money and Finance, by \n Pub. L. 97&ndash;258, &sect;5(b), Sept. 13, 1982, 96 Stat. 1068",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "description": "Short title provision set out as a note under section 621 of this title.",
+      "references": [
+        "section 621 of this title",
+        "section 500 of Pub. L. 93\u2013344"
+      ],
+      "citations": [
+        {
+          "quote": "see section 500 of Pub. L. 93&ndash;344, set out as a note under section 621 of this title",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "notes": "This item is a purposes-only section (2 U.S.C. 661) stating the four purposes of the Federal Credit Reform Act of 1990's Credit Reform subchapter. It contains no operative obligations (no actor/modality duties) \u2014 only aspirational statutory purposes, extracted here as objectives. It defines no terms itself; the credit-program terms it uses are undefined in this section. It functions as a cross-cutting budgetary framework for federal loan/guarantee programs, relevant to the scope's commercial lending subsidy/guarantee programs but does not itself administer any lending program."
+}

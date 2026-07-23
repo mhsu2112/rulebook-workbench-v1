@@ -1,0 +1,626 @@
+PART 4287&#x2014;SERVICING
+ 
+ 
+ Authority: 5 U.S.C. 301; 7 U.S.C. 1932(a); 7 U.S.C. 1989.
+ 
+ 
+ Source: 61 FR 67648, Dec. 23, 1996, unless otherwise noted.
+ 
+ 
+ Subpart A [Reserved] 
+ 
+ 
+ Subpart B&#x2014;Servicing Business and Industry Guaranteed Loans 
+ 
+ Source: 81 FR 36020, June 3, 2016, unless otherwise noted.
+ 
+ 
+ &#xA7; 4287.101 Introduction. 
+ (a) As of October 1, 2020, this subpart is specifically applicable to and only contains regulations for servicing Business and Industry (B&amp;I) Loans guaranteed by the Agency prior to October 1, 2020 and Business and Industry loans under the authority of the Coronavirus Aid, Relief, and Economic Security Act (CARES Act) (Pub. L. 116-136) to provide B&amp;I guarantees for loans needed as a result of the Coronavirus Disease 2019 (COVID-19) pandemic for working capital loan purposes to support business operations and facilities in rural areas (B&amp;I CARES Act Program Loans). Other than B&amp;I CARES Act Program Loans and B&amp;I loans guaranteed by the Agency prior to October 1, 2020, this subpart is no longer used for servicing B&amp;I loans guaranteed by the Agency. Requirements for B&amp;I loans guaranteed by the Agency after October 1, 2020 (other than B&amp;I CARES Act Loans) may be found at 7 CFR part 5001. 
+ (b) The lender is responsible for servicing the entire loan and must remain mortgagee and secured party of record, notwithstanding the fact that another party may hold a portion of the loan. 
+ (c) Whether specifically stated or not, whenever Agency approval is required, it must be in writing. Copies of all forms and regulations referenced in this subpart may be obtained from any Agency office and from the USDA Rural Development Web site at http://www.rd.usda.gov/publications. Whenever a form is designated in this subpart, that designation includes predecessor and successor forms, if applicable, as specified by the Agency. 
+ [81 FR 36020, June 3, 2016, as amended at 85 FR 62196, Oct. 2, 2020]
+ 
+ 
+
+ 
+ &#xA7; 4287.102 Definitions and abbreviations. 
+ The definitions and abbreviations contained in &#xA7; 4279.2 of this chapter apply to this subpart. 
+ 
+
+ 
+ &#xA7; 4287.103 Exception authority. 
+ Section 4279.15 of this chapter applies to this subpart. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.104-4287.105 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.106 Appeals. 
+ Section 4279.16 of this chapter applies to this subpart. 
+ 
+
+ 
+ &#xA7; 4287.107 Routine servicing. 
+ The lender is responsible for servicing the entire loan and for taking all servicing actions that a reasonably prudent lender would perform in servicing its own portfolio of loans that are not guaranteed. The lender may contract for services but is ultimately responsible for underwriting, loan origination, loan servicing, and compliance with all Agency regulations. Form RD 4279-4, &#x201C;Lender's Agreement,&#x201D; is the contractual agreement between the lender and the Agency that sets forth some of the lender's loan servicing responsibilities. These responsibilities include, but are not limited to, periodic borrower visits, the collection of payments, obtaining compliance with the covenants and provisions in the loan agreement, obtaining and analyzing financial statements, ensuring payment of taxes and insurance premiums, maintaining liens on collateral, keeping an inventory accounting of all collateral items, and reconciling the inventory of all collateral sold during loan servicing, including liquidation. 
+ (a) Lender reports and annual renewal fee. The lender must report the outstanding principal and interest balance and the current loan classification on each guaranteed loan semiannually (at June 30 and December 31), using either the USDA Lender Interactive Network Connection (LINC) system or Form RD 1980-41, &#x201C;Guaranteed Loan Status Report.&#x201D; The lender must transmit the annual renewal fee to the Agency in accordance with &#xA7; 4279.120(b) of this chapter calculated based on the December 31 semiannual status report. 
+ (b) Loan classification. The lender must provide the loan classification or rating under its regulatory standards as of loan closing, using either the LINC system or Form 1980-19, &#x201C;Guaranteed Loan Closing Report.&#x201D; When the lender changes the loan classification in the future, the lender must notify the Agency within 30 days, in writing, of any change in the loan classification. 
+ (c) Agency and lender conference. At the Agency's request, the lender must consult with the Agency to ascertain how the guaranteed loan is being serviced and that the conditions and covenants of the loan agreement are being enforced. 
+ (d) Borrower financial reports. The lender must obtain, analyze, and forward to the Agency the borrower's and any guarantor's annual financial statements required by the loan agreement within 120 days of the end of the borrower's fiscal year. States, local government, Indian tribes, institution of higher education, and nonprofit organization borrowers who meet the Federal awards expended threshold established in 2 CFR part 200, subpart F, during their fiscal year must submit an audit conducted in accordance with 2 CFR part 200, subpart F. When the borrower's audit is conducted in accordance with 2 CFR part 200, subpart F, audits must be submitted no later than nine months after the end of the borrower's fiscal year or 30 days after the borrower's receipt of the auditor's report, whichever is earlier. The lender must analyze these financial statements and provide the Agency with a written summary of the lender's analysis, ratio analysis, and conclusions, which, at a minimum, must include trends, strengths, weaknesses, extraordinary transactions, violations of loan covenants and covenant waivers proposed by the lender, any routine servicing actions performed, and other indications of the financial condition of the borrower. Spreadsheets of the financial statements must also be included. Following the Agency's review of the lender's financial analysis, the Agency will provide a written report of any concerns to the lender. Any concerns based upon the Agency's review must be addressed by the lender. If the lender makes a reasonable attempt to obtain financial statements but is unable to obtain the borrower's cooperation, the failure to obtain financial statements will not impair the validity of the Loan Note Guarantee. 
+ (e) Protection of Agency interests. If the Agency determines that the lender is not in compliance with its servicing responsibilities, the Agency reserves the right to take any action the Agency determines necessary to protect the Agency's interests with respect to the loan. If the Agency exercises this right, the lender must cooperate with the Agency to rectify the situation. In determining any loss, the Agency will assess against the lender any cost to the Agency associated with such action. 
+ [81 FR 36020, June 3, 2016, as amended at 87 FR 58021, Sept. 23, 2022]
+ 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.108-4287.111 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.112 Interest rate changes. 
+ (a) The borrower, lender, and holder (if any) may collectively initiate a permanent or temporary reduction in the interest rate of the guaranteed loan at any time during the life of the loan upon written agreement among these parties. The lender must obtain prior Agency concurrence and provide a copy of the modification agreement to the Agency. If any of the guaranteed portion has been purchased by the Agency, the Agency (as a holder) will affirm or reject interest rate change proposals in writing. 
+ (b) No increases in interest rates will be permitted, except the normal fluctuations in approved variable interest rates, unless a temporary interest rate reduction occurred or to change from a variable rate to a fixed rate. Variable rates can be changed to a fixed rate at the request of the borrower, lender, agreement of the holder, if any, and with the Agency's prior written concurrence. After the rate change, the rate must meet the requirements of 7 CFR 4279.125. 
+ (c) The interest rate, after adjustments, must comply with the interest rate requirements set forth in &#xA7; 4279.125 of this chapter. 
+ (d) The lender is responsible for the legal documentation of interest-rate changes by an endorsement or any other legally effective amendment to the promissory note; however, no new notes shall be issued. The lender must provide copies of all legal documents to the Agency. 
+ [81 FR 36020, June 3, 2016, as amended at 87 FR 58021, Sept. 23, 2022]
+ 
+ 
+
+ 
+ &#xA7; 4287.113 Release of collateral. 
+ (a) Within the parameters of paragraph (c) of this section, lenders may, over the life of the loan, release collateral (other than personal and corporate guarantees) without Agency concurrence if the proceeds generated are used to pay down debt in order of lien priority, reduce the guaranteed loan or to acquire replacement collateral. Working assets, such as accounts receivable, inventory, and work-in-progress that are routinely depleted or sold and proceeds used for the normal course of business operations may be used in and released for routine business purposes without prior concurrence of the Agency as long as the loan is not in monetary default or liquidation. 
+ (b) If a release of collateral does not meet the requirements of paragraph (a) of this section, the lender must complete a written evaluation to justify the release and obtain written Agency concurrence in advance of the release. 
+ (c) Collateral must remain sufficient to provide for adequate collateral coverage for the outstanding guaranteed loan(s). For a release of collateral request when the Borrower is not in monetary default or liquidation, the lender must support all releases of chattel collateral with a value exceeding $250,000 and real estate collateral with a value exceeding $500,000 with a current appraisal on the collateral being released and otherwise meets the requirements of &#xA7; 4279.144 of this chapter. All other release of collateral requests must meet the appraisal requirements of &#xA7; 4279.144 of this chapter. The cost of this appraisal will not be paid for by the Agency. The Agency may, at its discretion, require an appraisal of the remaining collateral in cases where it has been determined that the Agency may be adversely affected by the release of collateral. The sale or release of the collateral must be based on an arm's length transaction, and there must be adequate consideration for the release of collateral. Such consideration may include, but is not limited to: 
+ (1) Application of the net proceeds from the sale of collateral to the borrower's debts in order of their lien priority against the sold collateral; 
+ (2) Use of the net proceeds from the sale of collateral to purchase other collateral of equal or greater value for which the lender will obtain as security for the benefit of the guaranteed loan with a lien position equal or superior to the position previously held; 
+ (3) Application of the net proceeds from the sale of collateral to the borrower's business operation in such a manner that a significant improvement to the borrower's debt service ability will be clearly demonstrated. The lender's written request must detail how the borrower's debt service ability will be improved; or 
+ (4) Assurance that the release of collateral is essential for the success of the business, thereby furthering the goals of the program. Such assurance must be supported by written documentation from the lender acceptable to the Agency. 
+ [81 FR 36020, June 3, 2016, as amended at 87 FR 58021, Sept. 23, 2022]
+ 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.114-4287.122 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.123 Subordination of lien position. 
+ A subordination of the lender's lien position must be requested in writing by the lender and concurred with in writing by the Agency in advance of the subordination. The lender's subordination proposal must include a financial analysis of the servicing action and be fully supported by current financial statements of the borrower and guarantors that are less than 90 days old. 
+ (a) The subordination of lien position must enhance the borrower's business and not adversely affect the potential for collection of the B&amp;I loan through repayment or liquidation. 
+ (b) The lien to which the guaranteed loan is subordinated is for a fixed dollar limit and for a fixed term after which the guaranteed loan lien priority will be restored. 
+ (c) Collateral must remain sufficient to provide for adequate collateral coverage. The Agency may require a current independent appraisal in accordance with &#xA7; 4279.144 of this chapter. 
+ (d) Lien priorities must remain for the portion of the collateral that was not subordinated. 
+ (e) A subordination to a line of credit cannot exceed 1 year. The term of the line of credit cannot be extended. 
+ 
+
+ 
+ &#xA7; 4287.124 Alterations of loan instruments. 
+ The lender must neither alter nor approve any alterations or modifications of any loan instrument without the prior written approval of the Agency. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.125-4287.132 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.133 Sale of corporate stock. 
+ Any sale or transfer of corporate stock must be approved by the Agency in writing and must be to an eligible individual or entity in accordance with &#xA7; 4279.108(a) and 4279.108(b) of this chapter. In the event a portion of the borrower's stock is sold or transferred, the Agency may require personal or corporate guarantees from those then owning a 20 percent or more interest in the borrower in accordance with &#xA7; 4279.132 of this chapter. 
+ 
+
+ 
+ &#xA7; 4287.134 Transfer and assumption. 
+ The lender may request a transfer and assumption of a guaranteed loan in situations where the total indebtedness, or less than the total indebtedness, is transferred to another eligible borrower on the same or different terms. A transfer and assumption of the borrower's operation can be accomplished before or after the loan goes into liquidation. However, if the collateral has been purchased through foreclosure or the borrower has conveyed title to the lender, no transfer and assumption is permitted. Additionally, no transfer and assumption is permitted when the Agency has repurchased 100 percent of the guaranteed portion of the loan. 
+ (a) Documentation of request. All transfers and assumptions must be approved in writing by the Agency and must be to an eligible borrower. The lender must provide credit reports for each individual or entity owning 20 percent or more interest in the transferee, along with such other documentation as the Agency may request to determine eligibility. In accordance with &#xA7; 4279.132 of this chapter, the Agency will require personal and/or corporate guarantee(s) from all owners that have a 20 percent or more ownership interest in the transferee. When warranted by an Agency assessment of potential financial risk, the Agency may also require guarantees of parent, subsidiaries, or affiliated companies (owning less than a 20 percent interest in the borrower) and may require security for any guarantee. The new borrower must sign Form RD 4279-1, &#x201C;Application for Loan Guarantee,&#x201D; and any guarantors of the guaranteed loan must sign Form RD 4279-14, &#x201C;Unconditional Guarantee.&#x201D; 
+ (b) Terms. Loan terms may be changed with the concurrence of the Agency, all holders, and the transferor (including guarantors) if the transferor has not been or will not be released from liability. Any new loan terms must be within the terms authorized by &#xA7; 4279.126 of this chapter. 
+ (c) Release of liability. The transferor, including any guarantor, may be released from liability only with prior Agency written concurrence and only when the fair market value of the collateral being transferred is at least equal to the amount of the loan being assumed and is supported by a current appraisal and a current financial statement of the transferee. The Agency will not pay for the appraisal. If the transfer is for less than the debt, for a release of liability, the lender must demonstrate to the Agency that the transferor and guarantors have no reasonable debt-paying ability considering their assets and income in the foreseeable future. 
+ (d) Proceeds. The lender must credit any proceeds received from the sale of collateral before a transfer and assumption to the transferor's guaranteed loan debt in order of lien priority before the transfer and assumption is closed. 
+ (e) Additional loans. Loans to provide additional funds in connection with a transfer and assumption must be considered a new loan application, which requires submission of a complete Agency application in accordance with &#xA7; 4279.161(b) of this chapter. 
+ (f) Credit quality. The lender will provide a credit analysis of the proposal that addresses capacity (sufficient cash flow to service the debt), capital (net worth), collateral (assets to secure the debt), conditions (of the borrower, industry trends, and the overall economy), and character (integrity of the transferee management) in accordance with &#xA7; 4279.131 of this chapter. 
+ (g) Appraisals. If the proposed transfer and assumption is for the full amount of the Agency guaranteed loan, the Agency will not require an appraisal, unless a guarantor is being released from liability in accordance with paragraph (c) of this section. If the proposed transfer and assumption is for less than the full amount of the Agency guaranteed loan, the Agency will require an appraisal on all of the collateral being transferred, and the amount of the assumption must not be less than this appraised value. The lender is responsible for obtaining this appraisal, which must conform to the requirements of &#xA7; 4279.144 of this chapter. The Agency will not pay the appraisal fee or any other costs associated with this transfer. 
+ (h) Documents. Prior to Agency approval, the lender must provide the Agency a written legal opinion that the transaction can be properly and legally transferred and assurance that the conveyance instruments will be appropriately filed, registered, and recorded. 
+ (1) The lender must not issue any new promissory notes. The assumption must be completed in accordance with applicable law and must contain the Agency case number of the transferor and transferee. The lender must provide the Agency with a copy of the transfer and assumption agreement. The lender must ensure that all transfers and assumptions are noted on all original Loan Note Guarantees. 
+ (2) A new loan agreement, consistent in principle with the original loan agreement, must be executed to establish the terms and conditions of the loan being assumed. An assumption agreement can be used to establish the loan covenants. 
+ (3) Upon execution of the transfer and assumption, the lender must provide the Agency with a written legal opinion that the transfer and assumption is completed, valid, and enforceable, and certification that the transfer and assumption is consistent with the conditions outlined in the Agency's conditions of approval for the transfer and complies with all Agency regulations. 
+ (i) Loss/repurchase resulting from transfer. (1) Any resulting loss must be processed in accordance with &#xA7; 4287.158. 
+ (2) If a holder owns any of the guaranteed portion, such portion must be repurchased by the lender or the Agency in accordance with &#xA7; 4279.78 of this chapter. 
+ (j) Related party. If the transferor and transferee are affiliated or related parties, any transfer and assumption must be for the full amount of the debt. 
+ (k) Cash downpayment. The lender may allow the transferee to make cash downpayments directly to the transferor provided: 
+ (1) The transfer and assumption is made for the total indebtedness; 
+ (2) The lender recommends that the cash be released, and the Agency concurs prior to the transaction being completed. The lender may require that an amount be retained for a defined period of time as a reserve against future defaults. Interest on such account may be paid periodically to the transferor or transferee as agreed; 
+ (3) The lender determines that the transferee has the repayment ability to meet the obligations of the assumed guaranteed loan, as well as any other indebtedness; and 
+ (4) Any payments by the transferee to the transferor will not suspend the transferee's obligations to continue to meet the guaranteed loan payments as they come due under the terms of the assumption. 
+ (l) Annual renewal fees. The lender must pay any annual renewal fee published in the Federal Register and then in effect at the time the loan is closed for the duration of the Loan Note Guarantee. Annual renewal fees are due for the entire year even if the Loan Note Guarantee is terminated before the end of the year. 
+ 
+
+ 
+ &#xA7; 4287.135 Substitution of lender. 
+ After the issuance of a Loan Note Guarantee, the lender is prohibited from selling or transferring the entire loan without the prior written approval of the Agency. Because the Loan Note Guarantee is associated with a specific promissory note and cannot be transferred to a new promissory note, the lender must transfer the original promissory note to the new lender, who must agree to its current loan terms, including the interest rate, secondary market holder (if any), collateral, loan agreement terms, and guarantors. The new lender must also obtain the original Loan Note Guarantee, original personal and corporate guarantee(s), and the loan payment history from the transferor lender. If the new lender wishes to modify the loan terms after acquisition, the new lender must submit a request to the Agency. 
+ (a) The Agency may approve the substitution of a new lender if: 
+ (1) The proposed substitute lender: 
+ (i) Is an eligible lender in accordance with &#xA7; 4279.29 of this chapter and is approved as such; 
+ (ii) Is able to service the loan in accordance with the original loan documents; and 
+ (iii) Agrees in writing to acquire title to the unguaranteed portion of the loan held by the original lender and assumes all original loan requirements, including liabilities and servicing responsibilities. 
+ (2) The substitution of the lender is requested in writing by the borrower, the proposed substitute lender, and the original lender of record, if still in existence. 
+ (b) The Agency will not pay any loss or share in any costs ( e.g., appraisal fees and environmental assessments) with a new lender unless a relationship is established through a substitution of lender in accordance with paragraph (a) of this section. This includes situations where a lender is merged with or acquired by another lender and situations where the lender has failed and been taken over by a regulatory agency such as the Federal Deposit Insurance Corporation (FDIC) and the loan is subsequently sold to another lender. 
+ (c) Where the lender has failed and been taken over by the FDIC and the loan is liquidated by the FDIC rather than being sold to another lender, the Agency will pay losses and share in costs as if the FDIC were an approved substitute lender. 
+ (d) In cases where there is a substitution of the lender, the Agency and the new lender must execute a new Form RD 4279-4, &#x201C;Lender's Agreement,&#x201D; unless a valid Lender's Agreement already exists with the new lender. 
+ 
+
+ 
+ &#xA7; 4287.136 Lender failure. 
+ (a) Uninsured lender. The lender or insuring agency cannot arbitrarily change the Lender's Agreement and related documents on the guaranteed loan, and the Agency will make the successor to the failed institution aware of the statutory and regulatory requirements. If the acquiring institution is not an eligible lender as set forth in &#xA7; 4279.29 of this chapter, the Loan Note Guarantee will not be enforceable, and the institution must promptly apply to become an eligible lender. The failure of the uninsured lender to become an eligible lender will result in the Loan Note Guarantee being unenforceable. A new lender approved by the Agency will be afforded the benefits of the Loan Note Guarantee in the sharing of any loss and eligible expenses subject to the limits that are set forth in the regulations governing the program. 
+ (b) Insured lender. The FDIC and the Agency have entered into an Inter-Agency Agreement and all parties are to abide by this Agreement or successor document(s). This document sets forth the duties and responsibilities of each Agency when an institution fails. The lender must take such action that a reasonably prudent lender would take if it did not have a Loan Note Guarantee to protect the lender and Agency's mutual interest. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.137-4287.144 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.145 Default by borrower. 
+ The lender's primary responsibilities in default are to act prudently and expeditiously, to work with the borrower to bring the account current or cure the default through restructuring if a realistic plan can be developed, or to accelerate the account and conduct a liquidation in a manner that will minimize any potential loss. The lender may initiate liquidation subject to submission and approval of a complete liquidation plan. 
+ (a) The lender must notify the Agency when a borrower is more than 30 days past due on a payment and the delinquency cannot be cured within 30 days or when a borrower is otherwise in default of covenants in the loan agreement by promptly submitting Form RD 1980-44, &#x201C;Guaranteed Loan Borrower Default Status,&#x201D; or processing the Default Status report in LINC. The lender must update the loan's status each month using either Form RD 1980-44 or the LINC Default Status report until such time as the loan is no longer in default. If a monetary default exceeds 60 days, the lender must meet with the Agency and, if practical, the borrower to discuss the situation. 
+ (b) In considering options, the prospects for providing a permanent cure without adversely affecting the risk to the Agency and the lender is the paramount objective. 
+ (1) Curative actions (subject to the rights of any holder and Agency concurrence) include, but are not limited to: 
+ (i) Deferment of principal and/or interest payments; 
+ (ii) An additional unguaranteed temporary loan by the lender to bring the account current; 
+ (iii) Reamortization of or rescheduling the payments on the loan; 
+ (iv) Transfer and assumption of the loan in accordance with &#xA7; 4287.134; 
+ (v) Reorganization; 
+ (vi) Liquidation; and 
+ (vii) Changes in interest rates with the Agency's, the lender's, and any holder's approval. Any interest payments must be adjusted proportionately between the guaranteed and unguaranteed portion of the loan. 
+ (2) The term of any deferment, rescheduling, reamortization, or moratorium will be limited to the lesser of the remaining useful life of the collateral or remaining limits as set forth in &#xA7; 4279.126 of this chapter (excluding paragraph (c)). During a period of deferment or moratorium on the guaranteed loan, the lender's unguaranteed loan(s) and any stockholder loans must also be under deferment or moratorium. Balloon payments are permitted as a loan servicing option as long as there is a reasonable prospect for success and the remaining life of the collateral supports the action. 
+ (3) In the event of a loss or a repurchase, the lender cannot claim default or penalty interest, late payment fees, or interest on interest. If the restructuring includes the capitalization of interest, interest accrued on the capitalized interest will not be covered by the guarantee. Consequently, it is not eligible for repurchase from the holder and cannot be included in the loss claim. 
+ (c) Debt write-downs for an existing borrower, where the same principals retain control of and decisionmaking authority for the business, are prohibited, except as directed or ordered under the Bankruptcy Code. 
+ (d) For loans closed on or after August 2, 2016, in the event of a loss, the guarantee will not cover note interest to the lender accruing after 90 days from the most recent delinquency effective date. 
+ (e) For loans closed on or after August 2, 2016, the lender or the Agency will issue an interest termination letter to the holder(s) establishing the termination date for interest accrual. The guarantee will not cover interest to any holder accruing after the greater of: 90 days from the date of the most recent delinquency effective date as reported by the lender or 30 days from the date of the interest termination letter. 
+ (f) For repurchases of guaranteed loans, refer to &#xA7; 4279.78 of this chapter. 
+ 
+
+ 
+ &#xA7;&#xA7; 4286.146-4287.155 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.156 Protective advances. 
+ Protective advances are advances made by the lender for the purpose of preserving and protecting the collateral where the debtor has failed to, will not, or cannot meet its obligations. Lenders must exercise sound judgment in determining that the protective advance preserves collateral and recovery is actually enhanced by making the advance. Lenders cannot make protective advances in lieu of additional loans. A protective advance claim will be paid only at the time of the final report of loss payment. 
+ (a) The maximum loss to be paid by the Agency will never exceed the original loan amount plus accrued interest times the percentage of guarantee regardless of any protective advances made. 
+ (b) In the event of a final loss, protective advances will accrue interest at the note rate and will be guaranteed at the same percentage of guarantee as provided for in the Loan Note Guarantee. The guarantee will not cover interest on the protective advance accruing after 90 days from the most recent delinquency effective date. 
+ (c) Protective advances must constitute an indebtedness of the borrower to the lender and be secured by the security instruments. Agency written authorization is required when the cumulative total of protective advances exceeds $200,000 or 10 percent of the aggregate outstanding balance of principal and interest, whichever is less. 
+ 
+
+ 
+ &#xA7; 4287.157 Liquidation. 
+ In the event of one or more incidents of default or third party actions that the borrower cannot or will not cure within a reasonable period of time, the lender, with Agency consent, must liquidate the loan. In accordance with &#xA7; 4287.145(d), for loans closed on or after August 2, 2016, in the event of a loss, the guarantee will not cover note interest to the lender accruing after 90 days from the most recent delinquency effective date. 
+ (a) Decision to liquidate. A decision to liquidate must be made when the lender determines that the default cannot be cured through actions such as those contained in &#xA7; 4287.145, or it has been determined that it is in the best interest of the Agency and the lender to liquidate. The decision to liquidate or continue with the borrower must be made as soon as possible when one or more of the following exist: 
+ (1) A loan is 90 days behind on any scheduled payment and the lender and the borrower have not been able to cure the delinquency through actions such as those contained in &#xA7; 4287.145. 
+ (2) It is determined that delaying liquidation will jeopardize full recovery on the loan. 
+ (3) The borrower or lender is uncooperative in resolving the problem or the Agency or lender has reason to believe the borrower is not acting in good faith, and it would improve the position of the guarantee to liquidate immediately. 
+ (b) Repurchase of loan. When the decision to liquidate is made, if any portion of the loan has been sold or assigned under &#xA7; 4279.75 of this chapter and not already repurchased, provisions will be made for repurchase in accordance with &#xA7; 4279.78 of this chapter. 
+ (c) Lender's liquidation plan. The lender is responsible for initiating actions immediately and as necessary to assure a prompt, orderly liquidation that will provide maximum recovery. Within 30 days after a decision to liquidate, the lender must submit a written, proposed plan of liquidation to the Agency for approval. The liquidation plan must be detailed and include at least the following: 
+ (1) Such proof as the Agency requires to establish the lender's ownership of the guaranteed loan promissory note and related security instruments and a copy of the payment ledger, if available, that reflects the current loan balance, accrued interest to date, and the method of computing the interest; 
+ (2) A full and complete list of all collateral, including any personal and corporate guarantees; 
+ (3) The recommended liquidation methods for making the maximum collection possible on the indebtedness and the justification for such methods, including recommended action for acquiring and disposing of all collateral and collecting from guarantors; 
+ (4) Necessary steps for preservation of the collateral; 
+ (5) Copies of the borrower's most recently available financial statements; 
+ (6) Copies of each guarantor's most recently available financial statements; 
+ (7) An itemized list of estimated liquidation expenses expected to be incurred along with justification for each expense; 
+ (8) A schedule to periodically report to the Agency on the progress of liquidation, not to exceed every 60 days; 
+ (9) Estimated protective advance amounts with justification; 
+ (10) Proposed protective bid amounts on collateral to be sold at auction and a breakdown to show how the amounts were determined. A protective bid may be made by the lender, with prior Agency written approval, at a foreclosure sale to protect the lender's and the Agency's interest. The protective bid will not exceed the amount of the loan, including expenses of foreclosure, and must be based on the liquidation value considering estimated expenses for holding and reselling the property. These expenses include, but are not limited to, expenses for resale, interest accrual, length of time necessary for resale, maintenance, guard service, weatherization, and prior liens; 
+ (11) If a voluntary conveyance is considered, the proposed amount to be credited to the guaranteed debt; 
+ (12) Legal opinions, if needed by the lender's legal counsel; and 
+ (13) An estimate of fair market and potential liquidation value of the collateral. If the value of the collateral is $250,000 or more, the lender must obtain an independent appraisal report meeting the requirements of &#xA7; 4279.144 of this chapter for the collateral securing the loan, which reflects the fair market value and potential liquidation value. For collateral values under this threshold, lenders must follow their primary regulator's policies relating to appraisals and evaluations or, if the lender is not regulated, normal banking practices and generally accepted methods of determining value. The liquidation appraisal of the collateral must evaluate the impact on market value of any release of hazardous substances, petroleum products, or other environmental hazards. The independent appraiser's fee, including the cost of the environmental site assessment, will be shared equally by the Agency and the lender. In order to assure prompt action, the liquidation plan can be submitted with an estimate of collateral value, and the liquidation plan may be approved by the Agency subject to the results of the final liquidation appraisal. 
+ (d) Approval of liquidation plan. The lender's liquidation plan must be approved by the Agency in writing. The lender and Agency must attempt to resolve any Agency concerns. If the liquidation plan is approved by the Agency, the lender must proceed expeditiously with liquidation and must take all legal action necessary to liquidate the loan in accordance with the approved liquidation plan. The lender must update or modify the liquidation plan when conditions warrant, including a change in value based on a liquidation appraisal. If the liquidation plan is not approved by the Agency, the lender must take such actions that a reasonably prudent lender would take without a guarantee and keep the Agency informed in writing. The lender must continue to develop a liquidation plan in accordance with this section. 
+ (e) Acceleration. The lender will proceed to accelerate the indebtedness as expeditiously as possible when acceleration is necessary, including giving any notices and taking any other legal actions required. The guaranteed loan will be considered in liquidation once the loan has been accelerated and a demand for payment has been made upon the borrower. The lender must obtain Agency concurrence prior to the acceleration of the loan if the sole basis for acceleration is a nonmonetary default. In the case of monetary default, prior approval by the Agency of the lender's acceleration is not required, although Agency concurrence must still be given not later than at the time the liquidation plan is approved. The lender will provide a copy of the acceleration notice or other acceleration document to the Agency. 
+ (f) Filing an estimated loss claim. When the lender owns any of the guaranteed portion of the loan, the lender must file an estimated loss claim once a decision has been made to liquidate if the liquidation is expected to exceed 90 days. The estimated loss payment will be based on the liquidation value of the collateral. For the purpose of reporting and loss claim computation, for loans closed on or after August 2, 2016, the guarantee will not cover note interest to the lender accruing after 90 days from the most recent delinquency effective date. The Agency will promptly process the loss claim in accordance with applicable Agency regulations as set forth in &#xA7; 4287.158. 
+ (g) Accounting and reports. The lender must account for funds during the period of liquidation and must, in accordance with the Agency-approved liquidation plan, provide the Agency with reports on the progress of liquidation including disposition of collateral, resulting costs, and additional procedures necessary for successful completion of the liquidation. 
+ (h) Transmitting payments and proceeds to the Agency. When the Agency is the holder of a portion of the guaranteed loan, the lender must transmit to the Agency its pro rata share of any payments received from the borrower, liquidation, or other proceeds using Form RD 1980-43, &#x201C;Lender's Guaranteed Loan Payment to Rural Development.&#x201D; 
+ (i) Abandonment of collateral. When the lender adequately documents that the cost of liquidation would exceed the potential recovery value of certain collateral and receives Agency concurrence, the lender may abandon that collateral. When the lender makes a recommendation for abandonment of collateral, it must comply with 7 CFR part 1970, &#x201C;Environmental Policies and Procedures.&#x201D; 
+ (j) Personal or corporate guarantees. The lender must take action to maximize recovery from all personal and corporate guarantees, including seeking deficiency judgments when there is a reasonable chance of future collection. 
+ (k) Compromise settlement. Compromise settlements must be approved by the lender and the Agency. Complete current financial information on all parties obligated for the loan must be provided. At a minimum, the compromise settlement must be equivalent to the value and timeliness of that which would be received from attempting to collect on the guarantee. The guarantor cannot be released from liability until the full amount of the compromise settlement has been received. In weighing whether the compromise settlement should be accepted, among other things, the Agency will weigh whether the comparison is more financially advantageous than collecting on the guarantee. 
+ (l) Litigation. In all litigation proceedings involving the borrower, the lender is responsible for protecting the rights of the lender and the Agency with respect to the loan and keeping the Agency adequately and regularly informed, in writing, of all aspects of the proceedings. If the Agency determines that the lender is not adequately protecting the rights of the lender or the Agency with respect to the loan, the Agency reserves the right to take any legal action the Agency determines necessary to protect the rights of the lender, on behalf of the lender, or the Agency with respect to the loan. If the Agency exercises this right, the lender must cooperate with the Agency. Any cost to the Agency associated with such action will be assessed against the lender. 
+ 
+
+ 
+ &#xA7; 4287.158 Determination of loss and payment. 
+ Unless the Agency anticipates a future recovery, the Agency will make a final settlement with the lender after the collateral is liquidated or after settlement and compromise of all parties has been completed. The Agency has the right to recover losses paid under the guarantee from any party that may be liable. 
+ (a) Report of loss form. Form RD 449-30, &#x201C;Loan Note Guarantee Report of Loss,&#x201D; will be used for reporting and calculating all estimated and final loss determinations. 
+ (b) Estimated loss. In accordance with the requirements of &#xA7; 4287.157(f), the lender must prepare an estimated loss claim, based on liquidation appraisal value, and submit it to the Agency. When the lender is conducting the liquidation and owns any or all of the guaranteed portion of the loan, the lender must file an estimated loss claim once a decision has been made to liquidate if the liquidation will exceed 90 days. The estimated loss payment will be based on the liquidation value of the collateral. 
+ (1) Such estimate will be prepared and submitted by the lender on Form RD 449-30 using the basic formula as provided on the report, except that the liquidation appraisal value will be used in lieu of the amount received from the sale of collateral. Interest accrual eligible for payment under the guarantee on the defaulted loan will be discontinued when the estimated loss is paid. 
+ (2) A protective advance claim will be paid only at the time of the final report of loss payment. 
+ (c) Final loss. Within 30 days after liquidation of all collateral is completed (except for certain unsecured personal or corporate guarantees as provided for in this section), the lender must prepare a final report of loss and submit it to the Agency. If the lender holds all or a portion of the guaranteed loan, the Agency will not guarantee interest to the lender accruing after 90 days from the most recent delinquency effective date. The Agency will not guarantee interest to any holder accruing after the greater of: 90 days from the date of the most recent delinquency effective date as reported by the lender or 30 days from the date of the interest termination letter. Before approval by the Agency of any final loss report, the lender must account for all funds during the period of liquidation, disposition of the collateral, all costs incurred, and any other information necessary for the successful completion of liquidation. Upon receipt of the final accounting and report of loss, the Agency may audit all applicable documentation to determine the final loss. The lender must make its records available and otherwise assist the Agency in making any investigation. The documentation accompanying the report of loss must support the amounts reported as losses on Form RD 449-30. 
+ (1) The lender must make a determination regarding the collectability of unsecured personal and corporate guarantees. If reasonably possible, the lender must promptly collect or otherwise dispose of such guarantees in accordance with &#xA7; 4287.157(j) prior to completion of the final loss report. However, in the event that collection from the guarantors appears unlikely or will require a prolonged period of time, the lender must file the report of loss when all other collateral has been liquidated. Unsecured personal or corporate guarantees outstanding at the time of the submission of the final loss claim will be treated as a future recovery with the net proceeds to be shared on a pro rata basis by the lender and the Agency. Debts owed to the Agency (Federal debt) may be collected using DCIA authority. The Agency may consider a compromise settlement of Federal debt after it has processed a final report of loss and issued a 60 day due process letter. Any funds collected on Federal debt will not be shared with the lender. 
+ (2) The lender must document that all of the collateral has been accounted for and properly liquidated and that liquidation proceeds have been accounted for and applied correctly to the loan. 
+ (3) The lender must provide receipts and a breakdown of any protective advance amount as to the payee, purpose of the expenditure, date paid, and evidence that the amount expended was proper. 
+ (4) The lender must provide receipts and a breakdown of liquidation expenses as to the payee, purpose of the expenditure, date paid, and evidence that the amount expended was proper. Liquidation expenses are recoverable only from liquidation proceeds. The Agency may approve attorney/legal fees as liquidation expenses provided that the fees are reasonable, require the assistance of attorneys, and cover legal issues pertaining to the liquidation that could not be properly handled by the lender and its employees. 
+ (5) The lender must support accrued interest by documenting how the amount was accrued. If the interest rate was a variable rate, the lender must include documentation of changes in both the selected base rate and the loan rate. 
+ (6) The Agency will pay loss payments within 60 days after it has reviewed the complete final loss report and accounting of the collateral. 
+ (d) Loss limit. The amount payable by the Agency to the lender cannot exceed the limits set forth in the Loan Note Guarantee. 
+ (e) Liquidation expenses. The Agency will deduct liquidation expenses from the liquidation proceeds of the collateral. The lender cannot claim any liquidation expenses in excess of liquidation proceeds. Any changes to the liquidation expenses that exceed 10 percent of the amount proposed in the liquidation plan must be approved by the Agency. Reasonable attorney/legal expenses will be shared by the lender and Agency equally, including those instances where the lender has incurred such expenses from a trustee conducting the liquidation of assets. The lender cannot claim the guarantee fee or the annual renewal fee as authorized liquidation expenses, and no in-house expenses of the lender will be allowed. In-house expenses include, but are not limited to, employee's salaries, staff lawyers, travel, and overhead. 
+ (f) Rent. The lender must apply any net rental or other income that it receives from the collateral to the guaranteed loan debt. 
+ (g) Payment. Once the Agency approves Form RD 449-30 and supporting documents submitted by the lender: 
+ (1) If the loss is greater than any estimated loss payment, the Agency will pay the additional amount owed by the Agency to the lender. 
+ (2) If the loss is less than the estimated loss payment, the lender must reimburse the Agency for the overpayment plus interest at the note rate from the date of payment. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.159-4287.168 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.169 Future recovery. 
+ Unless notified otherwise by the Agency, after the final loss claim has been paid, the lender must use reasonable efforts to attempt collection from any party still liable on any loan that was guaranteed. Any net proceeds from that effort must be split pro rata between the lender and the Agency based on the percentage of guarantee. Any collection of Federal debt made by the United State from any liable party to the guaranteed loan will not be split with the lender. 
+ 
+
+ 
+ &#xA7; 4287.170 Bankruptcy. 
+ (a) Lender's responsibilities. It is the lender's responsibility to protect the guaranteed loan and all of the collateral securing it in bankruptcy proceedings, including taking actions that result in greater recoveries and not taking actions that would not likely be cost-effective. These responsibilities include, but are not limited to, the following: 
+ (1) Monitoring confirmed bankruptcy plans to determine borrower compliance, and, if the borrower fails to comply, seeking a dismissal of the bankruptcy plan; 
+ (2) Filing a proof of claim, where necessary, and all the necessary papers and pleadings concerning the case; 
+ (3) Attending and, where necessary, participating in meetings of the creditors and all court proceedings; 
+ (4) Requesting modifications of any bankruptcy plan whenever it appears that additional recoveries are likely; and 
+ (5) Keeping the Agency adequately and regularly informed in writing of all aspects of the proceedings. 
+ (6) The lender must submit a default status report when the borrower defaults and every 30 days until the default is resolved or a final loss claim is paid by the Agency. The default status report will be used to inform the Agency of the bankruptcy filing, the plan confirmation date, when the plan is complete, and when the borrower is not in compliance with the plan. 
+ (7) With written Agency consent, the lender and Agency will equally share the cost of any independent appraisal fee to protect the guaranteed loan in any bankruptcy proceedings. 
+ (b) Reports of loss during bankruptcy. In bankruptcy proceedings, payment of loss claims will be made as provided in this section. Attorney/legal fees and protective advances as a result of a bankruptcy are only recoverable from liquidation proceeds. 
+ (1) Estimated loss payments. (i) If a borrower has filed for bankruptcy and all or a portion of the debt has been discharged, the lender must request an estimated loss payment of the guaranteed portion of the accrued interest and principal discharged by the court. Only one estimated loss payment is allowed during the bankruptcy. All subsequent claims of the lender during bankruptcy will be considered revisions to the initial estimated loss. A revised estimated loss payment may be processed by the Agency, at its option, in accordance with any court-approved changes in the bankruptcy plan. Once the bankruptcy plan has been completed, the lender is responsible for submitting the documentation necessary for the Agency to review and adjust the estimated loss claim to reflect any actual discharge of principal and interest and to reimburse the lender for any court-ordered interest-rate reduction under the terms of the bankruptcy plan. 
+ (ii) The lender must use Form RD 449-30 to request an estimated loss payment and to revise any estimated loss payments during the course of the bankruptcy plan. The estimated loss claim, as well as any revisions to this claim, must be accompanied by documentation to support the claim. 
+ (iii) Upon completion of a bankruptcy plan, the lender must complete Form RD 1980-44 and forward it to the Agency. 
+ (iv) Upon completion of the bankruptcy plan, the lender must provide the Agency with the documentation necessary to determine whether the estimated loss paid equals the actual loss sustained. If the actual loss sustained as a result of the bankruptcy is less than the estimated loss, the lender must reimburse the Agency for the overpayment plus interest at the note rate from the date of payment of the estimated loss. If the actual loss is greater than the estimated loss payment, the lender must submit a revised estimated loss claim in order to obtain payment of the additional amount owed by the Agency to the lender. 
+ (2) Bankruptcy loss payments. (i) The lender must request a bankruptcy loss payment of the guaranteed portion of the accrued interest and principal discharged by the court for all bankruptcies when all or a portion of the debt has been discharged. Unless a court approves a subsequent change to the bankruptcy plan that is adverse to the lender, only one bankruptcy loss payment is allowed during the bankruptcy. Once the court has discharged all or part of the guaranteed loan and any appeal period has run, the lender must submit the documentation necessary for the Agency to review and adjust the bankruptcy loss claim to reflect any actual discharge of principal and interest. 
+ (ii) The lender must use Form RD 449-30 to request a bankruptcy loss payment and to revise any bankruptcy loss payments during the course of the bankruptcy. The lender must include with the bankruptcy loss claim documentation to support the claim, as well as any revisions to this claim. 
+ (iii) Upon completion of a bankruptcy plan, restructure, or liquidation, the lender must either complete Form RD 1980-44 and forward it to the Agency or enter the data directly into LINC. 
+ (iv) If an estimated loss claim is paid during a bankruptcy and the borrower repays in full the remaining balance without an additional loss sustained by the lender, a final report of loss is not necessary. 
+ (3) Interest rate losses as a result of bankruptcy reorganization. (i) For guaranteed loans closed prior to August 2, 2016: 
+ (A) Interest losses sustained during the period of the bankruptcy plan will be processed in accordance with paragraph (b)(1) of this section. 
+ (B) Interest losses sustained after the bankruptcy plan is confirmed will be processed annually when the lender sustains a loss as a result of a permanent interest rate reduction that extends beyond the period of the bankruptcy plan. 
+ (C) If a bankruptcy loss claim is paid during the operation of the bankruptcy plan and the borrower repays in full the remaining balance without an additional loss sustained by the lender, a final report of loss is not necessary. 
+ (ii) For guaranteed loans closed on or after August 2, 2016, the Agency will not compensate the lender for any difference in the interest rate specified in the Loan Note Guarantee and the rate of interest specified in the bankruptcy plan. 
+ (4) Final bankruptcy loss payments. The Agency will process final bankruptcy loss payments when the loan is fully liquidated. 
+ (5) Application of loss claim payments. The lender must apply estimated loss payments first to the unsecured principal of the guaranteed portion of the debt and then to the unsecured interest of the guaranteed portion of the debt. In the event a court attempts to direct the payments to be applied in a different manner, the lender must immediately notify the Agency in writing. 
+ (6) Protective advances. If approved protective advances, as authorized by &#xA7; 4287.156, were incurred in connection with the initiation of liquidation action and were required to provide repairs, insurance, etc., to protect the collateral as a result of delays in the case of failure of the borrower to maintain the security prior to the borrower having filed bankruptcy, the protective advances together with accrued interest, are payable under the guarantee in the final loss claim. 
+ (c) Expenses during bankruptcy proceedings. (1) Under no circumstances will the guarantee cover liquidation expenses in excess of liquidation proceeds. 
+ (2) Expenses, such as reasonable attorney/legal fees and the cost of appraisals incurred by the lender as a direct result of the borrower's bankruptcy filing, are considered liquidation expenses. Liquidation expenses must be reasonable, customary, and provide a demonstrated economic benefit to the lender and the Agency. Lender's in-house expenses, which are those expenses that would normally be incurred for administration of the loan, including in-house lawyers, are not covered by the guarantee. Liquidation expenses must be deducted from collateral sale proceeds. The lender and Agency will share liquidation expenses equally. To accomplish this, the lender will deduct 50 percent of the liquidation expenses from the collateral sale proceeds. 
+ (3) When a bankruptcy proceeding results in a liquidation of the borrower by a bankruptcy trustee, expenses will be handled as directed by the court, and the lender cannot claim liquidation expenses for the sale of the assets. 
+ (4) If the property is abandoned by the bankruptcy trustee and any relief from the stay has been obtained, the lender will conduct the liquidation in accordance with &#xA7; 4287.157. 
+ (5) Proceeds received from the partial sale of collateral during bankruptcy may be used by the lender to pay reasonable costs associated with the partial sale, such as freight, labor, and sales commissions. Reasonable use of proceeds for this purpose must be documented with the final loss claim. 
+ (6) Reasonable and customary liquidation expenses in bankruptcy may be deducted from liquidation proceeds of collateral. 
+ [81 FR 36020, June 3, 2016, as amended at 81 FR 54477, Aug. 16, 2016]
+ 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.171-4287.179 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.180 Termination of guarantee. 
+ The Loan Note Guarantee will terminate under any of the following conditions: 
+ (a) Upon full payment of the guaranteed loan; 
+ (b) Upon full payment of any loss obligation; or 
+ (c) Upon written notice from the lender to the Agency that the guarantee will terminate 30 days after the date of notice, provided that the lender holds all of the guaranteed portion and the Loan Note Guarantee is returned to the Agency to be canceled. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.181-4287.199 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.200 OMB control number. 
+ In accordance with the Paperwork Reduction Act of 1995, the information collection requirements contained in this rule have been submitted to the Office of Management and Budget (OMB) under OMB Control Number 0570-0069 for OMB approval. 
+ 
+
+ 
+ 
+ Subpart D&#x2014;Servicing Biorefinery, Renewable Chemical, and Biobased Manufacturing Assistance Guaranteed Loans 
+ 
+ Source: 80 FR 36447, June 24, 2015, unless otherwise noted.
+ 
+ 
+ &#xA7; 4287.301 Introduction. 
+ (a) This subpart supplements 7 CFR part 4279, subpart C by providing additional requirements and instructions for servicing and liquidating all loans guaranteed under 7 CFR part 4279, subpart C. 
+ (b) The Lender is responsible for servicing the entire loan and will remain mortgagee and secured party of record notwithstanding the fact that another party may hold a portion of the loan. The entire loan must continue to be secured by the same security with equal lien priority for the guaranteed and unguaranteed portions of the loan. The unguaranteed portion of a loan will neither be paid first nor given any preference or priority over the guaranteed portion of the loan. 
+ (c) All loan servicing actions under this subpart, except for those identified in &#xA7; 4287.307(a) through (g), are subject to Agency concurrence. Whether specifically stated or not, whenever Agency approval is required, it must be in writing. Whenever Agency approval is required, such servicing action must be for Good Cause. 
+ (d) Copies of all forms, regulations, and Instructions referenced in this subpart may be obtained from any Agency office and from the USDA Rural Development Web site at http://www.rd.usda.gov/programs-services/biorefinery-assistance-program . Whenever a form is designated in this subpart, that designation includes predecessor and successor forms, if applicable, as specified by the Agency. 
+ 
+
+ 
+ &#xA7; 4287.302 Definitions. 
+ The definitions and abbreviations contained in &#xA7; 4279.202 of this chapter apply to this subpart. 
+ 
+
+ 
+ &#xA7; 4287.303 Exception authority. 
+ The Administrator may, with the concurrence of the Secretary of Agriculture, make an exception, on a case-by-case basis, to any requirement or provision of this subpart that is not inconsistent with any authorizing statute or applicable law, if the Administrator determines that application of the requirement or provision would adversely affect the Federal government's interest. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.304-4287.305 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.306 Appeals. 
+ Borrowers, Lenders, and Holders have appeal or review rights for Agency decisions made under this subpart. Programmatic decisions based on clear and objective statutory or regulatory requirements are not appealable; however, such decisions are reviewable for appealability by the National Appeals Division (NAD). The Borrower, Lender, and Holder can appeal any Agency decision that directly and adversely impacts them. For an adverse decision that impacts the Borrower, the Lender and Borrower must jointly execute a written request for appeal for an alleged adverse decision made by the Agency. An adverse decision that only impacts the Lender may be appealed by the Lender only. An adverse decision that only impacts the Holder may be appealed by the Holder only. A decision by a Lender adverse to the interest of the Borrower is not a decision by the Agency, whether or not concurred in by the Agency. Appeals will be conducted by NAD and will be handled in accordance with 7 CFR part 11. 
+ 
+
+ 
+ &#xA7; 4287.307 Routine servicing. 
+ The Lender is responsible for servicing the entire loan and for taking all servicing actions that a reasonable Lender would perform in servicing its own portfolio of loans that are not guaranteed. The guarantee is unenforceable by the Lender to the extent any loss is occasioned by violation of usury laws, use of loan funds for unauthorized purposes, Negligent Loan Servicing or Grossly Negligent Loan Servicing as established in the Loan Note Guarantee, or failure to maintain the required security interest regardless of the time at which the Agency acquires knowledge of the foregoing. The Lender may contract for services and may rely on certain written materials (including but not limited to certifications, evaluations, appraisals, financial statements and other reports) to be provided by the Borrower or other qualified third parties (including, among others, one or more independent engineers, appraisers, accountants, consultants or other experts) but is ultimately responsible for underwriting, loan origination, loan servicing, and compliance with all Agency regulations. The Lender's Agreement is the contractual agreement between the Lender and the Agency that sets forth some of the Lender's loan servicing responsibilities. This responsibility includes but is not limited to periodic Borrower visits, the collection of payments, obtaining compliance with the covenants and provisions in the Loan Agreement, obtaining and analyzing financial statements, ensuring payment of taxes and insurance premiums, and maintaining liens on Collateral, and keeping an inventory accounting of all Collateral items and reconciling the inventory of all Collateral sold during loan servicing, including liquidation. 
+ (a) Periodic reports. Each Lender must submit reports by the end of each Calendar Quarter, unless more frequent ones are needed as determined by the Agency to meet the financial interests of the United States, regarding the condition of its Agency guaranteed loan portfolio (including Borrower status and Loan Classification) and any Material Adverse Change in the general financial condition of the Borrower since the last report was submitted. The Lender must report the outstanding principal and Interest balance and the current Loan Classification on each guaranteed loan using either the USDA Lender Interactive Network Connection (LINC) system or Form RD 1980-41, &#x201C;Guaranteed Loan Status Report.&#x201D; 
+ (b) Default reports. Lenders must submit monthly Default reports, including Borrower payment history, for each loan in monetary Default using a form approved by the Agency. 
+ (c) Annual Renewal Fee. The Lender must transmit the Annual Renewal Fee to the Agency in accordance with &#xA7; 4279.231(b) of this chapter calculated based on the December 31 loan status report. 
+ (d) Agency and Lender conference. At the Agency's request, the Lender must consult with the Agency to ascertain how the guaranteed loan is being serviced and that the conditions and covenants of the Loan Agreement are being enforced. 
+ (e) Borrower Financial reports. The Lender must obtain, analyze, and forward to the Agency the Borrower's and any guarantor's financial statements required by the Loan Agreement within 45 days of the end of each Calendar Quarter and audited financial statements within 180 days of the end of the Borrower's fiscal year. The Lender must analyze these financial statements and provide the Agency with a written summary of the Lender's analysis, ratio analysis, and conclusions, which, at a minimum, must include trends, strengths, weaknesses, extraordinary transactions, violations of loan covenants and covenant waivers proposed by the Lender, any routine servicing actions performed, and other indications of the financial condition of the Borrower. Spreadsheets of the financial statements must also be included. Following the Agency's review of the Lender's financial analysis, the Agency will provide a written report of any concerns to the Lender. Any concerns based upon the Agency's review must be addressed by the Lender. If the Lender makes a reasonable attempt to obtain financial statements, but is unable to obtain the Borrower's cooperation, the failure to obtain financial statements will not impair the validity of the Loan Note Guarantee. 
+ (f) Audits. Any Public Body, nonprofit corporation or Indian Tribe that receives a guaranteed loan that meets the thresholds established by 2 CFR part 200, subpart F, must provide an audit for the fiscal year (of the borrower) in which the Loan Note Guarantee is issued. If the loan is for development or purchases made in a previous fiscal year through interim financing, an audit will also be provided for the fiscal year in which the development or purchases occurred. Any audit provided by a Public Body, nonprofit corporation, or Indian Tribe in accordance with this paragraph (f) will be considered adequate to meet the audit requirements of the Program for that year. 
+ (g) Protection of Agency interests. If the Agency determines that the Lender is not in compliance with its servicing responsibilities, the Agency reserves the right to take any action the Agency determines necessary to protect the Agency's interests with respect to the loan. If the Agency exercises this right, the Lender must cooperate with the Agency to rectify the situation. In determining any loss, the Agency will assess against the Lender any cost to the Agency associated with such action. 
+ (h) Additional loans. The Lender must notify the Agency in writing when the Lender makes any additional expenditures or new loans to the Borrower. The Lender may make additional expenditures or new loans to a Borrower with an outstanding loan guaranteed only with prior written Agency approval. The Agency will only approve additional expenditures or new loans where the expenditure or loan will not violate one or more of the loan covenants of the Borrower's Loan Agreement. Any additional expenditure or loan made by the Lender must be junior in priority to the BAP loan guaranteed under 7 CFR part 4279 except for Working Capital loans for which the Agency may consider a subordinate lien provided it is consistent with the conditional provisions specified in &#xA7; 4279.235(a) of this chapter and in &#xA7; 4287.323. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.308-4287.311 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.312 Interest rate changes. 
+ (a) Reductions. The Borrower, Lender, and Holder (if any) may collectively initiate a permanent or temporary reduction in the Interest rate of the guaranteed loan at any time during the life of the loan upon written agreement among these parties. The Lender must obtain prior Agency concurrence and must provide a copy of the modification agreement to the Agency. If any of the guaranteed portion has been purchased by the Agency, the Agency (as a Holder) will affirm or reject Interest rate change proposals in writing. 
+ (1) Fixed rates can be changed to variable rates to reduce the Borrower's Interest rate only when the variable rate has a ceiling which is less than or equal to the original fixed rate. 
+ (2) The Interest rates, after adjustments, must comply with the requirements for Interest rates on new loans as established by &#xA7; 4279.233 of this chapter. 
+ (3) The Lender is responsible for the legal documentation of Interest rate changes by an endorsement or any other legally effective amendment to the Promissory Note; however, no new Promissory Notes may be issued. The Lender must provide copies of all legal documents to the Agency. 
+ (b) Increases. Increases in fixed Interest rates and increases in variable rate basis are not permitted (except the normal fluctuations in approved variable Interest rates), unless a temporary Interest rate reduction occurred. Any increase in rates must be for Good Cause. 
+ 
+
+ 
+ &#xA7; 4287.313 Release of Collateral. 
+ The Lender must inspect the Collateral as often as necessary to properly service the loan. The Agency must give prior written approval for the release of Collateral, except as specified in paragraph (a) of this section or where the release of Collateral is made of Collateral under the abundance of caution provision of the applicable security agreement, subject to the provisions of paragraph (c) of this section. Appraisals on the Collateral being released are required on all transactions exceeding $250,000 and will be at the expense of the Borrower. The appraisal must meet the requirements of &#xA7; 4279.244 of this chapter. The sale or release of Collateral must be based on an Arm's Length Transaction, unless otherwise approved by the Agency in writing. 
+ (a) Within the parameters of paragraph (c) of this section, Lenders may, over the life of the guaranteed loan, release Collateral (other than personal and corporate guarantees) with a cumulative value of up to 20 percent of the original loan amount without Agency concurrence if the proceeds generated are used to reduce the guaranteed loan or to buy replacement Collateral. Working assets, such as accounts receivable, inventory, and work-in-progress that are routinely depleted or sold and the proceeds used for the normal course of business operations, may be used in and released for routine business purposes without prior concurrence of the Agency as long as the loan has not been accelerated. 
+ (b) If a release of Collateral does not meet the requirements of paragraph (a) of this section, the Lender must complete a written evaluation to justify the release and must obtain written Agency concurrence in advance of the release. 
+ (c) The Lender must support all releases of Collateral with a value exceeding $250,000 with a current appraisal on the Collateral being released. The appraisal must meet the requirements of &#xA7; 4279.244 of this chapter. The cost of this appraisal will not be paid for by the Agency. The Agency may, at its discretion, require an appraisal of the remaining Collateral in cases where it has been determined that the Agency may be adversely affected by the release of Collateral. The sale or release of the Collateral must be at Fair Market Value based on an Arm's Length Transaction, and there must be adequate consideration for the release of Collateral. Such consideration may include, but is not limited to: 
+ (1) Application of the net proceeds from the sale of Collateral to the Borrower's debts in order of their lien priority in the sold Collateral; 
+ (2) Use of the net proceeds from the sale of Collateral to purchase other Collateral of equal or greater value which the Lender will obtain as security for the benefit of the guaranteed loan with a lien position equal or superior to the position previously held; 
+ (3) Application of the net proceeds from the sale of Collateral to the Borrower's business operation in such a manner that a significant improvement to the Borrower's debt service ability is clearly demonstrated. The Lender's written request must detail how the Borrower's debt service ability will be improved; and 
+ (4) Assurance that the release of Collateral is essential for the success of the business, thereby furthering the goals of the Program. Such assurance must be supported by written documentation from the Lender acceptable to the Agency. 
+ (d) Any release of Collateral must not adversely affect the Project's operation or financial condition. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.314-4287.322 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.323 Subordination of lien position. 
+ A Subordination of the Lender's lien position must be requested in writing by the Lender and concurred with in writing by the Agency in advance of the Subordination. The Lender's Subordination proposal must include a financial analysis of the servicing action and be fully supported by current financial statements of the Borrower and guarantors that are less than 90 days old. 
+ (a) The Subordination of the Lender's lien position must enhance the Borrower's business and be in the best financial interest of the Agency. 
+ (b) The lien to which the guaranteed loan is subordinated is for a fixed dollar limit and for a fixed term after which the guaranteed loan lien priority will be restored. Notwithstanding, a Subordination of lien position on inventory and accounts receivable may be made to a line of credit. 
+ (c) Collateral must remain sufficient to provide for adequate Collateral coverage. The Agency may require a current independent appraisal in accordance with &#xA7; 4279.244 of this chapter. 
+ (d) Lien priorities must remain for the portion of the loan Collateral that was not subordinated. 
+ (e) Subordination of the Lender's lien position must be for Good Cause. 
+ 
+
+ 
+ &#xA7; 4287.324 Alterations of loan instruments. 
+ The Lender must neither alter nor approve any alterations or modifications of any loan instrument without the prior written approval of the Agency. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.325-4287.333 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.334 Transfer and Assumption. 
+ The Lender may request a Transfer and Assumption of a guaranteed loan when the total indebtedness, or less than the total indebtedness, is assumed by another Borrower. If the assumption is for less than the total indebtedness of the guaranteed loan, the Transfer and Assumption must be an Arm's Length Transaction and the transfer must be of all loan Collateral. In the event of Default of the guaranteed loan, a Transfer and Assumption of the Borrower's operation and guaranteed loan can be accomplished before or after the loan goes into liquidation. However, if the Collateral has been purchased through foreclosure or the Borrower has conveyed title to the Lender, no Transfer and Assumption is permitted. 
+ (a) Documentation of request. All Transfers and Assumptions cannot be conducted unless the Agency gives prior written approval. An individual credit report must be provided for transferee and its partners, officers, directors, and stockholders with 20 percent or more interest in the business, along with such other documentation as the Agency may request to determine eligibility and credit worthiness. The new Borrower must sign Form RD 4279-1. 
+ (b) Terms. Loan terms may be changed for Transfer and Assumptions to eligible Borrowers continuing the Project for eligible purposes with the concurrence of the Agency, all Holders, and the transferor (including guarantors). If the transferor has been or will be released from liability, the transferor's concurrence is not required. Any new loan terms must be within the terms authorized by &#xA7; 4279.234 of this chapter and must be for Good Cause. 
+ (c) Release of liability. The transferor, including any guarantor, may be released from liability only with prior Agency written concurrence when the Transfer and Assumption is an Arm's Length Transaction and: 
+ (1) The assumption is for the full amount of the loan and all of the loan Collateral is transferred to the transferee; or 
+ (2) The assumption is for less than the full amount of the loan, all of the loan Collateral is transferred to the transferee, and the Lender demonstrates to the Agency that the transferor and guarantors have no reasonable debt-paying ability considering their assets and income in the foreseeable future. 
+ (d) Proceeds. The Lender must credit any proceeds received from the sale of Collateral before a Transfer and Assumption to the transferor's guaranteed loan debt in order of lien priority before the Transfer and Assumption are closed. 
+ (e) Additional loans. Guaranteed loans to provide additional funds in connection with a Transfer and Assumption must be considered a new loan application, which requires submission of a complete Agency application in accordance with &#xA7;&#xA7; 4279.260 and 4279.261 of this chapter. 
+ (f) Credit quality. The Lender must make a complete credit analysis in accordance with &#xA7; 4279.215 of this chapter. 
+ (g) Appraisals. If the proposed Transfer and Assumption is for the full amount of the Agency guaranteed loan and all loan Collateral, the Agency will not require an appraisal. If the proposed Transfer and Assumption is for less than the full amount of the Agency guaranteed loan, the Agency will require an appraisal on all of the Collateral being transferred, and the amount of the assumption must not be less than this appraised value. The Lender is responsible for obtaining this appraisal, which must conform to the requirements of &#xA7; 4279.244 of this chapter. The Agency will not pay the appraisal fee or any other costs associated with this transfer. 
+ (h) Documents. Prior to Agency approval, the Lender must provide the Agency a written legal opinion that the transaction can be properly and legally transferred and assurance that the conveyance instruments will be appropriately filed, registered, and recorded. 
+ (1) The Lender must not issue any new Promissory Notes. The assumption must be completed in accordance with applicable law and must contain the Agency case number of the transferor and transferee. The Lender will provide the Agency with a copy of the Transfer and Assumption agreement. The Lender must ensure that all Transfers and Assumptions are noted on all original Loan Note Guarantees. 
+ (2) A new Loan Agreement, consistent in principle with the original Loan Agreement, must be executed to establish the terms and conditions of the loan being assumed. An assumption agreement can be used to establish the loan covenants. 
+ (3) Upon execution of the Transfer and Assumption, the Lender must provide the Agency with a written legal opinion that the Transfer and Assumption is completed, valid, enforceable, and certification that the Transfer and Assumption is consistent with the conditions outlined in the Agency's conditions of approval for the transfer and complies with all Agency regulations. 
+ (i) Loss resulting from transfer. (1) Any resulting loss must be processed in accordance with &#xA7; 4287.358. 
+ (2) If a Holder owns any of the guaranteed portion, such portion must be repurchased by the Lender or the Agency in accordance with &#xA7; 4279.225 of this chapter. 
+ (j) Related party. If the transferor and transferee are Affiliates or related parties, any Transfer and Assumption must be to an eligible Borrower to continue the Project for eligible purposes, must transfer all of the loan Collateral, and must be for the full amount of the guaranteed loan indebtedness. 
+ (k) Cash down payment. The Lender may allow the transferee to make cash down payments directly to the transferor provided: 
+ (1) The Transfer and Assumption is made for the total indebtedness to an eligible Borrower to continue the Project for eligible purposes; 
+ (2) The Lender recommends that the cash be released, and the Agency concurs prior to the transaction being completed. The Lender may require that an amount be retained for a defined period of time as a reserve against future Defaults. Interest on such account may be paid periodically to the transferor or transferee as agreed; 
+ (3) The Lender determines that the transferee has the repayment ability to meet the obligations of the assumed guaranteed loan as well as any other indebtedness; and 
+ (4) Any payments by the transferee to the transferor will not suspend the transferee's obligations to continue to meet the guaranteed loan payments as they come due under the terms of the assumption. 
+ (l) Transfer/Annual Renewal Fees. (1) The Agency will charge a nonrefundable transfer fee at the time of transfer, which may be passed on to the Borrower by the Lender. The transfer fee rate will be equal to the rate of the guarantee fee authorized in &#xA7; 4279.231(a) of this chapter for the fiscal year in which the transfer occurs. The amount of the transfer fee is determined by multiplying the principal balance at the time of the transfer by the transfer fee rate by the percentage of guarantee on the original loan. 
+ (2) The Lender must pay any Annual Renewal Fee in accordance with &#xA7; 4279.231(b) of this chapter. 
+ (m) Change in control of Borrower. Transfer and Assumption shall be deemed to occur in the event of a change in the control of the Borrower. 
+ (n) Personal and corporate guarantees. Guarantees from owners are required in accordance with &#xA7; 4279.245 of this chapter. 
+ 
+
+ 
+ &#xA7; 4287.335 Substitution of Lender. 
+ The Lender is prohibited from selling or transferring the entire loan without the prior written approval of the Agency. Because the Loan Note Guarantee is associated with a specific Promissory Note and cannot be transferred to a new Promissory Note, the Lender must transfer the original Promissory Note and loan security documents to the new Lender, who must agree to its current loan terms, including the Interest rate, secondary market Holder (if any), Collateral, Loan Agreement terms, and guarantors. The new Lender must also obtain the original Loan Note Guarantee, original personal and corporate guarantee(s), and the loan payment history from the transferor Lender. If the new Lender wishes to modify the loan terms after acquisition, the new Lender must submit a request to the Agency. 
+ (a) The Agency may approve the substitution of a new Lender if: 
+ (1) The proposed substitute Lender: 
+ (i) Is an eligible Lender in accordance with &#xA7; 4279.208 of this chapter; 
+ (ii) Is able to service the loan in accordance with the original loan documents; and 
+ (iii) Agrees to acquire title to the unguaranteed portion of the loan held by the original Lender and assumes all original loan requirements, including liabilities and servicing responsibilities; and 
+ (2) The substitution of the Lender is requested in writing by the Borrower, the proposed substitute Lender, and the original Lender if still in existence. 
+ (b) The Agency will not pay any loss or share in any costs ( e.g., appraisal fees and environmental assessments) with a new Lender unless a relationship is established through a substitution of Lender in accordance with paragraph (a) of this section. This includes situations where a Lender is acquired by another Lender and situations where the Lender has failed and been taken over by a regulatory agency such as the Federal Deposit Insurance Corporation (FDIC) and the loan is subsequently sold to another Lender. 
+ (c) In cases when there is a substitution of Lender or when a Lender has been merged with or acquired by another Lender, the Agency and the new Lender must execute a new Lender's Agreement, unless a valid Lender's Agreement already exists with the new Lender. 
+ 
+
+ 
+ &#xA7; 4287.336 Lender failure. 
+ (a) The acquiring Lender must comply with 7 CFR parts 4279, subpart C and 4287, subpart D and must take such action that a reasonable Lender would take if it did not have a Loan Note Guarantee to protect the Lender and Agency's mutual interest. The Lender cannot arbitrarily change the Lender's Agreement and related documents on the guaranteed loan, and the Agency will make the successor to the failed institution aware of the statutory and regulatory requirements. 
+ (b) In the event of a Default and the guaranteed loan is liquidated by the FDIC rather than being sold to another Lender, the Agency will pay losses and share in costs as if the FDIC were an approved new Lender. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.337-4287.344 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.345 Default by Borrower. 
+ The Lender's primary responsibilities in Default are to act reasonably and expeditiously, to work with the Borrower to bring the account current or cure the Default through restructuring if a realistic plan can be developed, or to accelerate the account and conduct a liquidation in a manner that will minimize any potential loss. The Lender may initiate liquidation in accordance with &#xA7; 4287.357. 
+ (a) The Lender must notify the Agency in writing when a Borrower is more than 30 days past due on a payment and the Delinquency cannot be cured within 30 days or when a Borrower is otherwise in Default of covenants in the Loan Agreement by submitting Form RD 1980-44, &#x201C;Guaranteed Loan Borrower Default Status,&#x201D; or processing the Default Status report in LINC. The Lender must provide this notification to the Agency within 15 calendar days of when a Borrower is 30 days past due on a payment or is otherwise in Default of the Loan Agreement. The Lender must update the loan's status each month using either Form RD 1980-44 or the LINC Default Status report until such time as the loan is no longer in Default. If a monetary Default exceeds 60 days, the Lender must meet with the Agency and, if practical, the Borrower to discuss the situation. 
+ (b) In considering options, the prospects for providing a permanent cure without adversely affecting the risk to the Agency and the Lender are the paramount objective. 
+ (1) Curative actions (subject to the rights of any Holder) include, but are not limited to: 
+ (i) Deferment of principal or Interest payments; 
+ (ii) An additional unguaranteed temporary loan by the Lender to bring the account current; 
+ (iii) Reamortization of or rescheduling the payments on the loan (subject to the rights of any Holder) excluding capitalization of accrued Interest; 
+ (iv) Transfer and Assumption of the loan in accordance with &#xA7; 4287.334; 
+ (v) Reorganization; 
+ (vi) Liquidation; and 
+ (vii) Changes in Interest rates with the Agency's, the Lender's, and Holder's approval. Any Interest rate changes must be adjusted proportionately between the guaranteed and unguaranteed portion of the loan. 
+ (2) The term of any deferment, rescheduling, reamortization, or moratorium will be limited to the lesser of the remaining life of the Collateral or remaining limits as set forth in &#xA7; 4279.234 of this chapter (excluding paragraph (d)). Balloon payments are permitted as a loan servicing option as long as there is a reasonable prospect for success and the remaining life of the Collateral supports the action. 
+ (3) In the event of a loss or a repurchase, the Lender cannot claim Default or penalty Interest, late payment fees, or Interest on Interest. 
+ (c) Debt write-downs for an existing borrower or guarantor, where the same owners or principals retain control of and decision-making authority for the business, are prohibited, except as directed or ordered under the Bankruptcy Code. 
+ (d) In the event of a loss, the guarantee will not cover Interest to the Lender accruing after the Interest Termination Date. 
+ (e) For repurchases of guaranteed loans, refer to &#xA7; 4279.225 of this chapter. 
+ [80 FR 36447, June 24, 2015, as amended at 91 FR 42337, July 9, 2026]
+ 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.346-4287.355 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.356 Protective Advances. 
+ Protective Advances are advances made by the Lender for the purpose of preserving and protecting the Collateral where the Borrower has failed to, will not, or cannot meet its obligations. Lenders must exercise sound judgment in determining that the Protective Advance preserves Collateral and recovery is actually enhanced by making the advance. Lenders cannot make Protective Advances in lieu of additional loans. A Protective Advance claim will be paid only at the time of the final payment as indicated in the Guaranteed Loan Report of Loss. 
+ (a) The maximum loss to be paid by the Agency will never exceed the original loan amount plus accrued Interest times the percentage of guarantee regardless of any Protective Advances made. 
+ (b) In the event of a final loss, Protective Advances will accrue Interest at the Promissory Note rate and will be guaranteed at the same percentage of loss as provided in the Loan Note Guarantee. The guarantee will not cover Interest on the Protective Advance accruing after the Interest Termination Date. 
+ (c) Protective Advances must constitute an indebtedness of the Borrower to the Lender and be secured by the security instruments. Agency written authorization is required when the cumulative total of Protective Advances exceeds $200,000 or 10 percent of the outstanding balance of principal, whichever is less. 
+ 
+
+ 
+ &#xA7; 4287.357 Liquidation. 
+ In the event of one or more incidents of Default or third party actions that the Borrower cannot or will not cure or eliminate within a reasonable period of time, the Lender, with Agency consent, must provide for liquidation. 
+ (a) Decision to liquidate. A decision to liquidate or proceed otherwise must be made when the Lender determines that the Default cannot be cured through actions such as those contained in &#xA7; 4287.345, or it has been determined that it is in the best interest of the Agency and the Lender to liquidate. The decision to liquidate or proceed otherwise with the Borrower must be made as soon as possible when one or more of the following exist: 
+ (1) A loan is 90 days behind on any scheduled payment and the Lender and the Borrower have not been able to cure the Delinquency through actions such as those contained in &#xA7; 4287.345. 
+ (2) It is determined that delaying liquidation will jeopardize full recovery on the loan. 
+ (3) The Borrower or Lender is uncooperative in resolving the problem or the Agency or Lender has reason to believe the Borrower is not acting in good faith, and immediate liquidation would minimize loss to the Agency. 
+ (b) Repurchase of loan. When the decision to liquidate is made, if any portion of the loan has been sold or assigned under &#xA7; 4279.223 of this chapter and not already repurchased, provisions will be made for repurchase in accordance with &#xA7; 4279.225 of this chapter. 
+ (c) Lender's liquidation plan. The Lender is responsible for initiating actions immediately and as necessary to ensure a prompt, orderly liquidation that will provide maximum recovery. Within 30 days after a decision to liquidate, the Lender must submit a written, proposed plan of liquidation to the Agency for approval. The liquidation plan must be detailed and include at least the following: 
+ (1) Such proof as the Agency requires to establish the Lender's ownership of the guaranteed loan Promissory Note and related security instruments and a copy of the payment ledger, if available, that reflects the current loan balance, accrued Interest to date, and the method of computing the Interest; 
+ (2) A full and complete list of all Collateral, including any personal and corporate guarantees; 
+ (3) The recommended liquidation methods for making the maximum collection possible on the indebtedness and the justification for such methods, including recommended action for acquiring and disposing of all Collateral and collecting from guarantors; 
+ (4) Necessary steps for preservation of the Collateral; 
+ (5) Copies of the Borrower's most recently available financial statements; 
+ (6) Copies of each guarantor's most recently available financial statements; 
+ (7) An itemized list of estimated Liquidation Expenses expected to be incurred along with justification for each expense; 
+ (8) A schedule to periodically report to the Agency on the progress of liquidation; 
+ (9) Estimated Protective Advance amounts with justification; 
+ (10) Proposed protective bid amounts on Collateral to be sold at auction and a breakdown to show how the amounts were determined. A protective bid may be made by the Lender, with prior Agency written approval, at a foreclosure sale to protect the Lender's and the Agency's interest. The protective bid will be based on the liquidation value and estimated net recovery considering prior liens and outstanding taxes, expenses of foreclosure, and estimated expenses for holding and reselling the property. These expenses include, but are not limited to, expenses for resale, Interest accrual, length of time necessary for resale, maintenance, guard service, weatherization, and prior liens; 
+ (11) If a voluntary conveyance is considered, the proposed amount to be credited to the guaranteed debt; 
+ (12) Legal opinions, if needed by the Lender's legal counsel; and 
+ (13) An estimate of Fair Market Value and potential liquidation value of the Collateral. If the value of the Collateral is $250,000 or more, the Lender must obtain an independent appraisal report meeting the requirements of &#xA7; 4279.244 of this chapter on the Collateral securing the loan, which reflects the Fair Market Value and potential liquidation value. The liquidation appraisal must evaluate the impact on Market Value of any release of hazardous substances, petroleum products, or other environmental hazards. The independent appraiser's fee, including the cost of the environmental site assessment, will be shared equally by the Agency and the Lender. In order to ensure prompt action, the liquidation plan can be submitted with an estimate of Collateral value, and the liquidation plan may be approved by the Agency subject to the results of the final liquidation appraisal. 
+ (d) Approval of liquidation plan. The Lender cannot implement its liquidation plan before obtaining written approval from the Agency. The Lender and Agency must attempt to resolve any Agency concerns. 
+ (1) If the liquidation plan is approved by the Agency, the Lender must proceed expeditiously with liquidation and must take all legal action necessary to liquidate the loan in accordance with the approved liquidation plan. The Lender must update or modify the liquidation plan when conditions warrant, including a change in value based on a liquidation appraisal. 
+ (2) Should the Agency and the Lender not agree on the liquidation plan, negotiations will take place between the Agency and the Lender to resolve the disagreement. The Lender must take such actions that a reasonable Lender would take without a guarantee and keep the Agency informed in writing. When the liquidation plan is approved by the Agency, the Lender will proceed expeditiously with liquidation. 
+ (e) Acceleration. The Lender will proceed to accelerate the indebtedness as expeditiously as possible when acceleration is necessary, including giving any notices and taking any other legal actions required. The guaranteed loan will be considered in liquidation once the loan has been accelerated and a demand for payment has been made upon the Borrower. The Lender must obtain from the Agency concurrence prior to the acceleration of the loan if the sole basis for acceleration is a nonmonetary Default. In the case of monetary Default, prior approval by the Agency of the Lender's acceleration is not required, although Agency concurrence must still be given not later than at the time the liquidation plan is approved. The Lender will provide a copy of the acceleration notice or other acceleration document to the Agency. 
+ (f) Filing an estimated loss claim. When the Lender owns any of the guaranteed portion of the loan, the Lender must file an estimated loss claim once a decision has been made to liquidate if the liquidation is expected to exceed 90 days. When calculating the estimated loss payment, the value of the Collateral must be based on its estimated net liquidation value. For the purpose of reporting and loss claim computation, the guarantee will not cover Interest to the Lender accruing after the Interest Termination Date. The Agency will promptly process the loss claim in accordance with applicable Agency regulations as set forth in &#xA7; 4287.358. 
+ (g) Accounting and reports. The Lender must account for funds during the period of liquidation and must, in accordance with the Agency-approved liquidation plan, provide the Agency with reports on the progress of liquidation including disposition of Collateral, resulting costs, and additional procedures necessary for successful completion of the liquidation. 
+ (h) Transmitting payments and proceeds to the Agency. When the Agency is the Holder of a portion of the guaranteed loan, the Lender must transmit to the Agency within 14 calendar days its Pro Rata share of any payments received from the Borrower, liquidation, or other proceeds using Form RD 1980-43, &#x201C;Lender's Guaranteed Loan Payment to Rural Development.&#x201D; 
+ (i) Abandonment of collateral. When the Lender adequately documents that the cost of liquidation would exceed the potential recovery value of certain Collateral and receives Agency concurrence, the Lender may abandon that Collateral. When the Lender makes a recommendation for abandonment of Collateral, it will be considered a servicing action under 7 CFR 1970.8(e), and will not require separate NEPA review. 
+ (j) Disposition of personal or corporate guarantees. The Lender must take action to maximize recovery from all personal and corporate guarantees, including seeking Deficiency Judgments when there is a reasonable chance of future collection. 
+ (k) Compromise settlement. Compromise settlements must be approved by the Lender and the Agency. Complete current financial information on all parties obligated for the loan must be provided. At a minimum, the compromise settlement must be equivalent to the value and timeliness of that which would be received from attempting to collect on the guarantee. The guarantor cannot be released from liability until the full amount of the compromise settlement has been received. In weighing whether the compromise settlement should be accepted, among other things, the Agency will weigh whether the compromise is more financially advantageous than collecting on the guarantee. 
+ (l) Litigation. In all litigation proceedings involving the Borrower, the Lender is responsible for protecting the rights of the Lender with respect to the loan and keeping the Agency adequately and regularly informed, in writing, of all aspects of the proceedings. If the Agency determines that the Lender is not adequately protecting the rights of the Lender or the Agency with respect to the loan, the Agency reserves the right to take any legal action the Agency determines necessary to protect the rights of the Lender, on behalf of the Lender, or the Agency with respect to the loan. If the Agency exercises this right, the Lender must cooperate with the Agency. Any cost to the Agency associated with such action will be assessed against the Lender. 
+ [80 FR 36447, June 24, 2015, as amended at 81 FR 11053, Mar. 2, 2016]
+ 
+ 
+
+ 
+ &#xA7; 4287.358 Determination of loss and payment. 
+ Unless the Agency anticipates a Future Recovery, the Agency will make a final settlement with the Lender after the Collateral is liquidated and settlement and compromise of all parties has been completed. The Agency has the right to recover losses paid under the guarantee from any party that may be liable. 
+ (a) Report of loss form. Form RD 449-30, &#x201C;Guaranteed Loan Report of Loss,&#x201D; will be used for reporting and calculating all estimated and final loss determinations. 
+ (b) Estimated loss. In accordance with the requirements of &#xA7; 4287.357(f), the Lender must prepare an estimated loss claim and submit it to the Agency. 
+ (1) Interest accrual eligible for payment under the guarantee on the Defaulted loan will be discontinued when the estimated loss is paid. 
+ (2) A Protective Advance claim will be paid only at the time of the final payment as indicated in the Guaranteed Loan Report of Loss. 
+ (3) The estimated loss payment is a payment to the Lender and is not to be applied as a payment on the loan for purposes of reducing the unpaid balance owed by the Borrower or for status reporting (semi-annual status/Default status reports). 
+ (c) Final loss. Except for certain unsecured personal or corporate guarantees as provided for in this section, the Lender must prepare a final Guaranteed Loan Report of Loss and submit it to the Agency within 30 days after liquidation of all Collateral is completed. Interest will not be paid beyond the Interest Termination Date. Before approval by the Agency of any final loss report, the Lender must account for all funds during the period of liquidation, disposition of the Collateral, all costs incurred, and any other information necessary for the successful completion of liquidation. Upon receipt of the final accounting and Guaranteed Loan Report of Loss, the Agency may audit all applicable documentation to determine the final loss. The Lender must make its records available and otherwise assist the Agency in making any investigation. The documentation accompanying the Guaranteed Loan Report of Loss must support the amounts reported as losses on the Guaranteed Loan Report of Loss. 
+ (1) The Lender must make a determination regarding the collectability of unsecured personal and corporate guarantees. If reasonably possible, the Lender must promptly collect or otherwise dispose of such guarantees in accordance with &#xA7; 4287.357(j) prior to completion of the final loss report. However, in the event that collection from the guarantors appears unlikely or will require a prolonged period of time, the Lender must file the Guaranteed Loan Report of Loss when all other Collateral has been liquidated. Unsecured personal or corporate guarantees outstanding at the time of the submission of the final loss claim will be treated as a Future Recovery with the net proceeds to be shared on a Pro Rata basis by the Lender and the Agency. The Agency may consider a compromise settlement of Federal Debt after it has processed a final Guaranteed Loan Report of Loss and issued a 60 day due process letter. Any funds collected on Federal Debt will not be shared with the Lender. 
+ (2) The Lender must document that all of the Collateral has been accounted for and properly liquidated and liquidation proceeds have been accounted for and applied correctly to the loan. 
+ (3) The Lender must provide receipts and a breakdown of any Protective Advance amount as to the payee, purpose of the expenditure, date paid, and evidence that the amount expended was proper. 
+ (4) The Lender must provide receipts and a breakdown of Liquidation Expenses as to the payee, purpose of the expenditure, date paid, and evidence that the amount expended was proper. Liquidation Expenses are recoverable only from liquidation proceeds. The Agency may approve attorney/legal fees as Liquidation Expenses provided that the fees are reasonable, require the assistance of attorneys, and cover legal issues pertaining to the liquidation that could not be properly handled by the Lender and its employees. 
+ (5) The Lender must support accrued Interest by documenting how the amount was accrued. If the Interest rate was a variable rate, the Lender must include documentation of changes in both the selected base rate and the loan rate. 
+ (6) The Agency will pay loss payments within 60 days after it has reviewed the complete final loss report and accounting of the Collateral. 
+ (7) If a Lender receives a final loss payment and the Agency determines there is Future Recovery, the Lender must submit to the Agency an annual report on its collection activities for each unsatisfied account for 3 years following payment of the final loss claim. 
+ (d) Loss limit. The amount payable by the Agency to the Lender cannot exceed the limits set forth in the Loan Note Guarantee. 
+ (e) Liquidation Expenses. The Agency will deduct Liquidation Expenses from the liquidation proceeds of the Collateral. The Lender cannot claim any Liquidation Expenses in excess of liquidation proceeds. Any changes to the Liquidation Expenses that exceed 10 percent of the amount proposed in the liquidation plan must be approved by the Agency. Reasonable attorney/legal expenses will be shared by the Lender and Agency equally, including those instances where the Lender has incurred such expenses from a trustee conducting the liquidation of assets. The Lender cannot claim the guarantee fee or the Annual Renewal Fee as authorized Liquidation Expenses, and no In-House Expenses of the Lender will be allowed. In-House Expenses include, but are not limited to, employee's salaries, staff lawyers, travel, and overhead. 
+ (f) Rent. The Lender must apply any net rental or other income that it receives from the Collateral to the guaranteed loan debt. 
+ (g) Payment. Once the Agency approves the Guaranteed Loan Report of Loss and supporting documents submitted by the Lender: 
+ (1) If the loss is greater than any estimated loss payment, the Agency will pay the additional amount owed by the Agency to the Lender. 
+ (2) If the loss is less than the estimated loss payment, the Lender must reimburse the Agency for the overpayment plus Interest at the Promissory Note rate from the date of payment. 
+ (h) Borrowers and guarantors, as well as related parties with whom either the borrower or guarantor does not have an arm's length transaction relationship, are prohibited from remaining involved in a project any time the agency takes a loss. 
+ [80 FR 36447, June 24, 2015, as amended at 91 FR 42337, July 9, 2026]
+ 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.359-4287.368 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.369 Future recovery. 
+ Unless notified otherwise by the Agency, after the final loss claim has been paid, the Lender must use reasonable efforts to attempt collection from any party still liable for Future Recovery. Any net proceeds from Future Recovery must be split Pro Rata between the Lender and the Agency based on the original amount of the loan guarantee. Any collection of Federal Debt made by the Federal Government from any liable party to the guaranteed loan will not be split with the Lender. 
+ 
+
+ 
+ &#xA7; 4287.370 Bankruptcy. 
+ (a) Lender's responsibilities. It is the Lender's responsibility to protect the guaranteed loan and all of the Collateral securing it in bankruptcy and any related appellate proceedings. These responsibilities include, but are not limited to the following: 
+ (1) Monitoring confirmed bankruptcy plans to determine Borrower compliance, and, if the Borrower fails to comply, pursue appropriate relief; 
+ (2) Filing all the necessary papers and pleadings concerning the case, including where appropriate a proof of claim; 
+ (3) Attending and, where necessary, participating in meetings of the creditors and all court proceedings; 
+ (4) Requesting modifications of any proposed bankruptcy plan whenever it appears that the Lender could obtain additional recoveries via plan modification; 
+ (5) Keeping the Agency adequately and regularly informed in writing of all aspects of the proceedings; 
+ (6) Submitting a Default status report within 15 days after the date when the Borrower Defaults and every 30 days thereafter until the Default is resolved or a final loss claim is paid by the Agency. The Default status report will be used to inform the Agency of the bankruptcy filing, the plan confirmation date, when the plan is complete, and when the Borrower is not in compliance with the plan; and 
+ (7) With written Agency consent, the Lender and Agency will equally share the cost of any independent appraisal fee to protect the guaranteed loan in any bankruptcy proceedings. 
+ (b) Reports of loss during bankruptcy. In bankruptcy proceedings, payment of loss claims will be made as provided in this section. 
+ (1) Estimated loss payments. (i) If a Borrower has filed for bankruptcy and all or a portion of the debt has been discharged, the Lender must request an estimated loss payment of the guaranteed portion of the accrued Interest and principal discharged by the court. Only one estimated loss payment is allowed during the bankruptcy and any related appellate proceedings. All subsequent claims of the Lender during bankruptcy and any related appellate proceedings will be considered revisions to the initial estimated loss. A revised estimated loss payment may be processed by the Agency, at its option, in accordance with any court-approved changes in the bankruptcy plan. Once the bankruptcy plan has been completed, the Lender is responsible for submitting the documentation necessary for the Agency to review and adjust the estimated loss claim to reflect any actual discharge of principal and Interest and to reimburse the Lender for any court-ordered Interest rate reduction under the terms of the bankruptcy plan. 
+ (ii) The Lender must use the Guaranteed Loan Report of Loss to request an estimated loss payment and to revise any estimated loss payments during the course of the bankruptcy plan. The estimated loss claim, as well as any revisions to this claim, must be accompanied by documentation to support the claim. 
+ (iii) Upon completion of a bankruptcy plan, the Lender must: 
+ (A) Complete a Form RD 1980-44 and forward this form to the Agency; and 
+ (B) Provide the Agency with the documentation necessary to determine whether the estimated loss paid equals the actual loss sustained. 
+ ( 1 ) If the actual loss sustained as a result of the bankruptcy is less than the estimated loss, the Lender must reimburse the Agency for the overpayment plus Interest at the Promissory Note rate from the date of payment of the estimated loss. 
+ ( 2 ) If the actual loss is greater than the estimated loss payment, the Lender must submit a revised estimated loss claim in order to obtain payment of the additional amount owed by the Agency to the Lender. 
+ (2) Bankruptcy loss payments. (i) The Lender must request a bankruptcy loss payment of the guaranteed portion of the accrued Interest and principal discharged by the court for all bankruptcies when all or a portion of the debt has been discharged. Unless a final court decree approves a subsequent change to the bankruptcy plan that is adverse to the Lender, only one bankruptcy loss payment is allowed during the bankruptcy. Once a final court decree has discharged all or part of the guaranteed loan and any appeal period has run, the Lender must submit the documentation necessary for the Agency to review and adjust the bankruptcy loss claim to reflect any actual discharge of principal and Interest. 
+ (ii) The Lender must use the Guaranteed Loan Report of Loss to request a bankruptcy loss payment and to revise any bankruptcy loss payments during the course of the bankruptcy. The Lender must include with the bankruptcy loss claim documentation to support the claim, as well as any revisions to this claim. 
+ (iii) Upon completion of a bankruptcy plan, restructuring, or liquidation, the Lender must either complete a Form RD 1980-44 and forward this form to the Agency or enter the data directly into LINC. 
+ (iv) If an estimated loss claim is paid during a bankruptcy and the Borrower repays in full the remaining balance without an additional loss sustained by the Lender, a final Guaranteed Loan Report of Loss is not necessary. 
+ (3) Interest rate losses as a result of bankruptcy reorganization. Interest rate losses as a result of bankruptcy reorganization will be paid as follows: 
+ (i) Interest losses sustained during the period of the bankruptcy plan will be processed in accordance with paragraph (b)(1) of this section; 
+ (ii) Interest losses sustained after the bankruptcy plan is confirmed will be processed annually when the Lender sustains a loss as a result of a permanent Interest rate reduction that extends beyond the period of the bankruptcy plan; and 
+ (iii) If a bankruptcy loss claim is paid during the operation of the bankruptcy plan and the Borrower repays in full the remaining balance without an additional loss sustained by the Lender, a final Guaranteed Loan Report of Loss is not necessary. 
+ (4) Final bankruptcy loss payments. The Agency will process final bankruptcy loss payments when the loan is fully liquidated. 
+ (5) Application of loss claim payments. The Lender must apply estimated loss payments first to the unsecured principal of the guaranteed portion of the debt and then to the unsecured interest of the guaranteed portion of the debt. In the event a court attempts to direct the payments to be applied in a different manner, the Lender must immediately notify the Agency in writing. 
+ (6) Protective Advances. If approved Protective Advances, as authorized by &#xA7; 4287.356, were incurred in connection with the initiation of liquidation action and were required to provide repairs, insurance, etc., to protect the Collateral as result of delays in the case of failure of the Borrower to maintain the security prior to the Borrower having filed bankruptcy, the Protective Advances together with accrued Interest are payable under the guarantee in the final loss claim. 
+ (c) Expenses during bankruptcy proceedings. (1) Under no circumstances will the guarantee cover Liquidation Expenses in excess of liquidation proceeds. 
+ (2) Expenses, such as reasonable attorney/legal fees and the cost of appraisals incurred by the Lender as a direct result of the Borrower's bankruptcy filing, will be shared equally by the Lender and the Agency. 
+ (3) Reasonable and customary Liquidation Expenses must be deducted from Collateral sale proceeds. Liquidation Expenses are covered under the guarantee, provided they are reasonable, customary, and provide a demonstrated economic benefit to the Lender and the Agency. Lender's In-House Expenses, which are those expenses that would normally be incurred for administration of the loan, including in-house lawyers, are not covered by the guarantee. 
+ (4) When a bankruptcy proceeding results in a liquidation of the Borrower by a bankruptcy trustee appointed under 11 U.S.C. 701, 702, 703 or 1104, expenses will be handled as directed by the court, and the Lender cannot claim Liquidation Expenses for the sale of the assets. 
+ (5) If the property is abandoned by the bankruptcy trustee, the Lender will conduct the liquidation in accordance with &#xA7; 4287.357. 
+ (6) Proceeds received from partial sale of Collateral during bankruptcy may be used by the Lender to pay reasonable costs, such as freight, labor and sales commissions, associated with the partial sale. Reasonable use of proceeds for this purpose must be documented with the final loss claim. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.371-4287.379 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.380 Termination of guarantee. 
+ The Loan Note Guarantee will terminate under any of the following conditions: 
+ (a) Upon full payment of the guaranteed loan; 
+ (b) Upon full payment of any loss obligation; or 
+ (c) Upon written notice from the Lender to the Agency that the guarantee will terminate 30 days after the date of notice, provided that the Lender owns the entire guaranteed interest in the loan and the Loan Note Guarantee is returned to the Agency to be canceled. 
+ 
+
+ 
+ &#xA7;&#xA7; 4287.381-4287.399 [Reserved] 
+ 
+
+ 
+ &#xA7; 4287.400 OMB control number. 
+ In accordance with the Paperwork Reduction Act of 1995, the information collection requirements contained in the subsequent interim rule have been submitted to the Office of Management and Budget (OMB) under OMB Control Number 0570-0065 for approval. A person is not required to respond to a collection of information unless it displays a currently valid OMB control number.
