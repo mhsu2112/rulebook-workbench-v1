@@ -561,3 +561,52 @@ def test_ledger_endpoint(client, approot):
     # overview is program-wide
     lo = client.get("/api/programs/led1/ledger/overview").json()
     assert len(lo["decisions"]) >= 1 and lo["conversation"]
+
+
+def test_corpus_url_override(client, approot):
+    client.post("/api/programs", json={"program_id": "uk1"})
+    # a source with no fetchable locator/url (like a UK statute the planner can't map)
+    client.post("/api/programs/uk1/manifest/items", json={
+        "item_id": "uk-emir", "title": "UK EMIR (onshored)", "issuer": "UK", "family": "statute",
+        "locator": "(no locator — human to supply)"})
+    client.post("/api/programs/uk1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "ok"})
+    client.post("/api/programs/uk1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
+    # acquire → the item errors with a clear "no source URL" message (not a blank)
+    client.post("/api/programs/uk1/corpus/acquire", json={"limit": 4})
+    st = client.get("/api/programs/uk1/corpus/status").json()
+    assert st["items"]["uk-emir"]["status"] == "error"
+    assert "no source URL" in (st["items"]["uk-emir"]["errors"] or [""])[-1]
+    # set a URL override (does not touch the frozen manifest)
+    r = client.post("/api/programs/uk1/corpus/url-override", json={"item_id": "uk-emir", "url": "https://www.legislation.gov.uk/eur/2012/648"})
+    assert r.status_code == 200 and r.json()["overrides"] == 1
+    assert (approot / "programs/uk1/governed/corpus_texts/url_overrides.json").exists()
+    # unknown item rejected
+    assert client.post("/api/programs/uk1/corpus/url-override", json={"item_id": "nope", "url": "x"}).status_code == 404
+
+
+def test_corpus_set_aside_source(client, approot):
+    client.post("/api/programs", json={"program_id": "ex1"})
+    client.post("/api/programs/ex1/manifest/items", json={
+        "item_id": "good", "title": "Fetchable", "issuer": "X", "family": "regulation", "locator": "12 CFR 1"})
+    client.post("/api/programs/ex1/manifest/items", json={
+        "item_id": "nofetch", "title": "Reference only", "issuer": "Y", "family": "guidance",
+        "locator": "(no locator — human to supply)"})
+    client.post("/api/programs/ex1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "ok"})
+    client.post("/api/programs/ex1/manifest/freeze", json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
+    # set aside requires a reason
+    assert client.post("/api/programs/ex1/corpus/exclude", json={"item_id": "nofetch"}).status_code == 400
+    assert client.post("/api/programs/ex1/corpus/exclude", json={"item_id": "ghost", "reason": "x"}).status_code == 404
+    r = client.post("/api/programs/ex1/corpus/exclude", json={"item_id": "nofetch", "reason": "reference-only, no fetchable doc"})
+    assert r.status_code == 200 and r.json()["excluded"] is True
+    # status shows it excluded (not error); decision logged
+    st = client.get("/api/programs/ex1/corpus/status").json()
+    assert st["counts"]["excluded"] == 1 and st["items"]["nofetch"]["status"] == "excluded"
+    entries = [json.loads(l) for l in (approot / "programs/ex1/governed/decisions.log.jsonl").read_text().splitlines()]
+    assert entries[-1]["artifact"] == "corpus" and "Set aside" in entries[-1]["decision"]
+    # completeness: overview now requires only the 1 active source, not 2
+    ov = client.get("/api/programs/ex1/overview").json()
+    corpus_stage = next(s for s in ov["stages"] if s["key"] == "corpus")
+    assert "1 sources" in corpus_stage["metric"]
+    # restore
+    assert client.post("/api/programs/ex1/corpus/exclude", json={"item_id": "nofetch", "undo": True}).status_code == 200
+    assert client.get("/api/programs/ex1/corpus/status").json()["counts"]["excluded"] == 0

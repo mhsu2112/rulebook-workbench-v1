@@ -239,3 +239,24 @@ def test_failed_structured_output_still_charged(registry):
     with pytest.raises(StructuredOutputError):
         r.call("distill_extract", MSGS)
     assert r.spent_usd == 1.0   # primary + repair attempt both counted
+
+
+def test_structured_output_retries_with_more_tokens_on_truncation(registry, tmp_path):
+    """A truncated (finish_reason=length) JSON blob should trigger a RE-RUN with
+    doubled max_tokens, not a same-cap 'repair' that just truncates again."""
+    registry = _structured_registry(registry, tmp_path)
+    calls = {"n": 0, "max_tokens": []}
+
+    def handler(request):
+        calls["n"] += 1
+        calls["max_tokens"].append(json.loads(request.content).get("max_tokens"))
+        if calls["n"] == 1:
+            r = make_response(model="google/gemini-3.1-flash-lite", content='{"x": 1', cost=0.01)  # cut off
+            r["choices"][0]["finish_reason"] = "length"
+            return httpx.Response(200, json=r)
+        return httpx.Response(200, json=make_response(model="google/gemini-3.1-flash-lite", content='{"x": 1}', cost=0.01))
+
+    out, stamp = router(registry, httpx.MockTransport(handler)).call("render_prose", MSGS)
+    assert out == {"x": 1} and calls["n"] == 2
+    assert calls["max_tokens"][1] == calls["max_tokens"][0] * 2   # doubled on the retry
+    assert stamp["repair_attempts"] == 1

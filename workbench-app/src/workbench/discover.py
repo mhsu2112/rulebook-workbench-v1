@@ -41,6 +41,30 @@ FEDREG_SEARCH = (
     "&fields[]=title&fields[]=citation&fields[]=html_url&fields[]=type"
     "&fields[]=agencies&fields[]=publication_date&fields[]=document_number"
 )
+# UK: legislation.gov.uk search feed (Atom). Items carry stable URIs we can turn
+# into a full-text fetch (…/data.xml).
+LEG_UK_SEARCH = "https://www.legislation.gov.uk/all/data.feed?title={q}"
+
+# Jurisdiction markers — decide which structured catalogs to run. The model lane
+# runs regardless (and now verifies any official URL), so this only routes the
+# catalog searches; a miss just means one fewer catalog, never a broken run.
+_JURIS_MARKERS = {
+    "uk": ("united kingdom", "u.k.", " uk ", " fca", "financial conduct authority",
+           " pra", "prudential regulation authority", "bank of england",
+           "legislation.gov.uk", "onshored", "retained eu", "hm treasury", "fsma"),
+    "eu": ("european union", "eur-lex", "esma", "eiopa", "european commission",
+           "european parliament", "official journal", "(eu)"),
+    "us": ("united states", "u.s.c", " cfr", "code of federal regulations", "fincen",
+           "federal register", "federal reserve", "occ", "fdic", "cftc", "u.s. "),
+}
+
+
+def detect_jurisdictions(text: str) -> list:
+    """Best-effort jurisdiction routing from the scope/terms. Defaults to US."""
+    t = " " + (text or "").lower() + " "
+    found = {j for j, marks in _JURIS_MARKERS.items() if any(m in t for m in marks)}
+    ordered = [j for j in ("us", "uk", "eu") if j in found]
+    return ordered or ["us"]
 
 _UA = {
     "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -161,7 +185,55 @@ class Discoverer:
                 _dedup_key=f"fr-{slug}"))
         return out
 
+    def _legislation_uk_search(self, client: httpx.Client, query: str, notes: list[str],
+                               limit: int = 12) -> list[Candidate]:
+        """UK legislation.gov.uk search → candidates with a full-text (data.xml) URL."""
+        r = client.get(LEG_UK_SEARCH.format(q=quote_plus(query)))
+        if r.status_code != 200 or not r.content:
+            notes.append(f"legislation.gov.uk search '{query}' → HTTP {r.status_code}; skipped")
+            return []
+        feed = r.text
+        entries = re.findall(r"<(?:\w+:)?entry\b[^>]*>(.*?)</(?:\w+:)?entry>", feed, re.S)
+        out: list[Candidate] = []
+        for e in entries[:limit]:
+            idm = re.search(r"legislation\.gov\.uk(/[a-z]+/\d+/[0-9a-z]+)", e, re.I)
+            if not idm:
+                continue
+            mm = re.match(r"/([a-z]+)/(\d+)/([0-9a-z]+)", idm.group(1), re.I)
+            if not mm:
+                continue
+            typ, yr, num = mm.group(1), mm.group(2), mm.group(3)
+            tm = re.search(r"<(?:\w+:)?title[^>]*>(.*?)</(?:\w+:)?title>", e, re.S)
+            title = re.sub(r"<[^>]+>", "", tm.group(1)).strip() if tm else f"UK {typ} {yr}/{num}"
+            url = f"https://www.legislation.gov.uk/{typ}/{yr}/{num}/data.xml"
+            fam = "statute" if typ in ("ukpga", "asp", "nia", "apni") else "regulation" if typ in ("uksi", "eur", "ssi", "wsi", "nisr") else "legislation"
+            out.append(Candidate(
+                proposed_item_id=f"uk-{typ}-{yr}-{num}",
+                title=title, issuer="UK (legislation.gov.uk)", family=fam, status="live",
+                locator=f"{title} ({typ.upper()} {yr}/{num})", url=url, evidence_role=None,
+                rationale=f"legislation.gov.uk search hit for “{query}”.",
+                origin="catalog", verified=True,
+                verify_note=f"legislation.gov.uk: {typ} {yr}/{num}",
+                _dedup_key=f"leguk-{typ}-{yr}-{num}"))
+        if not entries:
+            notes.append(f"legislation.gov.uk returned no parseable entries for '{query}'")
+        return out
+
     # ---------------- verification (for the model lane) ----------------
+
+    def _verify_url(self, client: httpx.Client, url: str) -> tuple[bool, str]:
+        """Generic: does this official URL resolve with real content? This is what
+        lets the model lane verify NON-US sources (UK/EU/other) by their URL."""
+        try:
+            r = client.get(url)
+            if r.status_code != 200 or not r.content:
+                return False, f"URL → HTTP {r.status_code}"
+            text = html_to_text(r.text) if b"<" in r.content[:400] else r.text
+            if looks_blocked(text) or len(text) < 200:
+                return False, "URL returned a block/short page, not source content"
+            return True, "official URL resolves with content"
+        except Exception as e:  # noqa: BLE001 — verification is best-effort
+            return False, f"URL check failed: {type(e).__name__}"
 
     def _verify_cfr(self, client: httpx.Client, title: str, part: str) -> tuple[bool, str]:
         """A CFR locator is verified by the SAME fetch acquisition will make — so
@@ -228,22 +300,31 @@ class Discoverer:
                 locator=f"{t} U.S.C. {s}", url=url, evidence_role=evidence_role,
                 rationale=rationale, origin="model", verified=ok, verify_note=note,
                 _dedup_key=f"{t}usc{s}")
-        # No parseable statutory/regulatory locator — a URL-only or descriptive
-        # candidate. Cannot be machine-verified; surfaced flagged, never clean.
-        locator = url or "(no locator — human to supply)"
-        note = ("URL not machine-verifiable; confirm before freezing" if url
-                else "no citable locator; the model could not pin an exact citation")
+        # A jurisdiction-appropriate URL (UK legislation.gov.uk, EU EUR-Lex, an
+        # official agency page, …). Verify it RESOLVES — this is what widens the
+        # model lane beyond US CFR/USC to any jurisdiction.
+        loc = (raw.get("locator") or "").strip()
+        if url:
+            ok, note = self._verify_url(client, url)
+            return Candidate(
+                proposed_item_id=slugify(loc or title),
+                title=title, issuer=issuer, family=family, status=status,
+                locator=loc or url, url=url, evidence_role=evidence_role,
+                rationale=rationale, origin="model", verified=ok, verify_note=note,
+                _dedup_key="url-" + re.sub(r"[^a-z0-9]+", "", url.lower()))
+        # No URL and no parseable citation — surfaced flagged, never clean.
         return Candidate(
-            proposed_item_id=slugify(title),
+            proposed_item_id=slugify(loc or title),
             title=title, issuer=issuer, family=family, status=status,
-            locator=locator, url=url, evidence_role=evidence_role,
-            rationale=rationale, origin="model", verified=False, verify_note=note,
-            _dedup_key=f"desc-{slugify(title)}")
+            locator=loc or "(no locator — human to supply)", url=None, evidence_role=evidence_role,
+            rationale=rationale, origin="model", verified=False,
+            verify_note="no citable locator or URL; the model could not pin a source",
+            _dedup_key=f"desc-{slugify(loc or title)}")
 
     # ---------------- orchestration ----------------
 
     def discover(self, *, terms: list[str], model_candidates: Optional[list[dict]] = None,
-                 existing_items=()) -> dict:
+                 existing_items=(), jurisdictions: Optional[list] = None) -> dict:
         notes: list[str] = []
         existing_ids = {i.get("item_id") for i in existing_items}
         existing_keys = set()
@@ -254,17 +335,27 @@ class Discoverer:
 
         collected: list[Candidate] = []
         query = " ".join(terms).strip()
+        juris = jurisdictions or detect_jurisdictions(query)
         with httpx.Client(transport=self.transport, timeout=self.timeout,
                           follow_redirects=True, headers=_UA) as client:
             if query:
-                try:
-                    collected += self._ecfr_search(client, query, notes)
-                except Exception as e:  # noqa: BLE001
-                    notes.append(f"eCFR search unavailable ({type(e).__name__}) — other lanes still ran")
-                try:
-                    collected += self._fedreg_search(client, query, notes)
-                except Exception as e:  # noqa: BLE001
-                    notes.append(f"Federal Register search unavailable ({type(e).__name__}) — other lanes still ran")
+                if "us" in juris:
+                    try:
+                        collected += self._ecfr_search(client, query, notes)
+                    except Exception as e:  # noqa: BLE001
+                        notes.append(f"eCFR search unavailable ({type(e).__name__}) — other lanes still ran")
+                    try:
+                        collected += self._fedreg_search(client, query, notes)
+                    except Exception as e:  # noqa: BLE001
+                        notes.append(f"Federal Register search unavailable ({type(e).__name__}) — other lanes still ran")
+                if "uk" in juris:
+                    try:
+                        collected += self._legislation_uk_search(client, query, notes)
+                    except Exception as e:  # noqa: BLE001
+                        notes.append(f"legislation.gov.uk search unavailable ({type(e).__name__}) — other lanes still ran")
+                if "eu" in juris:
+                    notes.append("EU scope detected — no structured EU catalog yet; the model lane "
+                                 "proposes EUR-Lex sources (verified by resolving their URL)")
             elif not model_candidates:
                 notes.append("No search terms and no model proposals — nothing to discover")
             for raw in (model_candidates or []):
@@ -314,7 +405,7 @@ class Discoverer:
             "verified": sum(1 for c in deduped if c.verified),
             "queued": len(deduped),
         }
-        return {"terms": terms, "counts": counts, "notes": notes,
+        return {"terms": terms, "jurisdictions": juris, "counts": counts, "notes": notes,
                 "candidates": [c.as_dict() for c in deduped]}
 
 

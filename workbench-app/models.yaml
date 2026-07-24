@@ -51,7 +51,9 @@ tasks:
     description: Per-item extraction into element tables (BlueprintExtraction)
     default_model: anthropic/claude-opus-4.8
     fallbacks: [openai/gpt-5.6-sol]
-    params: { temperature: 0.2, max_tokens: 16384 }
+    # Large regs (e.g. 10 CFR 609) produce big extractions — headroom so the JSON
+    # isn't truncated at the cap; the router also auto-doubles on truncation.
+    params: { temperature: 0.2, max_tokens: 32000 }
     structured_output: blueprint_extraction.schema.json
 
   distill_focus:
@@ -73,7 +75,7 @@ tasks:
     description: D1-D10 defect detection across the distilled blueprint
     default_model: anthropic/claude-opus-4.8
     fallbacks: [openai/gpt-5.6-sol]
-    params: { temperature: 0.3, max_tokens: 16384 }
+    params: { temperature: 0.3, max_tokens: 32000 }
     structured_output: defect_findings.schema.json
 
   misalign_detect:

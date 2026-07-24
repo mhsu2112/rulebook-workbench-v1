@@ -6,6 +6,13 @@
 **/restricted/
 programs/*/restricted/
 
+# Worked examples not published in this repo.
+# The repo ships the workbench design; the AML refactor and liquidity
+# redesign (p1/p2) programs are the illustrative examples. These two stay
+# local so the mirror does not re-add them.
+workbench-app/programs/government-sponsored-lending/
+workbench-app/programs/uk-derivatives-reporting/
+
 # Python
 .venv/
 __pycache__/

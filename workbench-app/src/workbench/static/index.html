@@ -192,6 +192,23 @@ function api(path, method, body) {
   });
 }
 
+/* Run a slow model-backed action on a button with a live elapsed timer so a
+   1-2 minute wait reads as "working", not "frozen". Restores the label on error. */
+function runSlow(btn, baseLabel, promiseFn) {
+  var t0 = Date.now();
+  btn.disabled = true;
+  var tick = function () {
+    var s = Math.round((Date.now() - t0) / 1000);
+    btn.textContent = "working… " + s + "s (usually 1–2 min — leave this open)";
+  };
+  tick();
+  var iv = setInterval(tick, 1000);
+  var stop = function () { clearInterval(iv); };
+  return promiseFn()
+    .then(function (r) { stop(); return r; })
+    .catch(function (e) { stop(); btn.disabled = false; btn.textContent = baseLabel; throw e; });
+}
+
 /* ---------------- download helpers (spec/54 §2.3) ---------------- */
 
 function triggerDownload(blob, filename) {
@@ -476,6 +493,11 @@ function renderPurpose() {
     ])
   ]);
   pane.appendChild(card);
+  if (ratified) {
+    pane.appendChild(el("div", { style: "margin:2px 0 12px;" }, [
+      el("button", { text: "Next: build the Corpus →", onclick: function () { showTab("corpus"); } }, [])
+    ]));
+  }
   pane.appendChild(el("p", {}, [synthBtn]));
 
   // Open items, readable, with the ⚖ resolve flow (each resolution is logged).
@@ -827,7 +849,7 @@ function renderCorpus() {
           var c = s.counts;
           acqBox.appendChild(el("div", {}, [
             el("b", { text: "Texts" }, []),
-            el("span", { class: "dim", text: "  " + c.fetched + " fetched · " + c.pending + " pending · " + c.error + " errors · snapshot " + s.snapshot_date }, [])
+            el("span", { class: "dim", text: "  " + c.fetched + " fetched · " + c.pending + " pending · " + c.error + " errors" + ((c.excluded || 0) ? " · " + c.excluded + " set aside" : "") + " · snapshot " + s.snapshot_date }, [])
           ]));
           if (c.pending > 0 || c.error > 0) {
             var retry = c.pending === 0;  // only errors remain -> retry mode
@@ -847,10 +869,52 @@ function renderCorpus() {
             } }, []);
             acqBox.appendChild(btn); acqBox.appendChild(prog);
           }
+          if (c.pending === 0 && c.fetched > 0) {
+            acqBox.appendChild(el("div", { style: "margin-top:8px;" }, [
+              el("button", { text: "Next: Derived Blueprint →", onclick: function () { showTab("blueprint"); } }, [])
+            ]));
+          }
           var errs = Object.keys(s.items).filter(function (k) { return s.items[k].status === "error"; });
+          if (errs.length) {
+            acqBox.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-top:9px; margin-bottom:1px;",
+              text: "Errored sources — supply/correct a URL and retry, or set the source aside (a logged choice that drops it from the required set without changing the frozen corpus):" }, []));
+          }
           errs.forEach(function (k) {
-            acqBox.appendChild(el("div", { class: "dim", style: "font-size:11px; margin-top:3px;",
-              text: "✗ " + k + ": " + ((s.items[k].errors || []).slice(-1)[0] || "") }, []));
+            var item = (m.items || []).filter(function (i) { return i.item_id === k; })[0] || {};
+            var lastErr = (s.items[k].errors || []).slice(-1)[0] || "";
+            var inp = el("input", { placeholder: "source URL — e.g. https://www.legislation.gov.uk/…", style: "flex:1; font-size:11.5px;" }, []);
+            if (item.url) inp.value = item.url;
+            var save = el("button", { text: "Save & retry", style: "font-size:11px; padding:3px 9px;", onclick: function () {
+              var url = inp.value.trim(); if (!url) { showError("Enter a source URL first."); return; }
+              save.disabled = true; showError("");
+              api("/api/programs/" + state.pid + "/corpus/url-override", "POST", { item_id: k, url: url })
+                .then(function () { return api("/api/programs/" + state.pid + "/corpus/acquire", "POST", { limit: 3, retry_errors: true }); })
+                .then(function () { drawAcq(); })
+                .catch(function (e) { showError(e.message); save.disabled = false; });
+            } }, []);
+            var reason = el("input", { placeholder: "reason for setting aside (logged)", style: "flex:1; font-size:11.5px;" }, []);
+            var confirm = el("button", { text: "Confirm", style: "font-size:11px; padding:3px 9px;", onclick: function () {
+              if (!reason.value.trim()) { showError("Give a reason — it goes to the Decision Log."); return; }
+              confirm.disabled = true; showError("");
+              api("/api/programs/" + state.pid + "/corpus/exclude", "POST", { item_id: k, reason: reason.value.trim() })
+                .then(function () { drawAcq(); }).catch(function (e) { showError(e.message); confirm.disabled = false; });
+            } }, []);
+            var reasonRow = el("div", { class: "hidden", style: "display:flex; gap:6px; margin-top:3px;" }, [reason, confirm]);
+            var aside = el("button", { text: "Set aside", title: "Drop this source from the required set (logged)", style: "font-size:11px; padding:3px 9px; background:var(--panel); color:var(--text); border:1px solid var(--line);", onclick: function () { reasonRow.classList.toggle("hidden"); } }, []);
+            acqBox.appendChild(el("div", { style: "margin-top:6px;" }, [
+              el("div", { class: "dim", style: "font-size:11px;", text: "✗ " + k + " — " + lastErr }, []),
+              el("div", { style: "display:flex; gap:6px; margin-top:2px;" }, [inp, save, aside]),
+              reasonRow
+            ]));
+          });
+          Object.keys(s.items).filter(function (k) { return s.items[k].status === "excluded"; }).forEach(function (k) {
+            var restore = el("button", { text: "Restore", style: "font-size:10.5px; padding:2px 8px; margin-left:6px; background:var(--panel); color:var(--text); border:1px solid var(--line);", onclick: function () {
+              api("/api/programs/" + state.pid + "/corpus/exclude", "POST", { item_id: k, undo: true })
+                .then(function () { drawAcq(); }).catch(function (e) { showError(e.message); });
+            } }, []);
+            acqBox.appendChild(el("div", { class: "dim", style: "font-size:11px; margin-top:4px;" }, [
+              el("span", { text: "⊘ set aside — " + k }, []), restore
+            ]));
           });
         }).catch(function (e) { acqBox.textContent = ""; });
       }
@@ -1000,19 +1064,9 @@ function renderBlueprint() {
         return a;
       })(),
       dlDoc("/api/programs/" + state.pid + "/blueprint/render", state.pid + "-derived-blueprint.html"),
-      (function () {
-        var sb = el("button", { text: "Generate executive summary", style: "font-size:11.5px; margin-left:8px;", onclick: function () {
-          sb.disabled = true; sb.textContent = "summarizing… (~1 min, advisory only)";
-          api("/api/programs/" + state.pid + "/blueprint/summarize", "POST", {})
-            .then(function () {
-              var a = el("a", { class: "doclink", text: "Open Derived Blueprint (with summary) →" }, []);
-              a.href = "/api/programs/" + state.pid + "/blueprint/render"; a.target = "_blank";
-              sb.replaceWith(a);
-            })
-            .catch(function (e) { showError(e.message); sb.disabled = false; sb.textContent = "Generate executive summary"; });
-        } }, []);
-        return sb;
-      })()
+      // executive summary is generated automatically once distillation is complete
+      // (see auto-trigger below) — this span reports its state, no button needed.
+      el("span", { id: "bp-summary-status", class: "dim", style: "font-size:11.5px; margin-left:8px;" }, [])
     ]);
     pane.appendChild(head);
     if (c.pending > 0 || c.error > 0) {
@@ -1074,24 +1128,81 @@ function renderBlueprint() {
       // per-family defect run button (only when all items in family are done)
       var allDone = f.items.every(function (it) { return ((b.items || {})[it.item_id] || {}).status === "extracted"; });
       if (allDone) {
-        var db = el("button", { text: "Detect defects: " + fam, style: "margin-top:6px; font-size:12px;", onclick: function () {
-          db.disabled = true; db.textContent = "detecting…";
-          api("/api/programs/" + state.pid + "/blueprint/defects", "POST", { family: fam })
-            .then(function () { refreshTop(); renderBlueprint(); })
-            .catch(function (e) { showError(e.message); db.disabled = false; });
-        } }, []);
+        var famRun = runs["defects-" + fam];                 // already detected for this family?
+        var dbLabel = famRun
+          ? "✓ Defects detected: " + fam + " (" + (famRun.findings || []).length + ") · re-run"
+          : "Detect defects: " + fam;
+        var db = el("button", { text: dbLabel,
+          style: "margin-top:6px; font-size:12px;" + (famRun ? " opacity:.65;" : ""),
+          onclick: function () {
+            runSlow(db, dbLabel, function () {
+              return api("/api/programs/" + state.pid + "/blueprint/defects", "POST", { family: fam });
+            }).then(function () { refreshTop(); renderBlueprint(); })
+              .catch(function (e) { showError(e.message); });
+          } }, []);
         box.appendChild(db);
       }
       pane.appendChild(box);
     });
     if (c.pending === 0 && c.error === 0) {
-      var xb = el("button", { text: "Detect defects: cross-corpus pass", style: "margin:6px 0;", onclick: function () {
-        xb.disabled = true; xb.textContent = "detecting…";
-        api("/api/programs/" + state.pid + "/blueprint/defects", "POST", { family: null })
-          .then(function () { refreshTop(); renderBlueprint(); })
-          .catch(function (e) { showError(e.message); xb.disabled = false; });
-      } }, []);
+      var xRun = runs["defects-cross"];                       // already run the cross-corpus pass?
+      var xbLabel = xRun
+        ? "✓ Cross-corpus defects detected (" + (xRun.findings || []).length + ") · re-run"
+        : "Detect defects: cross-corpus pass";
+      var xb = el("button", { text: xbLabel,
+        style: "margin:6px 0;" + (xRun ? " opacity:.65;" : ""),
+        onclick: function () {
+          runSlow(xb, xbLabel, function () {
+            return api("/api/programs/" + state.pid + "/blueprint/defects", "POST", { family: null });
+          }).then(function () { refreshTop(); renderBlueprint(); })
+            .catch(function (e) { showError(e.message); });
+        } }, []);
       pane.appendChild(xb);
+    }
+
+    // "You're done here" banner — pinned to the top of the tab once every source
+    // is extracted and each family's defects are detected, so the open items in
+    // the pipeline (Refactor/Target/Align) aren't mistaken for unfinished work here.
+    var famKeys = Object.keys(fams);
+    var allFamDefects = famKeys.length > 0 && famKeys.every(function (fam) { return runs["defects-" + fam]; });
+    var distillComplete = c.pending === 0 && c.error === 0 && allFamDefects;
+
+    // Executive summary: generated automatically the moment distillation completes
+    // (no button). Advisory only — never a governed artifact.
+    var sstat = $("bp-summary-status");
+    if (sstat) {
+      if (b.has_summary === true) {
+        sstat.textContent = "· ✓ Executive summary included";
+      } else if (distillComplete && b.has_summary === false) {  // strict: never auto-fire when the field is absent (older server)
+        if (!window.__bpSummarizing) window.__bpSummarizing = {};
+        if (!window.__bpSummarizing[state.pid]) {
+          window.__bpSummarizing[state.pid] = true;
+          sstat.textContent = "· preparing executive summary… (~1 min, advisory)";
+          api("/api/programs/" + state.pid + "/blueprint/summarize", "POST", {})
+            .then(function () { window.__bpSummarizing[state.pid] = false; renderBlueprint(); })
+            .catch(function (e) {
+              window.__bpSummarizing[state.pid] = false;
+              if (sstat) sstat.textContent = "· executive summary could not be generated — " + (e.message || "error");
+            });
+        } else {
+          sstat.textContent = "· preparing executive summary… (~1 min, advisory)";
+        }
+      }
+    }
+
+    if (distillComplete) {
+      var extras = [];
+      if (!runs["defects-cross"]) extras.push("the cross-corpus pass");
+      var done = el("div", { style: "border:1px solid var(--ok); background:rgba(26,127,55,.10); border-radius:8px; padding:11px 14px; margin-bottom:12px;" }, [
+        el("b", { style: "color:var(--ok);", text: "✓ Distillation complete — nothing left to do on this tab" }, []),
+        el("div", { class: "dim", style: "font-size:12px; margin:5px 0 9px;",
+          text: "All " + c.extracted + " sources are extracted and defects are detected for every family. "
+              + "The open items in the pipeline — Refactor, Target Blueprint, Align — are later steps, not unfinished work here."
+              + (extras.length ? " (Optional: you can still run " + extras.join(" and ") + ", but it isn't required to continue.)" : "") }, []),
+        el("button", { text: "Go to Refactor →", style: "font-weight:600;",
+          onclick: function () { showTab("refactor"); } }, [])
+      ]);
+      pane.insertBefore(done, pane.firstChild);
     }
   }).catch(function (e) { pane.appendChild(el("div", { class: "err", text: e.message }, [])); });
 }

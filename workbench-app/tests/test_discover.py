@@ -140,3 +140,63 @@ def test_helpers():
     assert cfr_key("no citation here") is None
     assert usc_key("12 U.S.C. 1430") == "12usc1430"
     assert slugify("PART 1266—FEDERAL HOME LOAN BANK ADVANCES!!!").startswith("part-1266")
+
+
+from workbench.discover import detect_jurisdictions
+
+_UK_FEED = ('<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">'
+            '<entry><title>OTC Derivatives Regulations 2019</title>'
+            '<id>http://www.legislation.gov.uk/uksi/2019/335</id></entry>'
+            '<entry><title>UK EMIR</title>'
+            '<id>http://www.legislation.gov.uk/eur/2012/648</id></entry></feed>')
+
+
+def uk_transport():
+    def handler(request):
+        u = str(request.url)
+        def J(o): return httpx.Response(200, json=o)
+        if "legislation.gov.uk/all/data.feed" in u:
+            return httpx.Response(200, text=_UK_FEED)
+        if "missing-404" in u or "/404" in u:                 # intended-dead source -> unverifiable
+            return httpx.Response(404, text="not found")
+        if "legislation.gov.uk" in u or "fca.org.uk" in u:   # a resolvable full-text/official URL
+            return httpx.Response(200, text="<p>" + ("advances reporting obligation " * 60) + "</p>")
+        if "/api/search/v1/results" in u:
+            return httpx.Response(200, json={"results": []})
+        if "federalregister.gov" in u:
+            return httpx.Response(200, json={"results": []})
+        return httpx.Response(404, text="x")
+    return httpx.MockTransport(handler)
+
+
+def test_detect_jurisdictions():
+    assert detect_jurisdictions("UK EMIR reporting; FCA handbook; onshored retained EU") == ["uk"]
+    assert detect_jurisdictions("12 CFR and FinCEN federal register") == ["us"]
+    assert "eu" in detect_jurisdictions("EUR-Lex ESMA guidelines")
+    assert detect_jurisdictions("") == ["us"]          # default
+
+
+def test_uk_catalog_lane():
+    d = Discoverer(snapshot_date=SNAP, transport=uk_transport())
+    res = d.discover(terms=["derivatives reporting"], model_candidates=[], existing_items=[], jurisdictions=["uk"])
+    ids = {c["proposed_item_id"] for c in res["candidates"]}
+    assert "uk-uksi-2019-335" in ids and "uk-eu... " not in ids  # eur parsed as uk-eur-2012-648
+    assert any(c["proposed_item_id"] == "uk-eur-2012-648" for c in res["candidates"])
+    uk = next(c for c in res["candidates"] if c["proposed_item_id"] == "uk-uksi-2019-335")
+    assert uk["verified"] and uk["url"].endswith("/uksi/2019/335/data.xml") and uk["origin"] == "catalog"
+
+
+def test_model_lane_verifies_non_us_url():
+    d = Discoverer(snapshot_date=SNAP, transport=uk_transport())
+    cands = [{"title": "UK EMIR art. 9", "issuer": "UK Parliament", "family": "regulation",
+              "locator": "UK EMIR art. 9", "url": "https://www.legislation.gov.uk/eur/2012/648",
+              "rationale": "core reporting obligation"},
+             {"title": "Dead source", "issuer": "X", "family": "guidance",
+              "url": "https://www.fca.org.uk/missing-404", "rationale": "x"}]
+    # note: the 404 url returns 404 in uk_transport -> unverified; the legislation one resolves
+    res = d.discover(terms=[], model_candidates=cands, existing_items=[], jurisdictions=["uk"])
+    by_loc = {c["locator"]: c for c in res["candidates"]}
+    good = next(c for c in res["candidates"] if "legislation.gov.uk" in (c["url"] or ""))
+    assert good["verified"] is True and good["origin"] == "model" and good["locator"] == "UK EMIR art. 9"
+    dead = next(c for c in res["candidates"] if "missing-404" in (c["url"] or ""))
+    assert dead["verified"] is False

@@ -111,20 +111,28 @@ the set of primary legal sources (statutes, regulations, and binding/authoritati
 guidance) in scope. You are PROPOSING candidates for a human to review — you are NOT deciding
 the corpus, and nothing you return enters it until a person accepts it.
 
-Propose the U.S. statutes, CFR parts, and agency guidance documents that a subject-matter expert
-would expect to be in scope for this program — including cross-cutting sources a keyword search
-would miss. Prefer citable primary law. For each candidate give the most precise locator you can:
-- cfr_locator as "<title> CFR Part <part>" (e.g. "12 CFR Part 1266") when it is a regulation;
-- usc_locator as "<title> U.S.C. <section>" (e.g. "12 U.S.C. 1430") when it is a statute;
-- url for guidance/manuals when you know an OFFICIAL one.
-Always give issuer (the agency, or "Congress" for statutes), a short family label
-(statute / regulation / guidance / exam_manual / sro_rule_guidance / …), and a one-line
-rationale for why it is in scope.
+FIRST identify the JURISDICTION(S) in scope from the Purpose Statement (e.g. United States, United
+Kingdom, European Union, or another country) and propose sources IN THE RIGHT LEGAL SYSTEM — do not
+default to US law unless the scope is US. Include cross-cutting sources a keyword search would miss.
+Prefer citable primary law.
 
-Do NOT invent citations. If you are unsure of an exact part or section, OMIT the locator and
-describe the document in the title and rationale so a human can find it — an honest "no locator"
-is better than a wrong one (every locator you do give is machine-verified against the live
-catalog before the human sees it, and wrong ones are flagged). Return 8–20 candidates.
+For each candidate give the most precise locator AND an official full-text URL you can:
+- United States: cfr_locator "<title> CFR Part <part>" for regulations; usc_locator
+  "<title> U.S.C. <section>" for statutes.
+- United Kingdom: put the citation in `locator` (e.g. "UK EMIR art. 9", "FSMA 2000 s.137") and set
+  `url` to the legislation.gov.uk page (e.g. https://www.legislation.gov.uk/eur/2012/648).
+- European Union: put the citation in `locator` (e.g. "Regulation (EU) 2019/834 art. 9") and set
+  `url` to the EUR-Lex page.
+- Any other jurisdiction / agency guidance: put the citation in `locator` and set `url` to the
+  issuing authority's OFFICIAL page for the document.
+Always give issuer (the agency, department, or legislature), a short family label
+(statute / regulation / guidance / …), and a one-line rationale for why it is in scope.
+
+For non-US sources ALWAYS provide a `url` — that is how the source is verified and later fetched.
+Do NOT invent citations or URLs: if unsure of an exact identifier, omit it and describe the document
+in the title/rationale so a human can find it. Every locator/URL you give is machine-checked (US
+citations against the live catalog; other URLs by resolving them), and unverifiable ones are
+flagged, not hidden. Return 8–20 candidates.
 
 Search hints from the user: {terms}
 
@@ -255,6 +263,17 @@ class PolicyRatifyIn(BaseModel):
 class AcquireIn(BaseModel):
     limit: int = 8
     retry_errors: bool = False
+
+
+class UrlOverrideIn(BaseModel):
+    item_id: str
+    url: str = ""
+
+
+class ExcludeIn(BaseModel):
+    item_id: str
+    reason: str = ""
+    undo: bool = False
 
 
 class ProposeIn(BaseModel):
@@ -702,8 +721,11 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                          "terms": body.terms, "qa": body.qa})
             rp.write_text(json.dumps(hist, indent=2))
 
+        # Route the catalog lanes by jurisdiction inferred from the scope + terms + Q&A.
+        juris = discover_mod.detect_jurisdictions(purpose_text + " " + body.terms + " " + body.qa)
         d = discover_mod.Discoverer(snapshot_date=SNAPSHOT_DATE, transport=state.router.transport)
-        result = d.discover(terms=terms, model_candidates=model_raw, existing_items=existing)
+        result = d.discover(terms=terms, model_candidates=model_raw, existing_items=existing,
+                            jurisdictions=juris)
         if extra_note:
             result["notes"].append(extra_note)
         return result
@@ -835,21 +857,68 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                                      "pinned corpus (freeze first)")
         return doc
 
+    def _excluded(pid: str) -> set:
+        """item_ids the Program Owner has set aside (spec/55): recorded outside the
+        frozen manifest so OR-7 holds, but dropped from the required-to-work set so
+        an un-acquirable source doesn't block completeness."""
+        p = state.pdir(pid) / "governed" / "excluded_sources.json"
+        if p.exists():
+            try:
+                return set((json.loads(p.read_text()).get("items") or {}).keys())
+            except ValueError:
+                return set()
+        return set()
+
+    @app.post("/api/programs/{pid}/corpus/exclude")
+    def exclude_source(pid: str, body: ExcludeIn):
+        """Set aside (or restore) a corpus source. Logged; does not touch the
+        frozen manifest or its hash — the source stays on the record, marked as a
+        deliberate exclusion rather than a failure."""
+        doc = _frozen_manifest(pid)
+        item = next((i for i in doc["items"] if i["item_id"] == body.item_id), None)
+        if item is None:
+            raise HTTPException(404, f"No item '{body.item_id}' in the corpus")
+        p = state.pdir(pid) / "governed" / "excluded_sources.json"
+        reg = json.loads(p.read_text()) if p.exists() else {"items": {}}
+        reg.setdefault("items", {})
+        now = datetime.now(timezone.utc).isoformat()
+        if body.undo:
+            reg["items"].pop(body.item_id, None)
+            decision = f"Restore set-aside source '{body.item_id}' to the working corpus"
+        else:
+            if not body.reason.strip():
+                raise HTTPException(400, "Setting a source aside requires a reason — it goes to the Decision Log")
+            reg["items"][body.item_id] = {"reason": body.reason.strip(), "at": now}
+            decision = f"Set aside source '{body.item_id}': {item.get('title', '')[:80]}"
+        p.write_text(json.dumps(reg, indent=2))
+        entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+        storage.append_decision(state.pdir(pid), {
+            "entry_id": entry_id, "timestamp": now, "type": "disposition",
+            "artifact": "corpus", "decided_by": {"name": "Program Owner", "role": "Program Owner"},
+            "decision": decision, "rationale": body.reason.strip() or "restored"})
+        return {"item_id": body.item_id, "excluded": not body.undo, "count": len(reg["items"])}
+
     @app.get("/api/programs/{pid}/corpus/status")
     def corpus_status(pid: str):
         doc = _frozen_manifest(pid)
         acq = acquire.Acquirer(state.pdir(pid), snapshot_date=SNAPSHOT_DATE,
                                manifest_hash=doc["content_hash"], transport=state.router.transport)
         reg = acq.register()
-        counts = {"fetched": 0, "error": 0, "pending": 0}
+        excl = _excluded(pid)
+        counts = {"fetched": 0, "error": 0, "pending": 0, "excluded": 0}
         per_item = {}
         for it in doc["items"]:
-            rec = reg["items"].get(it["item_id"])
+            iid = it["item_id"]
+            if iid in excl:                      # set aside → not error, not required
+                counts["excluded"] += 1
+                per_item[iid] = {"status": "excluded", "errors": None, "text_chars": None}
+                continue
+            rec = reg["items"].get(iid)
             st = rec["status"] if rec else "pending"
             counts[st if st in counts else "pending"] += 1
-            per_item[it["item_id"]] = {"status": st,
-                                       "errors": (rec or {}).get("errors"),
-                                       "text_chars": (rec or {}).get("text_chars")}
+            per_item[iid] = {"status": st,
+                             "errors": (rec or {}).get("errors"),
+                             "text_chars": (rec or {}).get("text_chars")}
         return {"snapshot_date": SNAPSHOT_DATE, "manifest_hash": doc["content_hash"],
                 "counts": counts, "items": per_item}
 
@@ -858,10 +927,32 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         doc = _frozen_manifest(pid)
         acq = acquire.Acquirer(state.pdir(pid), snapshot_date=SNAPSHOT_DATE,
                                manifest_hash=doc["content_hash"], transport=state.router.transport)
+        excl = _excluded(pid)
+        items = [i for i in doc["items"] if i["item_id"] not in excl]  # don't re-fetch set-aside sources
         try:
-            return acq.acquire(doc["items"], limit=body.limit, retry_errors=body.retry_errors)
+            return acq.acquire(items, limit=body.limit, retry_errors=body.retry_errors)
         except ValueError as e:
             raise HTTPException(409, str(e))
+
+    @app.post("/api/programs/{pid}/corpus/url-override")
+    def set_url_override(pid: str, body: UrlOverrideIn):
+        """Supply/correct the source URL for one corpus item without touching the
+        frozen manifest (OR-7: the datum is immutable; how we fetch it is ours).
+        For sources the auto-fetcher can't map (e.g. non-US legislation)."""
+        doc = _frozen_manifest(pid)
+        if not any(i["item_id"] == body.item_id for i in doc["items"]):
+            raise HTTPException(404, f"No item '{body.item_id}' in the corpus")
+        d = state.pdir(pid) / "governed" / "corpus_texts"
+        d.mkdir(parents=True, exist_ok=True)
+        path = d / "url_overrides.json"
+        ov = json.loads(path.read_text()) if path.exists() else {}
+        url = body.url.strip()
+        if url:
+            ov[body.item_id] = url
+        else:
+            ov.pop(body.item_id, None)
+        path.write_text(json.dumps(ov, indent=2))
+        return {"item_id": body.item_id, "url": url or None, "overrides": len(ov)}
 
     # ---------------- distillation (M3.2: P2 extract → defects) ----------------
 
@@ -880,7 +971,8 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         d = distill.Distiller(state.pdir(pid), program_id=pid, scope=scope,
                               manifest_hash=doc["content_hash"],
                               call_fn=lambda task, msgs: _router_call(task, msgs, pid=pid))
-        d._items = doc["items"]  # convenience for endpoints
+        excl = _excluded(pid)
+        d._items = [i for i in doc["items"] if i["item_id"] not in excl]  # set-aside sources aren't required
         return d
 
     @app.get("/api/programs/{pid}/blueprint")
@@ -898,7 +990,8 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             counts[st if st in counts else "pending"] += 1
             per_item[it["item_id"]] = {**(rec or {"status": "pending"}), "family": it.get("family")}
         return {"assembly": d.assemble(d._items), "counts": counts, "items": per_item,
-                "defects": d.defects(), "scope": d.scope}
+                "defects": d.defects(), "scope": d.scope,
+                "has_summary": (d.pdir / "governed" / "blueprint_summary.json").exists()}
 
     @app.get("/api/programs/{pid}/blueprint/extraction/{item_id}")
     def blueprint_extraction(pid: str, item_id: str):
@@ -1136,10 +1229,11 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                                   else ps.get("status", "not started")),
                        "detail": scope[:160], "link": None})
 
-        # Corpus
+        # Corpus (set-aside sources drop out of the required-to-work count)
         man = js("manifest/manifest.json")
         acq = js("corpus_texts/acquisition.json", {"items": {}}) or {"items": {}}
-        n_items = len(man.get("items", [])) if man else 0
+        _excl = _excluded(pid)
+        n_items = len([i for i in man.get("items", []) if i["item_id"] not in _excl]) if man else 0
         n_fetched = sum(1 for v in acq.get("items", {}).values()
                         if v.get("status") in ("fetched", "browser_assisted", "manual"))
         stages.append({"key": "corpus", "label": "Corpus", "phase": "P1",
@@ -1434,5 +1528,16 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         return JSONResponse(status_code=404, content={"detail": str(exc)})
 
     static_dir = Path(__file__).parent / "static"
-    app.mount("/", StaticFiles(directory=str(static_dir), html=True), name="ui")
+
+    class _NoCacheStatic(StaticFiles):
+        # Serve the UI with "no-cache" so the browser revalidates every load and
+        # never hands back a stale index.html after an update. This is revalidate,
+        # not no-store: unchanged files still return a cheap 304 via ETag, but a
+        # changed file is picked up immediately — no hard-refresh needed.
+        async def get_response(self, path, scope):
+            resp = await super().get_response(path, scope)
+            resp.headers["Cache-Control"] = "no-cache"
+            return resp
+
+    app.mount("/", _NoCacheStatic(directory=str(static_dir), html=True), name="ui")
     return app
