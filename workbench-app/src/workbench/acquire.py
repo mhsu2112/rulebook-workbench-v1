@@ -212,6 +212,14 @@ class Acquirer:
         override = self.overrides().get(iid)
         if override:
             candidates = [override] + [u for u in candidates if u != override]
+        if not candidates:
+            # Nothing to fetch (e.g. a non-US source the auto-planner can't map,
+            # with no URL on the manifest item). "Retry" can't help until a URL is
+            # supplied — say so instead of erroring silently.
+            return {"status": "error",
+                    "errors": ["no source URL for this item — add one (e.g. a legislation.gov.uk "
+                               "or official page link) and retry"],
+                    "attempted_at": datetime.now(timezone.utc).isoformat()}
         for url in candidates:
             try:
                 r = client.get(url)

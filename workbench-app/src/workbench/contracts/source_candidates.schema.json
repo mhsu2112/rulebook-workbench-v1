@@ -17,9 +17,10 @@
           "title": { "type": "string", "maxLength": 300 },
           "issuer": { "type": "string", "maxLength": 160, "description": "Issuing agency or 'Congress' — required so the accepted manifest item has a non-empty issuer" },
           "family": { "type": "string", "maxLength": 60, "description": "e.g. statute, regulation, guidance, exam_manual, sro_rule_guidance" },
-          "cfr_locator": { "type": ["string", "null"], "maxLength": 160, "description": "e.g. '12 CFR Part 1266' — omit if unsure; do not invent" },
-          "usc_locator": { "type": ["string", "null"], "maxLength": 160, "description": "e.g. '12 U.S.C. 1430' — omit if unsure; do not invent" },
-          "url": { "type": ["string", "null"], "maxLength": 600, "description": "Official URL for guidance/manuals when known" },
+          "cfr_locator": { "type": ["string", "null"], "maxLength": 160, "description": "US only: e.g. '12 CFR Part 1266' — omit if unsure; do not invent" },
+          "usc_locator": { "type": ["string", "null"], "maxLength": 160, "description": "US only: e.g. '12 U.S.C. 1430' — omit if unsure; do not invent" },
+          "locator": { "type": ["string", "null"], "maxLength": 200, "description": "Jurisdiction-appropriate citation for non-US sources, e.g. 'UK EMIR art. 9', 'Regulation (EU) 2019/834', 'FSMA 2000 s.137' — omit if unsure" },
+          "url": { "type": ["string", "null"], "maxLength": 600, "description": "Official URL to the source's full text. For UK use legislation.gov.uk; for EU use eur-lex.europa.eu; otherwise the issuing authority's official page. Always provide one for non-US sources so it can be verified and fetched." },
           "status": { "type": ["string", "null"], "enum": ["live", "proposed", "superseded", "rescinded", "expired", "stayed", "vacated", null] },
           "evidence_role": { "type": ["string", "null"], "maxLength": 60 },
           "rationale": { "type": "string", "maxLength": 600, "description": "One line: why this source is in scope" }

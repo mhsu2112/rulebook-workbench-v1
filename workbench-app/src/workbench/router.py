@@ -177,6 +177,7 @@ class ModelRouter:
 
         data = self._post(payload)
         content = data["choices"][0]["message"]["content"]
+        finish = data["choices"][0].get("finish_reason") or ""
         usages = [data.get("usage") or {}]
         repair_attempts = 0
 
@@ -198,19 +199,29 @@ class ModelRouter:
                                       f"{e.message[:400]}")
                         else:
                             detail = f"[{type(e).__name__}] {str(e)[:400]}"
+                        if finish == "length":
+                            detail += (f" — the model's output was truncated at the token limit; "
+                                       f"raise max_tokens for task '{task_id}'")
                         raise StructuredOutputError(
                             f"Task '{task_id}': model output failed schema validation after a repair "
                             f"attempt and may not enter an artifact: {detail}"
                         ) from e
                     repair_attempts += 1
                     repair = dict(payload)
-                    repair["messages"] = messages + [
-                        {"role": "assistant", "content": content},
-                        {"role": "user", "content": "That output failed JSON Schema validation:\n"
-                         + str(e)[:1500] + "\nReturn ONLY the corrected JSON object — no fences, no commentary."},
-                    ]
+                    if finish == "length":
+                        # Output was cut off at the token limit — re-run the ORIGINAL
+                        # request with more room, rather than asking the model to
+                        # "fix" a truncated JSON blob (which just truncates again).
+                        repair["max_tokens"] = min(int(payload.get("max_tokens") or 4096) * 2, 64000)
+                    else:
+                        repair["messages"] = messages + [
+                            {"role": "assistant", "content": content},
+                            {"role": "user", "content": "That output failed JSON Schema validation:\n"
+                             + str(e)[:1500] + "\nReturn ONLY the corrected JSON object — no fences, no commentary."},
+                        ]
                     data2 = self._post(repair)
                     content = data2["choices"][0]["message"]["content"]
+                    finish = data2["choices"][0].get("finish_reason") or ""
                     usages.append(data2.get("usage") or {})
 
         usage = {
@@ -251,9 +262,15 @@ class ModelRouter:
         url = f"{self.registry.settings.base_url}/chat/completions"
         headers = {"Authorization": f"Bearer {self.api_key}"}
         last: Exception | None = None
+        # Large distillation calls (e.g. the cross-corpus defect pass: ~70k input
+        # tokens plus a big structured-output generation) can run well past a
+        # minute. A short read timeout there surfaces as a "stuck" request that
+        # eventually fails, so allow a generous read window while keeping connect
+        # fast to fail quickly on a genuinely unreachable endpoint.
+        timeout = httpx.Timeout(300.0, connect=15.0)
         for attempt in range(self.max_attempts):
             try:
-                with httpx.Client(transport=self.transport, timeout=120) as client:
+                with httpx.Client(transport=self.transport, timeout=timeout) as client:
                     r = client.post(url, json=payload, headers=headers)
                 if r.status_code >= 500:
                     last = UpstreamError(f"HTTP {r.status_code}: {r.text[:200]}")

@@ -107,7 +107,7 @@ def test_endpoints_gated_on_frozen_manifest(approot):  # noqa: F811
     c.post("/api/programs/p1/manifest/freeze",
            json={"name": "M", "role": "Corpus Steward", "rationale": "r"})
     s = c.get("/api/programs/p1/corpus/status").json()
-    assert s["counts"] == {"fetched": 0, "error": 0, "pending": 42}
+    assert s["counts"] == {"fetched": 0, "error": 0, "pending": 42, "excluded": 0}
     r = c.post("/api/programs/p1/corpus/acquire", json={"limit": 5}).json()
     assert r["processed"] == 5 and r["counts"]["fetched"] == 5 and r["counts"]["pending"] == 37
     # batch through the rest
