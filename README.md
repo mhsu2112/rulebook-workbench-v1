@@ -30,7 +30,7 @@ running the pipeline spends your own OpenRouter credit.
 
 Windows notes and troubleshooting: **[workbench-app/RUN-LOCALLY.md](workbench-app/RUN-LOCALLY.md)**.
 
-<img width="1274" height="493" alt="image" src="https://github.com/user-attachments/assets/4aaa9b60-f9c6-405f-a1ed-e238f2825a49" />
+<img width="982" height="668" alt="image" src="https://github.com/user-attachments/assets/74d040d0-3d62-4442-8458-50190e8c180b" />
 
 ## What's in here
 
