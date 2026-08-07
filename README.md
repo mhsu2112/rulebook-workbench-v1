@@ -30,6 +30,8 @@ running the pipeline spends your own OpenRouter credit.
 
 Windows notes and troubleshooting: **[workbench-app/RUN-LOCALLY.md](workbench-app/RUN-LOCALLY.md)**.
 
+<img width="982" height="668" alt="image" src="https://github.com/user-attachments/assets/74d040d0-3d62-4442-8458-50190e8c180b" />
+
 ## What's in here
 
 - **`workbench-app/`** — the application (Python/FastAPI + a dependency-free browser UI).
