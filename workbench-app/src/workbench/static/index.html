@@ -5,7 +5,9 @@
 <title>Rulebook Workbench</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-  :root { --bg:#11141a; --panel:#1a1f29; --line:#2a3140; --text:#e6e9ef; --dim:#8b93a5; --acc:#5b8def; --ok:#3fb27f; --warn:#d9a441; --bad:#e06c6c; }
+  :root { color-scheme:dark; --bg:#11141a; --panel:#1a1f29; --line:#2a3140; --text:#e6e9ef; --dim:#8b93a5; --acc:#5b8def; --ok:#3fb27f; --warn:#d9a441; --bad:#e06c6c; }
+  body.light { color-scheme:light; --bg:#f5f7fa; --panel:#ffffff; --line:#d7dce4; --text:#1b2029; --dim:#586274; --acc:#2f6fe0; --ok:#1a7f37; --warn:#9a6a17; --bad:#c0392b; }
+  body.light #ledger { background:rgba(0,0,0,.02); }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 -apple-system, "Segoe UI", Helvetica, sans-serif; }
   header { display:flex; align-items:baseline; gap:16px; padding:10px 18px; border-bottom:1px solid var(--line); }
@@ -116,7 +118,7 @@
     <div class="userstrip">
       <div class="avatar">MH</div>
       <div class="uname">Mike Hsu<div class="dim" style="font-size:10px;">Program Owner</div></div>
-      <label class="ro-toggle"><input type="checkbox" id="present-mode"> Read only</label>
+      <label class="ro-toggle" title="Switch between dark and light mode"><input type="checkbox" id="theme-mode"> <span id="theme-label">☾ Dark mode</span></label>
     </div>
   </div>
   <div class="col" id="right">
@@ -185,6 +187,17 @@ function api(path, method, body) {
   var opts = { method: method || "GET", headers: { "Content-Type": "application/json" } };
   if (body !== undefined) opts.body = JSON.stringify(body);
   return fetch(path, opts).then(function (r) {
+    return r.json().catch(function () { return {}; }).then(function (data) {
+      if (!r.ok) throw new Error(data.detail || (r.status + " " + r.statusText));
+      return data;
+    });
+  });
+}
+
+/* Multipart POST for document uploads. No Content-Type header — the browser
+   sets the multipart boundary itself. Mirrors api()'s error handling. */
+function apiUpload(path, formData) {
+  return fetch(path, { method: "POST", body: formData }).then(function (r) {
     return r.json().catch(function () { return {}; }).then(function (data) {
       if (!r.ok) throw new Error(data.detail || (r.status + " " + r.statusText));
       return data;
@@ -830,6 +843,32 @@ function corpusAddForm() {
   ]);
 }
 
+function uploadSourceForm() {
+  function inp(ph) { return el("input", { placeholder: ph, style: "margin:2px 0;" }, []); }
+  var title = inp("title"), issuer = inp("issuer — e.g. FCA, Central Bank, Congress"),
+      locator = inp("citation / locator (optional) — e.g. Circular 12/2026");
+  var fam = el("input", { placeholder: "family — e.g. guidance, regulation, statute", list: "famlist", style: "margin:2px 0;" }, []);
+  var fileIn = el("input", { type: "file", style: "margin:4px 0;" }, []);
+  var add = el("button", { text: "Add source from document", style: "margin-top:4px;", onclick: function () {
+    if (!fileIn.files || !fileIn.files[0]) { showError("Choose a document to upload first."); return; }
+    if (!title.value.trim() || !issuer.value.trim() || !fam.value.trim()) { showError("Title, issuer, and family are required."); return; }
+    showError(""); add.disabled = true;
+    var fd = new FormData();
+    fd.append("title", title.value.trim()); fd.append("issuer", issuer.value.trim());
+    fd.append("family", fam.value.trim()); fd.append("locator", locator.value.trim());
+    fd.append("file", fileIn.files[0]);
+    apiUpload("/api/programs/" + state.pid + "/discover/upload", fd)
+      .then(function () { renderCorpus(); })
+      .catch(function (e) { showError(e.message); add.disabled = false; });
+  } }, []);
+  return el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
+    el("b", { text: "Add a source from a document" }, []),
+    el("div", { class: "dim", style: "font-size:11.5px; margin:3px 0 6px;",
+      text: "For an in-scope source that isn't retrievable by URL — upload its PDF, Word (.docx), HTML, or text file. Its text enters the corpus and the manifest records the document's SHA-256 for provenance." }, []),
+    title, issuer, fam, locator, fileIn, el("div", {}, [add])
+  ]);
+}
+
 function renderCorpus() {
   var pane = $("pane-corpus"); pane.innerHTML = "";
   if (!state.pid) { pane.appendChild(el("div", { class: "dim", text: "Select a program first." }, [])); return; }
@@ -901,9 +940,21 @@ function renderCorpus() {
             } }, []);
             var reasonRow = el("div", { class: "hidden", style: "display:flex; gap:6px; margin-top:3px;" }, [reason, confirm]);
             var aside = el("button", { text: "Set aside", title: "Drop this source from the required set (logged)", style: "font-size:11px; padding:3px 9px; background:var(--panel); color:var(--text); border:1px solid var(--line);", onclick: function () { reasonRow.classList.toggle("hidden"); } }, []);
+            // Upload the document for a source that can't be fetched by URL.
+            var fileIn = el("input", { type: "file", style: "font-size:11px; flex:1;" }, []);
+            var up = el("button", { text: "Upload document", title: "Supply this source's text from a PDF, Word, HTML, or text file", style: "font-size:11px; padding:3px 9px;", onclick: function () {
+              if (!fileIn.files || !fileIn.files[0]) { showError("Choose a document to upload first."); return; }
+              up.disabled = true; showError("");
+              var fd = new FormData(); fd.append("item_id", k); fd.append("file", fileIn.files[0]);
+              apiUpload("/api/programs/" + state.pid + "/corpus/upload", fd)
+                .then(function () { drawAcq(); })
+                .catch(function (e) { showError(e.message); up.disabled = false; });
+            } }, []);
             acqBox.appendChild(el("div", { style: "margin-top:6px;" }, [
               el("div", { class: "dim", style: "font-size:11px;", text: "✗ " + k + " — " + lastErr }, []),
               el("div", { style: "display:flex; gap:6px; margin-top:2px;" }, [inp, save, aside]),
+              el("div", { style: "display:flex; gap:6px; margin-top:3px; align-items:center;" }, [
+                el("span", { class: "dim", style: "font-size:11px; white-space:nowrap;", text: "or upload it:" }, []), fileIn, up]),
               reasonRow
             ]));
           });
@@ -935,6 +986,7 @@ function renderCorpus() {
       } }, []);
       pane.appendChild(discoverPanel());
       pane.appendChild(corpusAddForm());
+      pane.appendChild(uploadSourceForm());
       if (m.items.length) {
         var box = el("div", { style: "border:1px solid var(--warn); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
           el("span", { class: "badge awaiting", text: "UNFROZEN" }, []),
@@ -1938,7 +1990,21 @@ $("msgbox").addEventListener("keydown", function (e) {
   if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
 });
 $("tab-overview").addEventListener("click", function () { showTab("overview"); });
-$("present-mode").addEventListener("change", function () { document.body.classList.toggle("present", this.checked); });
+function applyTheme(light) {
+  document.body.classList.toggle("light", light);
+  var lbl = $("theme-label");
+  if (lbl) lbl.textContent = light ? "☀ Light mode" : "☾ Dark mode";
+}
+(function () {
+  var light = false;
+  try { light = localStorage.getItem("wb-theme") === "light"; } catch (e) {}
+  $("theme-mode").checked = light;
+  applyTheme(light);
+})();
+$("theme-mode").addEventListener("change", function () {
+  applyTheme(this.checked);
+  try { localStorage.setItem("wb-theme", this.checked ? "light" : "dark"); } catch (e) {}
+});
 $("tab-purpose").addEventListener("click", function () { showTab("purpose"); });
 $("tab-corpus").addEventListener("click", function () { showTab("corpus"); });
 $("tab-blueprint").addEventListener("click", function () { showTab("blueprint"); });

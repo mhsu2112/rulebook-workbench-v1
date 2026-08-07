@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside the Rulebook Workbench — a shared evidence base for reporting harmonisation</title>
+<style>
+  :root{
+    /* the workbench's own tokens, so the tour and the tool read as one thing */
+    --bg:#0c0f15;
+    --bg-2:#11141a;
+    --panel:#1a1f29;
+    --panel-2:#1f2531;
+    --line:#2a3140;
+    --line-soft:#212734;
+    --text:#e6e9ef;
+    --text-2:#aeb6c6;
+    --dim:#8b93a5;
+    --acc:#5b8def;
+    --ok:#3fb27f;
+    --warn:#d9a441;
+    --bad:#e06c6c;
+    --violet:#7c6cd6;
+    --doc:#2b8a8a;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:var(--acc);text-decoration:none}
+
+  .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+  .narrow{max-width:730px;margin:0 auto}
+  section{padding:104px 0;position:relative;scroll-margin-top:50px}
+  section+section{border-top:1px solid var(--line-soft)}
+
+  .eyebrow{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line-soft)}
+
+  h1{font:400 clamp(36px,5.4vw,60px)/1.1 var(--serif);letter-spacing:-.02em;margin:0 0 22px}
+  h2{font:400 clamp(26px,3.4vw,38px)/1.2 var(--serif);letter-spacing:-.015em;margin:0 0 18px}
+  h3{font:600 16.5px/1.45 var(--sans);margin:0 0 10px;letter-spacing:-.01em}
+  p{margin:0 0 18px;color:var(--text-2)}
+  .lede{font-size:18.5px;line-height:1.66;color:var(--text-2)}
+  .dim{color:var(--dim)}
+  strong{color:var(--text);font-weight:600}
+  em{color:var(--text)}
+  .kicker{font:600 12px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:34px 0 14px}
+
+  .rv{opacity:0;transform:translateY(20px);transition:opacity .68s cubic-bezier(.2,.7,.3,1),transform .68s cubic-bezier(.2,.7,.3,1)}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+  /* hero */
+  .hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;padding:110px 0 84px;
+    background:radial-gradient(120% 70% at 50% -10%,rgba(91,141,239,.10),transparent 60%)}
+  .hero h1{max-width:19ch}
+  .hero .lede{max-width:58ch;font-size:19.5px}
+  .brandline{display:flex;align-items:center;gap:13px;margin-bottom:38px;font:600 12px/1 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--text-2)}
+  .mark{width:26px;height:26px;border:1px solid var(--line);border-radius:5px;display:grid;place-items:center;color:var(--acc);font-size:13px;background:var(--panel)}
+  .herometa{display:flex;gap:34px;flex-wrap:wrap;margin-top:48px;padding-top:26px;border-top:1px solid var(--line-soft)}
+  .herometa div{max-width:215px}
+  .herometa .k{font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:8px}
+  .herometa .v{font-size:13.5px;color:var(--text-2);line-height:1.55}
+  .scrollcue{margin-top:50px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:10px}
+  .scrollcue .bar{display:inline-block;width:32px;height:1px;background:var(--dim);animation:slide 2.4s ease-in-out infinite}
+  @keyframes slide{0%,100%{transform:translateX(0);opacity:.4}50%{transform:translateX(8px);opacity:1}}
+
+  /* rail */
+  .rail{position:sticky;top:0;z-index:40;background:rgba(12,15,21,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+  .rail-inner{display:flex;overflow-x:auto;scrollbar-width:none}
+  .rail-inner::-webkit-scrollbar{display:none}
+  .rail a{flex:0 0 auto;padding:13px 15px;font:600 11.5px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--dim);border-bottom:2px solid transparent;white-space:nowrap}
+  .rail a:hover{color:var(--text-2)}
+  .rail a.active{color:var(--text);border-bottom-color:var(--acc)}
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:11px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:860px){.grid2,.grid3,.grid4{grid-template-columns:1fr}}
+
+  .stat{padding:20px}
+  .stat .n{font:400 29px/1 var(--serif);color:var(--text);margin-bottom:7px}
+  .stat .l{font-size:13px;color:var(--dim);line-height:1.55}
+
+  /* pull quote from the papers */
+  .pq{border-left:2px solid var(--acc);background:linear-gradient(180deg,var(--panel-2),var(--panel));border-radius:0 10px 10px 0;padding:20px 24px;margin:24px 0}
+  .pq p{font:400 17px/1.6 var(--serif);color:var(--text);margin:0 0 10px}
+  .pq cite{display:block;font:400 12px/1.5 var(--mono);color:var(--dim);font-style:normal}
+
+  .ruleblock{border-left:2px solid var(--warn);background:rgba(217,164,65,.055);border-radius:0 8px 8px 0;padding:15px 20px;margin:22px 0;font-size:14.5px;color:var(--text-2)}
+  .ruleblock b{color:var(--warn)}
+
+  /* app mock — matches the current build: nav | work | record, chat spanning the bottom */
+  .mock{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:var(--bg-2)}
+  .mockhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel);font-size:12.5px;color:var(--text-2)}
+  .mockhead .sp{font:400 11.5px/1 var(--mono);color:var(--dim)}
+  .mocklayout{display:grid;grid-template-columns:186px 1fr 300px;grid-template-rows:auto auto;grid-template-areas:"nav work record" "nav term term"}
+  @media(max-width:900px){.mocklayout{grid-template-columns:1fr;grid-template-areas:"work" "record" "term"}.mk-nav{display:none}}
+  .mk-nav{grid-area:nav;border-right:1px solid var(--line);background:var(--panel);padding:12px;font-size:12px;display:flex;flex-direction:column;justify-content:space-between}
+  .mk-work{grid-area:work;min-width:0}
+  .mk-record{grid-area:record;border-left:1px solid var(--line);background:rgba(255,255,255,.015);padding:0 0 12px}
+  .mk-term{grid-area:term;border-top:1px solid var(--line);background:var(--panel);min-width:0}
+  .mkh{font:600 10px/1 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin:0 0 8px}
+  .mk-nav a,.mk-nav div.it{display:block;padding:4px 0;color:var(--text-2)}
+  .mk-nav .guide{color:var(--violet)}
+  .mk-nav .prog{padding:4px 8px;margin:0 -8px;border-left:2px solid transparent;color:var(--text-2)}
+  .mk-nav .prog.sel{border-left-color:var(--acc);background:var(--bg-2);color:var(--text);font-weight:600}
+  .mk-user{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+  .avatar{width:26px;height:26px;border-radius:6px;background:var(--acc);color:#0c0f15;display:grid;place-items:center;font:700 11px/1 var(--sans)}
+  .mk-tabs{display:flex;overflow-x:hidden;scrollbar-width:none;border-bottom:1px solid var(--line);
+    -webkit-mask-image:linear-gradient(90deg,#000 90%,transparent 100%);mask-image:linear-gradient(90deg,#000 90%,transparent 100%)}
+  .mk-tabs::-webkit-scrollbar{display:none}
+  .mk-tabs span{flex:0 0 auto;padding:10px 12px;font-size:11.5px;color:var(--dim);border-bottom:2px solid transparent;white-space:nowrap}
+  .mk-tabs span.on{color:var(--text);border-bottom-color:var(--acc);background:rgba(91,141,239,.06)}
+  .mk-hint{padding:7px 14px;font-size:11.5px;color:var(--dim);border-bottom:1px solid var(--line);background:rgba(91,141,239,.06)}
+  .mk-pane{padding:14px}
+  .ledhead{font:600 10px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:11px 13px 7px;border-bottom:1px solid var(--line-soft)}
+  .ledsec{font:600 10px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--dim);padding:12px 13px 6px}
+  .ledcard{margin:0 13px 7px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);font-size:11.5px;line-height:1.5;color:var(--text-2)}
+  .ledcard b{color:var(--text)}
+  .termhead{display:flex;align-items:baseline;gap:10px;padding:9px 14px;border-bottom:1px solid var(--line-soft);font-size:12.5px}
+  .termhead b{color:var(--text)}
+  .termmsgs{padding:12px 14px;display:flex;flex-direction:column;gap:9px}
+  .m{max-width:78%;padding:8px 11px;border-radius:9px;font-size:12.5px;line-height:1.55}
+  .m.a{background:var(--bg-2);border:1px solid var(--line);color:var(--text-2);align-self:flex-start}
+  .m.u{background:rgba(91,141,239,.13);border:1px solid rgba(91,141,239,.3);color:var(--text);align-self:flex-end}
+  .terminput{margin:2px 14px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg-2);padding:8px 11px;font-size:12.5px;color:var(--dim);display:flex;justify-content:space-between;align-items:center}
+  .terminput .send{background:var(--acc);color:#0c0f15;border-radius:6px;padding:4px 12px;font:600 11.5px/1 var(--sans)}
+  .capt{font-size:13.5px;color:var(--dim);margin-top:14px}
+
+  /* stages */
+  .stages{border-top:1px solid var(--line-soft);margin-top:36px}
+  .stage{border-bottom:1px solid var(--line-soft)}
+  .stage-head{width:100%;text-align:left;background:none;border:0;color:inherit;cursor:pointer;display:grid;grid-template-columns:48px 1fr auto;gap:18px;align-items:baseline;padding:21px 4px;font:inherit}
+  .stage-head:hover .st-title{color:var(--acc)}
+  .st-num{font:400 12.5px/1 var(--mono);color:var(--dim);padding-top:4px}
+  .st-title{font:400 21px/1.3 var(--serif);color:var(--text);transition:color .2s}
+  .st-sub{display:block;font:400 14px/1.55 var(--sans);color:var(--dim);margin-top:6px;max-width:64ch}
+  .st-toggle{color:var(--dim);font-size:19px;line-height:1;transition:transform .28s;padding-top:4px}
+  .stage.open .st-toggle{transform:rotate(45deg)}
+  .stage-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .34s ease}
+  .stage.open .stage-body{grid-template-rows:1fr}
+  .stage-body>div{overflow:hidden}
+  .stage-inner{padding:0 4px 26px 66px}
+  @media(max-width:700px){.stage-head{grid-template-columns:30px 1fr auto;gap:11px}.stage-inner{padding-left:41px}}
+  .stage-inner p{font-size:14.5px;margin-bottom:13px}
+  .produces{margin-top:14px;padding:12px 16px;background:var(--bg-2);border:1px solid var(--line-soft);border-radius:8px;font-size:13px;color:var(--text-2)}
+  .produces b{color:var(--doc);font-weight:600}
+
+  /* operation cards */
+  .opcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:17px 19px;margin:0 0 14px}
+  .badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;align-items:center}
+  .badge{display:inline-block;font:600 10.5px/1 var(--mono);letter-spacing:.05em;padding:5px 8px;border-radius:4px;border:1px solid var(--line);background:var(--bg-2);color:var(--text-2)}
+  .badge.move{color:var(--acc);border-color:rgba(91,141,239,.35);background:rgba(91,141,239,.09)}
+  .badge.draft{color:var(--warn);border-color:rgba(217,164,65,.32);background:rgba(217,164,65,.08)}
+  .badge.ok{color:var(--ok);border-color:rgba(63,178,127,.32);background:rgba(63,178,127,.08)}
+  .badge.d{color:var(--doc);border-color:rgba(43,138,138,.4);background:rgba(43,138,138,.1)}
+  .opcard .prop{font-size:15px;color:var(--text);margin:0 0 11px;line-height:1.55}
+  .quotes{font:400 12px/1.6 var(--mono);color:var(--dim);border-top:1px solid var(--line-soft);padding-top:10px}
+  .quotes .v{color:var(--ok)}
+
+  details.reason{margin-top:13px;border-top:1px solid var(--line-soft);padding-top:11px}
+  details.reason summary{cursor:pointer;font:600 11.5px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--acc);list-style:none;display:flex;align-items:center;gap:8px}
+  details.reason summary::-webkit-details-marker{display:none}
+  details.reason summary::before{content:"▸";transition:transform .2s;display:inline-block}
+  details.reason[open] summary::before{transform:rotate(90deg)}
+  .reasonbody{margin-top:12px;font-size:13.8px;color:var(--text-2);line-height:1.65}
+  .reasonbody blockquote{margin:10px 0;padding:9px 13px;border-left:2px solid var(--line);background:var(--bg-2);font:400 13px/1.6 var(--serif);color:var(--text-2);border-radius:0 6px 6px 0}
+  .reasonbody cite{display:block;margin-top:6px;font:400 11px/1.4 var(--mono);color:var(--dim);font-style:normal}
+
+  .decision{margin-top:15px;border:1px dashed var(--line);border-radius:9px;padding:15px 17px;background:var(--bg-2)}
+  .decision .row{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:11px}
+  .field .k,.klabel{font:600 10px/1 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+  .field .v{font:600 12.5px/1 var(--mono);padding:7px 10px;border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--text);display:inline-block}
+  .field .v.pos{color:var(--ok);border-color:rgba(63,178,127,.35)}
+  .field .v.warn{color:var(--warn);border-color:rgba(217,164,65,.35)}
+  .rationale{font:400 13.8px/1.6 var(--serif);color:var(--text-2);font-style:italic;margin-top:3px}
+  .who-decided{margin-top:11px;font:400 11px/1.5 var(--mono);color:var(--dim);border-top:1px solid var(--line-soft);padding-top:9px}
+  .refusal{border:1px solid rgba(224,108,108,.32);background:rgba(224,108,108,.055);border-radius:9px;padding:13px 17px;margin-top:15px;font-size:13.8px;color:var(--text-2)}
+  .refusal b{color:var(--bad)}
+
+  /* tables */
+  table.t{width:100%;border-collapse:collapse;font-size:13.5px;margin:16px 0}
+  table.t th,table.t td{border:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top;color:var(--text-2)}
+  table.t th{background:var(--panel);color:var(--text);font:600 11.5px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase}
+  table.t td b{color:var(--text)}
+  .tscroll{overflow-x:auto}
+
+  /* two registers */
+  .reg{padding:22px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}
+  .reg.act{border-color:rgba(63,178,127,.3)}
+  .reg.pol{border-color:rgba(217,164,65,.3)}
+  .reg .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border-radius:4px;display:inline-block;margin-bottom:12px}
+  .reg.act .tag{color:var(--ok);background:rgba(63,178,127,.1);border:1px solid rgba(63,178,127,.3)}
+  .reg.pol .tag{color:var(--warn);background:rgba(217,164,65,.09);border:1px solid rgba(217,164,65,.3)}
+  .reg ul{margin:12px 0 0;padding-left:18px}
+  .reg li{font-size:13.5px;color:var(--text-2);margin-bottom:8px;line-height:1.55}
+
+  /* burden bars */
+  .bars{margin-top:20px}
+  .barrow{display:grid;grid-template-columns:1fr 56px;gap:14px;align-items:end;padding:9px 0;border-bottom:1px solid var(--line-soft)}
+  .barrow:last-child{border-bottom:0}
+  .barlab{font-size:13.5px;color:var(--text-2)}
+  .barlab .sub{display:block;font-size:12px;color:var(--dim);margin-top:2px}
+  .bartrack{height:7px;background:var(--line-soft);border-radius:4px;overflow:hidden;margin-top:7px}
+  .bartrack i{display:block;height:100%;background:var(--acc);border-radius:4px}
+  .barval{font:600 14px/1 var(--mono);color:var(--text);text-align:right}
+
+  /* guarantees */
+  .guard{padding:20px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}
+  .guard .no{font:600 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--bad);margin-bottom:11px;display:block}
+  .guard p{font-size:13.5px;margin:0;color:var(--dim);line-height:1.6}
+
+  /* log */
+  .log{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:var(--panel)}
+  .logrow{display:grid;grid-template-columns:145px 1fr;gap:18px;padding:14px 19px;border-bottom:1px solid var(--line-soft);font-size:13.8px}
+  .logrow:last-child{border-bottom:0}
+  .logrow .t{font:400 11.5px/1.5 var(--mono);color:var(--dim)}
+  .logrow .b{color:var(--text-2)}
+  .logrow .b b{color:var(--text);font-weight:600}
+  .logrow .b .r{display:block;margin-top:4px;font-style:italic;color:var(--dim);font-size:13px}
+  @media(max-width:640px){.logrow{grid-template-columns:1fr;gap:5px}}
+  .stamp{font:400 11.5px/1.7 var(--mono);color:var(--dim);background:var(--bg-2);border:1px solid var(--line-soft);border-radius:8px;padding:14px 16px;margin-top:16px;overflow-x:auto;white-space:pre}
+  .stamp .kk{color:var(--acc)}
+
+  /* phases */
+  .phase{padding:22px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}
+  .phase .pn{font:600 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-bottom:11px}
+  .phase h3{margin-bottom:9px}
+  .phase p{font-size:13.8px;margin:0 0 11px;color:var(--text-2)}
+  .phase .crit{font-size:12.8px;color:var(--dim);border-top:1px solid var(--line-soft);padding-top:10px;margin:0}
+  .phase .crit b{color:var(--text-2)}
+
+  .closing{background:radial-gradient(90% 60% at 50% 0%,rgba(91,141,239,.075),transparent 65%);text-align:center;padding:120px 0 100px}
+  .closing h2{max-width:22ch;margin:0 auto 20px}
+  .closing p{max-width:58ch;margin:0 auto 18px}
+  footer{border-top:1px solid var(--line-soft);padding:32px 0 60px;font-size:12.5px;color:var(--dim)}
+  footer p{color:var(--dim);font-size:12.5px;line-height:1.65}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brandline rv"><span class="mark">⚖</span><span>The Rulebook Workbench</span></div>
+    <h1 class="rv">A shared evidence base for transaction and post-trade reporting harmonisation.</h1>
+    <p class="lede rv">The Taskforce is asked to find harmonisation, de-duplication and streamlining opportunities across UK MiFIR, UK EMIR and UK SFTR. Doing that well needs a citable account of where the three regimes actually diverge — and a way to compare the orders in which they could be tackled. This is a working prototype that produces exactly that.</p>
+
+    <div class="herometa rv">
+      <div><div class="k">Already run</div><div class="v">Eighteen instruments, frozen and read. Seventy-one findings.</div></div>
+      <div><div class="k">Every judgement</div><div class="v">Made and signed by a named person, with a written rationale</div></div>
+      <div><div class="k">It decides nothing</div><div class="v">Advisory working papers addressed to the Authorities</div></div>
+    </div>
+
+    <div class="scrollcue rv"><span class="bar"></span> Scroll to walk through it</div>
+  </div>
+</header>
+
+<nav class="rail">
+  <div class="wrap"><div class="rail-inner">
+    <a href="#gap">The gap</a>
+    <a href="#workbench">The workbench</a>
+    <a href="#method">The method</a>
+    <a href="#run">The run</a>
+    <a href="#findings">Findings</a>
+    <a href="#registers">Two registers</a>
+    <a href="#sequence">Sequencing</a>
+    <a href="#limit">The limit</a>
+    <a href="#refuses">What it refuses</a>
+    <a href="#proposed">What's proposed</a>
+  </div></div>
+</nav>
+
+<!-- THE GAP -->
+<section id="gap">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">01 — The problem the Taskforce faces first</div>
+      <h2 class="rv">The difficulty is not a shortage of ideas.</h2>
+      <p class="rv">Up to fifty experienced people, meeting roughly every two months over an eighteen-month term, will generate more candidate harmonisations than the Taskforce can evaluate. Most will arrive as assertions — one regime defines a term differently from another, this field is collected twice, that requirement duplicates another — and there is no shared apparatus for establishing which assertions are correct, how much reporting volume each touches, and whether fixing any given one would change what firms are actually required to do.</p>
+      <p class="rv">That last question is the dividing line that determines what the Authorities can act on quickly. A divergence resolvable without altering any firm's obligations is available to the FCA and the Bank through their own technical standards and guidance. A divergence whose resolution would remove or alter a duty is a policy decision requiring consultation, and possibly statutory change. Both are worth finding. They are not the same kind of finding, and an output that mixes them is harder for officials to act on than one that separates them.</p>
+
+      <div class="pq rv">
+        <p>“As defined above, please rank in order of importance: De-duplication / Streamlining / Harmonisation.”</p>
+        <cite>Strategy Working Group — preparation work, Part 1</cite>
+      </div>
+
+      <p class="rv">The three levers are not independent. A firm cannot stop filing a duplicate report until two regimes agree what counts as the same trade; a field cannot safely be deleted until someone establishes which regime or source holds that data authoritatively. Work done in one order may have to be redone in another. The order has not been decided, and there are reasonable arguments for more than one. That decision deserves evidence rather than instinct.</p>
+
+      <div class="ruleblock rv"><b>What this looks like if it works.</b> A single register the Taskforce and the Authorities both work from, in which every claimed divergence between the three regimes is a numbered entry with the text that establishes it, the volume of reporting it touches, and a stated position on whether resolving it changes any firm's obligations — so that argument moves from whether a problem exists to what should be done about it.</div>
+    </div>
+
+    <div class="kicker rv narrow">What already exists — and the gap none of it fills</div>
+    <div class="grid3 rv">
+      <div class="panel stat"><div class="n" style="font-size:17px;font-family:var(--sans);font-weight:600">CP25/32</div><div class="l">Already reshaping the MiFIR field set. Any harmonisation analysis must take the post-consultation position as its reference point, not the current one.</div></div>
+      <div class="panel stat"><div class="n" style="font-size:17px;font-family:var(--sans);font-weight:600">UK EMIR Refit</div><div class="l">Recently implemented, so the EMIR field set and validation rules are comparatively settled and well documented.</div></div>
+      <div class="panel stat"><div class="n" style="font-size:17px;font-family:var(--sans);font-weight:600">Published validation rules</div><div class="l">The Bank's and the FCA's rules and schemas are already substantially machine-readable — much of the raw material this needs has been produced by the Authorities for other reasons.</div></div>
+      <div class="panel stat"><div class="n" style="font-size:17px;font-family:var(--sans);font-weight:600">CDE and ISO 20022</div><div class="l">International data standardisation supplies definitions the UK regimes can align to without either regime having to defer to the other.</div></div>
+      <div class="panel stat"><div class="n" style="font-size:17px;font-family:var(--sans);font-weight:600">Industry modelling</div><div class="l">Cross-regime concept modelling is technically mature. That is evidence of feasibility — not an argument that the Authorities should adopt any particular industry model.</div></div>
+      <div class="panel stat" style="border-color:rgba(91,141,239,.35)"><div class="n" style="font-size:17px;font-family:var(--sans);font-weight:600;color:var(--acc)">The gap</div><div class="l">A systematic, citable account of where the three regimes diverge from one another, held in one place, in a form that supports comparison of alternative reform sequences.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- THE WORKBENCH -->
+<section id="workbench">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">02 — The workbench</div>
+      <h2 class="rv">Four panels. The work in the middle, the record on the right, the conversation underneath.</h2>
+      <p class="rv">Programs and guides on the left. The working area in the middle, its tabs following the method left to right. On the right, a read-only <strong>Record</strong> panel that re-scopes to whichever tab you are on and shows the decisions taken in that phase, the models that actually ran, and the conversation behind them. Along the bottom, the interview — which becomes source discovery when you are assembling the corpus.</p>
+    </div>
+
+    <div class="mock rv" style="margin-top:32px">
+      <div class="mockhead"><span>Rulebook Workbench <span class="dim">M1 · advisory prototype</span></span><span class="sp">spend $17.84 · within cap</span></div>
+      <div class="mocklayout">
+        <div class="mk-nav">
+          <div>
+            <div class="mkh">Guides</div>
+            <a class="guide">How to read the Workbench</a>
+            <a class="guide">About the workbench &amp; the method</a>
+            <a class="guide">Reviewer's Guide — Refactor</a>
+            <a class="guide">Reviewer's Guide — Redesign</a>
+            <div class="mkh" style="margin-top:14px">Programs</div>
+            <div class="prog sel">uk-reporting-divergence</div>
+            <div class="prog">lifecycle-events-family</div>
+          </div>
+          <div class="mk-user">
+            <div class="avatar">MH</div>
+            <div style="font-size:11.5px;line-height:1.3">Mike Hsu<div class="dim" style="font-size:10px">Program Owner</div></div>
+          </div>
+        </div>
+
+        <div class="mk-work">
+          <div class="mk-tabs">
+            <span>Overview</span><span>Purpose</span><span>Corpus</span><span>Derived Blueprint</span><span class="on">Refactor</span><span>Redesign</span><span>Target Blueprint</span><span>Align</span><span>Setup</span>
+          </div>
+          <div class="mk-hint">Proposed clean-ups you decide one at a time; each is labelled by its effect, and anything that would change the law is set aside, not done here.</div>
+          <div class="mk-pane">
+            <div class="badges">
+              <span class="badge d">Queue 23 / 71</span><span class="badge">Mode: refactor</span><span class="badge ok">Corpus frozen · 18 instruments</span>
+            </div>
+            <div class="opcard" style="margin:0">
+              <div class="badges">
+                <span class="badge move">CANONICALIZE-DEFINITION</span><span class="badge draft">draft: clarify (medium)</span>
+              </div>
+              <p class="prop" style="font-size:14px;margin-bottom:10px">Adopt a single definition of <em>financial counterparty</em> across the UK EMIR onshoring instrument and UK SFTR.</p>
+              <div class="quotes">targets 2 · quotes <span class="v">4/4 ✓</span> verified &nbsp;·&nbsp; ▸ details</div>
+            </div>
+            <div class="opcard" style="margin:12px 0 0;opacity:.62">
+              <div class="badges">
+                <span class="badge move">MERGE</span><span class="badge draft">draft: clarify (high)</span>
+              </div>
+              <p class="prop" style="font-size:14px;margin-bottom:10px">Record the duty to notify errors and omissions once, with the MiFIR, EMIR and SFTR guidance statements as its sources.</p>
+              <div class="quotes">targets 3 · quotes <span class="v">3/3 ✓</span> verified &nbsp;·&nbsp; ▸ details</div>
+            </div>
+            <div class="opcard" style="margin:12px 0 0;opacity:.3">
+              <div class="badges">
+                <span class="badge move">DEFINE-TERM</span><span class="badge draft">draft: fill_gap (low)</span>
+              </div>
+              <p class="prop" style="font-size:14px;margin-bottom:0">“Reportable financial instrument” is relied on but not defined in the guidance…</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mk-record">
+          <div class="ledhead">Record — refactor</div>
+          <div class="ledsec">Decisions (23)</div>
+          <div class="ledcard"><b>F-041 · disposition</b><br>park — change<br><span class="dim">M. Hsu (Program Owner) — entity lists differ; unifying would change who reports</span></div>
+          <div class="ledcard"><b>F-038 · disposition</b><br>accept — clarify<br><span class="dim">M. Hsu (Program Owner) — same duty, three statements</span></div>
+          <div class="ledsec">Models used (3)</div>
+          <div class="ledcard"><b>Obligation extraction</b><br><span class="dim">model A · 214 calls · $9.62</span></div>
+          <div class="ledcard"><b>Effect classification</b><br><span class="dim">model B · 71 calls · $4.41</span></div>
+          <div class="ledcard"><b>Judging</b><br><span class="dim">model C · 71 calls · $3.81</span></div>
+          <div class="ledsec">Conversation (12)</div>
+          <div class="ledcard"><span class="dim" style="font-size:10px;text-transform:uppercase;letter-spacing:.05em">assistant · interview</span><br>Is this a cleanup or a reshape?</div>
+        </div>
+
+        <div class="mk-term">
+          <div class="termhead"><b>Interview</b><span class="dim">interview complete</span></div>
+          <div class="termmsgs">
+            <div class="m a">Which decision is this programme meant to support?</div>
+            <div class="m u">The Taskforce's choice of order between harmonisation, de-duplication and streamlining — and separating what the Authorities can act on directly from what needs consultation.</div>
+            <div class="m a">Understood. That is a refactor-mode purpose: describe divergence faithfully, change no obligation. Anything that would alter what firms must do will be set aside into a separate register rather than actioned. Shall I draft the Purpose Statement on that basis?</div>
+          </div>
+          <div class="terminput"><span>Your answer…</span><span class="send">Send</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="narrow"><p class="capt rv">Different tasks run on deliberately different models — the model that drafts a classification is not the model that extracted the obligation, and the system enforces that diversity against the runs actually made. Every call carries a provenance stamp; the Record panel shows what actually ran, not what was configured.</p></div>
+  </div>
+</section>
+
+<!-- THE METHOD -->
+<section id="method">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">03 — The method</div>
+      <h2 class="rv">A fixed sequence. Each step leaves a document you can open and read.</h2>
+      <p class="rv">A corpus is assembled and frozen; each instrument is read and its obligations, definitions and cross-references extracted with verbatim citations; the extractions are compared to surface divergences; each divergence is worked into one or more proposed changes to the analytical picture; and each proposal is classified, reviewed and either adopted or set aside by a named person.</p>
+    </div>
+
+    <div class="stages rv">
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">01</span><span><span class="st-title">Purpose</span><span class="st-sub">What the programme is for, agreed and ratified before any analysis runs.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>A short structured interview pins down the scope, the decision the result must support, and the mode election: <strong>refactor</strong> (describe and tidy the analytical picture without altering any obligation) or <strong>redesign</strong> (reshape it against objectives someone with authority has adopted).</p>
+          <p>The mode is declared up front and frozen. In refactor mode a proposal that would alter a duty cannot be completed, however sensible it looks. That single election is what makes everything after it auditable.</p>
+          <div class="produces">Produces → <b>Purpose Statement</b> — typed, schema-enforced, ratified by a named person with a written rationale</div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">02</span><span><span class="st-title">Corpus</span><span class="st-sub">The exact set of instruments the analysis rests on — content-hashed and frozen before anything is read.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>Source discovery runs in the panel along the bottom: the system proposes candidate instruments, a person confirms or sets each aside with a logged reason, and the resulting list is frozen with a fingerprint. The analysis cannot then shift quietly onto different sources.</p>
+          <p>All material here is published. Where firms later contribute cost or volume data, the system already separates governed from restricted storage.</p>
+          <div class="produces">Produces → <b>Frozen manifest</b> — hashed, dated, with every set-aside recorded</div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">03</span><span><span class="st-title">Derived Blueprint</span><span class="st-sub">The three regimes as they actually stand. Faithful, not tidy.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>Every duty (who must do what, when, above what threshold, with what exceptions), every defined term, and every cross-reference, each carrying a verbatim quotation checked mechanically against the source. A quotation that does not appear in the source text is rejected by the system rather than reviewed by a human.</p>
+          <p><strong>Faithful means faithful.</strong> Where the instruments contradict one another or define a term two ways, the blueprint records the divergence rather than resolving it. Resolution is a later step, taken by a person, on the record.</p>
+          <div class="produces">Produces → <b>Derived Blueprint</b> + <b>Divergence Register</b> — the numbered findings, each with the text that establishes it</div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">04</span><span><span class="st-title">Refactor</span><span class="st-sub">Each divergence worked into a proposal, and each proposal decided by a person. This is where expert time concentrates.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>Proposals are drawn from a fixed whitelist of named moves — merge, canonicalise a definition, define a term, resolve a cross-reference, relocate, repeal, factor out an exception. There is no free-form rewrite, so every proposal has a type and every type has rules.</p>
+          <p>Each arrives with a <em>drafted</em> effect class and a confidence, written by a different model from the one that extracted the obligation. That draft is advice with no weight of its own; the reviewer's classification is the record, and it is retained alongside for audit.</p>
+          <div class="produces">Produces → <b>Dispositioned register</b> + <b>register of policy questions</b> requiring consultation</div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">05</span><span><span class="st-title">Redesign</span><span class="st-sub">Only where changing requirements is the declared purpose — and then under tighter control, not looser.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>A person or body with actual authority first adopts and ranks a short list of objectives, stated as outcomes rather than instruments. Every proposed change must then name the objective it serves; one with no objective behind it cannot enter review at all — it is returned, not rejected.</p>
+          <p>Where a move advances one objective at another's cost and the ranking is silent, nobody in the queue may resolve it. It goes back up as a proposed amendment. The workbench surfaces trade-offs; it does not price them.</p>
+          <div class="produces">Produces → <b>Ratified objectives</b> · <b>Misalignment Register</b> · dispositioned changes, each signed</div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">06</span><span><span class="st-title">Target Blueprint</span><span class="st-sub">The analytical picture after the decisions — including what was deliberately left undecided.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>The Derived Blueprint plus every adopted proposal, each still carrying who adopted it and why, and an explicit list of what was set aside. That list is not a failure; it is the honest record of what cannot be settled without a policy decision somebody has to own.</p>
+          <div class="produces">Produces → <b>Target Blueprint</b> — an advisory description of a possible target state, addressed to the Authorities</div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">07</span><span><span class="st-title">Align</span><span class="st-sub">Where every original provision ends up, and a check that a tidy-up really did not change what firms must do.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>A crosswalk: every source provision on the left, its treatment on the right — merged, retained, or set aside — each with a reason. Above it sits the effect-class audit, the mechanical confirmation of the human claim that nothing in the exercise altered an obligation.</p>
+          <div class="produces">Produces → <b>Crosswalk</b> + <b>effect-class audit</b></div>
+        </div></div></div>
+      </div>
+
+      <div class="stage">
+        <button class="stage-head"><span class="st-num">08</span><span><span class="st-title">Setup</span><span class="st-sub">Which model does which task — chosen, then locked as a ratified decision.</span></span><span class="st-toggle">+</span></button>
+        <div class="stage-body"><div><div class="stage-inner">
+          <p>Model assignment per task is itself a decision that must be taken and locked before the corpus can be frozen. What actually ran, at what cost, appears in the Record panel — so the configuration and the execution can be compared after the fact.</p>
+          <div class="produces">Produces → <b>Locked model assignment</b> — logged, stamped, and diversity-checked at call time</div>
+        </div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE RUN -->
+<section id="run">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">04 — It has already been run on the UK regimes</div>
+      <h2 class="rv">Eighteen instruments, frozen and read. Seventy-one findings.</h2>
+      <p class="rv">The corpus covers UK MiFIR, UK EMIR and UK SFTR as onshored; the retained technical standards for each; SUP 17 and 17A; the FCA and Bank validation-rule guidance for all three regimes; the relevant EU Exit statutory instruments; PRA Rulebook cross-references; and the inherited ESMA material. It was frozen, each instrument read and extracted, and four comparison passes run.</p>
+    </div>
+
+    <div class="grid4 rv" style="margin:30px 0">
+      <div class="panel stat"><div class="n">18</div><div class="l">Instruments in the frozen corpus, content-hashed before analysis began</div></div>
+      <div class="panel stat"><div class="n">71</div><div class="l">Findings across four comparison passes, each traced to verbatim text</div></div>
+      <div class="panel stat"><div class="n">~$0.25</div><div class="l">Computational cost per finding analysed — the whole run cost a few tens of dollars</div></div>
+      <div class="panel stat"><div class="n">0</div><div class="l">Classifications made by a model. Every effect determination is a named person's</div></div>
+    </div>
+
+    <div class="narrow">
+      <div class="kicker rv" style="margin-top:8px">A representative selection of what the run found</div>
+    </div>
+    <div class="tscroll rv">
+      <table class="t">
+        <tr><th style="width:24%">Type of divergence</th><th>Example from the run</th></tr>
+        <tr><td><b>Divergent definitions</b></td><td>“financial counterparty” is defined differently by UK SFTR and the EMIR onshoring instrument; “trade repository” differs across the regime families; “compression” differs between the MiFIR and EMIR technical standards</td></tr>
+        <tr><td><b>Duplicated requirements</b></td><td>the duty to notify errors and omissions is separately stated in the MiFIR, EMIR and SFTR guidance; the clearing-day reporting rule appears in both the EMIR and SFTR standards</td></tr>
+        <tr><td><b>Undefined material terms</b></td><td>financial and non-financial counterparty status determines who reports, yet is not defined in the guidance that relies on it; “reportable financial instrument” is left to firms to determine</td></tr>
+        <tr><td><b>Conflicting requirements</b></td><td>MiFIR requires reporting by close of the following working day; EMIR and SFTR use “the working day following”. Where a firm faces a non-financial counterparty, EMIR mandates single-sided reporting while the default elsewhere is that both report</td></tr>
+        <tr><td><b>Scope inconsistencies</b></td><td>non-financial counterparties are within EMIR but outside UK SFTR; MiFIR is disapplied to securities financing transactions while a flag for them persists in the MiFIR technical standard</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FINDINGS WALKED -->
+<section id="findings">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">05 — Three findings, walked through</div>
+      <h2 class="rv">The interesting part is not what the model proposed. It is what the reviewer did with it.</h2>
+      <p class="lede rv">One straightforward adoption, one where the governance held under pressure, and one the system refused to complete.</p>
+
+      <div class="kicker rv">Finding F-038 — the straightforward adoption</div>
+      <div class="opcard rv">
+        <div class="badges"><span class="badge move">MERGE</span><span class="badge draft">draft: clarify (high)</span><span class="badge d">duplicated requirement</span></div>
+        <p class="prop">The duty to notify errors and omissions is separately stated in the MiFIR, EMIR and SFTR guidance. Record it once in the blueprint, with the three statements as its sources.</p>
+        <div class="quotes">targets 3 &nbsp;·&nbsp; quotes <span class="v">3/3 ✓ verified against the frozen corpus</span></div>
+        <details class="reason">
+          <summary>Details — the model's reasoning</summary>
+          <div class="reasonbody">
+            <p>Three separate guidance statements impose the same duty on the same population, in materially the same terms. They were compared element by element — who is bound, what must be notified, to whom, and within what period — rather than by phrasing.</p>
+            <blockquote>…must notify the FCA of any errors or omissions in transaction reports…<cite>MiFIR guidance · quote verified ✓</cite></blockquote>
+            <blockquote>…shall notify… of errors and omissions in reported details…<cite>EMIR guidance · quote verified ✓</cite></blockquote>
+            <p><strong>Draft classification: clarify (high).</strong> Recording one duty with three sources changes nothing a firm must do; it removes the impression that three separate duties exist. Drafted by a different model from the one that extracted the obligations, per diversity policy.</p>
+          </div>
+        </details>
+        <div class="decision">
+          <div class="row">
+            <div class="field"><div class="k">Reviewer's effect class</div><div class="v">clarify</div></div>
+            <div class="field"><div class="k">Action</div><div class="v pos">accept</div></div>
+          </div>
+          <div class="klabel">Rationale</div>
+          <div class="rationale">“Same duty, same population, three statements. Consolidating the description alters no obligation. Available to the Authorities through guidance.”</div>
+          <div class="who-decided">M. Hsu · Program Owner · written to the append-only decision log · routed to the register the Authorities can act on directly</div>
+        </div>
+      </div>
+
+      <div class="kicker rv">Finding F-041 — where the governance held</div>
+      <div class="opcard rv">
+        <div class="badges"><span class="badge move">CANONICALIZE-DEFINITION</span><span class="badge draft">draft: clarify (medium)</span><span class="badge d">divergent definition</span></div>
+        <p class="prop">Adopt a single definition of <em>financial counterparty</em> across the UK EMIR onshoring instrument and UK SFTR.</p>
+        <div class="quotes">targets 2 &nbsp;·&nbsp; quotes <span class="v">4/4 ✓ verified</span></div>
+        <details class="reason">
+          <summary>Details — and why the reviewer overrode the draft</summary>
+          <div class="reasonbody">
+            <p>The proposal is attractive on its face: one term, two regimes, two definitions, and harmonisation is the Taskforce's first-named objective. The quotations are genuine and verified.</p>
+            <p>But the two regimes <strong>enumerate different lists of entities</strong>. Unifying the definition would not describe the position more clearly — it would move entities into or out of scope, and therefore change who has to report. That is a policy decision requiring consultation, not a description.</p>
+            <p class="dim">The system reached this outcome without anyone having to catch the error: the reviewer's classification routed the finding automatically, and the refactor-mode gate would have refused an adoption had one been attempted.</p>
+          </div>
+        </details>
+        <div class="decision">
+          <div class="row">
+            <div class="field"><div class="k">Reviewer's effect class</div><div class="v warn">change</div></div>
+            <div class="field"><div class="k">Action</div><div class="v warn">set aside → policy register</div></div>
+          </div>
+          <div class="klabel">Rationale</div>
+          <div class="rationale">“The regimes enumerate different entity lists. Unifying the definition would change who has to report. Records the divergence; the resolution is a consultation question.”</div>
+          <div class="who-decided">M. Hsu · Program Owner · reviewer classification overrode the drafted class (clarify → change) · drafted class retained for audit</div>
+        </div>
+      </div>
+      <p class="capt rv">The finding is not lost, and nor is it quietly actioned. It becomes a numbered entry in the register of policy questions, with the text that establishes the divergence attached — which is precisely the form in which it is useful to officials deciding what to consult on.</p>
+
+      <div class="kicker rv">Finding F-057 — the one the system refused to complete</div>
+      <div class="opcard rv">
+        <div class="badges"><span class="badge move">RESOLVE-CROSS-REFERENCE</span><span class="badge draft">draft: codify (medium)</span><span class="badge d">scope inconsistency</span></div>
+        <p class="prop">MiFIR is disapplied to securities financing transactions, yet a flag for them persists in the MiFIR technical standard. Resolve the residual reference.</p>
+        <div class="quotes">targets 2 &nbsp;·&nbsp; quotes <span class="v">2/2 ✓ verified</span></div>
+        <div class="refusal"><b>Refused.</b> The reviewer selected effect class <span style="font-family:var(--mono)">change</span> with action <span style="font-family:var(--mono)">accept</span>. In refactor mode a change-class proposal cannot be completed; the system declined the disposition and stated why. It was re-submitted as <span style="font-family:var(--mono)">unresolved</span>.</div>
+        <div class="decision">
+          <div class="row">
+            <div class="field"><div class="k">Reviewer's effect class</div><div class="v warn">unresolved</div></div>
+            <div class="field"><div class="k">Action</div><div class="v warn">set aside → policy register</div></div>
+          </div>
+          <div class="klabel">Rationale</div>
+          <div class="rationale">“Whether the residual flag is a drafting artefact or carries operative effect is a substantive judgement about scope. Not the analyst's to make.”</div>
+          <div class="who-decided">M. Hsu · Program Owner · refusal and re-submission both logged · one of two findings recorded as beyond what the exercise could properly resolve</div>
+        </div>
+      </div>
+      <p class="capt rv">Verified quotations mean the words are real. They do not mean the argument is right, and they certainly do not mean the change is safe. That distinction is the whole of the reviewer's job — and the reason the register is worked by people rather than cleared by a model.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TWO REGISTERS -->
+<section id="registers">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">06 — The separation that matters to officials</div>
+      <h2 class="rv">Two registers, not one list.</h2>
+      <p class="rv">Every finding leaves the review classified into one of two places. The classification is a named person's, with a written rationale, and the software refuses to complete an operation without one.</p>
+    </div>
+
+    <div class="grid2 rv" style="margin-top:30px">
+      <div class="reg act">
+        <span class="tag">Available to the Authorities directly</span>
+        <h3>Resolvable without altering any firm's obligations</h3>
+        <p style="font-size:13.8px">Actionable through the FCA's and the Bank's own technical standards and guidance. Typically:</p>
+        <ul>
+          <li>the same duty separately stated in each regime's guidance, recorded once with three sources</li>
+          <li>a cross-reference pointing at a provision that no longer exists</li>
+          <li>a term used consistently in substance but described in three different ways</li>
+          <li>obsolete provisions with no remaining operative effect</li>
+        </ul>
+      </div>
+      <div class="reg pol">
+        <span class="tag">Requires consultation</span>
+        <h3>Resolution would remove or alter a duty</h3>
+        <p style="font-size:13.8px">A policy decision, possibly needing statutory change. Recorded as a numbered question with its evidence attached. Typically:</p>
+        <ul>
+          <li>definitions whose unification would move entities into or out of scope</li>
+          <li>conflicting deadlines where picking a winner changes what a firm must do</li>
+          <li>single-sided versus dual-sided reporting where the regimes differ by design</li>
+          <li>findings the exercise records as beyond what it can properly resolve</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="narrow"><div class="ruleblock rv"><b>Why the split is the point.</b> Both kinds of finding are worth having. They are not the same kind of finding, and an output that mixes them is harder for officials to act on than one that separates them. The first register is a work programme the Authorities already have the competence to execute. The second is an agenda for consultation, arriving with its evidence rather than needing it assembled later.</div></div>
+  </div>
+</section>
+
+<!-- SEQUENCING -->
+<section id="sequence">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">07 — Comparing sequences, rather than assuming one</div>
+      <h2 class="rv">The Taskforce has not chosen an order. The tool should not choose one either.</h2>
+      <p class="rv">Once divergences are recorded at the level of individual data elements, the dependencies between them can be computed rather than debated. If a proposal to stop collecting a field twice depends on two regimes first agreeing what the field means, the register knows it. The same set of findings can then be run against each candidate ordering and what each one costs reported on five measures.</p>
+    </div>
+
+    <div class="tscroll rv">
+      <table class="t">
+        <tr><th style="width:30%">Measure</th><th>The question it answers</th></tr>
+        <tr><td><b>Rework</b></td><td>How much work would have to be done twice, because a later phase changes a definition an earlier phase relied on?</td></tr>
+        <tr><td><b>Early coverage</b></td><td>What share of reporting volume is addressed before the first decision point?</td></tr>
+        <tr><td><b>Blocked findings</b></td><td>How many items cannot properly be worked in the phase they are assigned to?</td></tr>
+        <tr><td><b>When policy questions surface</b></td><td>Do the questions requiring consultation emerge early enough to be acted on within the Taskforce's term?</td></tr>
+        <tr><td><b>Dependence on statutory change</b></td><td>How much of an ordering's value requires change beyond the FCA's and the Bank's own competence, and is therefore slower in practice?</td></tr>
+      </table>
+    </div>
+
+    <div class="narrow">
+      <div class="ruleblock rv"><b>The tool ranks; it does not choose.</b> The output is a comparison with its assumptions stated, for the Taskforce to weigh. Where the Taskforce elects an order that works items ahead of their dependencies, the system does not refuse — it records which items are affected and requires the choice to be acknowledged in writing. Where no order is elected, whatever default the software applies is labelled in every output as a default the Taskforce did not choose, so that silence never resembles a decision.</div>
+      <p class="rv">On the estimates of volume and burden that make the comparison possible: these begin as one member's cross-firm estimates and are labelled as such throughout, with every figure carrying its basis and confidence. The register is designed for firms to overwrite them with their own cost accounting. That path — from one person's estimate to the Taskforce's evidence base — is the point of holding the figures in a structured register at all.</p>
+
+      <div class="kicker rv">Where the burden is estimated to sit today</div>
+      <p class="rv" style="font-size:14px">One member's estimate of the distribution of business-as-usual reporting burden, offered as a hypothesis for the Taskforce to test against firms' own numbers. The shape matters more than any individual figure.</p>
+      <div class="bars rv">
+        <div class="barrow"><div class="barlab">Data quality, validation and reconciliation<span class="sub">controls, exception management, investigations, fixing rejected reports</span><div class="bartrack"><i style="width:100%"></i></div></div><div class="barval">26%</div></div>
+        <div class="barrow"><div class="barlab">Data sourcing and acquisition<span class="sub">obtaining, mapping and integrating from upstream and external sources</span><div class="bartrack"><i style="width:84.6%"></i></div></div><div class="barval">22%</div></div>
+        <div class="barrow"><div class="barlab">Technology and systems<span class="sub">build, maintenance and support of platforms and interfaces</span><div class="bartrack"><i style="width:57.7%"></i></div></div><div class="barval">15%</div></div>
+        <div class="barrow"><div class="barlab">Reporting operations and support teams<span class="sub">BAU reporting, monitoring, oversight, regulatory engagement</span><div class="bartrack"><i style="width:46.2%"></i></div></div><div class="barval">12%</div></div>
+        <div class="barrow"><div class="barlab">Data maintenance and governance<span class="sub">reference data, business rules, documentation, procedures</span><div class="bartrack"><i style="width:38.5%"></i></div></div><div class="barval">10%</div></div>
+        <div class="barrow"><div class="barlab">Back reporting, remediation and corrections<span class="sub">completing E&amp;Os and back reporting exercises</span><div class="bartrack"><i style="width:30.8%"></i></div></div><div class="barval">8%</div></div>
+        <div class="barrow"><div class="barlab">Third-party providers<span class="sub">ARMs, TRs, vendors, assurance providers, managed services</span><div class="bartrack"><i style="width:26.9%"></i></div></div><div class="barval">7%</div></div>
+      </div>
+      <p class="capt rv">Roughly half the burden sits in sourcing, quality and reconciliation. The number of interpretive decision points and external dependencies drives both; the number of fields drives neither. Removing a field already embedded in firms' systems does not release the technology and third-party costs, which stay largely fixed while the architecture stays the same.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE LIMIT -->
+<section id="limit">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">08 — What the run does not yet see</div>
+      <h2 class="rv">The more useful result is where the current approach falls short.</h2>
+      <p class="rv">The seventy-one findings concern the legal text of the three regimes: definitions, cross-references, obsolete provisions, duplicated duties. They contain almost nothing about the data the regimes collect.</p>
+    </div>
+
+    <div class="grid2 rv" style="margin-top:28px">
+      <div class="panel stat"><div class="n" style="color:var(--warn)">48% / 45%</div><div class="l">Valuation updates as a share of transaction-level activity under EMIR and SFTR respectively, on the Taskforce's own figures — and the run says nothing about them</div></div>
+      <div class="panel stat"><div class="n" style="color:var(--warn)">38%</div><div class="l">Position components as a share of EMIR transaction-level volumes — likewise absent from the findings</div></div>
+      <div class="panel stat"><div class="n" style="color:var(--warn)">Static data</div><div class="l">Counterparty identifiers, entity attributes and instrument data restated on every message though published authoritatively elsewhere — not visible to the analysis</div></div>
+      <div class="panel stat"><div class="n" style="color:var(--warn)">ETDs, twice</div><div class="l">The same instrument reported to the FCA under MiFIR and to a Trade Repository under EMIR, on different event models — not visible either</div></div>
+    </div>
+
+    <div class="narrow">
+      <div class="ruleblock rv" style="margin-top:26px"><b>The reason is structural.</b> The analysis models instruments and provisions, not data elements — so it cannot see element-level duplication, which is where most of the reporting burden sits. Closing that gap is the substance of what would need to be built.</div>
+      <p class="rv">This is stated plainly because a tool that only reports its successes is not much use as an evidence base. The legal-text layer was the right place to start — it is where the method's guarantees are easiest to verify — but it is not where the Taskforce's problem lives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT REFUSES -->
+<section id="refuses">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">09 — Four properties, and four refusals</div>
+      <h2 class="rv">The trustworthy part of a tool like this is the list of things it will not do.</h2>
+    </div>
+
+    <div class="grid2 rv" style="margin-top:30px">
+      <div class="guard"><h3>Everything is cited, and citations are checked mechanically</h3><p>Every finding and every proposal carries verbatim quotations from the source instruments. Quotations that do not appear in the source text are rejected by the system rather than reviewed by a human. A finding that cannot be evidenced does not enter the register.</p></div>
+      <div class="guard"><h3>Every judgement is a person's</h3><p>Language models read, compare and draft. They classify nothing. Whether a proposed change would alter a firm's obligations is determined by a named human reviewer with a written rationale; the model's suggestion is retained alongside for audit and carries no weight on its own.</p></div>
+      <div class="guard"><h3>Changes to obligations cannot be made by accident</h3><p>Where a reviewer classifies a proposal as altering what firms must do, the system refuses to complete it in a harmonisation exercise and sets it aside into the register of policy questions. This is enforced in the software, not by convention.</p></div>
+      <div class="guard"><h3>Every decision is logged, permanently</h3><p>The corpus is content-hashed and frozen before analysis begins; each decision is written to an append-only log with the decider, their role, the time and the reasoning. The output can be audited long after the fact by someone who was not present.</p></div>
+    </div>
+
+    <div class="grid4 rv" style="margin-top:18px">
+      <div class="guard"><span class="no">Does not</span><p>Draft rules or produce operative legal text. Its outputs are advisory descriptions of a possible target state, addressed to an authority.</p></div>
+      <div class="guard"><span class="no">Does not</span><p>Express regulatory requirements as executable code. This is not a policy-as-code proposal; the statutory instruments, technical standards and Handbook text remain the sole authoritative sources throughout.</p></div>
+      <div class="guard"><span class="no">Does not</span><p>Decide anything, or hold a view on what the Taskforce should recommend. Where its analysis and the instruments differ, the instruments govern, without qualification.</p></div>
+      <div class="guard"><span class="no">Does not</span><p>Require the Authorities to adopt any external standard, technology or vendor. Where an international standard supplies a neutral definition, the register records it as available. It mandates nothing.</p></div>
+    </div>
+
+    <div class="narrow">
+      <div class="kicker rv">The questions it should expect</div>
+      <div class="tscroll rv">
+        <table class="t">
+          <tr><th style="width:34%">Objection</th><th>Response</th></tr>
+          <tr><td><b>“Is an AI making regulatory judgements?”</b></td><td>No. Models read, compare and draft; they classify nothing and decide nothing. Every determination of whether a change would alter firms' obligations is made by a named person with a written rationale, and the software refuses to complete an operation without one. Quotations are verified against source text mechanically, so a fabricated citation cannot enter the register.</td></tr>
+          <tr><td><b>“Who owns the interpretation?”</b></td><td>The Authorities, entirely. The tool produces an analytical description of where instruments diverge. It is not a source of interpretation and confers no authority.</td></tr>
+          <tr><td><b>“Does this presuppose an answer on sequencing?”</b></td><td>It is designed not to. Any default ordering is labelled as a default, alternative orderings are compared on the same evidence, and the comparison is offered for the Taskforce to weigh rather than as a recommendation.</td></tr>
+          <tr><td><b>“Does it duplicate CP25/32 or the Refit?”</b></td><td>No. Those set what the requirements are; this describes where the three regimes diverge from one another once they are set. The consultation outcome would be the reference point for the analysis, not a competitor to it.</td></tr>
+          <tr><td><b>“Are we being asked to adopt a standard, a vendor or a technology?”</b></td><td>No. It recommends nothing, mandates nothing, and takes no position on how firms build.</td></tr>
+          <tr><td><b>“What about confidentiality?”</b></td><td>The corpus is published material. The system already separates governed from restricted storage; any firm-supplied figures would be held under whatever confidentiality terms the Taskforce sets, and the analytical registers would carry only what firms agree to publish.</td></tr>
+          <tr><td><b>“What does it cost?”</b></td><td>The computational cost is negligible — roughly a quarter of a dollar per finding analysed, so the entire existing run cost a few tens of dollars. The real cost is expert human time reviewing findings and classifying effects, which cannot be automated without destroying the value.</td></tr>
+          <tr><td><b>“What if the estimates are wrong?”</b></td><td>They probably are, in detail. They are labelled as estimates with their basis stated, the comparison is reported both with and without them, and the register is built for firms to replace them with real figures. The shape of the distribution matters more than any individual number, and the shape is testable.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S PROPOSED -->
+<section id="proposed">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">10 — What is proposed</div>
+      <h2 class="rv">Nothing is proposed for adoption.</h2>
+      <p class="rv">What follows is a description of what could be built and on what terms, offered so that colleagues can judge whether it is worth the Taskforce's attention — most naturally the Architecture Working Group's, given its remit on technology to streamline reporting.</p>
+    </div>
+
+    <div class="grid3 rv" style="margin-top:30px">
+      <div class="phase">
+        <div class="pn">Phase 1 · approximately five weeks</div>
+        <h3>A worked example, for discussion</h3>
+        <p>Take one concept family — how a trade's lifecycle events are represented, where EMIR uses a defined vocabulary of action types, SFTR uses another, and MiFIR has no clean equivalent — and model it exhaustively at field level across all three regimes. Produce the divergence register for that family, with citations, and a worked sequence comparison over it.</p>
+        <p class="crit"><b>Success criterion:</b> members with direct reporting experience agree the register describes real divergences accurately and that nothing material in that family is missing.<br><br><b>Off-ramp:</b> if the register is wrong, incomplete, or tells members nothing they did not already know, the work stops here having cost five weeks and no institutional commitment.</p>
+      </div>
+      <div class="phase">
+        <div class="pn">Phase 2 · subject to Phase 1</div>
+        <h3>Extension across the field sets</h3>
+        <p>Extend the element-level model to the full field sets of the three regimes, drawing on the Authorities' published validation rules and schemas, and produce the complete divergence register, the register of policy questions requiring consultation, and the sequence comparison across all three levers.</p>
+        <p class="crit"><b>Success criterion:</b> the register is complete enough to serve as a shared reference for Taskforce discussion, and the separation between what the Authorities can act on directly and what needs consultation holds up to scrutiny.</p>
+      </div>
+      <div class="phase">
+        <div class="pn">Phase 3 · deliberately unspecified</div>
+        <h3>Whatever the Authorities find useful</h3>
+        <p>If the earlier phases produce something officials want to maintain rather than merely read, that is a decision for the Authorities to take with the benefit of evidence, not one to design for now.</p>
+        <p class="crit"><b>Status:</b> a working prototype built independently. Not a product, not offered for sale, and nothing about it built to a specification the Authorities have set.</p>
+      </div>
+    </div>
+
+    <div class="narrow">
+      <div class="kicker rv">Three things that would help most at this stage</div>
+      <div class="grid3 rv" style="grid-template-columns:1fr;gap:12px">
+        <div class="panel stat"><div class="l" style="font-size:14px;color:var(--text-2)"><b style="color:var(--text)">From colleagues with direct reporting experience</b> — whether the divergence register describes the problem as you encounter it, or misses its substance.</div></div>
+        <div class="panel stat"><div class="l" style="font-size:14px;color:var(--text-2)"><b style="color:var(--text)">From officials</b> — whether the separation between findings the Authorities could act on directly and findings requiring consultation is drawn where you would draw it.</div></div>
+        <div class="panel stat"><div class="l" style="font-size:14px;color:var(--text-2)"><b style="color:var(--text)">On the worked example</b> — whether one concept family would be useful, and if so which. Lifecycle events are the current proposal, but that is a judgement others are better placed to make.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE RECORD -->
+<section id="record">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow rv">11 — The record</div>
+      <h2 class="rv">The decision log is not a feature of the output. It is the output.</h2>
+      <p class="rv">Every human judgement — ratifying the purpose, locking the model assignment, freezing the corpus, dispositioning a finding — lands in an append-only record with a name, a role, a reason and a time, written to be handed to someone who was not present.</p>
+    </div>
+
+    <div class="log rv" style="margin-top:28px">
+      <div class="logrow"><div class="t">purpose · ratified</div><div class="b"><b>Purpose Statement</b> — M. Hsu, Program Owner · mode: refactor<span class="r">“Describe where UK MiFIR, UK EMIR and UK SFTR diverge. Change no obligation. Separate what the Authorities can act on directly from what requires consultation.”</span></div></div>
+      <div class="logrow"><div class="t">setup · locked</div><div class="b"><b>Model assignment locked</b> — extraction, classification and judging assigned to three different models<span class="r">Required before the corpus can be frozen. Diversity enforced against the runs actually made, not the configuration.</span></div></div>
+      <div class="logrow"><div class="t">corpus · frozen</div><div class="b"><b>Corpus frozen</b> — 18 instruments · manifest hash recorded<span class="r">“Onshored regimes, retained technical standards, SUP 17 and 17A, validation-rule guidance, EU Exit SIs, PRA Rulebook cross-references, inherited ESMA material.”</span></div></div>
+      <div class="logrow"><div class="t">F-038 · accepted</div><div class="b"><b>Merge accepted</b> — class clarify<span class="r">“Same duty, same population, three statements. Consolidating the description alters no obligation.”</span></div></div>
+      <div class="logrow"><div class="t">F-041 · set aside</div><div class="b"><b>Set aside to policy register</b> — class change, overriding drafted clarify<span class="r">“The regimes enumerate different entity lists. Unifying the definition would change who has to report.”</span></div></div>
+      <div class="logrow"><div class="t">F-057 · refused</div><div class="b"><b>Disposition refused by gate</b> — change + accept not permitted in refactor mode · re-submitted as unresolved<span class="r">System entry. Not overridable by role.</span></div></div>
+    </div>
+
+    <div class="narrow">
+      <p class="rv" style="margin-top:26px">Underneath the human record sits the machine one. Every model call carries a provenance stamp — which task, which model, when, at what cost — validated against a schema before it is stored.</p>
+      <div class="stamp rv"><span class="kk">task</span>        effect_classification
+<span class="kk">model</span>       drafting model — distinct from the extraction model, enforced at call time
+<span class="kk">program</span>     uk-reporting-divergence
+<span class="kk">artifact</span>    finding F-041 · canonicalize-definition
+<span class="kk">schema</span>      operation_proposal.schema.json — validated ✓
+<span class="kk">quotes</span>      4/4 verified against the frozen manifest ✓
+<span class="kk">outcome</span>     drafted clarify · reviewer classified change · set aside
+<span class="kk">cost</span>        $0.06 · metered to programme cap</div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2 class="rv">It decides nothing, drafts no rules and holds no view.</h2>
+    <p class="lede rv">Every judgement in it is made and signed by a person. It is an instrument for organising evidence, offered to the Taskforce for consideration — and more useful proposed early, when its design can still be shaped by the people who would rely on it.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap narrow">
+    <p>Prepared by Mike Hsu, independent member, Strategy Working Group, for the Transaction and Post-trade Reporting Harmonisation Taskforce. A working prototype built independently; not a product, not offered for sale, and not built to a specification the Authorities have set.</p>
+    <p style="margin-top:14px">Reporting volume figures are drawn from Taskforce material. The estimated distribution of reporting burden is the author's own, based on cross-firm observation rather than any single institution's cost accounting, and is offered as a hypothesis for the Taskforce to test. Findings quoted are from the eighteen-instrument run; the interface shown is the current build.</p>
+    <p style="margin-top:14px" class="dim">The Rulebook Workbench · advisory working papers only · it never produces operative legal text</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay = (Math.min(i%5,4)*50)+'ms';
+    io.observe(el);
+  });
+
+  document.querySelectorAll('.stage-head').forEach(function(h){
+    h.addEventListener('click', function(){ h.parentElement.classList.toggle('open'); });
+  });
+
+  var links = [].slice.call(document.querySelectorAll('.rail a'));
+  var secs = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  function onScroll(){
+    var y = window.scrollY + 130, best = -1;
+    secs.forEach(function(s,i){ if(s && s.offsetTop <= y) best = i; });
+    links.forEach(function(a,i){ a.classList.toggle('active', i===best); });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>

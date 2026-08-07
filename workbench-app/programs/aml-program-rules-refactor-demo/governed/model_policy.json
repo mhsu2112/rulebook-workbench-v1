@@ -1,0 +1,23 @@
+{
+  "program_id": "aml-program-rules-refactor-demo",
+  "preset": "open",
+  "lab": null,
+  "overrides": {
+    "distill_extract": "qwen/qwen3-235b-a22b",
+    "defect_detect": "moonshotai/kimi-k2",
+    "operation_propose": "qwen/qwen3-235b-a22b",
+    "redesign_propose": "moonshotai/kimi-k2",
+    "misalign_detect": "qwen/qwen3-235b-a22b",
+    "source_discovery": "nvidia/nemotron-4-340b-instruct",
+    "second_census": "nvidia/nemotron-4-340b-instruct",
+    "effect_classify_assist": "nvidia/nemotron-4-340b-instruct",
+    "discovery_questions": "qwen/qwen3-235b-a22b",
+    "blueprint_summary": "moonshotai/kimi-k2",
+    "target_summary": "qwen/qwen3-235b-a22b"
+  },
+  "status": "provisional",
+  "ratified_by": null,
+  "ratified_at": null,
+  "rationale": null,
+  "hash": null
+}

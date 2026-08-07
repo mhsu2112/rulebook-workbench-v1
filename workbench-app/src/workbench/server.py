@@ -7,6 +7,7 @@ settings endpoints (the per-task toggle).
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import os
 import re
@@ -14,7 +15,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException
+# Document upload needs python-multipart; FastAPI validates Form/File routes at
+# app-build time, so registering them when the package is absent crashes the
+# WHOLE app on startup. Guard on it: with the package, the real upload endpoints
+# load; without it, lightweight stubs return a clear 503 and the rest of the app
+# runs normally.
+_HAS_MULTIPART = (importlib.util.find_spec("multipart") is not None
+                  or importlib.util.find_spec("python_multipart") is not None)
+
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -904,6 +913,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         acq = acquire.Acquirer(state.pdir(pid), snapshot_date=SNAPSHOT_DATE,
                                manifest_hash=doc["content_hash"], transport=state.router.transport)
         reg = acq.register()
+        ups = acq.uploads()
         excl = _excluded(pid)
         counts = {"fetched": 0, "error": 0, "pending": 0, "excluded": 0}
         per_item = {}
@@ -914,11 +924,18 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 per_item[iid] = {"status": "excluded", "errors": None, "text_chars": None}
                 continue
             rec = reg["items"].get(iid)
-            st = rec["status"] if rec else "pending"
-            counts[st if st in counts else "pending"] += 1
-            per_item[iid] = {"status": st,
-                             "errors": (rec or {}).get("errors"),
-                             "text_chars": (rec or {}).get("text_chars")}
+            up = ups.get(iid)
+            if rec:
+                st, errors, chars = rec["status"], rec.get("errors"), rec.get("text_chars")
+            elif up and (state.pdir(pid) / "governed" / "corpus_texts" / f"{iid}.txt").exists():
+                st, errors, chars = "manual", None, up.get("chars")   # uploaded, not yet in the register
+            else:
+                st, errors, chars = "pending", None, None
+            # 'manual'/'browser_assisted' (uploaded or hand-supplied) count as acquired.
+            bucket = "fetched" if st in acquire.DONE_STATUSES else (st if st in counts else "pending")
+            counts[bucket] += 1
+            per_item[iid] = {"status": st, "errors": errors, "text_chars": chars,
+                             "uploaded": bool(up)}
         return {"snapshot_date": SNAPSHOT_DATE, "manifest_hash": doc["content_hash"],
                 "counts": counts, "items": per_item}
 
@@ -953,6 +970,82 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             ov.pop(body.item_id, None)
         path.write_text(json.dumps(ov, indent=2))
         return {"item_id": body.item_id, "url": url or None, "overrides": len(ov)}
+
+    MAX_UPLOAD_BYTES = 25 * 1024 * 1024   # 25 MB — a generous ceiling for a single source document
+    _UPLOAD_MISSING_MSG = ("Document upload needs the 'python-multipart' package, which isn't "
+                           "installed. Install it (pip install python-multipart) and restart the app.")
+
+    if _HAS_MULTIPART:
+        @app.post("/api/programs/{pid}/corpus/upload")
+        async def corpus_upload(pid: str, item_id: str = Form(...), file: UploadFile = File(...)):
+            """Supply the TEXT for a source already in the frozen corpus by uploading
+            its document — for sources with no fetchable URL. Doesn't touch the frozen
+            manifest (OR-7): only records how the datum's text was acquired."""
+            doc = _frozen_manifest(pid)
+            if not any(i["item_id"] == item_id for i in doc["items"]):
+                raise HTTPException(404, f"No item '{item_id}' in the corpus")
+            data = await file.read()
+            if not data:
+                raise HTTPException(400, "the uploaded file is empty")
+            if len(data) > MAX_UPLOAD_BYTES:
+                raise HTTPException(413, f"file is {len(data) // (1024*1024)} MB — the limit is 25 MB")
+            try:
+                prov = acquire.store_upload(state.pdir(pid), item_id, file.filename or "upload", data)
+            except acquire.UploadError as e:
+                raise HTTPException(422, str(e))
+            acq = acquire.Acquirer(state.pdir(pid), snapshot_date=SNAPSHOT_DATE,
+                                   manifest_hash=doc["content_hash"], transport=state.router.transport)
+            acq.mark_uploaded(item_id)     # reflect it in the corpus immediately, no fetch pass
+            return {"item_id": item_id, "status": "manual", **prov}
+
+        @app.post("/api/programs/{pid}/discover/upload")
+        async def discover_upload(pid: str, title: str = Form(...), issuer: str = Form(...),
+                                  family: str = Form(...), locator: str = Form(""),
+                                  evidence_role: str = Form(""), file: UploadFile = File(...)):
+            """Add a BRAND-NEW source to the (unfrozen) corpus from an uploaded
+            document — for in-scope sources that aren't retrievable by URL. Creates
+            the manifest item and stores its text in one step."""
+            title, issuer, family = title.strip(), issuer.strip(), family.strip()
+            if not (title and issuer and family):
+                raise HTTPException(400, "title, issuer, and family are all required")
+            data = await file.read()
+            if not data:
+                raise HTTPException(400, "the uploaded file is empty")
+            if len(data) > MAX_UPLOAD_BYTES:
+                raise HTTPException(413, f"file is {len(data) // (1024*1024)} MB — the limit is 25 MB")
+            existing = {i["item_id"] for i in (manifest.load(state.pdir(pid)) or {"items": []}).get("items", [])}
+            base = discover_mod.slugify(title) or "uploaded-source"
+            iid, n = base, 2
+            while iid in existing:
+                iid, n = f"{base}-{n}", n + 1
+            try:
+                prov = acquire.store_upload(state.pdir(pid), iid, file.filename or "upload", data)
+            except acquire.UploadError as e:
+                raise HTTPException(422, str(e))
+            item = {
+                "item_id": iid, "title": title, "issuer": issuer, "family": family,
+                "status": "live", "locator": (locator.strip() or f"Uploaded document: {file.filename}"),
+                "evidence_role": (evidence_role.strip() or None),
+                "note": (f"Source text supplied by uploaded document '{file.filename}' "
+                         f"({prov['sha256']}); no public URL."),
+            }
+            try:
+                manifest.add_item(state.pdir(pid), {k: v for k, v in item.items() if v is not None}, pid)
+            except manifest.FrozenError as e:
+                raise HTTPException(409, str(e))
+            except manifest.ManifestError as e:
+                raise HTTPException(400, str(e))
+            return {"item": item, "status": "manual", **prov}
+    else:
+        # python-multipart absent — register stubs so the rest of the app still
+        # starts, and any upload attempt gets a clear, actionable message.
+        @app.post("/api/programs/{pid}/corpus/upload")
+        def corpus_upload_unavailable(pid: str):
+            raise HTTPException(503, _UPLOAD_MISSING_MSG)
+
+        @app.post("/api/programs/{pid}/discover/upload")
+        def discover_upload_unavailable(pid: str):
+            raise HTTPException(503, _UPLOAD_MISSING_MSG)
 
     # ---------------- distillation (M3.2: P2 extract → defects) ----------------
 

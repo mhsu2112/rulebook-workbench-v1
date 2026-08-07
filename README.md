@@ -37,6 +37,9 @@ Windows notes and troubleshooting: **[workbench-app/RUN-LOCALLY.md](workbench-ap
 - **`rulebook-workbench/`** — the governing specs, schemas, skills, and example program
   data (blueprints, registers, decision logs). The app reads schemas from here, so keep
   the two folders together — a clone already does.
+- **`docs/`** — the standalone overview (HTML + PDF). `docs/archive/` holds share
+  packages and the pre-consolidation git histories; it is local-only and git-ignored.
+  See `docs/README.md`.
 
 ## What this is (and isn't)
 
