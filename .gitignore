@@ -33,3 +33,6 @@ workbench-app/programs/_archive/
 
 # Stray editor/backup files
 *.bak
+
+# Local Claude Code settings
+.claude/settings.local.json
