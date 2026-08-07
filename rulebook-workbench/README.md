@@ -1,6 +1,6 @@
 # Rulebook Workbench
 
-**The Foundry's system for consolidating and redesigning regulatory rulebooks:
+**The system for consolidating and redesigning regulatory rulebooks:
 Legacy Rulebook → Derived Blueprint → Target Blueprint → Consolidated Rulebook.**
 
 This repository is the *governing materials* for the workbench — specifications,
