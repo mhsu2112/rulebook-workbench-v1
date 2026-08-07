@@ -95,6 +95,79 @@ def pdf_to_text(data: bytes) -> str:
     return "\n\n".join((page.extract_text() or "") for page in reader.pages).strip()
 
 
+def docx_to_text(data: bytes) -> str:
+    import docx  # python-docx
+    d = docx.Document(io.BytesIO(data))
+    parts = [p.text for p in d.paragraphs]
+    for tbl in d.tables:
+        for row in tbl.rows:
+            parts.append("\t".join(c.text for c in row.cells))
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(x for x in parts if x is not None)).strip()
+
+
+class UploadError(Exception):
+    """A user-uploaded document could not be turned into usable source text."""
+
+
+def extract_upload(filename: str, data: bytes) -> tuple[str, str]:
+    """Turn an uploaded document into (text, ext). Routes by magic bytes first
+    (a PDF is a PDF whatever the name says), then by extension. Supports PDF,
+    Word (.docx), HTML, XML, and plain text/markdown."""
+    name = (filename or "").lower().strip()
+    ext = name.rsplit(".", 1)[-1] if "." in name else ""
+    if data[:5] == b"%PDF-" or ext == "pdf":
+        try:
+            return pdf_to_text(data), "pdf"
+        except Exception as e:  # noqa: BLE001 — corrupt/encrypted PDF → friendly message
+            raise UploadError(f"could not read the PDF: {type(e).__name__}: {str(e)[:160]}")
+    if ext == "docx" or (data[:2] == b"PK" and ext in ("", "docx")):
+        try:
+            return docx_to_text(data), "docx"
+        except Exception as e:  # noqa: BLE001 — surface a friendly message
+            raise UploadError(f"could not read the Word document: {type(e).__name__}: {str(e)[:160]}")
+    if ext == "doc":
+        raise UploadError("legacy .doc isn't supported — save it as .docx or PDF and re-upload")
+    if ext in ("html", "htm"):
+        return html_to_text(data.decode("utf-8", errors="replace")), "html"
+    if ext == "xml":
+        return xml_to_text(data.decode("utf-8", errors="replace")), "xml"
+    if ext in ("txt", "md", "markdown", "csv", "text", ""):
+        return data.decode("utf-8", errors="replace").strip(), (ext or "txt")
+    # Unknown extension: fall back to content sniffing (PDF/xml/html/text).
+    return extract_text("", filename, data)
+
+
+def store_upload(program_dir: str | Path, item_id: str, filename: str, data: bytes) -> dict:
+    """Extract an uploaded document's text into the corpus store and record its
+    provenance. Manifest-independent (like url_overrides): the datum's identity
+    lives in the manifest; how we acquired its text is recorded here. Returns the
+    provenance record. Raises UploadError if too little text can be extracted."""
+    d = Path(program_dir) / "governed" / "corpus_texts"
+    d.mkdir(parents=True, exist_ok=True)
+    text, ext = extract_upload(filename, data)
+    if len(text.strip()) < 20:
+        raise UploadError(
+            f"only {len(text.strip())} characters of text could be read from '{filename}'. "
+            "If this is a scanned or image-only PDF, run OCR first or upload a text-based version.")
+    (d / f"{item_id}.txt").write_text(text)
+    up_dir = d / "uploads"
+    up_dir.mkdir(exist_ok=True)
+    (up_dir / f"{item_id}.{ext}").write_bytes(data)   # keep the original for provenance
+    prov = {
+        "filename": filename,
+        "ext": ext,
+        "sha256": "sha256:" + hashlib.sha256(data).hexdigest(),
+        "bytes": len(data),
+        "chars": len(text),
+        "uploaded_at": datetime.now(timezone.utc).isoformat(),
+    }
+    reg_path = d / "uploads.json"
+    reg = json.loads(reg_path.read_text()) if reg_path.exists() else {}
+    reg[item_id] = prov
+    reg_path.write_text(json.dumps(reg, indent=2))
+    return prov
+
+
 def plan_for_item(item: dict, snapshot_date: str) -> list[str]:
     """Ordered candidate URLs for one manifest item. First success wins;
     CFR items may need several (one per distinct title/part in the locator)."""
@@ -150,6 +223,38 @@ class Acquirer:
         self.transport = transport
         self.register_path = self.dir / "acquisition.json"
         self.overrides_path = self.dir / "url_overrides.json"
+        self.uploads_path = self.dir / "uploads.json"
+
+    def uploads(self) -> dict:
+        """Per-item provenance for sources whose text came from an uploaded
+        document (no fetchable URL). Consulted FIRST — an upload wins over any
+        URL plan, the same way url_overrides do."""
+        if self.uploads_path.exists():
+            return json.loads(self.uploads_path.read_text())
+        return {}
+
+    def _uploaded_record(self, item_id: str) -> Optional[dict]:
+        up = self.uploads().get(item_id)
+        if not up or not (self.dir / f"{item_id}.txt").exists():
+            return None
+        return {
+            "status": "manual", "source": "uploaded_document",
+            "filename": up.get("filename"), "raw_sha256": up.get("sha256"),
+            "raw_bytes": up.get("bytes"), "text_chars": up.get("chars"),
+            "raw_ext": up.get("ext"), "uploaded_at": up.get("uploaded_at"),
+            "manifest_hash": self.manifest_hash, "snapshot_date": self.snapshot_date,
+        }
+
+    def mark_uploaded(self, item_id: str) -> Optional[dict]:
+        """Record an already-stored upload as acquired in the register, so the
+        corpus reflects it immediately without a fetch pass."""
+        rec = self._uploaded_record(item_id)
+        if rec is None:
+            return None
+        reg = self.register()
+        reg["items"][item_id] = rec
+        self._save(reg)
+        return rec
 
     def overrides(self) -> dict:
         """Per-item URL overrides (curator-maintained): consulted FIRST.
@@ -202,12 +307,17 @@ class Acquirer:
         counts = {"fetched": 0, "error": 0, "pending": 0}
         for it in items:
             st = reg["items"].get(it["item_id"], {}).get("status", "pending")
-            counts[st if st in counts else "pending"] += 1
+            # 'manual'/'browser_assisted' are acquired-by-other-means → count as done.
+            bucket = "fetched" if st in DONE_STATUSES else (st if st in counts else "pending")
+            counts[bucket] += 1
         return {"processed": done, "counts": counts, "items": reg["items"]}
 
     def _fetch_one(self, client: httpx.Client, item: dict) -> dict:
         iid = item["item_id"]
         errors = []
+        uploaded = self._uploaded_record(iid)      # an uploaded document wins over any URL plan
+        if uploaded is not None:
+            return uploaded
         candidates = plan_for_item(item, self.snapshot_date)
         override = self.overrides().get(iid)
         if override:

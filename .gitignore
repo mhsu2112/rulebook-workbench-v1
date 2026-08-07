@@ -22,3 +22,14 @@ __pycache__/
 
 # OS cruft
 .DS_Store
+
+# Local-only: historical snapshots, share packages, legacy git bundles.
+# Large and rebuildable; see docs/README.md.
+docs/archive/
+docs/uk-derivatives-reporting-derived.html
+
+# Archived program experiments (local only)
+workbench-app/programs/_archive/
+
+# Stray editor/backup files
+*.bak
