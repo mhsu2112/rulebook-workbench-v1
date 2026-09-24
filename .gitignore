@@ -12,6 +12,8 @@ programs/*/restricted/
 # local so the mirror does not re-add them.
 workbench-app/programs/government-sponsored-lending/
 workbench-app/programs/uk-derivatives-reporting/
+# Bank of England engagement material (live pilot programme) — never publish
+workbench-app/programs/uk-mortgage-reporting/
 
 # Python
 .venv/
