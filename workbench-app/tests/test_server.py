@@ -161,6 +161,62 @@ def test_ratify_blocked_until_open_items_resolved(client, approot):
                        json={"name": "M", "role": "X", "rationale": "r"}).status_code == 409
 
 
+
+def _ratified_program(client, approot, pid="am1"):
+    client.post("/api/programs", json={"program_id": pid})
+    ps = json.loads(json.dumps(MIN_PS))
+    ps.update({"program_id": pid, "statement_id": f"ps-{pid}-0.1", "status": "ratified",
+               "open_items": [], "ratification": {"status": "ratified", "decision_log_ref": "DL-001"}})
+    (approot / f"programs/{pid}/governed/purpose_statement.json").write_text(json.dumps(ps))
+    return ps
+
+
+def test_scope_amendment_is_versioned_and_logged(client, approot):
+    _ratified_program(client, approot)
+    body = {"name": "Mike Hsu", "role": "Program Owner", "new_scope": "Distill X and Y.",
+            "rationale": "Principal confirmed Y is in scope", "basis": ["Email from T. Broderick, 24 Sep 2026"]}
+    r = client.post("/api/programs/am1/purpose/amend-scope", json=body)
+    assert r.status_code == 200
+    doc = r.json()
+    assert doc["version"] == "0.2" and doc["statement_id"] == "ps-am1-0.2" and doc["status"] == "ratified"
+    assert doc["synthesis"]["scope_sentence"]["text"] == "Distill X and Y."
+    am = doc["amendments"][0]
+    assert am["previous_text"] == "Distill X." and am["from_version"] == "0.1" and am["decision_log_ref"] == "DL-001"
+    kept = json.loads((approot / "programs/am1/governed/purpose_history/purpose_statement.v0.1.json").read_text())
+    assert kept["synthesis"]["scope_sentence"]["text"] == "Distill X." and kept["version"] == "0.1"
+    log = [json.loads(l) for l in (approot / "programs/am1/governed/decisions.log.jsonl").read_text().splitlines()]
+    assert log[-1]["type"] == "scope_election" and log[-1]["basis"] == body["basis"]
+    assert log[-1]["artifact_version"] == "0.2"
+    # a second amendment keeps both prior versions
+    r2 = client.post("/api/programs/am1/purpose/amend-scope", json={**body, "new_scope": "Distill X, Y and Z."})
+    assert r2.status_code == 200 and r2.json()["version"] == "0.3" and len(r2.json()["amendments"]) == 2
+    assert (approot / "programs/am1/governed/purpose_history/purpose_statement.v0.2.json").exists()
+
+
+def test_scope_amendment_guards(client, approot):
+    _ratified_program(client, approot, "am2")
+    ok = {"name": "Mike Hsu", "role": "Program Owner", "new_scope": "Distill X and Y.", "rationale": "r"}
+    url = "/api/programs/am2/purpose/amend-scope"
+    assert client.post(url, json={**ok, "role": "Reviewer"}).status_code == 403
+    assert client.post(url, json={**ok, "rationale": " "}).status_code == 400
+    assert client.post(url, json={**ok, "new_scope": "Distill X."}).status_code == 400     # unchanged
+    assert client.post("/api/programs/nope/purpose/amend-scope", json=ok).status_code == 404
+    # not allowed once the corpus is frozen
+    client.post("/api/programs/am2/manifest/items", json={
+        "item_id": "s1", "title": "Source", "issuer": "FCA", "family": "guidance", "locator": "x"})
+    mpath = approot / "programs/am2/governed/manifest/manifest.json"
+    m = json.loads(mpath.read_text()); m["frozen"] = True
+    mpath.write_text(json.dumps(m))
+    r = client.post(url, json=ok)
+    assert r.status_code == 409 and "frozen" in r.json()["detail"]
+    # not allowed on an unratified statement
+    _ratified_program(client, approot, "am3")
+    ps = json.loads((approot / "programs/am3/governed/purpose_statement.json").read_text())
+    ps["status"] = "awaiting_ratification"
+    (approot / "programs/am3/governed/purpose_statement.json").write_text(json.dumps(ps))
+    assert client.post("/api/programs/am3/purpose/amend-scope", json=ok).status_code == 409
+
+
 def test_stamps_persisted_with_program_id(client, approot):
     client.post("/api/programs", json={"program_id": "p1"})
     client.post("/api/programs/p1/interview", json={"message": "hi"})

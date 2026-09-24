@@ -493,8 +493,11 @@ function renderPurpose() {
   var scope = (((doc.synthesis || {}).scope_sentence || {}).text) || "(scope not yet synthesized)";
   var mode = (((doc.synthesis || {}).recommended_mode || {}).mode) || "?";
   var rb = (doc.ratification || {}).ratified_by || {};
+  var amends = doc.amendments || [];
+  var lastAm = amends.length ? amends[amends.length - 1] : null;
   var meta = ratified
-    ? (mode + " mode · ratified by " + (rb.name || "?") + ((doc.ratification || {}).timestamp ? " · " + String(doc.ratification.timestamp).slice(0, 10) : ""))
+    ? (mode + " mode · ratified by " + (rb.name || "?") + ((doc.ratification || {}).timestamp ? " · " + String(doc.ratification.timestamp).slice(0, 10) : "")
+       + (lastAm ? " · v" + doc.version + ": scope amended (" + lastAm.amendment_id + ") by " + ((lastAm.amended_by || {}).name || "?") + " · " + String(lastAm.timestamp || "").slice(0, 10) : ""))
     : (mode + " mode · " + (doc.open_items || []).length + " open items (" + blocking + " blocking)");
   var card = el("div", { style: "border:1px solid " + (ratified ? "var(--ok)" : "var(--warn)") + "; border-radius:8px; padding:11px 13px; margin-bottom:12px;" }, [
     el("div", { style: "display:flex; align-items:center; justify-content:space-between;" }, [
@@ -510,9 +513,29 @@ function renderPurpose() {
   ]);
   pane.appendChild(card);
   if (ratified) {
-    pane.appendChild(el("div", { style: "margin:2px 0 12px;" }, [
-      el("button", { text: "Next: build the Corpus →", onclick: function () { showTab("corpus"); } }, [])
+    // ⚖ Scope amendment: a logged, versioned decision (prior version kept), only before corpus freeze.
+    var amForm = el("div", { class: "hidden", style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin:6px 0 10px;" }, []);
+    var amScope = el("textarea", { rows: "5" }, []); amScope.value = scope;
+    var amRat = el("textarea", { rows: "2", placeholder: "Rationale (required; goes to the Decision Log)" }, []);
+    var amBasis = el("input", { placeholder: "Basis / authority (optional) — e.g. email from the Principal's representative, date", style: "margin-top:5px;" }, []);
+    var amWho = el("input", { placeholder: "Your name (Program Owner)", style: "margin-top:5px;" }, []);
+    var amGo = el("button", { text: "Record scope amendment ⚖", style: "margin-top:6px;", onclick: function () {
+      showError(""); amGo.disabled = true;
+      api("/api/programs/" + state.pid + "/purpose/amend-scope", "POST",
+          { name: amWho.value.trim(), role: "Program Owner", new_scope: amScope.value.trim(),
+            rationale: amRat.value.trim(), basis: amBasis.value.trim() ? [amBasis.value.trim()] : [] })
+        .then(function (updated) { state.purpose = updated; renderPurpose(); refreshTop(); })
+        .catch(function (e) { showError(e.message); amGo.disabled = false; });
+    } }, []);
+    amForm.appendChild(el("div", { class: "dim", style: "font-size:11.5px; margin-bottom:5px;",
+      text: "Edit the scope sentence below. The current version is kept, the statement moves to the next version, and the change is logged. Only possible before the corpus is frozen." }, []));
+    amForm.appendChild(amScope); amForm.appendChild(amRat); amForm.appendChild(amBasis); amForm.appendChild(amWho);
+    amForm.appendChild(el("div", {}, [amGo]));
+    pane.appendChild(el("div", { style: "margin:2px 0 12px; display:flex; gap:8px;" }, [
+      el("button", { text: "Next: build the Corpus →", onclick: function () { showTab("corpus"); } }, []),
+      el("button", { text: "Amend scope… ⚖", onclick: function () { amForm.classList.toggle("hidden"); } }, [])
     ]));
+    pane.appendChild(amForm);
   }
   pane.appendChild(el("p", {}, [synthBtn]));
 
@@ -1388,6 +1411,9 @@ function renderRefactor() {
             .catch(function (e) { showError(e.message); cb.disabled = false; });
         } }, []);
         rb0.appendChild(ci); rb0.appendChild(cb);
+      } else {
+        rb0.appendChild(el("button", { text: "Next: Redesign →", style: "margin-left:8px; font-size:11.5px;",
+          onclick: function () { refreshTop(); showTab("redesign"); } }, []));
       }
       pane.appendChild(rb0);
     } else {
@@ -1714,7 +1740,7 @@ function renderOverview() {
     pane.appendChild(hd);
 
     // Next-step driver (spec/55 §6): always name the next action for this program.
-    var STAGE_TAB = { purpose: "purpose", corpus: "corpus", derived: "blueprint",
+    var STAGE_TAB = { purpose: "purpose", corpus: "corpus", derived: "blueprint", refactor: "refactor",
       phase3: (o.mode === "redesign" ? "redesign" : "refactor"), target: "target", align: "align" };
     var next = (o.stages || []).filter(function (s) { return !s.done; })[0];
     if (next) {

@@ -164,6 +164,13 @@ def test_redesign_mode_label(tmp_path):
                   effect_class="clarify", rationale="not needed")
     doc = r.ratify(name="Mike", role="Program Owner", rationale="baseline certified")
     assert "Refactored Blueprint" in doc["label"]
+    # OR-8: certified as the redesign baseline in the same program, not as the Target Blueprint
+    assert (tmp_path / "governed" / "refactored_baseline.json").exists() or \
+        any(p.name == "refactored_baseline.json" for p in tmp_path.rglob("refactored_baseline.json"))
+    assert not any(tmp_path.rglob("target_blueprint.json"))
+    assert r.summary()["ratified"] is True
+    with pytest.raises(RefactorError):
+        r.ratify(name="Mike", role="Program Owner", rationale="again")
 
 
 def test_blast_radius_ordering(tmp_path):
@@ -289,6 +296,52 @@ def test_api_refactor_full_flow(approot):  # noqa: F811
     log = (gov / "decisions.log.jsonl").read_text().splitlines()
     assert sum(1 for line in log if "OP-001" in line) == 1
     assert any("Ratify Target Blueprint" in line for line in log)
+
+
+
+def test_api_redesign_mode_refactors_then_unlocks_redesign(approot):  # noqa: F811
+    c = _api_app(approot)
+    gov = approot / "programs/p1/governed"
+    ps = json.loads((gov / "purpose_statement.json").read_text())
+    ps["synthesis"]["recommended_mode"] = {"mode": "redesign", "basis_answer_ids": ["A1"]}
+    (gov / "purpose_statement.json").write_text(json.dumps(ps))
+    man = c.get("/api/programs/p1/manifest").json()
+    (gov / "blueprint").mkdir(parents=True, exist_ok=True)
+    (gov / "corpus_texts").mkdir(parents=True, exist_ok=True)
+    src = ("Each bank shall develop, implement, and maintain an effective anti-money "
+           "laundering program reasonably designed to assure compliance. " * 10)
+    for it in man["items"]:
+        iid = it["item_id"]
+        (gov / f"corpus_texts/{iid}.txt").write_text(src)
+        ex = json.loads(json.dumps(GOOD_EX)); ex["item_id"] = iid
+        (gov / f"blueprint/{iid}.json").write_text(json.dumps(ex))
+    (gov / "registers").mkdir(exist_ok=True)
+    finding = dict(FINDING)
+    finding["locations"] = [{"item_id": man["items"][0]["item_id"], "quote": "q"}]
+    (gov / "registers/defects.json").write_text(json.dumps({"runs": {"defects-x": {"findings": [finding]}}}))
+    c.get("/api/programs/p1/refactor")           # reconcile the extraction register from the files
+    ov = c.get("/api/programs/p1/overview").json()
+    assert ov["tabs"]["refactor"] is True and ov["tabs"]["redesign"] is False
+    keys = [s["key"] for s in ov["stages"]]
+    assert keys.index("refactor") < keys.index("phase3")
+    rs = next(s for s in ov["stages"] if s["key"] == "refactor")
+    assert not rs["done"] and "1 defects to work" in rs["metric"]
+    r = c.post("/api/programs/p1/refactor/propose", json={"limit": 5}).json()
+    op_id = list(r["operations"])[0]
+    assert c.post(f"/api/programs/p1/refactor/operations/{op_id}/disposition",
+                  json={"name": "M", "role": "Policy Reviewer", "action": "accept",
+                        "effect_class": "codify", "rationale": "ok"}).status_code == 200
+    rat = c.post("/api/programs/p1/refactor/ratify",
+                 json={"name": "Mike", "role": "Program Owner", "rationale": "baseline"})
+    assert rat.status_code == 200 and "Refactored Blueprint" in rat.json()["label"]
+    assert (gov / "refactored_baseline.json").exists() and not (gov / "target_blueprint.json").exists()
+    ov = c.get("/api/programs/p1/overview").json()
+    assert ov["tabs"]["redesign"] is True
+    stage = next(s for s in ov["stages"] if s["key"] == "refactor")
+    assert stage["done"] and stage["metric"].startswith("certified · 1 operations")
+    # the redesign pass is now reachable (it asks for the Mandate next, not for a baseline)
+    rd = c.get("/api/programs/p1/redesign")
+    assert rd.status_code == 200 or "baseline" not in rd.text.lower()
 
 
 def test_target_blueprint_render_and_summary(approot):  # noqa: F811
