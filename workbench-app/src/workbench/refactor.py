@@ -140,6 +140,12 @@ class Refactorer:
         self.call = call_fn
         self.dl = dl_fn or (lambda e: None)
         self.register_path = self.rdir / "operations.json"
+        # OR-8: in a redesign-mode program the refactor pass certifies the
+        # REDESIGN BASELINE (refactored_baseline.json) in the same program, so the
+        # redesign pass can build on it; target_blueprint.json is reserved for the
+        # redesign pass's own output. In refactor mode it is the Target Blueprint.
+        self.ratified_path = self.gdir / ("refactored_baseline.json" if mode == "redesign"
+                                          else "target_blueprint.json")
 
     # ---------- inputs ----------
 
@@ -384,9 +390,11 @@ class Refactorer:
         if not report["pass"]:
             failing = [c["name"] for c in report["checks"] if c["status"] == "fail"]
             raise RefactorError(409, f"invariants failing: {failing} — resolve or log exceptions first")
-        tb_path = self.gdir / "target_blueprint.json"
+        tb_path = self.ratified_path
         if tb_path.exists():
-            raise RefactorError(409, "already ratified — the Target Blueprint is frozen (OR-7)")
+            raise RefactorError(409, "already ratified — the " + (
+                "Refactored Blueprint baseline" if self.mode == "redesign" else "Target Blueprint")
+                + " is frozen (OR-7)")
         ops = [op for op in reg["operations"].values() if op["status"] == "finalized"]
         ops.sort(key=lambda o: o["op_id"])
         parked = [op["op_id"] for op in reg["operations"].values() if op["status"] == "parked"]
@@ -419,7 +427,7 @@ class Refactorer:
         tb_path.write_text(json.dumps(doc, indent=2))
         self.dl({
             "type": "ratification",
-            "artifact": "target_blueprint.json", "artifact_version": "1.0",
+            "artifact": tb_path.name, "artifact_version": "1.0",
             "decision": f"Ratify {label}: {len(ops)} operations finalized, "
                         f"{len(parked)} parked to Redesign Backlog",
             "rationale": rationale, "decided_by": {"name": name, "role": role},
@@ -443,7 +451,7 @@ class Refactorer:
         ipath = self.rdir / "invariants.json"
         if ipath.exists():
             inv = json.loads(ipath.read_text())
-        ratified = (self.gdir / "target_blueprint.json").exists()
+        ratified = self.ratified_path.exists()
         return {"findings_total": total, "findings_processed": processed,
                 "findings_errors": errors, "counts": counts,
                 "operations": reg["operations"],

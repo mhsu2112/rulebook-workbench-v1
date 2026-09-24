@@ -309,6 +309,23 @@ class CharterIn(BaseModel):
     successor_id: str
 
 
+class ScopeAmendIn(BaseModel):
+    name: str
+    role: str
+    new_scope: str
+    rationale: str
+    basis: list[str] = []
+
+
+def _bump_version(v: str) -> str:
+    """'0.1' -> '0.2'; '1' -> '1.1'; non-numeric tail -> append '.1'."""
+    parts = str(v or "0.1").split(".")
+    if len(parts) > 1 and parts[-1].isdigit():
+        parts[-1] = str(int(parts[-1]) + 1)
+        return ".".join(parts)
+    return f"{v}.1"
+
+
 class MandateDecision(BaseModel):
     objective_id: str
     action: str
@@ -638,6 +655,75 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             "decided_by": {"name": body.name, "role": body.role},
             "decision": f"Ratify Purpose Statement for {pid}",
             "rationale": body.rationale,
+        })
+        p.write_text(json.dumps(doc, indent=2))
+        return doc
+
+    @app.post("/api/programs/{pid}/purpose/amend-scope")
+    def amend_scope(pid: str, body: ScopeAmendIn):
+        """⚖ Amend the scope sentence of a RATIFIED Purpose Statement.
+
+        A logged, versioned decision by the Program Owner — never a silent edit:
+        the prior version is kept verbatim under governed/purpose_history/, the
+        statement's version is bumped, and the amendment is recorded both on the
+        statement (amendments[]) and in the Decision Log (type scope_election,
+        with any stated basis, e.g. the Principal's written confirmation).
+        Allowed only before the corpus is frozen: the frozen corpus and all that
+        is distilled from it are pinned to the scope in force at freeze."""
+        if body.role != "Program Owner":
+            raise HTTPException(403, "Only the Program Owner may amend a ratified Purpose Statement")
+        name, rationale, new_scope = body.name.strip(), body.rationale.strip(), body.new_scope.strip()
+        if not name or not rationale:
+            raise HTTPException(400, "A scope amendment requires your name and a rationale — both go to the Decision Log")
+        if not new_scope:
+            raise HTTPException(400, "The amended scope sentence is empty")
+        pdir = state.pdir(pid)
+        p = pdir / "governed" / "purpose_statement.json"
+        if not p.exists():
+            raise HTTPException(404, "No purpose statement")
+        doc = json.loads(p.read_text())
+        if doc.get("status") != "ratified":
+            raise HTTPException(409, "Not ratified yet — revise the draft (re-synthesize) instead of amending it")
+        man = manifest.load(pdir)
+        if man and man.get("frozen"):
+            raise HTTPException(409, "The corpus is already frozen against the current scope — "
+                                     "a scope amendment must come before the corpus freeze")
+        ss = (doc.setdefault("synthesis", {})).setdefault("scope_sentence", {})
+        old_scope = (ss.get("text") or "").strip()
+        if new_scope == old_scope:
+            raise HTTPException(400, "The amended scope sentence is identical to the current one")
+        old_version = str(doc.get("version") or "0.1")
+        new_version = _bump_version(old_version)
+        hist = pdir / "governed" / "purpose_history"
+        hist.mkdir(parents=True, exist_ok=True)
+        snap = hist / f"purpose_statement.v{old_version}.json"
+        if not snap.exists():                       # never overwrite a kept version
+            snap.write_text(p.read_text())
+        now = datetime.now(timezone.utc).isoformat()
+        entry_id = f"DL-{len(storage.read_decisions(pdir)) + 1:03d}"
+        amendment_id = f"AM-{len(doc.get('amendments') or []) + 1:03d}"
+        basis = [b.strip() for b in body.basis if b and b.strip()]
+        ss["text"] = new_scope
+        ss["amended_by"] = amendment_id
+        doc["version"] = new_version
+        sid = str(doc.get("statement_id") or "")
+        if sid.endswith(f"-{old_version}"):
+            doc["statement_id"] = sid[: -len(old_version)] + new_version
+        doc.setdefault("amendments", []).append({
+            "amendment_id": amendment_id, "field": "synthesis.scope_sentence",
+            "from_version": old_version, "to_version": new_version,
+            "previous_text": old_scope, "new_text": new_scope,
+            "amended_by": {"name": name, "capacity": body.role},
+            "timestamp": now, "rationale": rationale, "basis": basis,
+            "decision_log_ref": entry_id,
+            "prior_version_ref": f"programs/{pid}/governed/purpose_history/{snap.name}",
+        })
+        storage.append_decision(pdir, {
+            "entry_id": entry_id, "timestamp": now, "type": "scope_election",
+            "artifact": "purpose_statement.json", "artifact_version": new_version,
+            "decided_by": {"name": name, "role": body.role},
+            "decision": f"Amend scope sentence of Purpose Statement v{old_version} -> v{new_version} ({amendment_id})",
+            "rationale": rationale, "basis": basis,
         })
         p.write_text(json.dumps(doc, indent=2))
         return doc
@@ -1377,6 +1463,26 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             n_ops = len(trace)
         else:
             n_ops = 0
+        # Redesign mode runs the refactor pass first, in the same program (OR-8):
+        # show it as its own stage so "Next step" leads there, not to a locked Redesign.
+        if mode == "redesign":
+            base_doc = js("refactored_baseline.json")
+            ops_reg = js("registers/operations.json") or {}
+            defects_doc = js("registers/defects.json") or {}
+            n_findings = sum(len(r.get("findings", [])) for r in (defects_doc.get("runs") or {}).values())
+            n_worked = sum(1 for v in (ops_reg.get("findings_processed") or {}).values()
+                           if v.get("status") == "processed")
+            if base_doc:
+                rf_metric = (f"certified · {len(base_doc.get('operation_trace', []))} operations finalized"
+                             f" · {len(base_doc.get('redesign_backlog', []))} parked for redesign")
+            elif ops_reg:
+                rf_metric = f"{n_worked} of {n_findings} defects worked"
+            else:
+                rf_metric = f"not started · {n_findings} defects to work" if n_findings else "not started"
+            stages.append({"key": "refactor", "label": "Refactor", "phase": "P3 ②a Refactor",
+                           "done": bool(base_doc), "metric": rf_metric,
+                           "detail": "certifies the Refactored Blueprint — the redesign baseline",
+                           "link": None})
         p3label = "P3 ②b Redesign" if mode == "redesign" else "P3 ②a Refactor"
         p3metric = "not started"
         if tb:
@@ -1439,7 +1545,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         tabs = {
             "corpus": ps_ratified,                                   # ready to assemble the corpus
             "derived": manifest_frozen,                              # ready to distill / view the blueprint
-            "refactor": has_ops or (mode != "redesign" and phase2_complete and has_defects),
+            "refactor": has_ops or (phase2_complete and has_defects),   # both modes (OR-8)
             "redesign": mode == "redesign" and (
                 has_baseline or (g / "registers" / "redesign_operations.json").exists()),
             "target": bool(tb),
