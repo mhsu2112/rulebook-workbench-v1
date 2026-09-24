@@ -454,10 +454,14 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             raise HTTPException(400, str(e))
 
     @app.get("/api/programs/{pid}/package")
-    def download_package(pid: str):
+    def download_package(pid: str, share: bool = False):
         """One organized .zip of the whole program — readable documents, the full
         governed tree, decision log + manifest (csv), and the owner's restricted
-        transcripts, clearly marked (spec/54 §2.3c, §2.5)."""
+        transcripts, clearly marked (spec/54 §2.3c, §2.5).
+
+        ?share=true builds the SHARE copy instead: identical, but the restricted
+        store (interview/discovery transcripts, mandate hypotheses) is omitted
+        entirely — the safe export for anything leaving the owner's hands."""
         pdir = state.pdir(pid)
         renders: dict[str, str] = {}
         # Best-effort rendering — a program missing a phase simply omits that doc.
@@ -472,9 +476,11 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 renders["crosswalk.html"] = _crosswalker(pid).render()
         except Exception:  # noqa: BLE001
             pass
-        data = package_mod.build(pdir, pid, renders=renders, manifest_doc=manifest.load(pdir))
+        data = package_mod.build(pdir, pid, renders=renders, manifest_doc=manifest.load(pdir),
+                                 include_restricted=not share)
+        fname = f"{pid}-share-package.zip" if share else f"{pid}-package.zip"
         return Response(content=data, media_type="application/zip",
-                        headers={"Content-Disposition": f'attachment; filename="{pid}-package.zip"'})
+                        headers={"Content-Disposition": f'attachment; filename="{fname}"'})
 
     # ---------------- interview (P0.1) ----------------
 

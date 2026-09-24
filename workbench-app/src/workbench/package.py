@@ -4,8 +4,9 @@ Bundles a whole program into one organized .zip a colleague can open WITHOUT
 the app: the readable rendered documents, the full governed source-of-truth
 tree, the decision log (json + csv), the corpus manifest (json + csv), and —
 for the OWNER's own record — the restricted transcripts in a clearly-marked
-folder with a README. The separate share path (package-share.sh) still strips
-restricted content; this owner export is the "download my full record" path.
+folder with a README. Passing include_restricted=False produces a SHARE copy
+that omits the restricted folder entirely (the in-app "share package"); the
+default owner export is the "download my full record" path.
 """
 from __future__ import annotations
 
@@ -115,7 +116,7 @@ def build(pdir: str | Path, pid: str, *, renders: Optional[dict] = None,
             files[f"{root}/restricted/README.txt"] = _RESTRICTED_README.encode()
 
     # 5) Cover page + integrity manifest.
-    files[f"{root}/index.html"] = _cover_html(pid, files, root).encode()
+    files[f"{root}/index.html"] = _cover_html(pid, files, root, shared=not include_restricted).encode()
     files[f"{root}/MANIFEST.txt"] = _integrity_manifest(files, root).encode()
 
     buf = io.BytesIO()
@@ -135,10 +136,16 @@ def _integrity_manifest(files: dict, root: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _cover_html(pid: str, files: dict, root: str) -> str:
+def _cover_html(pid: str, files: dict, root: str, shared: bool = False) -> str:
     docs = sorted(n[len(root) + 1:] for n in files if "/documents/" in n)
     doc_links = "".join(
         f'<li><a href="{d}">{d.split("/")[-1]}</a></li>' for d in docs) or "<li>(none rendered)</li>"
+    has_restricted = any(n.startswith(f"{root}/restricted/") for n in files)
+    restricted_li = ('<li><code>restricted/</code> — interview/discovery transcripts (owner record only; see its README).</li>'
+                     if has_restricted else "")
+    share_note = ('<p class="dim"><b>Share copy.</b> Interview and discovery transcripts '
+                  '(the restricted store) are deliberately excluded from this package.</p>'
+                  if shared else "")
     return f"""<!doctype html><html><head><meta charset="utf-8">
 <title>{pid} — program package</title>
 <style>body{{font:15px/1.6 -apple-system,Segoe UI,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1.2rem;color:#1a1f2e}}
@@ -149,6 +156,7 @@ h1{{border-bottom:2px solid #1a1f2e;padding-bottom:.3rem}}code{{background:#f4f6
 program <b>{pid}</b>, produced by the Rulebook Workbench. Nothing here is
 operative law — these are evidenced working papers for the authority that owns
 the rules.</p>
+{share_note}
 <h2>Readable documents</h2>
 <ul>{doc_links}</ul>
 <h2>What's in this package</h2>
@@ -157,7 +165,7 @@ the rules.</p>
 <li><code>governed/</code> — the full source-of-truth tree: manifest, extractions, registers, corpus texts, decision log.</li>
 <li><code>decision-log.csv</code> — every human decision, on the record.</li>
 <li><code>manifest.csv</code> — the corpus, as a spreadsheet.</li>
-<li><code>restricted/</code> — interview/discovery transcripts (owner record only; see its README).</li>
+{restricted_li}
 <li><code>MANIFEST.txt</code> — a hash + size for every file, for integrity.</li>
 </ul>
 <p class="dim">The tool proposes and checks; people decide. See the decision log
