@@ -285,8 +285,11 @@ function renderPrograms() {
 function buildProgMenu(p, menu) {
   menu.innerHTML = "";
   // (a) Download package — direct link (Content-Disposition triggers the save).
-  var dl = el("button", { text: "⬇ Download package", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0;",
+  var dl = el("button", { text: "⬇ Download owner package (incl. transcripts)", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0;",
     onclick: function () { window.location = "/api/programs/" + encodeURIComponent(p) + "/package"; } }, []);
+  // (a2) Share package — same, but the restricted store is left out entirely.
+  var dls = el("button", { text: "⬇ Download share package (no transcripts)", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0;",
+    onclick: function () { window.location = "/api/programs/" + encodeURIComponent(p) + "/package?share=true"; } }, []);
   // (b) Rename — inline field.
   var rn = el("button", { text: "✎ Rename…", style: "display:block; width:100%; text-align:left; font-size:12px; margin:2px 0;" }, []);
   var rnBox = el("div", { class: "hidden", style: "margin:4px 0;" }, []);
@@ -312,7 +315,7 @@ function buildProgMenu(p, menu) {
   ar.addEventListener("click", function () { arBox.classList.toggle("hidden"); });
   arBox.appendChild(el("div", { class: "dim", style: "font-size:11px; margin-bottom:3px;", text: "Moves it to Archived (restorable). The decision log is kept." }, []));
   arBox.appendChild(arGo);
-  menu.appendChild(dl); menu.appendChild(rn); menu.appendChild(rnBox); menu.appendChild(ar); menu.appendChild(arBox);
+  menu.appendChild(dl); menu.appendChild(dls); menu.appendChild(rn); menu.appendChild(rnBox); menu.appendChild(ar); menu.appendChild(arBox);
 }
 
 function createProgram() {
@@ -1731,7 +1734,13 @@ function renderOverview() {
       el("button", { text: "⬇ Download program package", style: "font-weight:600;",
         onclick: function () { window.location = "/api/programs/" + encodeURIComponent(state.pid) + "/package"; } }, []),
       el("span", { class: "dim", style: "font-size:11.5px; margin-left:8px;",
-        text: "everything, organized — documents, decision log, corpus, transcripts" }, [])
+        text: "owner record — documents, decision log, corpus, transcripts" }, []),
+      el("div", { style: "margin-top:6px;" }, [
+        el("button", { text: "⬇ Download share package",
+          onclick: function () { window.location = "/api/programs/" + encodeURIComponent(state.pid) + "/package?share=true"; } }, []),
+        el("span", { class: "dim", style: "font-size:11.5px; margin-left:8px;",
+          text: "for sending on — same contents, interview transcripts left out" }, [])
+      ])
     ]));
 
     o.stages.forEach(function (st) {

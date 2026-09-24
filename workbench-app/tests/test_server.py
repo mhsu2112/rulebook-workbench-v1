@@ -462,6 +462,31 @@ def test_program_package_zip(client, approot):
     assert b"12-cfr-1266" in z.read("pkg1-package/manifest.csv")
 
 
+
+def test_share_package_excludes_restricted(client, approot):
+    client.post("/api/programs", json={"program_id": "pkg2"})
+    rdir = approot / "programs" / "pkg2" / "restricted"
+    rdir.mkdir(parents=True, exist_ok=True)
+    (rdir / "interview.json").write_text('{"turns": ["SECRET-TRANSCRIPT"]}')
+    (rdir / "mandate_hypotheses.json").write_text('{"h": "SECRET-MANDATE"}')
+
+    owner = _zip.ZipFile(_io.BytesIO(client.get("/api/programs/pkg2/package").content))
+    assert "pkg2-package/restricted/interview.json" in owner.namelist()
+
+    r = client.get("/api/programs/pkg2/package?share=true")
+    assert r.status_code == 200
+    assert 'filename="pkg2-share-package.zip"' in r.headers["content-disposition"]
+    z = _zip.ZipFile(_io.BytesIO(r.content))
+    names = z.namelist()
+    assert not any("/restricted/" in n for n in names)
+    assert "pkg2-package/index.html" in names and "pkg2-package/MANIFEST.txt" in names
+    for n in names:                                   # nothing restricted leaks anywhere
+        body = z.read(n)
+        assert b"SECRET-TRANSCRIPT" not in body and b"SECRET-MANDATE" not in body
+    cover = z.read("pkg2-package/index.html").decode()
+    assert "Share copy" in cover and "<code>restricted/</code>" not in cover
+
+
 def test_discover_questions_endpoint(client):
     client.post("/api/programs", json={"program_id": "q1"})
     client.post("/api/programs/q1/interview", json={"message": "clean up AML"})

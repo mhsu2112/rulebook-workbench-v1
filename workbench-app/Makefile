@@ -1,7 +1,7 @@
 # Use the venv's interpreter when present so `make app` works without activation
 PY := $(shell test -x .venv/bin/python && echo .venv/bin/python || echo python3)
 
-.PHONY: check test smoke models install
+.PHONY: check test smoke models models-live install
 
 install:
 	pip install -e ".[dev]"
@@ -19,6 +19,10 @@ smoke:
 # List the current OpenRouter catalog entries for the models configured in models.yaml
 models:
 	$(PY) scripts/check_models.py
+
+# Live check: every configured model answers with zero-data-retention forced on (tiny cost)
+models-live:
+	$(PY) scripts/check_models_live.py
 
 # Start the workbench app (http://localhost:8000)
 app:
