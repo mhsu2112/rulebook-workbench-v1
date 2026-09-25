@@ -32,8 +32,40 @@ def init_program(root: str | Path, program_id: str) -> Path:
     return pdir
 
 
+def _branch(program_dir: str | Path) -> dict | None:
+    """The branch.json of an exploration folder (programs/<pid>/explorations/<xid>), else None."""
+    p = Path(program_dir)
+    if p.parent.name != "explorations" or not (p / "branch.json").exists():
+        return None
+    try:
+        return json.loads((p / "branch.json").read_text())
+    except ValueError:
+        return None
+
+
+def next_entry_id(program_dir: str | Path) -> str:
+    """The next id in this log: DL-### for a program, EX-<X>-### inside an exploration,
+    so a branch decision can never be quoted as an official DL number."""
+    b = _branch(program_dir)
+    prefix = f"EX-{b['branch_id'].upper()}" if b else "DL"
+    return f"{prefix}-{len(read_decisions(program_dir)) + 1:03d}"
+
+
 def append_decision(program_dir: str | Path, entry: dict) -> None:
-    """Validate and append one entry to the program's append-only decision log."""
+    """Validate and append one entry to the program's append-only decision log.
+
+    Inside an exploration (ADR-019) every entry is stamped with the branch, and a
+    ratification is recorded as exploration_ratification: it unlocks the branch's
+    later steps but is never an official ratification."""
+    b = _branch(program_dir)
+    if b:
+        entry = dict(entry)
+        entry["exploration"] = b["branch_id"]
+        if entry.get("type") == "ratification":
+            entry["type"] = "exploration_ratification"
+        eid = str(entry.get("entry_id", ""))
+        if eid.startswith("DL-"):
+            entry["entry_id"] = f"EX-{b['branch_id'].upper()}-" + eid[3:]
     jsonschema.validate(entry, _entry_schema())
     log = Path(program_dir) / "governed" / "decisions.log.jsonl"
     log.parent.mkdir(parents=True, exist_ok=True)

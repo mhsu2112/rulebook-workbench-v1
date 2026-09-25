@@ -76,8 +76,25 @@ def _para(doc, text="", *, size=None, color=None, bold=False, italic=False, afte
     return p
 
 
-def styled_document(footer_text: str):
-    """A4 Word document with the Workbench house style and a 'page N' footer."""
+def _exploration(program_dir) -> dict | None:
+    """branch.json when program_dir is an exploration (ADR-019), else None."""
+    if program_dir is None:
+        return None
+    p = Path(program_dir)
+    if p.parent.name != "explorations" or not (p / "branch.json").exists():
+        return None
+    try:
+        return json.loads((p / "branch.json").read_text())
+    except ValueError:
+        return None
+
+
+def styled_document(footer_text: str, program_dir=None):
+    """A4 Word document with the Workbench house style and a 'page N' footer.
+    Inside an exploration, every page is marked as not part of the official record."""
+    x = _exploration(program_dir)
+    if x:
+        footer_text = "EXPLORATION \u00b7 " + footer_text
     doc = Document()
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Cm(21.0), Cm(29.7)
@@ -101,6 +118,11 @@ def styled_document(footer_text: str):
     fr = fp.add_run(footer_text)
     fr.font.size = Pt(8); fr.font.color.rgb = DIM
     _page_field(fp)
+    if x:
+        bp = doc.add_paragraph()
+        br = bp.add_run(f"EXPLORATION \u2014 not part of the official record \u00b7 {x.get('label', '')}: {x.get('name', '')} "
+                        f"\u00b7 changed answer {x.get('changed', {}).get('answer_id', '')}")
+        br.bold = True; br.font.size = Pt(9); br.font.color.rgb = RGBColor(0x9A, 0x5C, 0x00)
     return doc
 
 
@@ -123,12 +145,12 @@ def build_docx(program_dir: str | Path, program_id: str) -> bytes:
                      if any(not l.get("verified") for l in f.get("locations", [])))
     today = datetime.now(timezone.utc).strftime("%-d %B %Y")
 
-    doc = styled_document(f"{program_id} — Defect Register · advisory working paper · page ")
+    doc = styled_document(f"{program_id} — Defect Register · advisory working paper · page ", program_dir)
 
     doc.add_heading(f"{program_id} — Defect Register", level=0)
     _para(doc, f"Rulebook Workbench · Derived Blueprint (Phase 2) · generated {today}", size=9, color=DIM)
     _para(doc, (f"This register lists the {total} defects the Workbench found while distilling the {n_sources} "
-                "in-scope sources of this programme. Each finding names a defect type, explains the problem, "
+                "in-scope sources of this program. Each finding names a defect type, explains the problem, "
                 "and cites the sources where it appears, with the verbatim passage. A tick means the quoted "
                 "passage was checked by code and found word-for-word in the source text."))
     _para(doc, ("Defects are observations about the current rules, not errors in the analysis. In the Refactor "

@@ -85,6 +85,11 @@ make app
 
 Then open **<http://localhost:8000>** in your browser.
 
+The redesigned interface (release 1) is at **<http://localhost:8000/v2>**. It works
+on the same programs and records as the classic interface, which stays at `/`. The
+first time you open it, it asks for your name and role; these go on every decision
+you record and are kept in that browser only.
+
 **Windows / no `make`:** run the app directly:
 
 ```bash

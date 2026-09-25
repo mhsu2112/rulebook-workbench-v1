@@ -144,3 +144,33 @@ fixture corpora (M-milestones get lightweight fixture + threshold checks
 now); (e) complete gate catalogue tooling; (f) independence *profiles*
 (lineage/team/method) beyond the interim family check. Each returns to the
 board at the v2 PRD.
+
+**ADR-018 — Owner copy of the Purpose Statement carries the transcript.** `accepted`
+Amends ADR-010. The Purpose Statement exists in two copies. The *owner copy*
+(the program owner's own record) appends the full verbatim interview
+transcript as Appendix A and is marked internal. The *share copy*, and
+anything published, still carries synthesized conclusions plus only the
+verbatim excerpts the respondent consents to. The transcript itself stays in
+`restricted/` (ADR-016); share packages never include it. Respondents are
+told at interview start that the owner copy includes the transcript.
+Interviews recorded before this ADR were given the ADR-010 notice only; their
+owner copies include the transcript on the program owner's decision
+(25 September 2026).
+
+**ADR-019 — Explorations: branches outside the official record.** `accepted`
+A program may have explorations: branches that start from one changed
+interview answer and run forward on their own, so staff can test other
+perspectives without adding to the official record (design note, 25 September
+2026). A branch lives inside its program (`explorations/<id>/`) and is
+addressed as `<program>~x-<id>`, so every step and gate works inside it
+unchanged. It copies only what the changed answer does not affect. Its
+decisions go to its own log, numbered `EX-<ID>-###`; its ratifications are
+recorded as `exploration_ratification` and unlock only the branch's own later
+steps. Any signed-in user may act in any role inside a branch, and the log
+records who acted and in which role. Branch documents and packages are marked
+as not part of the official record, and branches never appear in the
+program's packages. A branch inherits its program's pinned models. It joins
+the official record only by promotion: the Program Owner creates a new
+official program from it (the ADR-007 pattern), its provisional ratifications
+are reset for re-ratification, and one decision is logged in each program.
+
