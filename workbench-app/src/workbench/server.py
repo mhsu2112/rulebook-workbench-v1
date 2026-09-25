@@ -28,7 +28,7 @@ from fastapi.responses import HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import acquire, crosswalk as crosswalk_mod, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
+from . import acquire, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
 from .config import load_registry
 from .router import (
     DiversityViolationError,
@@ -1215,6 +1215,18 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
     def blueprint_render(pid: str):
         _distiller(pid)   # same gates: frozen manifest + ratified PS
         return render.render_blueprint(state.pdir(pid), pid)
+
+    @app.get("/api/programs/{pid}/blueprint/defects/register.docx")
+    def defect_register_docx(pid: str):
+        """The Defect Register as a readable Word document (derived; regenerated on demand)."""
+        _distiller(pid)   # same gates as the blueprint: frozen manifest + ratified PS
+        try:
+            data = defect_report.build_docx(state.pdir(pid), pid)
+        except defect_report.NoDefectRegister as e:
+            raise HTTPException(409, str(e))
+        return Response(content=data,
+                        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        headers={"Content-Disposition": f'attachment; filename="{pid}-defect-register.docx"'})
 
     @app.post("/api/programs/{pid}/blueprint/defects")
     def blueprint_defects(pid: str, body: DefectRunIn):
