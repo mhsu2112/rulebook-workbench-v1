@@ -1,7 +1,7 @@
 # Use the venv's interpreter when present so `make app` works without activation
 PY := $(shell test -x .venv/bin/python && echo .venv/bin/python || echo python3)
 
-.PHONY: check test smoke models models-live install
+.PHONY: check test smoke models models-live models-updates install
 
 install:
 	pip install -e ".[dev]"
@@ -23,6 +23,10 @@ models:
 # Live check: every configured model answers with zero-data-retention forced on (tiny cost)
 models-live:
 	$(PY) scripts/check_models_live.py
+
+# Report newer releases of every configured model (reads the live catalog; changes nothing)
+models-updates:
+	$(PY) scripts/model_updates.py
 
 # Start the workbench app (http://localhost:8000)
 app:

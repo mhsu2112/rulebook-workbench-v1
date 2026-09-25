@@ -1,5 +1,6 @@
 # Task registry — every AI call site is a named task (PRD spec/40 §6.1).
-# Model IDs verified against the live OpenRouter catalog 2026-07-18 (D4).
+# Model IDs verified against the live OpenRouter catalog 2026-09-25 (D4).
+# Maintenance: `make models-updates` lists newer releases of every model named here.
 # Run `make models` to re-verify IDs against the current catalog.
 #
 # structured_output paths resolve relative to contracts_dirs (see settings);
@@ -19,20 +20,24 @@ settings:
   # Extra models offered in the per-task toggle beyond the task defaults/fallbacks.
   # Open-weight options included to demonstrate provider neutrality. Slugs should be
   # confirmed against the live catalog with `make models` before relying on them.
+  # (Claude Fable 5.1 omitted: no zero-data-retention endpoint on OpenRouter as of 2026-09-25.)
   catalog:
-    - nvidia/nemotron-4-340b-instruct
-    - moonshotai/kimi-k2
-    - qwen/qwen3-235b-a22b
-    # Strong Gemini tier so the "Lab-first: Gemini" preset is credible for heavy
-    # reasoning (flash-lite alone is too light). Confirm the slug via `make models`.
-    - google/gemini-3.1-pro
+    - openai/gpt-6-astra                  # OpenAI flagship (premium)
+    - google/gemini-3.1-pro-preview       # Google frontier reasoning
+    - google/gemini-3.8-flash             # Google mid tier
+    - x-ai/grok-4.7
+    # Open-weight options, to demonstrate provider neutrality:
+    - moonshotai/kimi-k3
+    - qwen/qwen3.8-2.4t-a95b
+    - nvidia/nemotron-3-ultra-550b-a55b
+    - deepseek/deepseek-v4-pro
 
 tasks:
   intake_interview:
     phase: P0
     description: Conversational purpose elicitation (SKILL.md 0.2 conduct)
     default_model: anthropic/claude-sonnet-5
-    fallbacks: [openai/gpt-5.6-luna]
+    fallbacks: [openai/gpt-6-luna]
     params: { temperature: 0.7, max_tokens: 2048 }
     sensitive: true            # interview transcripts are ADR-010 material
     skill_version: "purpose-elicitation 0.2"
@@ -40,8 +45,8 @@ tasks:
   purpose_synthesis:
     phase: P0
     description: Typed PurposeStatement from interview transcript
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.2, max_tokens: 8192 }
     sensitive: true
     structured_output: purpose_statement.schema.json
@@ -49,8 +54,8 @@ tasks:
   distill_extract:
     phase: P2
     description: Per-item extraction into element tables (BlueprintExtraction)
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     # Large regs (e.g. 10 CFR 609) produce big extractions — headroom so the JSON
     # isn't truncated at the cap; the router also auto-doubles on truncation.
     params: { temperature: 0.2, max_tokens: 32000 }
@@ -59,53 +64,53 @@ tasks:
   distill_focus:
     phase: P2
     description: Cheap long-context pre-pass — return verbatim scope-relevant passages from oversized texts
-    default_model: google/gemini-3.1-flash-lite
-    fallbacks: [openai/gpt-5.6-luna]
+    default_model: google/gemini-3.5-flash-lite
+    fallbacks: [openai/gpt-6-luna]
     params: { temperature: 0.0, max_tokens: 32768 }
 
   claim_verify:
     phase: P2
     description: Claim-level verification records; high volume, parallel
-    default_model: google/gemini-3.1-flash-lite
-    fallbacks: [openai/gpt-5.6-luna]
+    default_model: google/gemini-3.5-flash-lite
+    fallbacks: [openai/gpt-6-luna]
     params: { temperature: 0.0, max_tokens: 2048 }
 
   defect_detect:
     phase: P2
     description: D1-D10 defect detection across the distilled blueprint
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.3, max_tokens: 32000 }
     structured_output: defect_findings.schema.json
 
   misalign_detect:
     phase: P3D
     description: M1-M5 misalignment detection against the Ratified Mandate (P3D.2)
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.3, max_tokens: 16384 }
     structured_output: misalignment_findings.schema.json
 
   redesign_propose:
     phase: P3D
     description: Redesign-pass move proposals with mandatory objective hooks (P3D.4)
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.3, max_tokens: 8192 }
     structured_output: operation_proposal.schema.json
 
   operation_propose:
     phase: P3
     description: Refactor-pass operation proposals from the defect register (P3.2)
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.3, max_tokens: 8192 }
     structured_output: operation_proposal.schema.json
 
   effect_classify_assist:
     phase: P3
     description: DRAFT effect-class analysis for the human classifier (PRD NG2)
-    default_model: openai/gpt-5.6-sol   # deliberately a different family from operation_propose — the drafter of a move should not grade its own homework
+    default_model: openai/gpt-6-sol   # deliberately a different family from operation_propose — the drafter of a move should not grade its own homework
     fallbacks: [anthropic/claude-sonnet-5]
     params: { temperature: 0.1, max_tokens: 8192 }
     structured_output: effect_classification.schema.json
@@ -113,8 +118,8 @@ tasks:
   source_discovery:
     phase: P1
     description: Assisted census — propose candidate corpus sources for human review (spec/53); NOT a governed artifact, locators verified against the live catalog before display
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.3, max_tokens: 8192 }
     structured_output: source_candidates.schema.json
 
@@ -122,13 +127,13 @@ tasks:
     phase: P1
     description: Up to 3 clarifying questions before assisted source discovery (spec/54); plain text, not a governed artifact
     default_model: anthropic/claude-sonnet-5
-    fallbacks: [openai/gpt-5.6-sol]
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.4, max_tokens: 1024 }
 
   second_census:
     phase: P1
     description: Independent second pass for C-ADV2 (diversity-enforced)
-    default_model: openai/gpt-5.6-sol
+    default_model: openai/gpt-6-sol
     fallbacks: [mistralai/mistral-medium-3-5]   # pre-filtered: no anthropic
     params: { temperature: 0.2, max_tokens: 16384 }
     must_differ_family_from: [distill_extract, defect_detect]
@@ -137,7 +142,7 @@ tasks:
     phase: P2
     description: Advisory executive summary / reading guide for a Derived Blueprint (never a governed artifact)
     default_model: anthropic/claude-sonnet-5
-    fallbacks: [openai/gpt-5.6-sol]
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.4, max_tokens: 8192 }
     structured_output: blueprint_summary.schema.json
 
@@ -145,22 +150,22 @@ tasks:
     phase: P3
     description: Advisory executive summary for a Target Blueprint (never a governed artifact)
     default_model: anthropic/claude-sonnet-5
-    fallbacks: [openai/gpt-5.6-sol]
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.4, max_tokens: 8192 }
     structured_output: blueprint_summary.schema.json
 
   render_prose:
     phase: any
     description: Cheap rendering/formatting of governed artifacts to prose
-    default_model: google/gemini-3.1-flash-lite
-    fallbacks: [openai/gpt-5.6-luna]
+    default_model: google/gemini-3.5-flash-lite
+    fallbacks: [openai/gpt-6-luna]
     params: { temperature: 0.4, max_tokens: 4096 }
 
   mandate_synthesis:
     phase: P0
     description: Typed MandateHypotheses from interview S5 material (ADR-006 — hypotheses only, never adopted)
-    default_model: anthropic/claude-opus-4.8
-    fallbacks: [openai/gpt-5.6-sol]
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
     params: { temperature: 0.1, max_tokens: 8192 }
     sensitive: true
     structured_output: mandate.schema.json
@@ -168,15 +173,15 @@ tasks:
   eval_respondent:
     phase: eval
     description: Persona simulator answering the interviewer in eval runs (ADR-011)
-    default_model: openai/gpt-5.6-luna
-    fallbacks: [google/gemini-3.1-flash-lite]
+    default_model: openai/gpt-6-luna
+    fallbacks: [google/gemini-3.5-flash-lite]
     params: { temperature: 0.8, max_tokens: 2048 }   # headroom for reasoning tokens (C12/C15 null-content fix)
     must_differ_family_from: [intake_interview]   # respondent must not be the interviewer's family
 
   eval_judge:
     phase: eval
     description: Scores an eval transcript + synthesized statement against the case's gold labels
-    default_model: openai/gpt-5.6-sol
-    fallbacks: [google/gemini-3.1-flash-lite]
+    default_model: openai/gpt-6-sol
+    fallbacks: [google/gemini-3.5-flash-lite]
     params: { temperature: 0.0, max_tokens: 2048 }
     structured_output: eval_verdict.schema.json

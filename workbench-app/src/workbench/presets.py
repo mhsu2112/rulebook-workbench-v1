@@ -29,16 +29,18 @@ def family(model_id: str) -> str:
 # sensitive (transcript-bearing) task to.
 ELIGIBLE_SENSITIVE = {"anthropic", "openai", "google"}
 
-# Per-lab model choices. Anthropic has no distinct cheap tier → Sonnet serves.
-# NOTE: google/gemini-3.1-pro slug should be confirmed with `make models`.
+# Per-lab model choices (verified against the OpenRouter catalog 2026-09-25;
+# `make models-updates` lists newer releases). Anthropic has no distinct cheap
+# tier → Sonnet serves. Premium tiers (Claude Fable, GPT-6 Astra) stay opt-in
+# via the per-task selector rather than being preset defaults.
 LAB = {
-    "anthropic": {"strong": "anthropic/claude-opus-4.8", "mid": "anthropic/claude-sonnet-5", "cheap": "anthropic/claude-sonnet-5"},
-    "openai":    {"strong": "openai/gpt-5.6-sol",        "mid": "openai/gpt-5.6-sol",        "cheap": "openai/gpt-5.6-luna"},
-    "google":    {"strong": "google/gemini-3.1-pro",     "mid": "google/gemini-3.1-pro",     "cheap": "google/gemini-3.1-flash-lite"},
+    "anthropic": {"strong": "anthropic/claude-opus-5.5",     "mid": "anthropic/claude-sonnet-5", "cheap": "anthropic/claude-sonnet-5"},
+    "openai":    {"strong": "openai/gpt-6-sol",              "mid": "openai/gpt-6-sol",          "cheap": "openai/gpt-6-luna"},
+    "google":    {"strong": "google/gemini-3.1-pro-preview", "mid": "google/gemini-3.8-flash",   "cheap": "google/gemini-3.5-flash-lite"},
 }
 ALT_LAB = {"anthropic": "openai", "openai": "anthropic", "google": "anthropic"}
 
-OPEN = ["moonshotai/kimi-k2", "qwen/qwen3-235b-a22b", "nvidia/nemotron-4-340b-instruct"]
+OPEN = ["moonshotai/kimi-k3", "qwen/qwen3.8-2.4t-a95b", "nvidia/nemotron-3-ultra-550b-a55b"]
 
 # Visible, preset-controlled tasks and their complexity tier.
 TIER = {
@@ -53,20 +55,20 @@ TIER = {
 HIDDEN = {"distill_focus", "claim_verify", "render_prose", "eval_respondent", "eval_judge"}
 
 COST = {"heavy": "anthropic/claude-sonnet-5",
-        "conversational": "google/gemini-3.1-flash-lite",
-        "light": "google/gemini-3.1-flash-lite"}
+        "conversational": "openai/gpt-6-luna",
+        "light": "openai/gpt-6-luna"}
 
 # Open-weight assignment chosen so the independence tasks land on a family
 # distinct from the tasks they must differ from (kimi≠qwen≠nemotron).
 OPEN_MAP = {
-    "distill_extract": "qwen/qwen3-235b-a22b", "defect_detect": "moonshotai/kimi-k2",
-    "second_census": "nvidia/nemotron-4-340b-instruct",
-    "operation_propose": "qwen/qwen3-235b-a22b", "effect_classify_assist": "nvidia/nemotron-4-340b-instruct",
-    "redesign_propose": "moonshotai/kimi-k2", "misalign_detect": "qwen/qwen3-235b-a22b",
-    "source_discovery": "nvidia/nemotron-4-340b-instruct",
-    "purpose_synthesis": "moonshotai/kimi-k2", "mandate_synthesis": "moonshotai/kimi-k2",
-    "intake_interview": "qwen/qwen3-235b-a22b", "discovery_questions": "qwen/qwen3-235b-a22b",
-    "blueprint_summary": "moonshotai/kimi-k2", "target_summary": "qwen/qwen3-235b-a22b",
+    "distill_extract": "qwen/qwen3.8-2.4t-a95b", "defect_detect": "moonshotai/kimi-k3",
+    "second_census": "nvidia/nemotron-3-ultra-550b-a55b",
+    "operation_propose": "qwen/qwen3.8-2.4t-a95b", "effect_classify_assist": "nvidia/nemotron-3-ultra-550b-a55b",
+    "redesign_propose": "moonshotai/kimi-k3", "misalign_detect": "qwen/qwen3.8-2.4t-a95b",
+    "source_discovery": "nvidia/nemotron-3-ultra-550b-a55b",
+    "purpose_synthesis": "moonshotai/kimi-k3", "mandate_synthesis": "moonshotai/kimi-k3",
+    "intake_interview": "qwen/qwen3.8-2.4t-a95b", "discovery_questions": "qwen/qwen3.8-2.4t-a95b",
+    "blueprint_summary": "moonshotai/kimi-k3", "target_summary": "qwen/qwen3.8-2.4t-a95b",
 }
 
 PRESETS = ("recommended", "cost", "open", "lab")
@@ -101,7 +103,7 @@ def _alternate(preset: str, lab: Optional[str], forbidden: set) -> Optional[str]
             if family(m) not in forbidden:
                 return m
     if preset == "cost":
-        for m in ("openai/gpt-5.6-luna", "google/gemini-3.1-flash-lite", "anthropic/claude-sonnet-5"):
+        for m in ("openai/gpt-6-luna", "google/gemini-3.5-flash-lite", "anthropic/claude-sonnet-5"):
             if family(m) not in forbidden:
                 return m
     # last resort: any lab strong model not forbidden

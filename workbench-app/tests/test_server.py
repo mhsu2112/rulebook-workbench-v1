@@ -604,6 +604,27 @@ def test_model_policy_lifecycle(client, approot):
     assert client.post("/api/programs/pol1/policy", json={"preset": "cost"}).status_code == 200
 
 
+def test_locked_policy_pins_models_against_later_default_changes(client, approot):
+    from workbench import policy as policy_mod
+    client.post("/api/programs", json={"program_id": "pin1"})
+    client.post("/api/programs/pin1/policy/override", json={"task_id": "blueprint_summary", "model": "openai/gpt-6-luna"})
+    lk = client.post("/api/programs/pin1/policy/ratify", json={"name": "M", "role": "Program Owner", "rationale": "go"}).json()
+    pins = lk["pinned_models"]
+    models = client.get("/api/models").json()["tasks"]
+    assert set(pins) == set(models)                                   # every task pinned
+    assert pins["blueprint_summary"] == "openai/gpt-6-luna"           # the program's own choice
+    assert pins["distill_extract"] == models["distill_extract"]["default_model"]
+    # an app-wide change made AFTER the lock does not reach the locked program
+    client.post("/api/models/override", json={"task_id": "distill_extract", "model": "x-ai/grok-4.7"})
+    doc = policy_mod.load(approot / "programs/pin1", "pin1")
+    assert policy_mod.effective_overrides(doc)["distill_extract"] == pins["distill_extract"]
+    # re-opening drops the pins; a legacy lock without pins keeps following overrides
+    client.post("/api/programs/pin1/policy/reopen", json={"name": "M", "role": "Program Owner", "rationale": "r"})
+    doc = policy_mod.load(approot / "programs/pin1", "pin1")
+    assert "pinned_models" not in doc
+    assert policy_mod.effective_overrides({"status": "ratified", "overrides": {"a": "b"}}) == {"a": "b"}
+
+
 def test_freeze_gated_on_locked_policy(client, approot):
     client.post("/api/programs", json={"program_id": "g2"})
     client.post("/api/programs/g2/manifest/items", json={
