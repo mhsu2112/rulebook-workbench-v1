@@ -344,6 +344,35 @@ def test_api_redesign_mode_refactors_then_unlocks_redesign(approot):  # noqa: F8
     assert rd.status_code == 200 or "baseline" not in rd.text.lower()
 
 
+
+def test_defect_register_docx_download(approot):  # noqa: F811
+    import io
+    import docx
+    c = _api_app(approot)
+    gov = approot / "programs/p1/governed"
+    r = c.get("/api/programs/p1/blueprint/defects/register.docx")
+    assert r.status_code == 409 and "defect detection" in r.json()["detail"]
+    man = c.get("/api/programs/p1/manifest").json()
+    (gov / "registers").mkdir(exist_ok=True)
+    f1 = dict(FINDING, locations=[{"item_id": man["items"][0]["item_id"], "quote": "line one\nline two", "verified": True}])
+    f2 = dict(FINDING, code="D4", title="Undefined term X",
+              locations=[{"item_id": man["items"][0]["item_id"], "quote": "q", "verified": False}])
+    (gov / "registers/defects.json").write_text(json.dumps(
+        {"runs": {"defects-cross": {"findings": [f1, f2], "scope_label": "cross", "detected_at": "2026-09-25T00:00:00"}}}))
+    r = c.get("/api/programs/p1/blueprint/defects/register.docx")
+    assert r.status_code == 200
+    assert "wordprocessingml" in r.headers["content-type"]
+    assert 'filename="p1-defect-register.docx"' in r.headers["content-disposition"]
+    d = docx.Document(io.BytesIO(r.content))
+    text = "\n".join(p.text for p in d.paragraphs)
+    assert FINDING["title"] in text and "Undefined term X" in text
+    assert "defects-cross#0" in text and "defects-cross#1" in text
+    assert "1 of the 2 findings include" in text          # the unverified quote is counted
+    assert man["items"][0]["title"] in text               # sources shown by title, not id
+    cells = [c_.text for row in d.tables[0].rows for c_ in row.cells]
+    assert "All findings" in cells and "2" in cells
+
+
 def test_target_blueprint_render_and_summary(approot):  # noqa: F811
     c = _api_app(approot)
     # no target blueprint yet -> 409
