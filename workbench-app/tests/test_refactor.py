@@ -373,6 +373,36 @@ def test_defect_register_docx_download(approot):  # noqa: F811
     assert "All findings" in cells and "2" in cells
 
 
+
+def test_corpus_manifest_docx_download(approot):  # noqa: F811
+    import io
+    import docx
+    c = _api_app(approot)                       # frozen manifest from the AML slice
+    gov = approot / "programs/p1/governed"
+    man = c.get("/api/programs/p1/manifest").json()
+    first, second = man["items"][0], man["items"][1]
+    (gov / "corpus_texts").mkdir(parents=True, exist_ok=True)
+    (gov / "corpus_texts/acquisition.json").write_text(json.dumps({"items": {
+        first["item_id"]: {"status": "fetched", "source_url": "https://example.org/a", "fetched_at": "2026-09-24T20:30:15+00:00",
+                           "raw_sha256": "sha256:abc123", "raw_bytes": 4096, "text_chars": 1234, "raw_ext": "html"},
+        second["item_id"]: {"status": "manual", "filename": "b.pdf", "uploaded_at": "2026-09-24T20:26:03+00:00",
+                            "raw_sha256": "sha256:def456", "raw_bytes": 2048, "text_chars": 900}}}))
+    (gov / "excluded_sources.json").write_text(json.dumps({"items": {second["item_id"]: {"reason": "landing page only"}}}))
+    r = c.get("/api/programs/p1/corpus/manifest.docx")
+    assert r.status_code == 200 and "wordprocessingml" in r.headers["content-type"]
+    assert 'filename="p1-corpus-manifest.docx"' in r.headers["content-disposition"]
+    d = docx.Document(io.BytesIO(r.content))
+    text = "\n".join(p.text for p in d.paragraphs)
+    cells = "\n".join(c_.text for t_ in d.tables for row in t_.rows for c_ in row.cells)
+    assert first["title"] in text and second["title"] in text
+    assert "https://example.org/a" in cells and "abc123" in cells       # fetched provenance
+    assert "b.pdf" in cells and "def456" in cells                       # uploaded provenance
+    assert "landing page only" in cells                                 # set-aside reason
+    assert man["content_hash"] in cells and "Frozen" in cells
+    assert "DRAFT" not in text
+    assert c.get("/api/programs/nope/corpus/manifest.docx").status_code == 404
+
+
 def test_target_blueprint_render_and_summary(approot):  # noqa: F811
     c = _api_app(approot)
     # no target blueprint yet -> 409

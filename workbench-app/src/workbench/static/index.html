@@ -903,6 +903,9 @@ function renderCorpus() {
       pane.appendChild(el("div", { style: "border:1px solid var(--ok); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
         el("span", { class: "badge ratified", text: "FROZEN" }, []),
         el("span", { text: "  " + m.items.length + " items · " + (m.frozen_at || "").slice(0, 19) }, []),
+        el("button", { text: "⬇ Corpus Manifest (Word)", title: "Download every source with its citation, URL, how its text was obtained and its SHA-256 fingerprint",
+          style: "font-size:11px; padding:2px 8px; margin-left:8px;", onclick: function () {
+            window.location = "/api/programs/" + encodeURIComponent(state.pid) + "/corpus/manifest.docx"; } }, []),
         el("div", { class: "dim", style: "font-size:11px; word-break:break-all; margin-top:4px;", text: m.content_hash }, [])
       ]));
       // Acquisition panel (M3.1): fetch texts against the pinned corpus

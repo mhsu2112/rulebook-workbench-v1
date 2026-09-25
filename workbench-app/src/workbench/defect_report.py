@@ -76,25 +76,8 @@ def _para(doc, text="", *, size=None, color=None, bold=False, italic=False, afte
     return p
 
 
-def build_docx(program_dir: str | Path, program_id: str) -> bytes:
-    g = Path(program_dir) / "governed"
-    reg = _load(g / "registers" / "defects.json")
-    runs = (reg or {}).get("runs") or {}
-    if not runs:
-        raise NoDefectRegister("No Defect Register yet — run defect detection on the Derived Blueprint first")
-    man = _load(g / "manifest" / "manifest.json") or {}
-    titles = {i["item_id"]: i.get("title", i["item_id"]) for i in man.get("items", [])}
-    ps = _load(g / "purpose_statement.json") or {}
-    scope = (((ps.get("synthesis") or {}).get("scope_sentence") or {}).get("text") or "").strip()
-    excluded = set(((_load(g / "excluded_sources.json") or {}).get("items") or {}).keys())
-    n_sources = len([i for i in man.get("items", []) if i["item_id"] not in excluded])
-
-    run_ids = sorted(runs)
-    total = sum(len(runs[r].get("findings", [])) for r in run_ids)
-    unverified = sum(1 for r in run_ids for f in runs[r].get("findings", [])
-                     if any(not l.get("verified") for l in f.get("locations", [])))
-    today = datetime.now(timezone.utc).strftime("%-d %B %Y")
-
+def styled_document(footer_text: str):
+    """A4 Word document with the Workbench house style and a 'page N' footer."""
     doc = Document()
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Cm(21.0), Cm(29.7)
@@ -115,9 +98,32 @@ def build_docx(program_dir: str | Path, program_id: str) -> bytes:
             rfonts.set(qn(attr), "Arial")
 
     fp = sec.footer.paragraphs[0]; fp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    fr = fp.add_run(f"{program_id} — Defect Register · advisory working paper · page ")
+    fr = fp.add_run(footer_text)
     fr.font.size = Pt(8); fr.font.color.rgb = DIM
     _page_field(fp)
+    return doc
+
+
+def build_docx(program_dir: str | Path, program_id: str) -> bytes:
+    g = Path(program_dir) / "governed"
+    reg = _load(g / "registers" / "defects.json")
+    runs = (reg or {}).get("runs") or {}
+    if not runs:
+        raise NoDefectRegister("No Defect Register yet — run defect detection on the Derived Blueprint first")
+    man = _load(g / "manifest" / "manifest.json") or {}
+    titles = {i["item_id"]: i.get("title", i["item_id"]) for i in man.get("items", [])}
+    ps = _load(g / "purpose_statement.json") or {}
+    scope = (((ps.get("synthesis") or {}).get("scope_sentence") or {}).get("text") or "").strip()
+    excluded = set(((_load(g / "excluded_sources.json") or {}).get("items") or {}).keys())
+    n_sources = len([i for i in man.get("items", []) if i["item_id"] not in excluded])
+
+    run_ids = sorted(runs)
+    total = sum(len(runs[r].get("findings", [])) for r in run_ids)
+    unverified = sum(1 for r in run_ids for f in runs[r].get("findings", [])
+                     if any(not l.get("verified") for l in f.get("locations", [])))
+    today = datetime.now(timezone.utc).strftime("%-d %B %Y")
+
+    doc = styled_document(f"{program_id} — Defect Register · advisory working paper · page ")
 
     doc.add_heading(f"{program_id} — Defect Register", level=0)
     _para(doc, f"Rulebook Workbench · Derived Blueprint (Phase 2) · generated {today}", size=9, color=DIM)

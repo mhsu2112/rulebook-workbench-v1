@@ -156,7 +156,7 @@ def main() -> int:
     if not blocked and not degraded:
         failed_fb = [r.model for r in results if not r.ok]
         if failed_fb:
-            print("\nAll tasks have their default model. Refused fallbacks (update models.yaml when convenient): "
+            print("\nAll tasks have their default model. Refused (fallbacks or selector options — remove or replace them): "
                   + ", ".join(failed_fb))
         else:
             print("\nAll configured models answered under zero-data-retention.")

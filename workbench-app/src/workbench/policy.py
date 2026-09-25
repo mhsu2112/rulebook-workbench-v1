@@ -75,13 +75,27 @@ def set_override(program_dir, program_id, task_id: str, model) -> dict:
 
 def _hash(doc: dict) -> str:
     return "sha256:" + hashlib.sha256(
-        json.dumps(doc.get("overrides", {}), sort_keys=True).encode()).hexdigest()
+        json.dumps({"overrides": doc.get("overrides", {}), "pinned": doc.get("pinned_models") or {}},
+                   sort_keys=True).encode()).hexdigest()
 
 
-def ratify(program_dir, program_id, name: str, rationale: str) -> dict:
+def effective_overrides(doc: dict) -> dict:
+    """What the router should use for this program. A ratified policy pins the exact
+    model IDs it resolved to at lock time, so later changes to the app-wide defaults
+    (models.yaml, presets) never silently change a locked program. Older policies
+    locked before pinning existed carry no pins and keep following the defaults."""
+    if doc.get("status") == "ratified" and doc.get("pinned_models"):
+        return dict(doc["pinned_models"])
+    return dict(doc.get("overrides") or {})
+
+
+def ratify(program_dir, program_id, name: str, rationale: str,
+           resolved_models: dict | None = None) -> dict:
     doc = load(program_dir, program_id)
     if doc.get("status") == "ratified":
         raise PolicyError("Model policy is already locked")
+    if resolved_models:
+        doc["pinned_models"] = dict(sorted(resolved_models.items()))
     doc["status"] = "ratified"
     doc["ratified_by"] = {"name": name, "role": "Program Owner"}
     doc["ratified_at"] = datetime.now(timezone.utc).isoformat()
@@ -94,6 +108,7 @@ def ratify(program_dir, program_id, name: str, rationale: str) -> dict:
 def reopen(program_dir, program_id) -> dict:
     doc = load(program_dir, program_id)
     doc["status"] = "provisional"
+    doc.pop("pinned_models", None)
     doc["ratified_by"] = None
     doc["ratified_at"] = None
     doc["hash"] = None

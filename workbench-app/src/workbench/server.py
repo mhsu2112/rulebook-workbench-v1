@@ -28,7 +28,7 @@ from fastapi.responses import HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import acquire, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
+from . import acquire, corpus_report, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
 from .config import load_registry
 from .router import (
     DiversityViolationError,
@@ -407,7 +407,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         prev_overrides = state.router.program_overrides
         if pid:
             try:
-                state.router.program_overrides = policy_mod.load(state.pdir(pid), pid).get("overrides") or {}
+                state.router.program_overrides = policy_mod.effective_overrides(policy_mod.load(state.pdir(pid), pid))
             except Exception:  # noqa: BLE001 — a missing/bad policy just means defaults
                 state.router.program_overrides = prev_overrides
         try:
@@ -881,7 +881,14 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         if not body.name.strip() or not body.rationale.strip():
             raise HTTPException(400, "Locking requires your name and a rationale — both go to the Decision Log")
         try:
-            doc = policy_mod.ratify(state.pdir(pid), pid, body.name.strip(), body.rationale.strip())
+            # Pin the exact model each task resolves to right now (program choice >
+            # app-wide user choice > default), so this decision cannot drift later.
+            pending = policy_mod.load(state.pdir(pid), pid)
+            pins = {tid: (pending.get("overrides") or {}).get(tid)
+                         or state.router.user_overrides.get(tid) or t.default_model
+                    for tid, t in state.registry.tasks.items()}
+            doc = policy_mod.ratify(state.pdir(pid), pid, body.name.strip(), body.rationale.strip(),
+                                    resolved_models=pins)
         except policy_mod.PolicyError as e:
             raise HTTPException(409, str(e))
         now = datetime.now(timezone.utc).isoformat()
@@ -1215,6 +1222,17 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
     def blueprint_render(pid: str):
         _distiller(pid)   # same gates: frozen manifest + ratified PS
         return render.render_blueprint(state.pdir(pid), pid)
+
+    @app.get("/api/programs/{pid}/corpus/manifest.docx")
+    def corpus_manifest_docx(pid: str):
+        """The source corpus as a readable, citable Word document (derived; regenerated on demand)."""
+        try:
+            data = corpus_report.build_docx(state.pdir(pid), pid)
+        except corpus_report.NoManifest as e:
+            raise HTTPException(404, str(e))
+        return Response(content=data,
+                        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        headers={"Content-Disposition": f'attachment; filename="{pid}-corpus-manifest.docx"'})
 
     @app.get("/api/programs/{pid}/blueprint/defects/register.docx")
     def defect_register_docx(pid: str):
