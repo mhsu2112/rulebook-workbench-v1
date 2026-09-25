@@ -102,12 +102,12 @@ def build_docx(program_dir: str | Path, program_id: str) -> bytes:
     n_err, n_pend = status.get("error", 0), status.get("pending", 0)
     today = datetime.now(timezone.utc).strftime("%-d %B %Y")
 
-    doc = styled_document(f"{program_id} — Corpus Manifest · page ")
+    doc = styled_document(f"{program_id} — Corpus Manifest · page ", program_dir)
     doc.add_heading(f"{program_id} — Corpus Manifest", level=0)
     _para(doc, f"Rulebook Workbench · source corpus (Phase 1) · generated {today}", size=9, color=DIM)
     if not frozen:
         _para(doc, "DRAFT — this corpus is not yet frozen; the list below can still change.", bold=True, color=BAD)
-    _para(doc, ("This is the record of every source in the programme's corpus: what it is, where it comes "
+    _para(doc, ("This is the record of every source in the program's corpus: what it is, where it comes "
                 "from, and exactly which text the Workbench read. Fetched sources carry the URL and the time "
                 "they were retrieved; uploaded sources carry the document's file name and SHA-256 fingerprint, "
                 "so any reader can confirm they hold the same text. Distillation reads only these texts."))
@@ -158,7 +158,7 @@ def build_docx(program_dir: str | Path, program_id: str) -> bytes:
                 if k: p.alignment = WD_ALIGN_PARAGRAPH.CENTER
                 for run in p.runs: run.font.size = Pt(9)
     _para(doc, ("Advisory working paper produced with AI assistance under human governance. Titles, issuers "
-                "and labels are the programme's own; check citations against the issuing authority before "
+                "and labels are the program's own; check citations against the issuing authority before "
                 "relying on them."), size=8, color=DIM, italic=True, after=0)
 
     for fam in fams:
@@ -198,7 +198,7 @@ def build_docx(program_dir: str | Path, program_id: str) -> bytes:
                 rows.append(("Set aside", excluded[iid].get("reason", ""), BAD))
             e = ext.get(iid)
             if e and e.get("status") == "extracted":
-                rows.append(("Distilled", "Nothing within the programme's scope" if e.get("nothing_in_scope")
+                rows.append(("Distilled", "Nothing within the program's scope" if e.get("nothing_in_scope")
                              else f"{e.get('obligations', 0)} obligations · {e.get('definitions', 0)} definitions"
                                   + (f" · {e.get('citations_verified', 0)}/{e.get('citations_total', 0)} quotes verified"
                                      if e.get("citations_total") else ""),

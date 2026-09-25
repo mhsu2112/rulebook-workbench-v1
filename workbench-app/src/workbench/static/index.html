@@ -97,6 +97,7 @@
 <body>
 <header>
   <h1>Rulebook Workbench <span class="dim">M1 · advisory prototype</span></h1>
+  <a href="/v2" style="font-size:12px; color:var(--acc); text-decoration:none;">Try the new interface →</a>
   <span id="spend"></span>
 </header>
 <div id="errbar"></div>
@@ -1928,7 +1929,7 @@ var TAB_HINTS = {
   purpose: "What this project is for, agreed up front: is it a cleanup or a reshape, what is in scope, and the decision it supports.",
   corpus: "The exact, frozen set of source rules this project works from — locked so the analysis can't shift onto other sources.",
   blueprint: "The rulebook as it actually is, read and structured by AI: every duty and definition, contradictions kept, quotes checked against the source.",
-  refactor: "Proposed clean-ups you decide one at a time; each is labelled by its effect, and anything that would change the law is set aside, not done here.",
+  refactor: "Proposed clean-ups you decide one at a time; each is labeled by its effect, and anything that would change the law is set aside, not done here.",
   redesign: "Proposed changes that must each name an adopted objective they serve; only the responsible official signs them off.",
   target: "The regime after your decisions: the blueprint plus the approved changes, and an honest list of what was left undecided.",
   align: "Where every original rule ended up — merged, repealed, or kept — with a check that a cleanup did not change what the law requires.",
@@ -2085,7 +2086,14 @@ Array.prototype.forEach.call(document.querySelectorAll(".lsec-head"), function (
 })();
 
 applyTabVisibility(null);
-refreshTop().catch(function (e) { showError("Could not reach the workbench API: " + e.message); });
+refreshTop().then(function () {
+  // Deep link from the new interface (/v2): #open=<program>/<tab> opens that program on that tab.
+  var m = /^#open=([a-z0-9][a-z0-9_-]*)(?:\/([a-z]+))?$/.exec(location.hash || "");
+  if (m && state.programs.indexOf(m[1]) >= 0) {
+    selectProgram(m[1]);
+    if (m[2] && $("tab-" + m[2])) showTab(m[2]);
+  }
+}).catch(function (e) { showError("Could not reach the workbench API: " + e.message); });
 </script>
 </body>
 </html>

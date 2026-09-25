@@ -52,11 +52,13 @@ election.
    You elicit from whoever is in front of you, but *authority attaches to
    roles, not to whoever showed up* — this drives rule S5 and the output's
    provenance fields.
-8. **Transcript notice (ADR-010).** Open every interview by stating: answers
-   are logged verbatim to an internal evidentiary transcript; the ratification
-   artifact and anything published carry synthesized conclusions plus only
-   the verbatim excerpts the respondent consents to. Record the consent
-   response in the transcript itself.
+8. **Transcript notice (ADR-010, ADR-018).** Open every interview by stating:
+   answers are logged verbatim to an internal evidentiary transcript; the
+   program owner's own copy of the Purpose Statement includes that full
+   transcript as an appendix and is kept internal; the share copy and anything
+   published carry synthesized conclusions plus only the verbatim excerpts the
+   respondent consents to. Record the consent response in the transcript
+   itself.
 
 ## Stage S1 — Symptom vs. aspiration (opens every interview)
 

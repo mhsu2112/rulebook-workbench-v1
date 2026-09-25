@@ -72,7 +72,8 @@ _RESTRICTED_README = (
 
 
 def build(pdir: str | Path, pid: str, *, renders: Optional[dict] = None,
-          manifest_doc: Optional[dict] = None, include_restricted: bool = True) -> bytes:
+          manifest_doc: Optional[dict] = None, include_restricted: bool = True,
+          exploration: Optional[dict] = None) -> bytes:
     """Return the bytes of an organized .zip for one program.
 
     renders: {archive_relative_path: html_string} for freshly-rendered documents
@@ -116,7 +117,8 @@ def build(pdir: str | Path, pid: str, *, renders: Optional[dict] = None,
             files[f"{root}/restricted/README.txt"] = _RESTRICTED_README.encode()
 
     # 5) Cover page + integrity manifest.
-    files[f"{root}/index.html"] = _cover_html(pid, files, root, shared=not include_restricted).encode()
+    files[f"{root}/index.html"] = _cover_html(pid, files, root, shared=not include_restricted,
+                                              exploration=exploration).encode()
     files[f"{root}/MANIFEST.txt"] = _integrity_manifest(files, root).encode()
 
     buf = io.BytesIO()
@@ -136,7 +138,7 @@ def _integrity_manifest(files: dict, root: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _cover_html(pid: str, files: dict, root: str, shared: bool = False) -> str:
+def _cover_html(pid: str, files: dict, root: str, shared: bool = False, exploration: Optional[dict] = None) -> str:
     docs = sorted(n[len(root) + 1:] for n in files if "/documents/" in n)
     doc_links = "".join(
         f'<li><a href="{d}">{d.split("/")[-1]}</a></li>' for d in docs) or "<li>(none rendered)</li>"
@@ -146,6 +148,10 @@ def _cover_html(pid: str, files: dict, root: str, shared: bool = False) -> str:
     share_note = ('<p class="dim"><b>Share copy.</b> Interview and discovery transcripts '
                   '(the restricted store) are deliberately excluded from this package.</p>'
                   if shared else "")
+    if exploration:
+        share_note = ('<p style="background:#FBF1E0;color:#9A5C00;padding:8px 12px;border-radius:6px"><b>Exploration '
+                      '\u2014 not part of the official record.</b> ' + str(exploration.get("label", "")) + ": "
+                      + str(exploration.get("name", "")) + '. Decisions here are provisional and numbered EX-.</p>') + share_note
     return f"""<!doctype html><html><head><meta charset="utf-8">
 <title>{pid} — program package</title>
 <style>body{{font:15px/1.6 -apple-system,Segoe UI,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1.2rem;color:#1a1f2e}}

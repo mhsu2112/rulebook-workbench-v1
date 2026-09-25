@@ -712,3 +712,92 @@ def test_corpus_set_aside_source(client, approot):
     # restore
     assert client.post("/api/programs/ex1/corpus/exclude", json={"item_id": "nofetch", "undo": True}).status_code == 200
     assert client.get("/api/programs/ex1/corpus/status").json()["counts"]["excluded"] == 0
+
+
+# ---------------- release 1: Purpose Statement export, budget, /v2 ----------------
+
+def _docx_text(content: bytes) -> str:
+    from docx import Document
+    d = Document(_io.BytesIO(content))
+    parts = [p.text for p in d.paragraphs]
+    for t in d.tables:
+        for row in t.rows:
+            parts += [c.text for c in row.cells]
+    return "\n".join(parts)
+
+
+def test_purpose_statement_docx_owner_has_transcript_share_does_not(client):
+    client.post("/api/programs", json={"program_id": "ps1"})
+    assert client.get("/api/programs/ps1/purpose/statement.docx").status_code == 404
+    client.post("/api/programs/ps1/interview", json={"message": "SECRET-ANSWER clean up AML"})
+    client.post("/api/programs/ps1/synthesize")
+
+    r = client.get("/api/programs/ps1/purpose/statement.docx")
+    assert r.status_code == 200
+    assert 'filename="ps1-purpose-statement.docx"' in r.headers["content-disposition"]
+    owner = _docx_text(r.content)
+    assert "Distill X." in owner and "Appendix A. Interview transcript" in owner
+    assert "SECRET-ANSWER clean up AML" in owner and "Owner copy" in owner
+
+    r = client.get("/api/programs/ps1/purpose/statement.docx?share=true")
+    assert r.status_code == 200
+    assert 'filename="ps1-purpose-statement-share.docx"' in r.headers["content-disposition"]
+    share = _docx_text(r.content)
+    assert "Distill X." in share and "Share copy" in share
+    assert "Appendix A" not in share and "SECRET-ANSWER" not in share
+
+
+def test_packages_carry_the_right_purpose_statement_copy(client):
+    client.post("/api/programs", json={"program_id": "ps2"})
+    client.post("/api/programs/ps2/interview", json={"message": "SECRET-ANSWER clean up AML"})
+    client.post("/api/programs/ps2/synthesize")
+    owner = _zip.ZipFile(_io.BytesIO(client.get("/api/programs/ps2/package").content))
+    doc = "ps2-package/documents/purpose-statement.docx"
+    assert "SECRET-ANSWER" in _docx_text(owner.read(doc))
+    share = _zip.ZipFile(_io.BytesIO(client.get("/api/programs/ps2/package?share=true").content))
+    assert doc in share.namelist()
+    assert "SECRET-ANSWER" not in _docx_text(share.read(doc))
+
+
+def test_budget_endpoint(client, approot):
+    client.post("/api/programs", json={"program_id": "b1"})
+    client.post("/api/programs", json={"program_id": "b2"})
+    runs = approot / "runs"
+    runs.mkdir(exist_ok=True)
+    rows = [
+        {"program_id": "b1", "task_id": "distill_extract", "cost": {"usd": 1.25}},
+        {"program_id": "b1", "task_id": "distill_extract", "cost": {"usd": 0.75}},
+        {"program_id": "b1", "task_id": "intake_interview", "cost": {"usd": 0.10}},
+        {"program_id": "b2", "task_id": "operation_propose", "cost": {"usd": 0.30}},
+        {"program_id": "b2", "task_id": "effect_classify_assist", "cost": {"usd": 0.10}},
+        {"program_id": "b2", "task_id": "operation_propose", "cost": {"usd": 0.20}},
+    ]
+    (runs / "stamps.jsonl").write_text("\n".join(json.dumps(x) for x in rows) + "\nnot json\n")
+    d = client.get("/api/budget?pid=b1").json()
+    by = {p["program_id"]: p for p in d["programs"]}
+    assert by["b1"]["cost_usd"] == 2.1 and by["b2"]["cost_usd"] == 0.6 and d["total_usd"] == 2.7
+    assert d["refactor_per_defect_usd"] == 0.3            # (0.30 + 0.10 + 0.20) / 2 proposals
+    prog = d["program"]
+    assert prog["total_usd"] == 2.1 and prog["calls"] == 3
+    assert prog["by_task"][0] == {"task": "distill_extract", "cost_usd": 2.0, "calls": 2}
+    assert prog["refactor_open_defects"] is None           # not at Refactor yet
+    assert client.get("/api/budget?pid=nope").status_code == 404
+    assert "program" not in client.get("/api/budget").json()
+
+
+def test_v2_interface_is_served(client):
+    r = client.get("/v2")
+    assert r.status_code == 200 and "text/html" in r.headers["content-type"]
+    assert "Rulebook Workbench" in r.text
+    assert client.get("/").status_code == 200             # classic interface stays at /
+
+
+def test_overview_with_unfrozen_manifest(client):
+    """An unfrozen manifest has content_hash None; the overview must not crash on it."""
+    client.post("/api/programs", json={"program_id": "uf1"})
+    client.post("/api/programs/uf1/manifest/items", json={
+        "item_id": "a-1", "title": "A", "issuer": "X", "family": "regulation", "locator": "A 1"})
+    r = client.get("/api/programs/uf1/overview")
+    assert r.status_code == 200
+    corpus = [s for s in r.json()["stages"] if s["key"] == "corpus"][0]
+    assert corpus["done"] is False and "not frozen" in corpus["metric"]

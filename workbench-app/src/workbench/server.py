@@ -24,11 +24,11 @@ _HAS_MULTIPART = (importlib.util.find_spec("multipart") is not None
                   or importlib.util.find_spec("python_multipart") is not None)
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
-from fastapi.responses import HTMLResponse, Response
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import acquire, corpus_report, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
+from . import acquire, corpus_report, explorations as explorations_mod, purpose_report, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
 from .config import load_registry
 from .router import (
     DiversityViolationError,
@@ -196,6 +196,14 @@ class ServerState:
     # -------- program helpers --------
 
     def pdir(self, program_id: str) -> Path:
+        # An exploration is addressed as "<program>~x-<id>" and lives inside its
+        # program (ADR-019); every endpoint then works inside it unchanged.
+        parent, xid = explorations_mod.split_id(program_id)
+        if xid is not None:
+            d = explorations_mod.branch_dir(self.root, parent, xid)
+            if not (d / "branch.json").exists():
+                raise HTTPException(404, f"Unknown exploration '{program_id}'")
+            return d
         d = self.root / "programs" / program_id
         if not d.is_dir():
             raise HTTPException(404, f"Unknown program '{program_id}'")
@@ -207,6 +215,25 @@ class ServerState:
     def history(self, program_id: str) -> list[dict]:
         p = self.interview_path(program_id)
         return json.loads(p.read_text()) if p.exists() else []
+
+
+class ExplorationIn(BaseModel):
+    name: str = ""
+    answer_id: str
+    new_answer: str
+    reuse_blueprint: bool = False
+    by_name: str = ""
+    by_role: str = ""
+
+class PromoteIn(BaseModel):
+    new_program_id: str
+    name: str
+    role: str
+    rationale: str
+
+class ByIn(BaseModel):
+    name: str = ""
+    role: str = ""
 
 
 class ProgramIn(BaseModel):
@@ -493,8 +520,13 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 renders["crosswalk.html"] = _crosswalker(pid).render()
         except Exception:  # noqa: BLE001
             pass
+        try:
+            # Owner package: statement + full transcript appendix. Share package: statement only.
+            renders["purpose-statement.docx"] = purpose_report.build_docx(pdir, pid, share=share)
+        except purpose_report.NoPurposeStatement:
+            pass
         data = package_mod.build(pdir, pid, renders=renders, manifest_doc=manifest.load(pdir),
-                                 include_restricted=not share)
+                                 include_restricted=not share, exploration=explorations_mod.info(pdir))
         fname = f"{pid}-share-package.zip" if share else f"{pid}-package.zip"
         return Response(content=data, media_type="application/zip",
                         headers={"Content-Disposition": f'attachment; filename="{fname}"'})
@@ -582,6 +614,21 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         out.write_text(json.dumps(doc, indent=2))
         return {"purpose_statement": doc, "cost_usd": cost}
 
+    @app.get("/api/programs/{pid}/purpose/statement.docx")
+    def purpose_statement_docx(pid: str, share: bool = False):
+        """The Purpose Statement as a Word document (derived; regenerated on demand).
+
+        Owner copy (default) appends the full interview transcript from the
+        restricted store; ?share=true leaves it out (ADR-010 as amended by ADR-018)."""
+        try:
+            data = purpose_report.build_docx(state.pdir(pid), pid, share=share)
+        except purpose_report.NoPurposeStatement as e:
+            raise HTTPException(404, str(e))
+        suffix = "purpose-statement-share" if share else "purpose-statement"
+        return Response(content=data,
+                        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        headers={"Content-Disposition": f'attachment; filename="{pid}-{suffix}.docx"'})
+
     @app.get("/api/programs/{pid}/purpose")
     def get_purpose(pid: str):
         p = state.pdir(pid) / "governed" / "purpose_statement.json"
@@ -607,7 +654,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 if item.get("resolution"):
                     raise HTTPException(409, f"{item_id} already resolved")
                 now = datetime.now(timezone.utc).isoformat()
-                entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+                entry_id = storage.next_entry_id(state.pdir(pid))
                 item["blocking"] = False
                 item["resolution"] = {"by": body.name, "role": body.role, "timestamp": now,
                                       "rationale": body.rationale, "decision_log_ref": entry_id}
@@ -639,7 +686,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             raise HTTPException(409, "Blocked by open items: " + ", ".join(blocking)
                                 + " — resolve each (⚖, logged) before ratification")
         now = datetime.now(timezone.utc).isoformat()
-        entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+        entry_id = storage.next_entry_id(state.pdir(pid))
         doc["status"] = "ratified"
         doc["ratification"] = {
             "status": "ratified",
@@ -700,7 +747,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         if not snap.exists():                       # never overwrite a kept version
             snap.write_text(p.read_text())
         now = datetime.now(timezone.utc).isoformat()
-        entry_id = f"DL-{len(storage.read_decisions(pdir)) + 1:03d}"
+        entry_id = storage.next_entry_id(pdir)
         amendment_id = f"AM-{len(doc.get('amendments') or []) + 1:03d}"
         basis = [b.strip() for b in body.basis if b and b.strip()]
         ss["text"] = new_scope
@@ -854,6 +901,8 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
     @app.post("/api/programs/{pid}/policy")
     def set_policy(pid: str, body: PolicySetIn):
+        if explorations_mod.SEP in pid:
+            raise HTTPException(409, "An exploration uses its program's pinned models; they cannot be changed here (ADR-019)")
         """Set the program's model strategy (provisional only)."""
         if body.preset not in presets_mod.PRESETS:
             raise HTTPException(400, f"Unknown preset '{body.preset}'")
@@ -867,6 +916,8 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
     @app.post("/api/programs/{pid}/policy/override")
     def set_policy_override(pid: str, body: OverrideIn):
+        if explorations_mod.SEP in pid:
+            raise HTTPException(409, "An exploration uses its program's pinned models; they cannot be changed here (ADR-019)")
         """Fine-tune one task's model (provisional only) → strategy becomes Customized."""
         try:
             return policy_mod.set_override(state.pdir(pid), pid, body.task_id, body.model)
@@ -892,7 +943,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         except policy_mod.PolicyError as e:
             raise HTTPException(409, str(e))
         now = datetime.now(timezone.utc).isoformat()
-        entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+        entry_id = storage.next_entry_id(state.pdir(pid))
         label = doc["preset"] + (f":{doc['lab']}" if doc.get("lab") else "")
         storage.append_decision(state.pdir(pid), {
             "entry_id": entry_id, "timestamp": now, "type": "ratification",
@@ -905,6 +956,8 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
     @app.post("/api/programs/{pid}/policy/reopen")
     def reopen_policy(pid: str, body: PolicyRatifyIn):
+        if explorations_mod.SEP in pid:
+            raise HTTPException(409, "An exploration uses its program's pinned models; they cannot be changed here (ADR-019)")
         """Re-open a locked policy (Program Owner + rationale, logged) — the only
         way to change models after locking (spec/55 §4)."""
         if body.role != "Program Owner":
@@ -913,7 +966,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             raise HTTPException(400, "Re-opening requires your name and a rationale — both go to the Decision Log")
         doc = policy_mod.reopen(state.pdir(pid), pid)
         now = datetime.now(timezone.utc).isoformat()
-        entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+        entry_id = storage.next_entry_id(state.pdir(pid))
         storage.append_decision(state.pdir(pid), {
             "entry_id": entry_id, "timestamp": now, "type": "other",
             "artifact": "model_policy.json",
@@ -941,8 +994,9 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             raise HTTPException(409, str(e))
         except manifest.ManifestError as e:
             raise HTTPException(400, str(e))
+        explorations_mod.after_freeze(state.pdir(pid), doc["content_hash"])
         now = datetime.now(timezone.utc).isoformat()
-        entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+        entry_id = storage.next_entry_id(state.pdir(pid))
         storage.append_decision(state.pdir(pid), {
             "entry_id": entry_id, "timestamp": now, "type": "manifest_freeze",
             "artifact": "manifest/manifest.json", "artifact_version": doc["manifest_version"],
@@ -999,7 +1053,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             reg["items"][body.item_id] = {"reason": body.reason.strip(), "at": now}
             decision = f"Set aside source '{body.item_id}': {item.get('title', '')[:80]}"
         p.write_text(json.dumps(reg, indent=2))
-        entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+        entry_id = storage.next_entry_id(state.pdir(pid))
         storage.append_decision(state.pdir(pid), {
             "entry_id": entry_id, "timestamp": now, "type": "disposition",
             "artifact": "corpus", "decided_by": {"name": "Program Owner", "role": "Program Owner"},
@@ -1221,7 +1275,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
     @app.get("/api/programs/{pid}/blueprint/render", response_class=HTMLResponse)
     def blueprint_render(pid: str):
         _distiller(pid)   # same gates: frozen manifest + ratified PS
-        return render.render_blueprint(state.pdir(pid), pid)
+        return _branded(pid, render.render_blueprint(state.pdir(pid), pid))
 
     @app.get("/api/programs/{pid}/corpus/manifest.docx")
     def corpus_manifest_docx(pid: str):
@@ -1269,7 +1323,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 or "refactor")
 
         def dl_fn(entry: dict) -> str:
-            entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+            entry_id = storage.next_entry_id(state.pdir(pid))
             storage.append_decision(state.pdir(pid), {
                 "entry_id": entry_id,
                 "timestamp": datetime.now(timezone.utc).isoformat(), **entry})
@@ -1333,7 +1387,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         scope = (((ps.get("synthesis") or {}).get("scope_sentence") or {}).get("text") or "")
 
         def dl_fn(entry: dict) -> str:
-            entry_id = f"DL-{len(storage.read_decisions(state.pdir(pid))) + 1:03d}"
+            entry_id = storage.next_entry_id(state.pdir(pid))
             storage.append_decision(state.pdir(pid), {
                 "entry_id": entry_id,
                 "timestamp": datetime.now(timezone.utc).isoformat(), **entry})
@@ -1359,7 +1413,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
             state.pdir(pid), succ_dir, pred_id=pid, succ_id=sid))
         for p_, note in ((pid, f"Charter redesign successor {sid} (ADR-007)"),
                          (sid, f"Chartered from {pid} against its certified Target Blueprint")):
-            entry_id = f"DL-{len(storage.read_decisions(state.pdir(p_))) + 1:03d}"
+            entry_id = storage.next_entry_id(state.pdir(p_))
             storage.append_decision(state.pdir(p_), {
                 "entry_id": entry_id, "timestamp": datetime.now(timezone.utc).isoformat(),
                 "type": "scope_election", "artifact": "purpose_statement.json",
@@ -1452,10 +1506,11 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         n_fetched = sum(1 for v in acq.get("items", {}).values()
                         if v.get("status") in ("fetched", "browser_assisted", "manual"))
         stages.append({"key": "corpus", "label": "Corpus", "phase": "P1",
-                       "done": bool(man) and n_fetched >= n_items and n_items > 0,
-                       "metric": (f"{n_items} sources · frozen · {n_fetched} acquired" if man
-                                  else "not assembled"),
-                       "detail": f"manifest {man.get('content_hash','')[:22]}" if man else "",
+                       "done": bool(man) and bool(man.get("frozen")) and n_fetched >= n_items and n_items > 0,
+                       "metric": ((f"{n_items} sources · frozen · {n_fetched} acquired" if man.get("frozen")
+                                   else f"{n_items} sources · not frozen yet") if man else "not assembled"),
+                       # an unfrozen manifest has no content hash yet (None), which used to crash this
+                       "detail": f"manifest {(man.get('content_hash') or '')[:22]}" if man and man.get("content_hash") else "",
                        "link": None})
 
         # Derived Blueprint
@@ -1583,7 +1638,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         }
         return {"program_id": pid, "mode": mode, "scope": scope, "stages": stages,
                 "tabs": tabs, "decisions": decisions, "decision_count": len(decisions),
-                "cost_usd": round(cost, 2)}
+                "cost_usd": round(cost, 2), "exploration": explorations_mod.info(state.pdir(pid))}
 
     @app.get("/api/programs/{pid}/overview")
     def overview(pid: str):
@@ -1657,7 +1712,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         if not (state.pdir(pid) / "governed" / "target_blueprint.json").exists():
             raise HTTPException(409, "No ratified Target Blueprint yet — complete and ratify the "
                                      "Refactor/Redesign pass first")
-        return render.render_target_blueprint(state.pdir(pid), pid)
+        return _branded(pid, render.render_target_blueprint(state.pdir(pid), pid))
 
     @app.post("/api/programs/{pid}/target-blueprint/summarize")
     def target_blueprint_summarize(pid: str):
@@ -1683,7 +1738,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
     @app.get("/api/programs/{pid}/crosswalk/render", response_class=HTMLResponse)
     def crosswalk_render(pid: str):
-        return _crosswalker(pid).render()
+        return _branded(pid, _crosswalker(pid).render())
 
     # ---------------- model settings (the toggle) ----------------
 
@@ -1756,6 +1811,154 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         state.save_overrides()
         res = state.router.resolve(body.task_id)
         return {"task_id": body.task_id, "current_model": res.model, "source": res.source}
+
+    # ---------------- explorations (release 2, ADR-019) ----------------
+
+    def _branded(pid: str, html: str) -> str:
+        """Put the exploration banner on any rendered document from a branch."""
+        b = explorations_mod.info(state.pdir(pid))
+        if not b or not isinstance(html, str):
+            return html
+        bar = ('<div style="position:sticky;top:0;z-index:99;background:#FBF1E0;color:#9A5C00;border-bottom:1px solid #E8CD9E;'
+               'padding:8px 16px;font:600 13px system-ui,sans-serif">' + explorations_mod.BANNER + " \u00b7 "
+               + b.get("label", "") + ": " + (b.get("name") or "") + "</div>")
+        i = html.find("<body")
+        if i >= 0:
+            j = html.find(">", i)
+            return html[:j + 1] + bar + html[j + 1:]
+        return bar + html
+
+    def _xerr(fn):
+        try:
+            return fn()
+        except explorations_mod.ExplorationError as e:
+            raise HTTPException(e.status, e.detail)
+
+    def _official(pid: str) -> Path:
+        if explorations_mod.SEP in pid:
+            raise HTTPException(400, "Explorations branch from an official program, not from another exploration")
+        return state.pdir(pid)
+
+    @app.get("/api/programs/{pid}/explorations")
+    def explorations_list(pid: str, archived: bool = False):
+        return explorations_mod.listing(state.root, _official(pid), pid, _stamps(), include_archived=archived)
+
+    @app.get("/api/programs/{pid}/explorations/impact")
+    def explorations_impact(pid: str, answer_id: str, reuse_blueprint: bool = False):
+        return _xerr(lambda: explorations_mod.impact(_official(pid), pid, answer_id, _stamps(), reuse_blueprint))
+
+    @app.post("/api/programs/{pid}/explorations")
+    def explorations_create(pid: str, body: ExplorationIn):
+        by = {"name": body.by_name or "?", "role": body.by_role or "?"}
+        return _xerr(lambda: explorations_mod.create(state.root, _official(pid), pid, name=body.name,
+                                                     answer_id=body.answer_id, new_answer=body.new_answer,
+                                                     created_by=by, reuse_blueprint=body.reuse_blueprint))
+
+    @app.get("/api/programs/{pid}/explorations/{xid}/compare")
+    def explorations_compare(pid: str, xid: str):
+        parent = _official(pid)
+        bdir = state.pdir(f"{pid}{explorations_mod.SEP}{xid}")
+        return explorations_mod.compare(parent, bdir)
+
+    @app.post("/api/programs/{pid}/explorations/{xid}/archive")
+    def explorations_archive(pid: str, xid: str, body: ByIn):
+        return _xerr(lambda: explorations_mod.archive(_official(pid), xid, {"name": body.name or "?", "role": body.role or "?"}))
+
+    @app.post("/api/programs/{pid}/explorations/{xid}/promote")
+    def explorations_promote(pid: str, xid: str, body: PromoteIn):
+        if body.role != "Program Owner":
+            raise HTTPException(403, "Only the Program Owner can promote an exploration")
+        if not SLUG.match(body.new_program_id):
+            raise HTTPException(400, "The new program's name must be a lowercase slug (a-z, 0-9, -, _)")
+        return _xerr(lambda: explorations_mod.promote(
+            state.root, _official(pid), pid, xid, body.new_program_id,
+            by={"name": body.name or "?", "role": body.role}, rationale=body.rationale,
+            append_decision=storage.append_decision, next_entry_id=storage.next_entry_id))
+
+    # ---------------- budget analysis (Settings) ----------------
+
+    def _stamps() -> list[dict]:
+        p = state.root / "runs" / "stamps.jsonl"
+        out = []
+        if p.exists():
+            for line in p.read_text().splitlines():
+                if not line.strip():
+                    continue
+                try:
+                    out.append(json.loads(line))
+                except ValueError:
+                    continue
+        return out
+
+    @app.get("/api/budget")
+    def budget(pid: Optional[str] = None):
+        """Model spend from the run log, for the Budget analysis page: every
+        program's total, one program's spend by task, and an estimate of what
+        the remaining Refactor proposals will cost (from the average cost per
+        worked defect across every program's past Refactor runs)."""
+        stamps = _stamps()
+        active = set(programs_admin.list_active(state.root))
+        archived = set(programs_admin.list_archived(state.root))
+        by_prog: dict[str, dict] = {}
+        for st in stamps:
+            k = st.get("program_id")
+            if not k:
+                continue
+            rec = by_prog.setdefault(k, {"cost_usd": 0.0, "calls": 0})
+            rec["cost_usd"] += (st.get("cost") or {}).get("usd", 0.0) or 0.0
+            rec["calls"] += 1
+        programs = []
+        for k in sorted(active | archived | set(by_prog)):
+            rec = by_prog.get(k, {"cost_usd": 0.0, "calls": 0})
+            parent, xid = explorations_mod.split_id(k)
+            programs.append({"program_id": k, "cost_usd": round(rec["cost_usd"], 2), "calls": rec["calls"],
+                             "archived": (parent in archived and parent not in active),
+                             "known": parent in active or parent in archived,
+                             "exploration": xid is not None, "parent": parent if xid else None})
+        # per-defect Refactor cost: proposal + independent classifier calls / proposal calls
+        prop_cost = sum((s.get("cost") or {}).get("usd", 0.0) or 0.0 for s in stamps
+                        if (s.get("task_id") or s.get("task")) in ("operation_propose", "effect_classify_assist"))
+        prop_calls = sum(1 for s in stamps if (s.get("task_id") or s.get("task")) == "operation_propose")
+        per_defect = round(prop_cost / prop_calls, 4) if prop_calls else None
+        out = {"programs": programs,
+               "total_usd": round(sum(p["cost_usd"] for p in programs), 2),
+               "refactor_per_defect_usd": per_defect,
+               "refactor_basis": (f"average of {prop_calls} past Refactor proposals across all programs"
+                                  if prop_calls else "no Refactor proposals have run yet")}
+        if pid:
+            state.pdir(pid)   # 404 on an unknown program
+            tasks: dict[str, dict] = {}
+            for st in stamps:
+                if st.get("program_id") != pid:
+                    continue
+                tid = st.get("task_id") or st.get("task") or "unknown"
+                t = tasks.setdefault(tid, {"task": tid, "cost_usd": 0.0, "calls": 0})
+                t["cost_usd"] += (st.get("cost") or {}).get("usd", 0.0) or 0.0
+                t["calls"] += 1
+            rows = sorted(tasks.values(), key=lambda r: -r["cost_usd"])
+            for r in rows:
+                r["cost_usd"] = round(r["cost_usd"], 4)
+            open_defects = None
+            try:
+                summ = _refactorer(pid).summary()
+                open_defects = max(0, summ["findings_total"] - summ["findings_processed"])
+            except HTTPException:
+                pass
+            branch_rows = [{"program_id": p["program_id"], "cost_usd": p["cost_usd"], "calls": p["calls"]}
+                           for p in programs if p.get("parent") == pid]
+            out["program"] = {"program_id": pid, "by_task": rows, "explorations": branch_rows,
+                              "total_usd": round(sum(r["cost_usd"] for r in rows), 2),
+                              "calls": sum(r["calls"] for r in rows),
+                              "refactor_open_defects": open_defects,
+                              "refactor_estimate_usd": (round(open_defects * per_defect, 2)
+                                                        if open_defects is not None and per_defect else None)}
+        return out
+
+    @app.get("/v2", include_in_schema=False)
+    def ui_v2():
+        """The redesigned interface (release 1). The classic interface stays at /."""
+        return FileResponse(Path(__file__).parent / "static" / "v2.html", media_type="text/html",
+                            headers={"Cache-Control": "no-cache"})
 
     @app.exception_handler(KeyError)
     async def key_error(_, exc):
