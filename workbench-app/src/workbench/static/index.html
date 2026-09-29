@@ -604,7 +604,7 @@ function renderPurpose() {
 var MODEL_GROUPS = [
   { title: "Purpose", tasks: ["intake_interview", "purpose_synthesis", "mandate_synthesis"] },
   { title: "Corpus & discovery", tasks: ["source_discovery", "discovery_questions", "second_census"] },
-  { title: "Distillation", tasks: ["distill_extract", "defect_detect", "blueprint_summary"] },
+  { title: "Distillation", tasks: ["distill_extract", "defect_detect", "blueprint_summary", "field_map", "field_extract", "field_match"] },
   { title: "Refactor", tasks: ["operation_propose", "effect_classify_assist"] },
   { title: "Redesign", tasks: ["misalign_detect", "redesign_propose", "target_summary"] }
 ];
@@ -615,7 +615,8 @@ var TASK_LABELS = {
   distill_extract: "Blueprint extraction", defect_detect: "Defect detection",
   blueprint_summary: "Blueprint summary (advisory)", operation_propose: "Refactor proposals",
   effect_classify_assist: "Effect classifier (independent)", misalign_detect: "Misalignment detection",
-  redesign_propose: "Redesign proposals", target_summary: "Target-blueprint summary (advisory)"
+  redesign_propose: "Redesign proposals", target_summary: "Target-blueprint summary (advisory)",
+  field_map: "Field register: sheet mapping", field_extract: "Field register: text reading", field_match: "Field comparison"
 };
 var PRESET_LABELS = { recommended: "Recommended", cost: "Cost-optimized", open: "Open-weight-first", lab: "Lab-first", custom: "Customized" };
 var LAB_LABELS = { anthropic: "Anthropic", openai: "OpenAI", google: "Gemini" };
@@ -891,7 +892,7 @@ function uploadSourceForm() {
   return el("div", { style: "border:1px solid var(--line); border-radius:8px; padding:9px 12px; margin-bottom:10px;" }, [
     el("b", { text: "Add a source from a document" }, []),
     el("div", { class: "dim", style: "font-size:11.5px; margin:3px 0 6px;",
-      text: "For an in-scope source that isn't retrievable by URL — upload its PDF, Word (.docx), HTML, or text file. Its text enters the corpus and the manifest records the document's SHA-256 for provenance." }, []),
+      text: "For an in-scope source that isn't retrievable by URL — upload its PDF, Word (.docx), Excel (.xlsx), HTML, or text file. Its text enters the corpus and the manifest records the document's SHA-256 for provenance." }, []),
     title, issuer, fam, locator, fileIn, el("div", {}, [add])
   ]);
 }

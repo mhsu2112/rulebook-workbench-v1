@@ -29,7 +29,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from . import datadir
-from . import acquire, corpus_report, explorations as explorations_mod, purpose_report, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
+from . import acquire, corpus_report, explorations as explorations_mod, fields as fields_mod, purpose_report, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
 from .config import load_registry
 from .router import (
     DiversityViolationError,
@@ -223,8 +223,10 @@ class ServerState:
 
 class ExplorationIn(BaseModel):
     name: str = ""
-    answer_id: str
-    new_answer: str
+    kind: str = "answer"          # "answer" | "sources" (ADR-019 addendum 1)
+    answer_id: str = ""
+    new_answer: str = ""
+    note: str = ""                # kind=sources: what will change about the sources
     reuse_blueprint: bool = False
     by_name: str = ""
     by_role: str = ""
@@ -298,6 +300,15 @@ class PolicyRatifyIn(BaseModel):
     name: str
     role: str = "Program Owner"
     rationale: str
+
+
+class FieldSourcesIn(BaseModel):
+    sources: dict[str, Optional[str]]      # item_id -> regime (null = not a field source)
+
+
+class FieldRunIn(BaseModel):
+    limit: int = 4
+    retry_errors: bool = False
 
 
 class AcquireIn(BaseModel):
@@ -397,7 +408,8 @@ class DefectRunIn(BaseModel):
 LEDGER_PHASE_TASKS = {
     "purpose": ["intake_interview", "purpose_synthesis", "mandate_synthesis"],
     "corpus": ["source_discovery", "discovery_questions", "second_census"],
-    "blueprint": ["distill_extract", "distill_focus", "claim_verify", "defect_detect", "blueprint_summary"],
+    "blueprint": ["distill_extract", "distill_focus", "claim_verify", "defect_detect", "blueprint_summary",
+                  "field_map", "field_extract", "field_match"],
     "refactor": ["operation_propose", "effect_classify_assist"],
     "redesign": ["misalign_detect", "redesign_propose", "target_summary"],
     "target": ["target_summary"],
@@ -1321,6 +1333,106 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         d = _distiller(pid)
         return d.detect_defects(d._items, family=body.family)
 
+    # ---------------- field-level comparison (release 3) ----------------
+
+    def _fields(pid: str) -> "fields_mod.FieldComparer":
+        d = _distiller(pid)                      # frozen corpus + ratified Purpose, like Distill
+        return fields_mod.FieldComparer(state.pdir(pid), program_id=pid, scope=d.scope,
+                                        manifest_hash=d.manifest_hash, items=d._items,
+                                        call_fn=lambda task, msgs: _router_call(task, msgs, pid=pid))
+
+    def _fguard(fn):
+        try:
+            return fn()
+        except fields_mod.FieldError as e:
+            raise HTTPException(e.status, e.detail)
+
+    def _rates(pid: str, task: str) -> Optional[tuple[float, float]]:
+        """USD per prompt token and per completion token for the model this task
+        would use here, fitted to this installation's own past calls."""
+        prev = state.router.program_overrides
+        try:
+            state.router.program_overrides = policy_mod.effective_overrides(policy_mod.load(state.pdir(pid), pid))
+            model = state.router.resolve(task).model
+        except Exception:  # noqa: BLE001
+            return None
+        finally:
+            state.router.program_overrides = prev
+        pts = [(s.get("cost") or {}) for s in _stamps() if s.get("model_served") == model]
+        pts = [(c.get("prompt_tokens") or 0, c.get("completion_tokens") or 0, c.get("usd") or 0.0) for c in pts]
+        pts = [p for p in pts if p[0] + p[1] > 0]
+        if not pts:
+            return None
+        sxx = sum(p * p for p, c, u in pts); syy = sum(c * c for p, c, u in pts); sxy = sum(p * c for p, c, u in pts)
+        sxu = sum(p * u for p, c, u in pts); syu = sum(c * u for p, c, u in pts)
+        det = sxx * syy - sxy * sxy
+        if det > 0:
+            a, b = (sxu * syy - syu * sxy) / det, (syu * sxx - sxu * sxy) / det
+            if a > 0 and b > 0:
+                return a, b
+        blended = sum(u for _, _, u in pts) / sum(p + c for p, c, _ in pts)
+        return blended, blended * 5
+
+    def _fields_estimate(pid: str, fc) -> dict:
+        work = fc.estimate_work()
+        out, total, known = {}, 0.0, True
+        for task, (chars, comp) in work.items():
+            if not chars:
+                continue
+            r = _rates(pid, task)
+            if r is None:
+                known = False
+                continue
+            usd = round(chars / 4 * r[0] + comp * r[1], 2)
+            out[task] = usd
+            total += usd
+        build = round(sum(v for k, v in out.items() if k in ("field_map", "field_extract")), 2)
+        return {"by_task": out, "build_usd": build, "compare_usd": out.get("field_match", 0.0),
+                "total_usd": round(total, 2), "complete": known,
+                "basis": "From the size of the remaining work and what these models have cost on this computer so far. Rough."}
+
+    @app.get("/api/programs/{pid}/fields")
+    def fields_status(pid: str):
+        fc = _fields(pid)
+        st = fc.status()
+        if not st["selected"]:
+            st["default_selection"] = fc.default_selection()
+        st["estimate"] = _fields_estimate(pid, fc)
+        return st
+
+    @app.post("/api/programs/{pid}/fields/sources")
+    def fields_sources(pid: str, body: FieldSourcesIn):
+        fc = _fields(pid)
+        _fguard(lambda: fc.set_sources(body.sources))
+        return fields_status(pid)
+
+    @app.post("/api/programs/{pid}/fields/build")
+    def fields_build(pid: str, body: FieldRunIn):
+        fc = _fields(pid)
+        out = _fguard(lambda: fc.build(limit=max(1, min(body.limit, 10)), retry_errors=body.retry_errors))
+        out["estimate"] = _fields_estimate(pid, fc)
+        return out
+
+    @app.post("/api/programs/{pid}/fields/compare")
+    def fields_compare(pid: str, body: FieldRunIn):
+        fc = _fields(pid)
+        out = _fguard(lambda: fc.compare(limit=max(1, min(body.limit, 10)), retry_errors=body.retry_errors))
+        out["estimate"] = _fields_estimate(pid, fc)
+        return out
+
+    @app.get("/api/programs/{pid}/fields/register.xlsx")
+    def fields_register_xlsx(pid: str):
+        fc = _fields(pid)
+        st = fc.state()
+        if not st["fields"]:
+            raise HTTPException(404, "No field registers yet — build them on the Distill step")
+        b = explorations_mod.info(state.pdir(pid))
+        banner = (explorations_mod.BANNER + " · " + b.get("label", "") + ": " + (b.get("name") or "")) if b else None
+        data = fields_mod.register_xlsx(st, pid, banner=banner)
+        name = f"{pid.replace(explorations_mod.SEP, '-exploration-')}-field-register.xlsx"
+        return Response(content=data, headers={"Content-Disposition": f'attachment; filename="{name}"'},
+                        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
     # ---------------- refactor pass (M4: P3.1-P3.8) ----------------
 
     def _refactorer(pid: str) -> "refactor_mod.Refactorer":
@@ -1521,8 +1633,9 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         n_items = len([i for i in man.get("items", []) if i["item_id"] not in _excl]) if man else 0
         n_fetched = sum(1 for v in acq.get("items", {}).values()
                         if v.get("status") in ("fetched", "browser_assisted", "manual"))
+        corpus_done = bool(man) and bool(man.get("frozen")) and n_fetched >= n_items and n_items > 0
         stages.append({"key": "corpus", "label": "Corpus", "phase": "P1",
-                       "done": bool(man) and bool(man.get("frozen")) and n_fetched >= n_items and n_items > 0,
+                       "done": corpus_done,
                        "metric": ((f"{n_items} sources · frozen · {n_fetched} acquired" if man.get("frozen")
                                    else f"{n_items} sources · not frozen yet") if man else "not assembled"),
                        # an unfrozen manifest has no content hash yet (None), which used to crash this
@@ -1531,19 +1644,25 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
         # Derived Blueprint
         bdir = g / "blueprint"
-        n_ext = n_ob = n_df = 0
+        n_ext = n_ob = n_df = n_cur = 0
+        cur_ids = {i["item_id"] for i in man.get("items", []) if i["item_id"] not in _excl} if man else set()
         if bdir.exists():
             for f in bdir.glob("*.json"):
                 if f.name == "extraction_register.json":
                     continue
                 doc = json.loads(f.read_text())
                 n_ext += 1
+                n_cur += f.stem in cur_ids
                 n_ob += len(doc.get("obligations", []))
                 n_df += len(doc.get("definitions", []))
         defects = js("registers/defects.json", {"runs": {}}) or {"runs": {}}
         n_def = sum(len(r.get("findings", [])) for r in defects.get("runs", {}).values())
         stages.append({"key": "derived", "label": "Derived Blueprint", "phase": "P2 ① Distill",
-                       "done": n_ext > 0 and n_ext >= n_items,
+                       # Done means distilled against THIS corpus: frozen and captured, every
+                       # current source extracted, and (in a branch, where extractions can be
+                       # carried over) the cross-source defect pass run again.
+                       "done": (corpus_done and n_cur > 0 and n_cur >= n_items
+                                and (not explorations_mod.is_branch(d) or (g / "registers" / "defects.json").exists())),
                        "metric": (f"{n_ob} obligations · {n_df} definitions · {n_def} defects"
                                   if n_ext else "not distilled"),
                        "detail": f"{n_ext}/{n_items} sources extracted",
@@ -1860,12 +1979,23 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         return explorations_mod.listing(state.data, _official(pid), pid, _stamps(), include_archived=archived)
 
     @app.get("/api/programs/{pid}/explorations/impact")
-    def explorations_impact(pid: str, answer_id: str, reuse_blueprint: bool = False):
+    def explorations_impact(pid: str, answer_id: str = "", reuse_blueprint: bool = False, kind: str = "answer"):
+        if kind == "sources":
+            return _xerr(lambda: explorations_mod.impact_sources(_official(pid), pid, _stamps()))
+        if not answer_id:
+            raise HTTPException(400, "Name the answer to change (answer_id), or ask for kind=sources")
         return _xerr(lambda: explorations_mod.impact(_official(pid), pid, answer_id, _stamps(), reuse_blueprint))
 
     @app.post("/api/programs/{pid}/explorations")
     def explorations_create(pid: str, body: ExplorationIn):
         by = {"name": body.by_name or "?", "role": body.by_role or "?"}
+        if body.kind == "sources":
+            return _xerr(lambda: explorations_mod.create_sources(state.data, _official(pid), pid, name=body.name,
+                                                                 note=body.note, created_by=by))
+        if body.kind != "answer":
+            raise HTTPException(400, "kind must be 'answer' or 'sources'")
+        if not body.answer_id:
+            raise HTTPException(400, "Name the answer to change")
         return _xerr(lambda: explorations_mod.create(state.data, _official(pid), pid, name=body.name,
                                                      answer_id=body.answer_id, new_answer=body.new_answer,
                                                      created_by=by, reuse_blueprint=body.reuse_blueprint))

@@ -1,5 +1,6 @@
 """Explorations (release 2) — branches that run a program forward from one
-changed interview answer without touching the official record.
+changed interview answer, or from a changed set of sources, without touching
+the official record.
 
 Design note: "Explorations — design note (release 2)", agreed 25 Sep 2026; ADR-019.
 
@@ -7,7 +8,13 @@ Design note: "Explorations — design note (release 2)", agreed 25 Sep 2026; ADR
   the same governed/restricted layout, plus branch.json. The server addresses
   it as "<pid>~x-<xid>"; "~" can never occur in a program id, so every
   existing endpoint works inside a branch unchanged.
-* A branch copies only what the changed answer does not affect.
+* A branch copies only what the change does not affect.
+* Two kinds of change (ADR-019, addendum 1):
+  - "answer": one interview answer differs; the Purpose (or Mandate) is redrafted.
+  - "sources": the ratified Purpose stands; the corpus is reopened as a draft so
+    sources can be added, replaced or removed. On re-freeze, extractions of the
+    sources that are still there are kept; only new sources are distilled, and
+    the cross-source steps (defects, summary, Refactor onward) run again.
 * Its decisions go to its own log, numbered EX-<XID>-###; its ratifications
   are typed exploration_ratification; its documents carry a banner.
 * It never reaches the program's packages (they only walk governed/ and
@@ -34,7 +41,8 @@ RESTART = {"S1": "purpose", "S2": "purpose", "S3": "purpose", "S4": "purpose", "
 
 # Model tasks each restart re-runs (for the cost preview).
 TASKS_PURPOSE = ["purpose_synthesis", "mandate_synthesis"]
-TASKS_DISTILL = ["distill_extract", "distill_focus", "defect_detect", "blueprint_summary"]
+TASKS_DISTILL = ["distill_extract", "distill_focus", "defect_detect", "blueprint_summary",
+                 "field_map", "field_extract", "field_match"]
 TASKS_REFACTOR = ["operation_propose", "effect_classify_assist"]
 TASKS_REDESIGN = ["misalign_detect", "redesign_propose", "target_summary"]
 
@@ -161,6 +169,50 @@ def _spend(stamps: list[dict], program_id: str, tasks: Optional[list[str]] = Non
 
 # ---------------------------------------------------------------- impact preview
 
+def _need_sources_ready(parent_dir: Path) -> dict:
+    g = parent_dir / "governed"
+    ps = _load(g / "purpose_statement.json")
+    if not ps or ps.get("status") != "ratified":
+        raise ExplorationError(409, "Ratify the Purpose Statement first: a source exploration keeps it and changes only the sources")
+    man = _load(g / "manifest" / "manifest.json")
+    if not man or not man.get("frozen"):
+        raise ExplorationError(409, "The official corpus is not frozen yet, so change its sources directly on the Corpus step")
+    return ps
+
+
+def _per_source_usd(parent_dir: Path) -> float:
+    """Average extraction cost of one source in this program so far."""
+    reg = _load(parent_dir / "governed" / "blueprint" / "extraction_register.json", {}) or {}
+    costs = [(r or {}).get("cost_usd") or 0.0 for r in (reg.get("items") or {}).values()
+             if (r or {}).get("status") == "extracted" and (r or {}).get("cost_usd")]
+    return round(sum(costs) / len(costs), 2) if costs else 0.0
+
+
+def impact_sources(parent_dir: Path, parent_id: str, stamps: list[dict]) -> dict:
+    ps = _need_sources_ready(parent_dir)
+    g = parent_dir / "governed"
+    man = _load(g / "manifest" / "manifest.json") or {}
+    n = len(man.get("items") or [])
+    reused = ["Purpose Statement (ratified, unchanged)",
+              f"Source corpus as a starting draft ({n} sources, unfrozen, texts kept)"]
+    if (g / "blueprint").is_dir():
+        reused.append("Extractions of every source you keep")
+    reruns = ["Source corpus (re-frozen)", "Distill for new or replaced sources only",
+              "Defect detection and the blueprint summary, across all sources", "Refactor"]
+    if _mode(ps) == "redesign":
+        reruns.append("Redesign")
+    reruns += ["Target blueprint", "Align"]
+    tasks = ["defect_detect", "blueprint_summary", "field_map", "field_extract", "field_match"] + TASKS_REFACTOR + TASKS_REDESIGN
+    per = _per_source_usd(parent_dir)
+    return {"kind": "sources", "stage": None, "restart": "corpus",
+            "changes": "Which sources the program works from. The Purpose Statement stays as ratified.",
+            "reused": reused, "reruns": reruns, "estimate_usd": _spend(stamps, parent_id, tasks),
+            "per_source_usd": per,
+            "estimate_basis": ("What the cross-source steps have cost this program so far, re-runs included; "
+                               "the per-source figure is its average extraction cost. "
+                               "Steps it has not reached yet are not counted.")}
+
+
 def impact(parent_dir: Path, parent_id: str, answer_id: str, stamps: list[dict],
            reuse_blueprint: bool = False) -> dict:
     """What changing one answer re-runs, what it reuses, and what it may cost,
@@ -198,7 +250,7 @@ def impact(parent_dir: Path, parent_id: str, answer_id: str, stamps: list[dict],
         changes = ("Scope boundaries: which regimes are in or out." if stage == "S6"
                    else "Potentially the mode, the scope sentence and the decision served.")
     est = _spend(stamps, parent_id, tasks)
-    return {"answer": a, "stage": stage, "restart": restart, "changes": changes, "reused": reused,
+    return {"kind": "answer", "answer": a, "stage": stage, "restart": restart, "changes": changes, "reused": reused,
             "reruns": reruns, "estimate_usd": est,
             "estimate_basis": ("What these steps have cost this program so far, re-runs included. "
                                "Steps it has not reached yet are not counted.")}
@@ -286,6 +338,75 @@ def create(root: Path, parent_dir: Path, parent_id: str, *, name: str, answer_id
     return {**doc, "program_id": f"{parent_id}{SEP}{xid}"}
 
 
+def create_sources(root: Path, parent_dir: Path, parent_id: str, *, name: str, note: str,
+                   created_by: dict) -> dict:
+    """A branch that keeps the ratified Purpose and reopens the corpus as a draft."""
+    if SEP in parent_id:
+        raise ExplorationError(400, "Explorations branch from an official program, not from another exploration")
+    note = (note or "").strip()
+    if not note:
+        raise ExplorationError(400, "Say what you will change about the sources, e.g. add the FCA field-level spreadsheets")
+    _need_sources_ready(parent_dir)
+    g = parent_dir / "governed"
+    xid = _next_xid(parent_dir)
+    pid = f"{parent_id}{SEP}{xid}"
+    bdir = branch_dir(root, parent_id, xid)
+    bg = bdir / "governed"
+    bg.mkdir(parents=True)
+    if (parent_dir / "restricted").is_dir():
+        shutil.copytree(parent_dir / "restricted", bdir / "restricted")   # transcript, mandate hypotheses
+    else:
+        (bdir / "restricted").mkdir()
+
+    def cp(rel: str):
+        src, dst = g / rel, bg / rel
+        if src.is_dir():
+            shutil.copytree(src, dst)
+        elif src.exists():
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy(src, dst)
+
+    # What sources cannot change: the Purpose (and a ratified Mandate). What they can:
+    # everything distilled across sources. Per-source extractions are kept and
+    # re-checked against the new corpus when it is frozen (after_freeze).
+    for rel in ("purpose_statement.json", "ratified_mandate.json", "manifest", "corpus_texts",
+                "excluded_sources.json", "blueprint"):
+        cp(rel)
+    ps_p = bg / "purpose_statement.json"
+    ps = json.loads(ps_p.read_text())
+    ps["program_id"] = pid
+    (ps.setdefault("ratification", {}))["carried_from"] = parent_id   # ratified officially, not in the branch
+    ps_p.write_text(json.dumps(ps, indent=2))
+    if (g / "model_policy.json").exists():
+        pol = json.loads((g / "model_policy.json").read_text())
+        pol["program_id"] = pid
+        (bg / "model_policy.json").write_text(json.dumps(pol, indent=2))
+    man = bg / "manifest" / "manifest.json"
+    m = json.loads(man.read_text())
+    m.update({"frozen": False, "frozen_at": None, "content_hash": None, "program_id": pid,
+              "reopened_from": m.get("content_hash")})
+    man.write_text(json.dumps(m, indent=2))
+    (bg / "manifest" / "manifest.sha256").unlink(missing_ok=True)
+
+    doc = {"branch_id": xid, "label": label(xid), "name": (name or "").strip() or "Different sources",
+           "parent": parent_id, "based_on": _last_dl(parent_dir), "kind": "sources",
+           "changed": {"kind": "sources", "note": note,
+                       "official_items": [i["item_id"] for i in (m.get("items") or [])]},
+           "restart": "corpus", "reuse_blueprint": False,
+           "created_by": created_by, "created_at": _now(), "status": "active"}
+    (bdir / "branch.json").write_text(json.dumps(doc, indent=2))
+    _log(parent_dir, {"event": "created", "branch_id": xid, "by": created_by, "kind": "sources"})
+    return {**doc, "program_id": pid}
+
+
+def change_summary(b: dict) -> str:
+    """One line naming what a branch changed, for logs and banners."""
+    ch = b.get("changed") or {}
+    if b.get("kind") == "sources" or ch.get("kind") == "sources":
+        return "changed sources"
+    return f"changed answer {ch.get('answer_id', '?')}"
+
+
 def after_freeze(program_dir: Path, new_hash: str) -> None:
     """When a branch re-freezes its corpus: carry the captured texts over to the new
     corpus identity, and drop a reused blueprint if the corpus actually changed (the
@@ -304,7 +425,23 @@ def after_freeze(program_dir: Path, new_hash: str) -> None:
             acq.write_text(json.dumps(reg, indent=2))
     ext = g / "blueprint" / "extraction_register.json"
     if ext.exists() and (_load(ext, {}) or {}).get("manifest_hash") != new_hash:
-        shutil.rmtree(g / "blueprint", ignore_errors=True)
+        if (info(p) or {}).get("kind") == "sources":
+            # Same ratified scope, so a kept source's extraction is still valid:
+            # re-key it to the new corpus and drop only what spans sources. The
+            # distiller's reconcile() still evicts any extraction whose source
+            # text is later re-acquired and no longer matches.
+            items = {i["item_id"] for i in (_load(g / "manifest" / "manifest.json", {}) or {}).get("items", [])}
+            reg = _load(ext, {}) or {}
+            kept = {}
+            for k, v in (reg.get("items") or {}).items():
+                if k in items and (v or {}).get("status") == "extracted":
+                    kept[k] = {**v, "manifest_hash": new_hash}
+            for f in (g / "blueprint").glob("*.json"):
+                if f.name != "extraction_register.json" and f.stem not in kept:
+                    f.unlink()
+            ext.write_text(json.dumps({"manifest_hash": new_hash, "items": kept}, indent=2))
+        else:
+            shutil.rmtree(g / "blueprint", ignore_errors=True)
         (g / "blueprint_summary.json").unlink(missing_ok=True)
         (g / "registers" / "defects.json").unlink(missing_ok=True)
 
@@ -433,7 +570,7 @@ def promote(root: Path, parent_dir: Path, parent_id: str, xid: str, new_id: str,
     append_decision(ndir, {
         "entry_id": next_entry_id(ndir), "timestamp": now, "type": "other", "artifact": "promoted_from.json",
         "decided_by": by, "decision": f"Program created by promoting {label(xid)} of {parent_id} "
-                                      f"(changed answer {b['changed']['answer_id']}). Steps must be re-ratified.",
+                                      f"({change_summary(b)}). Steps must be re-ratified.",
         "rationale": rationale})
     append_decision(parent_dir, {
         "entry_id": next_entry_id(parent_dir), "timestamp": now, "type": "other", "artifact": f"explorations/{xid}",

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FieldSheetMap",
+  "description": "How to read one worksheet of a reporting-rules workbook: which columns hold which parts of a field. Code reads the rows; the model only maps the columns.",
+  "type": "object",
+  "required": ["is_field_sheet", "columns"],
+  "properties": {
+    "is_field_sheet": { "type": "boolean" },
+    "header_rows": { "type": "array", "items": { "type": "integer" } },
+    "first_data_row": { "type": ["integer", "null"] },
+    "columns": {
+      "type": "object",
+      "properties": {
+        "number": { "type": ["string", "null"] },
+        "name": { "type": ["string", "null"] },
+        "definition": { "type": ["string", "null"] },
+        "format": { "type": ["string", "null"] },
+        "validation": { "type": ["string", "null"] },
+        "table": { "type": ["string", "null"] },
+        "section": { "type": ["string", "null"] }
+      }
+    },
+    "mandatory_columns": { "type": "array", "items": { "type": "string" } },
+    "note": { "type": ["string", "null"] }
+  }
+}

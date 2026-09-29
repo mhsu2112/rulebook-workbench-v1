@@ -177,9 +177,30 @@ class Refactorer:
                 "interactions": doc.get("interactions", [])}
         return json.dumps(slim)[:limit]
 
-    def _source_excerpt(self, item_id: str, limit: int = 8000) -> str:
+    def _source_excerpt(self, item_id: str, limit: Optional[int] = 8000) -> str:
         p = self.gdir / "corpus_texts" / f"{item_id}.txt"
-        return p.read_text()[:limit] if p.exists() else ""
+        if not p.exists():
+            return ""
+        t = p.read_text()
+        return t if limit is None else t[:limit]
+
+    def _focused_excerpt(self, item_id: str, quotes: list[str], limit: int = 8000) -> str:
+        """The opening of the source plus the passages the finding quotes. Long
+        sources (a workbook rendered as text runs to 400k characters) would
+        otherwise show the proposer only their first pages."""
+        t = self._source_excerpt(item_id, limit=None)
+        if len(t) <= limit or not quotes:
+            return t[:limit]
+        parts, spans = [t[:2500]], []
+        low = t.lower()
+        for q in quotes[:6]:
+            k = low.find(q[:120].lower())
+            if k >= 0:
+                spans.append((max(0, k - 800), min(len(t), k + len(q) + 1500)))
+        for a, b in sorted(spans):
+            if a > 2500:
+                parts.append(t[a:b])
+        return "\n[…]\n".join(parts)
 
     def _finding_items(self, finding: dict) -> list[str]:
         return sorted({loc.get("item_id") for loc in finding.get("locations", [])
@@ -222,7 +243,11 @@ class Refactorer:
         ref = finding["finding_ref"]
         items = self._finding_items(finding)
         extractions = "\n".join(self._extraction_excerpt(i) for i in items) or "(none)"
-        sources = "\n\n".join(f"===== {i} =====\n{self._source_excerpt(i)}"
+        quotes = {}
+        for loc in finding.get("locations", []):
+            if loc.get("item_id") and loc.get("quote"):
+                quotes.setdefault(loc["item_id"], []).append(loc["quote"])
+        sources = "\n\n".join(f"===== {i} =====\n{self._focused_excerpt(i, quotes.get(i, []))}"
                               for i in items) or "(none)"
         finding_body = json.dumps({k: v for k, v in finding.items()
                                    if k != "finding_ref"})
@@ -237,7 +262,7 @@ class Refactorer:
                                           "note": out["cannot_express"],
                                           "logged_at": _now()})
         op_ids = []
-        source_all = "\n".join(self._source_excerpt(i, limit=200_000) for i in items)
+        source_all = "\n".join(self._source_excerpt(i, limit=None) for i in items)
         for op in out.get("operations", []):
             if op.get("op_type") not in WHITELIST:
                 # RECALIBRATE (and anything else outside the refactor whitelist)

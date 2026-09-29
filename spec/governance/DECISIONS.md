@@ -174,3 +174,39 @@ the official record only by promotion: the Program Owner creates a new
 official program from it (the ADR-007 pattern), its provisional ratifications
 are reset for re-ratification, and one decision is logged in each program.
 
+
+*Addendum 1 (25 September 2026): source explorations.* A branch may instead
+start from a changed set of sources. It keeps the program's ratified Purpose
+Statement (and any ratified Mandate) as they are, and reopens the frozen corpus
+as a draft so sources can be added, replaced or removed. The official corpus is
+not touched; the branch records which sources the official corpus held. When the
+branch re-freezes its corpus, extractions of sources it kept are carried over
+(the scope they were drawn against has not changed), and only new or replaced
+sources are distilled; defect detection, the blueprint summary and every later
+step run again across all sources. Spreadsheet sources (.xlsx) are read as text
+row by row, each value labelled with its column heading, so they can be cited
+like any other source.
+
+**ADR-020 — Field-level comparison.** `accepted`
+Distill gains a field-level step (design agreed 25 September 2026) so that
+reporting regimes can be compared field by field, as RegGenome did for the FCA,
+without depending on the regulator's spreadsheets being prepared for the purpose.
+The Program Owner picks the field sources and names each one's regime. A
+regulator's workbook is read by code after one model call per sheet says which
+columns hold the field number, name, definition, format, validation rules and
+mandatory/conditional/optional flags; each field cites its source, sheet and row,
+and its quote is the row's own text line. A source without a workbook is read by
+the model, and a field is kept only if its quote is found verbatim in the source.
+The comparison offers each field its likeliest counterparts in the other regime
+(by the words of names and definitions) and has the model say which record the
+same data point and how they differ: identical, format, definition, validation or
+applicability. It also drafts whether harmonizing would change what firms must
+report; that draft informs, but never replaces, the human effect classification
+in Refactor (PRD NG2). Matches are joined into unified rows; every row spanning
+two or more regimes becomes a cited finding in the Defect Register (run
+`defects-fields`: D1 validation conflicts, D2 definition or format differences,
+D10 applicability differences, D3 identical duplicates) and is worked in Refactor
+like any other defect. Once Refactor has worked a field finding, the field
+sources and the comparison are fixed. The Field Register downloads as an Excel
+workbook. No new package is needed: workbooks are read and written with the
+standard library.

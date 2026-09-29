@@ -461,15 +461,17 @@ var TASK_LABELS = {
   distill_extract: "Blueprint extraction", distill_focus: "Distillation focus", claim_verify: "Quote verification",
   defect_detect: "Defect detection", blueprint_summary: "Blueprint summary", operation_propose: "Refactor proposals",
   effect_classify_assist: "Effect classifier (independent)", misalign_detect: "Misalignment detection",
-  redesign_propose: "Redesign proposals", target_summary: "Target-blueprint summary"
+  redesign_propose: "Redesign proposals", target_summary: "Target-blueprint summary",
+  field_map: "Field register: sheet mapping", field_extract: "Field register: text reading", field_match: "Field comparison"
 };
 var TASK_STEP = { intake_interview: "Purpose", purpose_synthesis: "Purpose", mandate_synthesis: "Purpose", source_discovery: "Source corpus",
   discovery_questions: "Source corpus", second_census: "Source corpus", distill_extract: "Distill", distill_focus: "Distill", claim_verify: "Distill",
   defect_detect: "Distill", blueprint_summary: "Distill", operation_propose: "Refactor", effect_classify_assist: "Refactor",
-  misalign_detect: "Redesign", redesign_propose: "Redesign", target_summary: "Target blueprint" };
+  misalign_detect: "Redesign", redesign_propose: "Redesign", target_summary: "Target blueprint",
+  field_map: "Distill", field_extract: "Distill", field_match: "Distill" };
 var MODEL_GROUPS = [["Purpose", ["intake_interview", "purpose_synthesis", "mandate_synthesis"]],
   ["Source corpus", ["source_discovery", "discovery_questions", "second_census"]],
-  ["Distill", ["distill_extract", "defect_detect", "blueprint_summary"]],
+  ["Distill", ["distill_extract", "defect_detect", "blueprint_summary", "field_map", "field_extract", "field_match"]],
   ["Refactor", ["operation_propose", "effect_classify_assist"]],
   ["Redesign", ["misalign_detect", "redesign_propose", "target_summary"]]];
 var PRESETS = [["recommended", "Recommended", "Strong models for the reasoning, cheaper ones for the mechanical steps, independence built in."],
@@ -478,7 +480,7 @@ var PRESETS = [["recommended", "Recommended", "Strong models for the reasoning, 
   ["lab", "One lab", "One provider wherever allowed; independence checks stay on a different provider."]];
 var LABS = [["anthropic", "Anthropic"], ["openai", "OpenAI"], ["google", "Gemini"]];
 var ROLES = ["Program Owner", "Policy Reviewer", "Corpus Steward", "Distillation Lead", "Principal", "Principal Delegate"];
-var FAMILY_LABEL = { "defects-cross": "Cross-corpus" };
+var FAMILY_LABEL = { "defects-fields": "Field-level comparison",  "defects-cross": "Cross-corpus" };
 function famLabel(run) { if (FAMILY_LABEL[run]) return FAMILY_LABEL[run]; var f = String(run || "").replace(/^defects-/, "").replace(/_/g, " "); return f.charAt(0).toUpperCase() + f.slice(1); }
 var DEFECT_TYPES = { D1: "Conflicting requirements", D2: "Divergent definitions", D3: "Duplicate provisions", D4: "Undefined material term",
   D5: "Dead or dangling reference", D6: "Superseded but never revoked", D7: "Scattered requirement", D8: "Obsolete provision", D9: "Gap", D10: "Applicability inconsistency" };
@@ -545,7 +547,7 @@ function base() { return "/api/programs/" + enc(S.route.pid); }
 function refresh(keys) {
   var pid = S.route.pid, jobs = [loadOverview(pid)];
   var map = { purpose: "/purpose", interview: "/interview", manifest: "/manifest", status: "/corpus/status", blueprint: "/blueprint",
-    refactor: "/refactor", policy: "/policy", redesign: "/redesign", crosswalk: "/crosswalk" };
+    refactor: "/refactor", policy: "/policy", redesign: "/redesign", crosswalk: "/crosswalk", fields: "/fields" };
   var par = parentOf(pid);
   jobs.push(soft(api("/api/programs/" + enc(par) + "/explorations")).then(function (d) { S.p[par] = S.p[par] || {}; S.p[par].explorations = Array.isArray(d) ? d : []; }));
   (keys || []).forEach(function (k) {
@@ -557,7 +559,7 @@ function refresh(keys) {
 }
 var VIEW_NEEDS = {
   program: ["policy", "blueprint", "refactor", "manifest", "status"], purpose: ["purpose", "interview", "manifest"],
-  corpus: ["manifest", "status", "blueprint", "policy"], distill: ["blueprint", "status", "manifest"], refactor: ["refactor", "blueprint", "manifest"],
+  corpus: ["manifest", "status", "blueprint", "policy"], distill: ["blueprint", "status", "manifest", "fields"], refactor: ["refactor", "blueprint", "manifest"],
   redesign: ["redesign"], target: [], align: ["crosswalk"], documents: ["purpose", "manifest", "blueprint"], log: [],
   settings: ["policy", "models", "budget"], explore: ["purpose", "blueprint"]
 };
@@ -625,6 +627,8 @@ function branchOf(pid) { return String(pid || "").indexOf(XSEP) >= 0; }
 function parentOf(pid) { return String(pid || "").split(XSEP)[0]; }
 function inBranch() { return branchOf(S.route.pid); }
 function branchInfo() { var o = P().overview; return o && o.exploration; }
+function xIsSources(b) { return !!b && (b.kind === "sources" || (b.changed || {}).kind === "sources"); }
+function xChange(b) { return xIsSources(b) ? "changed sources" : "changed " + ((b && b.changed) || {}).answer_id; }
 /* Inside a branch any signed-in user may act in any role (ADR-019); the log records who. */
 function roleFor(allowed) { var r = who().role; return (!inBranch() || allowed.indexOf(r) >= 0) ? r : allowed[0]; }
 
@@ -689,10 +693,10 @@ function render() {
   if (r.view !== "home" && inBranch()) {
     var bi = branchInfo();
     if (bi) h += '<div class="xbar">' + ic("alert") + '<div><b>Exploration \u2014 not part of the official record.</b> ' + esc(bi.label) + ': ' + esc(bi.name) +
-      ' \u00b7 changed ' + esc((bi.changed || {}).answer_id || "") + '. Decisions here are numbered EX-' + esc(String(bi.branch_id || "").toUpperCase()) + ' and are provisional.</div>' +
+      ' \u00b7 ' + esc(xChange(bi)) + '. Decisions here are numbered EX-' + esc(String(bi.branch_id || "").toUpperCase()) + ' and are provisional.</div>' +
       '<a class="linkbtn" style="margin-left:auto;color:var(--amber);white-space:nowrap" href="' + href(parentOf(r.pid), "explore") + '">All explorations</a></div>';
   }
-  if (r.view === "explore") h += '<div class="xbar">' + ic("branch") + '<div>Explorations run a copy of this program from one changed answer. Nothing in them touches the official record.</div></div>';
+  if (r.view === "explore") h += '<div class="xbar">' + ic("branch") + '<div>Explorations run a copy of this program from one changed answer or a changed set of sources. Nothing in them touches the official record.</div></div>';
   if (S.err) h += '<div class="errbar" role="alert">' + ic("alert") + '<div>' + esc(S.err) + '</div><button data-a="dismiss-err">Dismiss</button></div>';
   if (r.view === "home") h += '<main>' + viewHome() + '</main>';
   else {
@@ -1010,9 +1014,21 @@ function viewCorpus() {
   var lead = noMan ? "Find and add the sources this program works from. When the list is complete, freeze it." :
     (frozen ? man.items.length + " sources, frozen on " + day(man.frozen_at) + ". The analysis cannot drift onto other sources." : man.items.length + " sources so far. Freeze the list when it is complete.");
   var h = '<div class="wrap">' + head("Source corpus", lead);
+  if (!noMan && inBranch() && xIsSources(branchInfo())) h += xSourcesDiff(man, branchInfo());
   if (frozen) h += frozenCorpus(man, st, bp);
   else h += buildCorpus(noMan ? null : man, pol);
   return h + '</div>';
+}
+/* In a source exploration: what this corpus adds to, or drops from, the official one. */
+function xSourcesDiff(man, b) {
+  var off = (b.changed || {}).official_items || [], now = man.items.map(function (i) { return i.item_id; });
+  var added = man.items.filter(function (i) { return off.indexOf(i.item_id) < 0; }), removed = off.filter(function (id) { return now.indexOf(id) < 0; });
+  return '<div class="card" style="border-color:var(--amber-line)"><header><h3>Changes from the official corpus</h3><span class="small dim">' + off.length + ' official \u2192 ' + now.length + ' here</span></header>' +
+    '<p class="small dim">' + esc(b.changed.note || "") + '</p>' +
+    (added.length || removed.length ? '<ul class="small" style="margin:8px 0 0 18px">' +
+      added.map(function (i) { return '<li><b style="color:var(--amber)">Added</b> ' + esc(i.title) + '</li>'; }).join("") +
+      removed.map(function (id) { return '<li><b>Removed</b> <span class="mono">' + esc(id) + '</span></li>'; }).join("") + '</ul>'
+      : '<p class="small muted" style="margin-top:6px">No changes yet. ' + (man.frozen ? "" : "Add sources below by web address or upload, or remove ones you do not want.") + '</p>') + '</div>';
 }
 /* A reporting instruction that yields nothing is almost always an extraction problem
    (the text did not come through, or was trimmed away); other families can legitimately
@@ -1126,7 +1142,7 @@ function buildCorpus(man, pol) {
     '<form class="card" data-form="upload-item"><header><h3>Add a source from a document</h3></header><p class="small dim">For material that is not on the web, such as templates sent by the Bank. The text is stored with a fingerprint.</p>' +
     '<div class="field"><label for="ui-title">Title</label><input id="ui-title" data-keep required></div>' +
     '<div class="row2"><div class="field"><label for="ui-issuer">Issuer</label><input id="ui-issuer" data-keep required></div><div class="field"><label for="ui-fam">Family</label><select id="ui-fam" data-keep>' + FAMILIES.map(function (f) { return '<option value="' + f + '">' + f.replace(/_/g, " ") + '</option>'; }).join("") + '</select></div></div>' +
-    '<div class="field"><label for="ui-loc">Citation (optional)</label><input id="ui-loc" data-keep></div><div class="field"><label for="ui-file">File (PDF, Word, text or HTML, up to 25 MB)</label><input type="file" id="ui-file" required></div>' +
+    '<div class="field"><label for="ui-loc">Citation (optional)</label><input id="ui-loc" data-keep></div><div class="field"><label for="ui-file">File (PDF, Word, Excel, text or HTML, up to 25 MB)</label><input type="file" id="ui-file" required></div>' +
     '<div class="acts">' + busyBtn("upload-item", "Upload and add", "primary", 'type="submit"') + '</div></form></div>';
   if (man && man.items.length) {
     out += itemTable(man, { remove: true });
@@ -1212,9 +1228,132 @@ function viewDistill() {
         }).join("") + '</div></div>';
     }).join("") +
     (c.pending === 0 && c.error === 0 ? '<div class="fam inline"><b>Cross-corpus</b><span class="small dim">Definitions and duties compared across every family' + (runs["defects-cross"] ? ' · ' + runs["defects-cross"].findings.length + ' defects' : "") + '</span><span style="margin-left:auto">' + busyBtn("def-cross", runs["defects-cross"] ? "Re-run" : "Detect defects", "ghost sm", 'data-a="defects" data-fam=""') + '</span></div>' : "") + '</div>';
+  out += fieldsCard();
   out += summaryCard(bp, complete);
   return out + '</div>';
 }
+
+/* ---------------- Field-level comparison (release 3) ---------------- */
+var REL_LABEL = { identical: "Identical", format_difference: "Format differs", definition_difference: "Definition differs",
+  validation_conflict: "Validation conflicts", applicability_difference: "Applicability differs", single_regime: "One regime only" };
+function fieldsCard() {
+  var fd = P().fields;
+  if (!fd || fd.__error) return "";
+  var sel = S.ui.fsel;
+  if (!sel || sel.__pid !== S.route.pid) {
+    sel = S.ui.fsel = { __pid: S.route.pid };
+    var from = Object.keys(fd.selected || {}).length ? fd.selected : (fd.default_selection || {});
+    Object.keys(from).forEach(function (k) { sel[k] = typeof from[k] === "string" ? from[k] : from[k].regime; });
+  }
+  var est = fd.estimate || {}, cmp = fd.compare || {}, sum = fd.summary, locked = fd.refactor_started;
+  var shown = fd.sources.filter(function (c) { return c.kind && (S.ui.fall || c.kind === "workbook" || c.suggested_regime || sel[c.item_id]); });
+  var hidden = fd.sources.filter(function (c) { return c.kind; }).length - shown.length;
+  var saved = fd.selected || {}, dirty = false;
+  Object.keys(sel).forEach(function (k) { if (k !== "__pid" && (sel[k] || null) !== ((saved[k] || {}).regime || null)) dirty = true; });
+  Object.keys(saved).forEach(function (k) { if (!sel[k]) dirty = true; });
+  var nSel = Object.keys(saved).length, built = Object.keys(saved).filter(function (k) { return saved[k].status === "built"; }).length;
+  var errs = Object.keys(saved).filter(function (k) { return saved[k].status === "error"; });
+  var regimes = Object.keys(fd.per_regime || {});
+  var h = '<div class="card" id="fields"><header><h3>Field-level comparison</h3>' +
+    (fd.fields ? '<a class="btn ghost sm" href="' + base() + '/fields/register.xlsx">' + ic("down") + 'Field Register (Excel)</a>' : "") + '</header>' +
+    '<p class="small dim" style="max-width:72ch">Compare what each regime makes firms report, field by field. Regulators\u2019 workbooks are read directly (one small model call per sheet to find the columns); a source without a workbook is read by the model, keeping only fields whose quote is found in the text. Matches become findings in the Defect Register, worked in Refactor.</p>';
+  if (locked) h += '<div class="warn" style="margin-top:8px">' + ic("lock") + '<div>Refactor has started on the field-level findings, so the sources and the comparison are fixed.</div></div>';
+  // 1 · sources
+  h += '<div class="stage-h">1 \u00b7 Field sources</div><datalist id="regimes"><option>EMIR</option><option>SFTR</option><option>MiFIR</option></datalist>' +
+    '<div class="tablewrap"><table style="min-width:620px"><thead><tr><th style="width:34px"></th><th>Source</th><th>Kind</th><th style="width:150px">Regime</th><th>Register</th></tr></thead><tbody>' +
+    shown.map(function (c) {
+      var on = !!sel[c.item_id], sv = saved[c.item_id] || {};
+      var st = sv.status === "built" ? sv.fields + " fields" : sv.status === "error" ? '<span class="err" title="' + esc((sv.errors || []).join(" ")) + '">error</span>' : (sv.status ? "not built" : "");
+      return '<tr><td><input type="checkbox" data-a="fsel" data-id="' + esc(c.item_id) + '"' + (on ? " checked" : "") + (locked ? " disabled" : "") + ' aria-label="Use ' + esc(c.title) + '"></td>' +
+        '<td><div style="font-weight:500">' + esc(c.title) + '</div><div class="small muted mono">' + esc(c.item_id) + '</div></td>' +
+        '<td><span class="tag' + (c.kind === "workbook" ? " amb" : "") + '">' + (c.kind === "workbook" ? "Workbook" : "Text \u00b7 " + Math.round(c.chars / 1000) + "k chars") + '</span></td>' +
+        '<td><input id="freg-' + esc(c.item_id) + '" list="regimes" value="' + esc(sel[c.item_id] || c.suggested_regime || "") + '" placeholder="Regime" style="width:130px"' + (on && !locked ? "" : " disabled") + ' data-a-input="freg" data-id="' + esc(c.item_id) + '"></td>' +
+        '<td class="small">' + st + '</td></tr>';
+    }).join("") + '</tbody></table></div>' +
+    '<div class="acts">' + (hidden > 0 && !S.ui.fall ? '<button class="linkbtn small" data-a="fall">Show ' + hidden + ' more sources</button>' : "") +
+    (!locked ? busyBtn("fsave", dirty ? "Save the field sources" : "Saved", dirty ? "primary sm" : "ghost sm", 'data-a="fsave"' + (dirty ? "" : " disabled")) : "") +
+    '<span class="small muted">Changing the sources clears the comparison.</span></div>';
+  // 2 · registers
+  if (nSel) {
+    h += '<div class="stage-h">2 \u00b7 Field registers</div>' +
+      (regimes.length ? '<p class="small">' + regimes.map(function (r) { return '<b>' + esc(r) + '</b> ' + fd.per_regime[r] + ' fields'; }).join(" \u00b7 ") + '</p>' : "") +
+      (built < nSel && !dirty ? '<div class="acts">' + busyBtn("fbuild", errs.length && built + errs.length === nSel ? "Retry the errors" : "Build the field registers", "primary", 'data-a="fbuild"') +
+        '<span class="small muted">About ' + money(est.build_usd) + ' in model calls' + (est.complete === false ? " (rough: no past calls for some models yet)" : "") + '.</span></div>' : "");
+  }
+  // 3 · compare
+  if (nSel && built === nSel && regimes.length >= 2 && !dirty) {
+    var left = (cmp.batches_total || 0) - (cmp.batches_done || 0);
+    h += '<div class="stage-h">3 \u00b7 Compare the regimes</div><p class="small dim">' + (cmp.pairs || []).map(function (p) { return esc(p.replace("|", " \u00b7 ")); }).join("; ") +
+      ' \u2014 ' + (cmp.batches_done || 0) + ' of ' + (cmp.batches_total || 0) + ' batches compared' + (cmp.batches_error ? ', ' + cmp.batches_error + ' with errors' : "") + '.</p>' +
+      (left > 0 && !locked ? '<div class="acts">' + busyBtn("fcompare", cmp.batches_done ? "Continue the comparison" : "Compare the regimes", "primary", 'data-a="fcompare"') +
+        '<span class="small muted">About ' + money(est.compare_usd) + ' in model calls, ' + left + ' batches of ' + 20 + ' fields.</span></div>' : "");
+  }
+  // results
+  if (sum) {
+    var by = sum.by_relation || {};
+    h += '<div class="stage-h">Result</div><div class="tiles">' + tile(sum.fields, "Fields", regimes.join(", ")) + tile(sum.rows, "Unified rows", sum.cross_regime_rows + " span two or more regimes") +
+      tile(sum.relationships, "Classified relationships", "") + tile(sum.hard_conflicts, "Hard validation conflicts", "", sum.hard_conflicts > 0) +
+      tile(sum.changes_obligations, "Would change what firms report", "model\u2019s draft; you decide in Refactor") + '</div>' +
+      '<div class="inline" style="flex-wrap:wrap;gap:6px;margin:8px 0">' + Object.keys(REL_LABEL).filter(function (k) { return by[k]; }).map(function (k) {
+        return '<button class="pill' + (S.ui.frel === k ? " ok" : "") + '" data-a="frel" data-k="' + k + '">' + REL_LABEL[k] + ' \u00b7 ' + by[k] + '</button>'; }).join("") +
+      (S.ui.frel ? '<button class="linkbtn small" data-a="frel" data-k="">Show all</button>' : "") + '</div>';
+    var rows = (fd.rows_preview || []).filter(function (r) { return !S.ui.frel || r.relation === S.ui.frel; });
+    h += '<div class="tablewrap" style="max-height:420px;overflow:auto"><table style="min-width:760px"><thead><tr><th>Row</th><th style="min-width:150px">Data point</th><th style="min-width:230px">Fields</th><th>Relation</th><th>Changes what firms report (draft)</th></tr></thead><tbody>' +
+      rows.slice(0, 150).map(function (r) {
+        return '<tr><td class="mono small" style="white-space:nowrap">' + esc(r.row_id) + '</td><td>' + esc(r.name) + '</td><td class="small">' + r.fields.map(esc).join("<br>") + '</td><td><span class="tag' + (r.relation === "identical" ? "" : " amb") + '">' + esc(REL_LABEL[r.relation] || r.relation) + '</span></td>' +
+          '<td class="small">' + (r.relation === "identical" ? "no" : (r.changes_obligations ? "yes" : "no")) + '</td></tr>';
+      }).join("") + '</tbody></table></div>' +
+      (fd.defects_written_at ? '<p class="small dim" style="margin-top:8px">' + sum.cross_regime_rows + ' findings are in the Defect Register under \u201cField-level comparison\u201d. ' +
+        (P().overview.tabs.refactor ? '<a class="linkbtn" href="' + href(S.route.pid, "refactor") + '">Work them in Refactor</a>.' : "") + '</p>' : "");
+  }
+  return h + '</div>';
+}
+ACTIONS["fall"] = function () { S.ui.fall = true; render(); };
+ACTIONS["frel"] = function (el) { S.ui.frel = el.dataset.k || null; render(); };
+ACTIONS["fsel"] = function (el) {
+  var id = el.dataset.id, sel = S.ui.fsel, c = (P().fields.sources || []).filter(function (x) { return x.item_id === id; })[0] || {};
+  var inp = $("freg-" + id);
+  if (el.checked) sel[id] = (inp && inp.value.trim()) || c.suggested_regime || ""; else delete sel[id];
+  render();
+};
+document.addEventListener("input", function (e) {
+  var t = e.target; if (!t.matches || !t.matches('[data-a-input="freg"]')) return;
+  S.ui.fsel[t.dataset.id] = t.value.trim();
+  var b = document.querySelector('[data-busy="fsave"]'); if (b && b.disabled) { b.disabled = false; b.className = "btn primary sm"; b.textContent = "Save the field sources"; }
+});
+ACTIONS["fsave"] = function () {
+  var sel = S.ui.fsel, saved = P().fields.selected || {}, body = {};
+  Object.keys(sel).forEach(function (k) { if (k !== "__pid") body[k] = sel[k] || null; });
+  Object.keys(saved).forEach(function (k) { if (!(k in body)) body[k] = null; });
+  var missing = Object.keys(body).filter(function (k) { return body[k] === ""; });
+  if (missing.length) { setErr("Give a regime for every source you tick (for example EMIR, SFTR or MiFIR)."); return; }
+  act("fsave", function () { return api(base() + "/fields/sources", "POST", { sources: body }).then(function (r) { P().fields = r; S.ui.fsel = null; }); }, "Field sources saved.");
+};
+ACTIONS["fbuild"] = function () {
+  var retry = Object.keys(P().fields.selected || {}).some(function (k) { return P().fields.selected[k].status === "error"; });
+  act("fbuild", function loop() {
+    return api(base() + "/fields/build", "POST", { limit: 2, retry_errors: retry }).then(function () {
+      return refresh(["fields"]).then(function () {
+        render();
+        var sel = P().fields.selected || {};
+        if (Object.keys(sel).some(function (k) { return sel[k].status === "pending"; })) return loop();
+      });
+    });
+  }, "Field registers built.");
+};
+ACTIONS["fcompare"] = function () {
+  var c0 = P().fields.compare || {}, retry = !!c0.batches_error && c0.batches_done + c0.batches_error >= c0.batches_total;
+  act("fcompare", function loop() {
+    return api(base() + "/fields/compare", "POST", { limit: 3, retry_errors: retry }).then(function (r) {
+      retry = false;
+      return refresh(["fields", "blueprint"]).then(function () {
+        render();
+        var c = r.compare || {};
+        if (!r.summary && c.batches_done + c.batches_error < c.batches_total) return loop();
+      });
+    });
+  }, "Comparison updated.");
+};
 /* The Defect Register, as the classic view shows it: one section per detection pass,
    each finding with its type code, title, description and the sources it cites. */
 function defectsCard(runs) {
@@ -1264,32 +1403,37 @@ function viewExplore() {
   if (list.length) tree += '<div class="ind">' + list.map(function (b) {
     var nx = b.metrics || {};
     return '<button class="node br' + (sel && sel.branch_id === b.branch_id ? " sel" : "") + '" data-a="xsel" data-x="' + esc(b.branch_id) + '"><span class="b">' + esc(b.branch_id.toUpperCase()) + '</span><div><div class="t">' + esc(b.name) + '</div><div class="d">' +
-      esc(b.changed.answer_id) + ' changed · ' + (nx.purpose_status === "ratified" ? "Purpose ratified" : "Purpose not yet ratified") + (b.stale ? ' · <span class="stale">official record has moved on</span>' : "") + '</div></div></button>';
+      (xIsSources(b) ? "Sources changed · " + (nx.corpus_frozen ? nx.sources_in_use + " sources, frozen" : "corpus in draft") : esc(b.changed.answer_id) + ' changed · ' + (nx.purpose_status === "ratified" ? "Purpose ratified" : "Purpose not yet ratified")) + (b.stale ? ' · <span class="stale">official record has moved on</span>' : "") + '</div></div></button>';
   }).join("") + '</div>';
-  tree += '<button class="chg" data-a="xnew">' + ic("plus") + 'Change an answer…</button>';
+  tree += '<button class="chg" data-a="xnew">' + ic("plus") + 'New exploration…</button>';
   var right;
   if (!ps || ps.__error) right = '<div class="card"><p>This program has no Purpose Statement yet. Explorations start from a recorded interview answer.</p></div>';
   else if (S.ui.xNew) right = xNewPane(ps);
   else if (sel) right = xBranchPane(sel);
-  else right = '<div class="card"><header><h3>What explorations are for</h3></header><p class="small dim" style="max-width:66ch">Run the program again from a different perspective without touching the official record. Change one interview answer, see which steps it affects and what they may cost before anything runs, then compare the outcomes side by side.</p>' +
-    '<div class="acts" style="margin-top:12px"><button class="btn amb" data-a="xnew">' + ic("branch") + 'Change an answer…</button><a class="btn ghost" href="' + href(pid, "purpose") + '">Browse the answers on Purpose</a></div></div>';
-  return '<div class="wrap" style="max-width:1240px">' + head("Explorations", "Branch from any interview answer, preview what it changes, and compare the result with the official record.") +
+  else right = '<div class="card"><header><h3>What explorations are for</h3></header><p class="small dim" style="max-width:66ch">Run the program again from a different perspective without touching the official record. Change one interview answer, or add, replace and remove sources, see which steps it affects and what they may cost before anything runs, then compare the outcomes side by side.</p>' +
+    '<div class="acts" style="margin-top:12px"><button class="btn amb" data-a="xnew-answer">' + ic("branch") + 'Change an answer…</button><button class="btn amb" data-a="xnew-sources">' + ic("branch") + 'Change the sources…</button><a class="btn ghost" href="' + href(pid, "purpose") + '">Browse the answers on Purpose</a></div></div>';
+  return '<div class="wrap" style="max-width:1240px">' + head("Explorations", "Branch from an interview answer or a different set of sources, preview what it changes, and compare the result with the official record.") +
     '<div class="xp"><div class="card tree xtree">' + tree + '</div><div style="display:flex;flex-direction:column;gap:16px;min-width:0">' + right + '</div></div></div>';
 }
 ACTIONS["xsel"] = function (el) { S.ui.xSel = el.dataset.x || null; S.ui.xNew = null; S.ui.xReq = {}; render(); };
 ACTIONS["xnew"] = function () { S.ui.xNew = {}; S.ui.xSel = null; render(); };
+ACTIONS["xnew-answer"] = function () { S.ui.xNew = { kind: "answer" }; S.ui.xSel = null; render(); };
+ACTIONS["xnew-sources"] = function () { S.ui.xNew = { kind: "sources", loading: true }; S.ui.xSel = null; render(); loadImpact(); };
 ACTIONS["xcancel"] = function () { S.ui.xNew = null; render(); };
 
 function xNewPane(ps) {
-  var n = S.ui.xNew, answers = ((ps.interview || {}).answers || []).filter(function (a) { return !/^A-(ID|CONSENT)/.test(a.answer_id); });
-  var h = '<div class="card"><header><h3>1. Pick the answer to change</h3><button class="linkbtn small" data-a="xcancel">Cancel</button></header><div class="picker">' +
+  var n = S.ui.xNew;
+  if (!n.kind && !n.answer_id) return '<div class="card"><header><h3>What do you want to change?</h3><button class="linkbtn small" data-a="xcancel">Cancel</button></header><div class="picker">' +
+    '<button class="pick" data-a="xnew-answer"><b>An interview answer</b><div class="small dim" style="margin-top:2px">Redraft the Purpose Statement (or the Mandate) from one different answer, and run forward from there.</div></button>' +
+    '<button class="pick" data-a="xnew-sources"><b>The sources</b><div class="small dim" style="margin-top:2px">Keep the ratified Purpose Statement. Add, replace or remove sources, then distill only what is new and run forward from there.</div></button></div></div>';
+  if (n.kind === "sources") return xNewSources(ps);
+  var answers = ((ps.interview || {}).answers || []).filter(function (a) { return !/^A-(ID|CONSENT)/.test(a.answer_id); });
+  var h = '<div class="card"><header><h3>1. Pick the answer to change</h3><span class="inline"><button class="linkbtn small" data-a="xnew">Back</button><button class="linkbtn small" data-a="xcancel">Cancel</button></span></header><div class="picker">' +
     answers.map(function (a) { return '<button class="pick' + (n.answer_id === a.answer_id ? " on" : "") + '" data-a="xpick" data-id="' + esc(a.answer_id) + '"><span class="ii">' + esc(a.answer_id) + '</span> ' + esc(a.question) + '<div class="small dim" style="margin-top:2px">Official answer: ' + esc(trim(a.verbatim, 140)) + '</div></button>'; }).join("") + '</div></div>';
   if (!n.answer_id) return h;
   var a = answers.filter(function (x) { return x.answer_id === n.answer_id; })[0] || {};
   var im = n.impact;
-  var preview = !im ? '<div class="empty small"><span class="spin"></span> Working out what this change affects…</div>' : (im.__error ? '<p class="err">' + esc(im.__error) + '</p>' :
-    '<div class="imp"><div class="im ch"><b>Changes</b>' + esc(im.changes) + '</div><div class="im re"><b>Reused as is</b>' + esc(im.reused.join("; ")) + '</div><div class="im rr"><b>Re-runs</b>' + esc(im.reruns.join("; ")) + '</div></div>' +
-    '<p class="small dim" style="margin-top:10px">Estimated model cost: <b>up to about ' + money(im.estimate_usd) + '</b>. ' + esc(im.estimate_basis) + ' Each step still waits for you before it runs.</p>');
+  var preview = xImpactPreview(im);
   var hasBP = P().blueprint && !P().blueprint.__error;
   var reuse = im && !im.__error && im.restart === "purpose" && hasBP ?
     '<label class="inline small" style="margin-top:6px"><input type="checkbox" id="x-reuse"' + (n.reuse ? " checked" : "") + ' data-a="xreuse"> Reuse the current blueprint and defects instead of re-distilling. Cheaper, but it may miss what the new scope brings in.</label>' : "";
@@ -1300,11 +1444,34 @@ function xNewPane(ps) {
     '<div class="stage-h">What this changes</div>' + preview + reuse +
     '<div class="acts">' + busyBtn("xcreate", "Create exploration", "amb", 'type="submit"') + '<span class="small muted">Creating it copies what is reused. Nothing runs, and nothing is charged, until you start a step.</span></div></form>';
 }
-ACTIONS["xpick"] = function (el) { S.ui.xNew = { answer_id: el.dataset.id, reuse: false, loading: true }; render(); loadImpact(); };
+function xImpactPreview(im) {
+  return !im ? '<div class="empty small"><span class="spin"></span> Working out what this change affects…</div>' : (im.__error ? '<p class="err">' + esc(im.__error) + '</p>' :
+    '<div class="imp"><div class="im ch"><b>Changes</b>' + esc(im.changes) + '</div><div class="im re"><b>Reused as is</b>' + esc(im.reused.join("; ")) + '</div><div class="im rr"><b>Re-runs</b>' + esc(im.reruns.join("; ")) + '</div></div>' +
+    '<p class="small dim" style="margin-top:10px">Estimated model cost: <b>up to about ' + money(im.estimate_usd) + '</b>' + (im.per_source_usd ? ', plus about <b>' + money(im.per_source_usd) + '</b> for each source you add' : "") + '. ' + esc(im.estimate_basis) + ' Each step still waits for you before it runs.</p>');
+}
+function xNewSources(ps) {
+  var n = S.ui.xNew, man = P().manifest, count = man && !man.__error ? man.items.length : null;
+  return '<form class="card" data-form="xcreate-sources"><header><h3>Change the sources</h3><span class="inline"><button class="linkbtn small" type="button" data-a="xnew">Back</button><button class="linkbtn small" type="button" data-a="xcancel">Cancel</button></span></header>' +
+    '<p class="small dim" style="max-width:66ch">The exploration starts with a draft copy of the official corpus' + (count != null ? " (" + count + " sources)" : "") + '. After you create it, add sources by web address or upload (PDF, Word, Excel, HTML or text), remove or replace any, then freeze it. The ratified Purpose Statement stays as it is.</p>' +
+    '<div class="field"><label for="x-note">What will change</label><textarea id="x-note" data-keep rows="3" required placeholder="e.g. Add the FCA and Bank field-level reporting spreadsheets and the current UK EMIR technical standards"></textarea></div>' +
+    '<div class="field"><label for="x-name">Name</label><input id="x-name" data-keep placeholder="e.g. Field-level sources"></div>' +
+    '<div class="stage-h">What this changes</div>' + xImpactPreview(n.impact) +
+    '<div class="acts">' + busyBtn("xcreate", "Create exploration", "amb", 'type="submit"') + '<span class="small muted">Creating it copies the corpus and the extractions. Nothing runs, and nothing is charged, until you start a step.</span></div></form>';
+}
+FORMS["xcreate-sources"] = function () {
+  var note = val("x-note");
+  if (!note) { setErr("Say what this exploration will change about the sources."); return; }
+  var body = { kind: "sources", name: val("x-name"), note: note, by_name: who().name, by_role: who().role };
+  act("xcreate", function () {
+    return api(base() + "/explorations", "POST", body).then(function (b) { S.ui.xNew = null; S.p[b.program_id] = {}; go(b.program_id, "corpus"); });
+  }, "Exploration created. Add, replace or remove sources, then freeze the corpus.");
+};
+ACTIONS["xpick"] = function (el) { S.ui.xNew = { kind: "answer", answer_id: el.dataset.id, reuse: false, loading: true }; render(); loadImpact(); };
 ACTIONS["xreuse"] = function (el) { S.ui.xNew.reuse = !S.ui.xNew.reuse; S.ui.xNew.impact = null; render(); loadImpact(); };
 function loadImpact() {
-  var n = S.ui.xNew; if (!n || !n.answer_id) return;
-  soft(api(base() + "/explorations/impact?answer_id=" + enc(n.answer_id) + "&reuse_blueprint=" + (n.reuse ? "true" : "false"))).then(function (r) {
+  var n = S.ui.xNew; if (!n || (!n.answer_id && n.kind !== "sources")) return;
+  var q = n.kind === "sources" ? "kind=sources" : "answer_id=" + enc(n.answer_id) + "&reuse_blueprint=" + (n.reuse ? "true" : "false");
+  soft(api(base() + "/explorations/impact?" + q)).then(function (r) {
     if (S.ui.xNew === n) { n.impact = r; render(); }
   });
 }
@@ -1338,9 +1505,10 @@ function xBranchPane(b) {
     '<div class="field"><label for="xp-id">Name of the new program</label><input id="xp-id" data-keep required value="' + esc(S.route.pid + "-" + b.branch_id) + '"></div>' +
     '<div class="field"><label for="xp-why">Rationale</label><textarea id="xp-why" data-keep rows="2" required></textarea></div>' +
     '<div class="acts">' + busyBtn("xpromote", "Promote", "primary", 'type="submit"') + '<button class="btn ghost" type="button" data-a="xpromote-cancel">Cancel</button></div></form>' : "";
-  return '<div class="card"><header><h3>' + esc(b.label) + ' · ' + esc(b.name) + '</h3><span class="small dim">' + money(b.spend_usd) + ' spent · ' + b.decisions + ' decisions</span></header>' +
-    '<div class="ans"><div class="a"><small>Official answer · ' + esc(b.changed.answer_id) + '</small>' + esc(b.changed.old) + '</div>' + ic("arrow") + '<div class="a new"><small>This exploration</small>' + esc(b.changed.new) + '</div></div>' +
-    '<p class="small dim" style="margin-top:10px">Restarted at ' + (b.restart === "mandate" ? "the Mandate" : "Purpose") + (b.reuse_blueprint ? ", reusing the official blueprint" : "") + '. Created by ' + esc((b.created_by || {}).name || "?") + ' on ' + day(b.created_at) + ', from ' + esc(b.based_on || "the start") + '.' +
+  return '<div class="card"><header><h3>' + esc(b.label) + ' · ' + esc(b.name) + '</h3><span class="small dim">' + money(b.spend_usd) + ' spent · ' + b.decisions + (b.decisions === 1 ? ' decision' : ' decisions') + '</span></header>' +
+    (xIsSources(b) ? '<div class="ans"><div class="a"><small>Official corpus</small>' + ((b.changed.official_items || []).length) + ' sources, frozen</div>' + ic("arrow") + '<div class="a new"><small>This exploration</small>' + esc(b.changed.note) + '</div></div>'
+      : '<div class="ans"><div class="a"><small>Official answer · ' + esc(b.changed.answer_id) + '</small>' + esc(b.changed.old) + '</div>' + ic("arrow") + '<div class="a new"><small>This exploration</small>' + esc(b.changed.new) + '</div></div>') +
+    '<p class="small dim" style="margin-top:10px">Restarted at ' + (b.restart === "mandate" ? "the Mandate" : b.restart === "corpus" ? "the Source corpus, keeping the ratified Purpose Statement" : "Purpose") + (b.reuse_blueprint ? ", reusing the official blueprint" : "") + '. Created by ' + esc((b.created_by || {}).name || "?") + ' on ' + day(b.created_at) + ', from ' + esc(b.based_on || "the start") + '.' +
     (b.stale ? ' <span class="stale">The official record is now at ' + esc(b.official_now_at) + '.</span>' : "") + '</p>' +
     '<div class="acts" style="margin-top:12px"><a class="btn amb" href="' + href(bpid, "program") + '">Open ' + esc(b.label) + ' ' + ic("arrow") + '</a>' +
     (S.ui.promoting === b.branch_id ? "" : '<button class="btn ghost" data-a="xpromote-open" data-x="' + esc(b.branch_id) + '">Promote…</button>') +
@@ -1363,7 +1531,7 @@ FORMS["xpromote"] = function (f) {
 afterRender.push(function () {
   S.ui.xReq = S.ui.xReq || {};
   if (S.route.view === "explore" && S.ui.xSel && !S.ui.xReq[S.ui.xSel]) { S.ui.xReq[S.ui.xSel] = true; loadCompare(S.ui.xSel); }
-  if (S.route.view === "explore" && S.ui.xNew && S.ui.xNew.answer_id && !S.ui.xNew.impact && !S.ui.xNew.loading) { S.ui.xNew.loading = true; loadImpact(); }
+  if (S.route.view === "explore" && S.ui.xNew && (S.ui.xNew.answer_id || S.ui.xNew.kind === "sources") && !S.ui.xNew.impact && !S.ui.xNew.loading) { S.ui.xNew.loading = true; loadImpact(); }
 });
 
 /* ---------------- Refactor ---------------- */

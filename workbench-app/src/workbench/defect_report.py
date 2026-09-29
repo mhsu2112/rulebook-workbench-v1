@@ -25,7 +25,7 @@ TAXONOMY = {
     "D6": "Superseded in substance but never revoked", "D7": "Scattered requirement",
     "D8": "Obsolete or archaic provision", "D9": "Gap", "D10": "Applicability inconsistency",
 }
-RUN_LABELS = {"defects-cross": "Cross-corpus"}
+RUN_LABELS = {"defects-cross": "Cross-corpus", "defects-fields": "Field-level comparison"}
 INK, DIM, ACC = RGBColor(0x1F, 0x29, 0x37), RGBColor(0x6B, 0x72, 0x80), RGBColor(0xB4, 0x53, 0x09)
 OK, BAD, QUOTE = RGBColor(0x15, 0x80, 0x3D), RGBColor(0xB9, 0x1C, 0x1C), RGBColor(0x37, 0x41, 0x51)
 
@@ -121,9 +121,14 @@ def styled_document(footer_text: str, program_dir=None):
     if x:
         bp = doc.add_paragraph()
         br = bp.add_run(f"EXPLORATION \u2014 not part of the official record \u00b7 {x.get('label', '')}: {x.get('name', '')} "
-                        f"\u00b7 changed answer {x.get('changed', {}).get('answer_id', '')}")
+                        f"\u00b7 {_xchange(x)}")
         br.bold = True; br.font.size = Pt(9); br.font.color.rgb = RGBColor(0x9A, 0x5C, 0x00)
     return doc
+
+
+def _xchange(x: dict) -> str:
+    from workbench.explorations import change_summary
+    return change_summary(x)
 
 
 def build_docx(program_dir: str | Path, program_id: str) -> bytes:
@@ -207,6 +212,20 @@ def build_docx(program_dir: str | Path, program_id: str) -> bytes:
         h.paragraph_format.page_break_before = True
         _para(doc, f"Detection pass: {run.get('scope_label') or r} · run "
                    f"{str(run.get('detected_at', ''))[:16].replace('T', ' ')} UTC", size=9, color=DIM)
+        if r == "defects-fields":
+            fs = run.get("findings", [])
+            rel = {}
+            for f in fs:
+                rel[f.get("relation", "?")] = rel.get(f.get("relation", "?"), 0) + 1
+            chg = sum(1 for f in fs if f.get("firm_impact") == "changes_obligations")
+            names = {"identical": "identical", "format_difference": "format differs",
+                     "definition_difference": "definition differs", "validation_conflict": "validation conflicts",
+                     "applicability_difference": "applicability differs"}
+            _para(doc, ("Each finding is one data point that two or more regimes ask firms to report, from the field "
+                        "registers built on the Distill step (the full comparison is in the Field Register workbook). "
+                        + "; ".join(f"{n} {names.get(k, k)}" for k, n in sorted(rel.items(), key=lambda x: -x[1]))
+                        + f". In a model's draft view, harmonizing {chg} of the {len(fs)} would change what some firms "
+                        "must report; the human effect classification in Refactor decides."), size=9, after=6)
         for i, f in enumerate(run.get("findings", [])):
             code = f.get("code", "?")
             hp = doc.add_heading(level=3)

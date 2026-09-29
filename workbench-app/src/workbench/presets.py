@@ -47,9 +47,9 @@ TIER = {
     "purpose_synthesis": "heavy", "mandate_synthesis": "heavy", "distill_extract": "heavy",
     "defect_detect": "heavy", "operation_propose": "heavy", "redesign_propose": "heavy",
     "misalign_detect": "heavy", "source_discovery": "heavy", "second_census": "heavy",
-    "effect_classify_assist": "heavy",
+    "effect_classify_assist": "heavy", "field_extract": "heavy", "field_match": "heavy",
     "intake_interview": "conversational", "discovery_questions": "conversational",
-    "blueprint_summary": "light", "target_summary": "light",
+    "blueprint_summary": "light", "target_summary": "light", "field_map": "light",
 }
 # Pure plumbing / eval — hidden from the selector, left on their defaults.
 HIDDEN = {"distill_focus", "claim_verify", "render_prose", "eval_respondent", "eval_judge"}

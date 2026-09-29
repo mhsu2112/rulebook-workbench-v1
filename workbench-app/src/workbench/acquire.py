@@ -105,6 +105,222 @@ def docx_to_text(data: bytes) -> str:
     return re.sub(r"\n{3,}", "\n\n", "\n".join(x for x in parts if x is not None)).strip()
 
 
+# ---------------------------------------------------------------- spreadsheets
+# Regulators publish field-level reporting requirements as workbooks (the FCA's
+# UK EMIR validation rules, the SFTR and MiFIR reporting-item sheets). Read them
+# with the standard library so no new dependency has to reach the Bank laptops.
+
+_XL_NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+          "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+          "pr": "http://schemas.openxmlformats.org/package/2006/relationships"}
+_CELL_RE = re.compile(r"([A-Z]+)(\d+)")
+XLSX_MAX_ROWS = 20_000        # per sheet; a guard against pathological files
+XLSX_MAX_CELL = 4_000         # chars per cell in the text rendering
+
+
+_DATE_FMT_IDS = set(range(14, 23)) | {45, 46, 47}
+
+
+def _serial_date(v: str) -> str:
+    """Excel serial day number -> ISO date (1900 date system)."""
+    try:
+        from datetime import date, timedelta
+        f = float(v)
+        if not 0 < f < 2958466:
+            return v
+        d = date(1899, 12, 30) + timedelta(days=int(f))
+        return d.isoformat()
+    except (ValueError, OverflowError):
+        return v
+
+
+def zip_kind(data: bytes) -> Optional[str]:
+    """'xlsx' | 'docx' | None for an Office Open XML package (a zip)."""
+    if data[:2] != b"PK":
+        return None
+    import zipfile
+    try:
+        names = set(zipfile.ZipFile(io.BytesIO(data)).namelist())
+    except zipfile.BadZipFile:
+        return None
+    if "xl/workbook.xml" in names:
+        return "xlsx"
+    if "word/document.xml" in names:
+        return "docx"
+    return None
+
+
+def _col_index(letters: str) -> int:
+    n = 0
+    for ch in letters:
+        n = n * 26 + (ord(ch) - 64)
+    return n - 1
+
+
+def xlsx_sheets(data: bytes) -> list[dict]:
+    """[{name, hidden, rows: [[cell text, ...], ...]}] for every worksheet, in
+    workbook order. Values are the cells' displayed text as stored (shared,
+    inline and formula strings; numbers as written)."""
+    import zipfile
+    import xml.etree.ElementTree as ET
+    z = zipfile.ZipFile(io.BytesIO(data))
+    names = set(z.namelist())
+
+    def text_of(el) -> str:
+        return "".join(t.text or "" for t in el.iter(f"{{{_XL_NS['m']}}}t"))
+
+    shared: list[str] = []
+    if "xl/sharedStrings.xml" in names:
+        root = ET.fromstring(z.read("xl/sharedStrings.xml"))
+        shared = [text_of(si) for si in root.findall("m:si", _XL_NS)]
+    date_styles: set[int] = set()        # cellXfs indexes whose number format is a date
+    if "xl/styles.xml" in names:
+        st = ET.fromstring(z.read("xl/styles.xml"))
+        custom = {int(f.get("numFmtId")): f.get("formatCode") or ""
+                  for f in st.findall("m:numFmts/m:numFmt", _XL_NS) if (f.get("numFmtId") or "").isdigit()}
+        for i, xf in enumerate(st.findall("m:cellXfs/m:xf", _XL_NS)):
+            fid = int(xf.get("numFmtId") or 0)
+            code = re.sub(r'"[^"]*"|\[[^\]]*\]', "", custom.get(fid, "")).lower()
+            if fid in _DATE_FMT_IDS or (fid in custom and "y" in code and "d" in code):
+                date_styles.add(i)
+    rels = {}
+    if "xl/_rels/workbook.xml.rels" in names:
+        for rel in ET.fromstring(z.read("xl/_rels/workbook.xml.rels")).findall("pr:Relationship", _XL_NS):
+            tgt = rel.get("Target", "")
+            tgt = tgt.lstrip("/") if tgt.startswith("/") else "xl/" + tgt
+            rels[rel.get("Id")] = tgt
+    wb = ET.fromstring(z.read("xl/workbook.xml"))
+    out = []
+    for i, sh in enumerate(wb.findall("m:sheets/m:sheet", _XL_NS)):
+        path = rels.get(sh.get(f"{{{_XL_NS['r']}}}id")) or f"xl/worksheets/sheet{i + 1}.xml"
+        if path not in names:
+            continue
+        root = ET.fromstring(z.read(path))
+        rows: list[list[str]] = []
+        for r_i, row in enumerate(root.iter(f"{{{_XL_NS['m']}}}row")):
+            if r_i >= XLSX_MAX_ROWS:
+                break
+            rn = row.get("r")
+            if rn and rn.isdigit():                 # keep list index == spreadsheet row - 1
+                while len(rows) < int(rn) - 1:
+                    rows.append([])
+            cells: dict[int, str] = {}
+            nxt = 0
+            for c in row.findall("m:c", _XL_NS):
+                m = _CELL_RE.match(c.get("r") or "")
+                col = _col_index(m.group(1)) if m else nxt
+                nxt = col + 1
+                t = c.get("t")
+                if t == "inlineStr":
+                    val = text_of(c)
+                else:
+                    v = c.find("m:v", _XL_NS)
+                    val = (v.text or "") if v is not None else ""
+                    if t == "s" and val.strip().isdigit():
+                        k = int(val)
+                        val = shared[k] if k < len(shared) else ""
+                    elif t == "b":
+                        val = "TRUE" if val == "1" else "FALSE"
+                    elif t in (None, "n") and (c.get("s") or "").isdigit() and int(c.get("s")) in date_styles:
+                        val = _serial_date(val)
+                val = val.strip()
+                if val:
+                    cells[col] = val
+            if cells:
+                width = max(cells) + 1
+                rows.append([cells.get(k, "") for k in range(width)])
+            else:
+                rows.append([])
+        while rows and not rows[-1]:
+            rows.pop()
+        out.append({"name": sh.get("name") or f"Sheet{i + 1}",
+                    "hidden": sh.get("state") in ("hidden", "veryHidden"), "rows": rows})
+    return out
+
+
+def _header_row(rows: list[list[str]]) -> int:
+    """Index of the likeliest header row: the fullest of the first ten rows
+    (ties go to the earliest), provided it has at least two labels."""
+    best, best_n = -1, 1
+    for i, r in enumerate(rows[:10]):
+        filled = [x for x in r if x]
+        if filled and re.fullmatch(r"[\d.]+", filled[0].strip()):
+            continue                 # a numbered data row ("1 | Reporting timestamp | …"), not headings
+        n = len(filled)
+        if n > best_n:
+            best, best_n = i, n
+    return best
+
+
+def _xl_col(i: int) -> str:
+    s = ""
+    i += 1
+    while i:
+        i, rem = divmod(i - 1, 26)
+        s = chr(65 + rem) + s
+    return s
+
+
+def sheet_headings(rows: list[list[str]]) -> tuple[int, list[str]]:
+    """(header row index, column headings) for one sheet. Two-row headings
+    (merged group cells above, e.g. "Trade level" over NEWT…POSC and "Position
+    level" over the same codes) are combined so repeated names stay distinct."""
+    h = _header_row(rows)
+    heads = [re.sub(r"\s+", " ", x).strip() for x in rows[h]] if h >= 0 else []
+    dup = {x for x in heads if x and heads.count(x) > 1}
+    if dup and h > 0:
+        for above in range(h - 1, max(-1, h - 4), -1):   # the nearest row that tells them apart
+            group, cur, trial = rows[above], "", list(heads)
+            for k in range(len(heads)):
+                g = re.sub(r"\s+", " ", group[k]).strip() if k < len(group) else ""
+                cur = g or cur
+                if heads[k] in dup and cur:
+                    trial[k] = f"{cur} · {heads[k]}"
+            named = [x for x in trial if x]
+            if len(set(named)) == len(named):
+                heads = trial
+                break
+    return h, heads
+
+
+def row_line(n: int, row: list[str], heads: list[str]) -> str:
+    """The text line for spreadsheet row n, exactly as xlsx_to_text writes it."""
+    vals = []
+    for k, x in enumerate(row):
+        if not x:
+            continue
+        x = x if len(x) <= XLSX_MAX_CELL else x[:XLSX_MAX_CELL] + " […]"
+        label = heads[k] if k < len(heads) and heads[k] else _xl_col(k)
+        vals.append(f"{label}: {x}")
+    return (f"Row {n}: " + " | ".join(vals)) if vals else ""
+
+
+def xlsx_to_text(data: bytes) -> str:
+    """Render a workbook as text a model can read and a citation can quote:
+    one block per sheet, and one line per row that repeats each value's column
+    heading ("Field name: Counterparty 1 | Format: ISO 17442 ..."). Row numbers
+    are the spreadsheet's own, so a cited line can be found in the original."""
+    blocks = []
+    for sh in xlsx_sheets(data):
+        rows = sh["rows"]
+        if not any(rows):
+            continue
+        h, heads = sheet_headings(rows)
+        lines = [f"=== Sheet: {sh['name']}{' (hidden)' if sh['hidden'] else ''} ==="]
+        if h > 0:                                    # title/notes above the header
+            for r in rows[:h]:
+                if any(r):
+                    lines.append(" | ".join(x for x in r if x))
+        if heads:
+            lines.append("Columns: " + " | ".join(x or _xl_col(k) for k, x in enumerate(heads)))
+        for n, r in enumerate(rows[h + 1:] if h >= 0 else rows, start=(h + 2 if h >= 0 else 1)):
+            line = row_line(n, r, heads)
+            if line:
+                lines.append(line)
+        blocks.append("\n".join(lines))
+    return "\n\n".join(blocks).strip()
+
+
 class UploadError(Exception):
     """A user-uploaded document could not be turned into usable source text."""
 
@@ -112,7 +328,7 @@ class UploadError(Exception):
 def extract_upload(filename: str, data: bytes) -> tuple[str, str]:
     """Turn an uploaded document into (text, ext). Routes by magic bytes first
     (a PDF is a PDF whatever the name says), then by extension. Supports PDF,
-    Word (.docx), HTML, XML, and plain text/markdown."""
+    Word (.docx), Excel (.xlsx), HTML, XML, and plain text/markdown."""
     name = (filename or "").lower().strip()
     ext = name.rsplit(".", 1)[-1] if "." in name else ""
     if data[:5] == b"%PDF-" or ext == "pdf":
@@ -120,13 +336,21 @@ def extract_upload(filename: str, data: bytes) -> tuple[str, str]:
             return pdf_to_text(data), "pdf"
         except Exception as e:  # noqa: BLE001 — corrupt/encrypted PDF → friendly message
             raise UploadError(f"could not read the PDF: {type(e).__name__}: {str(e)[:160]}")
-    if ext == "docx" or (data[:2] == b"PK" and ext in ("", "docx")):
+    kind = zip_kind(data)
+    if kind == "xlsx" or (ext in ("xlsx", "xlsm") and data[:2] == b"PK"):
+        try:
+            return xlsx_to_text(data), "xlsx"
+        except Exception as e:  # noqa: BLE001 — surface a friendly message
+            raise UploadError(f"could not read the spreadsheet: {type(e).__name__}: {str(e)[:160]}")
+    if kind == "docx" or ext == "docx" or (data[:2] == b"PK" and ext == ""):
         try:
             return docx_to_text(data), "docx"
         except Exception as e:  # noqa: BLE001 — surface a friendly message
             raise UploadError(f"could not read the Word document: {type(e).__name__}: {str(e)[:160]}")
     if ext == "doc":
         raise UploadError("legacy .doc isn't supported — save it as .docx or PDF and re-upload")
+    if ext == "xls":
+        raise UploadError("legacy .xls isn't supported — save it as .xlsx and re-upload")
     if ext in ("html", "htm"):
         return html_to_text(data.decode("utf-8", errors="replace")), "html"
     if ext == "xml":
@@ -204,6 +428,13 @@ def extract_text(content_type: str, url: str, data: bytes) -> tuple[str, str]:
     lie: PDF links serve HTML interstitials, HTML content-types serve PDFs."""
     if data[:5] == b"%PDF-":
         return pdf_to_text(data), "pdf"
+    kind = zip_kind(data)                  # Office packages: workbooks and Word files
+    if kind == "xlsx":
+        return xlsx_to_text(data), "xlsx"
+    if kind == "docx":
+        return docx_to_text(data), "docx"
+    if data[:8] == b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1":
+        raise ValueError("legacy Office file (.xls/.doc) — save it as .xlsx/.docx and upload it instead")
     ct = (content_type or "").lower()
     body = data.decode("utf-8", errors="replace")
     if body.lstrip().startswith("<?xml") or ("xml" in ct and "html" not in ct):
@@ -284,7 +515,9 @@ class Acquirer:
                                              "AppleWebKit/537.36 (KHTML, like Gecko) "
                                              "Chrome/126.0.0.0 Safari/537.36"),
                               "Accept": ("text/html,application/xhtml+xml,application/xml;"
-                                         "q=0.9,application/pdf;q=0.9,*/*;q=0.8"),
+                                         "q=0.9,application/pdf;q=0.9,"
+                                         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;"
+                                         "q=0.9,*/*;q=0.8"),
                               "Accept-Language": "en-US,en;q=0.9",
                           }) as client:
             for item in items:

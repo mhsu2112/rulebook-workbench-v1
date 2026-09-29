@@ -115,6 +115,30 @@ tasks:
     params: { temperature: 0.1, max_tokens: 8192 }
     structured_output: effect_classification.schema.json
 
+  field_map:
+    phase: P2
+    description: Field registers — say which columns of a reporting-rules worksheet hold which parts of a field (code reads the rows)
+    default_model: anthropic/claude-sonnet-5
+    fallbacks: [openai/gpt-6-sol]
+    params: { temperature: 0.0, max_tokens: 2048 }
+    structured_output: field_map.schema.json
+
+  field_extract:
+    phase: P2
+    description: Field registers — read reporting fields from a legal text's field tables (quotes machine-checked)
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
+    params: { temperature: 0.1, max_tokens: 32000 }
+    structured_output: field_extract.schema.json
+
+  field_match:
+    phase: P2
+    description: Cross-regime field comparison — which fields record the same data point and how they differ; drafts whether harmonizing changes firms' obligations
+    default_model: anthropic/claude-opus-5.5
+    fallbacks: [openai/gpt-6-sol]
+    params: { temperature: 0.2, max_tokens: 16000 }
+    structured_output: field_matches.schema.json
+
   source_discovery:
     phase: P1
     description: Assisted census — propose candidate corpus sources for human review (spec/53); NOT a governed artifact, locators verified against the live catalog before display

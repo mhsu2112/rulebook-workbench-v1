@@ -124,3 +124,96 @@ def test_promotion_creates_a_new_official_program(client, approot):
     parent = client.get("/api/programs/ex3/overview").json()["decisions"]
     assert len(parent) == 1 and "promoted to a new official program, ex3-alt" in parent[0]["decision"]
     assert client.post("/api/programs/ex3/explorations/a/promote", json={**body, "new_program_id": "ex3-alt2"}).status_code == 409
+
+
+# ---------------------------------------------------------------- source explorations (addendum 1)
+
+def _frozen_program(client, approot, pid):
+    from test_server import _ratified_program
+    _ratified_program(client, approot, pid)
+    for iid in ("rts-22", "emir-rts-2013"):
+        client.post(f"/api/programs/{pid}/manifest/items", json={
+            "item_id": iid, "title": iid.upper(), "issuer": "FCA", "family": "regulation", "locator": iid})
+    client.post(f"/api/programs/{pid}/policy/ratify", json={"name": "O", "role": "Program Owner", "rationale": "ok"})
+    doc = client.post(f"/api/programs/{pid}/manifest/freeze",
+                      json={"name": "O", "role": "Program Owner", "rationale": "complete"}).json()
+    g = approot / "programs" / pid / "governed"
+    bp = g / "blueprint"
+    bp.mkdir(parents=True, exist_ok=True)
+    reg = {"manifest_hash": doc["content_hash"], "items": {}}
+    for iid in ("rts-22", "emir-rts-2013"):
+        (bp / f"{iid}.json").write_text(json.dumps({"item_id": iid, "obligations": [{"action": "report"}], "definitions": []}))
+        reg["items"][iid] = {"status": "extracted", "obligations": 1, "cost_usd": 0.5, "manifest_hash": doc["content_hash"]}
+    (bp / "extraction_register.json").write_text(json.dumps(reg))
+    (g / "registers").mkdir(exist_ok=True)
+    (g / "registers" / "defects.json").write_text(json.dumps({"manifest_hash": doc["content_hash"], "runs": {"defects-cross": {"findings": [{}]}}}))
+    (g / "blueprint_summary.json").write_text("{}")
+    return doc
+
+
+def test_source_exploration_keeps_purpose_and_reopens_corpus(client, approot):
+    _frozen_program(client, approot, "sx1")
+    pdir = approot / "programs" / "sx1"
+    before = _tree_hash(pdir)
+
+    imp = client.get("/api/programs/sx1/explorations/impact?kind=sources").json()
+    assert imp["kind"] == "sources" and imp["restart"] == "corpus" and imp["per_source_usd"] == 0.5
+    assert any("Purpose Statement" in r for r in imp["reused"])
+
+    assert client.post("/api/programs/sx1/explorations", json={"kind": "sources", "note": " "}).status_code == 400
+    r = client.post("/api/programs/sx1/explorations", json={
+        "kind": "sources", "name": "Field-level sources", "note": "Add the FCA validation-rules workbook",
+        "by_name": "Mike", "by_role": "Program Owner"})
+    assert r.status_code == 200, r.text
+    b = r.json()
+    assert b["program_id"] == "sx1~x-a" and b["restart"] == "corpus"
+    assert b["changed"]["official_items"] == ["rts-22", "emir-rts-2013"]
+
+    # Purpose stays ratified; the corpus is a draft; per-source extractions came along
+    assert client.get("/api/programs/sx1~x-a/purpose").json()["status"] == "ratified"
+    m = client.get("/api/programs/sx1~x-a/manifest").json()
+    assert m["frozen"] is False and len(m["items"]) == 2
+    bg = pdir / "explorations" / "a" / "governed"
+    assert (bg / "blueprint" / "rts-22.json").exists()
+    assert not (bg / "registers" / "defects.json").exists()
+
+    # replace a source: drop the pre-REFIT standard, add the workbook, re-freeze
+    assert client.delete("/api/programs/sx1~x-a/manifest/items/emir-rts-2013").status_code == 200
+    assert client.post("/api/programs/sx1~x-a/manifest/items", json={
+        "item_id": "uk-emir-validation-rules", "title": "UK EMIR Validation Rules", "issuer": "FCA",
+        "family": "reporting_instruction", "locator": "FCA/BoE validation rules",
+        "url": "https://www.fca.org.uk/publication/fca/uk-emir-validation-rules-2026.xlsx"}).status_code == 200
+    r = client.post("/api/programs/sx1~x-a/manifest/freeze", json={"name": "Mike", "role": "Program Owner", "rationale": "new sources"})
+    assert r.status_code == 200, r.text
+    new_hash = r.json()["content_hash"]
+    reg = json.loads((bg / "blueprint" / "extraction_register.json").read_text())
+    assert reg["manifest_hash"] == new_hash and set(reg["items"]) == {"rts-22"}
+    assert reg["items"]["rts-22"]["manifest_hash"] == new_hash
+    assert (bg / "blueprint" / "rts-22.json").exists() and not (bg / "blueprint" / "emir-rts-2013.json").exists()
+    assert not (bg / "blueprint_summary.json").exists()
+    bpv = client.get("/api/programs/sx1~x-a/blueprint")
+    assert bpv.status_code == 200, bpv.text                 # the distiller accepts the carried register
+    log = client.get("/api/programs/sx1~x-a/overview").json()["decisions"]
+    assert log[-1]["entry_id"] == "EX-A-001" and log[-1]["type"] == "manifest_freeze"
+
+    # the official program did not move
+    assert _tree_hash(pdir) == before
+    lst = client.get("/api/programs/sx1/explorations").json()
+    assert lst[0]["kind"] == "sources" and lst[0]["metrics"]["sources_in_use"] == 2
+
+
+def test_source_exploration_guards_and_promotion(client, approot):
+    from test_server import _ratified_program
+    _ratified_program(client, approot, "sx2")
+    r = client.post("/api/programs/sx2/explorations", json={"kind": "sources", "note": "add a workbook"})
+    assert r.status_code == 409 and "not frozen" in r.json()["detail"]
+    assert client.get("/api/programs/sx2/explorations/impact").status_code == 400
+    assert client.post("/api/programs/sx2/explorations", json={"kind": "other"}).status_code == 400
+
+    _frozen_program(client, approot, "sx3")
+    client.post("/api/programs/sx3/explorations", json={"kind": "sources", "note": "add a workbook"})
+    r = client.post("/api/programs/sx3/explorations/a/promote", json={
+        "new_program_id": "sx3-fields", "name": "O", "role": "Program Owner", "rationale": "better sources"})
+    assert r.status_code == 200, r.text
+    new = client.get("/api/programs/sx3-fields/overview").json()
+    assert "changed sources" in new["decisions"][0]["decision"]
