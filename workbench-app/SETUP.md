@@ -1,3 +1,6 @@
+> **Historical (M0 setup, 2026).** Paths and steps below predate the current layout —
+> for running the app today see `RUN-LOCALLY.md`.
+
 # Setup — step by step (no coding required)
 
 Two ways to do this: **Option A** hands the work to Claude Code; **Option B**

@@ -71,7 +71,7 @@ def approot(tmp_path):
     # keep schema resolution working from the temp root
     text = (tmp_path / "models.yaml").read_text().replace(
         "- src/workbench/contracts", f"- {REPO}/src/workbench/contracts").replace(
-        "- ../rulebook-workbench/schemas", f"- {REPO.parent}/rulebook-workbench/schemas")
+        "- ../spec/schemas", f"- {REPO.parent}/spec/schemas")
     (tmp_path / "models.yaml").write_text(text)
     return tmp_path
 

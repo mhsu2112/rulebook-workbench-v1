@@ -36,12 +36,30 @@ Windows notes and troubleshooting: **[workbench-app/RUN-LOCALLY.md](workbench-ap
 
 - **`workbench-app/`** — the application (Python/FastAPI + a dependency-free browser UI).
   Run all commands from here.
-- **`rulebook-workbench/`** — the governing specs, schemas, skills, and example program
-  data (blueprints, registers, decision logs). The app reads schemas from here, so keep
-  the two folders together — a clone already does.
-- **`docs/`** — the standalone overview (HTML + PDF). `docs/archive/` holds share
-  packages and the pre-consolidation git histories; it is local-only and git-ignored.
-  See `docs/README.md`.
+- **`spec/`** — the governing specs, decisions log, schemas, skills and evals. The app
+  reads schemas and the interview skill from here, so keep it beside `workbench-app/` —
+  a clone already does.
+- **`examples/`** — the published example programs (AML refactor, liquidity refactor
+  and redesign). On first run the app copies these into your data folder.
+- **`docs/`** — the standalone overview (HTML + PDF). See `docs/README.md`.
+
+### Where your work is stored — outside this repo
+
+Every program you create or run lives in a **data folder outside the git repo**, together
+with the run log and exports. By default that's a `workbench-data` folder next to your
+clone; set `WORKBENCH_DATA=/absolute/path` in `workbench-app/.env` to put it elsewhere.
+Because it isn't inside the repo, nothing you do in the app can be committed or pushed by
+accident. The app prints the data folder's location when it starts.
+
+```
+your-folder/
+├── rulebook-workbench-v1/     ← this repo (code, specs, published examples)
+└── workbench-data/            ← your programs, run log, exports (never in git)
+```
+
+To update the public examples from your working copies: `make publish-examples`
+(from `workbench-app/`), then review and commit. It only ever touches programs that
+are already in `examples/`, and never copies `restricted/` or `explorations/`.
 
 ## What this is (and isn't)
 

@@ -1,7 +1,7 @@
 # workbench-app
 
 Code repository for the Rulebook Workbench prototype — the M0 walking
-skeleton per `../rulebook-workbench/spec/40-prototype-prd.md` (which governs;
+skeleton per `../spec/spec/40-prototype-prd.md` (which governs;
 this README is operational only).
 
 ## What exists at M0

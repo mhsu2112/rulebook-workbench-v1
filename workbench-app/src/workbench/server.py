@@ -28,6 +28,7 @@ from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from . import datadir
 from . import acquire, corpus_report, explorations as explorations_mod, purpose_report, crosswalk as crosswalk_mod, defect_report, discover as discover_mod, distill, manifest, package as package_mod, policy as policy_mod, presets as presets_mod, programs_admin, redesign as redesign_mod, refactor as refactor_mod, render, storage
 from .config import load_registry
 from .router import (
@@ -164,8 +165,10 @@ the questions, one per line, no numbering or preamble.
 
 
 class ServerState:
-    def __init__(self, root: Path, transport=None, api_key: Optional[str] = None):
-        self.root = root
+    def __init__(self, root: Path, transport=None, api_key: Optional[str] = None,
+                 data: Optional[Path] = None):
+        self.root = root                      # the app folder: models.yaml, overrides, slices
+        self.data = Path(data) if data else root  # programs/, runs/ (see datadir.py)
         self.registry = load_registry(root / "models.yaml")
         self.overrides_path = root / "overrides.json"
         user_overrides = {}
@@ -179,15 +182,16 @@ class ServerState:
 
     def _find_skill(self) -> str:
         candidates = [
-            self.root.parent / "rulebook-workbench" / "skills" / "purpose-elicitation" / "SKILL.md",
+            self.root.parent / "spec" / "skills" / "purpose-elicitation" / "SKILL.md",
+            self.root.parent / "rulebook-workbench" / "skills" / "purpose-elicitation" / "SKILL.md",  # pre-2026-09-29 layout
             self.root / "skills" / "purpose-elicitation" / "SKILL.md",
         ]
         for c in candidates:
             if c.exists():
                 return c.read_text()
         raise FileNotFoundError(
-            "purpose-elicitation SKILL.md not found — expected the rulebook-workbench "
-            "repo beside this one (see PRD D5: the skill runs verbatim)"
+            "purpose-elicitation SKILL.md not found — expected spec/skills/ in the repo "
+            "(beside workbench-app/) (see PRD D5: the skill runs verbatim)"
         )
 
     def save_overrides(self) -> None:
@@ -200,11 +204,11 @@ class ServerState:
         # program (ADR-019); every endpoint then works inside it unchanged.
         parent, xid = explorations_mod.split_id(program_id)
         if xid is not None:
-            d = explorations_mod.branch_dir(self.root, parent, xid)
+            d = explorations_mod.branch_dir(self.data, parent, xid)
             if not (d / "branch.json").exists():
                 raise HTTPException(404, f"Unknown exploration '{program_id}'")
             return d
-        d = self.root / "programs" / program_id
+        d = self.data / "programs" / program_id
         if not d.is_dir():
             raise HTTPException(404, f"Unknown program '{program_id}'")
         return d
@@ -420,10 +424,22 @@ def _decision_phase(entry: dict) -> str:
     return "overview"
 
 
-def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optional[str] = None) -> FastAPI:
+def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optional[str] = None,
+               data: Optional[str | Path] = None) -> FastAPI:
+    legacy_root = data is None and bool(root or os.environ.get("WORKBENCH_ROOT"))
     root = Path(root or os.environ.get("WORKBENCH_ROOT") or Path(__file__).resolve().parents[2])
     load_dotenv(root)
-    state = ServerState(root, transport=transport, api_key=api_key)
+    data_root = datadir.resolve(root, data, legacy_root=legacy_root)
+    if data_root != root:
+        seeded = datadir.seed_examples(root, data_root)
+        print(f"Workbench data folder: {data_root}")
+        if seeded:
+            print(f"  first run: copied example programs {', '.join(seeded)}")
+        stray = datadir.legacy_programs(root)
+        if stray:
+            print(f"  NOTE: programs found in the old location {root / 'programs'}: {', '.join(stray)}"
+                  f" — move them into {data_root / 'programs'} to see them in the app.")
+    state = ServerState(root, transport=transport, api_key=api_key, data=data_root)
     app = FastAPI(title="Rulebook Workbench", version="0.1 (M1)")
     app.state.wb = state  # test hook
 
@@ -439,7 +455,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 state.router.program_overrides = prev_overrides
         try:
             out, stamp = state.router.call(task_id, messages)
-            runs = state.root / "runs"
+            runs = state.data / "runs"
             runs.mkdir(exist_ok=True)
             with (runs / "stamps.jsonl").open("a") as f:
                 f.write(json.dumps({**stamp, "program_id": pid}) + "\n")
@@ -461,30 +477,30 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
     def create_program(body: ProgramIn):
         if not SLUG.match(body.program_id):
             raise HTTPException(400, "program_id must be a lowercase slug (a-z, 0-9, -, _)")
-        storage.init_program(state.root, body.program_id)
+        storage.init_program(state.data, body.program_id)
         return {"program_id": body.program_id}
 
     @app.get("/api/programs")
     def list_programs():
-        return programs_admin.list_active(state.root)
+        return programs_admin.list_active(state.data)
 
     @app.get("/api/programs/archived")
     def list_archived():
-        return programs_admin.list_archived(state.root)
+        return programs_admin.list_archived(state.data)
 
     @app.post("/api/programs/{pid}/archive")
     def archive_program(pid: str):
         """'Delete' = archive, never destroy (spec/54 §2.4). The append-only
         decision log is preserved; the program is restorable."""
         try:
-            return programs_admin.archive(state.root, pid)
+            return programs_admin.archive(state.data, pid)
         except programs_admin.AdminError as e:
             raise HTTPException(400, str(e))
 
     @app.post("/api/programs/{pid}/restore")
     def restore_program(pid: str):
         try:
-            return programs_admin.restore(state.root, pid)
+            return programs_admin.restore(state.data, pid)
         except programs_admin.AdminError as e:
             raise HTTPException(400, str(e))
 
@@ -493,7 +509,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         """Safe rename: moves the folder, repoints program_id in artifacts and
         provenance stamps (exact match), logs the change (spec/54 §2.4)."""
         try:
-            return programs_admin.rename(state.root, pid, body.new_id)
+            return programs_admin.rename(state.data, pid, body.new_id)
         except programs_admin.AdminError as e:
             raise HTTPException(400, str(e))
 
@@ -1408,7 +1424,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         sid = body.successor_id.strip()
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]{2,60}", sid):
             raise HTTPException(400, "successor_id: lowercase letters, digits, hyphens")
-        succ_dir = state.root / "programs" / sid   # not pdir(): it does not exist yet
+        succ_dir = state.data / "programs" / sid   # not pdir(): it does not exist yet
         out = _rd_guard(lambda: redesign_mod.charter_successor(
             state.pdir(pid), succ_dir, pred_id=pid, succ_id=sid))
         for p_, note in ((pid, f"Charter redesign successor {sid} (ADR-007)"),
@@ -1604,7 +1620,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         # decisions + cost
         decisions = storage.read_decisions(d)
         cost = 0.0
-        stamps = state.root / "runs" / "stamps.jsonl"
+        stamps = state.data / "runs" / "stamps.jsonl"
         if stamps.exists():
             for line in stamps.read_text().splitlines():
                 if not line.strip():
@@ -1653,7 +1669,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
         # provenance: aggregate this program's stamps by task
         prov: dict[str, dict] = {}
-        stamps = state.root / "runs" / "stamps.jsonl"
+        stamps = state.data / "runs" / "stamps.jsonl"
         if stamps.exists():
             for line in stamps.read_text().splitlines():
                 if not line.strip():
@@ -1754,7 +1770,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
                 "must_differ_family_from": t.must_differ_family_from,
             }
         lifetime_usd, lifetime_calls = 0.0, 0
-        stamps = state.root / "runs" / "stamps.jsonl"
+        stamps = state.data / "runs" / "stamps.jsonl"
         if stamps.exists():
             for line in stamps.read_text().splitlines():
                 if line.strip():
@@ -1841,7 +1857,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
 
     @app.get("/api/programs/{pid}/explorations")
     def explorations_list(pid: str, archived: bool = False):
-        return explorations_mod.listing(state.root, _official(pid), pid, _stamps(), include_archived=archived)
+        return explorations_mod.listing(state.data, _official(pid), pid, _stamps(), include_archived=archived)
 
     @app.get("/api/programs/{pid}/explorations/impact")
     def explorations_impact(pid: str, answer_id: str, reuse_blueprint: bool = False):
@@ -1850,7 +1866,7 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
     @app.post("/api/programs/{pid}/explorations")
     def explorations_create(pid: str, body: ExplorationIn):
         by = {"name": body.by_name or "?", "role": body.by_role or "?"}
-        return _xerr(lambda: explorations_mod.create(state.root, _official(pid), pid, name=body.name,
+        return _xerr(lambda: explorations_mod.create(state.data, _official(pid), pid, name=body.name,
                                                      answer_id=body.answer_id, new_answer=body.new_answer,
                                                      created_by=by, reuse_blueprint=body.reuse_blueprint))
 
@@ -1871,14 +1887,14 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         if not SLUG.match(body.new_program_id):
             raise HTTPException(400, "The new program's name must be a lowercase slug (a-z, 0-9, -, _)")
         return _xerr(lambda: explorations_mod.promote(
-            state.root, _official(pid), pid, xid, body.new_program_id,
+            state.data, _official(pid), pid, xid, body.new_program_id,
             by={"name": body.name or "?", "role": body.role}, rationale=body.rationale,
             append_decision=storage.append_decision, next_entry_id=storage.next_entry_id))
 
     # ---------------- budget analysis (Settings) ----------------
 
     def _stamps() -> list[dict]:
-        p = state.root / "runs" / "stamps.jsonl"
+        p = state.data / "runs" / "stamps.jsonl"
         out = []
         if p.exists():
             for line in p.read_text().splitlines():
@@ -1897,8 +1913,8 @@ def create_app(root: Optional[str | Path] = None, transport=None, api_key: Optio
         the remaining Refactor proposals will cost (from the average cost per
         worked defect across every program's past Refactor runs)."""
         stamps = _stamps()
-        active = set(programs_admin.list_active(state.root))
-        archived = set(programs_admin.list_archived(state.root))
+        active = set(programs_admin.list_active(state.data))
+        archived = set(programs_admin.list_archived(state.data))
         by_prog: dict[str, dict] = {}
         for st in stamps:
             k = st.get("program_id")

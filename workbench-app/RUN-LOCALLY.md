@@ -12,18 +12,24 @@ Setup takes about ten minutes.
 
 ## 0. The one thing people get wrong
 
-This project is **two folders that must sit side by side** (siblings in the same parent
-directory). The app reads shared schemas from `../rulebook-workbench/`, so it will not
-start if that folder is missing or somewhere else. Put them like this:
+Run commands from **`workbench-app/`**, and keep the repo's folders together — the app
+reads shared schemas from `../spec/`. A git clone or the share zip already has this
+layout:
 
 ```
-rulebook-workbench-project/     ← any parent folder name
-├── rulebook-workbench/         ← specs, schemas, program data
+rulebook-workbench-v1/          ← the repo (any folder name)
+├── spec/                       ← specs, schemas, skills
+├── examples/                   ← published example programs
 └── workbench-app/              ← the application (you run commands from here)
+workbench-data/                 ← YOUR programs, created beside the repo on first run
 ```
 
-If you received a zip, unzip it and confirm both folders are next to each other. If you
-cloned from Git, clone **both** repositories into the same parent folder.
+Your own work goes in **`workbench-data/`**, outside the repo, so it is never committed.
+To keep it somewhere else, set `WORKBENCH_DATA=/absolute/path` in `.env` (step 3). The app
+prints the data folder's location when it starts.
+
+*Upgrading from an older copy?* If you had programs in `workbench-app/programs/`, the
+app will list them at startup — move them into `workbench-data/programs/`.
 
 ---
 
@@ -124,7 +130,8 @@ command again (`make app` clears the port for you first).
   the Program Owner, and governed actions trust the name typed into the form. That's fine
   for trying it out solo. Real multi-person use (authenticated identity, per-user keys) is
   a separate, planned piece.
-- **Your data stays local.** Everything lives in files under `workbench-app/programs/`.
+- **Your data stays local.** Everything lives in files in your data folder (default
+  `workbench-data/` beside the repo).
   Nothing is uploaded anywhere except the individual model requests you trigger, which go
   to OpenRouter under the app's no-training / zero-data-retention routing preference.
 - **Interview transcripts** (if you run the Phase 0 interview) are written to a
@@ -138,8 +145,10 @@ command again (`make app` clears the port for you first).
 
 - *"OPENROUTER_API_KEY not set"* — you skipped step 3, or the `.env` is in the wrong
   folder (it belongs in `workbench-app/`). Restart the app after editing it.
-- *App won't start, schema errors* — the `rulebook-workbench` folder isn't a sibling
+- *App won't start, schema errors* — the `spec/` folder isn't beside `workbench-app/`
   (see §0).
+- *My programs have disappeared* — the app is looking at a different data folder. Check
+  the "Workbench data folder:" line printed at startup and `WORKBENCH_DATA` in `.env`.
 - *"Address already in use" / port 8000 busy* — an old copy is still running.
   `make app` kills it automatically; otherwise `lsof -ti:8000 | xargs kill`.
 - *Blank page* — hard-refresh the browser (Cmd/Ctrl+Shift+R).

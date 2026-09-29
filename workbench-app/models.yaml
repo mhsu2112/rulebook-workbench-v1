@@ -4,7 +4,7 @@
 # Run `make models` to re-verify IDs against the current catalog.
 #
 # structured_output paths resolve relative to contracts_dirs (see settings);
-# cross-repo schemas assume rulebook-workbench sits beside this repo.
+# shared schemas live in ../spec/schemas (spec/ sits beside workbench-app/ in the repo).
 
 settings:
   base_url: https://openrouter.ai/api/v1
@@ -15,7 +15,7 @@ settings:
   zdr_pool_available: true
   contracts_dirs:
     - src/workbench/contracts
-    - ../rulebook-workbench/schemas
+    - ../spec/schemas
 
   # Extra models offered in the per-task toggle beyond the task defaults/fallbacks.
   # Open-weight options included to demonstrate provider neutrality. Slugs should be

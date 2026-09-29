@@ -2,18 +2,24 @@
 .env
 **/.env
 
-# Restricted per-program stores (transcripts, interview data)
-**/restricted/
-programs/*/restricted/
+# ---------------------------------------------------------------------------
+# WORKING DATA NEVER LIVES IN THIS REPO.
+# Programs, the run log (runs/stamps.jsonl) and exports live in the data
+# folder OUTSIDE the repo (default: ../workbench-data; see
+# workbench-app/src/workbench/datadir.py). The only programs published here are
+# the examples in examples/, updated deliberately with `make publish-examples`.
+# The rules below are a second line of defence if anything lands here anyway.
+# ---------------------------------------------------------------------------
+workbench-app/programs/
+workbench-app/runs/
+workbench-data/
+exports/
+workbench-share-*.zip
 
-# Worked examples not published in this repo.
-# The repo ships the workbench design; the AML refactor and liquidity
-# redesign (p1/p2) programs are the illustrative examples. These two stay
-# local so the mirror does not re-add them.
-workbench-app/programs/government-sponsored-lending/
-workbench-app/programs/uk-derivatives-reporting/
-# Private engagement material — never publish
-workbench-app/programs/private-programme/
+# Restricted per-program stores (transcripts, interview data) — anywhere
+**/restricted/
+# Exploration branches are working material, not published examples
+examples/*/explorations/
 
 # Python
 .venv/
@@ -25,13 +31,8 @@ __pycache__/
 # OS cruft
 .DS_Store
 
-# Local-only: historical snapshots, share packages, legacy git bundles.
-# Large and rebuildable; see docs/README.md.
+# Local-only historical material (moved to the data folder's archive/)
 docs/archive/
-docs/uk-derivatives-reporting-derived.html
-
-# Archived program experiments (local only)
-workbench-app/programs/_archive/
 
 # Stray editor/backup files
 *.bak

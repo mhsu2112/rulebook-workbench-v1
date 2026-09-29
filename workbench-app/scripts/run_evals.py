@@ -1,7 +1,7 @@
 """Live eval harness for the purpose-elicitation skill (ADR-011; PRD M1 exit).
 
 Runs the refactor-applicable cases from
-rulebook-workbench/evals/purpose-elicitation-cases.md as model-vs-model
+spec/evals/purpose-elicitation-cases.md as model-vs-model
 conversations: the intake_interview task plays the interviewer (skill
 verbatim, D5) while eval_respondent plays a scripted persona; eval_judge then
 scores the transcript + synthesized statement against the case's gold labels.

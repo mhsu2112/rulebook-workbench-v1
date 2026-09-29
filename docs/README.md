@@ -7,9 +7,12 @@ Overview collateral and historical archives for the Rulebook Workbench.
 - **`Rulebook Workbench Overview.html`** / **`.html.pdf`** — the standalone overview of
   what the workbench is and how it runs. Self-contained; open the HTML in any browser.
 
-## Local-only (git-ignored)
+## Local-only (moved to the data folder on 2026-09-29)
 
-- **`uk-derivatives-reporting-derived.html`** — derived working paper from the
+Local-only material no longer lives in the repo. It is in the data folder
+(`../workbench-data/`, outside git):
+
+- **`exports/uk-derivatives-reporting-derived.html`** — derived working paper from the
   UK derivatives reporting program. Kept local for the same reason that program's data is:
   the public mirror ships the workbench design and the AML / liquidity examples only.
 - **`archive/`** — historical snapshots, not needed to run or develop the app:
@@ -26,11 +29,11 @@ Overview collateral and historical archives for the Rulebook Workbench.
     Inspect or recover either with:
 
     ```bash
-    git clone docs/archive/legacy-git-bundles/legacy-app-workbench-app.bundle /tmp/legacy-app
+    git clone ../workbench-data/archive/legacy-git-bundles/legacy-app-workbench-app.bundle /tmp/legacy-app
     ```
 
 ## Provenance
 
 The workbench was originally built inside a Foundry engagement folder. It is now a
-standalone project under `04-policy-sludge-code`; Foundry engagement and licensing
+standalone project under `05-policy-sludge-code`; Foundry engagement and licensing
 materials (Lex Balanus) stay in `01-engagements/Foundry`.
